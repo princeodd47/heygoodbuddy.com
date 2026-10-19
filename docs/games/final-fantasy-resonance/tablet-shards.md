@@ -39,12 +39,3 @@ count carries over to the full game with your save.
 | **Commercial District** (Grandshelt) | 1 | North of the weapon shop, beside the boxes in the corner |
 | **Village of Kol** | 1 | Southwest edge of the oasis pond, beside a cactus |
 | **Cavern of Swords** | 1 | Back of the cavern, straight in from the entrance |
-
-!!! tip "Easiest to miss"
-    The **Felicitas secret passage** next to the inn, and the **Kolobos Ruins
-    shard behind the fallen pillar** after the bridge collapses.
-
-??? note "Is it 12 or 17?"
-    Most guides count 12. One guide counts 17, adding 2 in the Colosseum,
-    2 in Grandshelt Castle and 1 in the Earth Shrine, but gives no exact
-    spots and no other guide lists them.
