@@ -61,10 +61,10 @@ in **Grandport**. It gives a tutorial on using magicite and gives you a
 
 ### Where to get Magicite Shards
 
-- **Siren's Tower:** one in a chest
-- **Oblivion Palace (Area 2/5):** two in chests
-- **Boss drops:** reportedly Siren, Marauder and Leviathan
-- **Side quests:** some reward them
+- **Siren's Tower:** chest
+- **Siren's Tower:** Boss Siren drops
+- **Oblivion Palace:** 1 Star chests: II
+- **Marauder's Cave:** Boss Marauder drops
 
 Tablet Shards are a separate item. See [Tablet Shards](tablet-shards.md)
 for where to find them and what they're traded for.
