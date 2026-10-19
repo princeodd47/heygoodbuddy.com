@@ -1,16 +1,16 @@
 visions:
   - name: Tronn
-    how_to_get: Given early in the demo
+    how_to_get: Story, Town of Mitra (Farplane, via the portal in the basement of Rain's house)
     status: unverified
   - name: Leah
-    how_to_get: Given early in the demo
+    how_to_get: Story, Town of Mitra (Farplane, via the portal in the basement of Rain's house)
     status: unverified
   - name: Warrior of Light
-    how_to_get: Unlocked during the demo
-    status: unverified
+    how_to_get: Sanctum of WoL, north of the Village of Kol
+    status: confirmed
   - name: Cloud
-    how_to_get: Unlocked during the demo
-    status: unverified
+    how_to_get: Sanctum of Cloud, far north of Grandport Harbor
+    status: confirmed
   - name: Terra
-    how_to_get: Unlocked during the demo
-    status: unverified
+    how_to_get: Sanctum of Terra, southwest of the Town of Felicitas
+    status: confirmed

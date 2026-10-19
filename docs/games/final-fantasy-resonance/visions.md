@@ -21,11 +21,14 @@ learn.
 
 ## Visions in the demo
 
-| Vision | How to get it | Status |
-|--------|---------------|--------|
+| Vision | Where to get it |
+|--------|-----------------|
 {% for v in ffr.visions -%}
-| **{{ v.name }}** | {{ v.how_to_get }} | {{ v.status }} |
+| **{{ v.name }}** | {{ v.how_to_get }} |
 {% endfor %}
+
+Tronn and Leah are story rewards: you can't miss them. The others are found in
+optional **sanctums** on the world map.
 
 ## Mastery
 
@@ -54,11 +57,13 @@ and permanently unlocks another set of skills and passives on top of the base
 set. Awakening is separate from Mastery: it only happens when you spend
 magicite.
 
-| Tier | Cost | Status |
-|------|------|--------|
-| ★ | Magicite Shard | unverified |
-| ★★ | Magicite | unverified |
-| ★★★ | Magicite Cryst | unverified |
+The costs below come from third-party guides and are *unverified*.
+
+| Tier | Cost |
+|------|------|
+| ★ | Magicite Shard |
+| ★★ | Magicite |
+| ★★★ | Magicite Cryst |
 
 !!! quote "Magicite Shard (key item)"
     *"A shard imbued with the power of the Farplane. Has the power to awaken
