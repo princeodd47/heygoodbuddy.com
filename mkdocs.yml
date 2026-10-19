@@ -1,0 +1,60 @@
+site_name: heygoodbuddy.com
+site_url: https://heygoodbuddy.com/
+site_description: Game guides, notes and articles.
+
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - scheme: default
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - search.highlight
+    - content.tabs.link
+
+plugins:
+  - search
+  - blog
+  - tags
+  - macros:
+      include_yaml:
+        ffr: data/final-fantasy-resonance/visions.yaml
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Games:
+      - games/index.md
+      - Final Fantasy Resonance:
+          - games/final-fantasy-resonance/index.md
+          - Visions: games/final-fantasy-resonance/visions.md
+  - Articles:
+      - blog/index.md
+  - Tags: tags.md
