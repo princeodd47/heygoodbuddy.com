@@ -10,13 +10,7 @@ tags:
 
 # Tablet Shards
 
-!!! info "Page status"
-    Last checked **{{ page.meta.verified }}** on the **{{ page.meta.game_version }}**.
-    Shard locations come from third-party guides and haven't all been
-    checked in-game yet.
-
-Tablet Shards aren't in chests. Each one is a **golden glow on the ground**,
-so they're easy to walk past.
+Tablet Shards aren't in chests. Each one is a **golden glow on the ground**.
 
 ## What they're for
 
@@ -24,11 +18,10 @@ Hand Tablet Shards to the **princess at Oblivion Palace**. She opens reward
 boxes once your running total reaches each box's threshold. Totals go up to
 99 shards across 25 boxes.
 
-In the demo, 12 shards open the first four boxes in the 1-Star Chamber. The
-fourth box needs all 12 and reportedly holds a **Stagger Ring**. Your shard
-count carries over to the full game with your save.
+12 shards open the first four boxes in the 1-Star Chamber. The fourth box
+needs all 12 and reportedly holds a **Stagger Ring**.
 
-## All 12 demo shards
+## Shard locations
 
 | Area | # | Where |
 |------|---|-------|
