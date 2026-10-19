@@ -18,4 +18,12 @@ save data carries over.
 
     [:octicons-arrow-right-24: Read](visions.md)
 
+-   :material-puzzle:{ .lg .middle } __Tablet Shards__
+
+    ---
+
+    All 12 demo shard locations, and what the princess trades for them.
+
+    [:octicons-arrow-right-24: Read](tablet-shards.md)
+
 </div>

@@ -71,10 +71,9 @@ The costs below come from third-party guides and are *unverified*.
 
 ### Where to awaken
 
-!!! warning "Unverified"
-    Guides say a **Moogle in Grandport** awakens Visions in exchange for
-    magicite, and that it becomes available near the end of the demo, after
-    an awakening tutorial.
+After you defeat **Siren** in Siren's Tower, the **Moogle of Light** appears
+in **Grandport**. It gives a tutorial on using magicite and gives you a
+**Magicite Shard**. Talk to it to awaken your Visions.
 
 ### Where to get Magicite Shards in the demo
 
@@ -83,8 +82,5 @@ The costs below come from third-party guides and are *unverified*.
 - **Boss drops:** reportedly Siren, Marauder and Leviathan
 - **Side quests:** some reward them
 
-??? note "Tablet Shards and the princess (unverified)"
-    Tablet Shards are found in treasure chests. Guides say you can hand them
-    to a princess at **Oblivion Palace** in exchange for magicite. Guides
-    disagree on how many Tablet Shards the demo has, so trust your in-game
-    hand-in count.
+Tablet Shards are a separate item. See [Tablet Shards](tablet-shards.md)
+for where to find them and what they're traded for.

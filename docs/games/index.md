@@ -6,7 +6,7 @@
 
     ---
 
-    Visions, Mastery and Awakening.
+    Visions, Mastery, Awakening and Tablet Shards.
 
     [:octicons-arrow-right-24: Open guide](final-fantasy-resonance/index.md)
 
