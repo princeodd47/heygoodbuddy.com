@@ -10,16 +10,11 @@ tags:
 
 # Visions
 
-!!! info "Page status"
-    Last checked **{{ page.meta.verified }}** on the **{{ page.meta.game_version }}**.
-    Anything marked *unverified* comes from third-party guides and hasn't
-    been checked in-game yet.
-
 Visions are the crystallized essence of legendary heroes. They take the place
 of a job system: equipping a Vision decides which abilities a character can
 learn.
 
-## Visions in the demo
+## Where to get Visions
 
 | Vision | Where to get it |
 |--------|-----------------|
@@ -43,13 +38,6 @@ Mastery is how a Vision's base abilities are learned.
 - Abilities stay learned, so you can equip them while using a different
   Vision, as long as the AP allows.
 
-=== "Demo"
-    - Mastery rank cap: **5**
-    - Character level cap: **15**
-
-=== "Full game"
-    - TBD after launch.
-
 ## Awakening
 
 Each Vision has three greyed-out stars. Awakening a Vision fills in a star
@@ -65,17 +53,13 @@ The costs below come from third-party guides and are *unverified*.
 | ★★ | Magicite |
 | ★★★ | Magicite Cryst |
 
-!!! quote "Magicite Shard (key item)"
-    *"A shard imbued with the power of the Farplane. Has the power to awaken
-    visions."*
-
 ### Where to awaken
 
 After you defeat **Siren** in Siren's Tower, the **Moogle of Light** appears
 in **Grandport**. It gives a tutorial on using magicite and gives you a
 **Magicite Shard**. Talk to it to awaken your Visions.
 
-### Where to get Magicite Shards in the demo
+### Where to get Magicite Shards
 
 - **Siren's Tower:** one in a chest
 - **Oblivion Palace (Area 2/5):** two in chests
