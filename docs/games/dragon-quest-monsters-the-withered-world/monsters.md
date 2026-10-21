@@ -12,5 +12,5 @@ tags:
 | Monster | Family | Rank | Where |
 |---------|--------|------|-------|
 {% for m in dqm.monsters -%}
-| <a id="{{ m.id }}"></a>**{{ m.name }}** | {{ m.family }} | {{ m.rank }} | {{ m.where }} |
+| <a id="{{ m.id }}"></a>**{{ m.name }}** | {{ m.family }} | {{ m.rank }} | {{ m.where | default("") }} |
 {% endfor %}
