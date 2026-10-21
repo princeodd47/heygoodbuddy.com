@@ -1,9 +1,254 @@
 monsters:
+  - id: antguzzler
+    name: Antguzzler
+    family: Beast
+    rank: G
+    status: unverified
+  - id: armoured-wartoise
+    name: Armoured Wartoise
+    family: Dragon
+    rank: F
+    status: unverified
+  - id: avian-android
+    name: Avian Android
+    family: Material
+    rank: F
+    status: unverified
+  - id: bad-apple
+    name: Bad Apple
+    family: Nature
+    rank: F
+    status: unverified
+  - id: bad-egg
+    name: Bad Egg
+    family: Slime
+    rank: G
+    status: unverified
+  - id: bambooligan
+    name: Bambooligan
+    family: Material
+    rank: G
+    status: unverified
+  - id: bantamweight
+    name: Bantamweight
+    family: Nature
+    rank: G
+    status: unverified
+  - id: bludgerigar
+    name: Bludgerigar
+    family: Nature
+    rank: G
+    status: unverified
+  - id: bodkin-archer
+    name: Bodkin Archer
+    family: Demon
+    rank: G
+    status: unverified
+  - id: bongo-drongo
+    name: Bongo Drongo
+    family: Material
+    rank: F
+    status: unverified
+  - id: boppin-badger
+    name: "Boppin' Badger"
+    family: Beast
+    rank: F
+    status: unverified
+  - id: box-slime
+    name: Box Slime
+    family: Slime
+    rank: F
+    status: unverified
+  - id: bubble-slime
+    name: Bubble Slime
+    family: Slime
+    rank: G
+    status: unverified
   - id: buddy-slime
     name: Buddy Slime
     family: Slime
     rank: G
     where: Starter (Nera)
+    status: unverified
+  - id: bullfinch
+    name: Bullfinch
+    family: Nature
+    rank: F
+    status: unverified
+  - id: bunicorn
+    name: Bunicorn
+    family: Beast
+    rank: G
+    status: unverified
+  - id: burr-baby
+    name: Burr Baby
+    family: Material
+    rank: G
+    status: unverified
+  - id: cactiball
+    name: Cactiball
+    family: Nature
+    rank: F
+    status: unverified
+  - id: candy-cat
+    name: Candy Cat
+    family: Beast
+    rank: G
+    status: unverified
+  - id: cannibox
+    name: Cannibox
+    family: Material
+    rank: F
+    status: unverified
+  - id: cannonbrawler
+    name: Cannonbrawler
+    family: Demon
+    rank: F
+    status: unverified
+  - id: capsichum
+    name: Capsichum
+    family: Nature
+    rank: G
+    status: unverified
+  - id: cauldragon
+    name: Cauldragon
+    family: Dragon
+    rank: F
+    status: unverified
+  - id: coconut-slime
+    name: Coconut Slime
+    family: Slime
+    rank: F
+    status: unverified
+  - id: crabid
+    name: Crabid
+    family: Nature
+    rank: F
+    status: unverified
+  - id: crested-viper
+    name: Crested Viper
+    family: Dragon
+    rank: G
+    status: unverified
+  - id: croc-a-bugle-doo
+    name: "Croc-a-Bugle-Doo"
+    family: Dragon
+    rank: F
+    status: unverified
+  - id: cruelcumber
+    name: Cruelcumber
+    family: Nature
+    rank: G
+    status: unverified
+  - id: cumaulus
+    name: Cumaulus
+    family: Material
+    rank: G
+    status: unverified
+  - id: cyclown
+    name: Cyclown
+    family: Nature
+    rank: F
+    status: unverified
+  - id: damselfly
+    name: Damselfly
+    family: Dragon
+    rank: G
+    status: unverified
+  - id: dancing-devil
+    name: Dancing Devil
+    family: Demon
+    rank: F
+    status: unverified
+  - id: dessert-demon
+    name: Dessert Demon
+    family: Demon
+    rank: F
+    status: unverified
+  - id: dracky
+    name: Dracky
+    family: Demon
+    rank: G
+    status: unverified
+  - id: drag-racer
+    name: Drag Racer
+    family: Dragon
+    rank: F
+    status: unverified
+  - id: dragonthorn
+    name: Dragonthorn
+    family: Dragon
+    rank: G
+    status: unverified
+  - id: drake-slime
+    name: Drake Slime
+    family: Slime
+    rank: F
+    status: unverified
+  - id: drakularge
+    name: Drakularge
+    family: Dragon
+    rank: E
+    status: unverified
+  - id: dread-squirrel
+    name: Dread Squirrel
+    family: Beast
+    rank: F
+    status: unverified
+  - id: drohl-drone
+    name: Drohl Drone
+    family: Undead
+    rank: G
+    status: unverified
+  - id: eggsoskeleton
+    name: Eggsoskeleton
+    family: Material
+    rank: G
+    status: unverified
+  - id: erazor-blade
+    name: Erazor Blade
+    family: Material
+    rank: F
+    status: unverified
+  - id: ethereal-serpent
+    name: Ethereal Serpent
+    family: Dragon
+    rank: F
+    status: unverified
+  - id: fat-rat
+    name: Fat Rat
+    family: Beast
+    rank: G
+    status: unverified
+  - id: feral-slime
+    name: Feral Slime
+    family: Slime
+    rank: F
+    status: unverified
+  - id: feralball
+    name: Feralball
+    family: Beast
+    rank: G
+    status: unverified
+  - id: firespirit
+    name: Firespirit
+    family: Undead
+    rank: G
+    status: unverified
+  - id: flython
+    name: Flython
+    family: Dragon
+    rank: F
+    status: unverified
+  - id: foo-dog
+    name: Foo Dog
+    family: Material
+    rank: F
+    status: unverified
+  - id: fright-bulb
+    name: Fright Bulb
+    family: Slime
+    rank: G
     status: unverified
   - id: fromage-fray
     name: Fromage Fray
@@ -11,11 +256,371 @@ monsters:
     rank: G
     where: Starter (Nera)
     status: unverified
+  - id: funghoul
+    name: Funghoul
+    family: Undead
+    rank: G
+    status: unverified
+  - id: funky-ferret
+    name: Funky Ferret
+    family: Beast
+    rank: G
+    status: unverified
+  - id: gasbagon
+    name: Gasbagon
+    family: Dragon
+    rank: F
+    status: unverified
+  - id: ghost
+    name: Ghost
+    family: Undead
+    rank: G
+    status: unverified
+  - id: gloomy-grublin
+    name: Gloomy Grublin
+    family: Beast
+    rank: G
+    status: unverified
+  - id: gold-golem
+    name: Gold Golem
+    family: Material
+    rank: F
+    status: unverified
+  - id: goonache-goodie
+    name: Goonache Goodie
+    family: Slime
+    rank: G
+    status: unverified
+  - id: great-sabrecub
+    name: Great Sabrecub
+    family: Beast
+    rank: G
+    status: unverified
+  - id: greater-dracky
+    name: Greater Dracky
+    family: Demon
+    rank: F
+    status: unverified
+  - id: gremlin
+    name: Gremlin
+    family: Demon
+    rank: G
+    status: unverified
+  - id: guaardvark
+    name: Guaardvark
+    family: Beast
+    rank: F
+    status: unverified
+  - id: hammerhood
+    name: Hammerhood
+    family: Beast
+    rank: G
+    status: unverified
+  - id: hangelabra
+    name: Hangelabra
+    family: Demon
+    rank: F
+    status: unverified
+  - id: healslime
+    name: Healslime
+    family: Slime
+    rank: G
+    status: unverified
+  - id: hellbound-horror
+    name: Hellbound Horror
+    family: Undead
+    rank: F
+    status: unverified
+  - id: hunter-mech
+    name: Hunter Mech
+    family: Material
+    rank: F
+    status: unverified
+  - id: icy-dragling
+    name: Icy Dragling
+    family: Dragon
+    rank: G
+    status: unverified
   - id: imp
     name: Imp
     family: Demon
     rank: G
     where: Starter (Bianca)
+    status: unverified
+  - id: jargon
+    name: Jargon
+    family: Dragon
+    rank: F
+    status: unverified
+  - id: jingle-bug
+    name: Jingle Bug
+    family: Nature
+    rank: F
+    status: unverified
+  - id: khalamari-kid
+    name: Khalamari Kid
+    family: Nature
+    rank: G
+    status: unverified
+  - id: killer-gila
+    name: Killer Gila
+    family: Dragon
+    rank: G
+    status: unverified
+  - id: killerpillar
+    name: Killerpillar
+    family: Nature
+    rank: G
+    status: unverified
+  - id: king-kelp
+    name: King Kelp
+    family: Undead
+    rank: F
+    status: unverified
+  - id: kingfuschia
+    name: Kingfuschia
+    family: Nature
+    rank: G
+    status: unverified
+  - id: komodo
+    name: Komodo
+    family: Dragon
+    rank: G
+    status: unverified
+  - id: lampling
+    name: Lampling
+    family: Material
+    rank: G
+    status: unverified
+  - id: leafy-larrikin
+    name: Leafy Larrikin
+    family: Nature
+    rank: F
+    status: unverified
+  - id: lips
+    name: Lips
+    family: Demon
+    rank: G
+    status: unverified
+  - id: little-devil
+    name: Little Devil
+    family: Demon
+    rank: F
+    status: unverified
+  - id: lump-wizard
+    name: Lump Wizard
+    family: Demon
+    rank: G
+    status: unverified
+  - id: lunatick
+    name: Lunatick
+    family: Demon
+    rank: G
+    status: unverified
+  - id: mad-moai
+    name: Mad Moai
+    family: Material
+    rank: F
+    status: unverified
+  - id: mad-mollusk
+    name: Mad Mollusk
+    family: Nature
+    rank: G
+    status: unverified
+  - id: marislime
+    name: Marislime
+    family: Slime
+    rank: F
+    status: unverified
+  - id: mecha-mynah
+    name: "Mecha-Mynah"
+    family: Material
+    rank: G
+    status: unverified
+  - id: merman
+    name: Merman
+    family: Demon
+    rank: F
+    status: unverified
+  - id: midnight-horknight
+    name: Midnight Horknight
+    family: Nature
+    rank: F
+    status: unverified
+  - id: mischievous-mole
+    name: Mischievous Mole
+    family: Beast
+    rank: G
+    status: unverified
+  - id: mitey-oak
+    name: Mitey Oak
+    family: Nature
+    rank: F
+    status: unverified
+  - id: molten-slime
+    name: Molten Slime
+    family: Slime
+    rank: F
+    status: unverified
+  - id: monolog
+    name: Monolog
+    family: Undead
+    rank: F
+    status: unverified
+  - id: mottle-slime
+    name: Mottle Slime
+    family: Slime
+    rank: F
+    status: unverified
+  - id: mouldfish
+    name: Mouldfish
+    family: Undead
+    rank: F
+    status: unverified
+  - id: mud-mannequin
+    name: Mud Mannequin
+    family: Material
+    rank: G
+    status: unverified
+  - id: muddy-hand
+    name: Muddy Hand
+    family: Undead
+    rank: F
+    status: unverified
+  - id: mudraker
+    name: Mudraker
+    family: Material
+    rank: F
+    status: unverified
+  - id: mummy-boy
+    name: Mummy Boy
+    family: Undead
+    rank: F
+    status: unverified
+  - id: napir
+    name: Napir
+    family: Beast
+    rank: F
+    status: unverified
+  - id: nardragon
+    name: Nardragon
+    family: Dragon
+    rank: G
+    status: unverified
+  - id: odd-cob
+    name: Odd Cob
+    family: Nature
+    rank: F
+    status: unverified
+  - id: onion-slime
+    name: Onion Slime
+    family: Slime
+    rank: F
+    status: unverified
+  - id: orc
+    name: Orc
+    family: Beast
+    rank: F
+    status: unverified
+  - id: ornery-onion
+    name: Ornery Onion
+    family: Nature
+    rank: G
+    status: unverified
+  - id: pina-marauder
+    name: Piña Marauder
+    family: Demon
+    rank: G
+    status: unverified
+  - id: platypunk
+    name: Platypunk
+    family: Beast
+    rank: G
+    status: unverified
+  - id: platypup
+    name: Platypup
+    family: Beast
+    rank: G
+    status: unverified
+  - id: pocus-poppet
+    name: Pocus Poppet
+    family: Material
+    rank: F
+    status: unverified
+  - id: powie-yowie
+    name: Powie Yowie
+    family: Beast
+    rank: F
+    status: unverified
+  - id: prestidigitator
+    name: Prestidigitator
+    family: Demon
+    rank: F
+    status: unverified
+  - id: pteranodon
+    name: Pteranodon
+    family: Dragon
+    rank: G
+    status: unverified
+  - id: putrefido
+    name: Putrefido
+    family: Undead
+    rank: G
+    status: unverified
+  - id: raptile
+    name: Raptile
+    family: Dragon
+    rank: F
+    status: unverified
+  - id: restless-armour
+    name: Restless Armour
+    family: Undead
+    rank: F
+    status: unverified
+  - id: robber-rabbit
+    name: Robber Rabbit
+    family: Beast
+    rank: F
+    status: unverified
+  - id: ruff-ruffian
+    name: Ruff Ruffian
+    family: Beast
+    rank: F
+    status: unverified
+  - id: sacksquatch
+    name: Sacksquatch
+    family: Material
+    rank: G
+    status: unverified
+  - id: scallop-slime
+    name: Scallop Slime
+    family: Slime
+    rank: G
+    status: unverified
+  - id: scarfish
+    name: Scarfish
+    family: Undead
+    rank: F
+    status: unverified
+  - id: scorpion
+    name: Scorpion
+    family: Nature
+    rank: F
+    status: unverified
+  - id: seasaur
+    name: Seasaur
+    family: Dragon
+    rank: F
+    status: unverified
+  - id: see-urchin
+    name: See Urchin
+    family: Demon
+    rank: F
+    status: unverified
+  - id: shadow
+    name: Shadow
+    family: Undead
+    rank: F
     status: unverified
   - id: sham-hatwitch
     name: Sham Hatwitch
@@ -23,11 +628,141 @@ monsters:
     rank: G
     where: Starter (Nera)
     status: unverified
+  - id: she-slime
+    name: "She-Slime"
+    family: Slime
+    rank: F
+    status: unverified
+  - id: shell-slime
+    name: Shell Slime
+    family: Slime
+    rank: G
+    status: unverified
+  - id: skeleton
+    name: Skeleton
+    family: Undead
+    rank: G
+    status: unverified
+  - id: skipper
+    name: Skipper
+    family: Undead
+    rank: G
+    status: unverified
+  - id: skullrider
+    name: Skullrider
+    family: Undead
+    rank: F
+    status: unverified
+  - id: sky-fry
+    name: Sky Fry
+    family: Material
+    rank: G
+    status: unverified
+  - id: slime
+    name: Slime
+    family: Slime
+    rank: G
+    status: unverified
+  - id: slime-knight
+    name: Slime Knight
+    family: Slime
+    rank: F
+    status: unverified
+  - id: slime-stack
+    name: Slime Stack
+    family: Slime
+    rank: G
+    status: unverified
   - id: small-fry
     name: Small Fry
     family: Dragon
     rank: G
     where: Starter (Nera)
+    status: unverified
+  - id: smog
+    name: Smog
+    family: Material
+    rank: F
+    status: unverified
+  - id: snail-slime
+    name: Snail Slime
+    family: Slime
+    rank: F
+    status: unverified
+  - id: snowmangler
+    name: Snowmangler
+    family: Slime
+    rank: F
+    status: unverified
+  - id: soft-serve-spook
+    name: Soft Serve Spook
+    family: Undead
+    rank: G
+    status: unverified
+  - id: stark-raven
+    name: Stark Raven
+    family: Nature
+    rank: G
+    status: unverified
+  - id: string-fella
+    name: String Fella
+    family: Material
+    rank: G
+    status: unverified
+  - id: stump-chump
+    name: Stump Chump
+    family: Undead
+    rank: G
+    status: unverified
+  - id: succubat
+    name: Succubat
+    family: Demon
+    rank: F
+    status: unverified
+  - id: suckling-ocker
+    name: Suckling Ocker
+    family: Nature
+    rank: F
+    status: unverified
+  - id: swarmtroop
+    name: Swarmtroop
+    family: Nature
+    rank: G
+    status: unverified
+  - id: teeny-sanguini
+    name: Teeny Sanguini
+    family: Demon
+    rank: G
+    status: unverified
+  - id: toady
+    name: Toady
+    family: Nature
+    rank: G
+    status: unverified
+  - id: tongue-fu-fighter
+    name: Tongue Fu Fighter
+    family: Beast
+    rank: F
+    status: unverified
+  - id: treeface
+    name: Treeface
+    family: Undead
+    rank: E
+    status: unverified
+  - id: urnexpected
+    name: Urnexpected
+    family: Material
+    rank: F
+    status: unverified
+  - id: ursa-major
+    name: Ursa Major
+    family: Beast
+    rank: E
+    status: unverified
+  - id: vampire-cat
+    name: Vampire Cat
+    family: Beast
+    rank: F
     status: unverified
   - id: vegandragora
     name: Vegandragora
@@ -35,11 +770,41 @@ monsters:
     rank: G
     where: Starter (Bianca)
     status: unverified
+  - id: walking-corpse
+    name: Walking Corpse
+    family: Undead
+    rank: F
+    status: unverified
+  - id: warhog
+    name: Warhog
+    family: Beast
+    rank: F
+    status: unverified
   - id: wax-murderer
     name: Wax Murderer
     family: Undead
     rank: G
     where: Starter (Bianca)
+    status: unverified
+  - id: weartiger
+    name: Weartiger
+    family: Beast
+    rank: F
+    status: unverified
+  - id: will-o-the-whips
+    name: "Will-o'-the-Whips"
+    family: Undead
+    rank: G
+    status: unverified
+  - id: wing-slime
+    name: Wing Slime
+    family: Slime
+    rank: G
+    status: unverified
+  - id: winky
+    name: Winky
+    family: Demon
+    rank: G
     status: unverified
   - id: woebergine
     name: Woebergine

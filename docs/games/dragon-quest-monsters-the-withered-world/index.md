@@ -26,4 +26,12 @@ Notes from the Switch demo. The full game launches **December 3, 2026**. Up to
 
     [:octicons-arrow-right-24: Read](monsters.md)
 
+-   :material-flask:{ .lg .middle } __Synthesis__
+
+    ---
+
+    Which parents make which monster.
+
+    [:octicons-arrow-right-24: Read](synthesis.md)
+
 </div>

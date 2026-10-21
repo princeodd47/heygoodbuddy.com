@@ -14,7 +14,7 @@
 
     ---
 
-    Starting monsters and monster list.
+    Starting monsters, monster list and synthesis recipes.
 
     [:octicons-arrow-right-24: Open guide](dragon-quest-monsters-the-withered-world/index.md)
 

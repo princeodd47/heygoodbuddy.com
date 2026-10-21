@@ -1,0 +1,839 @@
+sources:
+  meowdb:
+    name: MeowDB
+    url: https://meowdb.com/db/dragon-quest-monsters-withered-world/demo-synthesis
+  dqmww:
+    name: dqmwitheredworld.com
+    url: https://dqmwitheredworld.com/recipes
+  steam:
+    name: Steam thread
+    url: https://steamcommunity.com/app/3681610/discussions/0/562541634873572961/
+  square-enix:
+    name: Square Enix
+    url: https://www.gematsu.com/2026/07/dragon-quest-monsters-the-withered-world-details-battles-synthesis-and-new-monsters
+
+families: [Slime, Dragon, Nature, Beast, Material, Demon, Undead]
+
+# Lead family + any monster of the partner family. The child is from the
+# lead family. Source: MeowDB.
+family_recipes:
+  - rank: G
+    lead: Slime
+    partner: Dragon
+    result: bad-egg
+    status: unverified
+  - rank: G
+    lead: Slime
+    partner: Nature
+    result: buddy-slime
+    status: unverified
+  - rank: G
+    lead: Slime
+    partner: Beast
+    result: slime-stack
+    status: unverified
+  - rank: G
+    lead: Slime
+    partner: Material
+    result: scallop-slime
+    status: unverified
+  - rank: G
+    lead: Slime
+    partner: Demon
+    result: healslime
+    status: unverified
+  - rank: G
+    lead: Slime
+    partner: Undead
+    result: bubble-slime
+    status: unverified
+  - rank: G
+    lead: Dragon
+    partner: Slime
+    result: small-fry
+    status: unverified
+  - rank: G
+    lead: Dragon
+    partner: Nature
+    result: vegandragora
+    status: unverified
+  - rank: G
+    lead: Dragon
+    partner: Beast
+    result: komodo
+    status: unverified
+  - rank: G
+    lead: Dragon
+    partner: Material
+    result: nardragon
+    status: unverified
+  - rank: G
+    lead: Dragon
+    partner: Demon
+    result: pteranodon
+    status: unverified
+  - rank: G
+    lead: Dragon
+    partner: Undead
+    result: crested-viper
+    status: unverified
+  - rank: G
+    lead: Nature
+    partner: Slime
+    result: khalamari-kid
+    status: unverified
+  - rank: G
+    lead: Nature
+    partner: Dragon
+    result: killerpillar
+    status: unverified
+  - rank: G
+    lead: Nature
+    partner: Beast
+    result: ornery-onion
+    status: unverified
+  - rank: G
+    lead: Nature
+    partner: Material
+    result: cruelcumber
+    status: unverified
+  - rank: G
+    lead: Nature
+    partner: Demon
+    result: swarmtroop
+    status: unverified
+  - rank: G
+    lead: Nature
+    partner: Undead
+    result: mad-mollusk
+    status: unverified
+  - rank: G
+    lead: Beast
+    partner: Slime
+    result: great-sabrecub
+    status: unverified
+  - rank: G
+    lead: Beast
+    partner: Dragon
+    result: funky-ferret
+    status: unverified
+  - rank: G
+    lead: Beast
+    partner: Nature
+    result: feralball
+    status: unverified
+  - rank: G
+    lead: Beast
+    partner: Material
+    result: mischievous-mole
+    status: unverified
+  - rank: G
+    lead: Beast
+    partner: Demon
+    result: gloomy-grublin
+    status: unverified
+  - rank: G
+    lead: Beast
+    partner: Undead
+    result: fat-rat
+    status: unverified
+  - rank: G
+    lead: Material
+    partner: Slime
+    result: burr-baby
+    status: unverified
+  - rank: G
+    lead: Material
+    partner: Dragon
+    result: mecha-mynah
+    status: unverified
+  - rank: G
+    lead: Material
+    partner: Nature
+    result: cumaulus
+    status: unverified
+  - rank: G
+    lead: Material
+    partner: Beast
+    result: fromage-fray
+    status: unverified
+  - rank: G
+    lead: Material
+    partner: Demon
+    result: string-fella
+    status: unverified
+  - rank: G
+    lead: Material
+    partner: Undead
+    result: sacksquatch
+    status: unverified
+  - rank: G
+    lead: Demon
+    partner: Slime
+    result: winky
+    status: unverified
+  - rank: G
+    lead: Demon
+    partner: Dragon
+    result: dracky
+    status: unverified
+  - rank: G
+    lead: Demon
+    partner: Nature
+    result: pina-marauder
+    status: unverified
+  - rank: G
+    lead: Demon
+    partner: Beast
+    result: gremlin
+    status: unverified
+  - rank: G
+    lead: Demon
+    partner: Material
+    result: bodkin-archer
+    status: unverified
+  - rank: G
+    lead: Demon
+    partner: Undead
+    result: lump-wizard
+    status: unverified
+  - rank: G
+    lead: Undead
+    partner: Slime
+    result: ghost
+    status: unverified
+  - rank: G
+    lead: Undead
+    partner: Dragon
+    result: firespirit
+    status: unverified
+  - rank: G
+    lead: Undead
+    partner: Nature
+    result: stump-chump
+    status: unverified
+  - rank: G
+    lead: Undead
+    partner: Beast
+    result: putrefido
+    status: unverified
+  - rank: G
+    lead: Undead
+    partner: Material
+    result: wax-murderer
+    status: unverified
+  - rank: G
+    lead: Undead
+    partner: Demon
+    result: skeleton
+    status: unverified
+  - rank: F
+    lead: Slime
+    partner: Dragon
+    result: drake-slime
+    status: unverified
+  - rank: F
+    lead: Slime
+    partner: Nature
+    result: onion-slime
+    status: unverified
+  - rank: F
+    lead: Slime
+    partner: Beast
+    result: mottle-slime
+    status: unverified
+  - rank: F
+    lead: Slime
+    partner: Material
+    result: snail-slime
+    status: unverified
+  - rank: F
+    lead: Slime
+    partner: Demon
+    result: slime-knight
+    status: unverified
+  - rank: F
+    lead: Slime
+    partner: Undead
+    result: snowmangler
+    status: unverified
+  - rank: F
+    lead: Dragon
+    partner: Slime
+    result: raptile
+    status: unverified
+  - rank: F
+    lead: Dragon
+    partner: Nature
+    result: seasaur
+    status: unverified
+  - rank: F
+    lead: Dragon
+    partner: Beast
+    result: drag-racer
+    status: unverified
+  - rank: F
+    lead: Dragon
+    partner: Material
+    result: armoured-wartoise
+    status: unverified
+  - rank: F
+    lead: Dragon
+    partner: Demon
+    result: flython
+    status: unverified
+  - rank: F
+    lead: Dragon
+    partner: Undead
+    result: cauldragon
+    status: unverified
+  - rank: F
+    lead: Nature
+    partner: Slime
+    result: mitey-oak
+    status: unverified
+  - rank: F
+    lead: Nature
+    partner: Dragon
+    result: scorpion
+    status: unverified
+  - rank: F
+    lead: Nature
+    partner: Beast
+    result: bullfinch
+    status: unverified
+  - rank: F
+    lead: Nature
+    partner: Material
+    result: cyclown
+    status: unverified
+  - rank: F
+    lead: Nature
+    partner: Demon
+    result: odd-cob
+    status: unverified
+  - rank: F
+    lead: Nature
+    partner: Undead
+    result: bad-apple
+    status: unverified
+  - rank: F
+    lead: Beast
+    partner: Slime
+    result: boppin-badger
+    status: unverified
+  - rank: F
+    lead: Beast
+    partner: Dragon
+    result: vampire-cat
+    status: unverified
+  - rank: F
+    lead: Beast
+    partner: Nature
+    result: dread-squirrel
+    status: unverified
+  - rank: F
+    lead: Beast
+    partner: Material
+    result: ruff-ruffian
+    status: unverified
+  - rank: F
+    lead: Beast
+    partner: Demon
+    result: robber-rabbit
+    status: unverified
+  - rank: F
+    lead: Beast
+    partner: Undead
+    result: guaardvark
+    status: unverified
+  - rank: F
+    lead: Material
+    partner: Slime
+    result: mudraker
+    status: unverified
+  - rank: F
+    lead: Material
+    partner: Dragon
+    result: mad-moai
+    status: unverified
+  - rank: F
+    lead: Material
+    partner: Nature
+    result: pocus-poppet
+    status: unverified
+  - rank: F
+    lead: Material
+    partner: Beast
+    result: avian-android
+    status: unverified
+  - rank: F
+    lead: Material
+    partner: Demon
+    result: erazor-blade
+    status: unverified
+  - rank: F
+    lead: Material
+    partner: Undead
+    result: bongo-drongo
+    status: unverified
+  - rank: F
+    lead: Demon
+    partner: Slime
+    result: little-devil
+    status: unverified
+  - rank: F
+    lead: Demon
+    partner: Dragon
+    result: merman
+    status: unverified
+  - rank: F
+    lead: Demon
+    partner: Nature
+    result: see-urchin
+    status: unverified
+  - rank: F
+    lead: Demon
+    partner: Beast
+    result: succubat
+    status: unverified
+  - rank: F
+    lead: Demon
+    partner: Material
+    result: cannonbrawler
+    status: unverified
+  - rank: F
+    lead: Demon
+    partner: Undead
+    result: hangelabra
+    status: unverified
+  - rank: F
+    lead: Undead
+    partner: Slime
+    result: scarfish
+    status: unverified
+  - rank: F
+    lead: Undead
+    partner: Dragon
+    result: skullrider
+    status: unverified
+  - rank: F
+    lead: Undead
+    partner: Nature
+    result: mouldfish
+    status: unverified
+  - rank: F
+    lead: Undead
+    partner: Beast
+    result: walking-corpse
+    status: unverified
+  - rank: F
+    lead: Undead
+    partner: Material
+    result: muddy-hand
+    status: unverified
+  - rank: F
+    lead: Undead
+    partner: Demon
+    result: shadow
+    status: unverified
+
+# Parents are a monster id or a family name (any monster of that family).
+recipes:
+  - result: antguzzler
+    parents:
+      - monster: fat-rat
+      - monster: toady
+    sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: avian-android
+    parents:
+      - monster: vampire-cat
+      - monster: sacksquatch
+    sources: [steam]
+    status: unverified
+  - result: bambooligan
+    parents:
+      - monster: string-fella
+      - monster: cruelcumber
+    sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: bludgerigar
+    parents:
+      - monster: mecha-mynah
+      - monster: candy-cat
+    sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: box-slime
+    parents:
+      - monster: she-slime
+      - monster: bubble-slime
+    sources: [dqmww, steam]
+    status: unverified
+  - result: cactiball
+    parents:
+      - monster: burr-baby
+      - family: Nature
+    sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: cannibox
+    parents:
+      - monster: box-slime
+      - monster: erazor-blade
+    sources: [dqmww, steam]
+    status: unverified
+  - result: capsichum
+    parents:
+      - monster: ornery-onion
+      - monster: cruelcumber
+    sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: coconut-slime
+    parents:
+      - monster: buddy-slime
+      - monster: pina-marauder
+    sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: crabid
+    parents:
+      - monster: swarmtroop
+      - monster: scorpion
+    sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: croc-a-bugle-doo
+    parents:
+      - monster: vegandragora
+      - monster: bongo-drongo
+    sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: cruelcumber
+    parents:
+      - monster: sacksquatch
+      - monster: stark-raven
+    sources: [steam]
+    status: unverified
+  - result: dancing-devil
+    parents:
+      - monster: imp
+      - family: Beast
+    sources: [meowdb, dqmww]
+    status: unverified
+  - result: dancing-devil
+    parents:
+      - monster: woebergine
+      - monster: imp
+    sources: [dqmww, steam]
+    status: unverified
+  - result: dessert-demon
+    parents:
+      - monster: imp
+      - monster: coconut-slime
+    sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: dragonthorn
+    parents:
+      - monster: pteranodon
+      - monster: burr-baby
+    sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: drohl-drone
+    parents:
+      - monster: funghoul
+      - monster: mad-mollusk
+    sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: eggsoskeleton
+    parents:
+      - monster: mecha-mynah
+      - monster: bad-egg
+    sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: erazor-blade
+    parents:
+      - monster: cumaulus
+      - monster: wax-murderer
+    sources: [steam]
+    note: The family table gives Sacksquatch or Bongo Drongo for Material + Undead.
+    status: unverified
+  - result: ethereal-serpent
+    parents:
+      - monster: flython
+      - monster: cumaulus
+    sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: feral-slime
+    parents:
+      - monster: fright-bulb
+      - monster: dragonthorn
+    sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: foo-dog
+    parents:
+      - monster: putrefido
+      - family: Material
+    sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: fromage-fray
+    parents:
+      - monster: platypunk
+      - monster: lampling
+    sources: [steam]
+    status: unverified
+  - result: funghoul
+    parents:
+      - monster: stump-chump
+      - monster: ornery-onion
+    sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: gasbagon
+    parents:
+      - monster: vegandragora
+      - family: Slime
+    sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: gold-golem
+    parents:
+      - monster: pocus-poppet
+      - monster: jargon
+    sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: goonache-goodie
+    parents:
+      - monster: shell-slime
+      - monster: fromage-fray
+    sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: greater-dracky
+    parents:
+      - monster: dracky
+      - monster: gasbagon
+    sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: hellbound-horror
+    parents:
+      - monster: will-o-the-whips
+      - monster: bodkin-archer
+    sources: [dqmww, steam]
+    status: unverified
+  - result: hunter-mech
+    parents:
+      - monster: restless-armour
+      - monster: avian-android
+    sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: icy-dragling
+    parents:
+      - monster: small-fry
+      - monster: healslime
+    sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: imp
+    parents:
+      - monster: gremlin
+      - monster: fromage-fray
+    sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: jargon
+    parents:
+      - monster: komodo
+      - family: Material
+    sources: [meowdb]
+    status: unverified
+  - result: jingle-bug
+    parents:
+      - monster: eggsoskeleton
+      - family: Nature
+    sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: killer-gila
+    parents:
+      - monster: komodo
+      - monster: bubble-slime
+    sources: [meowdb]
+    status: unverified
+  - result: king-kelp
+    parents:
+      - monster: fromage-fray
+      - family: Undead
+    sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: kingfuschia
+    parents:
+      - monster: vegandragora
+      - monster: bludgerigar
+    sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: leafy-larrikin
+    parents:
+      - monster: ornery-onion
+      - monster: skipper
+    sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: marislime
+    parents:
+      - monster: scallop-slime
+      - monster: toady
+    sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: midnight-horknight
+    parents:
+      - monster: gloomy-grublin
+      - family: Nature
+    sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: mitey-oak
+    parents:
+      - monster: stump-chump
+      - monster: bad-egg
+    sources: [square-enix, dqmww]
+    status: unverified
+  - result: molten-slime
+    parents:
+      - monster: bubble-slime
+      - family: Dragon
+    sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: monolog
+    parents:
+      - monster: stump-chump
+      - monster: lunatick
+    sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: mummy-boy
+    parents:
+      - monster: skeleton
+      - monster: string-fella
+    sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: napir
+    parents:
+      - monster: will-o-the-whips
+      - monster: tongue-fu-fighter
+    sources: [dqmww, steam]
+    status: unverified
+  - result: orc
+    parents:
+      - monster: sham-hatwitch
+      - family: Demon
+    sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: powie-yowie
+    parents:
+      - monster: platypunk
+      - family: Demon
+    sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: prestidigitator
+    parents:
+      - monster: lump-wizard
+      - monster: ghost
+    sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: restless-armour
+    parents:
+      - monster: bambooligan
+      - family: Undead
+    sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: sham-hatwitch
+    parents:
+      - monster: candy-cat
+      - monster: ghost
+    sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: she-slime
+    parents:
+      - monster: slime
+      - monster: firespirit
+    sources: [dqmww, steam]
+    status: unverified
+  - result: sky-fry
+    parents:
+      - monster: cumaulus
+      - monster: ghost
+    sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: smog
+    parents:
+      - monster: will-o-the-whips
+      - monster: cumaulus
+    sources: [dqmww, steam]
+    status: unverified
+  - result: snail-slime
+    parents:
+      - monster: scallop-slime
+      - family: Material
+    sources: [steam]
+    status: unverified
+  - result: soft-serve-spook
+    parents:
+      - monster: goonache-goodie
+      - monster: ghost
+    sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: string-fella
+    parents:
+      - monster: dracky
+      - monster: cumaulus
+    sources: [steam]
+    status: unverified
+  - result: suckling-ocker
+    parents:
+      - monster: khalamari-kid
+      - monster: winky
+    sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: tongue-fu-fighter
+    parents:
+      - monster: antguzzler
+      - monster: lips
+    sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: urnexpected
+    parents:
+      - monster: eggsoskeleton
+      - monster: dancing-devil
+    sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: vampire-cat
+    parents:
+      - monster: damselfly
+      - monster: candy-cat
+    sources: [steam]
+    status: unverified
+  - result: warhog
+    parents:
+      - monster: foo-dog
+      - monster: gloomy-grublin
+    sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: weartiger
+    parents:
+      - monster: great-sabrecub
+      - monster: mummy-boy
+    sources: [meowdb]
+    status: unverified
+  - result: weartiger
+    parents:
+      - monster: mummy-boy
+      - family: Beast
+    sources: [dqmww, steam]
+    status: unverified
+  - result: will-o-the-whips
+    parents:
+      - monster: firespirit
+      - monster: crested-viper
+    sources: [dqmww, steam]
+    status: unverified
+  - result: wing-slime
+    parents:
+      - monster: healslime
+      - monster: bludgerigar
+    sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: woebergine
+    parents:
+      - monster: ornery-onion
+      - monster: string-fella
+    sources: [meowdb, dqmww, steam]
+    status: unverified
