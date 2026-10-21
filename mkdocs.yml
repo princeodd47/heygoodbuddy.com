@@ -32,6 +32,7 @@ plugins:
   - macros:
       include_yaml:
         ffr: data/final-fantasy-resonance/visions.yaml
+        dqm: data/dragon-quest-monsters-the-withered-world/monsters.yaml
 
 markdown_extensions:
   - admonition
@@ -56,6 +57,10 @@ nav:
           - games/final-fantasy-resonance/index.md
           - Visions: games/final-fantasy-resonance/visions.md
           - Tablet Shards: games/final-fantasy-resonance/tablet-shards.md
+      - Dragon Quest Monsters The Withered World:
+          - games/dragon-quest-monsters-the-withered-world/index.md
+          - Starting Monsters: games/dragon-quest-monsters-the-withered-world/starting-monsters.md
+          - Monsters: games/dragon-quest-monsters-the-withered-world/monsters.md
   - Articles:
       - blog/index.md
   - Tags: tags.md

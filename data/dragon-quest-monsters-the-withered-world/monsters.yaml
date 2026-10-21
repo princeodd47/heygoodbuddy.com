@@ -1,0 +1,49 @@
+monsters:
+  - id: buddy-slime
+    name: Buddy Slime
+    family: Slime
+    rank: G
+    where: Starter (Nera)
+    status: unverified
+  - id: fromage-fray
+    name: Fromage Fray
+    family: Material
+    rank: G
+    where: Starter (Nera)
+    status: unverified
+  - id: imp
+    name: Imp
+    family: Demon
+    rank: G
+    where: Starter (Bianca)
+    status: unverified
+  - id: sham-hatwitch
+    name: Sham Hatwitch
+    family: Beast
+    rank: G
+    where: Starter (Nera)
+    status: unverified
+  - id: small-fry
+    name: Small Fry
+    family: Dragon
+    rank: G
+    where: Starter (Nera)
+    status: unverified
+  - id: vegandragora
+    name: Vegandragora
+    family: Dragon
+    rank: G
+    where: Starter (Bianca)
+    status: unverified
+  - id: wax-murderer
+    name: Wax Murderer
+    family: Undead
+    rank: G
+    where: Starter (Bianca)
+    status: unverified
+  - id: woebergine
+    name: Woebergine
+    family: Nature
+    rank: G
+    where: Starter (Bianca)
+    status: unverified

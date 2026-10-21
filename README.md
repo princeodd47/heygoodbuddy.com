@@ -14,6 +14,9 @@ python3 -m venv .venv
 
 Then open http://127.0.0.1:8000. The page reloads as you edit.
 
+To check the site builds without serving it, run `.venv/bin/zensical build`.
+It should end with "No issues found".
+
 ## Layout
 
 ```
