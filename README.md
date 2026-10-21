@@ -12,6 +12,14 @@ python3 -m venv .venv
 .venv/bin/zensical serve
 ```
 
+On Windows (PowerShell):
+
+```powershell
+python -m venv .venv
+.venv\Scripts\pip install -r requirements.txt
+.venv\Scripts\zensical serve
+```
+
 Then open http://127.0.0.1:8000. The page reloads as you edit.
 
 To check the site builds without serving it, run `.venv/bin/zensical build`.
