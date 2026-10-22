@@ -36,6 +36,7 @@ plugins:
         dqm_synth: data/dragon-quest-monsters-the-withered-world/synthesis.yaml
         dqm_talents: data/dragon-quest-monsters-the-withered-world/talents.yaml
         dqm_abilities: data/dragon-quest-monsters-the-withered-world/abilities.yaml
+        dqm_items: data/dragon-quest-monsters-the-withered-world/items.yaml
 
 extra_css:
   - stylesheets/extra.css
@@ -77,6 +78,7 @@ nav:
           - Synthesis: games/dragon-quest-monsters-the-withered-world/synthesis.md
           - Recipe Builder: games/dragon-quest-monsters-the-withered-world/recipe-builder.md
           - Talents: games/dragon-quest-monsters-the-withered-world/talents.md
+          - Items: games/dragon-quest-monsters-the-withered-world/items.md
   - Articles:
       - blog/index.md
   - Tags: tags.md
