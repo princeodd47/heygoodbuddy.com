@@ -11,11 +11,14 @@ sources:
   square-enix:
     name: Square Enix
     url: https://www.gematsu.com/2026/07/dragon-quest-monsters-the-withered-world-details-battles-synthesis-and-new-monsters
+  soshage:
+    name: Soshage (Japanese)
+    url: https://soshage.com/dqm4/
 
 families: [Slime, Dragon, Nature, Beast, Material, Demon, Undead]
 
 # Lead family + any monster of the partner family. The child is from the
-# lead family. Source: MeowDB.
+# lead family. Source: MeowDB, unless an entry lists its own sources.
 family_recipes:
   - rank: G
     lead: Slime
@@ -281,6 +284,8 @@ family_recipes:
     lead: Dragon
     partner: Demon
     result: flython
+    sources: [meowdb, soshage]
+    note: One parent has to be rank F.
     status: unverified
   - rank: F
     lead: Dragon
@@ -566,6 +571,12 @@ recipes:
       - monster: fright-bulb
       - monster: dragonthorn
     sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: flython
+    parents:
+      - monster: crested-viper
+      - monster: gremlin
+    sources: [soshage]
     status: unverified
   - result: foo-dog
     parents:

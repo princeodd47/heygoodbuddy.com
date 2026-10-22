@@ -20,7 +20,8 @@
     add(r.result, {
       parents: [{ family: r.lead }, { family: r.partner }],
       status: r.status,
-      sources: ["meowdb"],
+      sources: r.sources || ["meowdb"],
+      note: r.note,
       family: true,
     });
   }
