@@ -1,0 +1,43 @@
+monographs:
+  - id: hunters-monograph
+    name: Hunter's Monograph
+    enemies: Beasts, Avions
+    price: 18,000
+    unlock: Finish the Thextera hunt (Wolf in the Waste), then talk to Gatsly in Muthru Bazaar, Rabanastre.
+    status: unverified
+  - id: knights-monograph
+    name: Knight's Monograph
+    enemies: Giants, Insects
+    price: 19,000
+    unlock: Talk to any weapon shop owner 30 times.
+    status: unverified
+  - id: warmages-monograph
+    name: Warmage's Monograph
+    enemies: Amorphs, Undead
+    price: 20,000
+    unlock: Read any notice board 20 times.
+    status: unverified
+  - id: mages-monograph
+    name: Mage's Monograph
+    enemies: Fiends, Ichthians
+    price: 21,000
+    unlock: Talk to any magick shop owner 25 times.
+    status: unverified
+  - id: dragoons-monograph
+    name: Dragoon's Monograph
+    enemies: Dragons, Plants
+    price: 22,000
+    unlock: Read any notice board 40 times.
+    status: unverified
+  - id: scholars-monograph
+    name: Scholar's Monograph
+    enemies: Constructs
+    price: 22,000
+    unlock: Talk to any armor shop owner 15 times.
+    status: unverified
+  - id: sages-monograph
+    name: Sage's Monograph
+    enemies: Elementals
+    price: 25,000
+    unlock: Talk to any shop owner 100 times.
+    status: unverified

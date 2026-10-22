@@ -24,4 +24,12 @@ hide:
     **Genre:** JRPG<br>
     **Release Date:** December 3, 2026
 
+-   :material-shield-sword:{ .lg .middle } __[Final Fantasy XII: The Zodiac Age](final-fantasy-xii-the-zodiac-age/index.md)__
+
+    ---
+
+    **System:** Nintendo Switch<br>
+    **Genre:** JRPG<br>
+    **Release Date:** April 30, 2019
+
 </div>
