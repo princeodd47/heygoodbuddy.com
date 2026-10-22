@@ -1,5 +1,26 @@
 /* Site-wide tweaks to the theme. */
 
+/* Use more of a wide screen (theme default is 61rem). */
+.md-grid {
+  max-width: 90rem;
+}
+
+/* Link cards: one fixed width on every page, at most 4 per row (fewer when the
+   screen is narrower). Every card matches the tallest one. */
+.md-typeset .grid.cards {
+  --card-width: 15rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, var(--card-width)), var(--card-width)));
+  grid-auto-rows: 1fr;
+  max-width: calc(4 * var(--card-width) + 3 * 0.4rem);
+}
+
+/* Inside a game, show only that game's section in the left navigation. (The
+   Games index hides its navigation entirely; its cards list the games.) */
+.md-nav--primary [data-md-level="1"] > .md-nav__list > .md-nav__item--section:has(~ .md-nav__item--section.md-nav__item--active),
+.md-nav--primary [data-md-level="1"] > .md-nav__list > .md-nav__item--section.md-nav__item--active ~ .md-nav__item--section {
+  display: none;
+}
+
 /* Narrower left navigation on desktop (theme default is 12.1rem). */
 @media screen and (min-width: 76.25em) {
   .md-sidebar--primary {
