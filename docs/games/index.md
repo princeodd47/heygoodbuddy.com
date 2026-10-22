@@ -1,21 +1,23 @@
+---
+hide:
+  - navigation
+  - toc
+---
+
 # Games
 
 <div class="grid cards" markdown>
 
--   :material-sword:{ .lg .middle } __Final Fantasy Resonance__
+-   :material-sword:{ .lg .middle } __[Final Fantasy Resonance](final-fantasy-resonance/index.md)__
 
     ---
 
     Visions, Mastery, Awakening and Tablet Shards.
 
-    [:octicons-arrow-right-24: Open guide](final-fantasy-resonance/index.md)
-
--   :material-paw:{ .lg .middle } __Dragon Quest Monsters: The Withered World__
+-   :material-paw:{ .lg .middle } __[Dragon Quest Monsters: The Withered World](dragon-quest-monsters-the-withered-world/index.md)__
 
     ---
 
     Starting monsters, monster list and synthesis recipes.
-
-    [:octicons-arrow-right-24: Open guide](dragon-quest-monsters-the-withered-world/index.md)
 
 </div>

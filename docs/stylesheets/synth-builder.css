@@ -1,11 +1,6 @@
 /* Recipe builder on the Withered World Synthesis page. The chart is a nested
    list drawn upside down: each item shows its tile with its parents above,
    and the connector lines run along the bottom of each parent. */
-/* Let the page holding the builder use more of a wide screen. */
-body:has(#synth-builder) .md-grid {
-  max-width: 90rem;
-}
-
 #synth-builder {
   --sb-line: var(--md-default-fg-color--lighter);
   --sb-gap: 1.2rem;

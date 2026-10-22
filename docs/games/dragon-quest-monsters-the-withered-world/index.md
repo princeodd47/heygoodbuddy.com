@@ -1,4 +1,6 @@
 ---
+hide:
+  - toc
 tags:
   - Dragon Quest Monsters The Withered World
 ---
@@ -10,36 +12,28 @@ Notes from the Switch demo. The full game launches **December 3, 2026**. Up to
 
 <div class="grid cards" markdown>
 
--   :material-paw:{ .lg .middle } __Starting Monsters__
+-   :material-paw:{ .lg .middle } __[Starting Monsters](starting-monsters.md)__
 
     ---
 
     Which starter you get from each heroine and quiz answer.
 
-    [:octicons-arrow-right-24: Read](starting-monsters.md)
-
--   :material-format-list-bulleted:{ .lg .middle } __Monsters__
+-   :material-format-list-bulleted:{ .lg .middle } __[Monsters](monsters.md)__
 
     ---
 
     Family, rank and where to find each monster.
 
-    [:octicons-arrow-right-24: Read](monsters.md)
-
--   :material-flask:{ .lg .middle } __Synthesis__
+-   :material-flask:{ .lg .middle } __[Synthesis](synthesis.md)__
 
     ---
 
     Which parents make which monster.
 
-    [:octicons-arrow-right-24: Read](synthesis.md)
-
--   :material-family-tree:{ .lg .middle } __Recipe Builder__
+-   :material-family-tree:{ .lg .middle } __[Recipe Builder](recipe-builder.md)__
 
     ---
 
     Pick a monster and chart its whole synthesis chain.
-
-    [:octicons-arrow-right-24: Open](recipe-builder.md)
 
 </div>
