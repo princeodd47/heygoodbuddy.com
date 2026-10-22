@@ -12,12 +12,16 @@ hide:
 
     ---
 
-    Visions, Mastery, Awakening and Tablet Shards.
+    **System:** PS5<br>
+    **Genre:** JRPG<br>
+    **Release Date:** October 22, 2026
 
 -   :material-paw:{ .lg .middle } __[Dragon Quest Monsters: The Withered World](dragon-quest-monsters-the-withered-world/index.md)__
 
     ---
 
-    Starting monsters, monster list and synthesis recipes.
+    **System:** Nintendo Switch<br>
+    **Genre:** JRPG<br>
+    **Release Date:** December 3, 2026
 
 </div>
