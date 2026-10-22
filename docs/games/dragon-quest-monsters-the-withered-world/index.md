@@ -34,4 +34,12 @@ Notes from the Switch demo. The full game launches **December 3, 2026**. Up to
 
     [:octicons-arrow-right-24: Read](synthesis.md)
 
+-   :material-family-tree:{ .lg .middle } __Recipe Builder__
+
+    ---
+
+    Pick a monster and chart its whole synthesis chain.
+
+    [:octicons-arrow-right-24: Open](recipe-builder.md)
+
 </div>

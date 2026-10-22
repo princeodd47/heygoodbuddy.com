@@ -1,0 +1,218 @@
+/* Recipe builder on the Withered World Synthesis page. The chart is a nested
+   list drawn upside down: each item shows its tile with its parents above,
+   and the connector lines run along the bottom of each parent. */
+/* Let the page holding the builder use more of a wide screen. */
+body:has(#synth-builder) .md-grid {
+  max-width: 90rem;
+}
+
+#synth-builder {
+  --sb-line: var(--md-default-fg-color--lighter);
+  --sb-gap: 1.2rem;
+}
+
+#synth-builder input {
+  width: 100%;
+  max-width: 24rem;
+  padding: 0.4em 0.6em;
+  font: inherit;
+  color: var(--md-default-fg-color);
+  background: var(--md-default-bg-color);
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 0.2rem;
+}
+
+#synth-builder .sb-card {
+  max-width: 36rem;
+  margin-top: 1em;
+  padding: 0.8em 1em;
+  background: var(--md-code-bg-color);
+  border: 1px solid var(--sb-line);
+  border-left: 6px solid var(--sb-fam);
+  border-radius: 0.3rem;
+}
+
+#synth-builder .sb-card-name {
+  font-size: 1.4em;
+  font-weight: 700;
+}
+
+#synth-builder .sb-card-facts,
+#synth-builder .sb-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4em;
+  margin-top: 0.5em;
+}
+
+#synth-builder .sb-chip {
+  padding: 0.1em 0.6em;
+  font-size: 0.75em;
+  background: var(--md-default-bg-color);
+  border: 1px solid var(--sb-line);
+  border-radius: 1em;
+}
+
+#synth-builder .sb-card-facts .sb-chip:first-child {
+  color: #fff;
+  background: var(--sb-fam);
+  border-color: var(--sb-fam);
+}
+
+#synth-builder .sb-card-label {
+  margin-top: 0.8em;
+  font-size: 0.75em;
+  font-weight: 700;
+  color: var(--md-default-fg-color--light);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+#synth-builder .sb-card-empty {
+  margin: 0.2em 0 0;
+  font-size: 0.8em;
+  font-style: italic;
+  color: var(--md-default-fg-color--light);
+}
+
+#synth-builder .sb-chart {
+  margin-top: 1em;
+  padding-bottom: 0.5em;
+  overflow-x: auto;
+}
+
+#synth-builder ul,
+#synth-builder li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#synth-builder .sb-tree {
+  display: flex;
+  justify-content: center;
+  width: max-content;
+  min-width: 100%;
+}
+
+#synth-builder li {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+#synth-builder li ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-bottom: var(--sb-gap);
+}
+
+/* Line from the parents' bar down to the child. */
+#synth-builder li ul::before {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  height: var(--sb-gap);
+  border-left: 1px solid var(--sb-line);
+  content: "";
+}
+
+/* Each parent draws half the bar on each side, plus a line down to it. */
+#synth-builder li li {
+  padding: 0 0.15rem var(--sb-gap);
+}
+
+#synth-builder li li::before,
+#synth-builder li li::after {
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  height: var(--sb-gap);
+  border-bottom: 1px solid var(--sb-line);
+  content: "";
+}
+
+#synth-builder li li::before {
+  right: 50%;
+}
+
+#synth-builder li li::after {
+  left: 50%;
+  border-left: 1px solid var(--sb-line);
+}
+
+#synth-builder li li:first-child::before,
+#synth-builder li li:last-child::after {
+  border-bottom: 0;
+}
+
+#synth-builder li li:last-child::before {
+  border-right: 1px solid var(--sb-line);
+}
+
+#synth-builder li li:last-child::after {
+  border-left: 0;
+}
+
+#synth-builder .sb-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15em;
+  width: 5.4rem;
+  padding: 0.3em 0.25em;
+  font-size: 0.65rem;
+  line-height: 1.25;
+  text-align: center;
+  background: var(--md-default-bg-color);
+  border: 1px solid var(--sb-line);
+  border-top: 4px solid var(--sb-fam);
+  border-radius: 0.3rem;
+}
+
+#synth-builder .sb-target {
+  width: 8rem;
+  font-size: 0.8rem;
+  box-shadow: 0 0 0 2px var(--md-accent-fg-color);
+}
+
+#synth-builder .sb-any {
+  color: var(--md-default-fg-color--light);
+  border-style: dashed;
+  border-top-style: solid;
+}
+
+#synth-builder .sb-name {
+  font-weight: 700;
+}
+
+#synth-builder .sb-meta {
+  color: var(--md-default-fg-color--light);
+}
+
+#synth-builder .sb-tile button {
+  padding: 0;
+  font: inherit;
+  color: var(--md-typeset-a-color);
+  cursor: pointer;
+  background: none;
+  border: 0;
+}
+
+#synth-builder .sb-open[aria-expanded="false"]::after {
+  content: "\00a0+";
+}
+
+#synth-builder .sb-open[aria-expanded="true"]::after {
+  content: "\00a0−";
+}
+
+#synth-builder .sb-fam-slime { --sb-fam: #1e88e5; }
+#synth-builder .sb-fam-dragon { --sb-fam: #e53935; }
+#synth-builder .sb-fam-nature { --sb-fam: #43a047; }
+#synth-builder .sb-fam-beast { --sb-fam: #fb8c00; }
+#synth-builder .sb-fam-material { --sb-fam: #8d6e63; }
+#synth-builder .sb-fam-demon { --sb-fam: #8e24aa; }
+#synth-builder .sb-fam-undead { --sb-fam: #00897b; }

@@ -12,6 +12,8 @@ tags:
 Recipes reported online for the demo. **Unverified** means it hasn't been
 tested here yet. Parents need to be level 10.
 
+To chart a whole chain, use the [Recipe Builder](recipe-builder.md).
+
 {% set names = {} -%}
 {% for m in dqm.monsters %}{% set _ = names.update({m.id: m.name}) %}{% endfor -%}
 {% macro mon(id) -%}
