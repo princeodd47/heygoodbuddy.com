@@ -27,3 +27,9 @@
     width: 10rem;
   }
 }
+
+/* Pages keep their tags (the Tags page uses them), but don't show the tag
+   chips at the bottom of each page. */
+.md-content .md-typeset nav.md-tags {
+  display: none !important;
+}

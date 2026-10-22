@@ -34,6 +34,8 @@ plugins:
         ffr: data/final-fantasy-resonance/visions.yaml
         dqm: data/dragon-quest-monsters-the-withered-world/monsters.yaml
         dqm_synth: data/dragon-quest-monsters-the-withered-world/synthesis.yaml
+        dqm_talents: data/dragon-quest-monsters-the-withered-world/talents.yaml
+        dqm_abilities: data/dragon-quest-monsters-the-withered-world/abilities.yaml
 
 extra_css:
   - stylesheets/extra.css
@@ -43,6 +45,7 @@ extra_css:
 extra_javascript:
   - javascripts/synth-builder.js
   - javascripts/dqm-monsters.js
+  - javascripts/dqm-talents.js
 
 markdown_extensions:
   - admonition
@@ -73,6 +76,7 @@ nav:
           - Monsters: games/dragon-quest-monsters-the-withered-world/monsters.md
           - Synthesis: games/dragon-quest-monsters-the-withered-world/synthesis.md
           - Recipe Builder: games/dragon-quest-monsters-the-withered-world/recipe-builder.md
+          - Talents: games/dragon-quest-monsters-the-withered-world/talents.md
   - Articles:
       - blog/index.md
   - Tags: tags.md
