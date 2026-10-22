@@ -37,10 +37,12 @@ plugins:
 
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/dqm.css
   - stylesheets/synth-builder.css
 
 extra_javascript:
   - javascripts/synth-builder.js
+  - javascripts/dqm-monsters.js
 
 markdown_extensions:
   - admonition
