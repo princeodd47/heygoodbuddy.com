@@ -209,7 +209,7 @@ family_recipes:
     lead: Undead
     partner: Dragon
     result: firespirit
-    status: unverified
+    status: verified
   - rank: G
     lead: Undead
     partner: Nature

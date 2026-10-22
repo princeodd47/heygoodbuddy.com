@@ -36,7 +36,7 @@ To chart a whole chain, use the [Recipe Builder](recipe-builder.md).
 ## Family recipes
 
 Pick the row for the family you want, then the column for the other parent's
-family. All unverified. Source: [MeowDB]({{ dqm_synth.sources.meowdb.url }}).
+family. ✓ marks a verified recipe. Source: [MeowDB]({{ dqm_synth.sources.meowdb.url }}).
 
 {% for rank in ["G", "F"] %}
 === "Rank {{ rank }}"
@@ -44,6 +44,6 @@ family. All unverified. Source: [MeowDB]({{ dqm_synth.sources.meowdb.url }}).
     | Want ↓ / With → | {{ dqm_synth.families | join(" | ") }} |
     |---|{% for f in dqm_synth.families %}---|{% endfor %}
     {% for lead in dqm_synth.families -%}
-    | **{{ lead }}** |{% for partner in dqm_synth.families %} {% for r in dqm_synth.family_recipes if r.rank == rank and r.lead == lead and r.partner == partner %}{{ mon(r.result) }}{% else %}—{% endfor %} |{% endfor %}
+    | **{{ lead }}** |{% for partner in dqm_synth.families %} {% for r in dqm_synth.family_recipes if r.rank == rank and r.lead == lead and r.partner == partner %}{{ mon(r.result) }}{{ " ✓" if r.status == "verified" }}{% else %}—{% endfor %} |{% endfor %}
     {% endfor %}
 {% endfor %}
