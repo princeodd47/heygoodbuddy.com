@@ -42,4 +42,10 @@ Notes from the Switch demo. The full game launches **December 3, 2026**. Up to
 
     Every Talent's skill tree, and which monsters have it.
 
+-   :material-bag-personal:{ .lg .middle } __[Items](items.md)__
+
+    ---
+
+    What each item does and where to get it.
+
 </div>

@@ -1,0 +1,47 @@
+items:
+  - id: smoked-sirloin
+    name: Smoked Sirloin
+    type: Meat
+    description: Raises your chance to scout a monster.
+    where: Wrangler's Bundle (x5) · Hearty Meat Set (x5)
+    status: unverified
+  - id: monster-munchies
+    name: Monster Munchies
+    type: Meat
+    description: Scouting snack that works across many families.
+    where: Hearty Meat Set (x5)
+    status: unverified
+  - id: meaty-treat
+    name: Meaty Treat
+    type: Meat
+    description: Scouting meat.
+    where: Hearty Meat Set (x5)
+    status: unverified
+  - id: scouty-snack
+    name: Scouty Snack
+    type: Scouting
+    description: Thrown at monsters inside a Scout Run enclosure.
+    where: Given at each Scout Run
+    status: unverified
+  - id: bonus-ball
+    name: Bonus Ball
+    type: Special
+    description: "Reports disagree: 1.5x EXP and gold for 10 battles, or an extra scout roll."
+    where: Wrangler's Bundle (x1)
+    status: unverified
+  - id: ring-of-impulse
+    name: Ring of Impulse
+    type: Accessory
+    description: Reportedly raises scouting chance further.
+    where: Wrangler's Bundle (x1)
+    status: unverified
+  - id: maximising-seed
+    name: Maximising Seed
+    type: Seed
+    description: Changes a single ally to L size.
+    status: unverified
+  - id: minimizing-seed
+    name: Minimizing Seed
+    type: Seed
+    description: Changes a single ally to S size.
+    status: unverified
