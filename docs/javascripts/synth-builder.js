@@ -69,7 +69,7 @@
 
   function familyTile(family) {
     const li = el("li");
-    const tile = el("div", "sb-tile sb-any sb-fam-" + family.toLowerCase());
+    const tile = el("div", "sb-tile sb-any dqm-fam-" + family.toLowerCase());
     tile.append(el("span", "sb-name", "Any " + family));
     li.append(tile);
     return li;
@@ -83,7 +83,7 @@
     const looped = chain.includes(id);
     const s = nodeState(path, id, chain.length);
     const li = el("li");
-    const tile = el("div", "sb-tile sb-fam-" + m.family.toLowerCase());
+    const tile = el("div", "sb-tile dqm-fam-" + m.family.toLowerCase());
     if (!chain.length) tile.classList.add("sb-target");
 
     if (known.length && !looped) {
@@ -132,7 +132,7 @@
   // `skills` list on the monster in monsters.yaml.
   function card(id) {
     const m = monsters[id];
-    const c = el("section", "sb-card sb-fam-" + m.family.toLowerCase());
+    const c = el("section", "sb-card dqm-fam-" + m.family.toLowerCase());
     const name = el("a", "sb-card-name", m.name);
     name.href = "../monsters/#" + id;
     c.append(name);

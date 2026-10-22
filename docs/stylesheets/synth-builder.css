@@ -28,7 +28,7 @@ body:has(#synth-builder) .md-grid {
   padding: 0.8em 1em;
   background: var(--md-code-bg-color);
   border: 1px solid var(--sb-line);
-  border-left: 6px solid var(--sb-fam);
+  border-left: 6px solid var(--dqm-fam);
   border-radius: 0.3rem;
 }
 
@@ -55,8 +55,8 @@ body:has(#synth-builder) .md-grid {
 
 #synth-builder .sb-card-facts .sb-chip:first-child {
   color: #fff;
-  background: var(--sb-fam);
-  border-color: var(--sb-fam);
+  background: var(--dqm-fam);
+  border-color: var(--dqm-fam);
 }
 
 #synth-builder .sb-card-label {
@@ -168,7 +168,7 @@ body:has(#synth-builder) .md-grid {
   text-align: center;
   background: var(--md-default-bg-color);
   border: 1px solid var(--sb-line);
-  border-top: 4px solid var(--sb-fam);
+  border-top: 4px solid var(--dqm-fam);
   border-radius: 0.3rem;
 }
 
@@ -209,10 +209,3 @@ body:has(#synth-builder) .md-grid {
   content: "\00a0−";
 }
 
-#synth-builder .sb-fam-slime { --sb-fam: #1e88e5; }
-#synth-builder .sb-fam-dragon { --sb-fam: #e53935; }
-#synth-builder .sb-fam-nature { --sb-fam: #43a047; }
-#synth-builder .sb-fam-beast { --sb-fam: #fb8c00; }
-#synth-builder .sb-fam-material { --sb-fam: #8d6e63; }
-#synth-builder .sb-fam-demon { --sb-fam: #8e24aa; }
-#synth-builder .sb-fam-undead { --sb-fam: #00897b; }

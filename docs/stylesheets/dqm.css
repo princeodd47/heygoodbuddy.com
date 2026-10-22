@@ -1,0 +1,139 @@
+/* Dragon Quest Monsters: family colors (shared with the Recipe Builder) and
+   the Monsters page grid. */
+.dqm-fam-slime { --dqm-fam: #1e88e5; }
+.dqm-fam-dragon { --dqm-fam: #e53935; }
+.dqm-fam-nature { --dqm-fam: #43a047; }
+.dqm-fam-beast { --dqm-fam: #fb8c00; }
+.dqm-fam-material { --dqm-fam: #8d6e63; }
+.dqm-fam-demon { --dqm-fam: #8e24aa; }
+.dqm-fam-undead { --dqm-fam: #00897b; }
+
+/* Family heading with a color bar and a count. */
+.md-typeset h3.dqm-fam-heading {
+  padding-left: 0.5em;
+  border-left: 5px solid var(--dqm-fam);
+}
+
+.md-typeset .dqm-count {
+  font-size: 0.75em;
+  font-weight: 400;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .dqm-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(8.5rem, 1fr));
+  gap: 0.5rem;
+  margin: 0.8em 0 1.5em;
+}
+
+.md-typeset .dqm-tile {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15em;
+  padding: 0.45em 0.6em;
+  font-size: 0.75rem;
+  line-height: 1.3;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-top: 4px solid var(--dqm-fam);
+  border-radius: 0.3rem;
+  scroll-margin-top: 5rem;
+}
+
+/* Arriving from a link on the Synthesis page. */
+.md-typeset .dqm-tile:target {
+  box-shadow: 0 0 0 2px var(--md-accent-fg-color);
+}
+
+.md-typeset .dqm-tile .dqm-name {
+  font-weight: 700;
+}
+
+.md-typeset .dqm-tile .dqm-where {
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .dqm-tile a {
+  text-decoration: none;
+}
+
+.md-typeset .dqm-tile a:hover {
+  text-decoration: underline;
+}
+
+/* Rank and family toggles. Filled = shown, outlined = hidden. */
+.md-typeset .dqm-grid[hidden],
+.md-typeset h2[hidden],
+.md-typeset h3[hidden] {
+  display: none;
+}
+
+#dqm-filters {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  margin: 1em 0 1.5em;
+}
+
+.dqm-filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4em;
+}
+
+.dqm-filter-label {
+  min-width: 4.5rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--md-default-fg-color--light);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.dqm-toggle {
+  padding: 0.2em 0.8em;
+  font: inherit;
+  font-size: 0.7rem;
+  color: var(--md-default-fg-color--light);
+  cursor: pointer;
+  background: none;
+  border: 1.5px solid var(--dqm-fam);
+  border-radius: 1em;
+  opacity: 0.6;
+}
+
+.dqm-toggle[aria-pressed="true"] {
+  color: #fff;
+  background: var(--dqm-fam);
+  opacity: 1;
+}
+
+.dqm-toggle-rank {
+  --dqm-fam: var(--md-accent-fg-color);
+}
+
+.dqm-toggle-rank[aria-pressed="true"] {
+  color: var(--md-accent-bg-color);
+}
+
+.dqm-toggle:hover,
+.dqm-toggle:focus-visible {
+  opacity: 1;
+}
+
+.dqm-bulk {
+  border-style: dashed;
+  border-color: var(--md-default-fg-color--lighter);
+  opacity: 1;
+}
+
+.dqm-empty {
+  margin: 0;
+  font-style: italic;
+  color: var(--md-default-fg-color--light);
+}
+
+.dqm-empty[hidden] {
+  display: none;
+}
