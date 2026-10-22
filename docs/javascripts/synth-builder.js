@@ -57,8 +57,13 @@
   let target = null;
   let nodes = new Map();
 
+  // Generations of parents shown before you start clicking. Deeper parents
+  // start closed but can still be opened.
+  const DEFAULT_DEPTH = 3;
+
   function nodeState(path, id, depth) {
-    if (!nodes.has(path)) nodes.set(path, { open: depth === 0 || hasSpecial(id), route: 0 });
+    const open = depth === 0 || (depth < DEFAULT_DEPTH && hasSpecial(id));
+    if (!nodes.has(path)) nodes.set(path, { open, route: 0 });
     return nodes.get(path);
   }
 
