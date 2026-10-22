@@ -285,7 +285,6 @@ family_recipes:
     partner: Demon
     result: flython
     sources: [meowdb, soshage]
-    note: One parent has to be rank F.
     status: unverified
   - rank: F
     lead: Dragon
@@ -577,7 +576,7 @@ recipes:
       - monster: crested-viper
       - monster: gremlin
     sources: [soshage]
-    status: unverified
+    status: verified
   - result: foo-dog
     parents:
       - monster: putrefido
