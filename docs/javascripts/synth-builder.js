@@ -22,6 +22,7 @@
       status: r.status,
       sources: r.sources || ["meowdb"],
       note: r.note,
+      parent_rank: r.rank,
       family: true,
     });
   }
@@ -114,6 +115,10 @@
         tile.append(next);
       } else if (route.status === "verified") {
         tile.append(el("span", "sb-meta", "Verified ✓"));
+      }
+      // Rank G is the lowest, so only higher requirements are worth showing.
+      if (route.parent_rank && route.parent_rank !== "G") {
+        tile.append(el("span", "sb-meta", `Needs a rank ${route.parent_rank} parent`));
       }
       tile.title = `${route.status}, from ${sources}`;
       if (route.note) tile.title += `. ${route.note}`;

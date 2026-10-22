@@ -19,6 +19,8 @@ families: [Slime, Dragon, Nature, Beast, Material, Demon, Undead]
 
 # Lead family + any monster of the partner family. The child is from the
 # lead family. Source: MeowDB, unless an entry lists its own sources.
+# `rank` is also the required parent rank: one parent has to be that rank
+# (Soshage lists this for all 84, and it always matches).
 family_recipes:
   - rank: G
     lead: Slime
@@ -199,7 +201,6 @@ family_recipes:
     lead: Demon
     partner: Undead
     result: lump-wizard
-    note: One parent has to be rank G.
     status: unverified
   - rank: G
     lead: Undead
@@ -444,6 +445,8 @@ family_recipes:
     status: unverified
 
 # Parents are a monster id or a family name (any monster of that family).
+# Optional `parent_rank`: one parent has to be that rank. (Soshage lists none
+# for these as of the demo.)
 recipes:
   - result: antguzzler
     parents:
@@ -453,21 +456,51 @@ recipes:
     status: unverified
   - result: avian-android
     parents:
+      - family: Material
+      - monster: kingfuschia
+    sources: [soshage]
+    status: unverified
+  - result: avian-android
+    parents:
+      - monster: damselfly
+      - monster: mecha-mynah
+    sources: [soshage]
+    status: unverified
+  - result: avian-android
+    parents:
       - monster: vampire-cat
       - monster: sacksquatch
     sources: [steam]
     status: verified
+  - result: bad-apple
+    parents:
+      - monster: mad-mollusk
+      - monster: pina-marauder
+    sources: [soshage]
+    status: unverified
   - result: bambooligan
     parents:
       - monster: string-fella
       - monster: cruelcumber
     sources: [meowdb, dqmww, steam]
     status: verified
+  - result: bantamweight
+    parents:
+      - monster: crested-viper
+      - monster: stark-raven
+    sources: [soshage]
+    status: unverified
   - result: bludgerigar
     parents:
       - monster: mecha-mynah
       - monster: candy-cat
     sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: boppin-badger
+    parents:
+      - monster: feralball
+      - monster: fright-bulb
+    sources: [soshage]
     status: unverified
   - result: box-slime
     parents:
@@ -475,11 +508,29 @@ recipes:
       - monster: bubble-slime
     sources: [dqmww, steam]
     status: unverified
+  - result: bullfinch
+    parents:
+      - family: Beast
+      - monster: bantamweight
+    sources: [soshage]
+    status: unverified
+  - result: bunicorn
+    parents:
+      - monster: fat-rat
+      - monster: nardragon
+    sources: [soshage]
+    status: unverified
   - result: cactiball
     parents:
       - monster: burr-baby
       - family: Nature
     sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: candy-cat
+    parents:
+      - monster: great-sabrecub
+      - monster: teeny-sanguini
+    sources: [soshage]
     status: unverified
   - result: cannibox
     parents:
@@ -487,11 +538,23 @@ recipes:
       - monster: erazor-blade
     sources: [dqmww, steam]
     status: unverified
+  - result: cannonbrawler
+    parents:
+      - monster: bodkin-archer
+      - monster: lampling
+    sources: [soshage]
+    status: unverified
   - result: capsichum
     parents:
       - monster: ornery-onion
       - monster: cruelcumber
     sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: cauldragon
+    parents:
+      - family: Undead
+      - monster: killer-gila
+    sources: [soshage]
     status: unverified
   - result: coconut-slime
     parents:
@@ -517,6 +580,12 @@ recipes:
       - monster: stark-raven
     sources: [steam]
     status: verified
+  - result: damselfly
+    parents:
+      - monster: vegandragora
+      - monster: wing-slime
+    sources: [soshage]
+    status: unverified
   - result: dancing-devil
     parents:
       - monster: imp
@@ -535,11 +604,35 @@ recipes:
       - monster: coconut-slime
     sources: [meowdb, dqmww, steam]
     status: unverified
+  - result: drag-racer
+    parents:
+      - monster: antguzzler
+      - monster: nardragon
+    sources: [soshage]
+    status: unverified
   - result: dragonthorn
     parents:
       - monster: pteranodon
       - monster: burr-baby
     sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: drake-slime
+    parents:
+      - family: Dragon
+      - monster: slime
+    sources: [soshage]
+    status: unverified
+  - result: drake-slime
+    parents:
+      - monster: small-fry
+      - monster: wing-slime
+    sources: [soshage]
+    status: unverified
+  - result: dread-squirrel
+    parents:
+      - family: Nature
+      - monster: funky-ferret
+    sources: [soshage]
     status: unverified
   - result: drohl-drone
     parents:
@@ -555,10 +648,15 @@ recipes:
     status: unverified
   - result: erazor-blade
     parents:
+      - family: Material
+      - monster: wax-murderer
+    sources: [soshage]
+    status: unverified
+  - result: erazor-blade
+    parents:
       - monster: cumaulus
       - monster: wax-murderer
     sources: [steam]
-    note: The family table gives Sacksquatch or Bongo Drongo for Material + Undead.
     status: unverified
   - result: ethereal-serpent
     parents:
@@ -584,6 +682,12 @@ recipes:
       - family: Material
     sources: [meowdb, dqmww, steam]
     status: unverified
+  - result: fright-bulb
+    parents:
+      - monster: buddy-slime
+      - monster: woebergine
+    sources: [soshage]
+    status: unverified
   - result: fromage-fray
     parents:
       - monster: platypunk
@@ -595,6 +699,12 @@ recipes:
       - monster: stump-chump
       - monster: ornery-onion
     sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: gasbagon
+    parents:
+      - monster: killer-gila
+      - monster: swarmtroop
+    sources: [soshage]
     status: unverified
   - result: gasbagon
     parents:
@@ -619,6 +729,36 @@ recipes:
       - monster: dracky
       - monster: gasbagon
     sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: guaardvark
+    parents:
+      - family: Beast
+      - monster: skeleton
+    sources: [soshage]
+    status: unverified
+  - result: guaardvark
+    parents:
+      - monster: funky-ferret
+      - monster: stark-raven
+    sources: [soshage]
+    status: unverified
+  - result: hammerhood
+    parents:
+      - monster: mischievous-mole
+      - monster: stump-chump
+    sources: [soshage]
+    status: unverified
+  - result: hangelabra
+    parents:
+      - family: Demon
+      - monster: lampling
+    sources: [soshage]
+    status: unverified
+  - result: hangelabra
+    parents:
+      - monster: lunatick
+      - monster: will-o-the-whips
+    sources: [soshage]
     status: unverified
   - result: hellbound-horror
     parents:
@@ -646,6 +786,12 @@ recipes:
     status: unverified
   - result: jargon
     parents:
+      - monster: gasbagon
+      - monster: komodo
+    sources: [soshage]
+    status: unverified
+  - result: jargon
+    parents:
       - monster: komodo
       - family: Material
     sources: [meowdb]
@@ -668,17 +814,47 @@ recipes:
       - family: Undead
     sources: [meowdb, dqmww, steam]
     status: unverified
+  - result: king-kelp
+    parents:
+      - monster: scarfish
+      - monster: woebergine
+    sources: [soshage]
+    status: unverified
   - result: kingfuschia
     parents:
       - monster: vegandragora
       - monster: bludgerigar
     sources: [meowdb, dqmww, steam]
     status: unverified
+  - result: lampling
+    parents:
+      - monster: lunatick
+      - monster: wax-murderer
+    sources: [soshage]
+    status: unverified
   - result: leafy-larrikin
     parents:
       - monster: ornery-onion
       - monster: skipper
     sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: lips
+    parents:
+      - monster: mad-mollusk
+      - monster: toady
+    sources: [soshage]
+    status: unverified
+  - result: little-devil
+    parents:
+      - monster: bodkin-archer
+      - monster: gremlin
+    sources: [soshage]
+    status: unverified
+  - result: lunatick
+    parents:
+      - monster: healslime
+      - monster: winky
+    sources: [soshage]
     status: unverified
   - result: marislime
     parents:
@@ -704,11 +880,41 @@ recipes:
       - family: Dragon
     sources: [meowdb, dqmww, steam]
     status: unverified
+  - result: molten-slime
+    parents:
+      - monster: bubble-slime
+      - monster: firespirit
+    sources: [soshage]
+    status: unverified
   - result: monolog
     parents:
       - monster: stump-chump
       - monster: lunatick
     sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: mottle-slime
+    parents:
+      - family: Beast
+      - monster: slime
+    sources: [soshage]
+    status: unverified
+  - result: mud-mannequin
+    parents:
+      - monster: sacksquatch
+      - monster: string-fella
+    sources: [soshage]
+    status: unverified
+  - result: muddy-hand
+    parents:
+      - family: Undead
+      - monster: sacksquatch
+    sources: [soshage]
+    status: unverified
+  - result: mudraker
+    parents:
+      - family: Undead
+      - monster: mud-mannequin
+    sources: [soshage]
     status: unverified
   - result: mummy-boy
     parents:
@@ -722,11 +928,53 @@ recipes:
       - monster: tongue-fu-fighter
     sources: [dqmww, steam]
     status: unverified
+  - result: odd-cob
+    parents:
+      - family: Undead
+      - monster: woebergine
+    sources: [soshage]
+    status: unverified
+  - result: odd-cob
+    parents:
+      - monster: capsichum
+      - monster: lunatick
+    sources: [soshage]
+    status: unverified
+  - result: onion-slime
+    parents:
+      - family: Nature
+      - monster: buddy-slime
+    sources: [soshage]
+    status: unverified
+  - result: orc
+    parents:
+      - monster: cruelcumber
+      - monster: sham-hatwitch
+    sources: [soshage]
+    status: unverified
   - result: orc
     parents:
       - monster: sham-hatwitch
       - family: Demon
     sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: platypunk
+    parents:
+      - monster: bludgerigar
+      - monster: feralball
+    sources: [soshage]
+    status: unverified
+  - result: platypup
+    parents:
+      - monster: platypunk
+      - monster: putrefido
+    sources: [soshage]
+    status: unverified
+  - result: pocus-poppet
+    parents:
+      - monster: mud-mannequin
+      - monster: swarmtroop
+    sources: [soshage]
     status: unverified
   - result: powie-yowie
     parents:
@@ -734,11 +982,29 @@ recipes:
       - family: Demon
     sources: [meowdb, dqmww, steam]
     status: unverified
+  - result: powie-yowie
+    parents:
+      - monster: snowmangler
+      - monster: teeny-sanguini
+    sources: [soshage]
+    status: unverified
   - result: prestidigitator
     parents:
       - monster: lump-wizard
       - monster: ghost
     sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: raptile
+    parents:
+      - family: Nature
+      - monster: small-fry
+    sources: [soshage]
+    status: unverified
+  - result: raptile
+    parents:
+      - monster: damselfly
+      - monster: skipper
+    sources: [soshage]
     status: unverified
   - result: restless-armour
     parents:
@@ -746,6 +1012,54 @@ recipes:
       - family: Undead
     sources: [meowdb, dqmww, steam]
     status: verified
+  - result: restless-armour
+    parents:
+      - monster: bambooligan
+      - monster: slime-knight
+    sources: [soshage]
+    status: unverified
+  - result: robber-rabbit
+    parents:
+      - family: Demon
+      - monster: bunicorn
+    sources: [soshage]
+    status: unverified
+  - result: robber-rabbit
+    parents:
+      - monster: bunicorn
+      - monster: mischievous-mole
+    sources: [soshage]
+    status: unverified
+  - result: ruff-ruffian
+    parents:
+      - monster: mischievous-mole
+      - monster: putrefido
+    sources: [soshage]
+    status: unverified
+  - result: scarfish
+    parents:
+      - monster: funghoul
+      - monster: khalamari-kid
+    sources: [soshage]
+    status: unverified
+  - result: scorpion
+    parents:
+      - monster: killer-gila
+      - monster: killerpillar
+    sources: [soshage]
+    status: unverified
+  - result: see-urchin
+    parents:
+      - family: Nature
+      - monster: lunatick
+    sources: [soshage]
+    status: unverified
+  - result: shadow
+    parents:
+      - monster: ghost
+      - monster: wax-murderer
+    sources: [soshage]
+    status: unverified
   - result: sham-hatwitch
     parents:
       - monster: candy-cat
@@ -758,17 +1072,41 @@ recipes:
       - monster: firespirit
     sources: [dqmww, steam]
     status: unverified
+  - result: shell-slime
+    parents:
+      - monster: mad-mollusk
+      - monster: scallop-slime
+    sources: [soshage]
+    status: unverified
+  - result: skipper
+    parents:
+      - monster: bunicorn
+      - monster: winky
+    sources: [soshage]
+    status: unverified
   - result: sky-fry
     parents:
       - monster: cumaulus
       - monster: ghost
     sources: [meowdb, dqmww, steam]
     status: unverified
+  - result: slime-knight
+    parents:
+      - monster: gloomy-grublin
+      - monster: slime-stack
+    sources: [soshage]
+    status: unverified
   - result: smog
     parents:
       - monster: will-o-the-whips
       - monster: cumaulus
     sources: [dqmww, steam]
+    status: unverified
+  - result: snail-slime
+    parents:
+      - monster: drohl-drone
+      - monster: shell-slime
+    sources: [soshage]
     status: unverified
   - result: snail-slime
     parents:
@@ -782,6 +1120,12 @@ recipes:
       - monster: ghost
     sources: [meowdb, dqmww, steam]
     status: unverified
+  - result: stark-raven
+    parents:
+      - monster: bludgerigar
+      - monster: skeleton
+    sources: [soshage]
+    status: unverified
   - result: string-fella
     parents:
       - monster: dracky
@@ -793,6 +1137,18 @@ recipes:
       - monster: khalamari-kid
       - monster: winky
     sources: [meowdb, dqmww, steam]
+    status: unverified
+  - result: teeny-sanguini
+    parents:
+      - monster: dracky
+      - monster: platypunk
+    sources: [soshage]
+    status: unverified
+  - result: toady
+    parents:
+      - monster: bunicorn
+      - monster: khalamari-kid
+    sources: [soshage]
     status: unverified
   - result: tongue-fu-fighter
     parents:
@@ -808,10 +1164,22 @@ recipes:
     status: unverified
   - result: vampire-cat
     parents:
+      - family: Dragon
+      - monster: candy-cat
+    sources: [soshage]
+    status: unverified
+  - result: vampire-cat
+    parents:
       - monster: damselfly
       - monster: candy-cat
     sources: [steam]
     status: verified
+  - result: walking-corpse
+    parents:
+      - monster: putrefido
+      - monster: skeleton
+    sources: [soshage]
+    status: unverified
   - result: warhog
     parents:
       - monster: foo-dog
