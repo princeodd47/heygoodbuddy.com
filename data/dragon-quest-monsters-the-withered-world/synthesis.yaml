@@ -456,13 +456,13 @@ recipes:
       - monster: vampire-cat
       - monster: sacksquatch
     sources: [steam]
-    status: unverified
+    status: verified
   - result: bambooligan
     parents:
       - monster: string-fella
       - monster: cruelcumber
     sources: [meowdb, dqmww, steam]
-    status: unverified
+    status: verified
   - result: bludgerigar
     parents:
       - monster: mecha-mynah
@@ -516,7 +516,7 @@ recipes:
       - monster: sacksquatch
       - monster: stark-raven
     sources: [steam]
-    status: unverified
+    status: verified
   - result: dancing-devil
     parents:
       - monster: imp
@@ -631,7 +631,7 @@ recipes:
       - monster: restless-armour
       - monster: avian-android
     sources: [meowdb, dqmww, steam]
-    status: unverified
+    status: verified
   - result: icy-dragling
     parents:
       - monster: small-fry
@@ -745,7 +745,7 @@ recipes:
       - monster: bambooligan
       - family: Undead
     sources: [meowdb, dqmww, steam]
-    status: unverified
+    status: verified
   - result: sham-hatwitch
     parents:
       - monster: candy-cat
@@ -787,7 +787,7 @@ recipes:
       - monster: dracky
       - monster: cumaulus
     sources: [steam]
-    status: unverified
+    status: verified
   - result: suckling-ocker
     parents:
       - monster: khalamari-kid
@@ -811,7 +811,7 @@ recipes:
       - monster: damselfly
       - monster: candy-cat
     sources: [steam]
-    status: unverified
+    status: verified
   - result: warhog
     parents:
       - monster: foo-dog
