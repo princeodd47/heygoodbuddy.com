@@ -564,7 +564,7 @@ recipes:
       - monster: flython
       - monster: cumaulus
     sources: [meowdb, dqmww, steam]
-    status: unverified
+    status: verified
   - result: feral-slime
     parents:
       - monster: fright-bulb
