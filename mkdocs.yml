@@ -37,6 +37,7 @@ plugins:
         dqm_talents: data/dragon-quest-monsters-the-withered-world/talents.yaml
         dqm_abilities: data/dragon-quest-monsters-the-withered-world/abilities.yaml
         dqm_items: data/dragon-quest-monsters-the-withered-world/items.yaml
+        ffxii_monographs: data/final-fantasy-xii-the-zodiac-age/monographs.yaml
 
 extra_css:
   - stylesheets/extra.css
@@ -79,6 +80,10 @@ nav:
           - Recipe Builder: games/dragon-quest-monsters-the-withered-world/recipe-builder.md
           - Talents: games/dragon-quest-monsters-the-withered-world/talents.md
           - Items: games/dragon-quest-monsters-the-withered-world/items.md
+      - Final Fantasy XII The Zodiac Age:
+          - games/final-fantasy-xii-the-zodiac-age/index.md
+          - Changes from PS2: games/final-fantasy-xii-the-zodiac-age/changes.md
+          - Monographs: games/final-fantasy-xii-the-zodiac-age/monographs.md
   - Articles:
       - blog/index.md
   - Tags: tags.md
