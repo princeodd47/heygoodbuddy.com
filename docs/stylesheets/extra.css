@@ -1,0 +1,8 @@
+/* Site-wide tweaks to the theme. */
+
+/* Narrower left navigation on desktop (theme default is 12.1rem). */
+@media screen and (min-width: 76.25em) {
+  .md-sidebar--primary {
+    width: 10rem;
+  }
+}

@@ -35,6 +35,13 @@ plugins:
         dqm: data/dragon-quest-monsters-the-withered-world/monsters.yaml
         dqm_synth: data/dragon-quest-monsters-the-withered-world/synthesis.yaml
 
+extra_css:
+  - stylesheets/extra.css
+  - stylesheets/synth-builder.css
+
+extra_javascript:
+  - javascripts/synth-builder.js
+
 markdown_extensions:
   - admonition
   - attr_list
@@ -63,6 +70,7 @@ nav:
           - Starting Monsters: games/dragon-quest-monsters-the-withered-world/starting-monsters.md
           - Monsters: games/dragon-quest-monsters-the-withered-world/monsters.md
           - Synthesis: games/dragon-quest-monsters-the-withered-world/synthesis.md
+          - Recipe Builder: games/dragon-quest-monsters-the-withered-world/recipe-builder.md
   - Articles:
       - blog/index.md
   - Tags: tags.md
