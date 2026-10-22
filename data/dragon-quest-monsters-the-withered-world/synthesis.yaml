@@ -194,11 +194,12 @@ family_recipes:
     lead: Demon
     partner: Material
     result: bodkin-archer
-    status: unverified
+    status: verified
   - rank: G
     lead: Demon
     partner: Undead
     result: lump-wizard
+    note: One parent has to be rank G.
     status: unverified
   - rank: G
     lead: Undead

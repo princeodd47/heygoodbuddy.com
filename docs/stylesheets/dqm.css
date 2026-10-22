@@ -137,3 +137,95 @@
 .dqm-empty[hidden] {
   display: none;
 }
+
+/* Talents page: search, Talent buttons and the selected tree. */
+#dqm-talents input {
+  display: block;
+  width: 100%;
+  max-width: 24rem;
+  margin-top: 0.2em;
+  padding: 0.4em 0.6em;
+  font: inherit;
+  color: var(--md-default-fg-color);
+  background: var(--md-default-bg-color);
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 0.2rem;
+}
+
+#dqm-talents .tal-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4em;
+  margin: 1em 0;
+}
+
+#dqm-talents .tal-pick {
+  padding: 0.2em 0.8em;
+  font: inherit;
+  font-size: 0.7rem;
+  color: var(--md-default-fg-color);
+  cursor: pointer;
+  background: none;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 1em;
+}
+
+#dqm-talents .tal-pick:hover {
+  border-color: var(--md-accent-fg-color);
+}
+
+#dqm-talents .tal-pick[aria-pressed="true"] {
+  color: var(--md-accent-bg-color);
+  background: var(--md-accent-fg-color);
+  border-color: var(--md-accent-fg-color);
+}
+
+#dqm-talents .tal-pick[hidden],
+#dqm-talents .tal[hidden],
+#dqm-talents .tal-hint[hidden] {
+  display: none;
+}
+
+#dqm-talents .tal-hint {
+  font-style: italic;
+  color: var(--md-default-fg-color--light);
+}
+
+#dqm-talents .tal-name {
+  margin-top: 0.5em;
+}
+
+#dqm-talents .tal-tree {
+  display: table;
+  font-size: 0.75rem;
+}
+
+#dqm-talents .tal-tree th,
+#dqm-talents .tal-tree td {
+  padding: 0.45em 1.2em 0.45em 0.6em;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+#dqm-talents .tal-tree th {
+  font-weight: 700;
+  text-align: left;
+}
+
+#dqm-talents .tal-tree td:first-child {
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+#dqm-talents .tal-tree tr.tal-match td {
+  background: color-mix(in srgb, var(--md-accent-fg-color) 18%, transparent);
+}
+
+/* Talent links on Monsters page tiles. */
+.md-typeset .dqm-tile .dqm-talent {
+  font-size: 0.9em;
+  color: var(--md-default-fg-color--light);
+}
+
+#dqm-talents .tal-tree .tal-note {
+  color: var(--md-default-fg-color--light);
+}

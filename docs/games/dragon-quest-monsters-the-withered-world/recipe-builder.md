@@ -23,4 +23,4 @@ the [Synthesis](synthesis.md) page.
   <div id="sb-result"></div>
 </div>
 
-<script id="synth-data" type="application/json">{{ {"monsters": dqm.monsters, "recipes": dqm_synth.recipes, "family_recipes": dqm_synth.family_recipes, "sources": dqm_synth.sources} | tojson }}</script>
+<script id="synth-data" type="application/json">{{ {"monsters": dqm.monsters, "recipes": dqm_synth.recipes, "family_recipes": dqm_synth.family_recipes, "sources": dqm_synth.sources, "talents": dqm_talents.talents} | tojson }}</script>

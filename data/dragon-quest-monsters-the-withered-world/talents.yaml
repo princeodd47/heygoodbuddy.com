@@ -1,0 +1,967 @@
+# Talents (skill trees). Each one unlocks skills and traits as a monster
+# puts points into it. Source: Soshage. `monsters` uses our monster ids;
+# monsters not on our Monsters page are listed by name under `others`.
+talents:
+  - id: alarmist
+    name: "Alarmist"
+    tree:
+      - {points: 3, name: "Fuddle", type: skill}
+      - {points: 10, name: "Dazzle", type: skill}
+      - {points: 20, name: "Poison Breath", type: skill}
+      - {points: 30, name: "Heart Breaker", type: skill}
+      - {points: 50, name: "War Cry", type: skill}
+      - {points: 70, name: "Confusion Attack", type: skill}
+      - {points: 85, name: "Persecutter", type: skill}
+      - {points: 100, name: "Fuddle Dance", type: skill}
+    monsters: [urnexpected]
+  - id: antimagician
+    name: "Antimagician"
+    tree:
+      - {points: 3, name: "Dim", type: skill}
+      - {points: 10, name: "Fizzle", type: skill}
+      - {points: 20, name: "Ping", type: skill}
+      - {points: 30, name: "Drain Magic", type: skill}
+      - {points: 50, name: "Mist Me", type: skill}
+      - {points: 70, name: "Kadim", type: skill}
+      - {points: 85, name: "Buffer Zone", type: skill}
+      - {points: 100, name: "Bounce", type: skill}
+    monsters: [winky, vampire-cat]
+  - id: aquapothecary
+    name: "Aquapothecary"
+    tree:
+      - {points: 3, name: "Splish", type: skill}
+      - {points: 10, name: "Heal", type: skill}
+      - {points: 20, name: "Waterspout", type: skill}
+      - {points: 30, name: "Snooze", type: skill}
+      - {points: 50, name: "Midheal", type: skill}
+      - {points: 70, name: "Chilly Breath", type: skill}
+      - {points: 85, name: "Splash Damage", type: skill}
+      - {points: 100, name: "Splash", type: skill}
+      - {points: 120, name: "Auto-Cadabra", type: trait}
+    monsters: [mouldfish, king-kelp, marislime, khalamari-kid, merman]
+  - id: assassin
+    name: "Assassin"
+    tree:
+      - {points: 3, name: "Heart Breaker", type: skill}
+      - {points: 10, name: "Sandstorm", type: skill}
+      - {points: 20, name: "Mercurial Thrust", type: skill}
+      - {points: 30, name: "Seethe", type: skill}
+      - {points: 50, name: "Sleep Attack", type: skill}
+      - {points: 70, name: "Hatchet Man", type: skill}
+      - {points: 85, name: "Whack", type: skill}
+      - {points: 100, name: "Assassin's Stab", type: skill}
+    monsters: [avian-android, bodkin-archer]
+  - id: bang-afficionado
+    name: "Bang Afficionado"
+    tree:
+      - {points: 3, name: "Bang", type: skill}
+      - {points: 10, name: "Helm Splitter", type: skill}
+      - {points: 20, name: "Matter Scatterer", type: skill}
+      - {points: 30, name: "Max. MP +4", type: trait}
+      - {points: 50, name: "Anchorman", type: skill}
+      - {points: 70, name: "Oomph", type: skill}
+      - {points: 85, name: "Max. MP +8", type: trait}
+      - {points: 100, name: "Boom", type: skill}
+    monsters: [dessert-demon, cannonbrawler]
+  - id: bang-virtuoso
+    name: "Bang Virtuoso"
+    tree:
+      - {points: 3, name: "Boom", type: skill}
+      - {points: 10, name: "Hatchet Man", type: skill}
+      - {points: 20, name: "Max. MP +16", type: trait}
+      - {points: 40, name: "Kaboom", type: skill}
+      - {points: 60, name: "Kamikazee", type: skill}
+      - {points: 80, name: "Oomphle", type: skill}
+      - {points: 110, name: "Max. MP +24", type: trait}
+      - {points: 150, name: "Kaboomle", type: skill}
+    monsters: []
+  - id: barricade
+    name: "Barricade"
+    tree:
+      - {points: 3, name: "Insulate", type: skill}
+      - {points: 10, name: "Defence +4", type: trait}
+      - {points: 20, name: "Kabuff", type: skill}
+      - {points: 30, name: "Mist Me", type: skill}
+      - {points: 50, name: "Snap, Crackle, Poof", type: skill}
+      - {points: 70, name: "Intense Defence", type: skill}
+      - {points: 85, name: "Critical Meltdown", type: skill}
+      - {points: 100, name: "Selflessness", type: skill}
+    monsters: [snail-slime]
+  - id: blade-maven
+    name: "Blade Maven"
+    tree:
+      - {points: 3, name: "Flame Slash", type: skill}
+      - {points: 10, name: "Gust Slash", type: skill}
+      - {points: 20, name: "Metal Slash", type: skill}
+      - {points: 30, name: "Frost Slash", type: skill}
+      - {points: 50, name: "Lightning Slash", type: skill}
+      - {points: 70, name: "Falcon Slash", type: skill}
+      - {points: 85, name: "Multislash", type: skill}
+      - {points: 100, name: "Miracle Slash", type: skill}
+    monsters: [erazor-blade, hunter-mech]
+  - id: blazer
+    name: "Blazer"
+    tree:
+      - {points: 3, name: "Fire Breath", type: skill}
+      - {points: 10, name: "Frizz", type: skill}
+      - {points: 20, name: "Defence +8", type: trait}
+      - {points: 30, name: "Pyre o' Fire", type: skill}
+      - {points: 50, name: "Fuddle", type: skill}
+      - {points: 70, name: "Attack +8", type: trait}
+      - {points: 85, name: "Sandstorm", type: skill}
+      - {points: 100, name: "Flame Breath", type: skill}
+    monsters: [jargon, gasbagon]
+  - id: blowy-slasher
+    name: "Blowy Slasher"
+    tree:
+      - {points: 3, name: "Gust Slash", type: skill}
+      - {points: 10, name: "Woosh", type: skill}
+      - {points: 20, name: "Nature Nerfer", type: skill}
+      - {points: 30, name: "Agility +8", type: trait}
+      - {points: 50, name: "Tingle", type: skill}
+      - {points: 70, name: "Wind Sickles", type: skill}
+      - {points: 85, name: "Swoosh", type: skill}
+      - {points: 100, name: "Agility +16", type: trait}
+      - {points: 120, name: "Skysplitter", type: skill}
+    monsters: [dragonthorn, bambooligan, cactiball, cruelcumber, feralball]
+  - id: blusterer
+    name: "Blusterer"
+    tree:
+      - {points: 3, name: "Accelerate", type: skill}
+      - {points: 10, name: "Woosh", type: skill}
+      - {points: 20, name: "Sandstorm", type: skill}
+      - {points: 30, name: "Acceleratle", type: skill}
+      - {points: 50, name: "Insulate", type: skill}
+      - {points: 70, name: "Wind Sickles", type: skill}
+      - {points: 85, name: "Insulatle", type: skill}
+      - {points: 100, name: "Brake Wind", type: skill}
+      - {points: 120, name: "Thin Air", type: skill}
+    monsters: [stark-raven, wing-slime, bludgerigar]
+  - id: breath-taker
+    name: "Breath Taker"
+    tree:
+      - {points: 3, name: "Gobstopper", type: skill}
+      - {points: 10, name: "Insulate", type: skill}
+      - {points: 20, name: "Dragon Slash", type: skill}
+      - {points: 30, name: "Insulatle", type: skill}
+      - {points: 50, name: "Max. HP +4", type: trait}
+      - {points: 70, name: "Sleep Attack", type: skill}
+      - {points: 85, name: "Mist Me", type: skill}
+      - {points: 100, name: "Brake Wind", type: skill}
+    monsters: [restless-armour]
+  - id: charmer
+    name: "Charmer"
+    tree:
+      - {points: 3, name: "Sultry Dance", type: skill}
+      - {points: 10, name: "Sleep Attack", type: skill}
+      - {points: 20, name: "Dazzle", type: skill}
+      - {points: 30, name: "Drain Magic", type: skill}
+      - {points: 50, name: "Sweet Breath", type: skill}
+      - {points: 70, name: "Fuddle Dance", type: skill}
+      - {points: 85, name: "Fan Dango", type: skill}
+      - {points: 100, name: "Giga Drain Magic", type: skill}
+    monsters: [succubat]
+  - id: chilly-receptionist
+    name: "Chilly Receptionist"
+    tree:
+      - {points: 3, name: "Cool Breath", type: skill}
+      - {points: 10, name: "Crack", type: skill}
+      - {points: 20, name: "Agility +8", type: trait}
+      - {points: 30, name: "Snow Globe", type: skill}
+      - {points: 50, name: "Snooze", type: skill}
+      - {points: 70, name: "Wisdom +16", type: trait}
+      - {points: 85, name: "Dazzleflash", type: skill}
+      - {points: 100, name: "Chilly Breath", type: skill}
+    monsters: [powie-yowie]
+  - id: crack-afficionado
+    name: "Crack Afficionado"
+    tree:
+      - {points: 3, name: "Crack", type: skill}
+      - {points: 10, name: "Frost Slash", type: skill}
+      - {points: 20, name: "Snow Globe", type: skill}
+      - {points: 30, name: "Max. MP +4", type: trait}
+      - {points: 50, name: "Cool Breath", type: skill}
+      - {points: 70, name: "Snooze", type: skill}
+      - {points: 85, name: "Max. MP +8", type: trait}
+      - {points: 100, name: "Crackle", type: skill}
+    monsters: [snowmangler, bad-egg]
+  - id: crack-virtuoso
+    name: "Crack Virtuoso"
+    tree:
+      - {points: 3, name: "Crackle", type: skill}
+      - {points: 10, name: "Chilly Breath", type: skill}
+      - {points: 20, name: "Max. MP +8", type: trait}
+      - {points: 40, name: "Kacrack", type: skill}
+      - {points: 60, name: "Frost Fangs", type: skill}
+      - {points: 80, name: "Kasnooze", type: skill}
+      - {points: 110, name: "Max. MP +24", type: trait}
+      - {points: 150, name: "Kacrackle", type: skill}
+    monsters: []
+  - id: crag-afficionado
+    name: "Crag Afficionado"
+    tree:
+      - {points: 3, name: "Crag", type: skill}
+      - {points: 10, name: "Beast Tamer", type: skill}
+      - {points: 20, name: "Stone's Throw", type: skill}
+      - {points: 30, name: "Max. MP +4", type: trait}
+      - {points: 50, name: "Buff", type: skill}
+      - {points: 70, name: "Stomp", type: skill}
+      - {points: 85, name: "Max. MP +8", type: trait}
+      - {points: 100, name: "Craggle", type: skill}
+    monsters: [fat-rat, sacksquatch, muddy-hand]
+  - id: crag-virtuoso
+    name: "Crag Virtuoso"
+    tree:
+      - {points: 3, name: "Craggle", type: skill}
+      - {points: 10, name: "Sandy Sigh", type: skill}
+      - {points: 20, name: "Max. MP +16", type: trait}
+      - {points: 40, name: "Kacrag", type: skill}
+      - {points: 60, name: "Earthsplitter", type: skill}
+      - {points: 80, name: "Kabuff", type: skill}
+      - {points: 110, name: "Max. MP +24", type: trait}
+      - {points: 150, name: "Kacraggle", type: skill}
+    monsters: []
+  - id: cupid
+    name: "Cupid"
+    tree:
+      - {points: 3, name: "Heal", type: skill}
+      - {points: 10, name: "Buff", type: skill}
+      - {points: 20, name: "Sizz", type: skill}
+      - {points: 30, name: "Heart Breaker", type: skill}
+      - {points: 50, name: "Sizzle", type: skill}
+      - {points: 70, name: "Dazzleflash", type: skill}
+      - {points: 85, name: "Max. HP +8", type: trait}
+      - {points: 100, name: "Shining Shot", type: skill}
+    monsters: [soft-serve-spook]
+  - id: cutpurse
+    name: "Cutpurse"
+    tree:
+      - {points: 3, name: "Accelerate", type: skill}
+      - {points: 10, name: "Poison Attack", type: skill}
+      - {points: 20, name: "Sleep Attack", type: skill}
+      - {points: 30, name: "Sandstorm", type: skill}
+      - {points: 50, name: "Dodgy Dance", type: skill}
+      - {points: 70, name: "Mercurial Thrust", type: skill}
+      - {points: 85, name: "Victimiser", type: skill}
+      - {points: 100, name: "Persecutter", type: skill}
+    monsters: [robber-rabbit]
+  - id: dancer
+    name: "Dancer"
+    tree:
+      - {points: 3, name: "Weird Dance", type: skill}
+      - {points: 10, name: "Sultry Dance", type: skill}
+      - {points: 20, name: "Mercurial Thrust", type: skill}
+      - {points: 30, name: "Agility +4", type: trait}
+      - {points: 50, name: "Buff", type: skill}
+      - {points: 70, name: "Tap Dance", type: skill}
+      - {points: 85, name: "Max. MP +8", type: trait}
+      - {points: 100, name: "Sword Dance", type: skill}
+    monsters: [mud-mannequin, dancing-devil, woebergine, boppin-badger]
+  - id: dark-artist
+    name: "Dark Artist"
+    tree:
+      - {points: 3, name: "Zam", type: skill}
+      - {points: 10, name: "Sap", type: skill}
+      - {points: 20, name: "Dim", type: skill}
+      - {points: 30, name: "Demon Demeaner", type: skill}
+      - {points: 50, name: "Drain Magic", type: skill}
+      - {points: 70, name: "Fizzle", type: skill}
+      - {points: 85, name: "Whack", type: skill}
+      - {points: 100, name: "Zammle", type: skill}
+      - {points: 120, name: "Auto-Cadabra", type: trait}
+    monsters: [little-devil, imp, teeny-sanguini]
+  - id: deep-breather
+    name: "Deep Breather"
+    tree:
+      - {points: 3, name: "Flame Breath", type: skill}
+      - {points: 10, name: "Chilly Breath", type: skill}
+      - {points: 20, name: "Deep Breath", type: skill}
+      - {points: 40, name: "Inferno", type: skill}
+      - {points: 60, name: "Freezing Blizzard", type: skill}
+      - {points: 80, name: "Blessed Breath", type: skill}
+      - {points: 100, name: "Black Breath", type: skill}
+      - {points: 130, name: "Sandy Sigh", type: skill}
+      - {points: 160, name: "Scorch", type: skill}
+      - {points: 200, name: "C-C-Cold Breath", type: skill}
+    monsters: []
+  - id: defender
+    name: "Defender"
+    tree:
+      - {points: 3, name: "Buff", type: skill}
+      - {points: 10, name: "Heal", type: skill}
+      - {points: 20, name: "Attack Attacker", type: skill}
+      - {points: 30, name: "Dazzleflash", type: skill}
+      - {points: 50, name: "Kabuff", type: skill}
+      - {points: 70, name: "Intense Defence", type: skill}
+      - {points: 85, name: "Midheal", type: skill}
+      - {points: 100, name: "Selflessness", type: skill}
+    monsters: [crabid, armoured-wartoise, komodo, shell-slime]
+  - id: dragonheart
+    name: "Dragonheart"
+    tree:
+      - {points: 3, name: "Fire Breath", type: skill}
+      - {points: 10, name: "Cool Breath", type: skill}
+      - {points: 20, name: "Beast Tamer", type: skill}
+      - {points: 30, name: "Sandstorm", type: skill}
+      - {points: 50, name: "Deep Breath", type: skill}
+      - {points: 70, name: "War Cry", type: skill}
+      - {points: 85, name: "Flame Breath", type: skill}
+      - {points: 100, name: "Chilly Breath", type: skill}
+      - {points: 120, name: "Auto-Restora", type: trait}
+    monsters: [small-fry, pteranodon]
+  - id: enfeebler
+    name: "Enfeebler"
+    tree:
+      - {points: 3, name: "Decelerate", type: skill}
+      - {points: 10, name: "Sap", type: skill}
+      - {points: 20, name: "Dim", type: skill}
+      - {points: 30, name: "Blunt", type: skill}
+      - {points: 50, name: "Deceleratle", type: skill}
+      - {points: 70, name: "Kasap", type: skill}
+      - {points: 85, name: "Kadim", type: skill}
+      - {points: 100, name: "Tongue Bashing", type: skill}
+    monsters: [candy-cat, crested-viper, putrefido, swarmtroop]
+  - id: fighter
+    name: "Fighter"
+    tree:
+      - {points: 3, name: "Helm Splitter", type: skill}
+      - {points: 10, name: "Heart Breaker", type: skill}
+      - {points: 20, name: "Propeller Blade", type: skill}
+      - {points: 30, name: "Stone's Throw", type: skill}
+      - {points: 50, name: "Hatchet Man", type: skill}
+      - {points: 70, name: "Roundhouse Kick", type: skill}
+      - {points: 85, name: "War Cry", type: skill}
+      - {points: 100, name: "Knuckle Sandwich", type: skill}
+    monsters: [feral-slime, warhog]
+  - id: fortifier
+    name: "Fortifier"
+    tree:
+      - {points: 3, name: "Heal", type: skill}
+      - {points: 10, name: "Accelerate", type: skill}
+      - {points: 20, name: "Buff", type: skill}
+      - {points: 30, name: "Ping", type: skill}
+      - {points: 50, name: "Oomph", type: skill}
+      - {points: 70, name: "Insulate", type: skill}
+      - {points: 85, name: "Midheal", type: skill}
+      - {points: 100, name: "Oomphle", type: skill}
+    monsters: [croc-a-bugle-doo, jingle-bug, bongo-drongo, box-slime]
+  - id: frizz-afficionado
+    name: "Frizz Afficionado"
+    tree:
+      - {points: 3, name: "Frizz", type: skill}
+      - {points: 10, name: "Flame Slash", type: skill}
+      - {points: 20, name: "Dragon Slash", type: skill}
+      - {points: 30, name: "Max. MP +4", type: trait}
+      - {points: 50, name: "Fire Breath", type: skill}
+      - {points: 70, name: "Oomph", type: skill}
+      - {points: 85, name: "Max. MP +8", type: trait}
+      - {points: 100, name: "Frizzle", type: skill}
+    monsters: [firespirit, lampling]
+  - id: frizz-virtuoso
+    name: "Frizz Virtuoso"
+    tree:
+      - {points: 3, name: "Frizzle", type: skill}
+      - {points: 10, name: "Flame Breath", type: skill}
+      - {points: 20, name: "Max. MP +16", type: trait}
+      - {points: 40, name: "Kafrizz", type: skill}
+      - {points: 60, name: "Flamesplitter", type: skill}
+      - {points: 80, name: "Oomphle", type: skill}
+      - {points: 110, name: "Max. MP +24", type: trait}
+      - {points: 150, name: "Kafrizzle", type: skill}
+    monsters: []
+  - id: frosty-receptionist
+    name: "Frosty Receptionist"
+    tree:
+      - {points: 3, name: "Chilly Breath", type: skill}
+      - {points: 10, name: "Frost Slash", type: skill}
+      - {points: 20, name: "Crackle", type: skill}
+      - {points: 40, name: "Agility +16", type: trait}
+      - {points: 60, name: "Freezing Blizzard", type: skill}
+      - {points: 80, name: "Kacrack", type: skill}
+      - {points: 100, name: "Deep Breath", type: skill}
+      - {points: 130, name: "C-C-Cold Breath", type: skill}
+      - {points: 160, name: "Wisdom +32", type: trait}
+      - {points: 200, name: "Ice Age", type: skill}
+    monsters: []
+  - id: goliath
+    name: "Goliath"
+    tree:
+      - {points: 3, name: "Helm Splitter", type: skill}
+      - {points: 10, name: "Slime Squisher", type: skill}
+      - {points: 20, name: "Intense Defence", type: skill}
+      - {points: 30, name: "War Cry", type: skill}
+      - {points: 50, name: "Max. HP +8", type: trait}
+      - {points: 70, name: "Selflessness", type: skill}
+      - {points: 85, name: "Anchorman", type: skill}
+      - {points: 100, name: "Stomp", type: skill}
+    monsters: [bantamweight, drakularge, greater-dracky]
+  - id: good-knight
+    name: "Good Knight"
+    tree:
+      - {points: 3, name: "Demon Demeaner", type: skill}
+      - {points: 10, name: "Buff", type: skill}
+      - {points: 20, name: "Mercurial Thrust", type: skill}
+      - {points: 30, name: "Oomph", type: skill}
+      - {points: 50, name: "Wind Sickles", type: skill}
+      - {points: 70, name: "Falcon Slash", type: skill}
+      - {points: 85, name: "Midheal", type: skill}
+      - {points: 100, name: "Selflessness", type: skill}
+      - {points: 120, name: "Armour Harmer", type: skill}
+    monsters: [slime-knight]
+  - id: graveheart
+    name: "Graveheart"
+    tree:
+      - {points: 3, name: "Poison Attack", type: skill}
+      - {points: 10, name: "Decelerate", type: skill}
+      - {points: 20, name: "Sleep Attack", type: skill}
+      - {points: 30, name: "Sweet Breath", type: skill}
+      - {points: 50, name: "Burning Breath", type: skill}
+      - {points: 70, name: "Confusion Attack", type: skill}
+      - {points: 85, name: "Whack", type: skill}
+      - {points: 100, name: "Kamikazee", type: skill}
+    monsters: [scarfish, skeleton, walking-corpse, ghost, will-o-the-whips, mummy-boy]
+  - id: healer
+    name: "Healer"
+    tree:
+      - {points: 3, name: "Heal", type: skill}
+      - {points: 10, name: "Buff", type: skill}
+      - {points: 20, name: "Squelch", type: skill}
+      - {points: 30, name: "Insulate", type: skill}
+      - {points: 50, name: "Midheal", type: skill}
+      - {points: 70, name: "Zing", type: skill}
+      - {points: 85, name: "Meditation", type: skill}
+      - {points: 100, name: "Mist Me", type: skill}
+      - {points: 120, name: "Kazing", type: skill}
+    monsters: [icy-dragling, healslime]
+  - id: hexcommunicator
+    name: "Hexcommunicator"
+    tree:
+      - {points: 3, name: "Zam", type: skill}
+      - {points: 10, name: "Sap", type: skill}
+      - {points: 20, name: "Cool Breath", type: skill}
+      - {points: 30, name: "Blunt", type: skill}
+      - {points: 50, name: "Fuddle", type: skill}
+      - {points: 70, name: "Numb", type: skill}
+      - {points: 85, name: "Whack", type: skill}
+      - {points: 100, name: "Wisdom +24", type: trait}
+      - {points: 120, name: "Zammle", type: skill}
+    monsters: [treeface, hangelabra, shadow]
+  - id: hive-mind
+    name: "Hive Mind"
+    tree:
+      - {points: 3, name: "Buff", type: skill}
+      - {points: 10, name: "Snooze", type: skill}
+      - {points: 20, name: "Heart Breaker", type: skill}
+      - {points: 30, name: "Sleep Attack", type: skill}
+      - {points: 50, name: "Paralysing Punch", type: skill}
+      - {points: 70, name: "Nature Nerfer", type: skill}
+      - {points: 85, name: "Intense Defence", type: skill}
+      - {points: 100, name: "Fuddle Dance", type: skill}
+    monsters: [midnight-horknight, scorpion, killerpillar]
+  - id: hottie
+    name: "Hottie"
+    tree:
+      - {points: 3, name: "Weird Dance", type: skill}
+      - {points: 10, name: "Splish", type: skill}
+      - {points: 20, name: "Sultry Dance", type: skill}
+      - {points: 30, name: "Sweet Breath", type: skill}
+      - {points: 50, name: "Frizzle", type: skill}
+      - {points: 70, name: "Flame Breath", type: skill}
+      - {points: 85, name: "Sizzle", type: skill}
+      - {points: 100, name: "Hustle Dance", type: skill}
+      - {points: 120, name: "Auto-Cadabra", type: trait}
+    monsters: [coconut-slime]
+  - id: irritant
+    name: "Irritant"
+    tree:
+      - {points: 3, name: "Sap", type: skill}
+      - {points: 10, name: "Snooze", type: skill}
+      - {points: 20, name: "Tox", type: skill}
+      - {points: 30, name: "Poison Attack", type: skill}
+      - {points: 50, name: "Numb", type: skill}
+      - {points: 70, name: "Sleep Attack", type: skill}
+      - {points: 85, name: "Assassin's Stab", type: skill}
+      - {points: 100, name: "Kanumb", type: skill}
+    monsters: [skipper, smog, pocus-poppet]
+  - id: magic-maven
+    name: "Magic Maven"
+    tree:
+      - {points: 3, name: "Frizz", type: skill}
+      - {points: 10, name: "Heal", type: skill}
+      - {points: 20, name: "Crack", type: skill}
+      - {points: 30, name: "Drain Magic", type: skill}
+      - {points: 50, name: "Sap", type: skill}
+      - {points: 70, name: "Sizz", type: skill}
+      - {points: 85, name: "Woosh", type: skill}
+      - {points: 100, name: "Oomph", type: skill}
+      - {points: 120, name: "Splash", type: skill}
+      - {points: 150, name: "Boom", type: skill}
+    monsters: [prestidigitator]
+  - id: martyr
+    name: "Martyr"
+    tree:
+      - {points: 3, name: "Whack", type: skill}
+      - {points: 10, name: "Max. HP +8", type: trait}
+      - {points: 20, name: "Intense Defence", type: skill}
+      - {points: 30, name: "Defence +8", type: trait}
+      - {points: 50, name: "Selflessness", type: skill}
+      - {points: 70, name: "Anchorman", type: skill}
+      - {points: 85, name: "Kamikazee", type: skill}
+      - {points: 100, name: "Kerplunk", type: skill}
+    monsters: [nardragon, mitey-oak]
+  - id: materialist
+    name: "Materialist"
+    tree:
+      - {points: 3, name: "Helm Splitter", type: skill}
+      - {points: 10, name: "Metal Slash", type: skill}
+      - {points: 20, name: "Matter Scatterer", type: skill}
+      - {points: 30, name: "Stone's Throw", type: skill}
+      - {points: 50, name: "Kabuff", type: skill}
+      - {points: 70, name: "Fizzle", type: skill}
+      - {points: 85, name: "Knuckle Sandwich", type: skill}
+      - {points: 100, name: "Kamikazee", type: skill}
+    monsters: [eggsoskeleton, burr-baby, gold-golem, mad-moai]
+  - id: mudmonger
+    name: "Mudmonger"
+    tree:
+      - {points: 3, name: "Decelerate", type: skill}
+      - {points: 10, name: "Crag", type: skill}
+      - {points: 20, name: "Sandstorm", type: skill}
+      - {points: 30, name: "Stone's Throw", type: skill}
+      - {points: 50, name: "Tox", type: skill}
+      - {points: 70, name: "Craggle", type: skill}
+      - {points: 85, name: "Poison Breath", type: skill}
+      - {points: 100, name: "Stomp", type: skill}
+    monsters: [mudraker]
+  - id: naturalist
+    name: "Naturalist"
+    tree:
+      - {points: 3, name: "Heart Breaker", type: skill}
+      - {points: 10, name: "Sandstorm", type: skill}
+      - {points: 20, name: "Attack Attacker", type: skill}
+      - {points: 30, name: "Mercurial Thrust", type: skill}
+      - {points: 50, name: "Tongue Lashing", type: skill}
+      - {points: 70, name: "War Cry", type: skill}
+      - {points: 85, name: "Hatchet Man", type: skill}
+      - {points: 100, name: "Auto-Restora", type: trait}
+    monsters: [bunicorn, platypunk, dread-squirrel, great-sabrecub]
+  - id: nature-child
+    name: "Nature Child"
+    tree:
+      - {points: 3, name: "Squelch", type: skill}
+      - {points: 10, name: "Heal", type: skill}
+      - {points: 20, name: "Drain Magic", type: skill}
+      - {points: 30, name: "Snooze", type: skill}
+      - {points: 50, name: "Sleep Attack", type: skill}
+      - {points: 70, name: "Dazzle", type: skill}
+      - {points: 85, name: "Fizzle", type: skill}
+      - {points: 100, name: "Miracle Slash", type: skill}
+      - {points: 120, name: "Auto-Cadabra", type: trait}
+    monsters: [stump-chump, onion-slime, monolog, ornery-onion, buddy-slime, pina-marauder]
+  - id: outlaw
+    name: "Outlaw"
+    tree:
+      - {points: 3, name: "Helm Splitter", type: skill}
+      - {points: 10, name: "Tongue Lashing", type: skill}
+      - {points: 20, name: "Metal Slash", type: skill}
+      - {points: 30, name: "Poison Attack", type: skill}
+      - {points: 50, name: "Stone's Throw", type: skill}
+      - {points: 70, name: "War Cry", type: skill}
+      - {points: 85, name: "Parallax", type: skill}
+      - {points: 100, name: "Hustle Dance", type: skill}
+    monsters: [ruff-ruffian, tongue-fu-fighter]
+  - id: paramedic
+    name: "Paramedic"
+    tree:
+      - {points: 3, name: "Heal", type: skill}
+      - {points: 10, name: "Squelch", type: skill}
+      - {points: 20, name: "Tingle", type: skill}
+      - {points: 30, name: "Defuddle", type: skill}
+      - {points: 50, name: "Cock-a-Doodle-Doo", type: skill}
+      - {points: 70, name: "Drain Magic", type: skill}
+      - {points: 85, name: "Snap, Crackle, Poof", type: skill}
+      - {points: 100, name: "Zing", type: skill}
+      - {points: 120, name: "Wave of Relief", type: skill}
+    monsters: [gremlin]
+  - id: power-player
+    name: "Power Player"
+    tree:
+      - {points: 3, name: "Helm Splitter", type: skill}
+      - {points: 10, name: "Slime Squisher", type: skill}
+      - {points: 20, name: "Metal Slash", type: skill}
+      - {points: 30, name: "Seethe", type: skill}
+      - {points: 50, name: "Hatchet Man", type: skill}
+      - {points: 70, name: "Oomph", type: skill}
+      - {points: 85, name: "Attack +12", type: trait}
+      - {points: 100, name: "Anchorman", type: skill}
+    monsters: [hammerhood, antguzzler]
+  - id: prankster
+    name: "Prankster"
+    tree:
+      - {points: 3, name: "Tongue Lashing", type: skill}
+      - {points: 10, name: "Heart Breaker", type: skill}
+      - {points: 20, name: "Poison Attack", type: skill}
+      - {points: 30, name: "Dazzle", type: skill}
+      - {points: 50, name: "Gobstopper", type: skill}
+      - {points: 70, name: "Fuddle", type: skill}
+      - {points: 85, name: "Agility +4", type: trait}
+      - {points: 100, name: "Burning Breath", type: skill}
+    monsters: [mischievous-mole, gloomy-grublin, platypup]
+  - id: princess
+    name: "Princess"
+    tree:
+      - {points: 3, name: "Heal", type: skill}
+      - {points: 10, name: "Kabuff", type: skill}
+      - {points: 20, name: "Dodgy Dance", type: skill}
+      - {points: 30, name: "Max. HP +4", type: trait}
+      - {points: 50, name: "Snap, Crackle, Poof", type: skill}
+      - {points: 70, name: "Crushed Ice", type: skill}
+      - {points: 85, name: "Max. MP +12", type: trait}
+      - {points: 100, name: "Multiheal", type: skill}
+      - {points: 120, name: "Buffer Zone", type: skill}
+    monsters: [kingfuschia]
+  - id: roaster
+    name: "Roaster"
+    tree:
+      - {points: 3, name: "Frizz", type: skill}
+      - {points: 10, name: "Flame Slash", type: skill}
+      - {points: 20, name: "Sizz", type: skill}
+      - {points: 30, name: "Pyre o' Fire", type: skill}
+      - {points: 50, name: "Sap", type: skill}
+      - {points: 70, name: "Confusion Attack", type: skill}
+      - {points: 85, name: "Frizzle", type: skill}
+      - {points: 100, name: "Flame Breath", type: skill}
+    monsters: [molten-slime]
+  - id: shallow-breather
+    name: "Shallow Breather"
+    tree:
+      - {points: 3, name: "Fire Breath", type: skill}
+      - {points: 10, name: "Cool Breath", type: skill}
+      - {points: 20, name: "Attack +4", type: trait}
+      - {points: 30, name: "Sandstorm", type: skill}
+      - {points: 50, name: "Deep Breath", type: skill}
+      - {points: 70, name: "Attack +8", type: trait}
+      - {points: 85, name: "Flame Breath", type: skill}
+      - {points: 100, name: "Chilly Breath", type: skill}
+    monsters: [ethereal-serpent, raptile, drake-slime, sham-hatwitch]
+  - id: sizz-afficionado
+    name: "Sizz Afficionado"
+    tree:
+      - {points: 3, name: "Sizz", type: skill}
+      - {points: 10, name: "Dazzleflash", type: skill}
+      - {points: 20, name: "Undead Undoer", type: skill}
+      - {points: 30, name: "Max. MP +4", type: trait}
+      - {points: 50, name: "Magic Pop", type: skill}
+      - {points: 70, name: "Ping", type: skill}
+      - {points: 85, name: "Max. MP +8", type: trait}
+      - {points: 100, name: "Sizzle", type: skill}
+    monsters: [vegandragora]
+  - id: sizz-virtuoso
+    name: "Sizz Virtuoso"
+    tree:
+      - {points: 3, name: "Sizzle", type: skill}
+      - {points: 10, name: "Kaping", type: skill}
+      - {points: 20, name: "Max. MP +16", type: trait}
+      - {points: 40, name: "Kasizz", type: skill}
+      - {points: 60, name: "Brightsplitter", type: skill}
+      - {points: 80, name: "Blessed Breath", type: skill}
+      - {points: 110, name: "Max. MP +24", type: trait}
+      - {points: 150, name: "Kasizzle", type: skill}
+    monsters: []
+  - id: sleep-counsellor
+    name: "Sleep Counsellor"
+    tree:
+      - {points: 3, name: "Snooze", type: skill}
+      - {points: 10, name: "Dazzle", type: skill}
+      - {points: 20, name: "Sleep Attack", type: skill}
+      - {points: 30, name: "Fuddle", type: skill}
+      - {points: 50, name: "Sweet Breath", type: skill}
+      - {points: 70, name: "Confusion Attack", type: skill}
+      - {points: 85, name: "Kasnooze", type: skill}
+      - {points: 100, name: "Kafuddle", type: skill}
+    monsters: [napir]
+  - id: slimer
+    name: "Slimer"
+    tree:
+      - {points: 3, name: "Frizz", type: skill}
+      - {points: 10, name: "Heal", type: skill}
+      - {points: 20, name: "Slime Squisher", type: skill}
+      - {points: 30, name: "Zap", type: skill}
+      - {points: 50, name: "Accelerate", type: skill}
+      - {points: 70, name: "Dazzleflash", type: skill}
+      - {points: 85, name: "Midheal", type: skill}
+      - {points: 100, name: "Auto-Restora", type: trait}
+    monsters: [slime, bubble-slime]
+  - id: smart-blazer
+    name: "Smart Blazer"
+    tree:
+      - {points: 3, name: "Flame Breath", type: skill}
+      - {points: 10, name: "Flame Slash", type: skill}
+      - {points: 20, name: "Frizzle", type: skill}
+      - {points: 40, name: "Defence +16", type: trait}
+      - {points: 60, name: "Inferno", type: skill}
+      - {points: 80, name: "Kafrizz", type: skill}
+      - {points: 100, name: "Deep Breath", type: skill}
+      - {points: 130, name: "Scorch", type: skill}
+      - {points: 160, name: "Attack +16", type: trait}
+      - {points: 200, name: "Hellitosis", type: skill}
+    monsters: []
+  - id: soggy-slasher
+    name: "Soggy Slasher"
+    tree:
+      - {points: 3, name: "Frost Slash", type: skill}
+      - {points: 10, name: "Splish", type: skill}
+      - {points: 20, name: "Slime Squisher", type: skill}
+      - {points: 30, name: "Wisdom +8", type: trait}
+      - {points: 50, name: "Cock-a-Doodle-Doo", type: skill}
+      - {points: 70, name: "Splash", type: skill}
+      - {points: 85, name: "Chilly Breath", type: skill}
+      - {points: 100, name: "Wisdom +16", type: trait}
+      - {points: 120, name: "Seasplitter", type: skill}
+    monsters: [suckling-ocker, skullrider]
+  - id: soothesayer
+    name: "Soothesayer"
+    tree:
+      - {points: 3, name: "Heal", type: skill}
+      - {points: 10, name: "Sizz", type: skill}
+      - {points: 20, name: "Buff", type: skill}
+      - {points: 30, name: "Insulate", type: skill}
+      - {points: 50, name: "Snooze", type: skill}
+      - {points: 70, name: "Snap, Crackle, Poof", type: skill}
+      - {points: 85, name: "War Cry", type: skill}
+      - {points: 100, name: "Mist Me", type: skill}
+      - {points: 120, name: "Right as Rain", type: skill}
+    monsters: [damselfly, fright-bulb]
+  - id: speedster
+    name: "Speedster"
+    tree:
+      - {points: 3, name: "Accelerate", type: skill}
+      - {points: 10, name: "Heal", type: skill}
+      - {points: 20, name: "Decelerate", type: skill}
+      - {points: 30, name: "Agility +4", type: trait}
+      - {points: 50, name: "Dodgy Dance", type: skill}
+      - {points: 70, name: "Acceleratle", type: skill}
+      - {points: 85, name: "Mercurial Thrust", type: skill}
+      - {points: 100, name: "Falcon Slash", type: skill}
+    monsters: [orc]
+  - id: spicy-slasher
+    name: "Spicy Slasher"
+    tree:
+      - {points: 3, name: "Flame Slash", type: skill}
+      - {points: 10, name: "Frizz", type: skill}
+      - {points: 20, name: "Dragon Slash", type: skill}
+      - {points: 30, name: "Attack +4", type: trait}
+      - {points: 50, name: "Squelch", type: skill}
+      - {points: 70, name: "Frizzle", type: skill}
+      - {points: 85, name: "Flame Breath", type: skill}
+      - {points: 100, name: "Attack +8", type: trait}
+      - {points: 120, name: "Flamesplitter", type: skill}
+    monsters: [wax-murderer, leafy-larrikin, she-slime]
+  - id: splash-afficionado
+    name: "Splash Afficionado"
+    tree:
+      - {points: 3, name: "Splish", type: skill}
+      - {points: 10, name: "Heal", type: skill}
+      - {points: 20, name: "Slime Squisher", type: skill}
+      - {points: 30, name: "Max. MP +4", type: trait}
+      - {points: 50, name: "Waterspout", type: skill}
+      - {points: 70, name: "Blunt", type: skill}
+      - {points: 85, name: "Max. MP +8", type: trait}
+      - {points: 100, name: "Splash", type: skill}
+    monsters: [seasaur, see-urchin, scallop-slime, toady]
+  - id: splash-virtuoso
+    name: "Splash Virtuoso"
+    tree:
+      - {points: 3, name: "Splash", type: skill}
+      - {points: 10, name: "Midheal", type: skill}
+      - {points: 20, name: "Max. MP +16", type: trait}
+      - {points: 40, name: "Kasplash", type: skill}
+      - {points: 60, name: "Seasplitter", type: skill}
+      - {points: 80, name: "Kablunt", type: skill}
+      - {points: 110, name: "Max. MP +24", type: trait}
+      - {points: 150, name: "Kasplashle", type: skill}
+    monsters: []
+  - id: stinker
+    name: "Stinker"
+    tree:
+      - {points: 3, name: "Tox", type: skill}
+      - {points: 10, name: "Fuddle", type: skill}
+      - {points: 20, name: "Poison Breath", type: skill}
+      - {points: 30, name: "Gobstopper", type: skill}
+      - {points: 50, name: "Whack", type: skill}
+      - {points: 70, name: "Sweet Breath", type: skill}
+      - {points: 85, name: "War Cry", type: skill}
+      - {points: 100, name: "Burning Breath", type: skill}
+    monsters: [funghoul, funky-ferret, cauldragon]
+  - id: stony-slasher
+    name: "Stony Slasher"
+    tree:
+      - {points: 3, name: "Lightning Slash", type: skill}
+      - {points: 10, name: "Crag", type: skill}
+      - {points: 20, name: "Beast Tamer", type: skill}
+      - {points: 30, name: "Defence +8", type: trait}
+      - {points: 50, name: "Defuddle", type: skill}
+      - {points: 70, name: "Stone's Throw", type: skill}
+      - {points: 85, name: "Craggle", type: skill}
+      - {points: 100, name: "Defence +16", type: trait}
+      - {points: 120, name: "Brightsplitter", type: skill}
+    monsters: [weartiger, mottle-slime, fromage-fray]
+  - id: sweet-talker
+    name: "Sweet-Talker"
+    tree:
+      - {points: 3, name: "Heal", type: skill}
+      - {points: 10, name: "Tongue Lashing", type: skill}
+      - {points: 20, name: "Sleep Attack", type: skill}
+      - {points: 30, name: "Buff", type: skill}
+      - {points: 50, name: "Max. HP +8", type: trait}
+      - {points: 70, name: "Sweet Breath", type: skill}
+      - {points: 85, name: "Miracle Slash", type: skill}
+      - {points: 100, name: "Auto-Cadabra", type: trait}
+    monsters: [bad-apple, goonache-goodie]
+  - id: thrill-seeker
+    name: "Thrill-Seeker"
+    tree:
+      - {points: 3, name: "Decelerate", type: skill}
+      - {points: 10, name: "Crack", type: skill}
+      - {points: 20, name: "Cool Breath", type: skill}
+      - {points: 30, name: "Sap", type: skill}
+      - {points: 50, name: "War Cry", type: skill}
+      - {points: 70, name: "Whack", type: skill}
+      - {points: 85, name: "Fuddle", type: skill}
+      - {points: 100, name: "Wisdom +24", type: trait}
+      - {points: 120, name: "Crackle", type: skill}
+    monsters: [cannibox, guaardvark, lunatick]
+  - id: tongue-twister
+    name: "Tongue Twister"
+    tree:
+      - {points: 3, name: "Tongue Lashing", type: skill}
+      - {points: 10, name: "Splish", type: skill}
+      - {points: 20, name: "Decelerate", type: skill}
+      - {points: 30, name: "Drain Magic", type: skill}
+      - {points: 50, name: "Sleep Attack", type: skill}
+      - {points: 70, name: "Dazzleflash", type: skill}
+      - {points: 85, name: "Sweet Breath", type: skill}
+      - {points: 100, name: "Tongue Bashing", type: skill}
+    monsters: [mad-mollusk, drohl-drone, lips]
+  - id: toxicologist
+    name: "Toxicologist"
+    tree:
+      - {points: 3, name: "Tox", type: skill}
+      - {points: 10, name: "Poison Attack", type: skill}
+      - {points: 20, name: "Tongue Lashing", type: skill}
+      - {points: 30, name: "Heart Breaker", type: skill}
+      - {points: 50, name: "Poison Breath", type: skill}
+      - {points: 70, name: "Dim", type: skill}
+      - {points: 85, name: "Katox", type: skill}
+      - {points: 100, name: "Tongue Bashing", type: skill}
+    monsters: [flython, killer-gila]
+  - id: vexologist
+    name: "Vexologist"
+    tree:
+      - {points: 3, name: "Tox", type: skill}
+      - {points: 10, name: "Dodgy Dance", type: skill}
+      - {points: 20, name: "Gobstopper", type: skill}
+      - {points: 30, name: "Sandstorm", type: skill}
+      - {points: 50, name: "Critical Meltdown", type: skill}
+      - {points: 70, name: "Brake Wind", type: skill}
+      - {points: 85, name: "Katox", type: skill}
+      - {points: 100, name: "Tongue Bashing", type: skill}
+    monsters: [string-fella]
+  - id: wild-child
+    name: "Wild Child"
+    tree:
+      - {points: 3, name: "Sandstorm", type: skill}
+      - {points: 10, name: "Frenzy", type: skill}
+      - {points: 20, name: "Attack Attacker", type: skill}
+      - {points: 30, name: "Attack +4", type: trait}
+      - {points: 50, name: "Confusion Attack", type: skill}
+      - {points: 70, name: "War Cry", type: skill}
+      - {points: 85, name: "Persecutter", type: skill}
+      - {points: 100, name: "Fuddle Dance", type: skill}
+    monsters: [bullfinch, foo-dog, ursa-major, drag-racer]
+  - id: willing-helper
+    name: "Willing Helper"
+    tree:
+      - {points: 3, name: "Squelch", type: skill}
+      - {points: 10, name: "Heal", type: skill}
+      - {points: 20, name: "Tingle", type: skill}
+      - {points: 30, name: "Buff", type: skill}
+      - {points: 50, name: "Accelerate", type: skill}
+      - {points: 70, name: "Ping", type: skill}
+      - {points: 85, name: "Oomph", type: skill}
+      - {points: 100, name: "Insulate", type: skill}
+      - {points: 120, name: "Midheal", type: skill}
+      - {points: 150, name: "Max. MP +24", type: trait}
+    monsters: [capsichum, odd-cob]
+  - id: woosh-afficionado
+    name: "Woosh Afficionado"
+    tree:
+      - {points: 3, name: "Woosh", type: skill}
+      - {points: 10, name: "Gust Slash", type: skill}
+      - {points: 20, name: "Nature Nerfer", type: skill}
+      - {points: 30, name: "Max. MP +4", type: trait}
+      - {points: 50, name: "Wind Sickles", type: skill}
+      - {points: 70, name: "Insulate", type: skill}
+      - {points: 85, name: "Max. MP +8", type: trait}
+      - {points: 100, name: "Swoosh", type: skill}
+    monsters: [cyclown, cumaulus, lump-wizard, sky-fry, mecha-mynah]
+  - id: woosh-virtuoso
+    name: "Woosh Virtuoso"
+    tree:
+      - {points: 3, name: "Swoosh", type: skill}
+      - {points: 10, name: "Thin Air", type: skill}
+      - {points: 20, name: "Max. MP +16", type: trait}
+      - {points: 40, name: "Kaswoosh", type: skill}
+      - {points: 60, name: "Skysplitter", type: skill}
+      - {points: 80, name: "Insulatle", type: skill}
+      - {points: 110, name: "Max. MP +24", type: trait}
+      - {points: 150, name: "Kaswooshle", type: skill}
+    monsters: []
+  - id: zam-afficionado
+    name: "Zam Afficionado"
+    tree:
+      - {points: 3, name: "Zam", type: skill}
+      - {points: 10, name: "Attack Attacker", type: skill}
+      - {points: 20, name: "Victimiser", type: skill}
+      - {points: 30, name: "Max. MP +4", type: trait}
+      - {points: 50, name: "Confusion Attack", type: skill}
+      - {points: 70, name: "Sap", type: skill}
+      - {points: 85, name: "Max. MP +8", type: trait}
+      - {points: 100, name: "Zammle", type: skill}
+    monsters: [hellbound-horror, dracky]
+  - id: zam-virtuoso
+    name: "Zam Virtuoso"
+    tree:
+      - {points: 3, name: "Zammle", type: skill}
+      - {points: 10, name: "Kasap", type: skill}
+      - {points: 20, name: "Max. MP +16", type: trait}
+      - {points: 40, name: "Kazam", type: skill}
+      - {points: 60, name: "Blightsplitter", type: skill}
+      - {points: 80, name: "Black Breath", type: skill}
+      - {points: 110, name: "Max. MP +24", type: trait}
+      - {points: 150, name: "Kazammle", type: skill}
+    monsters: []
+  - id: zap-afficionado
+    name: "Zap Afficionado"
+    tree:
+      - {points: 3, name: "Zap", type: skill}
+      - {points: 10, name: "Lightning Slash", type: skill}
+      - {points: 20, name: "Numb", type: skill}
+      - {points: 30, name: "Max. MP +4", type: trait}
+      - {points: 50, name: "Knuckle Sandwich", type: skill}
+      - {points: 70, name: "Accelerate", type: skill}
+      - {points: 85, name: "Max. MP +8", type: trait}
+      - {points: 100, name: "Zapple", type: skill}
+    monsters: [slime-stack]
+  - id: zap-virtuoso
+    name: "Zap Virtuoso"
+    tree:
+      - {points: 3, name: "Zapple", type: skill}
+      - {points: 10, name: "Acceleratle", type: skill}
+      - {points: 20, name: "Max. MP +16", type: trait}
+      - {points: 40, name: "Kazap", type: skill}
+      - {points: 60, name: "Lightning", type: skill}
+      - {points: 80, name: "Kanumb", type: skill}
+      - {points: 110, name: "Max. MP +24", type: trait}
+      - {points: 150, name: "Kazapple", type: skill}
+    monsters: []

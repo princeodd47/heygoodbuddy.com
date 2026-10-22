@@ -36,4 +36,10 @@ Notes from the Switch demo. The full game launches **December 3, 2026**. Up to
 
     Pick a monster and chart its whole synthesis chain.
 
+-   :material-star-four-points:{ .lg .middle } __[Talents](talents.md)__
+
+    ---
+
+    Every Talent's skill tree, and which monsters have it.
+
 </div>

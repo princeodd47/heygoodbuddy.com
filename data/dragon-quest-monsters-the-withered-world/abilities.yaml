@@ -1,0 +1,201 @@
+# One-line notes on what each skill and trait does, written for this site in
+# shorthand (not the game's own text). "(Wis)" means the caster's wisdom
+# raises the chance it works. Looked up by name from talents.yaml.
+abilities:
+  - {name: "Accelerate", note: "1 ally · big agility boost, 4–7 turns"}
+  - {name: "Acceleratle", note: "All allies · agility boost, 4–7 turns"}
+  - {name: "Agility +16", note: "Passive · +16 agility"}
+  - {name: "Agility +4", note: "Passive · +4 agility"}
+  - {name: "Agility +8", note: "Passive · +8 agility"}
+  - {name: "Anchorman", note: "1 foe · heavy punch, always goes last"}
+  - {name: "Armour Harmer", note: "All foes · medium slash, may cut defence 4–7 turns"}
+  - {name: "Assassin's Stab", note: "1 foe · hit with a chance to kill outright"}
+  - {name: "Attack +12", note: "Passive · +12 attack"}
+  - {name: "Attack +16", note: "Passive · +16 attack"}
+  - {name: "Attack +4", note: "Passive · +4 attack"}
+  - {name: "Attack +8", note: "Passive · +8 attack"}
+  - {name: "Attack Attacker", note: "1 foe · hit, may cut attack 2–5 turns"}
+  - {name: "Auto-Cadabra", note: "Passive · regain a little MP after acting"}
+  - {name: "Auto-Restora", note: "Passive · regain a little HP after acting"}
+  - {name: "Bang", note: "All foes · small explosion spell"}
+  - {name: "Beast Tamer", note: "Slash · extra damage to Beast family"}
+  - {name: "Black Breath", note: "All foes · heavy dark breath, may block spells 4–7 turns"}
+  - {name: "Blessed Breath", note: "All foes · heavy light breath, may confuse 2–5 turns"}
+  - {name: "Blightsplitter", note: "All foes · medium dark slash"}
+  - {name: "Blunt", note: "1 foe · big attack drop, 2–5 turns (Wis)"}
+  - {name: "Boom", note: "All foes · medium explosion spell"}
+  - {name: "Bounce", note: "Party · reflects most spells, 4–7 turns"}
+  - {name: "Brake Wind", note: "All allies · reflects one breath attack"}
+  - {name: "Brightsplitter", note: "All foes · medium light slash"}
+  - {name: "Buff", note: "1 ally · big defence boost, 4–7 turns"}
+  - {name: "Buffer Zone", note: "All allies · resistances up, 2–5 turns"}
+  - {name: "Burning Breath", note: "All foes · breath that paralyses, 2–5 turns"}
+  - {name: "C-C-Cold Breath", note: "All foes · extreme ice breath"}
+  - {name: "Chilly Breath", note: "All foes · medium ice breath"}
+  - {name: "Cock-a-Doodle-Doo", note: "All allies · wake from sleep"}
+  - {name: "Confusion Attack", note: "1 foe · hit, may confuse 2–5 turns"}
+  - {name: "Cool Breath", note: "All foes · small ice breath"}
+  - {name: "Crack", note: "1 foe · small ice spell"}
+  - {name: "Crackle", note: "All foes · medium ice spell"}
+  - {name: "Crag", note: "All foes · small earth spell, lands next round"}
+  - {name: "Craggle", note: "All foes · medium earth spell, lands next round"}
+  - {name: "Critical Meltdown", note: "1 foe · no critical hits, 4–7 turns"}
+  - {name: "Crushed Ice", note: "Random foes · 4 ice punches"}
+  - {name: "Dazzle", note: "All foes · dazzle, 2–5 turns (Wis)"}
+  - {name: "Dazzleflash", note: "All foes · accuracy down, 2–5 turns"}
+  - {name: "Decelerate", note: "1 foe · big agility drop, 4–7 turns (Wis)"}
+  - {name: "Deceleratle", note: "All foes · agility drop, 4–7 turns (Wis)"}
+  - {name: "Deep Breath", note: "Self · next breath attack hits harder"}
+  - {name: "Defence +16", note: "Passive · +16 defence"}
+  - {name: "Defence +4", note: "Passive · +4 defence"}
+  - {name: "Defence +8", note: "Passive · +8 defence"}
+  - {name: "Defuddle", note: "All allies · cure confusion"}
+  - {name: "Demon Demeaner", note: "Slash · extra damage to Demon family"}
+  - {name: "Dim", note: "1 foe · big wisdom drop, 4–7 turns (Wis)"}
+  - {name: "Dodgy Dance", note: "Self · evasion up, 4–7 turns"}
+  - {name: "Dragon Slash", note: "Slash · extra damage to Dragon family"}
+  - {name: "Drain Magic", note: "1 foe · steal some MP"}
+  - {name: "Earthsplitter", note: "All foes · medium earth slash"}
+  - {name: "Falcon Slash", note: "1 foe · two light slashes"}
+  - {name: "Fan Dango", note: "Random foes · 3–4 hits, stronger with agility"}
+  - {name: "Fire Breath", note: "All foes · small fire breath"}
+  - {name: "Fizzle", note: "All foes · block spells, 4–7 turns (Wis)"}
+  - {name: "Flame Breath", note: "All foes · medium fire breath"}
+  - {name: "Flame Slash", note: "1 foe · light fire slash"}
+  - {name: "Flamesplitter", note: "All foes · medium fire slash"}
+  - {name: "Freezing Blizzard", note: "All foes · heavy ice breath"}
+  - {name: "Frenzy", note: "Random target (foe or ally!) · guaranteed critical hit"}
+  - {name: "Frizz", note: "1 foe · small fire spell"}
+  - {name: "Frizzle", note: "1 foe · medium fire spell"}
+  - {name: "Frost Fangs", note: "All foes · medium ice slash, may stun 1 turn"}
+  - {name: "Frost Slash", note: "1 foe · light ice slash"}
+  - {name: "Fuddle", note: "1 foe · confuse, 2–5 turns (Wis)"}
+  - {name: "Fuddle Dance", note: "All foes · confuse, 2–5 turns"}
+  - {name: "Giga Drain Magic", note: "Random foes · steal MP 4 times"}
+  - {name: "Gobstopper", note: "1 foe · no breath attacks, 4–7 turns"}
+  - {name: "Gust Slash", note: "1 foe · light wind slash"}
+  - {name: "Hatchet Man", note: "1 foe · often misses, but crits more when it lands"}
+  - {name: "Heal", note: "1 ally · heal about 28+ HP"}
+  - {name: "Heart Breaker", note: "1 foe · slash, may stun 1 turn"}
+  - {name: "Hellitosis", note: "All foes · huge fire breath, may stun 1 turn"}
+  - {name: "Helm Splitter", note: "1 foe · hit, may cut defence 4–7 turns"}
+  - {name: "Hustle Dance", note: "Random allies · 2–6 heals, stronger with level"}
+  - {name: "Ice Age", note: "All foes · huge ice breath, may stun 1 turn"}
+  - {name: "Inferno", note: "All foes · heavy fire breath"}
+  - {name: "Insulate", note: "1 ally · much less breath damage, 4–7 turns"}
+  - {name: "Insulatle", note: "All allies · less breath damage, 4–7 turns"}
+  - {name: "Intense Defence", note: "Self · take ~1/10 damage; once per battle"}
+  - {name: "Kablunt", note: "All foes · attack drop, 2–5 turns (Wis)"}
+  - {name: "Kaboom", note: "All foes · heavy explosion spell"}
+  - {name: "Kaboomle", note: "All foes · extreme explosion spell"}
+  - {name: "Kabuff", note: "All allies · defence boost, 4–7 turns"}
+  - {name: "Kacrack", note: "All foes · heavy ice spell"}
+  - {name: "Kacrackle", note: "All foes · extreme ice spell"}
+  - {name: "Kacrag", note: "All foes · heavy earth spell, lands next round"}
+  - {name: "Kacraggle", note: "All foes · extreme earth spell, lands next round"}
+  - {name: "Kadim", note: "All foes · wisdom drop, 4–7 turns (Wis)"}
+  - {name: "Kafrizz", note: "1 foe · heavy fire spell"}
+  - {name: "Kafrizzle", note: "1 foe · extreme fire spell"}
+  - {name: "Kafuddle", note: "All foes · confuse, 2–5 turns (Wis)"}
+  - {name: "Kamikazee", note: "All foes · kill them all, caster dies for the battle; more MP, better odds"}
+  - {name: "Kanumb", note: "All foes · paralyse, 2–5 turns (Wis)"}
+  - {name: "Kaping", note: "All allies · wisdom boost, 4–7 turns"}
+  - {name: "Kasap", note: "All foes · defence drop, 4–7 turns (Wis)"}
+  - {name: "Kasizz", note: "All foes · heavy light spell"}
+  - {name: "Kasizzle", note: "All foes · extreme light spell"}
+  - {name: "Kasnooze", note: "All foes · sleep, 2–5 turns (Wis)"}
+  - {name: "Kasplash", note: "1 foe · heavy water spell"}
+  - {name: "Kasplashle", note: "1 foe · extreme water spell"}
+  - {name: "Kaswoosh", note: "All foes · heavy wind spell"}
+  - {name: "Kaswooshle", note: "All foes · extreme wind spell"}
+  - {name: "Katox", note: "All foes · poison (Wis)"}
+  - {name: "Kazam", note: "1 foe · heavy dark spell"}
+  - {name: "Kazammle", note: "1 foe · extreme dark spell"}
+  - {name: "Kazap", note: "All foes · heavy lightning spell"}
+  - {name: "Kazapple", note: "All foes · extreme lightning spell"}
+  - {name: "Kazing", note: "1 ally · revive, never fails"}
+  - {name: "Kerplunk", note: "All allies incl. reserves · full revive/heal, caster dies for the battle"}
+  - {name: "Knuckle Sandwich", note: "1 foe · charge up, next hit ignores defence"}
+  - {name: "Lightning", note: "All foes · medium lightning, stronger with level"}
+  - {name: "Lightning Slash", note: "1 foe · light lightning slash"}
+  - {name: "Magic Pop", note: "1 foe · light spell costing 1/4 of current MP; more MP, more damage"}
+  - {name: "Matter Scatterer", note: "Slash · extra damage to Material family"}
+  - {name: "Max. HP +4", note: "Passive · +4 max HP"}
+  - {name: "Max. HP +8", note: "Passive · +8 max HP"}
+  - {name: "Max. MP +12", note: "Passive · +12 max MP"}
+  - {name: "Max. MP +16", note: "Passive · +16 max MP"}
+  - {name: "Max. MP +24", note: "Passive · +24 max MP"}
+  - {name: "Max. MP +4", note: "Passive · +4 max MP"}
+  - {name: "Max. MP +8", note: "Passive · +8 max MP"}
+  - {name: "Meditation", note: "Self · heal about 300+ HP"}
+  - {name: "Mercurial Thrust", note: "1 foe · weaker punch that always goes first"}
+  - {name: "Metal Slash", note: "1 foe · normal-strength slash; always does at least 1 to metal monsters"}
+  - {name: "Midheal", note: "1 ally · heal about 76+ HP"}
+  - {name: "Miracle Slash", note: "1 foe · slash that heals you for about half the damage (max 200)"}
+  - {name: "Mist Me", note: "Self · cancels the next hit (not every kind)"}
+  - {name: "Multiheal", note: "All allies · heal about 76+ HP"}
+  - {name: "Multislash", note: "All foes · slash, weaker toward the right side"}
+  - {name: "Nature Nerfer", note: "Slash · extra damage to Nature family"}
+  - {name: "Numb", note: "1 foe · paralyse, 2–5 turns (Wis)"}
+  - {name: "Oomph", note: "1 ally · big attack boost, 2–5 turns"}
+  - {name: "Oomphle", note: "All allies · attack boost, 2–5 turns"}
+  - {name: "Parallax", note: "1 foe · heavy slash, may paralyse 2–5 turns"}
+  - {name: "Paralysing Punch", note: "1 foe · hit, may paralyse 2–5 turns"}
+  - {name: "Persecutter", note: "1 foe · hit, extra strong if it's asleep or confused"}
+  - {name: "Ping", note: "1 ally · big wisdom boost, 4–7 turns"}
+  - {name: "Poison Attack", note: "1 foe · hit, may poison"}
+  - {name: "Poison Breath", note: "All foes · poison"}
+  - {name: "Propeller Blade", note: "1 foe · two light wind punches"}
+  - {name: "Pyre o' Fire", note: "1 foe · small fire damage"}
+  - {name: "Right as Rain", note: "All allies · random heal next turn"}
+  - {name: "Roundhouse Kick", note: "All foes · kick ignoring defence, weaker toward the right side"}
+  - {name: "Sandstorm", note: "All foes · accuracy down, 2–5 turns"}
+  - {name: "Sandy Sigh", note: "All foes · heavy earth breath plus accuracy down 2–5 turns"}
+  - {name: "Sap", note: "1 foe · big defence drop, 4–7 turns (Wis)"}
+  - {name: "Scorch", note: "All foes · extreme fire breath"}
+  - {name: "Seasplitter", note: "All foes · medium water slash"}
+  - {name: "Seethe", note: "Self · next attack hits harder and is harder to dodge"}
+  - {name: "Selflessness", note: "Self · take every hit for allies for a round, at extra damage"}
+  - {name: "Shining Shot", note: "Random foes · 4–12 light hits"}
+  - {name: "Sizz", note: "All foes · small light spell"}
+  - {name: "Sizzle", note: "All foes · medium light spell"}
+  - {name: "Skysplitter", note: "All foes · medium wind slash"}
+  - {name: "Sleep Attack", note: "1 foe · hit, may sleep 2–5 turns"}
+  - {name: "Slime Squisher", note: "Smash · extra damage to Slime family"}
+  - {name: "Snap, Crackle, Poof", note: "1 ally · immune to status ailments, 2–5 turns"}
+  - {name: "Snooze", note: "1 foe · sleep, 2–5 turns (Wis)"}
+  - {name: "Snow Globe", note: "1 foe · small ice damage"}
+  - {name: "Splash", note: "1 foe · medium water spell"}
+  - {name: "Splash Damage", note: "All foes · medium water, stronger with level"}
+  - {name: "Splish", note: "1 foe · small water spell"}
+  - {name: "Squelch", note: "All allies · cure poison"}
+  - {name: "Stomp", note: "All foes · medium earth, stronger with level"}
+  - {name: "Stone's Throw", note: "1 foe · small earth damage"}
+  - {name: "Sultry Dance", note: "All foes · stun 1 turn"}
+  - {name: "Sweet Breath", note: "All foes · breath that sleeps, 2–5 turns"}
+  - {name: "Swoosh", note: "All foes · medium wind spell"}
+  - {name: "Sword Dance", note: "Random foes · 3–7 hits"}
+  - {name: "Tap Dance", note: "1 foe · steal some MP"}
+  - {name: "Thin Air", note: "All foes · medium wind, stronger with level"}
+  - {name: "Tingle", note: "All allies · cure paralysis"}
+  - {name: "Tongue Bashing", note: "1 foe · stun and drop defence to 1"}
+  - {name: "Tongue Lashing", note: "1 foe · stun and lower defence"}
+  - {name: "Tox", note: "1 foe · poison (Wis)"}
+  - {name: "Undead Undoer", note: "Slash · extra damage to Undead family"}
+  - {name: "Victimiser", note: "1 foe · hit, extra strong if it's poisoned or paralysed"}
+  - {name: "War Cry", note: "All foes · stun 1 turn"}
+  - {name: "Waterspout", note: "1 foe · small water damage"}
+  - {name: "Wave of Relief", note: "All allies · cure all status ailments"}
+  - {name: "Weird Dance", note: "1 foe · drain its MP"}
+  - {name: "Whack", note: "1 foe · instant kill (Wis)"}
+  - {name: "Wind Sickles", note: "1 foe · small wind damage"}
+  - {name: "Wisdom +16", note: "Passive · +16 wisdom"}
+  - {name: "Wisdom +24", note: "Passive · +24 wisdom"}
+  - {name: "Wisdom +32", note: "Passive · +32 wisdom"}
+  - {name: "Wisdom +8", note: "Passive · +8 wisdom"}
+  - {name: "Woosh", note: "All foes · small wind spell"}
+  - {name: "Zam", note: "1 foe · small dark spell"}
+  - {name: "Zammle", note: "1 foe · medium dark spell"}
+  - {name: "Zap", note: "1 foe · small lightning spell"}
+  - {name: "Zapple", note: "All foes · medium lightning spell"}
+  - {name: "Zing", note: "1 ally · revive, can fail"}

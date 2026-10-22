@@ -3,812 +3,973 @@ monsters:
     name: Antguzzler
     family: Beast
     rank: G
+    talents: [power-player]
     status: unverified
   - id: armoured-wartoise
     name: Armoured Wartoise
     family: Dragon
     rank: F
+    talents: [defender]
     status: unverified
   - id: avian-android
     name: Avian Android
     family: Material
     rank: F
+    talents: [assassin]
     status: unverified
   - id: bad-apple
     name: Bad Apple
     family: Nature
     rank: F
+    talents: [sweet-talker]
     status: unverified
   - id: bad-egg
     name: Bad Egg
     family: Slime
     rank: G
+    talents: [crack-afficionado]
     status: unverified
   - id: bambooligan
     name: Bambooligan
     family: Material
     rank: G
+    talents: [blowy-slasher]
     status: unverified
   - id: bantamweight
     name: Bantamweight
     family: Nature
     rank: G
+    talents: [goliath]
     status: unverified
   - id: bludgerigar
     name: Bludgerigar
     family: Nature
     rank: G
+    talents: [blusterer]
     status: unverified
   - id: bodkin-archer
     name: Bodkin Archer
     family: Demon
     rank: G
+    talents: [assassin]
     status: unverified
   - id: bongo-drongo
     name: Bongo Drongo
     family: Material
     rank: F
+    talents: [fortifier]
     status: unverified
   - id: boppin-badger
     name: "Boppin' Badger"
     family: Beast
     rank: F
+    talents: [dancer]
     status: unverified
   - id: box-slime
     name: Box Slime
     family: Slime
     rank: F
+    talents: [fortifier]
     status: unverified
   - id: bubble-slime
     name: Bubble Slime
     family: Slime
     rank: G
+    talents: [slimer]
     status: unverified
   - id: buddy-slime
     name: Buddy Slime
     family: Slime
     rank: G
     where: Starter (Nera)
+    talents: [nature-child]
     status: unverified
   - id: bullfinch
     name: Bullfinch
     family: Nature
     rank: F
+    talents: [wild-child]
     status: unverified
   - id: bunicorn
     name: Bunicorn
     family: Beast
     rank: G
+    talents: [naturalist]
     status: unverified
   - id: burr-baby
     name: Burr Baby
     family: Material
     rank: G
+    talents: [materialist]
     status: unverified
   - id: cactiball
     name: Cactiball
     family: Nature
     rank: F
+    talents: [blowy-slasher]
     status: unverified
   - id: candy-cat
     name: Candy Cat
     family: Beast
     rank: G
+    talents: [enfeebler]
     status: unverified
   - id: cannibox
     name: Cannibox
     family: Material
     rank: F
+    talents: [thrill-seeker]
     status: unverified
   - id: cannonbrawler
     name: Cannonbrawler
     family: Demon
     rank: F
+    talents: [bang-afficionado]
     status: unverified
   - id: capsichum
     name: Capsichum
     family: Nature
     rank: G
+    talents: [willing-helper]
     status: unverified
   - id: cauldragon
     name: Cauldragon
     family: Dragon
     rank: F
+    talents: [stinker]
     status: unverified
   - id: coconut-slime
     name: Coconut Slime
     family: Slime
     rank: F
+    talents: [hottie]
     status: unverified
   - id: crabid
     name: Crabid
     family: Nature
     rank: F
+    talents: [defender]
     status: unverified
   - id: crested-viper
     name: Crested Viper
     family: Dragon
     rank: G
+    talents: [enfeebler]
     status: unverified
   - id: croc-a-bugle-doo
     name: "Croc-a-Bugle-Doo"
     family: Dragon
     rank: F
+    talents: [fortifier]
     status: unverified
   - id: cruelcumber
     name: Cruelcumber
     family: Nature
     rank: G
+    talents: [blowy-slasher]
     status: unverified
   - id: cumaulus
     name: Cumaulus
     family: Material
     rank: G
+    talents: [woosh-afficionado]
     status: unverified
   - id: cyclown
     name: Cyclown
     family: Nature
     rank: F
+    talents: [woosh-afficionado]
     status: unverified
   - id: damselfly
     name: Damselfly
     family: Dragon
     rank: G
+    talents: [soothesayer]
     status: unverified
   - id: dancing-devil
     name: Dancing Devil
     family: Demon
     rank: F
+    talents: [dancer]
     status: unverified
   - id: dessert-demon
     name: Dessert Demon
     family: Demon
     rank: F
+    talents: [bang-afficionado]
     status: unverified
   - id: dracky
     name: Dracky
     family: Demon
     rank: G
+    talents: [zam-afficionado]
     status: unverified
   - id: drag-racer
     name: Drag Racer
     family: Dragon
     rank: F
+    talents: [wild-child]
     status: unverified
   - id: dragonthorn
     name: Dragonthorn
     family: Dragon
     rank: G
+    talents: [blowy-slasher]
     status: unverified
   - id: drake-slime
     name: Drake Slime
     family: Slime
     rank: F
+    talents: [shallow-breather]
     status: unverified
   - id: drakularge
     name: Drakularge
     family: Dragon
     rank: E
+    talents: [goliath]
     status: unverified
   - id: dread-squirrel
     name: Dread Squirrel
     family: Beast
     rank: F
+    talents: [naturalist]
     status: unverified
   - id: drohl-drone
     name: Drohl Drone
     family: Undead
     rank: G
+    talents: [tongue-twister]
     status: unverified
   - id: eggsoskeleton
     name: Eggsoskeleton
     family: Material
     rank: G
+    talents: [materialist]
     status: unverified
   - id: erazor-blade
     name: Erazor Blade
     family: Material
     rank: F
+    talents: [blade-maven]
     status: unverified
   - id: ethereal-serpent
     name: Ethereal Serpent
     family: Dragon
     rank: F
+    talents: [shallow-breather]
     status: unverified
   - id: fat-rat
     name: Fat Rat
     family: Beast
     rank: G
+    talents: [crag-afficionado]
     status: unverified
   - id: feral-slime
     name: Feral Slime
     family: Slime
     rank: F
+    talents: [fighter]
     status: unverified
   - id: feralball
     name: Feralball
     family: Beast
     rank: G
+    talents: [blowy-slasher]
     status: unverified
   - id: firespirit
     name: Firespirit
     family: Undead
     rank: G
+    talents: [frizz-afficionado]
     status: unverified
   - id: flython
     name: Flython
     family: Dragon
     rank: F
+    talents: [toxicologist]
     status: unverified
   - id: foo-dog
     name: Foo Dog
     family: Material
     rank: F
+    talents: [wild-child]
     status: unverified
   - id: fright-bulb
     name: Fright Bulb
     family: Slime
     rank: G
+    talents: [soothesayer]
     status: unverified
   - id: fromage-fray
     name: Fromage Fray
     family: Material
     rank: G
     where: Starter (Nera)
+    talents: [stony-slasher]
     status: unverified
   - id: funghoul
     name: Funghoul
     family: Undead
     rank: G
+    talents: [stinker]
     status: unverified
   - id: funky-ferret
     name: Funky Ferret
     family: Beast
     rank: G
+    talents: [stinker]
     status: unverified
   - id: gasbagon
     name: Gasbagon
     family: Dragon
     rank: F
+    talents: [blazer]
     status: unverified
   - id: ghost
     name: Ghost
     family: Undead
     rank: G
+    talents: [graveheart]
     status: unverified
   - id: gloomy-grublin
     name: Gloomy Grublin
     family: Beast
     rank: G
+    talents: [prankster]
     status: unverified
   - id: gold-golem
     name: Gold Golem
     family: Material
     rank: F
+    talents: [materialist]
     status: unverified
   - id: goonache-goodie
     name: Goonache Goodie
     family: Slime
     rank: G
+    talents: [sweet-talker]
     status: unverified
   - id: great-sabrecub
     name: Great Sabrecub
     family: Beast
     rank: G
+    talents: [naturalist]
     status: unverified
   - id: greater-dracky
     name: Greater Dracky
     family: Demon
     rank: F
+    talents: [goliath]
     status: unverified
   - id: gremlin
     name: Gremlin
     family: Demon
     rank: G
+    talents: [paramedic]
     status: unverified
   - id: guaardvark
     name: Guaardvark
     family: Beast
     rank: F
+    talents: [thrill-seeker]
     status: unverified
   - id: hammerhood
     name: Hammerhood
     family: Beast
     rank: G
+    talents: [power-player]
     status: unverified
   - id: hangelabra
     name: Hangelabra
     family: Demon
     rank: F
+    talents: [hexcommunicator]
     status: unverified
   - id: healslime
     name: Healslime
     family: Slime
     rank: G
+    talents: [healer]
     status: unverified
   - id: hellbound-horror
     name: Hellbound Horror
     family: Undead
     rank: F
+    talents: [zam-afficionado]
     status: unverified
   - id: hunter-mech
     name: Hunter Mech
     family: Material
     rank: F
+    talents: [blade-maven]
     status: unverified
   - id: icy-dragling
     name: Icy Dragling
     family: Dragon
     rank: G
+    talents: [healer]
     status: unverified
   - id: imp
     name: Imp
     family: Demon
     rank: G
     where: Starter (Bianca)
+    talents: [dark-artist]
     status: unverified
   - id: jargon
     name: Jargon
     family: Dragon
     rank: F
+    talents: [blazer]
     status: unverified
   - id: jingle-bug
     name: Jingle Bug
     family: Nature
     rank: F
+    talents: [fortifier]
     status: unverified
   - id: khalamari-kid
     name: Khalamari Kid
     family: Nature
     rank: G
+    talents: [aquapothecary]
     status: unverified
   - id: killer-gila
     name: Killer Gila
     family: Dragon
     rank: G
+    talents: [toxicologist]
     status: unverified
   - id: killerpillar
     name: Killerpillar
     family: Nature
     rank: G
+    talents: [hive-mind]
     status: unverified
   - id: king-kelp
     name: King Kelp
     family: Undead
     rank: F
+    talents: [aquapothecary]
     status: unverified
   - id: kingfuschia
     name: Kingfuschia
     family: Nature
     rank: G
+    talents: [princess]
     status: unverified
   - id: komodo
     name: Komodo
     family: Dragon
     rank: G
+    talents: [defender]
     status: unverified
   - id: lampling
     name: Lampling
     family: Material
     rank: G
+    talents: [frizz-afficionado]
     status: unverified
   - id: leafy-larrikin
     name: Leafy Larrikin
     family: Nature
     rank: F
+    talents: [spicy-slasher]
     status: unverified
   - id: lips
     name: Lips
     family: Demon
     rank: G
+    talents: [tongue-twister]
     status: unverified
   - id: little-devil
     name: Little Devil
     family: Demon
     rank: F
+    talents: [dark-artist]
     status: unverified
   - id: lump-wizard
     name: Lump Wizard
     family: Demon
     rank: G
+    talents: [woosh-afficionado]
     status: unverified
   - id: lunatick
     name: Lunatick
     family: Demon
     rank: G
+    talents: [thrill-seeker]
     status: unverified
   - id: mad-moai
     name: Mad Moai
     family: Material
     rank: F
+    talents: [materialist]
     status: unverified
   - id: mad-mollusk
     name: Mad Mollusk
     family: Nature
     rank: G
+    talents: [tongue-twister]
     status: unverified
   - id: marislime
     name: Marislime
     family: Slime
     rank: F
+    talents: [aquapothecary]
     status: unverified
   - id: mecha-mynah
     name: "Mecha-Mynah"
     family: Material
     rank: G
+    talents: [woosh-afficionado]
     status: unverified
   - id: merman
     name: Merman
     family: Demon
     rank: F
+    talents: [aquapothecary]
     status: unverified
   - id: midnight-horknight
     name: Midnight Horknight
     family: Nature
     rank: F
+    talents: [hive-mind]
     status: unverified
   - id: mischievous-mole
     name: Mischievous Mole
     family: Beast
     rank: G
+    talents: [prankster]
     status: unverified
   - id: mitey-oak
     name: Mitey Oak
     family: Nature
     rank: F
+    talents: [martyr]
     status: unverified
   - id: molten-slime
     name: Molten Slime
     family: Slime
     rank: F
+    talents: [roaster]
     status: unverified
   - id: monolog
     name: Monolog
     family: Undead
     rank: F
+    talents: [nature-child]
     status: unverified
   - id: mottle-slime
     name: Mottle Slime
     family: Slime
     rank: F
+    talents: [stony-slasher]
     status: unverified
   - id: mouldfish
     name: Mouldfish
     family: Undead
     rank: F
+    talents: [aquapothecary]
     status: unverified
   - id: mud-mannequin
     name: Mud Mannequin
     family: Material
     rank: G
+    talents: [dancer]
     status: unverified
   - id: muddy-hand
     name: Muddy Hand
     family: Undead
     rank: F
+    talents: [crag-afficionado]
     status: unverified
   - id: mudraker
     name: Mudraker
     family: Material
     rank: F
+    talents: [mudmonger]
     status: unverified
   - id: mummy-boy
     name: Mummy Boy
     family: Undead
     rank: F
+    talents: [graveheart]
     status: unverified
   - id: napir
     name: Napir
     family: Beast
     rank: F
+    talents: [sleep-counsellor]
     status: unverified
   - id: nardragon
     name: Nardragon
     family: Dragon
     rank: G
+    talents: [martyr]
     status: unverified
   - id: odd-cob
     name: Odd Cob
     family: Nature
     rank: F
+    talents: [willing-helper]
     status: unverified
   - id: onion-slime
     name: Onion Slime
     family: Slime
     rank: F
+    talents: [nature-child]
     status: unverified
   - id: orc
     name: Orc
     family: Beast
     rank: F
+    talents: [speedster]
     status: unverified
   - id: ornery-onion
     name: Ornery Onion
     family: Nature
     rank: G
+    talents: [nature-child]
     status: unverified
   - id: pina-marauder
     name: Piña Marauder
     family: Demon
     rank: G
+    talents: [nature-child]
     status: unverified
   - id: platypunk
     name: Platypunk
     family: Beast
     rank: G
+    talents: [naturalist]
     status: unverified
   - id: platypup
     name: Platypup
     family: Beast
     rank: G
+    talents: [prankster]
     status: unverified
   - id: pocus-poppet
     name: Pocus Poppet
     family: Material
     rank: F
+    talents: [irritant]
     status: unverified
   - id: powie-yowie
     name: Powie Yowie
     family: Beast
     rank: F
+    talents: [chilly-receptionist]
     status: unverified
   - id: prestidigitator
     name: Prestidigitator
     family: Demon
     rank: F
+    talents: [magic-maven]
     status: unverified
   - id: pteranodon
     name: Pteranodon
     family: Dragon
     rank: G
+    talents: [dragonheart]
     status: unverified
   - id: putrefido
     name: Putrefido
     family: Undead
     rank: G
+    talents: [enfeebler]
     status: unverified
   - id: raptile
     name: Raptile
     family: Dragon
     rank: F
+    talents: [shallow-breather]
     status: unverified
   - id: restless-armour
     name: Restless Armour
     family: Undead
     rank: F
+    talents: [breath-taker]
     status: unverified
   - id: robber-rabbit
     name: Robber Rabbit
     family: Beast
     rank: F
+    talents: [cutpurse]
     status: unverified
   - id: ruff-ruffian
     name: Ruff Ruffian
     family: Beast
     rank: F
+    talents: [outlaw]
     status: unverified
   - id: sacksquatch
     name: Sacksquatch
     family: Material
     rank: G
+    talents: [crag-afficionado]
     status: unverified
   - id: scallop-slime
     name: Scallop Slime
     family: Slime
     rank: G
+    talents: [splash-afficionado]
     status: unverified
   - id: scarfish
     name: Scarfish
     family: Undead
     rank: F
+    talents: [graveheart]
     status: unverified
   - id: scorpion
     name: Scorpion
     family: Nature
     rank: F
+    talents: [hive-mind]
     status: unverified
   - id: seasaur
     name: Seasaur
     family: Dragon
     rank: F
+    talents: [splash-afficionado]
     status: unverified
   - id: see-urchin
     name: See Urchin
     family: Demon
     rank: F
+    talents: [splash-afficionado]
     status: unverified
   - id: shadow
     name: Shadow
     family: Undead
     rank: F
+    talents: [hexcommunicator]
     status: unverified
   - id: sham-hatwitch
     name: Sham Hatwitch
     family: Beast
     rank: G
     where: Starter (Nera)
+    talents: [shallow-breather]
     status: unverified
   - id: she-slime
     name: "She-Slime"
     family: Slime
     rank: F
+    talents: [spicy-slasher]
     status: unverified
   - id: shell-slime
     name: Shell Slime
     family: Slime
     rank: G
+    talents: [defender]
     status: unverified
   - id: skeleton
     name: Skeleton
     family: Undead
     rank: G
+    talents: [graveheart]
     status: unverified
   - id: skipper
     name: Skipper
     family: Undead
     rank: G
+    talents: [irritant]
     status: unverified
   - id: skullrider
     name: Skullrider
     family: Undead
     rank: F
+    talents: [soggy-slasher]
     status: unverified
   - id: sky-fry
     name: Sky Fry
     family: Material
     rank: G
+    talents: [woosh-afficionado]
     status: unverified
   - id: slime
     name: Slime
     family: Slime
     rank: G
+    talents: [slimer]
     status: unverified
   - id: slime-knight
     name: Slime Knight
     family: Slime
     rank: F
+    talents: [good-knight]
     status: unverified
   - id: slime-stack
     name: Slime Stack
     family: Slime
     rank: G
+    talents: [zap-afficionado]
     status: unverified
   - id: small-fry
     name: Small Fry
     family: Dragon
     rank: G
     where: Starter (Nera)
+    talents: [dragonheart]
     status: unverified
   - id: smog
     name: Smog
     family: Material
     rank: F
+    talents: [irritant]
     status: unverified
   - id: snail-slime
     name: Snail Slime
     family: Slime
     rank: F
+    talents: [barricade]
     status: unverified
   - id: snowmangler
     name: Snowmangler
     family: Slime
     rank: F
+    talents: [crack-afficionado]
     status: unverified
   - id: soft-serve-spook
     name: Soft Serve Spook
     family: Undead
     rank: G
+    talents: [cupid]
     status: unverified
   - id: stark-raven
     name: Stark Raven
     family: Nature
     rank: G
+    talents: [blusterer]
     status: unverified
   - id: string-fella
     name: String Fella
     family: Material
     rank: G
+    talents: [vexologist]
     status: unverified
   - id: stump-chump
     name: Stump Chump
     family: Undead
     rank: G
+    talents: [nature-child]
     status: unverified
   - id: succubat
     name: Succubat
     family: Demon
     rank: F
+    talents: [charmer]
     status: unverified
   - id: suckling-ocker
     name: Suckling Ocker
     family: Nature
     rank: F
+    talents: [soggy-slasher]
     status: unverified
   - id: swarmtroop
     name: Swarmtroop
     family: Nature
     rank: G
+    talents: [enfeebler]
     status: unverified
   - id: teeny-sanguini
     name: Teeny Sanguini
     family: Demon
     rank: G
+    talents: [dark-artist]
     status: unverified
   - id: toady
     name: Toady
     family: Nature
     rank: G
+    talents: [splash-afficionado]
     status: unverified
   - id: tongue-fu-fighter
     name: Tongue Fu Fighter
     family: Beast
     rank: F
+    talents: [outlaw]
     status: unverified
   - id: treeface
     name: Treeface
     family: Undead
     rank: E
+    talents: [hexcommunicator]
     status: unverified
   - id: urnexpected
     name: Urnexpected
     family: Material
     rank: F
+    talents: [alarmist]
     status: unverified
   - id: ursa-major
     name: Ursa Major
     family: Beast
     rank: E
+    talents: [wild-child]
     status: unverified
   - id: vampire-cat
     name: Vampire Cat
     family: Beast
     rank: F
+    talents: [antimagician]
     status: unverified
   - id: vegandragora
     name: Vegandragora
     family: Dragon
     rank: G
     where: Starter (Bianca)
+    talents: [sizz-afficionado]
     status: unverified
   - id: walking-corpse
     name: Walking Corpse
     family: Undead
     rank: F
+    talents: [graveheart]
     status: unverified
   - id: warhog
     name: Warhog
     family: Beast
     rank: F
+    talents: [fighter]
     status: unverified
   - id: wax-murderer
     name: Wax Murderer
     family: Undead
     rank: G
     where: Starter (Bianca)
+    talents: [spicy-slasher]
     status: unverified
   - id: weartiger
     name: Weartiger
     family: Beast
     rank: F
+    talents: [stony-slasher]
     status: unverified
   - id: will-o-the-whips
     name: "Will-o'-the-Whips"
     family: Undead
     rank: G
+    talents: [graveheart]
     status: unverified
   - id: wing-slime
     name: Wing Slime
     family: Slime
     rank: G
+    talents: [blusterer]
     status: unverified
   - id: winky
     name: Winky
     family: Demon
     rank: G
+    talents: [antimagician]
     status: unverified
   - id: woebergine
     name: Woebergine
     family: Nature
     rank: G
     where: Starter (Bianca)
+    talents: [dancer]
     status: unverified

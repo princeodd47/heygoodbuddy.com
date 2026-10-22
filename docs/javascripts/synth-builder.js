@@ -25,6 +25,8 @@
       family: true,
     });
   }
+  const talentNames = {};
+  for (const t of data.talents || []) talentNames[t.id] = t.name;
   const hasSpecial = (id) => (routes[id] || []).some((r) => !r.family);
 
   const input = root.querySelector("#sb-input");
@@ -129,8 +131,8 @@
     return li;
   }
 
-  // Summary card for the chosen monster. Skills come from an optional
-  // `skills` list on the monster in monsters.yaml.
+  // Summary card for the chosen monster. Its Talents come from monsters.yaml,
+  // each linking to its tree on the Talents page.
   function card(id) {
     const m = monsters[id];
     const c = el("section", "sb-card dqm-fam-" + m.family.toLowerCase());
@@ -145,13 +147,19 @@
     if (m.where) facts.append(el("span", "sb-chip", m.where));
     c.append(facts);
 
-    c.append(el("div", "sb-card-label", "Skills"));
-    if (m.skills && m.skills.length) {
+    c.append(el("div", "sb-card-label", "Talents"));
+    if (m.talents && m.talents.length) {
       const ul = el("ul", "sb-skills");
-      for (const s of m.skills) ul.append(el("li", "sb-chip", s));
+      for (const t of m.talents) {
+        const li = el("li", "sb-chip");
+        const a = el("a", null, talentNames[t] || t);
+        a.href = "../talents/?talent=" + t;
+        li.append(a);
+        ul.append(li);
+      }
       c.append(ul);
     } else {
-      c.append(el("p", "sb-card-empty", "No skills recorded yet."));
+      c.append(el("p", "sb-card-empty", "No Talents recorded yet."));
     }
     return c;
   }
