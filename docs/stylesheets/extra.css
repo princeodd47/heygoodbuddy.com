@@ -33,3 +33,43 @@
 .md-content .md-typeset nav.md-tags {
   display: none !important;
 }
+
+/* Tighter text spacing than the theme default. */
+.md-typeset {
+  line-height: 1.45;
+}
+
+.md-typeset p,
+.md-typeset ul,
+.md-typeset ol,
+.md-typeset table:not([class]) {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.md-typeset ul li,
+.md-typeset ol li {
+  margin-bottom: 0.15em;
+}
+
+.md-typeset h2 {
+  margin: 1.2em 0 0.4em;
+}
+
+.md-typeset h3 {
+  margin: 1em 0 0.3em;
+}
+
+.md-typeset table:not([class]) th,
+.md-typeset table:not([class]) td {
+  padding: 0.5em 1em;
+}
+
+/* Highlight table rows that contain a .permanent marker. */
+.md-typeset tr:has(.permanent) {
+  background-color: rgba(229, 57, 53, 0.12);
+}
+
+[data-md-color-scheme="slate"] .md-typeset tr:has(.permanent) {
+  background-color: rgba(239, 83, 80, 0.2);
+}

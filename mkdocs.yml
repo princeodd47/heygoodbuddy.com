@@ -38,6 +38,7 @@ plugins:
         dqm_abilities: data/dragon-quest-monsters-the-withered-world/abilities.yaml
         dqm_items: data/dragon-quest-monsters-the-withered-world/items.yaml
         ffxii_monographs: data/final-fantasy-xii-the-zodiac-age/monographs.yaml
+        ffxii_bazaar: data/final-fantasy-xii-the-zodiac-age/bazaar.yaml
 
 extra_css:
   - stylesheets/extra.css
@@ -83,7 +84,10 @@ nav:
       - Final Fantasy XII The Zodiac Age:
           - games/final-fantasy-xii-the-zodiac-age/index.md
           - Changes from PS2: games/final-fantasy-xii-the-zodiac-age/changes.md
+          - New Playthrough: games/final-fantasy-xii-the-zodiac-age/new-playthrough.md
           - Monographs: games/final-fantasy-xii-the-zodiac-age/monographs.md
+          - Bazaar: games/final-fantasy-xii-the-zodiac-age/bazaar.md
+          - Party: games/final-fantasy-xii-the-zodiac-age/party.md
   - Articles:
       - blog/index.md
   - Tags: tags.md
