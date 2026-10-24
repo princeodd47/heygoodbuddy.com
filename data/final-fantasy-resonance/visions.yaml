@@ -14,3 +14,12 @@ visions:
   - name: Terra
     how_to_get: Sanctum of Terra, southwest of the Town of Felicitas
     status: confirmed
+  - name: Zidane
+    how_to_get: Sanctum of Zidane, in the mountains around Mt. Thunderclap, northwest of Dilmagia (Dirnado)
+    status: unverified
+  - name: Onion Knight
+    how_to_get: Sanctum of Onion Knight, on the edge of Dirnado (guides disagree on the southwest or eastern tip)
+    status: unverified
+  - name: Noctis
+    how_to_get: Sanctum of Noctis, west of Mobliz Shipyard (Dirnado)
+    status: unverified

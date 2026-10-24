@@ -1,0 +1,654 @@
+bestiary:
+  - area: Grandshelt Castle
+    enemies:
+      - name: Fire Wisp
+        level: 4
+        where: Grandshelt Castle
+        weak: Ice, Water
+        drops: Ether
+        steals: ""
+      - name: Skeleton
+        level: 4
+        where: Grandshelt Castle
+        weak: Fire, Light
+        drops: Knife of Poison
+        steals: ""
+      - name: Dark Skeleton
+        level: 5
+        where: Grandshelt Castle
+        weak: Fire, Light
+        drops: Mist Potion
+        steals: ""
+      - name: Soul
+        level: 5
+        where: Grandshelt Castle
+        weak: Fire, Earth
+        drops: Knife of Blind · Ether (rare)
+        steals: ""
+      - name: Wraith Soldier
+        level: 5
+        where: Grandshelt Castle · Kolobos Ruins
+        weak: Fire, Light
+        drops: Knife of Poison
+        steals: ""
+      - name: Sergeant
+        level: 6
+        where: Grandshelt Castle
+        weak: Fire, Earth, Water, Light
+        drops: Mist Potion · Ether (rare)
+        steals: ""
+      - name: "Hell's Rider"
+        boss: true
+        level: 6
+        where: Grandshelt Castle
+        weak: Ice, Light
+        drops: Mist Potion
+        steals: ""
+      - name: Umbra
+        boss: true
+        level: 17
+        where: Grandshelt Castle
+        weak: Light
+        drops: "Demon's Ring"
+        steals: ""
+  - area: Earth Shrine
+    enemies:
+      - name: Ivy
+        level: 1
+        where: Earth Shrine
+        weak: Fire, Wind
+        drops: Potion · Knife of Blind (rare)
+        steals: ""
+      - name: Steel Bat
+        level: 1
+        where: Earth Shrine · Grandshelt (World Map)
+        weak: Ice, Wind
+        drops: Potion
+        steals: Potion
+      - name: Dire Rat
+        level: 2
+        where: Earth Shrine · Grandshelt (World Map)
+        weak: Ice
+        drops: Potion
+        steals: Potion
+      - name: Mandragora
+        level: 3
+        where: Earth Shrine · Grandshelt (World Map)
+        weak: Fire
+        drops: Antidote Herb
+        steals: Potion (rare)
+      - name: Belmodar
+        boss: true
+        level: 4
+        where: Earth Shrine
+        weak: Fire, Dark
+        drops: Phoenix Down
+        steals: ""
+  - area: Grandshelt (World Map)
+    enemies:
+      - name: Steel Bat
+        level: 1
+        where: Earth Shrine · Grandshelt (World Map)
+        weak: Ice, Wind
+        drops: Potion
+        steals: Potion
+      - name: Dire Rat
+        level: 2
+        where: Earth Shrine · Grandshelt (World Map)
+        weak: Ice
+        drops: Potion
+        steals: Potion
+      - name: Mandragora
+        level: 3
+        where: Earth Shrine · Grandshelt (World Map)
+        weak: Fire
+        drops: Antidote Herb
+        steals: Potion (rare)
+      - name: Chick
+        level: 4
+        where: Grandshelt (World Map)
+        weak: Ice
+        drops: Potion
+        steals: ""
+      - name: Gigantoad
+        level: 4
+        where: Grandshelt (World Map)
+        weak: Ice, Lightning
+        drops: Smoke Bomb
+        steals: ""
+      - name: Goblin
+        level: 4
+        where: Grandshelt (World Map) · Kolobos (World Map)
+        weak: Ice, Dark
+        drops: Potion · Mist Potion
+        steals: Potion
+      - name: Nutkin
+        level: 4
+        where: Grandshelt (World Map)
+        weak: Earth
+        drops: Antidote Herb
+        steals: ""
+      - name: Goblin Guard
+        level: 5
+        where: Grandshelt (World Map)
+        weak: Ice, Dark
+        drops: Knife of Poison (rare)
+        steals: Antidote Herb · Knife of Poison (rare)
+      - name: Mammon
+        level: 5
+        where: Grandshelt (World Map)
+        weak: Fire
+        drops: Ether (rare)
+        steals: ""
+      - name: Dive Talon
+        level: 6
+        where: Grandshelt (World Map)
+        weak: Wind
+        drops: Phoenix Down
+        steals: ""
+      - name: Poison Flora
+        level: 7
+        where: Grandshelt (World Map)
+        weak: Fire, Wind
+        drops: Potion
+        steals: ""
+  - area: Grandport (World Map)
+    enemies:
+      - name: Scorpion
+        level: 6
+        where: Grandport (World Map)
+        weak: Water
+        drops: Knife of Poison
+        steals: Knife of Poison
+      - name: Crawler
+        level: 7
+        where: Grandport (World Map)
+        weak: Ice, Water
+        drops: Phoenix Down
+        steals: ""
+      - name: Human Trap
+        level: 7
+        where: Grandport (World Map)
+        weak: Fire, Wind
+        drops: Antidote Herb · Knife of Poison (rare)
+        steals: Knife of Poison (rare)
+      - name: Wild Rat
+        level: 8
+        where: Grandport (World Map)
+        weak: Ice
+        drops: ""
+        steals: ""
+      - name: Desert Sahagin
+        level: 9
+        where: Grandport (World Map)
+        weak: Water
+        drops: Potion
+        steals: Earth Scroll I (rare)
+      - name: Sahagin
+        level: 9
+        where: "Grandport (World Map) · Siren's Tower"
+        weak: Lightning
+        drops: Potion
+        steals: Echo Herb
+      - name: Aqua Elemental
+        level: 10
+        where: "Grandport (World Map) · Siren's Tower"
+        weak: Lightning
+        drops: Ether · Water Scroll I (rare)
+        steals: ""
+      - name: Dhorme Chimera
+        level: 16
+        where: Grandport (World Map)
+        weak: Water
+        drops: ""
+        steals: Earth Scroll I · Ring of Rage (rare)
+      - name: Minituar
+        level: 16
+        where: Grandport (World Map)
+        weak: Ice, Water
+        drops: ""
+        steals: ""
+      - name: Antlion
+        boss: true
+        level: 20
+        where: Grandport (World Map)
+        weak: Water
+        drops: Mist Potion
+        steals: Earth Scroll I
+  - area: Kolobos (World Map)
+    enemies:
+      - name: Goblin
+        level: 4
+        where: Grandshelt (World Map) · Kolobos (World Map)
+        weak: Ice, Dark
+        drops: Potion · Mist Potion
+        steals: Potion
+      - name: Alraune
+        level: 6
+        where: Kolobos (World Map)
+        weak: Fire
+        drops: Smoke Bomb
+        steals: ""
+      - name: Cutpurse
+        level: 6
+        where: Kolobos (World Map)
+        weak: Earth
+        drops: Potion · Ether (rare)
+        steals: ""
+      - name: Hornet
+        level: 6
+        where: Kolobos (World Map)
+        weak: Wind
+        drops: Antidote Herb · Knife of Poison (rare)
+        steals: Knife of Poison
+      - name: Poison Toad
+        level: 6
+        where: Kolobos (World Map)
+        weak: Ice, Lightning
+        drops: Antidote Herb · Knife of Poison (rare)
+        steals: Potion
+      - name: Ghoul
+        level: 7
+        where: Kolobos (World Map) · Kolobos Ruins
+        weak: Fire, Light
+        drops: ""
+        steals: ""
+      - name: Shadow
+        level: 7
+        where: Kolobos (World Map)
+        weak: Ice, Light
+        drops: Ether
+        steals: ""
+      - name: Skuldier
+        level: 7
+        where: Kolobos (World Map)
+        weak: Fire, Light
+        drops: Smoke Bomb · Knife of Paralysis (rare)
+        steals: ""
+  - area: Kolobos Ruins
+    enemies:
+      - name: Wraith Soldier
+        level: 5
+        where: Grandshelt Castle · Kolobos Ruins
+        weak: Fire, Light
+        drops: Knife of Poison
+        steals: ""
+      - name: Ghost
+        level: 7
+        where: Kolobos Ruins
+        weak: Ice, Light
+        drops: Ether
+        steals: Smoke Bomb
+      - name: Ghoul
+        level: 7
+        where: Kolobos (World Map) · Kolobos Ruins
+        weak: Fire, Light
+        drops: ""
+        steals: ""
+      - name: Poplium
+        level: 8
+        where: Kolobos Ruins
+        weak: Water, Light
+        drops: Antidote Herb · Eye Drops (rare)
+        steals: ""
+      - name: Enhanced Wraith Soldier
+        level: 9
+        where: Kolobos Ruins
+        weak: Fire, Light
+        drops: Potion · Mist Potion (rare)
+        steals: ""
+      - name: Floateye
+        level: 9
+        where: Kolobos Ruins
+        weak: Ice, Light
+        drops: Echo Herb · Mist Potion (rare)
+        steals: ""
+      - name: Imposter Soldier
+        level: 10
+        where: Kolobos Ruins
+        weak: Ice, Dark
+        drops: Potion
+        steals: ""
+      - name: The Hunger
+        boss: true
+        level: 9
+        where: Kolobos Ruins
+        weak: Ice
+        drops: Potion
+        steals: ""
+      - name: The Hunger v2
+        boss: true
+        level: 10
+        where: Kolobos Ruins
+        weak: Light
+        drops: Potion
+        steals: ""
+  - area: "Siren's Tower"
+    enemies:
+      - name: Abtu
+        level: 9
+        where: "Siren's Tower"
+        weak: Lightning
+        drops: Potion
+        steals: ""
+      - name: Sahagin
+        level: 9
+        where: "Grandport (World Map) · Siren's Tower"
+        weak: Lightning
+        drops: Potion
+        steals: Echo Herb
+      - name: Aqua Elemental
+        level: 10
+        where: "Grandport (World Map) · Siren's Tower"
+        weak: Lightning
+        drops: Ether · Water Scroll I (rare)
+        steals: ""
+      - name: Mage
+        level: 10
+        where: "Siren's Tower"
+        weak: Ice, Light
+        drops: Ether
+        steals: ""
+      - name: Green Slime
+        level: 11
+        where: "Siren's Tower"
+        weak: Lightning
+        drops: Ether
+        steals: Water Scroll I (rare)
+      - name: Shark
+        level: 11
+        where: "Siren's Tower"
+        weak: Lightning
+        drops: Phoenix Down
+        steals: Mist Potion · Water Scroll I (rare)
+      - name: Citrine Pot
+        level: 15
+        where: "Siren's Tower · Mobliz Shipyard"
+        weak: ""
+        drops: Elixir (rare)
+        steals: ""
+      - name: Siren
+        boss: true
+        level: 11
+        where: "Siren's Tower"
+        weak: Lightning
+        drops: Magicite Shard
+        steals: ""
+  - area: Marauder Cave
+    enemies:
+      - name: Marauder
+        boss: true
+        level: 15
+        where: Marauder Cave
+        weak: Wind
+        drops: Turbo Ether
+        steals: ""
+  - area: Dirnado (World Map)
+    enemies:
+      - name: Wood Eyes
+        level: 11
+        where: Dirnado (World Map)
+        weak: Fire
+        drops: Ether
+        steals: ""
+      - name: Bomb
+        level: 12
+        where: Dirnado (World Map) · Mt. Thunderclap
+        weak: Water
+        drops: Flame Scroll I
+        steals: ""
+      - name: Damia
+        level: 12
+        where: Dirnado (World Map) · Mt. Thunderclap
+        weak: Earth
+        drops: Phoenix Down
+        steals: ""
+      - name: Footpad
+        level: 12
+        where: Dirnado (World Map) · Mt. Thunderclap
+        weak: Earth
+        drops: Potion · Ether (rare)
+        steals: ""
+      - name: Warlock
+        level: 12
+        where: Dirnado (World Map) · Mt. Thunderclap
+        weak: Earth
+        drops: Phoenix Down · Ether (rare)
+        steals: ""
+      - name: Zombie
+        level: 12
+        where: Dirnado (World Map)
+        weak: Fire, Light
+        drops: Antidote Herb · Knife of Poison (rare)
+        steals: ""
+      - name: Captain
+        level: 13
+        where: Dirnado (World Map) · Mt. Thunderclap
+        weak: Earth, Water
+        drops: Mist Potion · Knife of Silence (rare)
+        steals: ""
+      - name: Sprinter
+        level: 13
+        where: Dirnado (World Map) · Mt. Thunderclap
+        weak: Wind
+        drops: Ether
+        steals: Wind Scroll I · Knife of Blind (rare)
+      - name: Thief Boss
+        level: 13
+        where: Dirnado (World Map) · Mt. Thunderclap
+        weak: Earth
+        drops: ""
+        steals: Mist Potion · Knife of Paralysis (rare)
+      - name: Ipooh
+        level: 14
+        where: Dirnado (World Map)
+        weak: Earth
+        drops: Potion
+        steals: ""
+      - name: Iron bat
+        level: 14
+        where: Dirnado (World Map) · Mobliz Shipyard
+        weak: Ice, Wind
+        drops: ""
+        steals: ""
+      - name: Osprey
+        level: 14
+        where: Dirnado (World Map)
+        weak: Wind
+        drops: ""
+        steals: Mist Potion · Wind Scroll I (rare)
+      - name: Wild Nakk
+        level: 14
+        where: Dirnado (World Map)
+        weak: Earth
+        drops: Antidote Herb · Knife of Poison (rare)
+        steals: ""
+      - name: Centipede
+        level: 15
+        where: Dirnado (World Map) · Mobliz Shipyard
+        weak: Lightning, Water
+        drops: Mist Potion · Laserblade (rare)
+        steals: ""
+      - name: Pecking Chick
+        level: 15
+        where: Dirnado (World Map)
+        weak: Ice
+        drops: Mist Potion
+        steals: ""
+      - name: White Peak
+        level: 15
+        where: Dirnado (World Map)
+        weak: Fire
+        drops: ""
+        steals: ""
+      - name: Imp
+        level: 17
+        where: Dirnado (World Map)
+        weak: Water, Light
+        drops: Smelling Salts · Hi-Potion (rare)
+        steals: ""
+      - name: Killer Mantis
+        level: 18
+        where: Dirnado (World Map)
+        weak: Fire, Wind
+        drops: Antidote Herb · Knife of Poison (rare)
+        steals: Wind Scroll I
+      - name: Medusa
+        level: 18
+        where: Dirnado (World Map)
+        weak: Lightning
+        drops: Earth Scroll I
+        steals: Jeweled Ring (rare)
+      - name: Metal Minituar
+        level: 18
+        where: Dirnado (World Map)
+        weak: ""
+        drops: ""
+        steals: ""
+      - name: Ramuh
+        boss: true
+        level: 20
+        where: Dirnado (World Map) · Mt. Thunderclap
+        weak: Earth
+        drops: Magicite Shard
+        steals: ""
+  - area: Mt. Thunderclap
+    enemies:
+      - name: Wolf
+        level: 11
+        where: Mt. Thunderclap
+        weak: Earth
+        drops: Potion
+        steals: Potion
+      - name: Bomb
+        level: 12
+        where: Dirnado (World Map) · Mt. Thunderclap
+        weak: Water
+        drops: Flame Scroll I
+        steals: ""
+      - name: Damia
+        level: 12
+        where: Dirnado (World Map) · Mt. Thunderclap
+        weak: Earth
+        drops: Phoenix Down
+        steals: ""
+      - name: Footpad
+        level: 12
+        where: Dirnado (World Map) · Mt. Thunderclap
+        weak: Earth
+        drops: Potion · Ether (rare)
+        steals: ""
+      - name: Warlock
+        level: 12
+        where: Dirnado (World Map) · Mt. Thunderclap
+        weak: Earth
+        drops: Phoenix Down · Ether (rare)
+        steals: ""
+      - name: Captain
+        level: 13
+        where: Dirnado (World Map) · Mt. Thunderclap
+        weak: Earth, Water
+        drops: Mist Potion · Knife of Silence (rare)
+        steals: ""
+      - name: Sprinter
+        level: 13
+        where: Dirnado (World Map) · Mt. Thunderclap
+        weak: Wind
+        drops: Ether
+        steals: Wind Scroll I · Knife of Blind (rare)
+      - name: Thief Boss
+        level: 13
+        where: Dirnado (World Map) · Mt. Thunderclap
+        weak: Earth
+        drops: ""
+        steals: Mist Potion · Knife of Paralysis (rare)
+      - name: Liquid Thunder
+        boss: true
+        level: 13
+        where: Mt. Thunderclap
+        weak: Earth
+        drops: Lightning Scroll I
+        steals: ""
+      - name: Ramuh
+        boss: true
+        level: 20
+        where: Dirnado (World Map) · Mt. Thunderclap
+        weak: Earth
+        drops: Magicite Shard
+        steals: ""
+  - area: Dwarven Forge
+    enemies:
+      - name: Great Bomb
+        level: 13
+        where: Dwarven Forge
+        weak: Water
+        drops: Flame Scroll I
+        steals: ""
+      - name: Mom Bomb
+        boss: true
+        level: 14
+        where: Dwarven Forge
+        weak: Water
+        drops: Flame Scroll II
+        steals: ""
+  - area: Shoggoth Cave
+    enemies:
+      - name: Shoggoth
+        boss: true
+        level: 25
+        where: Shoggoth Cave
+        weak: Earth, Water
+        drops: Turbo Ether
+        steals: ""
+  - area: Mobliz Shipyard
+    enemies:
+      - name: Iron bat
+        level: 14
+        where: Dirnado (World Map) · Mobliz Shipyard
+        weak: Ice, Wind
+        drops: ""
+        steals: ""
+      - name: Security Eye
+        level: 14
+        where: Mobliz Shipyard
+        weak: Lightning
+        drops: Potion · Eye Drops (rare)
+        steals: ""
+      - name: Centipede
+        level: 15
+        where: Dirnado (World Map) · Mobliz Shipyard
+        weak: Lightning, Water
+        drops: Mist Potion · Laserblade (rare)
+        steals: ""
+      - name: Citrine Pot
+        level: 15
+        where: "Siren's Tower · Mobliz Shipyard"
+        weak: ""
+        drops: Elixir (rare)
+        steals: ""
+      - name: Pawn
+        level: 15
+        where: Mobliz Shipyard
+        weak: Lightning
+        drops: Mist Potion
+        steals: ""
+      - name: Epimetheus
+        level: 16
+        where: Mobliz Shipyard
+        weak: Lightning
+        drops: Lightning Scroll I
+        steals: Iron Sandals (rare)
+      - name: Adrastea
+        boss: true
+        level: 16
+        where: Mobliz Shipyard
+        weak: Lightning, Water
+        drops: Lightning Scroll II
+        steals: ""
+      - name: Guardian
+        boss: true
+        level: 25
+        where: Mobliz Shipyard
+        weak: Lightning
+        drops: Lightning Scroll I · Hi-Potion (rare)
+        steals: ""

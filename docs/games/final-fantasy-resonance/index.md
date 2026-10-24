@@ -22,6 +22,13 @@ save data carries over.
 
     ---
 
-    All 12 demo shard locations, and what the princess trades for them.
+    Where to find them, and the rewards the princess at Oblivion Palace gives
+    as you hand them in.
+
+-   :material-skull:{ .lg .middle } __[Bestiary](bestiary.md)__
+
+    ---
+
+    Every enemy by area, with level, weaknesses, drops and steals.
 
 </div>

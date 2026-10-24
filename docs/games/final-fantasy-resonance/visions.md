@@ -61,10 +61,19 @@ in **Grandport**. It gives a tutorial on using magicite and gives you a
 
 ### Where to get Magicite Shards
 
-- **Siren's Tower:** chest
+- **Town of Felicitas:** Sub Quest *Secrets Unearthed*
+- **Oblivion Palace:** 1-Star Chamber box at 9 Tablet Shards
+- **Siren's Tower:** chest, down the hidden path to the northwest
 - **Siren's Tower:** Boss Siren drops
-- **Oblivion Palace:** 1 Star chests: II
+- **Grandport:** the Moogle of Light's awakening tutorial
+- **Grandport Harbor:** Sub Quest *Rear Support, Ahoy!*
 - **Marauder's Cave:** Boss Marauder drops
+- **Mt. Thunderclap:** Boss Ramuh drops
+- **Dwarven Forge:** Sub Quest *Elven Maven*. Start it with the blue-haired
+  woman on the east side of Dilmagia, then finish it by talking to Silvia on
+  the bridge at the Dwarven Forge.
+- **Shoggoth Cave** (Dirnado world map, near Mt. Thunderclap): Boss Shoggoth drops
+- **Oblivion Palace:** 1-Star Chamber box at 24 Tablet Shards
 
 Tablet Shards are a separate item. See [Tablet Shards](tablet-shards.md)
 for where to find them and what they're traded for.

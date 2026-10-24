@@ -32,6 +32,7 @@ plugins:
   - macros:
       include_yaml:
         ffr: data/final-fantasy-resonance/visions.yaml
+        ffr_bestiary: data/final-fantasy-resonance/bestiary.yaml
         dqm: data/dragon-quest-monsters-the-withered-world/monsters.yaml
         dqm_synth: data/dragon-quest-monsters-the-withered-world/synthesis.yaml
         dqm_talents: data/dragon-quest-monsters-the-withered-world/talents.yaml
@@ -73,6 +74,7 @@ nav:
           - games/final-fantasy-resonance/index.md
           - Visions: games/final-fantasy-resonance/visions.md
           - Tablet Shards: games/final-fantasy-resonance/tablet-shards.md
+          - Bestiary: games/final-fantasy-resonance/bestiary.md
       - Dragon Quest Monsters The Withered World:
           - games/dragon-quest-monsters-the-withered-world/index.md
           - Starting Monsters: games/dragon-quest-monsters-the-withered-world/starting-monsters.md
