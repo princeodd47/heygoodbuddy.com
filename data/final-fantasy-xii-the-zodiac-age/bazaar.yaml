@@ -1,0 +1,722 @@
+repeatable:
+- id: chronos-tear-pack
+  name: Chronos Tear Pack
+  loot: Eye of the Hawk
+  contains: 10x Chronos Tear
+  price: '333'
+  status: unverified
+- id: esoteric-draught
+  name: Esoteric Draught
+  loot: 2x High Arcana, 3x Onion, 3x Rat Tail
+  contains: Megalixir
+  price: 108,000
+  status: unverified
+- id: fire-birds-whisper
+  name: Fire-bird's Whisper
+  loot: Jack-o'-Lantern
+  contains: 10x Phoenix Down
+  price: 2,222
+  status: unverified
+- id: flask-of-oily-liquid
+  name: Flask of Oily Liquid
+  loot: 3x Caramel, 2x Unpurified Ether
+  contains: Ether
+  price: 4,000
+  status: unverified
+- id: flask-of-viscous-liquid
+  name: Flask of Viscous Liquid
+  loot: 2x Foul Liquid, Slime Oil, 2x Unpurified Ether
+  contains: Hi-Ether
+  price: 12,000
+  status: unverified
+- id: hi-potion-pack
+  name: Hi-Potion Pack
+  loot: Rainbow Egg
+  contains: 10x Hi-Potion
+  price: 1,111
+  status: unverified
+- id: jewel-of-creation
+  name: Jewel of Creation
+  loot: High Arcana, Soul Powder, 2x Wargod's Band
+  contains: Empyreal Soul
+  price: 29,998
+  status: unverified
+- id: jewel-of-the-serpent
+  name: Jewel of the Serpent
+  loot: High Arcana, 2x Serpent Eye, 4x Snake Skin
+  contains: Serpentarius
+  price: 19,998
+  status: unverified
+- id: life-crystal
+  name: Life Crystal
+  loot: 10x Arcana, Feystone, Soul of Thamasa
+  contains: High Arcana
+  price: 9,999
+  status: unverified
+- id: magick-shard-holy-mote
+  name: Magick Shard (Holy Mote)
+  loot: Diakon Halcyon, 8x Glass Jewel, 8x Sky Jewel
+  contains: Holy Mote
+  price: '99'
+  status: unverified
+- id: magick-shard-scathe
+  name: Magick Shard (Scathe)
+  loot: 8x Book of Orgain, 8x Book of Orgain-Cent, 8x Book of Orgain-Mille
+  contains: Scathe Mote
+  price: '499'
+  status: unverified
+- id: matchless-metal
+  name: Matchless Metal
+  loot: 2x Damascus Steel, 2x Hell-Gate's Flame, Scarletite
+  contains: Gemsteel
+  price: 29,997
+  status: unverified
+- id: saints-draught
+  name: Saint's Draught
+  loot: 3x Ambrosia, 3x Demon Drink, High Arcana
+  contains: Elixir
+  price: 36,000
+  status: unverified
+- id: vaccine-pack
+  name: Vaccine Pack
+  loot: Demon's Sigh
+  contains: 10x Vaccine
+  price: '999'
+  status: unverified
+- id: x-potion-pack
+  name: X-Potion Pack
+  loot: Behemoth Steak
+  contains: 10x X-Potion
+  price: 4,444
+  status: unverified
+bundles:
+- id: alluring-finery
+  name: Alluring Finery
+  loot: 3x Fine Wool, 4x Ice Magicite, Tyrant Hide
+  contains: Enchanter's Habit, Lamia's Tiara
+  price: 3,180
+  status: unverified
+- id: antidote-set
+  name: Antidote Set
+  loot: 2x Drab Wool
+  contains: 3x Antidote
+  price: '100'
+  status: unverified
+- id: armor-piercing-shot
+  name: Armor-piercing Shot
+  loot: 4x Ichthon Scale, 5x Silver Liquid, 7x Wind Crystal
+  contains: Spica, Windslicer Shot
+  price: 8,900
+  status: unverified
+- id: arrows-alight
+  name: Arrows Alight
+  loot: 2x Crooked Fang, 4x Fire Stone
+  contains: Fiery Arrows, Longbow
+  price: 2,800
+  status: unverified
+- id: arrows-of-the-moon-goddess
+  name: Arrows of the Moon Goddess
+  loot: 2x Dorsal Fin, 3x Gemini Gem, 2x Great Serpent's Fang
+  contains: Artemis Arrows
+  price: 1,280
+  status: unverified
+- id: assorted-leathers
+  name: Assorted Leathers
+  loot: 2x Dark Stone, Tanned Hide, 2x Wolf Pelt
+  contains: Leather Breastplate, Leather Headgear
+  price: '300'
+  status: unverified
+- id: attenuated-greatsword
+  name: Attenuated Greatsword
+  loot: 10x Holy Crystal, 4x Quality Stone, 7x Sky Jewel
+  contains: Save the Queen
+  price: 9,200
+  status: unverified
+- id: back-harness
+  name: Back Harness
+  loot: Throat Wolf Blood
+  contains: Battle Harness
+  price: '600'
+  status: unverified
+- id: befuddling-incendiaries
+  name: Befuddling Incendiaries
+  loot: 4x Bomb Shell, 3x Book of Orgain-Cent, 7x Fire Crystal
+  contains: Caldera, Chaos Bombs
+  price: 3,800
+  status: unverified
+- id: black-vestments
+  name: Black Vestments
+  loot: 9x Blood Wool, 8x Dark Crystal, 7x Prime Tanned Hide
+  contains: Black Mask, Black Robes
+  price: 12,800
+  status: unverified
+- id: blindflight-quarrels
+  name: Blindflight Quarrels
+  loot: 3x Dark Crystal, 3x Silver Liquid, 3x Spiral Incisor
+  contains: Black Bolts, Hunting Crossbow
+  price: 11,220
+  status: unverified
+- id: blush-of-light
+  name: Blush of Light
+  loot: Magick Lamp, Snowfly, 2x Tomato Stalk
+  contains: Firefly
+  price: 1,200
+  status: unverified
+- id: bow-bodkin
+  name: Bow & Bodkin
+  loot: Bat Fang, 2x Dark Stone, 2x Rat Pelt
+  contains: Parallel Arrows, Shortbow
+  price: '400'
+  status: unverified
+- id: bow-of-the-moon-goddess
+  name: Bow of the Moon Goddess
+  loot: 5x Solid Horn, 2x Moondust, Sylphi Halcyon
+  contains: Artemis Bow
+  price: 9,300
+  status: unverified
+- id: brawlers-fetish
+  name: Brawler's Fetish
+  loot: 2x Gimble Stalk
+  contains: Amber Armlet
+  price: 3,000
+  status: unverified
+- id: brilliant-shield
+  name: Brilliant Shield
+  loot: 2x Ancient Turtle Shell, 2x Ring Wyrm Liver, Undin Halcyon
+  contains: Venetian Shield
+  price: 7,500
+  status: unverified
+- id: burning-blade
+  name: Burning Blade
+  loot: 6x Fire Stone, 2x Lumber, 2x Malboro Vine
+  contains: Flametongue
+  price: 2,025
+  status: unverified
+- id: burning-fangs
+  name: Burning Fangs
+  loot: 2x Pointed Horn
+  contains: 5x Soleil Fang
+  price: '980'
+  status: unverified
+- id: burnished-protectives
+  name: Burnished Protectives
+  loot: 4x Earth Magicite, 2x Quality Hide, 2x Wyrm Carapace
+  contains: Burgonet, Ice Shield, Shielded Armor
+  price: 4,850
+  status: unverified
+- id: chain-link-belt
+  name: Chain-link Belt
+  loot: Adamantite, 2x Battlewyrm Carapace
+  contains: Bubble Belt
+  price: 17,820
+  status: unverified
+- id: comfy-headgear
+  name: Comfy Headgear
+  loot: 2x Einherjarium, 7x Virgo Gem, 2x White Incense
+  contains: Cat-ear Hood
+  price: 25,000
+  status: unverified
+- id: crimson-blade
+  name: Crimson Blade
+  loot: 15x Dark Crystal, 3x Vampyr Fang, 2x Solid Stone
+  contains: Karkata
+  price: 4,444
+  status: unverified
+- id: cursed-necklace
+  name: Cursed Necklace
+  loot: 3x Blood-stained Necklace, 2x Death's-Head, 3x Leo Gem
+  contains: Nihopalaoa
+  price: 28,000
+  status: unverified
+- id: darksteel-blade
+  name: Darksteel Blade
+  loot: 2x Chimera Head, 2x Orichalcum, 3x Taurus Gem
+  contains: Stoneblade
+  price: 17,800
+  status: unverified
+- id: devastating-incendiaries
+  name: Devastating Incendiaries
+  loot: 3x Aries Gem, 3x Bomb Fragment, 2x Frog Oil
+  contains: Castellanos
+  price: 12,000
+  status: unverified
+- id: double-bladed-knife
+  name: Double-bladed Knife
+  loot: 7x Malboro Flower, 9x Wind Crystal, 5x Windslicer Pinion
+  contains: Zwill Crossblade
+  price: 7,500
+  status: unverified
+- id: dragon-crest
+  name: Dragon Crest
+  loot: Godslayer's Badge, Omega Badge, Lu Shang's Badge
+  contains: Wyrmhero Blade
+  price: 65,535
+  status: unverified
+- id: elegant-pole
+  name: Elegant Pole
+  loot: 8x Blood-darkened Bone, 6x Demon Feather, 7x Wind Crystal
+  contains: Ivory Pole
+  price: 7,980
+  status: unverified
+- id: emboldening-arms
+  name: Emboldening Arms
+  loot: 3x Fire Crystal, 6x Quality Pelt, 4x Tanned Giantskin
+  contains: Chakra Ban, Power Vest
+  price: 7,980
+  status: unverified
+- id: engraved-spear
+  name: Engraved Spear
+  loot: 2x Broken Spear, 2x Ketu Board, 2x Mystletainn
+  contains: Gungnir
+  price: 9,025
+  status: unverified
+- id: exquisite-ring
+  name: Exquisite Ring
+  loot: 2x Frogspawn
+  contains: Opal Ring
+  price: 7,800
+  status: unverified
+- id: eye-drop-set
+  name: Eye Drop Set
+  loot: 2x Demon Eyeball
+  contains: 3x Eyedrops
+  price: '100'
+  status: unverified
+- id: eye-openers
+  name: Eye Openers
+  loot: 4x Chocobo Feather
+  contains: 5x Alarm Clock, 5x Phoenix Down
+  price: 1,280
+  status: unverified
+- id: feathered-boots
+  name: Feathered Boots
+  loot: Arctic Wind
+  contains: Winged Boots
+  price: '300'
+  status: unverified
+- id: first-aid-kit
+  name: First-aid Kit
+  loot: 3x Large Feather
+  contains: 2x Phoenix Down, 2x Potion
+  price: '450'
+  status: unverified
+- id: forbidding-shield
+  name: Forbidding Shield
+  loot: 2x Aged Turtle Shell, 8x Destrier Barding, Leamonde Halcyon
+  contains: Demon Shield
+  price: 7,800
+  status: unverified
+- id: forked-spear
+  name: Forked Spear
+  loot: 5x Maggoty Flesh, 4x Pointed Horn, 6x Wind Magicite
+  contains: Trident
+  price: 6,450
+  status: unverified
+- id: gigas-gear
+  name: Gigas Gear
+  loot: 7x Dark Crystal, 8x Prime Pelt, 7x Prime Tanned Hide
+  contains: Gigas Chestplate, Gigas Hat
+  price: 17,800
+  status: unverified
+- id: gilt-phylactery
+  name: Gilt Phylactery
+  loot: Tattered Garment
+  contains: Golden Amulet
+  price: 3,000
+  status: unverified
+- id: gilt-shield
+  name: Gilt Shield
+  loot: 3x Fire Stone, 3x Molting
+  contains: Buckler
+  price: '250'
+  status: unverified
+- id: golden-battle-axe
+  name: Golden Battle Axe
+  loot: 2x Broken Greataxe, 2x Electrum, Mardu Halcyon
+  contains: Golden Axe
+  price: 10,000
+  status: unverified
+- id: golden-garb
+  name: Golden Garb
+  loot: 3x Dark Magicite, 3x Iron Carapace, 2x Tanned Hide
+  contains: Golden Armor, Golden Helm, Golden Shield
+  price: 3,980
+  status: unverified
+- id: hollow-shaft-arrows
+  name: Hollow-shaft Arrows
+  loot: 5x Bat Fang, 3x Water Magicite, Yellow Liquid
+  contains: Bamboo Arrows, Loxley Bow
+  price: 3,980
+  status: unverified
+- id: huntsmans-crossbow
+  name: Huntsman's Crossbow
+  loot: Bundle of Needles, 2x Festering Flesh, 5x Ice Magicite
+  contains: Stone Bolts, Recurve Crossbow
+  price: 3,500
+  status: unverified
+- id: iron-forged-blade
+  name: Iron-forged Blade
+  loot: 3x Earth Stone, 2x Foul Flesh, 3x Iron Scraps
+  contains: Iron Sword
+  price: '650'
+  status: unverified
+- id: iron-forged-pole
+  name: Iron-forged Pole
+  loot: 3x Demon Eyeball, 4x Fire Magicite, 5x Sturdy Bone
+  contains: Iron Pole
+  price: 2,115
+  status: unverified
+- id: jag-tooth-ninja-sword
+  name: Jag-tooth Ninja Sword
+  loot: 5x Dark Magicite, 4x Festering Flesh, 5x Giant Feather
+  contains: Kagenui
+  price: 3,800
+  status: unverified
+- id: large-gloves
+  name: Large Gloves
+  loot: 3x Bent Staff
+  contains: Blazer Gloves
+  price: 2,000
+  status: unverified
+- id: late-model-rifle
+  name: Late-model Rifle
+  loot: Salamand Halcyon, 2x Wyvern Wing, 2x Yensa Fin
+  contains: Arcturus
+  price: 8,000
+  status: unverified
+- id: light-sturdy-garb
+  name: Light & Sturdy Garb
+  loot: 6x Coeurl Pelt, 5x Storm Magicite, 2x Tanned Tyrant Hide
+  contains: Adamant Hat, Adamant Vest
+  price: 5,800
+  status: unverified
+- id: light-spear
+  name: Light Spear
+  loot: 2x Foul Flesh, 2x Horn, 3x Wind Stone
+  contains: Javelin
+  price: '310'
+  status: unverified
+- id: magepower-helm
+  name: Magepower Helm
+  loot: 5x Charger Barding, 2x Chimera Head, Feystone
+  contains: Magepower Shishak
+  price: 7,500
+  status: unverified
+- id: magick-shards-water-mote
+  name: Magick Shards (Water Mote)
+  loot: 4x Festering Flesh
+  contains: 5x Water Mote
+  price: 1,480
+  status: unverified
+- id: marksmans-delight
+  name: Marksman's Delight
+  loot: 3x Dark Stone, 2x Fish Scale, Green Liquid
+  contains: Capella, Silent Shot
+  price: '550'
+  status: unverified
+- id: master-crafted-blade
+  name: Master-crafted Blade
+  loot: 2x Gemsteel, 2x Mallet, 3x Orichalcum
+  contains: Kumbha
+  price: 350,000
+  status: unverified
+- id: matching-reds
+  name: Matching Reds
+  loot: 3x Coeurl Pelt, 3x Dark Magicite, 2x Quality Hide
+  contains: Brigandine, Red Cap
+  price: 2,480
+  status: unverified
+- id: memories-of-yore
+  name: Memories of Yore
+  loot: 5x Quality Stone
+  contains: 99x Pebble
+  price: '999'
+  status: unverified
+- id: monks-garb
+  name: Monk's Garb
+  loot: 4x Coeurl Pelt, 4x Ice Magicite, 2x Tyrant Hide
+  contains: Headband, Jujitsu Gi
+  price: 3,180
+  status: unverified
+- id: mudslinger
+  name: Mudslinger
+  loot: 8x Earth Crystal, 2x Emperor Scale, 3x Silver Liquid
+  contains: Mithuna, Mud Shot
+  price: 120,000
+  status: unverified
+- id: mysterious-substance
+  name: Mysterious Substance
+  loot: Bat Wing, 3x Grimoire Aidhed, 3x Grimoire Togail
+  contains: Dark Energy
+  price: 14,999
+  status: unverified
+- id: mystic-staff
+  name: Mystic Staff
+  loot: 6x Demon Feather, 4x Quality Lumber, 7x Storm Crystal
+  contains: Cloud Staff
+  price: 3,600
+  status: unverified
+- id: natures-armory
+  name: Nature's Armory
+  loot: 8x Fire Crystal, 7x Forbidden Flesh, 9x Prime Pelt
+  contains: Crown of Laurels, Rubber Suit
+  price: 13,800
+  status: unverified
+- id: ninja-footgear
+  name: Ninja Footgear
+  loot: 2x Slaven Harness
+  contains: Gillie Boots
+  price: '400'
+  status: unverified
+- id: ninja-garb
+  name: Ninja Garb
+  loot: 4x Fine Wool, 5x Fire Magicite, 2x Tanned Tyrant Hide
+  contains: Black Cowl, Black Garb
+  price: 4,800
+  status: unverified
+- id: noisome-incendiaries
+  name: Noisome Incendiaries
+  loot: Bomb Shell, 3x Fire Crystal
+  contains: Fumarole, Poison Bombs
+  price: 3,280
+  status: unverified
+- id: oil-soaked-incendiaries
+  name: Oil-soaked Incendiaries
+  loot: 3x Bomb Ashes, 2x Book of Orgain, 3x Fire Crystal
+  contains: Oil Bombs, Tumulus
+  price: 10,625
+  status: unverified
+- id: permafrost-bow-quiver
+  name: Permafrost Bow & Quiver
+  loot: 2x Antarctic Wind, 7x Ice Crystal, 4x Spiral Incisor
+  contains: Icecloud Arrows, Perseus Bow
+  price: 17,200
+  status: unverified
+- id: phials-philtres
+  name: Phials & Philtres
+  loot: 3x Malboro Flower
+  contains: 16x Smelling Salts, 8x Vaccine
+  price: 1,980
+  status: unverified
+- id: phoenix-flight
+  name: Phoenix Flight
+  loot: 5x Windslicer Pinion
+  contains: 50x Phoenix Down
+  price: 8,750
+  status: unverified
+- id: piercing-bolts
+  name: Piercing Bolts
+  loot: 3x Capricorn Gem, 2x Ring Wyrm Liver, 2x Wrath of the Gods
+  contains: Grand Bolts
+  price: 1,680
+  status: unverified
+- id: platinum-gear
+  name: Platinum Gear
+  loot: 2x Insect Husk, 6x Storm Magicite, 5x Tanned Giantskin
+  contains: Platinum Armor, Platinum Helm, Platinum Shield
+  price: 9,800
+  status: unverified
+- id: potion-crate
+  name: Potion Crate
+  loot: 3x Screamroot
+  contains: 20x Hi-Potion, 30x Potion, 10x X-Potion
+  price: 7,480
+  status: unverified
+- id: potion-pack
+  name: Potion Pack
+  loot: 2x Cactus Fruit
+  contains: 2x Potion
+  price: '70'
+  status: unverified
+- id: rain-of-tears
+  name: Rain of Tears
+  loot: 3x Green Liquid, 4x Water Stone, Yensa Scale
+  contains: Aqua Shot, Vega
+  price: '800'
+  status: unverified
+- id: rangers-crossbow
+  name: Ranger's Crossbow
+  loot: 4x Crooked Fang, Ice Stone, 2x Yellow Liquid
+  contains: Crossbow, Long Bolts
+  price: 1,080
+  status: unverified
+- id: samurais-katana
+  name: Samurai's Katana
+  loot: 5x Iron Ore, 7x Screamroot, 9x Water Crystal
+  contains: Ame-no-Murakumo
+  price: 8,400
+  status: unverified
+- id: scouts-crossbow
+  name: Scout's Crossbow
+  loot: 3x Ancient Bone, 9x Holy Crystal, 4x Wyvern Fang
+  contains: Penetrator Crossbow, Time Bolts
+  price: 6,400
+  status: unverified
+- id: serpent-blade
+  name: Serpent Blade
+  loot: 3x Cancer Gem, 2x Coeurl Whisker, 2x Sickle-Blade
+  contains: Mesa
+  price: 90,000
+  status: unverified
+- id: shell-worked-collar
+  name: Shell-worked Collar
+  loot: 2x Bomb Shell, 2x Four-leaf Clover
+  contains: Turtleshell Choker
+  price: 6,000
+  status: unverified
+- id: shoes-of-the-dead
+  name: Shoes of the Dead
+  loot: Destrier Mane, Zombie Powder
+  contains: Quasimodo Boots
+  price: '450'
+  status: unverified
+- id: silver-bow
+  name: Silver Bow
+  loot: 3x Beastlord Horn, 3x Moon Ring, 4x Sagittarius Gem
+  contains: Dhanusha
+  price: 100,000
+  status: unverified
+- id: sipping-wine
+  name: Sipping Wine
+  loot: 2x Tyrant Hide
+  contains: 3x Bacchus' Wine
+  price: '240'
+  status: unverified
+- id: smelling-salts-c
+  name: Smelling Salts, & C.
+  loot: 4x Malboro Vine
+  contains: 4x Hi-Potion, 2x Smelling Salts
+  price: '540'
+  status: unverified
+- id: soul-of-the-fire-bird
+  name: Soul of the Fire-bird
+  loot: 3x Bundle of Feathers
+  contains: 25x Phoenix Down
+  price: 5,980
+  status: unverified
+- id: stone-shot
+  name: Stone Shot
+  loot: 3x Libra Gem, 2x Mirror Scale, 2x Tyrant Bone
+  contains: Stone Shot
+  price: 1,480
+  status: unverified
+- id: sturdy-battle-gear
+  name: Sturdy Battle Gear
+  loot: 4x Charger Barding, 3x Pisces Gem, 2x Split Armor
+  contains: Maximillian
+  price: 8,000
+  status: unverified
+- id: survival-set
+  name: Survival Set
+  loot: 4x Malboro Fruit
+  contains: 12x Antidote, 12x Echo Herbs, 12x Eye Drops
+  price: 1,500
+  status: unverified
+- id: tail-of-the-phoenix
+  name: Tail of the Phoenix
+  loot: 3x Small Feather
+  contains: 2x Phoenix Down
+  price: '400'
+  status: unverified
+- id: the-leering-blade
+  name: The Leering Blade
+  loot: 10x Dark Crystal, 7x Demon Tail, 3x Broken Sword
+  contains: Deathbringer
+  price: 8,800
+  status: unverified
+- id: the-scorpion
+  name: The Scorpion
+  loot: 3x Charged Gizzard, 4x Scorpio Gem, 3x Wyrm Bone
+  contains: Vrscika (Scorpion Tail F)
+  price: 70,000
+  status: unverified
+- id: the-sunflower
+  name: The Sunflower
+  loot: 3x Empyreal Soul, 3x Gemsteel, 3x Serpentarius
+  contains: Tournesol
+  price: 600,000
+  status: unverified
+- id: tinctures-tonics
+  name: Tinctures & Tonics
+  loot: 4x Succulent Fruit
+  contains: 3x Gold Needle, 3x Handkerchief, 5x Potion
+  price: '700'
+  status: unverified
+- id: travelers-garb
+  name: Traveler's Garb
+  loot: 2x Braid Wool, 2x Tanned Hide, 5x Water Stone
+  contains: Feathered Cap, Traveler's Vestment
+  price: 1,890
+  status: unverified
+- id: triage-kit
+  name: Triage Kit
+  loot: 3x Giant Feather
+  contains: 3x Hi-Potion, 12x Phoenix Down
+  price: 2,980
+  status: unverified
+- id: ultimate-blade
+  name: Ultimate Blade
+  loot: 2x Adamantite, 2x Death Powder, Gnoma Halcyon
+  contains: Ultima Blade
+  price: 12,800
+  status: unverified
+- id: unassuming-surcoat
+  name: Unassuming Surcoat
+  loot: Earth Stone, 2x Wolf Pelt
+  contains: Chromed Leathers
+  price: '100'
+  status: unverified
+- id: war-axe
+  name: War Axe
+  loot: 4x Malboro Fruit, 2x Pointed Horn, 6x Wind Magicite
+  contains: Francisca
+  price: 4,680
+  status: unverified
+- id: warped-blade
+  name: Warped Blade
+  loot: 6x Bundle of Feathers, 6x Fire Magicite, 4x Maggoty Flesh
+  contains: Diamond Sword
+  price: 5,650
+  status: unverified
+- id: water-drop-munitions
+  name: Water-drop Munitions
+  loot: 3x Book of Orgain, 3x Putrid Liquid, 10x Water Crystal
+  contains: Water Bombs
+  price: 2,640
+  status: unverified
+- id: well-forged-blade
+  name: Well-forged Blade
+  loot: 4x Ring Wyrm Scale, Leshach Halcyon, 3x Lifewick
+  contains: Simha
+  price: 21,600
+  status: unverified
+- id: whisker-of-the-beast
+  name: Whisker of the Beast
+  loot: 4x Aquarius Gem, 3x Corpse Fly, 3x Mythril
+  contains: Kanya
+  price: 60,000
+  status: unverified
+- id: white-vestments
+  name: White Vestments
+  loot: 9x Blood Wool, 7x Beastlord Hide, 8x Holy Crystal
+  contains: White Mask, White Robes
+  price: 12,800
+  status: unverified
+- id: wind-walkers
+  name: Wind Walkers
+  loot: 15x Arcana, 33x Gysahl Greens
+  contains: Hermes Sandals
+  price: 18,000
+  status: unverified
+- id: wing-cord
+  name: Wing Cord
+  loot: 2x Stardust
+  contains: Pheasant Netsuke
+  price: 2,000
+  status: unverified
+- id: wooden-pole
+  name: Wooden Pole
+  loot: 5x Bone Fragment, 4x Earth Stone, 3x Succulent Fruit
+  contains: Cypress Pole
+  price: '480'
+  status: unverified
