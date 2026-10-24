@@ -74,6 +74,11 @@ in **Grandport**. It gives a tutorial on using magicite and gives you a
   the bridge at the Dwarven Forge.
 - **Shoggoth Cave** (Dirnado world map, near Mt. Thunderclap): Boss Shoggoth drops
 - **Oblivion Palace:** 1-Star Chamber box at 24 Tablet Shards
+- **Dwarven Forge:** Sub Quest *Arise, Mechabo!*. Win two random battles
+  against Ipoohs outside the Dwarven Forge, then return to Verun.
+- **Dwarven Forge:** Sub Quest *Lyrical Riddles*. Look at the large Cid
+  portrait in Mobliz Shipyard, talk to the marked person at the Dilmagia
+  shipyard, then return to Roy at the Dwarven Forge.
 
 Tablet Shards are a separate item. See [Tablet Shards](tablet-shards.md)
 for where to find them and what they're traded for.

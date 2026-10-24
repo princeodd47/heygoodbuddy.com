@@ -481,12 +481,24 @@ bestiary:
         weak: Fire
         drops: ""
         steals: ""
+      - name: Ninlil
+        level: 16
+        where: Dirnado (World Map)
+        weak: Ice
+        drops: Phoenix Down · Echo Herb (rare)
+        steals: ""
       - name: Imp
         level: 17
         where: Dirnado (World Map)
         weak: Water, Light
         drops: Smelling Salts · Hi-Potion (rare)
         steals: ""
+      - name: Mini Dragon
+        level: 17
+        where: Dirnado (World Map)
+        weak: Ice
+        drops: Ether
+        steals: Ether (rare)
       - name: Killer Mantis
         level: 18
         where: Dirnado (World Map)
