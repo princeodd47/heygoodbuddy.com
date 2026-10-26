@@ -81,6 +81,7 @@ in **Grandport**. It gives a tutorial on using magicite and gives you a
   shipyard, then return to Roy at the Dwarven Forge.
 - **Wind Shrine:** chest on the lower level, down a ladder
 - **Rukh Cave** (southern Olderion Federation world map): Boss Rukh drops
+- **Olderion:** jump rope with the Spirited Girl on the west side. Reach 10 jumps.
 
 Tablet Shards are a separate item. See [Tablet Shards](tablet-shards.md)
 for where to find them and what they're traded for.

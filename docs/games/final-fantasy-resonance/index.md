@@ -31,4 +31,10 @@ save data carries over.
 
     Every enemy by area, with level, weaknesses, drops and steals.
 
+-   :material-creation:{ .lg .middle } __[Espers](espers.md)__
+
+    ---
+
+    How summoning works, and how to get each Esper.
+
 </div>
