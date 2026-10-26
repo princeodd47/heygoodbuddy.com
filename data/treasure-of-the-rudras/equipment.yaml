@@ -1,0 +1,234 @@
+# Stats from Kurt Reonis's item list. Buy prices and where-to-get from God
+# Bird's elemental armor list and rare item page, plus the walkthroughs.
+# "where" uses S = Sion, Su = Surlent, R = Riza, D = Dune, and the day.
+weapons:
+  - type: Swords
+    items:
+      - {name: Hell Fencer, atk: 16, sell: 150}
+      - {name: Mad Camel, atk: 22, sell: 220}
+      - {name: Avenger, atk: 28, sell: 280, where: "S2 Danelf"}
+      - {name: Strangle, atk: 36, sell: 560}
+      - {name: Valkyrie, atk: 36, sell: 560, notes: "Strong vs giants"}
+      - {name: Hamlet, atk: 48, elem: Lightning, sell: 510, where: "S6 Graham's Tomb"}
+      - {name: Graham Sword, atk: 52, notes: "Strong vs armor", where: "S6 Graham's Tomb"}
+      - {name: Ice Sword, atk: 68, elem: Water, sell: 1100, where: "Su10 Sigmund Glacier"}
+      - {name: Fokker, atk: 72, elem: Wind, notes: "Def +1, Spd +1", sell: 780}
+      - {name: Light Sword, atk: 86, elem: Holy, sell: 990, where: "Su14 Ruins of Tuhla warp gates"}
+      - {name: Rafale, atk: 86, elem: Water, notes: "Def +1, Atk +2", sell: 910}
+      - {name: Taurus Sword, atk: 94, elem: Lightning, notes: "One-handed", where: "S11 church southeast of Danelf"}
+      - {name: Tomcat, atk: 96, elem: Lightning, sell: 1050}
+      - {name: Nuad Sword, atk: 114, sell: 1250}
+  - type: Broadswords
+    items:
+      - {name: Aspirade, atk: 12, sell: 110}
+      - {name: Somation, atk: 26, notes: "Strong vs plants", sell: 300}
+      - {name: Storm, atk: 28, elem: Lightning, sell: 340, where: "S2 Coliseum prize · Drop: Bolt Sword, Ruins of Sodom"}
+      - {name: Sleipnir, atk: 34, sell: 430, where: "Su7 Meifa's Statue"}
+      - {name: Ephirade, atk: 41, sell: 530}
+      - {name: Theseus, atk: 50, sell: 489}
+      - {name: Yoto, atk: 61, elem: Dark, sell: 609}
+      - {name: Dark Sword, atk: 67, elem: Dark, sell: 1090, where: "Drop: Dark Sword, Tower of the Giants"}
+      - {name: Dion, atk: 70, sell: 940}
+      - {name: Sigmund Sword, atk: 83, elem: Water, where: "S9 Sigmund Glacier"}
+      - {name: Balthazar, atk: 87, sell: 1200}
+      - {name: Volsung, atk: 100, elem: Dark, sell: 1390}
+      - {name: Fortune, atk: 104, notes: "Strong vs lizards"}
+      - {name: Light Sword, atk: 109, elem: Holy, sell: 1520}
+      - {name: Flame Sword, atk: 115, elem: Fire, where: "Drop: FlameSword, Thor Volcano"}
+      - {name: Apocalypse, atk: 128, elem: Lightning, where: "S14 trade the Psycho Shield to Surlent"}
+      - {name: Dithras, atk: 138, notes: "Beats the Apocalypse", where: "S15 Shumisen, hidden"}
+  - type: Rapiers
+    items:
+      - {name: Iris, atk: 8, sell: 60}
+      - {name: Hortencia, atk: 15, sell: 140}
+      - {name: Viola, atk: 30, sell: 310}
+      - {name: Camellia, atk: 42, notes: "Spd +1", sell: 430}
+      - {name: Narcissus, atk: 84, elem: Water, sell: 900}
+      - {name: Juliet, atk: 98, elem: Fire, sell: 2720}
+  - type: Daggers
+    items:
+      - {name: Ragu Knife, atk: 5, sell: 50}
+      - {name: Rune Knife, atk: 13, sell: 130, where: "S2 Vad"}
+      - {name: Crystal Knife, atk: 19, elem: Water, sell: 280}
+      - {name: Rex Killer, atk: 27, notes: "Strong vs lizards", sell: 430}
+      - {name: Laikas Knife, atk: 30, sell: 490, where: "S4 Len"}
+      - {name: Raptor Knife, atk: 44, notes: "Strong vs plants", sell: 720, where: "S7 Roma"}
+      - {name: Hound Knife, atk: 58, sell: 950}
+      - {name: Kitchen Knife, atk: 65, notes: "Strong vs lizards, Spd +1"}
+      - {name: Wild Knife, atk: 71, sell: 789}
+      - {name: Tuval Knife, atk: 85, elem: Water, sell: 945, where: "Drop: purple Cultist, Cult Base"}
+      - {name: Freedom, atk: 101, where: "Drop: TrainDragn, Skuld's Gate"}
+  - type: Whips
+    items:
+      - {name: Thorn Whip, atk: 41, sell: 640}
+      - {name: Flay Whip, atk: 76}
+      - {name: Ice Whip, atk: 81, elem: Water, sell: 1330, where: "S11 Hidden Village"}
+      - {name: Nine-Tails, atk: 93, elem: Wind, sell: 1540}
+      - {name: Love Whip, atk: 93, elem: Holy, notes: "Foxy's best", where: "S15 Shumisen, hidden"}
+  - type: Maces
+    items:
+      - {name: Ogre Mace, atk: 2, sell: 310, where: "S1 Abilijer"}
+      - {name: Power Mace, atk: 35, elem: Fire, sell: 1030, where: "S5 Clock Tower"}
+      - {name: Large Mace, atk: 55, sell: 1450, where: "S7 Sacred Temple · Su10 Abilijer"}
+      - {name: White Hammer, atk: 71, elem: Holy}
+      - {name: Grand Mace, atk: 99, elem: Water, sell: 2690, where: "Drop: wandering giant, Netherworld near Tarach"}
+  - type: Canes
+    items:
+      - {name: Oxyones, atk: 1, mdef: 1, elem: Fire, notes: "Spr +2", sell: 240}
+      - {name: Solomon, atk: 1, mdef: 1, elem: Water, notes: "Spr +2", sell: 460}
+      - {name: Cervin, atk: 3, mdef: 2, elem: Wind, notes: "Spr +4", sell: 1530}
+      - {name: Mukale, atk: 3, mdef: 2, elem: Lightning, notes: "Spr +4", sell: 1320}
+      - {name: Prospero, atk: 5, mdef: 4, elem: Dark, notes: "Spr +8", sell: 2710}
+      - {name: Lumiere, atk: 6, mdef: 4, elem: Holy, notes: "Spr +8", sell: 3140}
+  - type: Claws
+    items:
+      - {name: Prince Nail, atk: 2, sell: 350}
+      - {name: Bison, atk: 26, elem: Lightning, sell: 750, where: "R5 Spirit Temple"}
+      - {name: Jackal Nail, atk: 28, elem: Water, sell: 660, where: "R5 Spirit Temple, Earth choice"}
+      - {name: King Bear, atk: 42, sell: 1010, where: "R7 Ruins of Sodom"}
+      - {name: Red Cougar, atk: 70, elem: Fire, sell: 1470}
+      - {name: Mono Nail, atk: 94, elem: Fire, sell: 2015}
+  - type: Spears
+    items:
+      - {name: Aries, atk: 2, sell: 850}
+      - {name: Scorpius, atk: 25, elem: Fire, sell: 1240}
+      - {name: Catarina, atk: 38, elem: Lightning, sell: 1460, where: "R10 Undersea Pyramid, hidden"}
+      - {name: Delphine, atk: 44, elem: Water, sell: 1570}
+      - {name: Cyprus, atk: 59, elem: Dark, notes: "Marina's best", where: "Drop: chief, Sacred Forest, once you can ride the Hegs"}
+  - type: Bows
+    items:
+      - {name: Regulus, atk: 61, sell: 260, where: "R2 Mayor's House"}
+      - {name: Adler, atk: 75, sell: 480}
+      - {name: Fongoose, atk: 84, notes: "Anti-pollution", sell: 620, where: "R6 Limestone Cavern"}
+      - {name: Rondine, atk: 93, elem: Fire, sell: 750, where: "Su9 Ruins of Ruhle"}
+      - {name: Lars, atk: 104, elem: Lightning, sell: 920}
+      - {name: Ophelia, atk: 113, elem: Wind, sell: 1050, where: "Su11 Undersea Palace"}
+      - {name: Perdita, atk: 129, elem: Holy, sell: 1300}
+  - type: Crossbows
+    items:
+      - {name: Ice Box, atk: 90, elem: Water, sell: 740}
+      - {name: Fire Bow, atk: 103, elem: Fire, sell: 940}
+      - {name: Thunder Bow, atk: 112, elem: Lightning, sell: 1080}
+      - {name: Wind Bow, atk: 132, elem: Wind, sell: 1400, where: "S14 Cult Base"}
+      - {name: Dark Bow, atk: 153, elem: Dark, sell: 1740, where: "D16 Urd's Gate"}
+  - type: Rifles
+    items:
+      - {name: Moon Rifle, atk: 18, sell: 260}
+      - {name: Cosmo Gun, atk: 31, sell: 490, where: "S10 / Su6 Eremia's Manor"}
+      - {name: Thunder'sTail, atk: 48, elem: Lightning, sell: 810, where: "R8 Gomorrah City"}
+      - {name: Antares, atk: 65, elem: Fire, sell: 1130, where: "R5 Spirit Temple, Water choice"}
+      - {name: Mist Gun, atk: 90, elem: Water, sell: 1600, where: "R10 Undersea Pyramid"}
+      - {name: Mirage, atk: 102, sell: 1840, where: "R15 Crater Base"}
+      - {name: Romeo, atk: 111, elem: Wind, sell: 1990}
+  - type: Machine Guns
+    items:
+      - {name: T-Decline, atk: 12, notes: "Spd -2, hits all", sell: 140}
+      - {name: DOA, atk: 41, elem: Dark, notes: "Def -1, Spd -4, hits all", sell: 720, where: "R5 Sacred Forest"}
+      - {name: Aroma ZZ, atk: 60, elem: Fire, notes: "Spd -2, hits all", sell: 1090}
+      - {name: Glochester, atk: 75, elem: Lightning, notes: "Spd -2, hits all", sell: 1370}
+      - {name: Dusk 909, atk: 96, elem: Wind, notes: "Def -2, Spd -8, hits all", sell: 1780, where: "R12 Statue of Meifa"}
+  - type: Scythes
+    items:
+      - {name: Maple Cutter, atk: 97, elem: Wind, sell: 1710}
+      - {name: Red Eagle, atk: 113, elem: Fire, notes: "Attacks from the back row", sell: 2150, where: "Drop: Paymon, Sakkara Desert (Su2 on)"}
+      - {name: Blue Swallow, atk: 127, elem: Water, sell: 2520, where: "Su11 Undersea Palace"}
+      - {name: White Hawk, atk: 150, elem: Holy, sell: 3140}
+      - {name: Death Falcon, atk: 153, elem: Dark, sell: 3200, where: "D16 Urd's Gate"}
+
+armor:
+  - type: Armor
+    items:
+      - {name: Chain Mail, def: 5, mdef: 1, sell: 140}
+      - {name: Pilas Armor, def: 6, mdef: 1, notes: "Spd -2", sell: 170}
+      - {name: Dennis Armor, def: 8, mdef: 1, notes: "Spd -4", sell: 320}
+      - {name: Lemnos Mail, def: 9, mdef: 3, elem: Lightning, buy: 680, sell: 340, where: "S2–4 Danelf · Su1–3 Oriab · R3 Oriab, R4 Danelf"}
+      - {name: Slamath Armor, def: 11, mdef: 2, elem: Lightning, notes: "Spd -4", buy: 930, sell: 470, where: "S2–4 Danelf · Su8 Oriab · R4 Danelf"}
+      - {name: Packet Mail, def: 13, mdef: 4, sell: 550, where: "S4 Len"}
+      - {name: Hector Armor, def: 15, mdef: 2, elem: Fire, notes: "Spd -4", buy: 1320, sell: 660, where: "S2–4 Danelf, S10 Eremia's Manor · Su6 Eremia's Manor · R4 Danelf"}
+      - {name: Jaques Mail, def: 17, mdef: 6, elem: Holy, buy: 1490, sell: 750, where: "S5 Clock Tower, S6 Ruined City · Su8 Clock Tower"}
+      - {name: Garal Armor, def: 20, mdef: 3, notes: "Spd -1", sell: 960, where: "S5 Garal Tunnel"}
+      - {name: Dorcas Mail, def: 21, mdef: 8, sell: 950}
+      - {name: Gregory Armor, def: 24, mdef: 4, notes: "Spd -1", sell: 1160, where: "S6 Graham's Tomb"}
+      - {name: Alexis Mail, def: 25, mdef: 9, elem: Water, buy: 2300, sell: 1150, where: "Su12 Lyla · R10 Lyla"}
+      - {name: Dagda Armor, def: 28, mdef: 5, notes: "Spd -4", sell: 1410}
+      - {name: MatherasArmor, def: 30, mdef: 5, notes: "Spd -2", sell: 1500}
+      - {name: Varo Mail, def: 30, mdef: 11, sell: 1400}
+      - {name: Cassius Mail, def: 34, mdef: 13, elem: Fire, buy: 3190, sell: 1600, where: "S12 Danelf, S15 Shumisen · Su10 Danelf or Babel, Su15 Shumisen · R11 Babel · D starts with it"}
+      - {name: Lucius Armor, def: 35, mdef: 6, elem: Water, notes: "Spd -1", buy: 3600, sell: 1800, where: "S8 Len or Babel, S10 Oriab, S12 Danelf · Su10 Danelf or Len · R11 Len"}
+      - {name: Tybalt Mail, def: 37, mdef: 15, sell: 1800, where: "R4 Cryunne Castle prison"}
+      - {name: Voice Armor, def: 41, mdef: 7, notes: "Spd -2", sell: 2100}
+      - {name: Octave Mail, def: 42, mdef: 17, elem: Dark, buy: 4080, sell: 2040, where: "S14 / Su14 Tarach · D16 Urd's Gate"}
+      - {name: King's Armor, def: 45, mdef: 8, notes: "Spd -8", where: "S14 Cult Base"}
+      - {name: Marcus Armor, def: 51, mdef: 9, elem: Dark, notes: "Spd -2", buy: 5280, sell: 2640, where: "S14 / Su14 Tarach"}
+      - {name: Hercules, def: 57, mdef: 10, elem: Holy, notes: "Spd -2", sell: 2990, where: "S15 Shumisen"}
+  - type: Robes
+    items:
+      - {name: Flay Cape, def: 1, mdef: 4, sell: 220}
+      - {name: Babel Coat, def: 2, mdef: 3, sell: 180}
+      - {name: Dirty Clothes, def: 2, mdef: 7, sell: 340}
+      - {name: Cook's Apron, def: 3, mdef: 11, sell: 200}
+      - {name: Queen's Coat, def: 3, mdef: 11, where: "R12 Statue of Meifa"}
+      - {name: Ephta's Robe, def: 4, mdef: 18, elem: Wind, sell: 890, where: "S starts with it · R3 Great Forest"}
+      - {name: Daniel's Robe, def: 6, mdef: 26, elem: Fire, buy: 2480, sell: 1240, where: "S15 Shumisen · Su8 Ruined City, Su9 Avdol, Su15 Shumisen · D16 Urd's Gate"}
+      - {name: Hecate's Robe, def: 7, mdef: 33, elem: Water, buy: 3190, sell: 1600, where: "S14 / Su14 Tarach · R10 Undersea Pyramid, hidden · D16 Urd's Gate"}
+      - {name: Big Robe, def: 10, mdef: 3, sell: 570, where: "S1 Tower of the Giants"}
+      - {name: Orpheus Robe, def: 10, mdef: 50, elem: Holy, sell: 2390, where: "D16 Ravana at Urd's Gate · Verdandi's Temple"}
+      - {name: Meifa's Robe, def: 11, mdef: 15, sell: 378}
+      - {name: Ogre Robe, def: 17, mdef: 6, elem: Lightning, sell: 1125}
+      - {name: Holy Robe, def: 30, mdef: 2, where: "R6 from Dune and Cid"}
+      - {name: Large Robe, def: 30, mdef: 12, elem: Water, sell: 2160, where: "S7 Sacred Temple, S10 Ruined City · Su8 Ruined City"}
+  - type: Helms
+    items:
+      - {name: Logical Cap, def: 1, mdef: 2, elem: Wind, notes: "Spr +4", buy: 130, sell: 70, where: "S1 Vad · Su starts with it, Su1–3 Oriab · R3 Oriab, R4 Vad"}
+      - {name: Open Helm, def: 2, mdef: 1, sell: 140, where: "R5 Sacred Forest"}
+      - {name: Dirty Hat, def: 3, mdef: 2, sell: 290, where: "R1 Babel slums"}
+      - {name: Frying Pan, def: 3, mdef: 6, sell: 250}
+      - {name: Sultan Helm, def: 5, mdef: 4, elem: Water, notes: "Spr +1", buy: 1030, sell: 520, where: "S7 Roma · Su9 Avdol, Su14 Ruins of Tuhla"}
+      - {name: Baker's Cap, def: 9, mdef: 9, elem: Lightning, notes: "Spr +8", buy: 1780, sell: 890, where: "S10 Ruined City · Su8 Ruined City · D starts with it"}
+      - {name: Zeland Helm, def: 10, mdef: 6, elem: Lightning, buy: 2030, sell: 1020, where: "S12 Danelf · Su10 Danelf · R15 Crater Base · D Verdandi's Temple"}
+      - {name: Keats Helm, def: 14, mdef: 9, elem: Holy, sell: 1520, where: "D Verdandi's Temple"}
+      - {name: Rinon Helm, def: 14, mdef: 11, elem: Fire, notes: "Spr +4", sell: 3060, where: "S10 / Su8 Ruined City"}
+  - type: Shields
+    items:
+      - {name: Buckler, def: 1, notes: "Spd -1", sell: 40, where: "S2 Vad"}
+      - {name: BerniceShield, def: 2, notes: "Spd -2", sell: 60}
+      - {name: Axis Shield, def: 3, mdef: 1, elem: Wind, notes: "Spd -1", buy: 270, sell: 220, where: "Drop: AxisKnight near Danelf, ZombieAxis in the Netherworld · S11 / Su8 / R11 Hidden Village"}
+      - {name: Small Shield, def: 3, mdef: 2, notes: "Spd -2", sell: 200}
+      - {name: Chop Block, def: 3, mdef: 2, notes: "Spd -1", sell: 640}
+      - {name: Gra Shield, def: 4, mdef: 2, notes: "Spd -4, good vs weapons", sell: 230, where: "S2 Danelf"}
+      - {name: Meio Shield, def: 7, mdef: 3, elem: Wind, notes: "Spd -4", buy: 670, sell: 340, where: "S4 Tower of Valiant, S4–5 Len · Su8 Oriab · R4 Cryunne · D16 Urd's Gate"}
+      - {name: Flat Shield, def: 8, mdef: 4, elem: Lightning, notes: "Spd -4", buy: 730, sell: 370, where: "S4–5 Len, S6 Ruined City · Su9 Roma · R8 Roma · D16 Urd's Gate"}
+      - {name: Aegis Shield, def: 9, mdef: 4, elem: Fire, notes: "Spd -4", buy: 950, sell: 480, where: "S6 Ruined City or Graham's Tomb · Su9 Roma · R8 Roma"}
+      - {name: MontanoShield, def: 11, mdef: 5, elem: Wind, notes: "Spd -4", buy: 1060, sell: 530, where: "S7 Roma, S8 Len or Babel · Su12 Lyla · R10 Lyla, R11 Len"}
+      - {name: Rebio Shield, def: 11, mdef: 5, notes: "Spd -4", sell: 620}
+      - {name: LucilleShield, def: 13, mdef: 6, notes: "Spd -8, good vs swords", sell: 760}
+      - {name: Beluga Shield, def: 15, mdef: 7, elem: Water, notes: "Spd -8", buy: 1790, sell: 900, where: "S12 Danelf · Su10 Danelf or Babel · R11 Babel"}
+      - {name: Braham Shield, def: 15, mdef: 7, elem: Fire, notes: "Spd -4", buy: 1390, sell: 700, where: "S12 Danelf · Su10 Danelf or Babel · R11 Babel"}
+      - {name: Psycho Shield, def: 17, mdef: 12, elem: Fire, notes: "Spd -8, Spr +4", sell: 2000, where: "S14 Cult Base · D carried over"}
+      - {name: Black Shield, def: 18, mdef: 8, elem: Dark, notes: "Spd -2", sell: 830, where: "Drop: BoneKnight, Netherworld (S15, Su14)"}
+      - {name: Ogre Shield, def: 22, mdef: 12, elem: Fire, notes: "Spd -2", sell: 725, where: "S6 Graham's Tomb"}
+      - {name: Mirror Shield, def: 23, mdef: 10, notes: "Spd -8", sell: 1220, where: "D Verdandi's Temple"}
+      - {name: Power Shield, def: 23, mdef: 6, notes: "Spd -8", where: "S14 trade the Psycho Shield to Surlent"}
+      - {name: Large Shield, def: 26, mdef: 15, elem: Dark, notes: "Spd -4", buy: 1680, sell: 1176, where: "S8 Surt (random), S11 Hidden Village · Su8 / R11 Hidden Village"}
+      - {name: Heavy Shield, def: 31, mdef: 17, elem: Wind, notes: "Spd -8", buy: 2520, sell: 1764, where: "S14 / Su14 Tarach"}
+  - type: Shoes
+    items:
+      - {name: Dirty Shoes, def: 0, notes: "Spd +1", sell: 50, where: "R2 Mayor's House, R4 Danelf"}
+      - {name: Opsis Boots, def: 1, elem: Water, notes: "Spd +4", sell: 180, where: "S7 Ruins of Frey"}
+      - {name: Peschel Boots, def: 1, elem: Lightning, notes: "Spd +4", sell: 350, where: "Su8 Great Forest · D16 Urd's Gate"}
+      - {name: Soma, def: 1, elem: Wind, notes: "Spd +4", sell: 270, where: "R6 Soma"}
+      - {name: Fool Shoes, def: 1, elem: Dark, notes: "Spd +4", where: "Su14 Ruins of Tuhla, hidden"}
+      - {name: Kemp Boots, def: 1, elem: Fire, notes: "Atk -1, Spd +8", sell: 440, where: "Drop: Kemp, Graham's Tomb (S6)"}
+      - {name: Big shoes, def: 12, mdef: 2, notes: "Spd +8", sell: 2400}
+  - type: Accessories
+    items:
+      - {name: Pot-pourri, def: 0, mdef: 5, sell: 16}
+      - {name: HeatsealCharm, def: 0, mdef: 6, elem: Dark, buy: 1500, sell: 300, where: "S8 Babel, S11 Hidden Village · Su8 / R11 Hidden Village"}
+      - {name: Moon Ring, def: 0, mdef: 6, elem: Dark, notes: "Agi +4", sell: 140, where: "S2 Mantra Peak, S4 Sky Islands castle · Su Dark Ein, Culgan and others · R Karla, Culgan and others · D Verdandi's Temple"}
+      - {name: Aqua Ring, def: 0, mdef: 7, elem: Water, notes: "Agi +4", buy: 800, sell: 160, where: "Su12 Lyla or Kidal · R10 Lyla"}
+      - {name: Pure Ring, def: 0, mdef: 9, elem: Holy, notes: "Agi +8", sell: 100, where: "R6 Mantra Peak · Drop: Knave, Ruins of Ruhle · D Verdandi's Temple, Chaos Ein"}
+      - {name: Fahl Stone, def: 0, mdef: 5, elem: Fire, notes: "Spr +2", sell: 1000, where: "Su3 Ruins of Fahl"}
+      - {name: Huey Ring, def: 0, mdef: 10, elem: Fire, sell: 1200, where: "S1 / Su10 Tower of the Giants"}
+      - {name: Thor Ring, def: 0, mdef: 12, elem: Lightning, notes: "Spr +4", sell: 110, where: "Drop: Baalzephon, Shumisen (S15, Su15)"}
+      - {name: Beze Wing, def: 2, mdef: 6, elem: Wind, notes: "Spd +8", buy: 600, sell: 480, where: "Rare drop: Bezewaign, Sky Islands (S4–5) · S10 / Su8 Ruined City · D starts with it"}
+      - {name: Psycho Ring, def: 30, mdef: 3}

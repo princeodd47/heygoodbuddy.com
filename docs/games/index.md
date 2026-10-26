@@ -40,4 +40,12 @@ hide:
     **Genre:** JRPG<br>
     **Release Date:** September 25, 2003
 
+-   :material-script-text:{ .lg .middle } __[Treasure of the Rudras](treasure-of-the-rudras/index.md)__
+
+    ---
+
+    **System:** Super Famicom<br>
+    **Genre:** JRPG<br>
+    **Release Date:** April 5, 1996
+
 </div>

@@ -1,0 +1,227 @@
+# Level, HP, EXP and Ragu from Kurt Reonis's monster list. Drops and weaknesses
+# from Trunkz0r's guide, God Bird's boss and rare item data, and Bluewing's Dune
+# chapter.
+areas:
+  - area: "Vad"
+    monsters:
+      - {name: "Axis", level: 1, hp: "29", exp: "3", ragu: "2"}
+  - area: "Avdol"
+    monsters:
+      - {name: "Killer Bee", level: 1, hp: "22", exp: "3", ragu: "2"}
+      - {name: "Death", level: 20, hp: "193", exp: "213", ragu: "0"}
+  - area: "Babel"
+    monsters:
+      - {name: "Gebelk", level: "—", hp: "30", exp: "5", ragu: "7"}
+      - {name: "Babel Dog", level: "—", hp: "50", exp: "14", ragu: "—", drops: "Medical Herb"}
+      - {name: "Future", level: 1, hp: "32", exp: "5", ragu: "7"}
+  - area: "Tower of the Giants"
+    monsters:
+      - {name: "Arachne", level: 2, hp: "44", exp: "9", ragu: "9"}
+      - {name: "Larf", level: 3, hp: "57", exp: "8", ragu: "19"}
+      - {name: "Babydoll", level: 27, hp: "3,074", exp: "1,508", ragu: "573"}
+      - {name: "Vadbaal", level: 27, hp: "617", exp: "704", ragu: "229", drops: "Purifier"}
+      - {name: "Dark Sword", level: 28, hp: "255", exp: "180", ragu: "78", drops: "Dark Sword", weak: "Holy"}
+  - area: "Danelf"
+    monsters:
+      - {name: "Lamias", level: 2, hp: "50", exp: "19", ragu: "13"}
+      - {name: "AxisKnight", level: 8, hp: "78", exp: "49", ragu: "17", drops: "Axis Shield"}
+      - {name: "Smallkin", level: 38, hp: "508", exp: "637", ragu: "133"}
+  - area: "Thor Volcano"
+    monsters:
+      - {name: "Balan Bird", level: 2, hp: "52", exp: "10", ragu: "13", drops: "Medical Herb", weak: "Water"}
+      - {name: "Balnapock", level: 2, hp: "42", exp: "7", ragu: "3"}
+      - {name: "Gulg Rock", level: 2, hp: "37", exp: "3", ragu: "4", drops: "Tasty Water", weak: "Water"}
+      - {name: "Thorsnout", level: 3, hp: "47", exp: "23", ragu: "9", drops: "Medical Herb", weak: "Water"}
+      - {name: "Bone Fuga", level: 26, hp: "319", exp: "234", ragu: "112", drops: "Horn Water", weak: "Water"}
+      - {name: "FlameSword", level: 26, hp: "121", exp: "156", ragu: "22", drops: "Flame Sword", weak: "Water"}
+      - {name: "Freeance", level: 26, hp: "310", exp: "234", ragu: "112", weak: "Water"}
+      - {name: "FreyjaBird", level: 26, hp: "679", exp: "467", ragu: "112", weak: "Water"}
+  - area: "Forest of Rem"
+    monsters:
+      - {name: "Orps", level: 2, hp: "25", exp: "6", ragu: "9", drops: "Medical Herb"}
+      - {name: "Guard", level: 3, hp: "92", exp: "24", ragu: "23", drops: "Medical Herb"}
+      - {name: "Rem", level: 5, hp: "53", exp: "8", ragu: "15", drops: "Rem Herb", weak: "Lightning"}
+  - area: "Great Forest"
+    monsters:
+      - {name: "Rhea", level: 3, hp: "43", exp: "9", ragu: "7", weak: "Fire"}
+      - {name: "SmSetavisa", level: 4, hp: "121", exp: "14", ragu: "3", drops: "Panacaea"}
+      - {name: "Tail Dog", level: 5, hp: "59", exp: "8", ragu: "11"}
+      - {name: "Sickle Dog", level: 15, hp: "114", exp: "42", ragu: "40"}
+  - area: "Horn Cave"
+    monsters:
+      - {name: "Purana", level: 5, hp: "52", exp: "13", ragu: "15", drops: "Horn Water"}
+      - {name: "Horn Bat", level: 6, hp: "101", exp: "20", ragu: "6", drops: "Horn Water"}
+  - area: "Mantra Peak"
+    monsters:
+      - {name: "Reemon", level: 7, hp: "109", exp: "19", ragu: "32"}
+      - {name: "Sol", level: 7, hp: "90", exp: "19", ragu: "32"}
+      - {name: "Nil", level: 21, hp: "216", exp: "117", ragu: "75", drops: "Rem Herb"}
+      - {name: "Raizou", level: 21, hp: "265", exp: "117", ragu: "75", drops: "Nuad Herb"}
+      - {name: "Skull Bird", level: 21, hp: "226", exp: "117", ragu: "75", weak: "Holy"}
+      - {name: "Cultist (red)", level: 30, hp: "385", exp: "389", ragu: "201", drops: "Horn Water", weak: "Water"}
+  - area: "Ruins of Fahl"
+    monsters:
+      - {name: "Kukoro", level: 8, hp: "67", exp: "45", ragu: "24", drops: "Alarum"}
+      - {name: "Leon", level: 8, hp: "175", exp: "56", ragu: "7"}
+      - {name: "Hades", level: 9, hp: "184", exp: "80", ragu: "79", weak: "Water"}
+  - area: "Statue of Meifa"
+    monsters:
+      - {name: "Pusaris", level: 9, hp: "146", exp: "88", ragu: "13"}
+      - {name: "Holy Dog", level: 40, hp: "522", exp: "542", ragu: "135", weak: "Dark"}
+      - {name: "Mation", level: 41, hp: "565", exp: "569", ragu: "136"}
+      - {name: "PaylerHard", level: 41, hp: "515", exp: "569", ragu: "136", weak: "Wind"}
+  - area: "Forest near Ompross"
+    monsters:
+      - {name: "Hornet", level: 9, hp: "103", exp: "35", ragu: "9"}
+  - area: "Netherworld"
+    monsters:
+      - {name: "Closer", level: 10, hp: "33", exp: "8", ragu: "10", weak: "Holy"}
+      - {name: "ZombieAxis", level: 11, hp: "31", exp: "12", ragu: "8", drops: "Axis Shield", weak: "Holy"}
+      - {name: "Ornith", level: 30, hp: "274", exp: "206", ragu: "80"}
+      - {name: "BoneKnight", level: 40, hp: "955", exp: "325", ragu: "135", drops: "Black Shield"}
+  - area: "Mount Delphi"
+    monsters:
+      - {name: "Rocker", level: "—", hp: "150", exp: "—", ragu: "—"}
+      - {name: "Kul", level: 10, hp: "118", exp: "31", ragu: "43"}
+      - {name: "Bumper", level: 11, hp: "121", exp: "55", ragu: "12"}
+      - {name: "Rocknapock", level: 11, hp: "160", exp: "49", ragu: "63"}
+      - {name: "Miser Bone", level: 36, hp: "332", exp: "440", ragu: "104", drops: "Horn Water"}
+  - area: "Eremia's Manor"
+    monsters:
+      - {name: "Deathdaril", level: 11, hp: "143", exp: "73", ragu: "0", weak: "Holy"}
+      - {name: "Mondo", level: 12, hp: "230", exp: "56", ragu: "67", weak: "Holy"}
+  - area: "Dragon God Ruins"
+    monsters:
+      - {name: "Fury", level: 12, hp: "129", exp: "42", ragu: "50"}
+      - {name: "Argonite", level: 13, hp: "87", exp: "129", ragu: "143"}
+  - area: "Ruins of Tuhla"
+    monsters:
+      - {name: "Rueda", level: 12, hp: "91", exp: "51", ragu: "34"}
+      - {name: "Mukale", level: 39, hp: "477", exp: "515", ragu: "134", weak: "Water"}
+      - {name: "NickBottom", level: 39, hp: "896", exp: "1,031", ragu: "268", drops: "Alarum"}
+      - {name: "Sigureda", level: 39, hp: "250", exp: "618", ragu: "89", drops: "Horn Water", weak: "Water"}
+  - area: "Len"
+    monsters:
+      - {name: "Vaja", level: 14, hp: "167", exp: "55", ragu: "57"}
+      - {name: "Bezewaign", level: 15, hp: "269", exp: "500", ragu: "60", drops: "Beze Wing (rare)", note: "Runs away when hurt. Kill it in one hit."}
+      - {name: "Beelzebul", level: 28, hp: "347", exp: "270", ragu: "117"}
+      - {name: "Fargeot", level: 28, hp: "384", exp: "270", ragu: "117"}
+      - {name: "Mad Mohno", level: 28, hp: "230", exp: "449", ragu: "156"}
+  - area: "Garal Tunnel"
+    monsters:
+      - {name: "Garal Cat", level: 14, hp: "143", exp: "55", ragu: "57"}
+      - {name: "Kantarela", level: 14, hp: "54", exp: "22", ragu: "23"}
+  - area: "Spirit Temple"
+    monsters:
+      - {name: "Earth Guardian", level: 14, hp: "521", exp: "186", ragu: "0"}
+      - {name: "Water Guardian", level: 14, hp: "695", exp: "186", ragu: "0", weak: "Fire"}
+      - {name: "Fire Guardian", level: 19, hp: "531", exp: "92", ragu: "0"}
+  - area: "Sacred Forest"
+    monsters:
+      - {name: "Spearman", level: "—", hp: "100", exp: "—", ragu: "—"}
+      - {name: "Mohno", level: 15, hp: "152", exp: "109", ragu: "30", drops: "Tasty Water"}
+      - {name: "Ghost", level: 17, hp: "275", exp: "52", ragu: "44", drops: "Horn Water", weak: "Holy"}
+  - area: "Clock Tower"
+    monsters:
+      - {name: "Obrella", level: 16, hp: "97", exp: "112", ragu: "56"}
+      - {name: "Dilligent", level: 17, hp: "86", exp: "157", ragu: "131"}
+      - {name: "Dartry", level: 18, hp: "759", exp: "873", ragu: "272"}
+  - area: "Desert Ruins"
+    monsters:
+      - {name: "SandVandal", level: 17, hp: "117", exp: "70", ragu: "58"}
+  - area: "Sakkara Desert"
+    monsters:
+      - {name: "Paymon", level: 18, hp: "253", exp: "116", ragu: "363", drops: "Red Eagle"}
+  - area: "Graham's Tomb"
+    monsters:
+      - {name: "Kemp", level: 20, hp: "197", exp: "106", ragu: "73", drops: "Kemp Boots"}
+      - {name: "Gir", level: 21, hp: "2,076", exp: "1,165", ragu: "300"}
+  - area: "Ruins of Frey"
+    monsters:
+      - {name: "Jinja", level: 22, hp: "240", exp: "127", ragu: "77"}
+      - {name: "Vebal", level: 23, hp: "605", exp: "277", ragu: "158"}
+  - area: "Ruins of Ruhle"
+    monsters:
+      - {name: "Batconner", level: 23, hp: "208", exp: "185", ragu: "105", drops: "Purifier"}
+      - {name: "Knave", level: 23, hp: "317", exp: "369", ragu: "211", drops: "Pure Ring"}
+      - {name: "Lugal", level: 23, hp: "274", exp: "185", ragu: "105", drops: "Tasty Water"}
+      - {name: "Neo Vandal", level: 24, hp: "115", exp: "100", ragu: "54"}
+      - {name: "Randigel", level: 25, hp: "244", exp: "163", ragu: "99"}
+  - area: "Ruins of Sodom"
+    monsters:
+      - {name: "Bolt Sword", level: 24, hp: "91", exp: "100", ragu: "16", drops: "Storm"}
+      - {name: "Orzex", level: 24, hp: "228", exp: "134", ragu: "72"}
+      - {name: "Dullahan", level: 25, hp: "264", exp: "163", ragu: "83", weak: "Holy"}
+      - {name: "Shastel", level: 25, hp: "394", exp: "276", ragu: "83", weak: "Water"}
+  - area: "Cult Base"
+    monsters:
+      - {name: "Inugami", level: 25, hp: "334", exp: "217", ragu: "110", drops: "Black Bag"}
+      - {name: "Cultist (red)", level: 30, hp: "368", exp: "389", ragu: "389", drops: "Horn Water", weak: "Water"}
+      - {name: "Hot Kukuro", level: 41, hp: "219", exp: "1,137", ragu: "136"}
+      - {name: "Cultist (purple)", level: 45, hp: "585", exp: "1,148", ragu: "312", drops: "Tuval Knife", note: "Kill it before the Inugami it travels with."}
+  - area: "Gomorrah City"
+    monsters:
+      - {name: "NergalSoul", level: 25, hp: "263", exp: "163", ragu: "83", drops: "Rem Herb", weak: "Holy"}
+      - {name: "Payler", level: 26, hp: "130", exp: "175", ragu: "42"}
+      - {name: "HungryHead", level: 35, hp: "346", exp: "469", ragu: "96", weak: "Lightning"}
+  - area: "Sacred Temple"
+    monsters:
+      - {name: "Lemna", level: 25, hp: "247", exp: "163", ragu: "41"}
+      - {name: "Vina", level: 25, hp: "247", exp: "163", ragu: "41"}
+  - area: "Prison near Ruhle"
+    monsters:
+      - {name: "DirtyLugal", level: 26, hp: "1,048", exp: "1,052", ragu: "0", drops: "Horn Water"}
+      - {name: "PolluteBat", level: 34, hp: "148", exp: "118", ragu: "38", drops: "Purifier"}
+  - area: "Oriab"
+    monsters:
+      - {name: "Droll", level: 26, hp: "1,045", exp: "1,052", ragu: "0"}
+  - area: "Sigmund Glacier"
+    monsters:
+      - {name: "Hardlock", level: 26, hp: "102", exp: "234", ragu: "112"}
+      - {name: "Ice Jack", level: 26, hp: "497", exp: "234", ragu: "112", weak: "Fire"}
+      - {name: "Ice Rock", level: 26, hp: "236", exp: "156", ragu: "56", drops: "Tasty Water", weak: "Fire"}
+      - {name: "Lycea", level: 26, hp: "226", exp: "156", ragu: "75", weak: "Fire"}
+      - {name: "Ice Queen", level: 31, hp: "769", exp: "244", ragu: "0", drops: "Rem Herb", weak: "Fire"}
+  - area: "Undersea Palace"
+    monsters:
+      - {name: "Blue Rex", level: 30, hp: "789", exp: "617", ragu: "241", weak: "Fire"}
+      - {name: "Mini Acna", level: 30, hp: "369", exp: "308", ragu: "120", weak: "Fire"}
+  - area: "Inside the Yol-Gee"
+    monsters:
+      - {name: "Pollution", level: 33, hp: "410", exp: "371", ragu: "126"}
+  - area: "Undersea Pyramid"
+    monsters:
+      - {name: "Crepida", level: 36, hp: "240", exp: "220", ragu: "65", weak: "Fire"}
+      - {name: "Galoze", level: 36, hp: "611", exp: "495", ragu: "0", weak: "Fire"}
+      - {name: "Pollyps", level: 36, hp: "257", exp: "220", ragu: "65", weak: "Fire"}
+  - area: "Crater Base"
+    monsters:
+      - {name: "BluesNotes", level: 44, hp: "415", exp: "872", ragu: "12", drops: "Horn Water"}
+      - {name: "SGT Soul", level: 44, hp: "515", exp: "654", ragu: "139", weak: "Holy"}
+      - {name: "Shylock", level: 44, hp: "1,999", exp: "5,229", ragu: "139", drops: "Nuad Herb", weak: "Holy"}
+      - {name: "Bombard", level: 45, hp: "1,613", exp: "2,733", ragu: "0", drops: "Horn Water"}
+  - area: "Shumisen"
+    monsters:
+      - {name: "Galbute", level: 45, hp: "871", exp: "1,025", ragu: "0", drops: "Purifier", weak: "Fire"}
+      - {name: "Obedien", level: 45, hp: "5,632", exp: "3,417", ragu: "100", drops: "Horn Water", weak: "Water"}
+      - {name: "Jamyu", level: 46, hp: "1,163", exp: "1,427", ragu: "1,427", drops: "Purifier"}
+      - {name: "Baalzephon", level: 47, hp: "579", exp: "745", ragu: "142", drops: "Thor Ring", weak: "Wind"}
+  - area: "Skuld's Gate"
+    monsters:
+      - {name: "Nataraja", level: 50, hp: "4,500", exp: "8,484", ragu: "289", drops: "Horn Water"}
+      - {name: "Capulet", level: 55, hp: "4,110", exp: "2,033", ragu: "297", drops: "Amrita"}
+      - {name: "MimicL56", level: 56, hp: "2,583", exp: "6,233", ragu: "0", drops: "Magic Leaf", note: "Every chest in the secret area. Always drops a Magic Leaf."}
+      - {name: "TrainDragn", level: 56, hp: "4,182", exp: "10,621", ragu: "1,987", drops: "Freedom", note: "Fixed enemy, the third one in Skuld's Gate."}
+  - area: "Urd's Gate"
+    monsters:
+      - {name: "Carbon", level: 50, hp: "247", exp: "1,683", ragu: "289", weak: "Any element"}
+      - {name: "Flatletto", level: 50, hp: "608", exp: "842", ragu: "43", weak: "Fire"}
+      - {name: "Star Wing", level: 51, hp: "1,448", exp: "1,751", ragu: "291"}
+  - area: "Verdandi's Temple"
+    monsters:
+      - {name: "Fulezast", level: 59, hp: "456", exp: "779", ragu: "101", drops: "Nuad Herb", weak: "Lightning"}
+      - {name: "IronBhadra", level: 61, hp: "1,612", exp: "2,497", ragu: "304"}
+      - {name: "Itaka", level: 61, hp: "2,146", exp: "2,497", ragu: "304", weak: "Lightning"}
+      - {name: "Nereus", level: 61, hp: "1,563", exp: "3,746", ragu: "760", weak: "Fire"}
+      - {name: "Odio", level: 61, hp: "2,233", exp: "2,497", ragu: "304", drops: "Medical Herb", weak: "Wind"}
+      - {name: "Ozric", level: 61, hp: "2,735", exp: "20,978", ragu: "2,028", note: "Huge EXP. Good for leveling.", weak: "Water"}

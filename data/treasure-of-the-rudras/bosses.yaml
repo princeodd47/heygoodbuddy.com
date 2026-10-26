@@ -1,0 +1,78 @@
+# HP, weaknesses and drops from God Bird's tactical boss data. Names follow
+# the Aeon Genesis translation, as in the walkthroughs.
+chapters:
+  - name: Sion
+    page: sion.md
+    bosses:
+      - {name: Abilijer, day: 1, where: Tower of the Giants, hp: 700, drops: Ogre Mace}
+      - {name: Nergal, day: 2, where: Tower of Valiant, hp: 153}
+      - {name: NergalMstr, day: 2, where: Tower of Valiant, hp: 320}
+      - {name: Amatista, day: 3, where: Tower of Valiant, hp: "600 (magic) · 720 (weapons)", weak: Wind}
+      - {name: Monk, day: 4, where: Tower of Valiant, hp: 815, weak: Water}
+      - {name: Bhadra, day: 5, where: Garal Tunnel, hp: 1390, weak: Lightning}
+      - {name: Monju, day: 5, where: Clock Tower, hp: 2277, weak: Wind}
+      - {name: Marica, day: 6, where: "Graham's Tomb", hp: 2601, weak: Water}
+      - {name: Opsis, day: 7, where: Ruins of Frey, hp: 2817, weak: Fire}
+      - {name: MimicL26, day: 7, where: Sacred Temple, hp: 1233, weak: Holy, drops: Horn Water}
+      - {name: Mayura, day: 7, where: Sacred Temple, hp: 4712, weak: Dark}
+      - {name: Surt, day: 8, where: Len, hp: 3357, weak: Water, drops: Large Shield}
+      - {name: Ice Queen, day: 9, where: Sigmund Glacier, hp: 769, weak: Fire, drops: Rem Herb}
+      - {name: Diyaus, day: 9, where: Sigmund Glacier, hp: 3926, weak: Lightning, drops: Amrita}
+      - {name: Yol-Gee, day: 9, where: Inside the Yol-Gee, hp: 4272, weak: Fire}
+      - {name: Nagiya, day: 10, where: Avdol, hp: 4221, weak: Holy}
+      - {name: Ravana, day: 13, where: Mantra Peak, hp: 6060, weak: Water, drops: Amrita}
+      - {name: Taurus, day: 14, where: Cult Base, hp: 6780, weak: Holy}
+      - {name: Rudra, day: 15, where: Shumisen, hp: 7356, weak: Water}
+      - {name: Gomorrah, day: 15, where: Shumisen, hp: 12000, weak: Holy, note: "Summons Magician (2164), DarkKnight (4327) and Suiryuu (5770), all weak to holy"}
+  - name: Surlent
+    page: surlent.md
+    bosses:
+      - {name: Ozunne, day: 3, where: Ruins of Fahl, hp: 1000, weak: Water, drops: Alarum}
+      - {name: Lazm, day: 6, where: "Eremia's Manor", hp: 1521, drops: Rem Herb}
+      - {name: Dark Ein, day: 8, where: Great Forest, hp: 2061, weak: Holy, drops: Moon Ring}
+      - {name: DesertRose, day: 9, where: Sakkara Desert, hp: 2125, weak: Lightning}
+      - {name: Culgan, day: 9, where: Ruins of Ruhle, hp: 5026, weak: Holy, drops: Moon Ring}
+      - {name: Ice Queen, day: 10, where: Sigmund Glacier, hp: 769, weak: Fire, drops: Rem Herb}
+      - {name: Ice King, day: 10, where: Sigmund Glacier, hp: 1100, weak: Fire, drops: Rem Herb}
+      - {name: Abilijer, day: 10, where: Tower of the Giants, hp: 4924, drops: Large Mace}
+      - {name: Kidal, day: 11, where: Undersea Palace, hp: 4908, weak: Fire, drops: Aqua Ring}
+      - {name: Gandharva, day: 14, where: Ruins of Tuhla, hp: 5268, weak: Wind, drops: Flight Stone}
+      - {name: Lezastes, day: 14, where: Ruins of Tuhla, hp: 4343, weak: Water, drops: Life Leaf}
+      - {name: Gaya, day: 14, where: Ruins of Tuhla, hp: 4343}
+      - {name: Dampti, day: 14, where: Ruins of Tuhla, hp: 5424}
+      - {name: Saizou, day: 14, where: Ruins of Tuhla, hp: 8309, drops: Life Leaf}
+      - {name: Hausen, day: 15, where: Shumisen, hp: 14136, weak: Lightning}
+  - name: Riza
+    page: riza.md
+    bosses:
+      - {name: Shivaithan, day: 2, where: "Mayor's House", hp: 800}
+      - {name: Setaviza, day: 3, where: Great Forest, hp: 508, weak: Fire, drops: Purifier}
+      - {name: FireLizard, where: Dragon God Ruins, hp: 2172, weak: Water, drops: Alarum, note: Optional}
+      - {name: Evil Ghost, day: 5, where: Sacred Forest, hp: 2169, weak: Holy}
+      - {name: Soma, day: 6, where: Spirit Temple, hp: 1670, weak: Lightning, drops: Soma (boots)}
+      - {name: MimicL17, day: 6, where: Mantra Peak, hp: 828, weak: Holy, drops: Horn Water}
+      - {name: Brusty, day: 6, where: Netherworld, hp: 2428, weak: Wind, drops: Horn Water}
+      - {name: Karla, day: 6, where: Netherworld, hp: 1806, drops: Moon Ring}
+      - {name: Laumen, day: 8, where: Gomorrah City, hp: 5198}
+      - {name: MahogChair, day: 8, where: Ruins of Sodom, hp: 420}
+      - {name: KingEltina, day: 8, where: Ruins of Sodom, hp: 3118, weak: Holy, drops: Purifier}
+      - {name: Abrasax, day: 10, where: Undersea Pyramid, hp: 4387, weak: Fire, drops: Purifier}
+      - {name: Danapati, day: 10, where: Undersea Pyramid, hp: 4437}
+      - {name: Meifa, day: 12, where: Statue of Meifa, hp: 6492, weak: Dark}
+      - {name: Bifron, day: 15, where: Crater Base, hp: 1356}
+      - {name: Sodom, day: 15, where: Crater Base, hp: 14424, weak: Fire}
+  - name: Dune
+    page: dune.md
+    bosses:
+      - {name: Brasnir, day: 16, where: Airship, hp: 6000, weak: Water, drops: Amrita}
+      - {name: Setaviza, day: 16, where: "Urd's Gate", hp: 3822, weak: Fire, drops: Purifier}
+      - {name: Lazm, day: 16, where: "Urd's Gate", hp: 3822, drops: Nuad Herb}
+      - {name: Abilijer, day: 16, where: "Urd's Gate", hp: 3822, weak: Fire}
+      - {name: Ravana, day: 16, where: "Urd's Gate", hp: 3822, weak: Water, drops: Orpheus Robe}
+      - {name: Hausen, day: 16, where: "Urd's Gate", hp: 8220, weak: Wind, drops: Magic Leaf}
+      - {name: Saizou, day: 16, where: "Skuld's Gate", hp: 10728, drops: Life Leaf}
+      - {name: Chaos Ein, day: 16, where: "Verdandi's Temple", hp: 9372, weak: Dark, drops: Pure Ring}
+      - {name: Chaos Zwei, day: 16, where: "Verdandi's Temple", hp: 6560, weak: Wind, drops: Nuad Herb}
+      - {name: Mitra, day: 16, where: Final Chamber, hp: 10000, weak: Lightning}
+      - {name: Mitra (second form), day: 16, where: Final Chamber, hp: 30000, weak: "Dark, then changes"}
+      - {name: Mitra (final form), day: 16, where: Final Chamber, hp: 25000, weak: Holy}
