@@ -40,6 +40,7 @@ plugins:
         dqm_items: data/dragon-quest-monsters-the-withered-world/items.yaml
         ffxii_monographs: data/final-fantasy-xii-the-zodiac-age/monographs.yaml
         ffxii_bazaar: data/final-fantasy-xii-the-zodiac-age/bazaar.yaml
+        dqmch_dungeons: data/dragon-quest-monsters-caravan-heart/dungeons.yaml
 
 extra_css:
   - stylesheets/extra.css
@@ -91,6 +92,13 @@ nav:
           - Monographs: games/final-fantasy-xii-the-zodiac-age/monographs.md
           - Bazaar: games/final-fantasy-xii-the-zodiac-age/bazaar.md
           - Party: games/final-fantasy-xii-the-zodiac-age/party.md
+      - Dragon Quest Monsters Caravan Heart:
+          - games/dragon-quest-monsters-caravan-heart/index.md
+          - Post-Game: games/dragon-quest-monsters-caravan-heart/post-game.md
+          - Orb Dungeons: games/dragon-quest-monsters-caravan-heart/orb-dungeons.md
+          - Dungeon Floors: games/dragon-quest-monsters-caravan-heart/dungeon-floors.md
+          - Caravan: games/dragon-quest-monsters-caravan-heart/caravan.md
+          - Hearts & Reforming: games/dragon-quest-monsters-caravan-heart/hearts.md
   - Articles:
       - blog/index.md
   - Tags: tags.md

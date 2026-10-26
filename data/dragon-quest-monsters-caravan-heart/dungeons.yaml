@@ -1,0 +1,364 @@
+dungeons:
+- id: red
+  name: Red Orb
+  orbs: 4x Red
+  family: Beast
+  floors:
+  - floor: 1F
+    enemies: [Droll, Demighoul]
+  - floor: 2F
+    enemies: [Big Eye, Drakee, Dragon]
+  - floor: 3F
+    enemies: [Mad Dragon, War Lizard, Wyvern]
+    chests: [World Dew]
+  - floor: 4F
+    enemies: [Big Eye, Orc, Wyvern]
+    chests: [Steak, 338g, Nothing]
+  - floor: 5F
+    enemies: [Phoenix, Swordgon, Big Eye, Dragon, Gargoyle]
+    chests: [World Dew, Mimic]
+  - floor: 6F
+    event: "Monster blocking the way: Swordgon (heart after battle)"
+  - floor: 7F
+    enemies: [Gargoyle, Boohbah]
+    chests: [380g]
+  - floor: 8F
+    enemies: [Gargoyle, Swordgon, Boohbah, Blizzardy]
+  - floor: 9F
+    enemies: [Phoenix, Boohbah, Amorpion, Orochi, Battle Rex]
+    chests: [World Leaf, World Dew]
+  - floor: 10F
+    event: Chest room
+  - floor: 11F
+    enemies: [Andreal, Great Dragon, Orochi, Battle Rex]
+    chests: [340g]
+  - floor: 12F
+    enemies: [Skullgon, Amorpion, Battle Rex, Orochi]
+    chests: [Steak, 481g]
+  - floor: 13F
+    event: Warrior
+  - floor: 14F
+    enemies: [Rain Hawk, Cergainas, Jenodark, Divinegon, Giga Draco]
+
+- id: green
+  name: Green Orb
+  orbs: 4x Green
+  family: Nature
+  floors:
+  - floor: 1F
+    enemies: [Giant Worm, Flower Beat, Giant Slug]
+    chests: [306g, Mimic]
+  - floor: 2F
+    enemies: [Eggplaton, Opabi, Gophecada]
+    chests: [Speed Seed]
+  - floor: 3F
+    event: "Monster blocking the way: Gophecada (heart after battle) with 2 Giant Worms"
+  - floor: 4F
+    enemies: [Chestnut Man, Mad Plant, Minon, Toadstool]
+    chests: [World Leaf, Defense Seed]
+  - floor: 5F
+    enemies: [Onion Master, Snapper, Dance Vegi]
+  - floor: 6F
+    event: Merchant
+  - floor: 7F
+    enemies: [Onion Master, Hammer Man, Armorpede, Snapper, Dance Vegi, Stubsuck]
+  - floor: 8F
+    enemies: [Hammer Man, Stubsuck, Onion Master, Armorpede]
+    chests: [Laurel]
+  - floor: 9F
+    enemies: [Pumpk'night, Stubsuck, Armorpede]
+  - floor: 10F
+    enemies: [Pumpk'night, Belzebub, Armorpede, Mad Hornet]
+  - floor: 11F
+    event: Medic
+  - floor: 12F
+    enemies: [Pod Hero, Big Scorpion, Face Tree]
+  - floor: 13F
+    enemies: [Drollerium, Pod Hero]
+  - floor: 14F
+    enemies: [Wing Tree, Drollerium, Scarabator]
+
+- id: yellow
+  name: Yellow Orb
+  orbs: 4x Yellow
+  family: Animal
+  floors:
+  - floor: 1F
+    enemies: [Mad Gopher, Ghostar]
+    chests: [Memory Bell, Life Nut, Tiny Medal]
+  - floor: 2F
+    enemies: [Cat Mage, Mad Gopher, Stonehopper, Army Crab, Nocto King]
+    chests: [Power Seed]
+  - floor: 3F
+    event: Merchant
+  - floor: 4F
+    enemies: [Tonguella, Army Crab, Almiraj]
+    chests: [Life Nut, 738g]
+  - floor: 5F
+    enemies: [Goategon, Unicorn, Nocto King, Tonguella]
+    chests: [Power Seed]
+  - floor: 6F
+    event: Chest room
+    chests: [Tiny Medal, 817g, Wisdom Seed x2, 930g, Defense Seed x2, Life Nut, 808g]
+  - floor: 7F
+    enemies: [Wild Ape, Grizzly, Goategon, Mad Condor]
+    chests: [Nothing, 716g]
+  - floor: 8F
+    enemies: [Mad Condor, Grizzly, Unicorn]
+  - floor: 9F
+    event: Player
+  - floor: 10F
+    enemies: [Iron Hawk, Unicorn, Grizzly, Walrus Man, King Squid]
+    chests: [Tiny Medal, 1091g, Nothing]
+  - floor: 11F
+    enemies: [Walrus Man, King Squid, Dark Horn, Big Mommonja, Iron Hawk]
+    chests: [735g, Mimic, 784g]
+  - floor: 12F
+    event: "Monster blocking the way: Walrus Man (heart after battle) with 2 King Squids"
+  - floor: 13F
+    enemies: [Grand Shark, Trumpeter]
+  - floor: 14F
+    enemies: [Muscle Kong, Grand Shark, Mad Cat, Infergon]
+
+- id: blue
+  name: Blue Orb
+  orbs: 4x Blue
+  family: Slime
+  floors:
+  - floor: 1F
+    enemies: [Demonite, Spooky, Gophecada]
+  - floor: 2F
+    enemies: [Snome, Minon]
+    chests: [Magic Water]
+  - floor: 3F
+    enemies: [Snaily, Metal Slime]
+  - floor: 4F
+    event: Warrior
+  - floor: 5F
+    enemies: [Slime Knight, Pompom Bomb, Toadstool]
+    chests: [Elven Medicine]
+  - floor: 6F
+    enemies: [Dead Father, Snome, Snapper, Slime Knight]
+  - floor: 7F
+    enemies: [Snapper, Bubble King]
+    chests: [Memory Bell]
+  - floor: 8F
+    enemies: [Slime Knight, Berserker, King Slime]
+    chests: [Elven Medicine, Memory Bell]
+  - floor: 9F
+    event: Chest room
+    chests: [Strange Nut, Life Nut x2, Wisdom Seed x2, Speed Seed, 879g, Tiny Medal]
+  - floor: 10F
+    enemies: [Lamp Genie]
+  - floor: 11F
+    enemies: [Crystal Slime, Metal Slime, Halo Slime]
+  - floor: 12F
+    event: Chest room
+    chests: [Strange Nut x3, Defense Seed, Tiny Medal x2, 894g, Speed Seed]
+  - floor: 13F
+    enemies: [Dark Knight, Gran Satan, Mage Slime]
+  - floor: 14F
+    enemies: [Death Sizer, Night Lich, Gran Slime, Scarabator]
+
+- id: silver
+  name: Silver Orb
+  orbs: 4x Silver
+  family: Material
+  floors:
+  - floor: 1F
+    enemies: [Puppet Man, Goopi, Stone Kid, Spiky Boy]
+  - floor: 2F
+    enemies: [Clay Man, Spiky Boy, Goopi]
+  - floor: 3F
+    event: Player
+  - floor: 4F
+    enemies: [Phantom Glass, Mimic]
+  - floor: 5F
+    enemies: [Phantom Glass, Proto Mech]
+    chests: [Elven Medicine]
+  - floor: 6F
+    event: "Monster blocking the way: Wander Monk (heart after battle) with 2 Wicked Axes"
+  - floor: 7F
+    enemies: [Proto Mech, Rogue Knight, Wander Monk]
+  - floor: 8F
+    enemies: [Bomb Crag, Proto Mech, Golem, Stone Spider]
+    chests: [Charm Ring]
+  - floor: 9F
+    event: "Monster blocking the way: Wander Monk (heart after battle) with 2 Proto Mechs"
+  - floor: 10F
+    enemies: [Lava Djinn, Bomb Crag, Stone Man]
+  - floor: 11F
+    enemies: [Stone Man, Ice Djinn]
+    chests: [Defense Seed, Magic Water]
+  - floor: 12F
+    event: Chest room
+    chests: [Nothing x2, Speed Seed x2, 948g, Strange Nut x2, Life Nut]
+  - floor: 13F
+    enemies: [Dark Crystal, Roboster, Roboster 2]
+  - floor: 14F
+    enemies: [DrakMachine, Gryphynx]
+
+- id: purple
+  name: Purple Orb
+  orbs: 4x Purple
+  family: Demon
+  floors:
+  - floor: 1F
+    enemies: [Merman, Spooky, Hork]
+    chests: [Stepguard Staff, 684g, Memory Bell]
+  - floor: 2F
+    enemies: [Shadow, Merman, Demonite]
+    chests: [Strange Nut x2, Strange Statue]
+  - floor: 3F
+    enemies: [Dead Father, Putre Pup, Pompom Bomb]
+    chests: [Strange Statue, Elven Medicine]
+  - floor: 4F
+    event: Player
+  - floor: 5F
+    enemies: [Mummy, Dead Knight, Shadow, Ag Devil, Arch Demon]
+    chests: [Magic Water]
+  - floor: 6F
+    enemies: [Dead Knight, Ag Devil, Evil Armor, Mummy]
+  - floor: 7F
+    enemies: [Berserker, Evil Armor, Arch Demon, Gigantes]
+    chests: [Elven Medicine, 517g, Tiny Medal]
+  - floor: 8F
+    event: Warrior
+  - floor: 9F
+    enemies: [Gigantes, Skeletor, Dragon Rider, Ag Devil, Lamp Genie]
+    chests: [Wisdom Seed, Memory Bell]
+  - floor: 10F
+    enemies: [Boss Troll, Gateguard, Jamirus, Skeletor]
+    chests: [Mimic, Strange Nut, Wisdom Seed]
+  - floor: 11F
+    event: Chest room
+    chests: [Tiny Medal, Nothing, Strange Nut x3, Power Seed, 858g, Speed Seed]
+  - floor: 12F
+    enemies: [Dragon Rider, Jamirus, Demon Monk, Boss Troll, Lamp Genie]
+    chests: [Memory Bell, Strange Statue]
+  - floor: 13F
+    enemies: [Skeletor, Grakos, Dragon Rider]
+    chests: [Wisdom Seed]
+  - floor: 14F
+    enemies: [Night Lich, White King, High Wizard, Grakos]
+
+- id: evil-god
+  name: Evil God Orb
+  orbs: Evil God Orb
+  floors:
+  - floor: 1F
+    enemies: [Putre Pup, Vampire Rat, Demonite, Dead Knight]
+  - floor: 2F
+    enemies: [Death God, Vampire Rat, Hork]
+  - floor: 3F
+    enemies: [Mummy, Vampire Rat, Putre Pup, Death God]
+  - floor: 4F
+    event: Medic
+  - floor: 5F
+    enemies: [Berserker, Gateguard, Arch Demon, Ag Devil, Evil Armor]
+  - floor: 6F
+    enemies: [Gateguard, Ag Devil, Arch Demon]
+  - floor: 7F
+    event: Medic
+  - floor: 8F
+    enemies: [Evil Armor, Berserker, Ag Devil, Arch Demon, Gigantes]
+  - floor: 9F
+    enemies: [Skeletor, Lamp Genie]
+  - floor: 10F
+    event: Player
+  - floor: 11F
+    enemies: [Skeletor, Demon Monk, Jamirus]
+    chests: [Power Seed, Speed Seed]
+  - floor: 12F
+    enemies: [Jamirus, Lamp Genie, Demon Monk]
+  - floor: 13F
+    enemies: [Grakos, White King, High Wizard]
+  - floor: 14F
+    enemies: [Grakos, High Wizard, White King]
+
+- id: holy-beast
+  name: Holy Beast Orb
+  orbs: Holy Beast Orb
+  floors:
+  - floor: 1F
+    enemies: [Almiraj, Mommonja, Gizmo, Flame]
+  - floor: 2F
+    enemies: [Almiraj, Wind Beast, Gizmo, Blizzard, Dragon Kid]
+    chests: [351g, Power Seed, Wyvern Wing]
+  - floor: 3F
+    enemies: [Mommonja, Blizzard, Big Eye, Dragon Kid]
+    chests: [Nothing]
+  - floor: 4F
+    enemies: [Flame, Gizmo, Mommonja, Wind Beast]
+  - floor: 5F
+    event: Warrior
+  - floor: 6F
+    enemies: [Unicorn]
+    chests: [World Dew]
+  - floor: 7F
+    enemies: [Unicorn, Blizzardy]
+    chests: [Steak]
+  - floor: 8F
+    enemies: [Unicorn, Blizzardy]
+    chests: [Lunchbox]
+  - floor: 9F
+    event: Chest room
+    chests: [Life Nut x2, Strange Nut x2, Speed Seed x2, Wisdom Seed, Power Seed]
+  - floor: 10F
+    enemies: [Earth Spirit, Wind Spirit, Water Spirit, Dark Spirit]
+    chests: [Stepguard Staff]
+  - floor: 11F
+    enemies: [Earth Spirit, Fire Spirit, Light Spirit, Big Mommonja, Wind Spirit]
+    chests: [Life Nut]
+  - floor: 12F
+    event: Chest room
+    chests: [Strange Nut x3, Defense Seed x2, 817g, 854g, Tiny Medal]
+  - floor: 13F
+    enemies: [Muscle Kong, Rain Hawk]
+  - floor: 14F
+    enemies: [Trumpeter, Rain Hawk, Muscle Kong, Mad Cat]
+
+- id: metal
+  name: Metal Orb
+  orbs: Metal Orb
+  floors:
+  - floor: 13F
+    enemies: [Gold Slime, Spin Slime, Master Slime, Gran Slime]
+  - floor: 14F
+    enemies: [Gold Slime, Gran Slime, Spin Slime]
+
+- id: gisvarg
+  name: Gisvarg
+  orbs: Earth, Fire, Water and Wind Orbs
+  floors:
+  - floor: 1F
+    enemies: [Bubble King, Mad Condor]
+    chests: [Magic Water]
+  - floor: 2F
+    enemies: [Iron Turtle, Hammer Man]
+  - floor: 3F
+    enemies: [Dance Vegi, Blizzardy, Bubble King, Stubsuck]
+    chests: [Lunchbox]
+  - floor: 4F
+    enemies: [Gargoyle]
+  - floor: 5F
+    enemies: [Dance Vegi, Bomb Crag]
+  - floor: 6F
+    enemies: [Stone Spider, Golem]
+  - floor: 7F
+    enemies: [Great Dragon]
+  - floor: 8F
+    enemies: [Mad Hornet, Great Dragon]
+  - floor: 9F
+    enemies: [King Squid, Mad Hornet]
+    chests: [World Dew, Gold Coins]
+  - floor: 10F
+    enemies: [Belzebub, Mad Hornet, Amorpion]
+  - floor: 11F
+    enemies: [Belzebub, Great Dragon]
+  - floor: 12F
+    enemies: [Lava Djinn]
+  - floor: 13F
+    enemies: [Roboster 2, Chain Djinn]
+  - floor: 14F
+    enemies: [Roboster 2, Rain Hawk]

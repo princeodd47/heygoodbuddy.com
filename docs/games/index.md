@@ -32,4 +32,12 @@ hide:
     **Genre:** JRPG<br>
     **Release Date:** April 30, 2019
 
+-   :material-paw:{ .lg .middle } __[Dragon Quest Monsters: Caravan Heart](dragon-quest-monsters-caravan-heart/index.md)__
+
+    ---
+
+    **System:** Game Boy Color<br>
+    **Genre:** JRPG<br>
+    **Release Date:** September 25, 2003
+
 </div>
