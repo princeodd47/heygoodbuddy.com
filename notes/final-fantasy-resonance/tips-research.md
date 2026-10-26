@@ -75,6 +75,11 @@ Rain Early Game Guide (Purplatypus), Vision tier list (Whiter).
 
 ## Held back: Chapter 3 (rest of chapter)
 
+- **Cave of Waters, after Wave Lopros:** chests in area 3 (Shuriken ×3) and
+  area 4 (Ninja Gear, Ice Scroll I ×2). Leviathan strategy: break the Orbs
+  of Light first (each weakens it 30% for 3 turns), then Lightning. Cast
+  Shell first; Esuna for Paralysis; it enrages if the fight drags on.
+
 - **Carbuncle**: bulletin board / rumor in Olderion, then Ruby Cave in the
   mountains south of Olderion (a stele starts the quest). User chose to
   leave unobtained Espers out. Don't add until they have it.
@@ -147,6 +152,7 @@ turn.
 Combat basics, stagger numbers, timeline, Bonus Phase / Sweeping Stagger /
 Resonance, Limit Bursts, status effects, Espers, Vision mastery rules, AP,
 early mastery abilities table, stealing, exploring, saving/healing,
-difficulty and result bonuses, drop rates, and farming spots through
-Olderion south (Dhorme Chimera, Minituar, Siren's Tower Ethers, Metal
+difficulty and result bonuses, drop rates, party elements and Libra
+sources including Nichol (joined in ch. 3), and farming spots through
+Olderion south and the Cave of Waters (Dhorme Chimera, Minituar, Siren's Tower Ethers, Metal
 Minituar, Mini Gil Snapper, Pots, Laserblade, Bronze Hammer).

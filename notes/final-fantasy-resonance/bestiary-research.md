@@ -24,6 +24,14 @@ Notes behind `docs/games/final-fantasy-resonance/bestiary.md` and
 
 ## Held back (deliberately excluded)
 
+- **Cave of Waters after Wave Lopros** (areas 3–7 and Lake Dorr): Leviathan
+  (boss, lv 23, weak Lightning, resists Water; drops Magicite Shard; 4,500
+  EXP, 2,400 gil) with **Orbs of Light** (lv 23, each weak to one of Fire,
+  Earth, Water; breaking one weakens Leviathan by 30% for 3 turns).
+- **Anet and Adamantoise on the world map:** the wiki also lists them on the
+  Olderion world map. They're only under Cave of Waters on the page until
+  the user confirms where else they appear.
+
 - **Kolobos Ruins / Cavern of Swords, high level:** Former Knight (lv 40,
   weak Fire, Light), Magitek Weapon (lv 41, weak Lightning, Water). Later
   revisit content.
@@ -45,4 +53,5 @@ Notes behind `docs/games/final-fantasy-resonance/bestiary.md` and
 Areas, in order: Grandshelt Castle, Earth Shrine, Grandshelt (World Map),
 Grandport (World Map), Kolobos (World Map), Kolobos Ruins, Siren's Tower,
 Marauder Cave, Dirnado (World Map), Mt. Thunderclap, Dwarven Forge, Shoggoth
-Cave, Mobliz Shipyard, Wind Shrine, Olderion (World Map, south), Rukh Cave.
+Cave, Mobliz Shipyard, Wind Shrine, Olderion (World Map, south), Rukh Cave,
+Cave of Waters (regular enemies, Wave Lopros and its two Snappers).

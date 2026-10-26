@@ -761,7 +761,7 @@ bestiary:
         steals: ""
       - name: Green Soul
         level: 19
-        where: Olderion (World Map)
+        where: Olderion (World Map) · Cave of Waters
         weak: Ice
         drops: Ether
         steals: Wind Scroll I · Mist Ether (rare)
@@ -773,4 +773,49 @@ bestiary:
         where: Rukh Cave
         weak: Wind
         drops: X-Ether · Magicite Shard
+        steals: ""
+  - area: Cave of Waters
+    enemies:
+      - name: Stunner Rat
+        level: 18
+        where: Cave of Waters
+        weak: Ice, Light
+        drops: Knife of Poison · Mist Potion (rare)
+        steals: Gold Needle
+      - name: Anet
+        level: 19
+        where: Cave of Waters
+        weak: Lightning
+        drops: Mist Potion
+        steals: ""
+      - name: Green Soul
+        level: 19
+        where: Olderion (World Map) · Cave of Waters
+        weak: Ice
+        drops: Ether
+        steals: Wind Scroll I · Mist Ether (rare)
+      - name: Adamantoise
+        level: 20
+        where: Cave of Waters
+        weak: Ice
+        drops: Hi-Potion · Bulletproof Vest (rare)
+        steals: ""
+      - name: Azure Snapper
+        level: 20
+        where: Cave of Waters (with Wave Lopros)
+        weak: Lightning
+        drops: ""
+        steals: ""
+      - name: Land Snapper
+        level: 20
+        where: Cave of Waters (with Wave Lopros)
+        weak: Wind
+        drops: ""
+        steals: ""
+      - name: Wave Lopros
+        boss: true
+        level: 20
+        where: Cave of Waters
+        weak: Ice
+        drops: Water Scroll I
         steals: ""

@@ -18,9 +18,17 @@ Hand Tablet Shards to the **princess at Oblivion Palace**. She opens reward
 boxes once your running total reaches each box's threshold. Totals go up to
 99 shards across 25 boxes.
 
-12 shards open the first four boxes in the 1-Star Chamber. The fourth box
-needs all 12 and reportedly holds a **Stagger Ring**. The boxes at **9** and
-**24** shards each hold a **Magicite Shard**.
+| Shards | Box | Reward |
+|-------:|-----|--------|
+| 3 | 1-Star Chamber 1 | **Vitality Charm** (+120 HP) |
+| 6 | 1-Star Chamber 2 | **Earrings** (+10 Magic Attack) |
+| 9 | 1-Star Chamber 3 | **Magicite Shard** |
+| 12 | 1-Star Chamber 4 | **Stagger Ring** (+10% stagger power) |
+| 16 | 1-Star Chamber 5 | **Dreadwing Mallet** |
+| 20 | 1-Star Chamber 6 | **Compound Bow** |
+| 24 | 1-Star Chamber 7 | **Magicite Shard** |
+| 28 | 1-Star Chamber 8 | **Astral Jacket** |
+| 32 | 2-Star Chamber 1 | **Cure Drop** |
 
 ## Shard locations
 
@@ -40,3 +48,4 @@ needs all 12 and reportedly holds a **Stagger Ring**. The boxes at **9** and
 | **Mobliz Shipyard** | 3 | After the event battle, go far west from the entrance to the bottom-left corner · after the first switch, take the ladder in the southeast of the fenced room down and turn left · top-right area, north of some stairs, behind the red shipping container |
 | **Wind Shrine** | 3 | Lower the elevator with the glowing stone at the entrance, cross it, and look right · right of the stairs up to the Tsukiyo no Tachi chest · after the Armor of Gales chest, go back up, take the platform across to the left, and look left before the elevator |
 | **Olderion** | 4 | Right of the entrance, left of the man by the boat, half hidden by a staircase · city center, west of the big staircase, in front of the benches behind the left statue · on the high northeast bridge, behind a pot · behind the northernmost tree, next to the Rock Piercer chest |
+| **Cave of Waters** | 2 | Just left of the dock at the end of the first boat maze · after the longer boat maze, through the door, in front of the waterfall in the save point room |

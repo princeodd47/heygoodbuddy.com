@@ -66,18 +66,20 @@ tags:
 
 ### Weaknesses and Libra
 
-- Weaknesses stay hidden until you hit one or cast **Libra**. **Leah** and
-  **Cloud** both give Libra.
+- Weaknesses stay hidden until you hit one or cast **Libra**. **Nichol**
+  has it, and the **Leah** and **Cloud** Visions give it to anyone.
 - Libra shows HP, weaknesses, resistances, traits, status vulnerabilities and
   what you can steal or win. It only needs doing once per enemy type; the
   info stays.
 - Some enemies **absorb** an element instead of resisting it.
 - Elemental attacks can be **physical or magical**. Rain hits hardest with
-  physical moves, Fina with magic, and Lasswell and Lid handle both. In
+  physical moves, Fina and Nichol with magic, and Lasswell and Lid handle
+  both. In
   Equipment & Abilities, press **Square** on a Vision to see which of its
   moves are which.
-- Your party's own elements are limited. Rain has Fire, Lasswell has Ice and
-  Fina has Light. For **Lightning, Water and Wind**, lean on Visions.
+- Your party's own elements are limited. Rain has Fire, Lasswell Ice, Fina
+  Light, Lid Earth and Nichol Water. For **Lightning and Wind**, lean on
+  Visions.
 - Look for elemental **scrolls** in chests. They tend to show up just before
   a boss that's weak to that element.
 - If you give your party **Reflect**, it bounces your own healing spells to
