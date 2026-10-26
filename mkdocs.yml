@@ -89,6 +89,9 @@ nav:
           - Recipe Builder: games/dragon-quest-monsters-the-withered-world/recipe-builder.md
           - Talents: games/dragon-quest-monsters-the-withered-world/talents.md
           - Items: games/dragon-quest-monsters-the-withered-world/items.md
+      - Unicorn Overlord:
+          - games/unicorn-overlord/index.md
+          - Post-Game Teams: games/unicorn-overlord/post-game-teams.md
       - Final Fantasy XII The Zodiac Age:
           - games/final-fantasy-xii-the-zodiac-age/index.md
           - Changes from PS2: games/final-fantasy-xii-the-zodiac-age/changes.md

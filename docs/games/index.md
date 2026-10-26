@@ -24,6 +24,14 @@ hide:
     **Genre:** JRPG<br>
     **Release Date:** December 3, 2026
 
+-   :material-horse:{ .lg .middle } __[Unicorn Overlord](unicorn-overlord/index.md)__
+
+    ---
+
+    **System:** Nintendo Switch<br>
+    **Genre:** Tactical RPG<br>
+    **Release Date:** March 8, 2024
+
 -   :material-shield-sword:{ .lg .middle } __[Final Fantasy XII: The Zodiac Age](final-fantasy-xii-the-zodiac-age/index.md)__
 
     ---
