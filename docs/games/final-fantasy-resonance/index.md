@@ -37,4 +37,10 @@ save data carries over.
 
     How summoning works, and how to get each Esper.
 
+-   :material-lightbulb-on:{ .lg .middle } __[Tips](tips.md)__
+
+    ---
+
+    Combat, Visions, saving and the best farming spots.
+
 </div>
