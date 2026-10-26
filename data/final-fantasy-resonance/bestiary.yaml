@@ -381,7 +381,7 @@ bestiary:
         level: 15
         where: Marauder Cave
         weak: Wind
-        drops: Turbo Ether
+        drops: Turbo Ether · Magicite Shard
         steals: ""
   - area: Dirnado (World Map)
     enemies:
@@ -483,7 +483,7 @@ bestiary:
         steals: ""
       - name: Ninlil
         level: 16
-        where: Dirnado (World Map)
+        where: Dirnado (World Map) · Wind Shrine
         weak: Ice
         drops: Phoenix Down · Echo Herb (rare)
         steals: ""
@@ -495,7 +495,7 @@ bestiary:
         steals: ""
       - name: Mini Dragon
         level: 17
-        where: Dirnado (World Map)
+        where: Dirnado (World Map) · Wind Shrine
         weak: Ice
         drops: Ether
         steals: Ether (rare)
@@ -610,7 +610,7 @@ bestiary:
         level: 25
         where: Shoggoth Cave
         weak: Earth, Water
-        drops: Turbo Ether
+        drops: Turbo Ether · Magicite Shard
         steals: ""
   - area: Mobliz Shipyard
     enemies:
@@ -663,4 +663,114 @@ bestiary:
         where: Mobliz Shipyard
         weak: Lightning
         drops: Lightning Scroll I · Hi-Potion (rare)
+        steals: ""
+  - area: Wind Shrine
+    enemies:
+      - name: Headstone
+        level: 16
+        where: Wind Shrine
+        weak: Lightning
+        drops: Mist Potion · Bronze Hammer (rare)
+        steals: ""
+      - name: Ninlil
+        level: 16
+        where: Dirnado (World Map) · Wind Shrine
+        weak: Ice
+        drops: Phoenix Down · Echo Herb (rare)
+        steals: ""
+      - name: Bloody Eye
+        level: 17
+        where: Wind Shrine
+        weak: Ice, Light
+        drops: Mist Potion · Knife of Confuse (rare)
+        steals: ""
+      - name: Green Elemental
+        level: 17
+        where: Wind Shrine
+        weak: Ice
+        drops: Wind Scroll I · Hi-Potion (rare)
+        steals: ""
+      - name: Mini Dragon
+        level: 17
+        where: Dirnado (World Map) · Wind Shrine
+        weak: Ice
+        drops: Ether
+        steals: Ether (rare)
+      - name: "Aether's Guardian"
+        level: 18
+        where: Wind Shrine
+        weak: Ice
+        drops: ""
+        steals: ""
+      - name: "Aether's Minion"
+        level: 18
+        where: Wind Shrine
+        weak: Ice
+        drops: ""
+        steals: ""
+      - name: Viridian Pot
+        level: 22
+        where: Wind Shrine
+        weak: ""
+        drops: Elixir (rare)
+        steals: ""
+      - name: Aether
+        boss: true
+        level: 18
+        where: Wind Shrine
+        weak: Ice
+        drops: "Sylph's Tiara"
+        steals: ""
+  - area: Olderion (World Map)
+    enemies:
+      - name: Basilisk
+        level: 18
+        where: Olderion (World Map)
+        weak: Ice
+        drops: Mist Potion · Gold Needle (rare)
+        steals: Gold Needle (rare)
+      - name: Mini Gil Snapper
+        level: 18
+        where: Olderion (World Map)
+        weak: Ice
+        drops: ""
+        steals: Mist Ether · Small Golden Shell (rare)
+      - name: Mu
+        level: 18
+        where: Olderion (World Map)
+        weak: Earth
+        drops: Mist Potion
+        steals: Potion · Berserker Ring (rare)
+      - name: Sea Scorpion
+        level: 18
+        where: Olderion (World Map)
+        weak: Lightning
+        drops: Knife of Poison
+        steals: Knife of Paralysis
+      - name: Sorcerer
+        level: 18
+        where: Olderion (World Map)
+        weak: Earth
+        drops: Ether
+        steals: Ice Scroll I · Gold Needle (rare)
+      - name: Diresaur
+        level: 19
+        where: Olderion (World Map)
+        weak: Ice
+        drops: Mist Potion · Hi-Potion (rare)
+        steals: ""
+      - name: Green Soul
+        level: 19
+        where: Olderion (World Map)
+        weak: Ice
+        drops: Ether
+        steals: Wind Scroll I · Mist Ether (rare)
+  - area: Rukh Cave
+    enemies:
+      - name: Rukh
+        boss: true
+        level: 26
+        where: Rukh Cave
+        weak: Wind
+        drops: X-Ether · Magicite Shard
         steals: ""

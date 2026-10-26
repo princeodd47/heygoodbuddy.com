@@ -23,3 +23,12 @@ visions:
   - name: Noctis
     how_to_get: Sanctum of Noctis, west of Mobliz Shipyard (Dirnado)
     status: unverified
+  - name: Firion
+    how_to_get: Sanctum of Firion, in the forests of the southern Olderion Federation
+    status: unverified
+  - name: Squall
+    how_to_get: Sanctum of Squall, east along the road in the southern Olderion Federation
+    status: unverified
+  - name: Tidus
+    how_to_get: Sanctum of Tidus, far west in the southern Olderion Federation
+    status: unverified
