@@ -55,6 +55,19 @@ wasn't needed.
 - Elemental Roar ignores Magic Reflect.
 - Dispel is the hard counter to Glacial Rain.
 - Feathersword: Dancer's Bracelet gives Powerful Call (+30% phys attack).
+- **From the user:** the White and Black Cat-Ear Hoods are the same item (one
+  copy each). Both give Quick Impetus: after an ally uses an active skill,
+  that ally acts again. On a charge skill it skips the wait.
+- Hastened Action comes from Lips's Ring (not the Magia Heart). Magia Soul
+  gives Recast.
+- Item spellings from the GameFAQs tables: "Broach" (Leaf, Rose, Holy),
+  Vengeful Caligae, Charm of Land & Sea, Acrobat's Shoes, Pursuant's
+  Bracelet, Chlorotic Wand (Fire Burst), Icestorm Staff (Blizzard), Speedhex
+  Staff (Hastened Curse), Ice/Thunderous Conferral.
+- Elite Standard (United Front) works best in a 2-unit squad: the bigger the
+  enemy's unit-count advantage, the stronger the effect (3 more = negate 5
+  hits per ally).
+- Golden Eggs and the Bandit Longsword stack gold bonuses (Super Tax Bros).
 
 ## Item counts used
 
@@ -89,4 +102,20 @@ wasn't needed.
 - 10 squads with rows, classes, equipment, start-of-battle skill, tactics.
 - Bench list and three swaps (Chloe, Liza, Aubin).
 - Unique item table, pendant and medallion budget.
-- Other strong teams list (19 entries) with overlaps noted.
+- Tactics as tables, one skill per row, in priority order.
+- "Other Strong Post-Game Teams": 22 full builds (rows, classes, equipment,
+  start skill, tactics) from TitaniumLegman, Varsona, 89 Games, Corvie Indo
+  and Iced Coffee Gaming. Where a source used a generic unit, a named
+  character of the same class stands in.
+- Sources section at the bottom of the page.
+
+## Open questions (other teams)
+
+- Several weapon and shield names in the other-teams builds come from video
+  speech (e.g. Knot of Ruin, Labrys Axe, Heaven Mirror Greatshield, Wingcrest
+  Blade, Thorn Spear, Twin Dragon Shield). Spelling may differ in-game.
+- Tactics for skills the sources didn't spell out are our own simple rules.
+- Govil's (Werewolf) weapon type is unknown; the page says to keep his
+  starting weapon.
+- Raenys's Tailwind is assumed to come from the Raven Plume (the Angel Plume
+  also gives Tailwind).
