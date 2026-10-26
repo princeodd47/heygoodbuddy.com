@@ -34,7 +34,16 @@ Elemental barriers are an element word + NAREEM, like IGNAREEM for fire.
 Most fights here go the same way: open with the debuffs and buffs listed,
 then three characters attack while **Riza heals every turn**, even at full HP.
 
+Armor with an element halves damage of that element and doubles damage of the
+opposite one, so the gear notes under each boss list what to wear and what to
+take off. They only include gear you can have by then. See
+[Equipment](equipment.md) for stats.
+
 ## Day 16: To the Moon
+
+There's nothing to buy in this chapter, and you can't go back to earlier
+dungeons. **Before the party splits up, take off everyone's gear** so it goes
+to your bag for Dune's party. The Wear lists below use that gear.
 
 - If you finished Sion's or Surlent's story last, go southeast of town to the
   **Deep Sea Trench**, board the airship, say goodbye and fly to the moon.
@@ -45,6 +54,9 @@ then three characters attack while **Riza heals every turn**, even at full HP.
 ### Boss: Brasnir
 
 - **HP:** 6000 · **Weak:** water · **Drops:** Amrita
+- **Wear:** the **Cassius Mail** (fire) you start with.
+- **Avoid:** any water gear you carried over.
+- **Weapons:** water weapons you carried over.
 - Strength up, defense down, spirit down, magic defense up.
 - Under half HP: MACROPOTEY about 140 to everyone, KIDEREMNU about 160 to
   everyone, KIDEOHPIPER about 210 to one, even with debuffs.
@@ -66,11 +78,23 @@ Robe**, **Flat Shield**. Four holes have a boss:
 | Northeast | Abilijer | 4000 | Fire | | Same as Lazm, or use fire mantras. |
 | Southwest | Ravana | 4000 | Water | Orpheus Robe | Spirit down, spirit up, IGNAREEM, magic defense down, then water mantras. |
 
+**Gear for the four:**
+
+- **Setaviza** casts water: wear the **Hecate's Robe**, and avoid fire gear
+  (Cassius Mail, Daniel's Robe, Psycho Shield).
+- **Ravana** casts fire: wear the **Cassius Mail**, **Daniel's Robe** and
+  **Psycho Shield**, and avoid the Hecate's Robe.
+- **Lazm** and **Abilijer** hit physically. Wear your highest Def. Lazm
+  Thunder doubles against wind gear, so take off the Beze Wing and Meio
+  Shield for him.
+
 The door at the back center opens once all four are down.
 
 ### Boss: Hausen
 
 - **HP:** 8500 · **Weak:** wind · **Drops:** Magic Leaf
+- **Wear:** lightning gear: **Baker's Cap**, **Zeland Helm**, Flat Shield, Peschel Boots.
+- **Avoid:** wind gear: **Beze Wing**, Meio Shield.
 - Spirit down, magic defense down, spirit up, and magic defense up or
   SERENAREEM. Then wind mantras with everyone.
 
@@ -93,6 +117,7 @@ Take the ark to **Skuld's Gate**.
 ### Boss: Saizou
 
 - **HP:** 10500 · **Drops:** Life Leaf
+- **Gear:** his attacks are physical. Wear your highest Def, like the **Octave Mail** (Def 42).
 - No weakness. Spirit down or defense up, defense down, strength down,
   strength up. Recast them every five or six turns.
 
@@ -122,6 +147,9 @@ Party is around level 50–56.
 ### Boss: Chaos Ein
 
 - **HP:** 10000 · **Weak:** dark · **Drops:** Pure Ring
+- **Wear:** holy gear: **Orpheus Robe** (MDef 50), **Keats Helm**, **Pure Ring**.
+- **Avoid:** dark gear: Octave Mail, Moon Ring.
+- **Weapons:** **Dark Bow** and **Death Falcon** (dark, attack 153).
 - **Wear light defense.** Strength down, spirit down, spirit up, magic
   defense down, and SOANAREEM or magic defense up.
 - Dark mantras until MP runs out, then attack.
@@ -131,6 +159,8 @@ Grab the two chests on either side of the statue, then go to the statue.
 ### Boss: Chaos Zwei
 
 - **HP:** 6560 · **Weak:** wind · **Drops:** Nuad Herb
+- **Wear:** lightning gear: Zeland Helm, Baker's Cap, Flat Shield, Peschel Boots.
+- **Avoid:** wind gear: Beze Wing, Meio Shield.
 - Spirit down, magic defense down, spirit up, and strength down or magic
   defense up. Wind mantras from Sion, Dune and Surlent hit for 650–700.
 
@@ -143,6 +173,8 @@ Party is around level 65.
 ### Mitra
 
 - **HP:** 11500 · **Weak:** lightning
+- **Wear:** wind gear: **Beze Wing**, Meio Shield.
+- **Avoid:** lightning gear: Zeland Helm, Baker's Cap, Flat Shield, Peschel Boots.
 - Spirit down, magic defense down, magic defense up, spirit up.
 - Sion, Dune and Surlent cast lightning. KIFULLTOUREX (12 MP) hits about
   850. Riza heals with KAAYOULEFNAT (7 MP, about 140).
@@ -150,6 +182,7 @@ Party is around level 65.
 ### Mitra, Second Form
 
 - **HP:** 28000 · **Weak:** changes
+- **Weapons:** she starts weak to dark: **Dark Bow** and **Death Falcon**.
 - Strength down twice, spirit up, defense up, magic defense down.
 - Her weakness changes, usually right after you hit it. Keep trying elements
   to find the new one.
@@ -159,6 +192,8 @@ Party is around level 65.
 ### Mitra, Final Form
 
 - **HP:** 25000 · **Weak:** changes
+- **Wear:** your highest Def. Her late attacks are mostly physical.
+- **Avoid:** dark weapons. She's weak to holy here.
 - Open with defense down and strength up, then attack with everyone.
 - Once she starts using Attack, switch to mantras: defense up, strength down
   twice, spirit up, magic defense down.
@@ -171,7 +206,10 @@ Party is around level 65.
 - Boss HP, weaknesses and drops:
   [God Bird's boss data](https://god-bird.net/data/rudra/bossdata_sion.html)
   (Japanese).
-- Mimic drops: [Bluewing's Dune chapter](https://bluewing.usamimi.info/gamecap/rudora/c_dune.html)
+- Mimic drops and keeping your gear: [Bluewing's Dune chapter](https://bluewing.usamimi.info/gamecap/rudora/c_dune.html)
+  (Japanese).
+
+- How elements work: [God Bird's strategy hints](https://god-bird.net/data/rudra/rudraguide.html)
   (Japanese).
 - Where gear turns up:
   [God Bird's elemental armor list](https://god-bird.net/data/rudra/armor.html)

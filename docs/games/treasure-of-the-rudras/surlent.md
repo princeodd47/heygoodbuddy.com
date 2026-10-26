@@ -27,6 +27,12 @@ Mantras below are from [New Playthrough](new-playthrough.md) where one fits:
 Elemental barriers are an element word + NAREEM, like TEONAREEM for wind.
 They halve that element's damage for a few turns.
 
+Armor with an element halves damage of that element and doubles damage of the
+opposite one, so the gear notes under each boss list what to wear and what to
+take off. They only include gear you can have by then. **Buy** lines at each
+town list what's worth buying there and which fight it's for. See
+[Equipment](equipment.md) for stats.
+
 ## Day 0: Eremia's Manor
 
 Go west from the Dragon God Ruins to the manor to collect the Holy Grail. Dune
@@ -38,6 +44,8 @@ and Cid are stealing it. Eremia sends you back to Dr. Muench.
   ruins.
 - The pub teaches **AQUMEL**. The northwest house has a **Purifier** in a
   desk.
+- **Buy in Oriab:** **Lemnos Mail** (lightning) for Surlent. It halves Lazm
+  Thunder on Day 6, and Oriab stops selling it after Day 3.
 - Talk to **Castagia** in the lab in the northeast corner. He lends you the
   boat to Solon.
 - **Thor Volcano:** east along the bridges. South at the fork for a Medical
@@ -73,6 +81,8 @@ and Cid are stealing it. Eremia sends you back to Dr. Muench.
 ### Boss: Ozunne
 
 - **HP:** 1000 · **Weak:** water · **Drops:** Alarum
+- **Wear:** the **Fahl Stone** (fire) from this ruin halves his fire mantras.
+- **Weapons:** if you got the **Red Eagle**, it's fire, so he takes half from it.
 - Kill his Kukuros first. They drop Alarums too. Surlent casts PECOAMINUNA while Legin and Sork
   attack.
 
@@ -95,14 +105,16 @@ the Rudra of the Reptiles kills Surlent.
   teleporter to the south and north through the gate past the lizard town.
 - **Sork** rejoins. Go through the volcano and take the boat to Oriab.
 - Talk to Legin, Lolo and the doctor. **Legin and Lolo** join.
-- Forge: gear for Surlent and a bow for Lolo. **Lolo in the back row, Surlent
-  in the front.**
+- **Buy at the forge:** gear for Surlent and a bow for Lolo. **Lolo in the
+  back row, Surlent in the front.**
 - **Eremia's Manor:** the side door. Three chests, including a **Cosmo Gun**
   for Legin and the **Hector Armor** (fire). Go to the room where the Holy Grail was.
 
 ### Boss: Lazm
 
 - **HP:** 1500 · **Drops:** Rem Herb
+- **Avoid:** wind gear, like the Logical Cap. Lazm Thunder doubles against it.
+- **Wear:** the **Lemnos Mail** (lightning) halves Lazm Thunder.
 - Open with strength down and defense down on him, then strength up and
   defense up on you. After that his attacks barely hurt.
 - Lazm Thunder hits several times but isn't too bad.
@@ -126,25 +138,27 @@ another body** and go to the Museum of Magic.
   south.**
 - Talk to the sage in the north house and the historians in the southwest
   house.
+- **Buy in the Hidden Village:** the **Large Shield** and **HeatsealCharm**
+  (dark) for Dark Ein and Culgan. Skip the Axis Shield.
 - The sky falls and opens the **Garal Tunnel**. Take its east exit, then south
   into the Great Forest for the **Peschel Boots**. Go west and over the bridge.
 
 ### Boss: Dark Ein
 
 - **HP:** 3000 · **Weak:** holy · **Drops:** Moon Ring
+- **Wear:** dark gear from the Hidden Village: **Large Shield** (Def 26) and **HeatsealCharm**.
+- **Avoid:** the Jaques Mail (holy).
 - Spirit down and strength down, then attacks and PECOAHILINA.
 
 Go to Oriab. Castagia gives you the **Stabilizer** for the sandstorm.
 
-Shops worth checking today:
-
-| Where | Gear |
-|-------|------|
-| Oriab | **Meio Shield** (wind), **Slamath Armor** (lightning) |
-| Hidden Village | **Axis Shield** (wind), **Large Shield** (dark), **HeatsealCharm** (dark) |
-| Ruined City | **Beze Wing** (Speed +8, wind), **Baker's Cap** (lightning), **Rinon Helm** (fire), **Daniel's Robe** (fire), **Large Robe** (water) |
-
-The **Jaques Mail** (holy) is in the Clock Tower if you go back for it.
+- **Buy in the Ruined City** (optional trip): the **Beze Wing** (Speed +8,
+  wind) for Culgan and Hausen, the **Large Robe** (water) for Kidal, and the
+  **Baker's Cap** (lightning, Spirit +8) for Gandharva. The **Rinon Helm** and
+  **Daniel's Robe** (fire) are for Lezastes on Day 14.
+- Skip Oriab's **Meio Shield** (wind) and **Slamath Armor** (lightning). Wind
+  gear stops Float against DesertRose, and lightning gear doubles Culgan's
+  wind.
 
 ## Day 9: Sakkara Desert and Ruins of Ruhle
 
@@ -153,11 +167,13 @@ Legin uses the Stabilizer. North for an Alarum.
 ### Boss: DesertRose
 
 - **HP:** 2000 · **Weak:** lightning
+- **Avoid:** wind gear (Beze Wing, Logical Cap, Meio Shield, Axis Shield). It stops Float, and Float dodges its earth mantras. Cast **FLOAT**.
 - Earth mantras that can one-shot. Spirit down on it, then spirit up and magic
   defense up on you. WARHETPRA still does about 100 to everyone.
 
 - Go to the lab in northeast Avdol (zombies again) and check the Lago Stone.
-  Avdol sells the **Sultan Helm** (water) and **Daniel's Robe**.
+- **Buy in Avdol:** the **Sultan Helm** (water) for Kidal, and **Daniel's
+  Robe** (fire) for Lezastes if you skipped it in the Ruined City.
 - North around the bend and south into Thor Volcano. Solon says Culgan went
   to the **Ruins of Ruhle**.
 - The party splits. Take the **Holy Grail**, then through the clock door for
@@ -166,15 +182,21 @@ Legin uses the Stabilizer. North for an Alarum.
 ### Boss: Culgan
 
 - **HP:** 5000 · **Weak:** holy · **Drops:** Moon Ring
+- **Wear:** dark gear: **Large Shield**, **HeatsealCharm**. Wind gear like the **Beze Wing** halves his late wind mantras.
+- **Avoid:** holy gear (Jaques Mail), and lightning gear (Lemnos Mail, Slamath Armor, Baker's Cap, Peschel Boots), which doubles his wind.
+- **Weapons:** the **Rondine** (fire) from this ruin is fine for Lolo.
 - Magic defense down, spirit down on him, spirit up on you. Surlent and Lolo
   cast PECOAHILINA, Sork and Legin attack.
 - At half HP he casts SOAREEM and strong wind mantras. Put up **TEONAREEM**.
 
 ## Day 10: Sigmund Glacier and Tower of the Giants
 
-- Roma sells the **Aegis Shield** (fire) and **Flat Shield** (lightning).
-- Danelf and Babel now sell the **Cassius Mail** (fire), **Lucius Armor**
-  (water), **Braham Shield**, **Beluga Shield** and **Zeland Helm**.
+- **Buy in Roma:** a **Flat Shield** (lightning) for Gandharva. Skip the Aegis
+  Shield (fire), which doubles Kidal's water.
+- **Buy in Danelf or Babel:** the **Lucius Armor** and **Beluga Shield**
+  (water) for Kidal, and the **Zeland Helm** (lightning) for Gandharva. The
+  **Cassius Mail** and **Braham Shield** (fire) are for Lezastes, but keep
+  them off for Kidal.
 - North, west to Roma, then southeast to the Ruins of Sodom. The hole in the
   northeast wall has a teleporter to the **Sigmund Glacier**.
 - Take the southeast path, past the chest and through the north door. Check
@@ -190,6 +212,7 @@ Legin uses the Stabilizer. North for an Alarum.
 ### Boss: Abilijer
 
 - **HP:** 4924 · **Drops:** Large Mace
+- **Gear:** his attacks are physical, so elements don't matter here.
 - High magic defense. Use attacks.
 - Open with spirit down, defense down, strength down and strength up. Large
   Mace drops to 1 damage. Ogre Revenge does about 90.
@@ -205,8 +228,9 @@ the Rudra, then warp from Thor Volcano to the Netherworld.
   **Moon Ring** on the right, the ark piece in the center.
 - Let Dune and Cid use the contraption and they give you a ride. Talk to Cid
   in the engine room and fly to **Lyla**.
-- Lyla sells the **Alexis Mail** (water), **Aqua Ring** (water) and
-  **MontanoShield** (wind).
+- **Buy in Lyla:** the **Aqua Ring** (water) for Kidal, and **Alexis Mail**
+  (water) for anyone without the Lucius Armor. The **MontanoShield** (wind) is
+  for Hausen.
 - Talk to the elder in north Lyla and take the ark to the **Undersea Palace**.
 - Right door for 2000 Ragu, an **Alarum** and **Horn Water**. Up the stairs,
   west at the fork to the Rudra of the Mermaids. Sealed chests: **Blue
@@ -215,6 +239,9 @@ the Rudra, then warp from Thor Volcano to the Netherworld.
 ### Boss: Kidal
 
 - **HP:** 5000 · **Weak:** fire · **Drops:** Aqua Ring
+- **Wear:** water gear: **Lucius Armor** (Def 35), **Large Robe**, **Beluga Shield**, Sultan Helm.
+- **Avoid:** fire gear: Cassius Mail, Hector Armor, Daniel's Robe, Rinon Helm, Braham Shield, Aegis Shield, Fahl Stone, Huey Ring.
+- **Weapons:** **Red Eagle** and **Rondine** (fire). Not the Ice Sword or the **Blue Swallow** from this palace (water).
 - The hardest Rudra so far. Open with spirit down, magic defense up, strength
   up and **AQUNAREEM**. Recast AQUNAREEM every few turns, then defense down.
 - Surlent, Legin and Sork attack. Lolo heals every turn.
@@ -237,6 +264,9 @@ top of the ruins.
 ### Boss: Gandharva
 
 - **HP:** 5500 · **Weak:** wind · **Drops:** Flight Stone
+- **Wear:** lightning gear: **Zeland Helm**, **Baker's Cap**, Flat Shield, Peschel Boots.
+- **Avoid:** wind gear: Beze Wing, MontanoShield, Meio Shield, Logical Cap.
+- **Weapons:** Lolo's **Ophelia** (wind) hits his weakness.
 - Strong lightning mantras. Open with spirit down, magic defense down, spirit
   up, defense down and **TOUNAREEM**.
 - Surlent and Lolo cast PECOAJINNA, Sork and Legin attack.
@@ -252,6 +282,9 @@ top of the ruins.
 ### Boss: Lezastes
 
 - **HP:** 4343 · **Weak:** water, but his magic defense is very high
+- **Weapons:** his magic defense is high, so attack with water weapons: **Blue Swallow** and **Ice Sword**.
+- **Wear:** fire gear: **Cassius Mail**, **Daniel's Robe**, **Rinon Helm**, Braham Shield, Huey Ring.
+- **Avoid:** water gear.
 - **Drops:** Life Leaf
 - Spirit down, strength down, defense down, strength up, then attack. Lolo
   heals.
@@ -286,13 +319,18 @@ shard.
 ### Boss: Saizou
 
 - **HP:** 8309 · **Drops:** Life Leaf
+- **Gear:** his attacks are physical. Wear your highest Def, like the **Lucius Armor** (Def 35) or **Cassius Mail** (Def 34).
 - No mantra weakness. Strength down, spirit down, defense down, strength up,
   then attack. Recast them when they wear off.
 
-Go north over the roots to **Tarach**. Buy a **Thunder Sword** for Sork. The
-shop also has the **Marcus Armor** and **Octave Mail** (dark), **Hecate's
-Robe** (water) and **Heavy Shield** (wind). **BoneKnights** in the
-Netherworld drop the **Black Shield**. Then go north into **Shumisen**.
+Go north over the roots to **Tarach**.
+
+- **Buy in Tarach:** a **Thunder Sword** (lightning) for Sork and the **Heavy
+  Shield** (wind, Def 31) for Hausen. The **Marcus Armor** (Def 51) is the
+  best armor you can buy. Skip the Octave Mail and Hecate's Robe.
+- **BoneKnights** in the Netherworld drop the **Black Shield**.
+- Go north into **Shumisen**.
+
 
 ## Day 15: Shumisen
 
@@ -307,6 +345,9 @@ Party is around level 41.
 ### Final Boss: Hausen
 
 - **HP:** 13000 · **Weak:** lightning
+- **Wear:** wind gear: **Heavy Shield** (Def 31), **Beze Wing**, MontanoShield, Logical Cap.
+- **Avoid:** lightning gear: Zeland Helm, Baker's Cap, **Thor Ring**, Flat Shield, Peschel Boots.
+- **Weapons:** lightning, like Sork's **Thunder Sword**. Not Lolo's Ophelia (wind).
 - **Wear wind defense on everyone.** Open with spirit down, TEONAREEM,
   defense down and strength up.
 - Surlent, Legin and Sork attack, Lolo heals. Most of his attacks then do
@@ -318,6 +359,8 @@ Party is around level 41.
   based on Trunkz0r's guide.
 - Boss HP, weaknesses and drops:
   [God Bird's boss data](https://god-bird.net/data/rudra/bossdata_sion.html)
+  (Japanese).
+- How elements work: [God Bird's strategy hints](https://god-bird.net/data/rudra/rudraguide.html)
   (Japanese).
 - Where gear turns up:
   [God Bird's elemental armor list](https://god-bird.net/data/rudra/armor.html)

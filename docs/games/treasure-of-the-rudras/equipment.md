@@ -8,10 +8,16 @@ tags:
 
 # Equipment
 
-Each table is sorted from weakest to strongest. Gear with an element boosts
-that element's mantras and resists it, and it **makes you weak to the
-opposite element**: fire and water, wind and lightning, holy and dark. The
-item descriptions in the game call holy "Light" and lightning "Thunder".
+Each table is sorted from weakest to strongest. Elements come in opposing
+pairs: fire and water, wind and lightning, holy and dark.
+
+- **Armor with an element** halves damage of that element and **doubles
+  damage of the opposite element**. Dark armor also blocks Pollution, and
+  wind armor stops Float from working.
+- **Weapons with an element** do double damage to an enemy weak to it, and
+  half to an enemy of the same element.
+
+The item descriptions in the game call holy "Light" and lightning "Thunder".
 
 **Where** gives the chapter and day: **S** Sion, **Su** Surlent, **R** Riza,
 **D** Dune. S4 means Sion's Day 4. A town means its shop, anywhere else means
@@ -53,5 +59,7 @@ Buy prices are only known for gear with an element.
   (Japanese).
 - Hidden items and rare drops:
   [God Bird's rare items](https://god-bird.net/data/rudra/item.html) (Japanese).
+- How elements work: [God Bird's strategy hints](https://god-bird.net/data/rudra/rudraguide.html)
+  (Japanese).
 - Other locations: [Kurt's walkthroughs](http://www.reonis.com/rudra/), based
   on Trunkz0r's guide.

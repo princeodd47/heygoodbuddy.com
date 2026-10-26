@@ -15,6 +15,12 @@ Mantras below are from [New Playthrough](new-playthrough.md) where one fits:
 fire PECOABITNA, water PECOAMINUNA, lightning PECOAUSNA, wind PECOAJINNA,
 holy PECOAHILINA, dark PECOAMUNYNA.
 
+Armor with an element halves damage of that element and doubles damage of the
+opposite one, so the gear notes under each boss list what to wear and what to
+take off. They only include gear you can have by then. **Buy** lines at each
+town list what's worth buying there and which fight it's for. See
+[Equipment](equipment.md) for stats.
+
 ## Day 0: Cryunne Castle
 
 - Meet Foxy and Doug in the reception room, two rooms left on the second
@@ -43,6 +49,7 @@ holy PECOAHILINA, dark PECOAMUNYNA.
 ### Boss: Abilijer
 
 - **HP:** 700
+- **Gear:** his attacks are physical, so elements don't matter here.
 - **Drops:** Ogre Mace
 - When he swings his club and talks about waking from his slumber, Upper
   Attack is next turn. **Defend with everyone.**
@@ -58,11 +65,11 @@ for 120 Ragu, and head back through Vad to the castle.
 
 - The **barkeep in Vad** teaches mantras and how they're built. You can only
   inscribe 32, so keep a spread of elements.
-- Put the Big Robe and Ogre Mace on Ture. Buy a **Buckler** for Sion for
-  later.
+- Put the Big Robe and Ogre Mace on Ture.
+- **Buy in Vad:** a **Buckler** for Sion.
 - Go east and north over the bridges to **Danelf**:
-    - Forge: an **Avenger Sword**, then a Gra Shield for Sion or a Rune Knife
-      for Foxy.
+    - **Buy in Danelf:** an **Avenger Sword** for Sion, then a Gra Shield for
+      Sion or a Rune Knife for Foxy.
     - Lamias in the grass, not the forest, are good for Ragu. AxisKnights in
       the forest drop **Axis Shields**, better than the Gra Shield.
 
@@ -75,8 +82,14 @@ Talk to the women at the back, then take the door on the right.
 | 1 | Foxy or Ture | Nergal | 150 | Attack. Watch for Energy Sword. |
 | 2 | Sion | NergalMstr | 350 | Only Thunder Sword hurts. Heal if needed. |
 
-You win the **Storm** sword and 500 Ragu. Sell it, buy armor for Foxy and a
-helmet for Sion, and give Sion Foxy's old armor for the speed.
+You win the **Storm** sword and 500 Ragu. Keep it for Bhadra on Day 5, or sell
+it if you're short on Ragu.
+
+- **Buy in Danelf:** **Lemnos Mail** (680) or **Slamath Armor** (930) for
+  Foxy, and a helmet for Sion. Both armors are lightning, for the Amatista
+  fight and Monju. Give Sion Foxy's old armor for the speed.
+- If you have Ragu left, the **Hector Armor** (fire, 1320) helps against
+  Marica and Surt later.
 
 ### Mantra Peak
 
@@ -91,6 +104,9 @@ helmet for Sion, and give Sion Foxy's old armor for the speed.
 ### Coliseum: Amatista x2
 
 - **HP:** 600 each
+- **Wear:** Lemnos Mail or Slamath Armor (lightning).
+- **Avoid:** Ephta's Robe and Logical Cap (wind) take double from their lightning.
+- **Weapons:** don't use the Storm. It's lightning, so they take half.
 - Choose **magic**, so you can heal. They're weak to **wind**: PECOAJINNA.
 - They cast lightning, so don't wear wind defense.
 - Reward: 1000 Ragu and a **Magic Leaf**.
@@ -113,6 +129,7 @@ helmet for Sion, and give Sion Foxy's old armor for the speed.
 ### Boss: Monk
 
 - **HP:** 1000, one-on-one with Sion
+- **Gear:** his attacks are physical, so elements don't matter here.
 - Elemental mantras do 1 damage. Use physical attacks.
 - Use the **Magic Leaf** first so Sion has MP to heal. Keep HP above half.
 - Once he talks about flaming fists he adds Screw Fist and uses Middle Kick
@@ -123,8 +140,10 @@ Islands**.
 
 - Right of the castle, walk up the waterfall path and push into the wall for
   a **Moon Ring**.
-- Town weapon shop: **Flat Shield** for Sion, **Laikas Knife** for Foxy, and
-  Packet Mail if you can. The **Meio Shield** (wind) is sold here too.
+- **Buy in Len:** a **Flat Shield** (lightning) for Sion for Monju, a
+  **Laikas Knife** for Foxy, and Packet Mail if you can. Skip the Meio Shield
+  (wind). It doubles Monju's lightning, and Roma's MontanoShield is better
+  for Diyaus.
 - **Beze Wing:** the Bezewaign in the forest around Len sometimes drop this
   accessory: Speed +8, MDef 6, wind element. They run away once they're hurt,
   so kill them in one hit. It also goes on sale in the Ruined City on Day 10.
@@ -138,6 +157,8 @@ castle entrance.
 ### Boss: Bhadra
 
 - **HP:** 1500 · **Weak:** lightning
+- **Weapons:** the **Storm** (lightning) hits his weakness and matches the Avenger's attack.
+- **Avoid:** wind gear (Ephta's Robe, Logical Cap, Meio Shield, Beze Wing). It stops Float from working, and Float dodges his earth attacks. Cast **FLOAT** on everyone.
 - Use PECOAUSNA. At half HP he starts Bhadra Bound, about 70 to everyone.
 
 After the fight a man on the train teaches **TOME**, much stronger than LUS.
@@ -153,14 +174,18 @@ After the fight a man on the train teaches **TOME**, much stronger than LUS.
 ### Boss: Monju
 
 - **HP:** 2000 · **Weak:** wind
+- **Wear:** Lemnos Mail or Slamath Armor, and the **Flat Shield** (lightning) to halve his lightning.
+- **Avoid:** Beze Wing, Meio Shield, Ephta's Robe and Logical Cap (wind) double it.
+- **Weapons:** don't use the Storm (lightning).
 - Almost everything he casts is lightning. Low on HP he uses SUUMEDACO, which
   hurts unless you have lightning defense.
 
 ## Day 6: Graham's Tomb
 
-- Take the train to the **Ruined City**. Buy a Flat Shield for fire defense
-  and give Foxy the **Huey Ring**. The **Aegis Shield** (fire) and **Jaques
-  Mail** (holy) are sold here too.
+- Take the train to the **Ruined City** and give Foxy the **Huey Ring**.
+- **Buy in the Ruined City:** an **Aegis Shield** (fire) for Marica and Surt,
+  and a second **Jaques Mail** (holy) for Mayura on Day 7. Another Aegis
+  Shield is in the tomb.
 - In the tomb, go to the far right tunnel. The others are dead ends.
 - Get the **Hamlet** to the right of the stairs (Sion). If you get **Kemp
   Boots**, give them to Foxy and the ring to Ture.
@@ -176,6 +201,8 @@ After the fight a man on the train teaches **TOME**, much stronger than LUS.
 ### Boss: Marica
 
 - **HP:** 2700 · **Weak:** water
+- **Wear:** fire gear: **Ogre Shield** (Def 22) from this tomb, Hector Armor, Aegis Shield, **Huey Ring** and Kemp Boots.
+- **Weapons:** Ture's **Power Mace** is fire, so Marica takes half from it. Have Ture cast PECOAMINUNA.
 - Rex Spin does about 100. Use PECOAMINUNA.
 
 The **Graham Sword** is upstairs, but it's only 4 attack over the Hamlet. Keep
@@ -183,14 +210,18 @@ the Hamlet with the Aegis Shield.
 
 ## Day 7: Ruins of Frey and the Sacred Temple
 
-- Train to **Roma**. Buy two **MontanoShields**, a **Raptor Knife** and a
-  **Sultan Helm**.
+- Train to **Roma**.
+- **Buy in Roma:** two **MontanoShields** (wind) for Diyaus, a **Raptor
+  Knife** for Foxy, and a **Sultan Helm** (water) for Opsis and Yol-Gee.
 - **Ruins of Frey:** left stairs, south around the room, west to the next
   stairs, drink from the jar, drop down the hole and save.
 
 ### Boss: Opsis
 
 - **HP:** 2800 · **Weak:** fire
+- **Wear:** water gear: **Large Robe** (Ture) and **Sultan Helm**.
+- **Avoid:** fire gear doubles his water attacks: Ogre Shield, Hector Armor, Aegis Shield, Huey Ring, Kemp Boots.
+- **Weapons:** Ture's **Power Mace** (fire) hits his weakness.
 - Mostly weak water attacks. Use PECOABITNA.
 
 Grab the two chests he drops and take the train to the temple. The **Opsis
@@ -205,6 +236,8 @@ Boots** (Speed +4, water) are in the Ruins of Frey.
 ### Boss: Mayura
 
 - **HP:** 4600 · **Weak:** dark
+- **Wear:** the **Jaques Mail** (holy) halves her light attacks.
+- **Avoid:** the Moon Ring (dark) doubles them.
 - Uses light attacks. Use PECOAMUNYNA.
 - After about 2000 damage the background changes and she starts Star Thrust,
   about 125 to everyone.
@@ -213,12 +246,16 @@ Step on the platform and leave as the islands fall. You end up in Len.
 
 ## Day 8: Len
 
-Rest at the inn, then go to the palace. Len now sells the **Lucius Armor**
-(water) and **MontanoShield** (wind).
+- **Buy in Len:** the **Lucius Armor** (water, Def 35) for Yol-Gee. Don't
+  wear it against Surt. Babel sells the **HeatsealCharm** (dark) for Nagiya
+  on Day 10.
+- Rest at the inn, then go to the palace.
 
 ### Boss: Surt
 
 - **HP:** 3357 · **Weak:** water
+- **Wear:** fire gear: **Ogre Shield**, Hector Armor, Aegis Shield, **Huey Ring**, Kemp Boots.
+- **Avoid:** water gear: Large Robe, Sultan Helm, Opsis Boots, Lucius Armor.
 - **Drops:** Large Shield (Ture), sometimes
 - Watch out for Pile Blaster.
 
@@ -233,6 +270,9 @@ Rest at the inn, then go to the palace. Len now sells the **Lucius Armor**
 ### Boss: Diyaus
 
 - **HP:** 3926 · **Weak:** lightning · **Drops:** Amrita
+- **Wear:** wind gear: **Beze Wing**, **MontanoShield**, Meio Shield, Logical Cap.
+- **Avoid:** lightning gear: Lemnos Mail, Slamath Armor, Flat Shield.
+- **Weapons:** Sion's **Hamlet** (lightning) hits his weakness.
 - Use PECOAUSNA, and **don't use wind**. Air Bomber and PRIONA hit hard, so
   keep HP up.
 
@@ -249,6 +289,9 @@ Pull out the **Sigmund Sword** and you fall into the water and get swallowed.
 ### Boss: Yol-Gee
 
 - **HP:** 4200 · **Weak:** fire
+- **Wear:** water gear: **Lucius Armor** (Def 35), **Large Robe**, Sultan Helm, Opsis Boots.
+- **Avoid:** fire gear: Huey Ring, Kemp Boots, Ogre Shield, Hector Armor, Aegis Shield.
+- **Weapons:** Ture's **Power Mace** (fire) is good. The **Sigmund Sword** is water, so Sion should use the Hamlet.
 - **Take off the Kemp Boots and Huey Ring**, or his water attacks hurt a lot
   more. Use PECOABITNA.
 
@@ -262,19 +305,23 @@ Pull out the **Sigmund Sword** and you fall into the water and get swallowed.
   table for a letter for Foxy.
 - Go to **Oriab**. Eremia is in the northwest house with the side door.
   Search the drawer behind him for a **Purifier**.
-- The pub teaches **SOANATES**. Check the forge, rest, then go back to Avdol.
+- The pub teaches **SOANATES**. The forge has the **Lucius Armor** if you
+  skipped it in Len. Rest, then go back to Avdol.
 - Follow the Cultists down the lab elevator in northeast Avdol.
 
 ### Boss: Nagiya
 
 - **HP:** 4200 · **Weak:** holy
+- **Wear:** dark gear: **Large Shield** (Def 26), **Moon Ring**, HeatsealCharm.
+- **Avoid:** the Jaques Mail (holy).
 - He opens with Foxy Killer, which kills Foxy.
 - Uses dark attacks. He's slow, so use PECOAHILINA and heal between turns.
 
 - Search the northwest house in Avdol for a **Magic Leaf**.
-- **Optional:** take the train back to the **Ruined City**. Its shop now sells
-  the **Beze Wing**, **Baker's Cap** (lightning, Spirit +8), **Rinon Helm**
-  (fire) and **Large Robe** (water).
+- **Optional:** take the train back to the **Ruined City**.
+- **Buy in the Ruined City:** the **Rinon Helm** (fire) for Ravana and Rudra,
+  and the **Beze Wing** (Speed +8) for Foxy. The **Baker's Cap** (lightning,
+  Spirit +8) is good for Ture. You already have a Large Robe.
 - Go to the Heg Shrine in southwest Avdol. The Heg takes you to the Vilshin
   Ruins, then head to the **Lost Forest**.
 
@@ -284,9 +331,10 @@ Pull out the **Sigmund Sword** and you fall into the water and get swallowed.
   **west, north, east, south.**
 - **Riza** is with the sage in the northwest basement and gives you the
   **Revive Herb** for Foxy.
-- Forge: **Ice Whip** and **HeatsealCharm** (dark). The **Axis Shield** and
-  **Large Shield** are sold here too. Talk to the three sages in the
-  southernmost house.
+- **Buy in the Hidden Village:** the **Ice Whip** (water) for Foxy, for
+  Ravana and Rudra. The **Large Shield** and **HeatsealCharm** (dark) are for
+  Taurus and Gomorrah. Skip the Axis Shield.
+- Talk to the three sages in the southernmost house.
 - Boat down the rapids, through the Great Forest to **Oriab**. The bulletin
   says to meet Miller the priest.
 - Ship to Ompross, then Danelf, then southeast to the church. Search the
@@ -295,10 +343,11 @@ Pull out the **Sigmund Sword** and you fall into the water and get swallowed.
 ## Day 12: Danelf and Cryunne
 
 - Equip the **Taurus Sword** on Sion. It's one-handed.
-- New gear at the Danelf forge: **Cassius Mail** (fire), **Lucius Armor**
-  (water), **Braham Shield** (fire), **Beluga Shield** (water) and **Zeland
-  Helm** (lightning). The mantra expert in the pub basement
-  teaches more.
+- **Buy in Danelf:** the **Cassius Mail** and **Braham Shield** (fire) for
+  Ravana and Rudra. Skip the Lucius Armor and Beluga Shield (water), which
+  double both bosses' fire. The **Zeland Helm** (lightning) is only worth it
+  if you skipped the Rinon Helm.
+- The mantra expert in the pub basement teaches more.
 - Talk to the king. Taurus has gone to the center of the earth.
 
 ## Day 13: Mantra Peak
@@ -309,6 +358,9 @@ you touch. The red ones drop **Horn Water**.
 ### Boss: Ravana
 
 - **HP:** 6060 · **Weak:** water · **Drops:** Amrita
+- **Wear:** fire gear: **Cassius Mail** (Def 34), Braham Shield or **Ogre Shield**, **Rinon Helm**, **Huey Ring**, Kemp Boots.
+- **Avoid:** water gear: Lucius Armor, Large Robe, Beluga Shield, Sultan Helm, Opsis Boots.
+- **Weapons:** **Sigmund Sword** for Sion and **Ice Whip** for Foxy (water). Not the Power Mace.
 - Fire attacks, so **no water-defense gear**. Use PECOAMINUNA.
 - MACROPOTIE hits hard even with defenses. The **Ice Whip** does good damage.
 
@@ -328,6 +380,8 @@ Party is around level 34.
 ### Boss: Taurus
 
 - **HP:** 7200
+- **Wear:** the **King's Armor** (Def 45) from this base, plus dark gear: **Large Shield**, **Moon Ring**, HeatsealCharm.
+- **Avoid:** the Jaques Mail (holy).
 - Strong physical attacks. Holy mantras and physical attacks both work.
 - **Defend** when he says "so you want to play." Slayer does about 150 to
   everyone if you don't.
@@ -335,8 +389,10 @@ Party is around level 34.
 
 - West after the tower, **BoneKnights** drop the **Black Shield**, better
   than the Psycho Shield.
-- In **Tarach**, the shop sells the **Marcus Armor** and **Octave Mail**
-  (dark), **Hecate's Robe** (water) and **Heavy Shield** (wind).
+- **Buy in Tarach:** the **Marcus Armor** (Def 51) or **Octave Mail** (MDef
+  17), both dark, for Gomorrah. Skip the Hecate's Robe (water), which doubles
+  Rudra's fire, and the Heavy Shield, since the Black Shield is free.
+
 - Talk to **Surlent** in the pub and trade the Psycho Shield for the
   **Power Shield** or the **Apocalypse**.
 - North into **Shumisen**.
@@ -359,6 +415,9 @@ Party is around level 37.
 ### Boss: Rudra
 
 - **HP:** 7500 · **Weak:** water
+- **Wear:** fire gear: **Cassius Mail**, **Psycho Shield** or Ogre Shield, **Rinon Helm**, **Daniel's Robe** (Ture), **Huey Ring**, Kemp Boots.
+- **Avoid:** water gear: Lucius Armor, Hecate's Robe, Large Robe, Beluga Shield, Sultan Helm.
+- **Weapons:** **Sigmund Sword** and **Ice Whip** (water).
 - Fire attacks, so wear fire defense. Use water mantras or Foxy's **Ice Whip**.
 - Rudra Quake hits harder than Rudra Laser. Rudra Shock is about 160 to
   everyone.
@@ -369,6 +428,9 @@ fork. Inscribe **COABARRIERNA** (magic defense up) first.
 ### Final Boss: Gomorrah
 
 - **HP:** 12000 · **Weak:** holy
+- **Wear:** dark gear: **Octave Mail** (MDef 17) or **Marcus Armor** (Def 51), **Black Shield** or **Large Shield**, **Moon Ring**, HeatsealCharm.
+- **Avoid:** holy gear, even the **Hercules** (Def 57). The Jaques Mail too.
+- **Weapons:** Foxy's **Love Whip** (holy) hits all three summons' weakness.
 - He summons three monsters you have to kill first:
 
 | Summon | HP | Weak |
@@ -387,6 +449,8 @@ fork. Inscribe **COABARRIERNA** (magic defense up) first.
   based on Trunkz0r's guide.
 - Boss HP, weaknesses and drops:
   [God Bird's boss data](https://god-bird.net/data/rudra/bossdata_sion.html)
+  (Japanese).
+- How elements work: [God Bird's strategy hints](https://god-bird.net/data/rudra/rudraguide.html)
   (Japanese).
 - Where gear turns up:
   [God Bird's elemental armor list](https://god-bird.net/data/rudra/armor.html)

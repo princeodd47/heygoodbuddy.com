@@ -27,6 +27,12 @@ Mantras below are from [New Playthrough](new-playthrough.md) where one fits:
 Elemental barriers are an element word + NAREEM, like IGNAREEM for fire. They
 halve that element's damage for a few turns.
 
+Armor with an element halves damage of that element and doubles damage of the
+opposite one, so the gear notes under each boss list what to wear and what to
+take off. They only include gear you can have by then. **Buy** lines at each
+town list what's worth buying there and which fight it's for. See
+[Equipment](equipment.md) for stats.
+
 ## Day 0: Karn and the Forest of Rem
 
 - After talking to Zeku, the northwest house has a **Purifier** and **Green
@@ -79,6 +85,7 @@ Climb the ladder in the northeast part of town. The mansion has six doors:
 ### Boss: Shivaithan
 
 - **HP:** 800
+- **Gear:** nothing elemental matters. The back row does the work.
 - No weakness. The back row makes this easy: attack, and heal with Riza.
   JESS hits hard.
 
@@ -87,8 +94,8 @@ from Babel to Oriab.
 
 ## Day 3: Oriab, Great Forest and Horn Cave
 
-- Forge: two **Lemnos Mail** and two **Logical Caps**. Keep the back-row
-  weapons.
+- **Buy in Oriab:** two **Lemnos Mail** and two **Logical Caps**. Keep the
+  back-row weapons. Take the Lemnos Mail off for Soma on Day 6.
 - The pub teaches **SOAMEL**. The northwest house facing out has a
   **Purifier**.
 - **Great Forest:** the right path at the first fork is only a note for
@@ -98,6 +105,7 @@ from Babel to Oriab.
 ### Boss: Setaviza
 
 - **HP:** 600, plus 300 for the reptile · **Weak:** fire
+- **Wear:** the **Moon Ring** (dark) from Karn. Dark gear blocks Pollution.
 - Kill the reptile it's holding first.
 - Polluted Mushroom stops you casting mantras. **Bring Purifiers.**
 
@@ -111,9 +119,9 @@ from Babel to Oriab.
 
 ## Day 4: Danelf, Vad and Cryunne Castle
 
-- Danelf forge: the **Hector Armor** (fire), **Slamath Armor** and **Lemnos
-  Mail** (lightning). The pub teaches AQUNA, IGNA, TOUNA, TEONA and
-  YOUTEONA.
+- **Buy in Danelf:** the **Hector Armor** (fire, Def 15) for Karla on Day 6.
+  Skip the Slamath Armor (lightning), which doubles Soma's wind.
+- The pub teaches AQUNA, IGNA, TOUNA, TEONA and YOUTEONA.
 - Northeast house facing east: **Dirty Shoes** in a drawer.
 - Go to the Coliseum, back into town, then back to the Coliseum. The king runs
   out.
@@ -123,7 +131,8 @@ from Babel to Oriab.
   there's a **Logical Cap** in the drawer. The pub teaches the LUS mantras.
 - **Cryunne Castle:** west, upstairs, west, downstairs, then down the middle
   to the prison. The sealed chest has the **Tybalt Mail**, very good for now.
-- Cryunne sells the **Meio Shield** (wind).
+- **Buy in Cryunne:** a **Meio Shield** (wind) for Soma. Take it off for
+  Brusty and Karla.
 - Talk to the king, take the 100 Ragu and rest.
 
 ## Day 5: Spirit Temple and Sacred Forest
@@ -133,8 +142,10 @@ from Babel to Oriab.
     - **Water:** **Antares** rifle for Garlyle and a Horn Water.
     - **Earth:** Life Leaf and **Jackal Nail** for Pipin. The shop below sells
       a nail just as good.
-- The guard in the lower left shows the way. Talk to **Soma**, rest at the inn
-  on the left, and buy a **Bison Claw** for Pipin from the merchant.
+- The guard in the lower left shows the way. Talk to **Soma** and rest at the
+  inn on the left.
+- **Buy from the merchant:** a **Bison Claw** (lightning) for Pipin. It hits
+  Soma's weakness.
 - Drop down the hole and go south.
 - **Sacred Forest:**
     - Right side: **Open Helm**.
@@ -148,6 +159,8 @@ from Babel to Oriab.
 ### Boss: Evil Ghost
 
 - **HP:** 2000 · **Weak:** holy
+- **Wear:** the **Moon Ring** (dark) halves his dark mantras.
+- **Weapons:** don't use the **DOA**. It's dark, so he takes half.
 - All dark mantras, mostly on everyone. Heal with LEFNA every turn, attack
   with Pipin and Garlyle, and magic defense up helps.
 
@@ -164,6 +177,9 @@ Aqua didn't give permission, so you fight the guardians. Rest first.
 
 - **HP:** 1670 · **Weak:** lightning · **Drops:** Soma (boots: Speed +4,
   wind)
+- **Wear:** wind gear: **Ephta's Robe**, Logical Cap, **Meio Shield**. Or no elements at all.
+- **Avoid:** lightning gear: Lemnos Mail, Slamath Armor.
+- **Weapons:** Pipin's **Bison** (lightning) hits his weakness.
 - Mantras don't do much. Attack and heal with Riza.
 - Under half HP he uses SHIITAERI and Power Wave, about 120 to everyone.
   **Level up before this fight.**
@@ -190,6 +206,7 @@ Aqua didn't give permission, so you fight the guardians. Rest first.
 ### Boss: Brusty
 
 - **HP:** 2428 · **Weak:** wind · **Drops:** Horn Water
+- **Avoid:** wind gear (Soma boots, Ephta's Robe, Logical Cap, Meio Shield). It stops Float, and Float dodges PRATAHNA. Cast **FLOAT**.
 - PRATAHNA does 100–120 to everyone, sometimes every turn. He's slow, so keep
   healing and use PECOAJINNA.
 
@@ -198,6 +215,8 @@ Take the **HolyTree Seed**.
 ### Boss: Karla
 
 - **HP:** 2000 · **Drops:** Moon Ring
+- **Wear:** fire gear like the **Hector Armor** halves her fire mantras.
+- **Avoid:** wind gear, so Float can still dodge her earth mantras.
 - Earth and fire mantras. Weak to physical attacks. Keep HP above 80.
 
 Place the **Holy Grail** on the circle.
@@ -219,9 +238,12 @@ Place the **Holy Grail** on the circle.
 
 ## Day 8: Gomorrah City
 
-The sky islands fall. Marina leaves the egg in the clean water at Roma. Roma
-sells the **Aegis Shield** (fire) and **Flat Shield** (lightning). Go
-southeast to the new land and **Gomorrah City**.
+The sky islands fall. Marina leaves the egg in the clean water at Roma.
+
+- **Buy in Roma:** a **Flat Shield** (lightning) and an **Aegis Shield**
+  (fire). Laumen casts lightning and fire. Take the Aegis Shield off for
+  Abrasax on Day 10.
+- Go southeast to the new land and **Gomorrah City**.
 
 - Southwest bowls: **Horn Water** and **Purifier**. East of that doorway, a
   chest with a strength-down mantra puzzle.
@@ -238,6 +260,7 @@ southeast to the new land and **Gomorrah City**.
 ### Boss: Laumen
 
 - **HP:** 5000
+- **Avoid:** wind and water gear: Ephta's Robe, Logical Cap, Meio Shield, Soma boots.
 - No weakness, lots of mantras. **No wind- or water-defense gear.**
 - Open with spirit down, **TOUNAREEM**, **IGNAREEM**, spirit up, then
   strength up and defense down.
@@ -256,6 +279,9 @@ southeast to the new land and **Gomorrah City**.
 ### Boss: KingEltina
 
 - **HP:** 3118 · **Weak:** holy · **Drops:** Purifier
+- **Wear:** the **Moon Ring** (dark).
+- **Avoid:** the **Pure Ring** (holy).
+- **Weapons:** not the DOA (dark).
 - Dark attacks. Spirit down, **SERENAREEM** and spirit up, then PECOAHILINA
   and attacks.
 
@@ -284,6 +310,8 @@ Go through the center. Marina is fighting alone.
 ### Boss: Abrasax
 
 - **HP:** 4387 · **Weak:** fire · **Drops:** Purifier
+- **Avoid:** fire gear doubles his water mantras: Hector Armor, Aegis Shield.
+- **Weapons:** Garlyle's **Antares** (fire). Not Pipin's Jackal Nail (water).
 - Water mantras. Riza, Garlyle and Pipin cast PECOABITNA until out of MP.
 - Stab-Throw is nearly always lethal.
 
@@ -299,11 +327,14 @@ Go through the center. Marina is fighting alone.
 ### Boss: Danapati
 
 - **HP:** 4437 · No weakness
+- **Wear:** the **Hecate's Robe** (water, MDef 33), if you found it here, halves his water attacks.
+- **Avoid:** fire gear: Hector Armor, Aegis Shield.
 - Very easy. Normal attacks do about 120.
 
 - Ride the Hegs to **Lyla**. The elder is straight north. The southeast pub
-  teaches **AQUTEUM**. Buy a new spear for Marina. Lyla also sells the
-  **Alexis Mail** (water), **Aqua Ring** (water) and **MontanoShield** (wind).
+  teaches **AQUTEUM**.
+- **Buy in Lyla:** a new spear for Marina, and the **Aqua Ring** and **Alexis
+  Mail** (water) for Sodom. Skip the MontanoShield (wind).
 - **Cyprus:** now that you can ride the Hegs, a chief appears in the Sacred
   Forest and drops this dark spear, Marina's best weapon. Kill the chief
   first.
@@ -316,9 +347,12 @@ Go through the center. Marina is fighting alone.
 - At the elder's house, Sion trades the **Heg's Ocarina** for the **Revive
   Herb**.
 - The sages in the southwest house give you the **Vilshan Key**.
-- The Hidden Village sells the **Axis Shield**, **Large Shield** and
-  **HeatsealCharm**. Babel sells the **Cassius Mail**, **Braham Shield** and
-  **Beluga Shield**, and Len the **Lucius Armor** and **MontanoShield**.
+- **Buy in Len:** the **Lucius Armor** (water, Def 35) for Sodom.
+- **Buy in Babel:** the **Beluga Shield** (water) for Sodom. Skip the Cassius
+  Mail and Braham Shield (fire), which double his attacks.
+- Skip the Hidden Village's **Large Shield** and **HeatsealCharm** (dark).
+  Meifa's attacks do double through them.
+
 - **Vilshin Ruins**, northwest: the building east of the first has a **Nuad
   Herb** and a monitor. Then down the first building's steps to the Heg
   Shrine.
@@ -340,6 +374,9 @@ Party is around level 38.
 ### Boss: Meifa
 
 - **HP:** 6500 · **Weak:** dark
+- **Wear:** the **Pure Ring** (holy).
+- **Avoid:** dark gear: Moon Ring, **Large Shield**, HeatsealCharm.
+- **Weapons:** **DOA** (dark), and Marina's **Cyprus** (dark) if you got it.
 - Spirit down, magic defense up, **LUNA** and magic defense down, then
   PECOAMUNYNA. Magic defense down makes her go fast.
 
@@ -363,6 +400,9 @@ Party is around level 40.
 ### Final Boss: Sodom
 
 - **HP:** 16000 · **Weak:** fire
+- **Wear:** water gear: **Lucius Armor** (Def 35) or Alexis Mail, **Hecate's Robe** (MDef 33), **Beluga Shield**, **Aqua Ring**.
+- **Avoid:** fire gear: Cassius Mail, Braham Shield, Hector Armor, Aegis Shield.
+- **Weapons:** Garlyle's **Antares** (fire). Not the Mist Gun or Jackal Nail (water).
 - Every hit does 150–170. Keep HP above 150.
 - Open with spirit down, magic defense down, defense up, magic defense up and
   strength down. That cuts his damage by about 40%, but it wears off.
@@ -374,6 +414,8 @@ Party is around level 40.
   based on Trunkz0r's guide.
 - Boss HP, weaknesses and drops:
   [God Bird's boss data](https://god-bird.net/data/rudra/bossdata_sion.html)
+  (Japanese).
+- How elements work: [God Bird's strategy hints](https://god-bird.net/data/rudra/rudraguide.html)
   (Japanese).
 - Where gear turns up:
   [God Bird's elemental armor list](https://god-bird.net/data/rudra/armor.html)
