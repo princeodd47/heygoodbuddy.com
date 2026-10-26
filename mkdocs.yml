@@ -41,6 +41,9 @@ plugins:
         ffxii_monographs: data/final-fantasy-xii-the-zodiac-age/monographs.yaml
         ffxii_bazaar: data/final-fantasy-xii-the-zodiac-age/bazaar.yaml
         dqmch_dungeons: data/dragon-quest-monsters-caravan-heart/dungeons.yaml
+        rudras_monsters: data/treasure-of-the-rudras/monsters.yaml
+        rudras_bosses: data/treasure-of-the-rudras/bosses.yaml
+        rudras_equipment: data/treasure-of-the-rudras/equipment.yaml
 
 extra_css:
   - stylesheets/extra.css
@@ -101,6 +104,17 @@ nav:
           - Caravan: games/dragon-quest-monsters-caravan-heart/caravan.md
           - Guard Monsters: games/dragon-quest-monsters-caravan-heart/guard-monsters.md
           - Hearts & Reforming: games/dragon-quest-monsters-caravan-heart/hearts.md
+      - Treasure of the Rudras:
+          - games/treasure-of-the-rudras/index.md
+          - New Playthrough: games/treasure-of-the-rudras/new-playthrough.md
+          - Sion: games/treasure-of-the-rudras/sion.md
+          - Surlent: games/treasure-of-the-rudras/surlent.md
+          - Riza: games/treasure-of-the-rudras/riza.md
+          - Dune: games/treasure-of-the-rudras/dune.md
+          - Mantras: games/treasure-of-the-rudras/mantras.md
+          - Bestiary: games/treasure-of-the-rudras/bestiary.md
+          - Equipment: games/treasure-of-the-rudras/equipment.md
+          - Items: games/treasure-of-the-rudras/items.md
   - Articles:
       - blog/index.md
   - Tags: tags.md
