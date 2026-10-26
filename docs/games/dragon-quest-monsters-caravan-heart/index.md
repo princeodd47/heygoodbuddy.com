@@ -35,6 +35,12 @@ Notes from the Game Boy Color version.
 
     Who to recruit, and where they appear.
 
+-   :material-paw:{ .lg .middle } __[Guard Monsters](guard-monsters.md)__
+
+    ---
+
+    The seven monsters that can join, and how to recruit each one.
+
 -   :material-heart:{ .lg .middle } __[Hearts & Reforming](hearts.md)__
 
     ---
