@@ -1,0 +1,1395 @@
+# Practice questions for the Flesh and Blood judge study quiz.
+# topic: rules | interactions (L1A) or policy | tournament (L1B).
+# answer is the index into choices; the quiz shuffles choices when shown.
+# Checked against the CR, PPG and TRP on 2026-10-27.
+
+topics:
+  rules: Rules
+  interactions: Card interactions
+  policy: Penalties
+  tournament: Tournament rules
+
+questions:
+  # --- Rules (L1A) ---
+  - id: r01
+    topic: rules
+    q: One effect says "You can't play cards from your banished zone." Another says "You may play cards from your banished zone." Can the player play a card from their banished zone?
+    choices:
+      - No. A restriction beats an allowance.
+      - Yes. The newer effect wins.
+      - Yes. An allowance beats a restriction.
+      - The turn-player decides which effect applies.
+    answer: 0
+    why: A restriction ("can't") beats a requirement ("must"), which beats an allowance ("may").
+    cite: CR 1.0.2
+
+  - id: r02
+    topic: rules
+    q: A tournament rule, a card effect and the Comprehensive Rules all disagree. Which one wins?
+    choices:
+      - The tournament rule
+      - The card effect
+      - The Comprehensive Rules
+      - Whichever was published most recently
+    answer: 0
+    why: Card effects override the CR, and tournament rules override both.
+    cite: CR 1.0.1a–b
+
+  - id: r03
+    topic: rules
+    q: An attack is already defended by two action cards. It then gains overpower. What happens to the defenders?
+    choices:
+      - Both stay. Restrictions aren't retroactive.
+      - The defending player removes one of them.
+      - The attacking player removes one of them.
+      - Both are removed from the chain link.
+    answer: 0
+    why: Overpower only stops more action cards being added. It doesn't undo defenders already declared.
+    cite: CR 1.0.2b, 8.3.22b
+
+  - id: r04
+    topic: rules
+    q: An attack with dominate is defended by one card from hand. Which of these can the defending player still do?
+    choices:
+      - Play a defense reaction from their arsenal
+      - Play a defense reaction from their hand
+      - Add a second card from hand with an effect
+      - Nothing. Dominate locks out every other defender.
+    answer: 0
+    why: Dominate only limits cards coming from hand. Arsenal cards and equipment aren't from hand.
+    cite: CR 8.3.4a–b
+
+  - id: r05
+    topic: rules
+    q: In which combat step do players NOT get priority?
+    choices:
+      - Close Step
+      - Damage Step
+      - Resolution Step
+      - Layer Step
+    answer: 0
+    why: The combat chain closes with no priority. Players also get no priority in the start and end phases.
+    cite: CR 7.7.1, 1.11.3
+
+  - id: r06
+    topic: rules
+    q: During your opponent's turn, you play an action card with go again as an instant. What do you gain from go again?
+    choices:
+      - Nothing. You can only gain action points in your own action phase.
+      - 1 action point, which you keep until your turn
+      - 1 action point, which you lose at the end of the turn
+      - 1 resource point instead
+    answer: 0
+    why: If a player would gain an action point outside their own action phase, they gain nothing.
+    cite: CR 1.13.2b
+
+  - id: r07
+    topic: rules
+    q: A card that already has go again is given go again by another effect. What happens?
+    choices:
+      - That part of the effect fails. An object can't have go again twice.
+      - It gives 2 action points when it resolves.
+      - The player chooses which go again to keep.
+      - The second go again replaces the first.
+    answer: 0
+    why: An object can't have more than one go again ability.
+    cite: CR 8.3.5c
+
+  - id: r08
+    topic: rules
+    q: When does an attack with go again give its controller the action point?
+    choices:
+      - At the start of the Resolution Step
+      - When the attack goes on the stack
+      - When it hits
+      - When the combat chain closes
+    answer: 0
+    why: The action point for an attack's go again comes when its chain link resolves, at the start of the Resolution Step.
+    cite: CR 8.3.5b, 7.6.2
+
+  - id: r09
+    topic: rules
+    q: In the end-of-turn procedure, which comes first?
+    choices:
+      - The turn-player may put a card into their arsenal
+      - Pitched cards go to the bottom of the deck
+      - The turn-player untaps their permanents
+      - The turn-player draws up to intellect
+    answer: 0
+    why: "The order is: allies' life resets, arsenal, pitch to bottom, untap, lose action and resource points, draw."
+    cite: CR 4.4.3
+
+  - id: r10
+    topic: rules
+    q: At the end of the first turn of the game, who draws up to their hero's intellect?
+    choices:
+      - Every player
+      - Only the turn-player
+      - Only the player who didn't go first
+      - No one. Hands were drawn at the start of the game.
+    answer: 0
+    why: On the first turn, every player draws up to intellect in the end-of-turn procedure.
+    cite: CR 4.4.3f
+
+  - id: r11
+    topic: rules
+    q: Game 1 of a Swiss match ended in a draw. Who chooses the first player for game 2?
+    choices:
+      - The same player who chose in game 1
+      - The player who didn't choose in game 1
+      - It's decided at random again
+      - The player with the higher life total at the end of game 1
+    answer: 0
+    why: Normally the player who lost the last game chooses. After a draw, the same player chooses again.
+    cite: CR 4.1.3, TRP 3.3
+
+  - id: r12
+    topic: rules
+    q: In the start-of-game procedure, when are arena-cards (equipment and weapons) chosen?
+    choices:
+      - Before the deck is chosen
+      - After the deck is shuffled and presented
+      - After opening hands are drawn
+      - At the same moment as the deck, face down
+    answer: 0
+    why: "The order is: hero, first player, arena-cards chosen, arena-cards revealed, then the deck chosen."
+    cite: CR 4.1.4–4.1.6
+
+  - id: r13
+    topic: rules
+    q: You have 1 resource point floating and play a card that costs 3. You pitch a blue card (pitch 3). Can you pitch another card?
+    choices:
+      - No. The cost is paid and 1 resource is left over.
+      - Yes. You may pitch as many cards as you like while paying.
+      - Yes, but only a red card.
+      - No, and the extra resource is lost.
+    answer: 0
+    why: You can only pitch while you still owe a cost that card would help pay.
+    cite: CR 1.14.2d, 1.14.3b
+
+  - id: r14
+    topic: rules
+    q: A cost includes both chi points and resource points. In what order are they paid?
+    choices:
+      - Chi, then resources
+      - Resources, then chi
+      - The player's choice
+      - At the same time
+    answer: 0
+    why: "Asset-costs are paid in this order: chi, resources, life, then action points."
+    cite: CR 1.14.2a
+
+  - id: r15
+    topic: rules
+    q: A card costs 1. Effect A (earlier timestamp) reduces its cost by 2. Effect B (later timestamp) increases its cost by 1. What does it cost?
+    choices:
+      - "0"
+      - "1"
+      - "2"
+      - "-1"
+    answer: 0
+    why: Increases apply before reductions whatever their timestamps. 1 + 1 = 2, then -2 = 0.
+    cite: CR 5.1.6a
+
+  - id: r16
+    topic: rules
+    q: What is the action point cost of an action card played as an instant?
+    choices:
+      - "0"
+      - "1"
+      - The same as its resource cost
+      - It can't be played as an instant
+    answer: 0
+    why: An action card costs 1 action point unless it's played as an instant.
+    cite: CR 5.1.6b
+
+  - id: r17
+    topic: rules
+    q: "Endless Arrow says \"When this hits, put it into its owner's hand.\" It had go again when it hit. Does the player gain an action point when the chain link resolves?"
+    choices:
+      - Yes, through last known information
+      - No. The card is no longer on the chain.
+      - Only if they play it again this turn
+      - Only if the opponent agrees
+    answer: 0
+    why: The chain link keeps the arrow's last known information, including go again.
+    cite: CR 1.2.3a
+
+  - id: r18
+    topic: rules
+    q: A triggered layer is on the stack. The card that created it is destroyed. What happens to the layer?
+    choices:
+      - It still resolves.
+      - It's cleared from the stack.
+      - It resolves only if it has no targets.
+      - The opponent decides.
+    answer: 0
+    why: Activated and triggered layers exist separately from their source.
+    cite: CR 1.7.1a
+
+  - id: r19
+    topic: rules
+    q: "A card reads \"Deal 2 damage to target hero. Draw a card.\" Its only target is gone when it resolves. What happens?"
+    choices:
+      - The damage fails, but the player still draws.
+      - The whole card fails to resolve.
+      - The damage goes to the controller instead.
+      - The player picks a new target.
+    answer: 0
+    why: Only the targeted effect fails. The rest of the layer still resolves.
+    cite: CR 1.8.9, 5.3.4b
+
+  - id: r20
+    topic: rules
+    q: An attack has 4 {p} and is defended by cards with 4 total {d}. What happens?
+    choices:
+      - It doesn't hit. Power has to be greater than defense.
+      - It hits for 0.
+      - It hits for 1.
+      - Both players take 0 damage, and "on hit" effects still trigger.
+    answer: 0
+    why: An attack only hits if its power is greater than the total defense.
+    cite: CR 7.5.2
+
+  - id: r21
+    topic: rules
+    q: A prevention effect prevents all of an attack's damage. Did the attack hit?
+    choices:
+      - No. A hit needs damage from the hit-event.
+      - Yes. It was a hit-event.
+      - Yes, but "on hit" effects don't trigger.
+      - Only if it had dominate.
+    answer: 0
+    why: If replacement effects mean the attack deals no damage, it isn't a hit.
+    cite: CR 7.5.5b
+
+  - id: r22
+    topic: rules
+    q: Several replacement effects apply to one damage event. Which type applies first?
+    choices:
+      - Self/identity replacement
+      - Standard replacement
+      - Prevention
+      - Outcome replacement
+    answer: 0
+    why: "The order is: self/identity, standard, prevention, the event, then outcome."
+    cite: CR 6.5
+
+  - id: r23
+    topic: rules
+    q: A "prevent the next 3 damage" effect is created after the damage event has already happened. What does it do to that event?
+    choices:
+      - Nothing. Replacements must exist before the event.
+      - It prevents 3 of it retroactively.
+      - It gives back 3 life.
+      - It prevents the damage only if it was arcane.
+    answer: 0
+    why: Replacement effects are never retroactive.
+    cite: CR 6.4.3
+
+  - id: r24
+    topic: rules
+    q: "\"Whenever an opponent draws 1 or more cards\" — the opponent draws 3 cards from one effect. How many times does it trigger?"
+    choices:
+      - Once
+      - Three times
+      - Twice
+      - Not at all
+    answer: 0
+    why: A multi-event triggers once. It doesn't trigger again for each card.
+    cite: CR 1.9.2a
+
+  - id: r25
+    topic: rules
+    q: An effect would deal 0 arcane damage. Can "when you deal arcane damage" effects trigger?
+    choices:
+      - No. An instruction to do nothing doesn't happen.
+      - Yes. The event still occurred.
+      - Only if a replacement raises it above 0
+      - Only for the turn-player
+    answer: 0
+    why: Dealing 0 damage isn't an event. It can't be replaced and doesn't trigger anything.
+    cite: CR 1.9.1b
+
+  - id: r26
+    topic: rules
+    q: A player is told to search their deck for a specific card. They have one, but say they don't find it. Is that allowed?
+    choices:
+      - Yes. The opponent can't verify the deck, so they may fail to find.
+      - No. That's a Game Rules Violation.
+      - Only if the card is a token.
+      - Only in Casual events.
+    answer: 0
+    why: If the opponent can't verify an instruction failed, the player may choose to fail it.
+    cite: CR 1.9.1c
+
+  - id: r27
+    topic: rules
+    q: A resolved layer creates a continuous effect with no stated duration. When does it end?
+    choices:
+      - At the end of the turn
+      - When the combat chain closes
+      - At the start of its controller's next turn
+      - It never ends
+    answer: 0
+    why: Layer-continuous effects with no stated duration end at end of turn.
+    cite: CR 6.2.2a
+
+  - id: r28
+    topic: rules
+    q: An attack has base 3 {p}. It gets +2 {p} first. Later, an effect sets its power to 1. What is its power?
+    choices:
+      - "3"
+      - "1"
+      - "5"
+      - "6"
+    answer: 0
+    why: 'Set effects apply before add effects whatever their timestamps. 1 + 2 = 3.'
+    cite: CR 6.3.3
+
+  - id: r29
+    topic: rules
+    q: Several triggered layers are created at the same time for both players. Who decides the order they go on the stack?
+    choices:
+      - The turn-player picks a player to start. Then each player, clockwise, adds their own in any order.
+      - The turn-player orders all of them.
+      - They go on in timestamp order.
+      - The non-turn-player orders all of them.
+    answer: 0
+    why: The turn-player chooses who starts. Then each player adds their own triggers in the order they choose.
+    cite: CR 6.6.6b
+
+  - id: r30
+    topic: rules
+    q: Heave reads "you may pay {r}{r}{r} and put this face-up into your arsenal". Your arsenal is full. Can you choose to heave?
+    choices:
+      - No. You can't choose an optional effect you can't fully carry out.
+      - Yes. You pay and the card stays in hand.
+      - Yes, but you don't pay.
+      - Only if you have 3 resources floating.
+    answer: 0
+    why: If any part of an optional effect can't happen, or its cost can't be paid, you can't choose it.
+    cite: CR 1.8.3b
+
+  - id: r31
+    topic: rules
+    q: You control Spellvoid 2 equipment, but an effect says it can't be destroyed. You'd be dealt arcane damage. Can you use Spellvoid?
+    choices:
+      - No. If you can't destroy it, you can't use its prevention.
+      - Yes. It prevents 2 and stays.
+      - Yes. It prevents 2 and is banished instead.
+      - Only if you also pay 2 resources.
+    answer: 0
+    why: Spellvoid's prevention needs you to destroy the card.
+    cite: CR 8.3.15a
+
+  - id: r32
+    topic: rules
+    q: Which keyword destroys a card when the combat chain closes, if it defended?
+    choices:
+      - Blade Break
+      - Battleworn
+      - Guardwell
+      - Spellvoid
+    answer: 0
+    why: Blade Break destroys it. Battleworn adds a -1 defense counter. Temper adds a counter and destroys it at 0. Guardwell adds counters equal to its defense.
+    cite: CR 8.3.2–8.3.3
+
+  - id: r33
+    topic: rules
+    q: A player with no cards in hand is intimidated. Are they considered intimidated?
+    choices:
+      - Yes, even though nothing was banished
+      - No. Intimidate fails with an empty hand.
+      - Only if they have a card in arsenal
+      - Only for "when intimidated" effects they control
+    answer: 0
+    why: The player counts as intimidated even if they banished nothing.
+    cite: CR 8.5.10a
+
+  - id: r34
+    topic: rules
+    q: A player is told to opt 3, but only 2 cards are left in their deck. What happens?
+    choices:
+      - They look at both and put them back in any order.
+      - The opt fails.
+      - They lose the game.
+      - They look at 2, then shuffle the deck.
+    answer: 0
+    why: With fewer than N cards, the player looks at all of them. Opt only fails with an empty deck.
+    cite: CR 8.5.22a–b
+
+  - id: r35
+    topic: rules
+    q: You control two permanents with the same name, and one has unique. What happens?
+    choices:
+      - As a game state action, you clear down to one, or to none with unique.
+      - The second one can't enter the arena.
+      - Both are destroyed.
+      - Nothing, if they have different pitch values.
+    answer: 0
+    why: Unique is enforced as a game state action. It's a clear, not a destroy.
+    cite: CR 8.3.48a, 1.10.2b
+
+  - id: r36
+    topic: rules
+    q: How many red Sink Below and yellow Sink Below can a Classic Constructed card-pool have?
+    choices:
+      - Up to 3 of each. A different pitch makes them different cards.
+      - Up to 3 in total
+      - Up to 1 of each
+      - Up to 2 of each
+    answer: 0
+    why: Cards with a different name or pitch are different cards. CC allows 3 of each.
+    cite: CR 1.3.4, TRP 7.1
+
+  - id: r37
+    topic: rules
+    q: While the combat chain is open, when can the turn-player play an attack action card normally (not as an instant)?
+    choices:
+      - In the Resolution Step
+      - In the Reaction Step
+      - Any time they have priority
+      - Never while the chain is open
+    answer: 0
+    why: While the chain is open, actions can only be played as instants, except attacks during the Resolution Step.
+    cite: CR 7.0.1a, 7.6.3a
+
+  - id: r38
+    topic: rules
+    q: An ally is the target of an attack. Can its controller declare defending cards from their hand?
+    choices:
+      - Not unless an effect allows it
+      - Yes, like defending their hero
+      - Only equipment
+      - Only defense reactions
+    answer: 0
+    why: Players can only declare defenders from hand and equipment when the attack-target is a hero.
+    cite: CR 7.3.2a, 7.4.2b
+
+  - id: r39
+    topic: rules
+    q: Who is the attacking hero when an ally attacks?
+    choices:
+      - The ally's controller
+      - Nobody. Allies aren't heroes.
+      - The ally's owner, even if someone else controls it
+      - The defending player
+    answer: 0
+    why: The controller of the active attack is the attacking hero.
+    cite: CR 7.2.3a
+
+  - id: r40
+    topic: rules
+    q: Both heroes are reduced to 0 life at the same time. What is the result?
+    choices:
+      - The game is a draw
+      - The turn-player loses
+      - The non-turn-player loses
+      - The player who dealt the damage wins
+    answer: 0
+    why: If all remaining heroes hit 0 at the same time, the game is a draw.
+    cite: CR 4.5.4a
+
+  - id: r41
+    topic: rules
+    q: An effect calculates -3.5. What number is used?
+    choices:
+      - "-3"
+      - "-4"
+      - "0"
+      - "-3.5"
+    answer: 0
+    why: Fractions round toward zero.
+    cite: CR 1.12.1a
+
+  - id: r42
+    topic: rules
+    q: A card's text refers to "you", but the card has no controller (it was revealed in a clash). Who is "you"?
+    choices:
+      - Its owner
+      - The turn-player
+      - Nobody. The effect fails.
+      - The player who won the clash
+    answer: 0
+    why: With no controller, "you" means the owner.
+    cite: CR 1.1.2b
+
+  - id: r43
+    topic: rules
+    q: Ironsong Determination gives a weapon +1 power. The weapon then attacks. Does the attack-proxy have the +1?
+    choices:
+      - Yes. The proxy inherits the weapon's modified properties.
+      - No. The effect only applies to the weapon card.
+      - Only if it was applied after the attack.
+      - Only for the first attack this turn.
+    answer: 0
+    why: An attack-proxy inherits its source's properties, including changes from effects.
+    cite: CR 1.4.3d
+
+  - id: r44
+    topic: rules
+    q: Mage Master Boots gives And Again… (an "attack with target sword" card) go again. Does the sword attack it creates have go again?
+    choices:
+      - No. Effects on an attack-layer don't carry over to the attack it creates.
+      - Yes. Go again moves to the attack.
+      - Yes, but only if the sword has no go again of its own.
+      - Only on the first attack each turn.
+    answer: 0
+    why: An attack-layer and the attack it produces are separate objects.
+    cite: CR 1.4.4b
+
+  - id: r45
+    topic: rules
+    q: A card says "choose 3 if you've played another blue card this turn, otherwise choose 1". When is the number of modes decided?
+    choices:
+      - When the card is played and modes are declared
+      - When the card resolves
+      - At the start of the turn
+      - When an opponent responds
+    answer: 0
+    why: Modes, and how many can be chosen, are fixed as the card goes on the stack.
+    cite: CR 1.7.5a, 1.7.5e
+
+  # --- Card interactions (L1A) ---
+  - id: i01
+    topic: interactions
+    q: Predatory Plating says "Instant — Destroy this. Gain resources. Activate only if you control a card with 6 or more {p}." Can you activate it partway through playing a 6 {p} card, to pay that card's cost?
+    choices:
+      - No. No one has priority while a card is being played.
+      - Yes. The card is on the stack, so you control it.
+      - Yes, but only during the Pay Asset-Costs step.
+      - Only if the card is in your arsenal.
+    answer: 0
+    why: Activating an instant ability needs priority, and there is none during the steps of playing a card.
+    cite: CR 1.11.5, 5.2.2; Compendium of Rathe release notes
+
+  - id: i02
+    topic: interactions
+    q: A quickstrike attack ("If this has go again, +1 power and 'when this attacks a hero, …'") gets go again after it's already attacking. What does it get?
+    choices:
+      - The +1 power, but the "when this attacks" trigger doesn't fire
+      - Both the +1 and the trigger
+      - Neither. Quickstrike is checked only when the card is played.
+      - Only the trigger
+    answer: 0
+    why: The condition now applies, but a trigger moment that has passed doesn't fire.
+    cite: CR 6.6.5a; Omens of the Third Age release notes
+
+  - id: i03
+    topic: interactions
+    q: A card reads "Deal 2 arcane damage. Deal 2 arcane damage." Can you use Starflow Robes between the two damage instructions?
+    choices:
+      - No. The card fully resolves before anyone gets priority.
+      - Yes. Each damage instruction is a separate event.
+      - Yes, but only to prevent the second instruction.
+      - Only if you're the turn-player.
+    answer: 0
+    why: No one has priority while a layer is resolving.
+    cite: CR 1.11.5; Omens of the Third Age release notes
+
+  - id: i04
+    topic: interactions
+    q: Constella Tiara prevents damage. Can it stop "lose 2 life"?
+    choices:
+      - No. Prevention stops damage, not loss of life.
+      - Yes. Life loss is untyped damage.
+      - Only if it's caused by an attack
+      - Only arcane life loss
+    answer: 0
+    why: Losing life isn't damage, so prevention effects don't apply to it.
+    cite: Omens of the Third Age release notes
+
+  - id: i05
+    topic: interactions
+    q: Touch of Reality is activated with X = 0, so it gets Ward 0. If you use that Ward on a damage event, is it destroyed?
+    choices:
+      - Yes. Applying Ward destroys it, even though it prevents 0.
+      - No. Ward 0 does nothing.
+      - Only if damage was prevented.
+      - It's banished instead.
+    answer: 0
+    why: Applying a Ward prevention means destroying the card, whatever N is.
+    cite: CR 8.3.20; Compendium of Rathe release notes
+
+  - id: i06
+    topic: interactions
+    q: An Earth Bond card says you have to pitch an Earth card to pay for it. You already pitched an Earth card earlier this turn and have resources left from it. Is the bond met?
+    choices:
+      - No. You have to pitch the Earth card while paying for this card.
+      - Yes. Floating resources from an Earth card count.
+      - Yes, if it was pitched this turn.
+      - Only if the floating resources pay the whole cost.
+    answer: 0
+    why: Bond checks the cards pitched while paying for this specific card.
+    cite: Compendium of Rathe release notes
+
+  - id: i07
+    topic: interactions
+    q: Sigil of Silphidae's trigger is an optional targeted effect. If you add it to the stack without choosing a target, what happens?
+    choices:
+      - Nothing. None of its effects happen.
+      - You choose a target when it resolves.
+      - It targets the opposing hero by default.
+      - It's a Missed Trigger.
+    answer: 0
+    why: With an optional targeted effect, choosing no target means none of it is created.
+    cite: CR 1.8.5e; Compendium of Rathe release notes
+
+  - id: i08
+    topic: interactions
+    q: Flicker Reality is destroyed to apply its Ward. Its trigger would put a holo counter on another Ward card and raise that card's Ward. Can that happen in time for the same damage event?
+    choices:
+      - No. The trigger goes on the stack after the event.
+      - Yes. Triggers resolve right away during prevention.
+      - Yes, if both cards are controlled by the same player.
+      - Only for arcane damage.
+    answer: 0
+    why: Triggered layers wait for the next time triggers go on the stack. The damage event has finished by then.
+    cite: CR 6.6.6; Omens of the Third Age release notes
+
+  - id: i09
+    topic: interactions
+    q: Mist Hunter's contract needs you to banish an opponent's card. An effect makes the opponent banish one of their own cards. Does it count?
+    choices:
+      - No. You have to be the one banishing.
+      - Yes. A card was banished.
+      - Only if your effect caused it.
+      - Only in the end phase.
+    answer: 0
+    why: The contract needs you to be the player told to banish.
+    cite: Compendium of Rathe release notes
+
+  - id: i10
+    topic: interactions
+    q: Lay Down the Challenge says "Intimidate target hero, then if they have more cards in hand than you, draw a card." You target yourself. What happens?
+    choices:
+      - You intimidate yourself, but you won't draw.
+      - It can't target you.
+      - You intimidate yourself and draw.
+      - Nothing happens.
+    answer: 0
+    why: You can target yourself, but you can never have strictly more cards than yourself.
+    cite: Compendium of Rathe release notes
+
+  - id: i11
+    topic: interactions
+    q: Discarding Cosmic Duality from hand to pay for its ability counts as what?
+    choices:
+      - Activating an instant ability, not playing an instant
+      - Playing an instant
+      - Both playing and activating
+      - Neither. It's a discard event only.
+    answer: 0
+    why: Paying a cost with a card from hand activates its ability. It isn't playing the card.
+    cite: Omens of the Third Age release notes
+
+  # --- Penalties (L1B) ---
+  - id: p01
+    topic: policy
+    q: Which penalty is between a Warning and a Game Loss?
+    choices:
+      - Intellect Penalty (IP2)
+      - Caution
+      - Match Loss
+      - Disqualification
+    answer: 0
+    why: "The ladder is: Caution, Warning, IP2, Game Loss, Disqualification."
+    cite: PPG 1.4
+
+  - id: p02
+    topic: policy
+    q: A floor judge is about to give an IP2. When must they confirm it with the Head Judge first?
+    choices:
+      - Always, except for Tardiness and Decklist Error
+      - Never. Floor judges give any penalty up to a Game Loss.
+      - Only at Professional REL
+      - Only for Game Losses and above
+    answer: 0
+    why: Penalties of IP2 or higher should be confirmed with the HJ, except for Tardiness and Decklist Error.
+    cite: PPG 1.2
+
+  - id: p03
+    topic: policy
+    q: A ruling took 2 minutes and 20 seconds. How much extra time does the match get?
+    choices:
+      - 3 minutes
+      - 2 minutes
+      - None
+      - 5 minutes
+    answer: 0
+    why: Rulings over 1 minute get a time extension, rounded up to the minute.
+    cite: PPG 1.2
+
+  - id: p04
+    topic: policy
+    q: A player commits several related infractions at once. What penalties do they get?
+    choices:
+      - Each fix is applied, but only the single highest penalty is given
+      - Every penalty is given
+      - Only the first infraction is penalized
+      - The penalties are added together and upgraded
+    answer: 0
+    why: Apply every fix, but give only the highest penalty.
+    cite: PPG 1.2
+
+  - id: p05
+    topic: policy
+    q: A player plays a card without paying its full cost. It's caught right away. What's the ruling?
+    choices:
+      - Game Rules Violation, Warning, simple rewind
+      - Game Rules Violation, Caution, no rewind
+      - Hidden Card Error, Warning
+      - Cheating, Disqualification
+    answer: 0
+    why: Caught right away means a simple rewind. GRV is a Warning.
+    cite: PPG 2.1
+
+  - id: p06
+    topic: policy
+    q: The opponent had a reasonable chance to notice a GRV but didn't. What do they get?
+    choices:
+      - A Warning for Failure to Maintain Game State
+      - Nothing
+      - A Caution for Failure to Maintain Game State
+      - A GRV Warning in every case
+    answer: 0
+    why: The opponent gets FtMGS. If they share responsibility, they get a GRV instead.
+    cite: PPG 2.1, 2.2
+
+  - id: p07
+    topic: policy
+    q: A player gets their third Failure to Maintain Game State of the day. What penalty do they get?
+    choices:
+      - Warning. FtMGS is never upgraded for repeats.
+      - IP2
+      - Game Loss
+      - Caution
+    answer: 0
+    why: FtMGS is the gameplay infraction that's excluded from repeat upgrades.
+    cite: PPG 2.2, 2
+
+  - id: p08
+    topic: policy
+    q: On the same tournament day, which repeat of a gameplay infraction upgrades the penalty?
+    choices:
+      - The 3rd
+      - The 2nd
+      - The 4th
+      - Gameplay infractions never upgrade
+    answer: 0
+    why: Gameplay infractions go up a level on the 3rd of the same type in a day. Tournament infractions go up on the 2nd.
+    cite: PPG 2, 3
+
+  - id: p09
+    topic: policy
+    q: A player forgets their own trigger, and missing it helped them. What is the penalty?
+    choices:
+      - Warning (Missed Trigger, upgraded)
+      - Caution
+      - IP2
+      - Game Loss
+    answer: 0
+    why: Missed Trigger is a Caution, upgraded to a Warning if missing their own trigger helped them.
+    cite: PPG 2.3
+
+  - id: p10
+    topic: policy
+    q: A trigger's only effect is optional, and the controller never acknowledges it. What is it?
+    choices:
+      - Not an infraction. They're assumed to have chosen not to use it.
+      - A Missed Trigger, Caution
+      - A Game Rules Violation, Warning
+      - Failure to Maintain Game State
+    answer: 0
+    why: An unacknowledged optional effect defaults to "no".
+    cite: PPG 2.3, TRP 5.14
+
+  - id: p11
+    topic: policy
+    q: While drawing for the end of turn, a player accidentally sees the next card of their fully randomized deck. What's the fix?
+    choices:
+      - Warning for Looking at Extra Cards. Shuffle the card back into the deck.
+      - Warning. The opponent puts the card on the top or bottom.
+      - IP2 and shuffle the deck
+      - Caution, with no fix
+    answer: 0
+    why: Cards from a randomized deck are shuffled back in. If the opponent hasn't accepted the phase change, it may just stay on top.
+    cite: PPG 2.4
+
+  - id: p12
+    topic: policy
+    q: A player has intellect 4 and draws 5 cards into their hand at the end of the turn. What's the ruling?
+    choices:
+      - Hidden Card Error, Warning. Show the hand to the opponent, who chooses the card to go back to the top or bottom.
+      - Looking at Extra Cards, Warning. Shuffle one card back.
+      - Game Rules Violation. Return a random card.
+      - Shuffling Error, IP2
+    answer: 0
+    why: The extra card can't be identified with public information, so it's a Hidden Card Error.
+    cite: PPG 2.5
+
+  - id: p13
+    topic: policy
+    q: A player absent-mindedly shuffles their pitch zone into their deck. What penalty do they get?
+    choices:
+      - IP2 (Shuffling Error)
+      - Warning (Game Rules Violation)
+      - Game Loss
+      - Caution
+    answer: 0
+    why: Randomizing an ordered set by mistake is a Shuffling Error, IP2.
+    cite: PPG 2.6
+
+  - id: p14
+    topic: policy
+    q: At Competitive REL, a player presents a flip-card on the wrong face. What penalty do they get?
+    choices:
+      - Caution
+      - Warning
+      - IP2
+      - Game Loss
+    answer: 0
+    why: A flip-card on the wrong face is lowered to a Caution at every REL.
+    cite: PPG 2.7
+
+  - id: p15
+    topic: policy
+    q: At Professional REL, a player presents a CC deck of 59 cards with a legal decklist. What penalty do they get?
+    choices:
+      - IP2 (Presenting Cards Error, upgraded at Pro)
+      - Warning
+      - Game Loss
+      - Card-Pool Contents Error, IP2
+    answer: 0
+    why: Presenting Cards Error is a Warning, upgraded to IP2 at Professional REL. One card off isn't a Game Loss.
+    cite: PPG 2.7
+
+  - id: p16
+    topic: policy
+    q: A player arrives 40 seconds after the round starts. What penalty do they get?
+    choices:
+      - Warning
+      - IP2
+      - Game Loss
+      - Nothing
+    answer: 0
+    why: Tardiness is an IP2, lowered to a Warning under 1 minute.
+    cite: PPG 3.1
+
+  - id: p17
+    topic: policy
+    q: A player arrives 12 minutes after the round starts. What penalty do they get?
+    choices:
+      - Game Loss
+      - IP2
+      - Disqualification
+      - Match Loss
+    answer: 0
+    why: Over 10 minutes late is upgraded to a Game Loss.
+    cite: PPG 3.1
+
+  - id: p18
+    topic: policy
+    q: A spectator signals a player about what's in the opponent's hand. What happens to the spectator?
+    choices:
+      - A Game Loss in their next game, and they're removed from the area
+      - A Warning
+      - Nothing. Spectators can't be penalized.
+      - Disqualification
+    answer: 0
+    why: Outside assistance from a spectator gives them a Game Loss for their next game.
+    cite: PPG 3.2
+
+  - id: p19
+    topic: policy
+    q: A player has already had two Slow Play Warnings in this tournament and is slow again. What penalty do they get?
+    choices:
+      - Game Loss
+      - Warning
+      - IP2
+      - Disqualification
+    answer: 0
+    why: "Slow Play goes Caution, then Warning, then a Game Loss after two Warnings."
+    cite: PPG 3.3
+
+  - id: p20
+    topic: policy
+    q: An opponent says the player has been slow all game, but the judge hasn't seen it. What should the judge do?
+    choices:
+      - Watch the game. Only penalize slow play the judge sees.
+      - Give a Caution based on the report
+      - Add 3 minutes to the match
+      - Give the opponent a Warning for Rules Sharking
+    answer: 0
+    why: Slow Play penalties are only given after a judge sees it. No extra time is given for reports alone.
+    cite: PPG 3.3
+
+  - id: p21
+    topic: policy
+    q: Before round 1, a player tells the judge they forgot one equipment card on their decklist. What penalty do they get?
+    choices:
+      - Warning (Decklist Error, lowered)
+      - IP2
+      - Game Loss
+      - Nothing
+    answer: 0
+    why: A minor decklist error caught before round 1, or reported by the player, is lowered to a Warning.
+    cite: PPG 3.4
+
+  - id: p22
+    topic: policy
+    q: A player's decklist is correct, but their card-pool is missing a card that's on the list. Nothing extra is in it. What penalty do they get?
+    choices:
+      - Caution (Card-Pool Contents Error, lowered)
+      - IP2
+      - Warning
+      - Game Loss
+    answer: 0
+    why: Card-Pool Contents Error is an IP2, lowered to a Caution when cards are only missing.
+    cite: PPG 3.5
+
+  - id: p23
+    topic: policy
+    q: During a draft, a player says out loud what class they're drafting. When is the penalty given?
+    choices:
+      - A Game Loss after the draft ends
+      - A Game Loss right away, pausing the draft
+      - A Warning right away
+      - A Disqualification
+    answer: 0
+    why: A major Draft Procedure Violation is a Game Loss, given after the draft so it doesn't affect the rest of the draft.
+    cite: PPG 3.6.2
+
+  - id: p24
+    topic: policy
+    q: Three cards in a deck are in sleeves of a slightly different shade. There's no sign of intent or advantage. What penalty do they get?
+    choices:
+      - Warning. Re-sleeve before the next match.
+      - Game Loss
+      - Disqualification
+      - Caution
+    answer: 0
+    why: Marked Cards is a Warning. It's only upgraded if the HJ thinks there was a significant advantage.
+    cite: PPG 3.7
+
+  - id: p25
+    topic: policy
+    q: A player says "attack for four". The opponent blocks exactly four. Then the player says "sorry, it's three". What's the ruling?
+    choices:
+      - Communicating Incorrect Game Information, Warning. Rewind to before the blocks.
+      - Game Rules Violation, Warning. Leave the blocks.
+      - Rules Sharking, Warning
+      - Nothing. The opponent should have checked.
+    answer: 0
+    why: The opponent acted on wrong public information. Rewind to before their affected action.
+    cite: PPG 3.9
+
+  - id: p26
+    topic: policy
+    q: What two conditions both have to be true for an infraction to be Cheating?
+    choices:
+      - The player meant to gain an advantage, and knew it was prohibited
+      - The player gained an advantage, and the opponent noticed
+      - It happened at Competitive REL or above, and it was on purpose
+      - A judge saw it, and a spectator confirmed it
+    answer: 0
+    why: Without both intent to gain an advantage and knowing it's prohibited, it's a different infraction.
+    cite: PPG 4.2
+
+  - id: p27
+    topic: policy
+    q: After time is called, two players agree to flip a coin for the win. What do they get?
+    choices:
+      - A Game Loss each (Improperly Determining a Winner)
+      - Disqualification
+      - A Warning each
+      - A draw is recorded, with no penalty
+    answer: 0
+    why: Using anything other than playing the game to decide the winner is a Game Loss. Both players can receive one.
+    cite: PPG 4.4
+
+  - id: p28
+    topic: policy
+    q: A new player, not knowing the rules, offers part of their prize for a concession. What penalty do they get?
+    choices:
+      - Game Loss (Bribery, lowered for ignorance)
+      - Disqualification
+      - Warning
+      - Nothing. Prize splits are allowed.
+    answer: 0
+    why: Bribery is a DQ, lowered to a Game Loss when it's done out of ignorance.
+    cite: PPG 4.5
+
+  - id: p29
+    topic: policy
+    q: A player asks their opponent to concede, not knowing it's against the rules. What penalty do they get?
+    choices:
+      - Warning (Improper Concession, lowered)
+      - Game Loss
+      - Disqualification
+      - Caution
+    answer: 0
+    why: Improper Concession is a Game Loss, lowered to a Warning for ignorance. Asking again is a DQ.
+    cite: PPG 4.9
+
+  - id: p30
+    topic: policy
+    q: The only evidence of Rules Sharking is a guess about the player's intent. What penalty do they get?
+    choices:
+      - Caution, and teach them what's expected
+      - Warning
+      - Game Loss
+      - No action at all
+    answer: 0
+    why: Rules Sharking is lowered to a Caution when the accusation is purely speculative.
+    cite: PPG 4.10
+
+  - id: p31
+    topic: policy
+    q: What separates Stalling from Slow Play?
+    choices:
+      - Intent. Stalling is deliberately running out the clock.
+      - How long the delay was
+      - Whether the round is timed
+      - The REL
+    answer: 0
+    why: Stalling is deliberate and a DQ. Slow Play is accidental and starts at a Caution.
+    cite: PPG 4.8, 3.3
+
+  - id: p32
+    topic: policy
+    q: A player gets a Game Loss after their match has finished. When does it apply?
+    choices:
+      - To their next game
+      - It's discarded
+      - The match result is changed
+      - It turns into an IP2 next game
+    answer: 0
+    why: Between games, or after time is up, a Game Loss applies to the next game.
+    cite: PPG 1.4
+
+  - id: p33
+    topic: policy
+    q: A player with a running IP2 gets another IP2. What happens?
+    choices:
+      - The current IP is extended by 2 more turns
+      - Their intellect drops by 2 for 2 turns
+      - It upgrades to a Game Loss
+      - Nothing. IPs don't stack.
+    answer: 0
+    why: A new IP extends the existing one by that many turns.
+    cite: PPG 1.4
+
+  - id: p34
+    topic: policy
+    q: Who can approve a deviation from the PPG?
+    choices:
+      - Only the Head Judge
+      - Any judge
+      - The Tournament Organizer
+      - The two players, if they agree
+    answer: 0
+    why: Judges can suggest a deviation, but only the HJ decides, to keep rulings consistent.
+    cite: PPG 1.2
+
+  - id: p35
+    topic: policy
+    q: A player demands the Head Judge before the judge who answered the call has given a ruling. What is that?
+    choices:
+      - Unsporting Conduct – Minor, Warning
+      - An appeal, which is allowed
+      - Unsporting Conduct – Major, DQ
+      - Not an infraction
+    answer: 0
+    why: Demanding the HJ before the first judge rules is listed as minor Unsporting Conduct. Appeals come after a ruling.
+    cite: PPG 4.1.1, TRP 3.9
+
+  - id: p36
+    topic: policy
+    q: Should a judge step into a game to point out a Missed Trigger that would only be a Caution?
+    choices:
+      - "No"
+      - Yes, always
+      - Only at Professional REL
+      - Only if the opponent hasn't noticed
+    answer: 0
+    why: Judges shouldn't step in for Caution-level Missed Triggers, or for minor issues the players fix quickly themselves.
+    cite: PPG 1.2
+
+  - id: p37
+    topic: policy
+    q: A player hands back a card they took by mistake after a misunderstanding. What can the Head Judge do with the Theft penalty?
+    choices:
+      - Lower it to a Warning
+      - Nothing. Theft is always a DQ.
+      - Lower it to a Game Loss
+      - Lower it to a Caution
+    answer: 0
+    why: Theft can be lowered to a Warning for a misunderstanding or ignorance when the item is returned.
+    cite: PPG 4.7
+
+  # --- Tournament rules (L1B) ---
+  - id: t01
+    topic: tournament
+    q: What REL is a ProQuest?
+    choices:
+      - Competitive
+      - Casual
+      - Professional
+      - Set by the Tournament Organizer
+    answer: 0
+    why: ProQuest is Tier 2, Competitive.
+    cite: TRP A.1
+
+  - id: t02
+    topic: tournament
+    q: What REL is day 2 of a Calling?
+    choices:
+      - Professional
+      - Competitive
+      - Casual
+      - The same as day 1
+    answer: 0
+    why: Callings are Competitive on day 1 and Professional from day 2.
+    cite: TRP 1.2, A.1
+
+  - id: t03
+    topic: tournament
+    q: At which tiers may the Tournament Organizer also be a judge?
+    choices:
+      - Tier 1 only
+      - Tiers 1 and 2
+      - Any tier
+      - Never
+    answer: 0
+    why: At Tier 2 and above, the TO may not judge.
+    cite: TRP 2.1
+
+  - id: t04
+    topic: tournament
+    q: Can a judge also play in a Skirmish?
+    choices:
+      - No. Officials can play at Tier 1 events except Skirmish.
+      - Yes. Skirmish is Tier 1.
+      - Only if there are fewer than 8 players
+      - Only with the TO's permission
+    answer: 0
+    why: Skirmish is the exception to the Tier 1 rule.
+    cite: TRP 2.1
+
+  - id: t05
+    topic: tournament
+    q: What are the time limits for the start-of-game procedure?
+    choices:
+      - 5 minutes for game 1, 3 minutes for later games
+      - 3 minutes for every game
+      - 5 minutes for every game
+      - 10 minutes for game 1, 5 minutes for later games
+    answer: 0
+    why: Going over the limit is slow play.
+    cite: TRP 3.3
+
+  - id: t06
+    topic: tournament
+    q: Time is called in a Swiss round mid-game. What happens?
+    choices:
+      - The turn-player finishes their turn, then 1 more turn is played. Then it's a draw if there's no winner.
+      - The game ends now as a draw
+      - 3 more turns are played
+      - The player with higher life wins
+    answer: 0
+    why: Swiss rounds play the current turn plus one more turn.
+    cite: TRP 3.4
+
+  - id: t07
+    topic: tournament
+    q: In a play-off, a game can't be completed and both heroes have the same life total. What happens next?
+    choices:
+      - The match winner is whoever has more game wins. If tied, play a 4-turn tiebreaker game.
+      - The higher seed wins right away
+      - The match is a draw
+      - Flip a coin
+    answer: 0
+    why: Only after the tiebreaker game is still tied does the higher seed win.
+    cite: TRP 3.4
+
+  - id: t08
+    topic: tournament
+    q: When is an intentional draw NOT allowed?
+    choices:
+      - In elimination rounds
+      - At Professional REL
+      - In the last Swiss round
+      - Never. Draws are always allowed.
+    answer: 0
+    why: Draws aren't an acceptable result in elimination rounds.
+    cite: TRP 3.5
+
+  - id: t09
+    topic: tournament
+    q: Time has been called. A player takes a game action, then wants to concede. Can they?
+    choices:
+      - No. Concessions must come before taking an action after time is called.
+      - Yes, any time
+      - Only if the opponent agrees
+      - Only in elimination rounds
+    answer: 0
+    why: Once a player takes an action after time is called, they have to play the game out.
+    cite: TRP 3.5
+
+  - id: t10
+    topic: tournament
+    q: A player asks for a different judge than the one who came to the call. What happens?
+    choices:
+      - Not allowed. They can appeal the ruling to the HJ instead.
+      - The judge must swap
+      - Allowed at Competitive REL
+      - Allowed for language reasons only
+    answer: 0
+    why: Players can't choose their judge. They can ask for a translator, and they can appeal before the fix is applied.
+    cite: TRP 3.9
+
+  - id: t11
+    topic: tournament
+    q: A match is paused for a regular deck check that takes 6 minutes. How much extra time does it get?
+    choices:
+      - 9 minutes
+      - 6 minutes
+      - 3 minutes
+      - None
+    answer: 0
+    why: The extra time is the deck check time plus 3 minutes to shuffle and present.
+    cite: TRP 3.2
+
+  - id: t12
+    topic: tournament
+    q: An opponent asks what an untapped permanent's current power is after an effect changed it. What kind of information is that?
+    choices:
+      - Public. It must be answered completely and honestly.
+      - Visible. It must be answered completely and honestly.
+      - Assisted. Only a judge can answer.
+      - Historical. No one has to answer.
+    answer: 0
+    why: Properties that differ from the printed card are public information.
+    cite: TRP 5.1
+
+  - id: t13
+    topic: tournament
+    q: A player asks for the exact text of a card in the opponent's graveyard. What kind of information is that?
+    choices:
+      - Assisted
+      - Public
+      - Visible
+      - Private
+    answer: 0
+    why: Printed card text, rules and policy are assisted information, which a judge provides.
+    cite: TRP 5.1
+
+  - id: t14
+    topic: tournament
+    q: Which of these is allowed note-taking during a game?
+    choices:
+      - A die showing how many resources you have floating
+      - A die counting the turn number
+      - Writing down the order of pitched cards
+      - Writing down cards the opponent revealed
+    answer: 0
+    why: Markers can show visible or public information. Turn counts and pitch tracking aren't allowed.
+    cite: TRP 5.8
+
+  - id: t15
+    topic: tournament
+    q: When may a player look at their own sideboard notes?
+    choices:
+      - During the start-of-game procedure
+      - Any time between turns
+      - Never during a match
+      - Only with a judge present
+    answer: 0
+    why: Notes and devices are allowed during the start-of-game procedure, but not during the game itself.
+    cite: TRP 5.9
+
+  - id: t16
+    topic: tournament
+    q: A player plays an attack without saying what it targets. The opponent controls an ally too. What is the target?
+    choices:
+      - The opposing hero (the default decision)
+      - The ally
+      - The attack fails
+      - The opponent chooses
+    answer: 0
+    why: A missing target for an attack or damage defaults to the opposing hero.
+    cite: TRP 5.14
+
+  - id: t17
+    topic: tournament
+    q: A player says "no blocks", then right away says "wait, I'll block with these". What can the judge do?
+    choices:
+      - Allow it if no information was gained since
+      - Never allow it
+      - Allow it only with a Warning
+      - Allow it only if the opponent agrees
+    answer: 0
+    why: Actions can be reversed only when the judge is sure no information was gained.
+    cite: TRP 5.4
+
+  - id: t18
+    topic: tournament
+    q: How must a player choose a random card from a set?
+    choices:
+      - Say which die numbers match which cards before rolling, or shuffle the unmarked cards face down and let the opponent pick
+      - Have the opponent pick face up
+      - Pick the top card of the pile
+      - Use any method the opponent accepts afterward
+    answer: 0
+    why: Every card has to have the same chance, and the dice mapping is announced before the roll.
+    cite: TRP 5.12
+
+  - id: t19
+    topic: tournament
+    q: What does a Blitz card-pool look like?
+    choices:
+      - Young hero, up to 52 cards, 1 copy of each, a deck of exactly 40
+      - Adult hero, 80 cards, 3 copies, a deck of 60+
+      - Young hero, 55 cards, 2 copies, commons and rares only
+      - Young hero, 52 cards, 2 copies, a deck of exactly 40
+    answer: 0
+    why: The others describe Classic Constructed, Silver Age and Ultimate Pit Fight.
+    cite: TRP 7.3
+
+  - id: t20
+    topic: tournament
+    q: In the first game of a play-off match, who chooses the first player?
+    choices:
+      - The player with the higher standing
+      - A random player
+      - The player with the lower standing
+      - The Head Judge
+    answer: 0
+    why: Play-off game 1 uses standings. Later games go to the loser of the previous game.
+    cite: TRP 3.3
+
+  - id: t21
+    topic: tournament
+    q: At Competitive REL, can a spectator call a judge to a game?
+    choices:
+      - No, but they may quietly bring the game to a judge's attention
+      - Yes, by calling out "Judge!"
+      - Only if they're a judge themselves
+      - Only at Professional REL
+    answer: 0
+    why: At Competitive and Professional REL, spectators can't call judges but can quietly alert one.
+    cite: TRP 3.9, 2.3
+
+  - id: t22
+    topic: tournament
+    q: A player in a Pro REL play-off refuses to be in a feature match. What happens?
+    choices:
+      - They receive a match loss for the round
+      - Nothing
+      - A Warning
+      - They're moved to another table
+    answer: 0
+    why: Turning down a feature match is only free in Swiss at Casual and Competitive REL.
+    cite: TRP 3.11

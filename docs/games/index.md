@@ -72,4 +72,12 @@ hide:
     **Genre:** Tactical RPG<br>
     **Release Date:** May 1993
 
+-   :material-cards-playing:{ .lg .middle } __[Flesh and Blood](flesh-and-blood/index.md)__
+
+    ---
+
+    **System:** Trading card game<br>
+    **Genre:** Judge exam study<br>
+    **Release Date:** October 11, 2019
+
 </div>

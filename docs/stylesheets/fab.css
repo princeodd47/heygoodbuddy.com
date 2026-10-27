@@ -1,0 +1,157 @@
+/* Flesh and Blood judge study pages: card symbols and the practice quiz. */
+#fab-quiz {
+  --fq-line: var(--md-default-fg-color--lighter);
+  --fq-right: #2e7d32;
+  --fq-wrong: #c62828;
+  margin-top: 1em;
+}
+
+[data-md-color-scheme="slate"] #fab-quiz {
+  --fq-right: #66bb6a;
+  --fq-wrong: #ef5350;
+}
+
+#fab-quiz .fq-setup {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.8em 1.2em;
+}
+
+#fab-quiz select {
+  margin-left: 0.3em;
+  padding: 0.3em 0.5em;
+  font: inherit;
+  color: var(--md-default-fg-color);
+  background: var(--md-default-bg-color);
+  border: 1px solid var(--fq-line);
+  border-radius: 0.2rem;
+}
+
+#fab-quiz .md-button {
+  margin: 0.2em 0;
+  cursor: pointer;
+}
+
+#fab-quiz .fq-review {
+  margin-top: 1em;
+}
+
+#fab-quiz .fq-clear {
+  font-size: 0.85em;
+}
+
+#fab-quiz .fq-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5em;
+  font-size: 0.85em;
+  color: var(--md-default-fg-color--light);
+}
+
+#fab-quiz .fq-card {
+  max-width: 40rem;
+  margin-top: 0.6em;
+  padding: 0.8em 1em;
+  background: var(--md-code-bg-color);
+  border: 1px solid var(--fq-line);
+  border-radius: 0.3rem;
+}
+
+#fab-quiz .fq-topic {
+  font-size: 0.75em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--md-accent-fg-color);
+}
+
+#fab-quiz .fq-q {
+  margin: 0.4em 0 0.8em;
+  font-weight: 600;
+}
+
+#fab-quiz .fq-choices {
+  display: grid;
+  gap: 0.5em;
+}
+
+#fab-quiz .fq-choice {
+  padding: 0.6em 0.8em;
+  font: inherit;
+  text-align: left;
+  color: var(--md-default-fg-color);
+  background: var(--md-default-bg-color);
+  border: 1px solid var(--fq-line);
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+#fab-quiz .fq-choice:hover:enabled,
+#fab-quiz .fq-choice:focus-visible {
+  border-color: var(--md-accent-fg-color);
+}
+
+#fab-quiz .fq-choice:disabled {
+  cursor: default;
+  opacity: 0.75;
+}
+
+#fab-quiz .fq-choice.fq-right {
+  border: 2px solid var(--fq-right);
+  opacity: 1;
+}
+
+#fab-quiz .fq-choice.fq-wrong {
+  border: 2px solid var(--fq-wrong);
+  opacity: 1;
+}
+
+#fab-quiz .fq-why {
+  margin-top: 0.8em;
+  padding: 0.6em 0.8em;
+  border-left: 4px solid var(--fq-right);
+  background: var(--md-default-bg-color);
+}
+
+#fab-quiz .fq-why-wrong {
+  border-left-color: var(--fq-wrong);
+}
+
+#fab-quiz .fq-cite {
+  margin-top: 0.3em;
+  font-size: 0.8em;
+  color: var(--md-default-fg-color--light);
+}
+
+#fab-quiz .fq-next {
+  margin-top: 0.8em;
+}
+
+#fab-quiz .fq-score {
+  margin: 0;
+  font-size: 1.6em;
+  font-weight: 700;
+}
+
+#fab-quiz .fq-pass {
+  color: var(--fq-right);
+  font-weight: 600;
+}
+
+#fab-quiz .fq-fail {
+  color: var(--fq-wrong);
+  font-weight: 600;
+}
+
+/* Card symbols. Tap and untap are black glyphs, so every symbol gets a white
+   disc behind it to stay readable in dark mode. */
+.md-typeset img.fab-icon {
+  display: inline-block;
+  width: 1.15em;
+  height: 1.15em;
+  vertical-align: -0.2em;
+  background: #fff;
+  border-radius: 50%;
+}
