@@ -22,6 +22,7 @@ for enemy stats.
   gives better stats.
 - If Max falls, you lose the battle. You keep your EXP and go back to the
   last priest with half your gold, so a lost fight still trains your units.
+  *Check in game: this comes from the series, not the guides used here.*
 - Max's Egress spell, or an Angel Wing, leaves a battle any time.
 
 ## Chapter 1
@@ -34,6 +35,7 @@ for enemy stats.
   items for now.
 - **Gong:** leave Battle 1 or 2 early, by walking Max off the bottom edge
   or with Egress. The red-roofed cabin to the east has Gong chopping wood.
+  *Check in game: whether he's still there after Battle 2.*
   Talk to him and he joins. Get him before Battle 3. Also talk to the hamster beside the cabin,
   which you need for Jogurt later.
 
@@ -305,7 +307,8 @@ to Karin and Krin.
 - King Kusoko throws you in jail. Search the bars and Boken lets you out.
   Talk to the king again.
 - **Musashi:** after that, search the small sign on the wall of the house
-  with two doors, north of the castle.
+  with two doors, north of the castle. *Check in game: another guide puts
+  the sign under the "Tales of Really Long Ago" bookshelf.*
 
 ### Battle 22: Outside Prompt
 

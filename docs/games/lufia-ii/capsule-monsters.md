@@ -51,6 +51,9 @@ has already had.
   outright. Low GUT, so it runs sometimes.
 - **Zeppy** has high magic resistance and its ice magic silences.
 
+*Check in game: one guide calls Gusto's form 4 Green Giant, not Green
+Titan.*
+
 ## Master forms
 
 1. Feed the monster until it reaches **form 4**.
@@ -66,6 +69,9 @@ has already had.
 | **Blaze** | Wing Lizard (form 3) | Charm Fruit | Evil Fish drop (Tower of Sacrifice) |
 | **Darbi** | Wolfman (form 2) | Holy Fruit | White Dragon drop (Tower of Truth) |
 | **Flash** | Sprite (form 2) | Dark Fruit | Black Dragon drop (around Chaed and in Dragon Mountain) |
+
+*Check in game: one guide calls Zeppy's master fruit Blaze Fruit, and
+another hints the monster mustn't be hungry when you feed it.*
 
 Keep the Secret Fruit from the Alunze basement. Zeppy's cave has two more.
 The Egg Dragon's fruit wish gives 20 of every fruit.

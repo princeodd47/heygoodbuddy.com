@@ -23,7 +23,7 @@ abbreviations.
 | **Tao** | Mage → Wizard | Guardiana, Chapter 1 | Starting team. Learns Blaze 1–4. |
 | **Lowe** | Healer → Vicar | Guardiana, Chapter 1 | Starting team. |
 | **Hans** | Archer → Bow Master | Guardiana, Chapter 1 | Starting team. |
-| **Gong** | Monk → Master Monk | Cabin east of Guardiana | **Optional.** Leave Battle 1 or 2 early (walk Max off the bottom edge, or Egress) and talk to him at the red-roofed cabin to the east. Get him before Battle 3. |
+| **Gong** | Monk → Master Monk | Cabin east of Guardiana | **Optional.** Leave Battle 1 or 2 early (walk Max off the bottom edge, or Egress) and talk to him at the red-roofed cabin to the east. Get him before Battle 3. *Check in game: whether he's still there after Battle 2.* |
 | **Mae** | Knight → Paladin | Guardiana, after Battle 2 | Story. |
 | **Gort** | Warrior → Gladiator | Guardiana bar, after Battle 2 | **Optional.** Hear his story in the bar on your first visit. |
 | **Khris** | Healer → Vicar | Alterone jail | Search the cell door. |
@@ -42,7 +42,7 @@ abbreviations.
 | **Earnest** | Knight → Paladin | Uranbatol, Battle 13 | Talk to him after the dog scene. |
 | **Lyle** | Assault Knight → Strike Knight | Rudo | Building west of the dragon statue, two floors up. |
 | **Bleu** | Dragon → Great Dragon | Dragonia | Talk to him twice. Starts weak and grows huge. Flies. |
-| **Musashi** | Samurai | Prompt | **Optional.** After the jail scene, talk to the king again, then search the small sign on the house with two doors north of the castle. Joins already promoted. |
+| **Musashi** | Samurai | Prompt | **Optional.** After the jail scene, talk to the king again, then search the small sign on the house with two doors north of the castle. Joins already promoted. *Check in game: another guide puts the sign under the "Tales of Really Long Ago" bookshelf.* |
 | **Alef** | Mage → Wizard | After Battle 23 | Story. Learns Bolt 1–4. |
 | **Torasu** | Healer → Vicar | After Battle 23 | Story. The only one who learns Aura 4. |
 | **Adam** | Robot → Cyborg | Metapha, after Battle 24 | Talk to the robot at the Shining Path before you use the Orb of Light there. Slow. |

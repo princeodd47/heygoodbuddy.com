@@ -9,13 +9,13 @@ groups:
       - {name: "Angel Wing", price: "40", effect: "Leaves the battle and returns to the last town, like Egress.", where: "Every shop"}
       - {name: "Antidote", price: "20", effect: "Cures poison.", where: "Every shop from Rindo on"}
   - type: "Chest-only items"
-    note: "The stat items are permanent boosts. Give them to units you'll keep using. One guide suggests waiting until after promotion."
+    note: "The stat items are permanent boosts. Give them to units you'll keep using. One guide suggests waiting until after promotion. Check in game: guides say +1 to 2 or a flat +2."
     items:
       - {name: "Power Potion", price: "—", effect: "Attack +1 to 2.", where: "Guardiana Castle; Alterone (push the cart); Mishaela's Lair"}
       - {name: "Defense Potion", price: "—", effect: "Defense +1 to 2.", where: "Guardiana Castle; Alterone Castle; Rindo Circus; Waral Castle"}
       - {name: "Bread of Life", price: "—", effect: "Max HP +1 to 2.", where: "Alterone Castle; Pao; Waral Castle"}
       - {name: "Legs of Haste", price: "—", effect: "Agility +1 to 2.", where: "Pao, the big wagon"}
-      - {name: "Shower of Cure", price: "—", effect: "Restores about 40 HP to the whole force.", where: "Waral Castle; Dragonia; Mishaela's Lair"}
+      - {name: "Shower of Cure", price: "—", effect: "Restores about 40 HP to the whole force. Check in game: only one guide gives a number.", where: "Waral Castle; Dragonia; Mishaela's Lair"}
       - {name: "Turbo Pepper", price: "—", effect: "Movement +1 to 2. The only one in the game.", where: "Tower of the Ancients, upstairs"}
   - type: "Key items"
     items:

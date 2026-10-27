@@ -14,6 +14,9 @@ from them are the ones named under a battle, and only if the unit that
 lands the kill has a free item slot. See the [Walkthrough](walkthrough.md)
 for strategy.
 
+*Check in game: the stats come from a per-enemy list, so an enemy that
+shows up in several battles may be stronger in the later ones.*
+
 {% for b in sf_bestiary.battles %}
 ## Battle {{ b.number }}: {{ b.name }}
 

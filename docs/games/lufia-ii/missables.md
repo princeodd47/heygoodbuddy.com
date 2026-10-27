@@ -26,10 +26,10 @@ Each one can only go into the Ancient Cave while they're in the party.
 
 | What | Where | How not to miss it |
 |------|-------|--------------------|
-| **Catfish Jewel** | Big Catfish, Lake Cave | Rare drop. Save before the fight and retry. |
+| **Catfish Jewel** | Big Catfish, Lake Cave | Rare drop. Save before the fight and retry. *Check in game: one guide gives 12.5%.* |
 | **3,000 gold** | Alunze king's reward | Pick **Nothing**. It pays more than the other choices. |
-| **Camu Jewel** | Camu, Tanbel East Tower | Rare drop. Save first. |
-| **Spido Jewel** | Tarantula, Ruby Cave | Rare drop. Save first. |
+| **Camu Jewel** | Camu, Tanbel East Tower | Rare drop. Save first. *Check in game: drop rate.* |
+| **Spido Jewel** | Tarantula, Ruby Cave | Rare drop. Save first. *Check in game: drop rate.* |
 | **Gades Blade** | Gades, Gordovan West Tower | Win the fight you're meant to lose (7,500 HP). Otherwise it only turns up in the Ancient Cave. |
 | **Holy Wings** | Parcelyte Castle basement | The king lets you take them after the Treasure Sword Shrine. |
 | **Idura in the labyrinth** | Bound Kingdom | Talk to the king before the Northern Labyrinth, or the story stalls. |
@@ -66,7 +66,7 @@ Eight eggs, for the Egg Dragon (island left of Pico, by submarine):
 - The ten Iris treasures are on the deep floors. Bring them to the woman in
   Gruberik's pub.
 - Only blue chests stay with you when you leave. Everything else you find in
-  there is lost.
+  there is lost. *Check in game: exact rule.*
 
 ## Sources
 

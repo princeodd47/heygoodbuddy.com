@@ -17,6 +17,9 @@ from that element or weapon type, and **Strong** takes half. Hard, Flying,
 Insect, Dragon and similar entries are weapon types: some weapons hit those
 enemies harder. See the [Walkthrough](walkthrough.md) for boss strategy.
 
+*Check in game: drop chances come from one guide, and another gives
+different numbers for some monsters.*
+
 {% for a in lufia2_bestiary.areas %}
 ## {{ a.area }}
 

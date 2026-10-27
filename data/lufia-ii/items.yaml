@@ -3,17 +3,17 @@
 groups:
   - type: "Healing"
     items:
-      - {name: "Potion", price: "8", effect: "Restores a little HP to one ally.", first: "Elcid"}
+      - {name: "Potion", price: "8", effect: "Restores a little HP to one ally. Check in game: exact amount.", first: "Elcid"}
       - {name: "Charred Newt", price: "8", effect: "Restores a little HP and MP.", first: "Drop: Lizards and other newts"}
       - {name: "Antidote", price: "6", effect: "Cures poison.", first: "Elcid"}
       - {name: "Awake", price: "10", effect: "Wakes a sleeping ally.", first: "Sundletan"}
       - {name: "Shriek", price: "5", effect: "Cures confusion.", first: "Sundletan"}
-      - {name: "Hi Potion", price: "100", effect: "Restores a fair amount of HP.", first: "Alunze"}
+      - {name: "Hi Potion", price: "100", effect: "Restores a fair amount of HP. Check in game: exact amount.", first: "Alunze"}
       - {name: "Mystery Pin", price: "30", effect: "Cures paralysis.", first: "Alunze"}
       - {name: "Magic Jar", price: "—", effect: "Restores a little MP.", first: "Chests and drops only"}
       - {name: "Regain", price: "500", effect: "Revives a fallen ally with some HP.", first: "Parcelyte"}
       - {name: "Hi Magic", price: "—", effect: "Restores a fair amount of MP.", first: "Chests and drops only"}
-      - {name: "Ex Potion", price: "500", effect: "Restores a lot of HP.", first: "Forfeit"}
+      - {name: "Ex Potion", price: "500", effect: "Restores a lot of HP. Check in game: exact amount.", first: "Forfeit"}
       - {name: "Miracle", price: "—", effect: "Revives an ally and fully restores HP and MP.", first: "Chests and drops only"}
   - type: "Ciders and tea"
     note: "From the menu they restore HP. In battle they don't heal: they raise one ally's attack instead."
@@ -23,7 +23,7 @@ groups:
       - {name: "Sour Cider", price: "20", effect: "Menu: 10 HP.", first: "Sundletan"}
       - {name: "Lime Cider", price: "40", effect: "Menu: 15 HP.", first: "Sundletan"}
       - {name: "Plum Cider", price: "80", effect: "Menu: 20 HP.", first: "Sundletan"}
-      - {name: "Apple Cider", price: "1,000", effect: "Menu: about 165 to 185 HP (guides differ). Good capsule food.", first: "Sundletan"}
+      - {name: "Apple Cider", price: "1,000", effect: "Menu: 165 or 185 HP; check in game, the guides differ. Good capsule food.", first: "Sundletan"}
   - type: "Battle items"
     items:
       - {name: "Boomerang", price: "20", effect: "Light damage to all enemies.", first: "Elcid"}

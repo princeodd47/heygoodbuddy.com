@@ -43,16 +43,16 @@ weapons:
   - type: "Arrows and guns"
     items:
       - {name: "Wooden Arrow", atk: 8, price: "320", who: "Hans, Diane, Lyle", where: "Guardiana"}
-      - {name: "Steel Arrow", atk: 13, price: "1,200", who: "Hans, Diane, Lyle", where: "Rindo Circus (chest), Bustoke"}
-      - {name: "Elven Arrow", atk: 19, price: "3,200", who: "Hans, Diane, Lyle", where: "Pao's second camp (chest), Waral"}
+      - {name: "Steel Arrow", atk: "13 (check in game: one list says 14)", price: "1,200", who: "Hans, Diane, Lyle", where: "Rindo Circus (chest), Bustoke"}
+      - {name: "Elven Arrow", atk: "19 (check in game: two guides say 18)", price: "3,200", who: "Hans, Diane, Lyle", where: "Pao's second camp (chest), Waral"}
       - {name: "Assault Shell", atk: 27, price: "4,500", who: "Hans, Diane, Lyle (promoted)", where: "Prompt"}
       - {name: "Buster Shot", atk: 35, price: "12,400", who: "Hans, Diane, Lyle (promoted)", where: "Runefaust"}
 rings:
   - {name: "Speed Ring", use: "Egress", effect: "AGI +4", who: "All", where: "Rindo, stone house right of the item shop"}
-  - {name: "Power Ring", use: "Boost 1", effect: "ATT +5", who: "All", where: "Cavern of Darkness, after Battle 6"}
+  - {name: "Power Ring", use: "Boost 1", effect: "ATT +5 (check in game: one guide says +4)", who: "All", where: "Cavern of Darkness, after Battle 6"}
   - {name: "Mobility Ring", use: "—", effect: "MOV +2", who: "All", where: "Waral Castle basement"}
   - {name: "White Ring", use: "Aura 1", effect: "DEF +6", who: "Max, promoted healers", where: "Mishaela's Lair, after Battle 21"}
   - {name: "Black Ring", use: "Blaze 3", effect: "ATT +6. Cursed", who: "All", where: "Mishaela's Lair, after Battle 21"}
   - {name: "Evil Ring", use: "Bolt 3", effect: "ATT +8. Cursed", who: "All", where: "Mishaela's Lair, after Battle 21"}
-  - {name: "Shield Ring", use: "—", effect: "DEF +4", who: "All", where: "Some Dark Priests, Evil Puppets and Durahans wear one"}
+  - {name: "Shield Ring", use: "—", effect: "DEF +4", who: "All", where: "Some Dark Priests, Evil Puppets and Durahans wear one. Check in game: no chest found, and unclear if they ever drop it"}
   - {name: "Jogurt Ring", use: "Makes the target look like Jogurt", effect: "Wearer looks like Jogurt", who: "All", where: "Sometimes left when Jogurt lands the killing blow. Artillery are good targets"}

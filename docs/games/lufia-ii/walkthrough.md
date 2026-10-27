@@ -264,7 +264,7 @@ there.
 
 The Ancient Cave is a random 99-floor dungeon under Gruberik. Everything you
 find inside, except blue chests, is lost when you leave. Blue chests are
-yours for good. The ten **Iris treasures** are deep inside. Bring all ten to
+yours for good. *Check in game: exact rule.* The ten **Iris treasures** are deep inside. Bring all ten to
 the woman in Gruberik's pub. Go in whenever you like, and see
 [Missables](missables.md) for the party members who can only go while
 they're with you.
@@ -346,7 +346,8 @@ Forfeit Island open up.
 - The sea is open. Ferim, Pico, Treble, Portravia, Barnan and Durale are all
   reachable by ship.
 - **Darbi** is in the small tree shrine on the crescent-moon island west of
-  the Shrine of Vengeance.
+  the Shrine of Vengeance. *Check in game: this combines two guides'
+  directions.*
 
 ## Ferim and the Northeast Tower
 
