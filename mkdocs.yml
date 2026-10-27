@@ -44,6 +44,12 @@ plugins:
         rudras_monsters: data/treasure-of-the-rudras/monsters.yaml
         rudras_bosses: data/treasure-of-the-rudras/bosses.yaml
         rudras_equipment: data/treasure-of-the-rudras/equipment.yaml
+        lufia2_bestiary: data/lufia-ii/bestiary.yaml
+        lufia2_equipment: data/lufia-ii/equipment.yaml
+        lufia2_items: data/lufia-ii/items.yaml
+        sf_bestiary: data/shining-force/bestiary.yaml
+        sf_equipment: data/shining-force/equipment.yaml
+        sf_items: data/shining-force/items.yaml
 
 extra_css:
   - stylesheets/extra.css
@@ -118,6 +124,21 @@ nav:
           - Bestiary: games/treasure-of-the-rudras/bestiary.md
           - Equipment: games/treasure-of-the-rudras/equipment.md
           - Items: games/treasure-of-the-rudras/items.md
+      - Lufia II:
+          - games/lufia-ii/index.md
+          - Walkthrough: games/lufia-ii/walkthrough.md
+          - Capsule Monsters: games/lufia-ii/capsule-monsters.md
+          - Missables: games/lufia-ii/missables.md
+          - Bestiary: games/lufia-ii/bestiary.md
+          - Equipment: games/lufia-ii/equipment.md
+          - Items: games/lufia-ii/items.md
+      - Shining Force:
+          - games/shining-force/index.md
+          - Walkthrough: games/shining-force/walkthrough.md
+          - Characters: games/shining-force/characters.md
+          - Bestiary: games/shining-force/bestiary.md
+          - Equipment: games/shining-force/equipment.md
+          - Items: games/shining-force/items.md
   - Articles:
       - blog/index.md
   - Tags: tags.md
