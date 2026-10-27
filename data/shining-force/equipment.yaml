@@ -11,7 +11,7 @@ weapons:
       - {name: "Steel Sword", atk: 18, price: "2,500", who: "Max, Balbaroy, Amon (promoted), Musashi", where: "Pao's second camp (chest), Waral"}
       - {name: "Broad Sword", atk: 20, price: "4,800", who: "Max, Balbaroy, Amon (promoted), Musashi", where: "Dragonia (chest), Prompt"}
       - {name: "Sword of Light", atk: 36, price: "—", who: "Max (promoted)", where: "Mishaela's Lair, after Battle 21"}
-      - {name: "Katana", atk: 30, price: "—", who: "Max, Balbaroy, Amon (promoted), Musashi, Hanzou", where: "Musashi has one"}
+      - {name: "Katana", atk: 30, price: "—", who: "Max, Balbaroy, Amon (promoted), Musashi, Hanzou", where: "Musashi joins holding the only one"}
       - {name: "Doom Blade", atk: 25, price: "—", who: "Max, Balbaroy, Amon (promoted), Musashi, Hanzou", where: "Carried by a Durahan in Battle 22; Hanzou has one"}
       - {name: "Sword of Darkness", atk: 40, price: "—", who: "Max (promoted)", where: "The King of Prompt, after Battle 23"}
       - {name: "Chaos Breaker", atk: 40, price: "—", who: "Max (promoted)", where: "Metapha, after Battle 24"}
@@ -39,7 +39,7 @@ weapons:
       - {name: "Power Staff", atk: 12, price: "500", who: "Healers, mages", where: "Rindo; Cavern of Darkness (chest)"}
       - {name: "Guardian Staff", atk: 18, price: "3,200", who: "Promoted healers and mages", where: "Rudo"}
       - {name: "Holy Staff", atk: 26, price: "8,000", who: "Promoted healers", where: "Rudo (chest), Prompt"}
-      - {name: "Demon Rod", atk: 35, price: "—", who: "Promoted mages", where: "Carried by the Demon Master in Battle 23"}
+      - {name: "Demon Rod", atk: 35, price: "—", who: "Promoted mages", where: "Carried by the Demon Master in Battle 23. Cursed; steals MP"}
   - type: "Arrows and guns"
     items:
       - {name: "Wooden Arrow", atk: 8, price: "320", who: "Hans, Diane, Lyle", where: "Guardiana"}
@@ -48,10 +48,11 @@ weapons:
       - {name: "Assault Shell", atk: 27, price: "4,500", who: "Hans, Diane, Lyle (promoted)", where: "Prompt"}
       - {name: "Buster Shot", atk: 35, price: "12,400", who: "Hans, Diane, Lyle (promoted)", where: "Runefaust"}
 rings:
-  - {name: "Speed Ring", effect: "AGI +4", who: "All", where: "Rindo, stone house right of the item shop"}
-  - {name: "Power Ring", effect: "ATT +5", who: "All", where: "Cavern of Darkness, after Battle 6"}
-  - {name: "Mobility Ring", effect: "MOV +2", who: "All", where: "Waral Castle basement"}
-  - {name: "White Ring", effect: "DEF +6", who: "Max, promoted healers", where: "Mishaela's Lair, after Battle 21"}
-  - {name: "Black Ring", effect: "ATT +6", who: "All", where: "Mishaela's Lair, after Battle 21"}
-  - {name: "Evil Ring", effect: "ATT +8", who: "All", where: "Mishaela's Lair, after Battle 21"}
-  - {name: "Shield Ring", effect: "DEF +4", who: "All", where: "Some Dark Priests, Evil Puppets and Durahans wear one"}
+  - {name: "Speed Ring", use: "Egress", effect: "AGI +4", who: "All", where: "Rindo, stone house right of the item shop"}
+  - {name: "Power Ring", use: "Boost 1", effect: "ATT +5", who: "All", where: "Cavern of Darkness, after Battle 6"}
+  - {name: "Mobility Ring", use: "—", effect: "MOV +2", who: "All", where: "Waral Castle basement"}
+  - {name: "White Ring", use: "Aura 1", effect: "DEF +6", who: "Max, promoted healers", where: "Mishaela's Lair, after Battle 21"}
+  - {name: "Black Ring", use: "Blaze 3", effect: "ATT +6. Cursed", who: "All", where: "Mishaela's Lair, after Battle 21"}
+  - {name: "Evil Ring", use: "Bolt 3", effect: "ATT +8. Cursed", who: "All", where: "Mishaela's Lair, after Battle 21"}
+  - {name: "Shield Ring", use: "—", effect: "DEF +4", who: "All", where: "Some Dark Priests, Evil Puppets and Durahans wear one"}
+  - {name: "Jogurt Ring", use: "Makes the target look like Jogurt", effect: "Wearer looks like Jogurt", who: "All", where: "Sometimes left when Jogurt lands the killing blow. Artillery are good targets"}

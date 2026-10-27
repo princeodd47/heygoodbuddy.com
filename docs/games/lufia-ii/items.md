@@ -32,3 +32,6 @@ use is on [Capsule Monsters](capsule-monsters.md).
 - Fruit drops: Iron Knuckle's
   [Lufia II walkthrough](https://gamefaqs.gamespot.com/snes/588451-lufia-ii-rise-of-the-sinistrals/faqs/11045)
   (GameFAQs).
+- Cider effects: the same walkthrough and the GameFAQs
+  [shop guide](https://gamefaqs.gamespot.com/snes/588451-lufia-ii-rise-of-the-sinistrals/faqs/21868)
+  and [FAQ](https://gamefaqs.gamespot.com/snes/588451-lufia-ii-rise-of-the-sinistrals/faqs/5547).

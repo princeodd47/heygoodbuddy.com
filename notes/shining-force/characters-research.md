@@ -17,11 +17,16 @@ in-game, the in-game value wins. Fix the page and these notes.
 
 ## Open questions
 
-- Full US class names for SKNT/SBRN (Guntz), WKNT/SKYL (Kokichi),
-  ASKT/SKNT (Lyle) and MGCR (Domingo). Page shows the abbreviations.
 - Gong's exact cut-off: DvD says Egress from Battle 1 or 2. Page says get
-  him before Battle 3.
-- DvD hints Jogurt's kills give a Jogurt Ring item. Not on the page.
+  him before Battle 3. Other guides only say he's at the cabin then.
+
+## Resolved 2026-10-27
+
+- Class names from GLSicherman's rank table (2837): ASKT Assault Knight
+  -> SKNT Strike Knight (Lyle); SKNT Steam Knight -> SBRN Steam Baron
+  (Guntz; same abbreviation as Strike Knight); WKNT Winged Knight -> SKYL
+  Sky Lord (Kokichi); MGCR Magic Creature (Domingo). Page uses full names.
+- Jogurt Ring: on the equipment page now.
 
 ## Held back
 

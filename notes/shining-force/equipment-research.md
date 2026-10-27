@@ -21,10 +21,19 @@ Data lives in `data/shining-force/equipment.yaml`.
 - Elven Arrow price: DV's walkthrough boxes and Dinob0t say 3,200; DV's
   shop list says 2,300. Page uses 3,200. Steel Arrow: DV weapons list +13,
   shop list +14. Page uses +13.
-- Katana source: Musashi joining with it is from memory, not the guides.
 - Shield Ring: no chest found; only seen as enemy equipment.
-- Whether Black and Evil Rings are cursed in the Genesis version, and
-  whether rings can be used to cast spells. Not on the page.
+- Elven Arrow attack: page has +19 (DV); 2837 and 2838 both say +18.
+  Power Ring: page has +5 (DV); 2837 says +4. Not changed; check in-game.
+
+## Resolved 2026-10-27
+
+- Elven Arrow price 3,200 confirmed by the shop tables in 2837 and 2838.
+- Katana: the character guide (63598) says Musashi brings the only copy.
+- Black and Evil Rings are cursed (2838); Demon Rod and Devil Lance too.
+- Ring spells on USE (2837): Power Boost 1, Speed Egress, White Aura 1,
+  Black Blaze 3, Evil Bolt 3. 2838 says USE works without equipping.
+- Jogurt Ring: dropped from Jogurt's kills (2837 suggests Artillery);
+  makes the wearer or target look like Jogurt.
 
 ## Held back
 

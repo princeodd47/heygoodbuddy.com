@@ -16,14 +16,14 @@ groups:
       - {name: "Ex Potion", price: "500", effect: "Restores a lot of HP.", first: "Forfeit"}
       - {name: "Miracle", price: "—", effect: "Revives an ally and fully restores HP and MP.", first: "Chests and drops only"}
   - type: "Ciders and tea"
-    note: "From the menu they restore HP. In battle they restore ATP."
+    note: "From the menu they restore HP. In battle they don't heal: they raise one ally's attack instead."
     items:
       - {name: "Green Tea", price: "10", effect: "Just a cup of tea.", first: "Sundletan"}
-      - {name: "Pear Cider", price: "10", effect: "Weakest cider.", first: "Sundletan"}
-      - {name: "Sour Cider", price: "20", effect: "", first: "Sundletan"}
-      - {name: "Lime Cider", price: "40", effect: "", first: "Sundletan"}
-      - {name: "Plum Cider", price: "80", effect: "", first: "Sundletan"}
-      - {name: "Apple Cider", price: "1,000", effect: "Strongest cider. Good class 3 capsule food.", first: "Sundletan"}
+      - {name: "Pear Cider", price: "10", effect: "Menu: 8 HP.", first: "Sundletan"}
+      - {name: "Sour Cider", price: "20", effect: "Menu: 10 HP.", first: "Sundletan"}
+      - {name: "Lime Cider", price: "40", effect: "Menu: 15 HP.", first: "Sundletan"}
+      - {name: "Plum Cider", price: "80", effect: "Menu: 20 HP.", first: "Sundletan"}
+      - {name: "Apple Cider", price: "1,000", effect: "Menu: about 165 to 185 HP (guides differ). Good capsule food.", first: "Sundletan"}
   - type: "Battle items"
     items:
       - {name: "Boomerang", price: "20", effect: "Light damage to all enemies.", first: "Elcid"}

@@ -26,11 +26,9 @@ in-game, the in-game value wins. Fix the page and these notes.
 
 ## Held back
 
-- DvD lists hidden joke items and costumes (Sugoi Mizugi for Tao in the
-  quarry cave, Kitui Huku for Anri in Battle 11, Kenji in Battle 13, Teppou
-  in Battles 15/17, Youji in Battle 19, Kaku-chan in Battle 28). Not on the
-  page: unclear whether they exist in the US Genesis release or only the
-  Japanese one. Confirm in-game before adding.
+- Nothing. (The hidden costumes and joke items were added 2026-10-27
+  after the US item table in faqs/7586 confirmed them; Teppou is Battle 17
+  per DvD.)
 
 ## Already on the page
 

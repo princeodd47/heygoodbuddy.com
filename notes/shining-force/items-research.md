@@ -19,15 +19,23 @@ Data lives in `data/shining-force/items.yaml`.
 
 ## Open questions
 
-- Exact stat gains for Power Potion, Defense Potion, Legs of Haste, Bread
-  of Life and Turbo Pepper, and Shower of Cure's heal amount. The GBA
-  remake gives +1 to 2 for the potions and 20 HP to all for Shower of
-  Cure; not confirmed for Genesis. Sega Retro's item page was behind a bot
-  check.
+- Stat item amounts: guide 14731 says +1 to 2 for all five; GLSicherman
+  (2837) says +2 flat for attack/defense/agility/move and 1d2 for max HP.
+  Page says +1 to 2. Confirm in-game if it matters.
+- Shower of Cure: only 14731 gives a number ("around 40 HP to entire
+  party"); 22966 says it heals everyone on the map. Page says about 40 HP.
+
+## Resolved 2026-10-27
+
+- Hidden costumes and joke items: the US save-hacking guide (7586) lists
+  Sugoi Mizugi, Kitui Huku, Kenji, Teppou, Kaku-Chan and Yougi in the US
+  item table, so they're in the US release. Locations from DvD (63031);
+  now on the page as their own group.
 
 ## Held back
 
-- Hidden items, see the walkthrough notes.
+- Kindan No Hako (Forbidden Box): in the ROM but not findable in normal
+  play, per DvD and 7586.
 
 ## Already on the page
 

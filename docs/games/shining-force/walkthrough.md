@@ -143,7 +143,10 @@ waterfall.
 - **Win:** kill the Master Mage.
 - The first battle where you pick your team: 12 units at most.
 - The Master Mage has Freeze 2.
-- **After:** the cave has a **Moon Stone**.
+- **After:** the cave has a **Moon Stone**. Then stand in the cave's
+  southwest corner and search south: a hidden chest has the **Sugoi
+  Mizugi**, a swimsuit. Give it to Tao and her battle sprite wears it. It
+  does nothing else.
 - **Zylo:** take the Moon Stone to the alchemist, who makes **Lunar Dew**.
   Zylo is caged behind the house where Diane was. Go out the right door,
   around the back and up the ladder. The woman opens the cage, and you use
@@ -161,6 +164,10 @@ waterfall.
 - **Win:** defeat all enemies.
 - The Laser Eye fires down the bridge every 10 turns or so, hitting its own
   side too. Stay out of its line when it's due.
+- **Hidden during the battle:** face the square just left of where the
+  leftmost Dark Elf starts and search (the Stay command turns into Search).
+  A chest has the **Kitui Huku**, a dress. Give it to Anri and her battle
+  sprite wears it.
 - **Pelle joins** afterward.
 
 ## Chapter 4
@@ -195,6 +202,9 @@ waterfall.
 
 - **Win:** get into Uranbatol.
 - Lots of ledges. Fliers help.
+- **Hidden during the battle:** outside the fortress, between two walls,
+  three lone bushes stand in a column. Search the bottom one for **Kenji**,
+  a joke item with no use.
 - **Earnest joins** after the scene with the dog.
 
 ### Uranbatol
@@ -234,6 +244,8 @@ waterfall.
 
 - **Win:** defeat all enemies.
 - Kill the Gargoyle first. More monsters keep arriving.
+- **Hidden during the battle:** **Teppou**, a joke item with no use, on the
+  ship's railing three squares right of the bottom-center square.
 
 ## Chapter 6
 
@@ -262,6 +274,9 @@ waterfall.
   and he uses it more on units at range. If it hits Max, you lose. Surround
   him with units over 35 HP.
 - High Priests cast Heal 4. Kill them early.
+- **Hidden during the battle:** at the top of the map between Bleu's house
+  and the Dragon Shrine, two rocks sit left of the flowers. Search the right
+  rock for **Youji**, a joke item with no use.
 
 Afterward, take Kane to the Dragon Shrine door, then go back to Rudo and talk
 to Karin and Krin.
@@ -359,6 +374,9 @@ use the Chaos Breaker on the peninsula. Promote anyone who's ready, and save.
 - **Win:** kill all three parts of the Colossus.
 - The left part casts Freeze 3, the middle Bolt 3, the right Blaze 3. Lure
   each one onto land before you attack.
+- **Hidden during the battle:** search the right corner of the gold wall
+  with the eye symbols, on the left side at the top of the map, for
+  **Kaku-chan**, a joke item with no use.
 
 ### Battle 29: Raising the Darkness
 

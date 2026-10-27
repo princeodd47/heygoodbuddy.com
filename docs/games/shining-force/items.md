@@ -29,3 +29,12 @@ chests, listed in the order you reach them.
 - Prices, healing amounts and chest locations: Dark_Vortex's
   [Shining Force guide](https://gamefaqs.gamespot.com/genesis/563340-shining-force/faqs/51880)
   (GameFAQs).
+- Stat item amounts and Shower of Cure: the GameFAQs
+  [guide and walkthrough](https://gamefaqs.gamespot.com/genesis/563340-shining-force/faqs/14731)
+  and GLSicherman's
+  [FAQ](https://gamefaqs.gamespot.com/genesis/563340-shining-force/faqs/2837).
+- Hidden costumes and joke items:
+  [DvDTranslations' secrets guide](https://gamefaqs.gamespot.com/genesis/563340-shining-force/faqs/63031),
+  checked against the US item list in a
+  [save state hacking guide](https://gamefaqs.gamespot.com/genesis/563340-shining-force/faqs/7586)
+  (GameFAQs).

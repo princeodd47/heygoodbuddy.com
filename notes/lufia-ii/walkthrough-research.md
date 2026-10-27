@@ -17,12 +17,18 @@ in-game, the in-game value wins. Fix the page and these notes.
 
 ## Open questions
 
-- Cider in-battle effect: RPGClassics says it restores ATP in battle and HP
-  from the menu. Unverified in-game; worded as the source has it on Items.
 - Exact Ancient Cave rule wording (blue chests kept) is from memory of the
   guides, not re-checked line by line.
 - Darbi location wording ("small tree shrine on the crescent-moon island")
   combines Telago and RPGClassics.
+
+## Resolved 2026-10-27
+
+- Cider in-battle effect: the GameFAQs shop guide (21868) says ciders don't
+  heal in battle and raise one ally's attack instead; the FAQ (5547) agrees
+  ("raises attack in fights"). Menu heals 8/10/15/20 HP for
+  Pear/Sour/Lime/Plum. Apple Cider: 165 HP (21868) vs 185 (Iron Knuckle
+  11045); the page shows both.
 
 ## Held back
 

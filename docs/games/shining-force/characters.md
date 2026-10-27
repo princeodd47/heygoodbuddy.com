@@ -34,13 +34,13 @@ abbreviations.
 | **Diane** | Archer → Bow Master | Bustoke | Upper-left building. |
 | **Zylo** | Werewolf → Wolf Baron | Bustoke, after Battle 9 | **Optional.** Bring the Moon Stone from the quarry cave to the alchemist for Lunar Dew, then use it on Zylo in the cage behind the house where Diane was. Forest and mountains don't slow him. |
 | **Pelle** | Knight → Paladin | After Battle 11 | Story. |
-| **Kokichi** | WKNT → SKYL | Pao's old camp | **Optional.** After Battle 9, watch the engine scene in Bustoke (far west door, downstairs) and follow the man. He crash-lands near you once Pao moves. Flies. |
+| **Kokichi** | Winged Knight → Sky Lord | Pao's old camp | **Optional.** After Battle 9, watch the engine scene in Bustoke (far west door, downstairs) and follow the man. He crash-lands near you once Pao moves. Flies. |
 | **Vankar** | Knight → Paladin | Pao's old camp | **Optional.** Talk to him outside the old camp after Pao moves. |
 | **Jogurt** | — | Pao chapel | **Optional.** Talk to the hamster by Gong's cabin in Chapter 1. In Pao, stand left of the priest or read the bookshelf, and he appears behind the chapel. A joke unit. |
-| **Domingo** | MGCR | Pao's second camp | **Optional.** Search the lab machine in Manarina for the Domingo Egg, then give it to the egg-hatching man. One of the best casters in the game. |
-| **Guntz** | SKNT → SBRN | Pao's second camp, pigpen | **Optional.** Talk to the suited animal and Dr. Crock in Rindo several times. Huge defense. |
+| **Domingo** | Magic Creature | Pao's second camp | **Optional.** Search the lab machine in Manarina for the Domingo Egg, then give it to the egg-hatching man. One of the best casters in the game. |
+| **Guntz** | Steam Knight → Steam Baron | Pao's second camp, pigpen | **Optional.** Talk to the suited animal and Dr. Crock in Rindo several times. Huge defense. |
 | **Earnest** | Knight → Paladin | Uranbatol, Battle 13 | Talk to him after the dog scene. |
-| **Lyle** | ASKT → SKNT | Rudo | Building west of the dragon statue, two floors up. |
+| **Lyle** | Assault Knight → Strike Knight | Rudo | Building west of the dragon statue, two floors up. |
 | **Bleu** | Dragon → Great Dragon | Dragonia | Talk to him twice. Starts weak and grows huge. Flies. |
 | **Musashi** | Samurai | Prompt | **Optional.** After the jail scene, talk to the king again, then search the small sign on the house with two doors north of the castle. Joins already promoted. |
 | **Alef** | Mage → Wizard | After Battle 23 | Story. Learns Bolt 1–4. |
@@ -59,6 +59,9 @@ abbreviations.
 | **Valkyrie** | Battle 23 | Open the chest at the bottom of the long ladder during the battle. |
 | **Demon Rod** | Battle 23 | The Demon Master carries it. Land the last hit with a unit that has a free slot. |
 | **Atlas, Halberd** | Battle 26 | Chests on the platforms to the right. Open them during the battle. |
+| **Sugoi Mizugi** | Bustoke Quarry cave, after Battle 9 | Hidden chest: search south from the cave's southwest corner. Tao's swimsuit. |
+| **Kitui Huku** | Battle 11 | Search the square left of the leftmost Dark Elf's start during the battle. Anri's dress. |
+| **Kenji, Teppou, Youji, Kaku-chan** | Battles 13, 17, 19, 28 | Joke items hidden on the battle maps. See the walkthrough for each spot. |
 
 ## Sources
 
@@ -67,4 +70,7 @@ abbreviations.
   (GameFAQs).
 - Optional recruit conditions:
   [DvDTranslations' secrets guide](https://gamefaqs.gamespot.com/genesis/563340-shining-force/faqs/63031)
+  (GameFAQs). Also the hidden costume and joke items.
+- Full class names: GLSicherman's
+  [Shining Force FAQ](https://gamefaqs.gamespot.com/genesis/563340-shining-force/faqs/2837)
   (GameFAQs).

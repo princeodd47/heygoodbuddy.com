@@ -32,10 +32,14 @@ weapons.
 
 ## Rings
 
-| Ring | Effect | Who | Where |
-|------|--------|-----|-------|
+**USE** a ring in battle to cast its spell. It works from the inventory
+without equipping it, which is the safe way to get spells out of the cursed
+rings.
+
+| Ring | Equipped | Use | Who | Where |
+|------|----------|-----|-----|-------|
 {% for i in sf_equipment.rings -%}
-| **{{ i.name }}** | {{ i.effect }} | {{ i.who }} | {{ i.where }} |
+| **{{ i.name }}** | {{ i.effect }} | {{ i.use }} | {{ i.who }} | {{ i.where }} |
 {% endfor %}
 
 ## What to buy
@@ -58,4 +62,11 @@ weapons.
   (GameFAQs).
 - Shop prices: the same guide, and Dinob0t's
   [shop FAQ](https://gamefaqs.gamespot.com/genesis/563340-shining-force/faqs/40809)
+  (GameFAQs).
+- Ring spells and the Jogurt Ring: GLSicherman's
+  [Shining Force FAQ](https://gamefaqs.gamespot.com/genesis/563340-shining-force/faqs/2837)
+  (GameFAQs). Cursed gear: the GameFAQs
+  [guide and walkthrough](https://gamefaqs.gamespot.com/genesis/563340-shining-force/faqs/2838).
+- Musashi's Katana:
+  [character guide](https://gamefaqs.gamespot.com/genesis/563340-shining-force/faqs/63598)
   (GameFAQs).

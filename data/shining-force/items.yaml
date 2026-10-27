@@ -9,17 +9,26 @@ groups:
       - {name: "Angel Wing", price: "40", effect: "Leaves the battle and returns to the last town, like Egress.", where: "Every shop"}
       - {name: "Antidote", price: "20", effect: "Cures poison.", where: "Every shop from Rindo on"}
   - type: "Chest-only items"
-    note: "The stat items are permanent boosts. Give them to units you'll keep using."
+    note: "The stat items are permanent boosts. Give them to units you'll keep using. One guide suggests waiting until after promotion."
     items:
-      - {name: "Power Potion", price: "—", effect: "Raises attack.", where: "Guardiana Castle; Alterone (push the cart); Mishaela's Lair"}
-      - {name: "Defense Potion", price: "—", effect: "Raises defense.", where: "Guardiana Castle; Alterone Castle; Rindo Circus; Waral Castle"}
-      - {name: "Bread of Life", price: "—", effect: "Raises max HP.", where: "Alterone Castle; Pao; Waral Castle"}
-      - {name: "Legs of Haste", price: "—", effect: "Raises agility.", where: "Pao, the big wagon"}
-      - {name: "Shower of Cure", price: "—", effect: "Heals the party.", where: "Waral Castle; Dragonia; Mishaela's Lair"}
-      - {name: "Turbo Pepper", price: "—", effect: "Raises movement. The only one in the game.", where: "Tower of the Ancients, upstairs"}
+      - {name: "Power Potion", price: "—", effect: "Attack +1 to 2.", where: "Guardiana Castle; Alterone (push the cart); Mishaela's Lair"}
+      - {name: "Defense Potion", price: "—", effect: "Defense +1 to 2.", where: "Guardiana Castle; Alterone Castle; Rindo Circus; Waral Castle"}
+      - {name: "Bread of Life", price: "—", effect: "Max HP +1 to 2.", where: "Alterone Castle; Pao; Waral Castle"}
+      - {name: "Legs of Haste", price: "—", effect: "Agility +1 to 2.", where: "Pao, the big wagon"}
+      - {name: "Shower of Cure", price: "—", effect: "Restores about 40 HP to the whole force.", where: "Waral Castle; Dragonia; Mishaela's Lair"}
+      - {name: "Turbo Pepper", price: "—", effect: "Movement +1 to 2. The only one in the game.", where: "Tower of the Ancients, upstairs"}
   - type: "Key items"
     items:
       - {name: "Orb of Light", price: "—", effect: "Opens the eye doors.", where: "Cavern of Darkness, after Battle 6"}
       - {name: "Domingo Egg", price: "—", effect: "Hatches into Domingo at Pao's second camp.", where: "Manarina, the lab machine"}
       - {name: "Moon Stone", price: "—", effect: "The Bustoke alchemist turns it into Lunar Dew.", where: "Bustoke Quarry cave, after Battle 9"}
       - {name: "Lunar Dew", price: "—", effect: "Cures Zylo in the Bustoke prison.", where: "Bustoke alchemist"}
+  - type: "Hidden costumes and joke items"
+    note: "Hidden chests found by searching. The names were never translated. The two costumes change a character's battle sprite; the rest do nothing."
+    items:
+      - {name: "Sugoi Mizugi", price: "—", effect: "Swimsuit. Tao wears it in battle.", where: "Bustoke Quarry cave after Battle 9: search south from the southwest corner"}
+      - {name: "Kitui Huku", price: "—", effect: "Dress. Anri wears it in battle.", where: "Battle 11: square left of the leftmost Dark Elf's start"}
+      - {name: "Kenji", price: "—", effect: "No use.", where: "Battle 13: bottom of three lone bushes between the fortress walls"}
+      - {name: "Teppou", price: "—", effect: "No use.", where: "Battle 17: ship railing, three squares right of the bottom center"}
+      - {name: "Youji", price: "—", effect: "No use.", where: "Battle 19: right rock of the pair left of the flowers, top of the map"}
+      - {name: "Kaku-chan", price: "—", effect: "No use.", where: "Battle 28: right corner of the gold eye wall, top left"}

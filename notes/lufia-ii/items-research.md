@@ -20,7 +20,7 @@ Data lives in `data/lufia-ii/items.yaml`.
 
 - Exact heal amounts for potions are not on the page; sources give only
   "partially" / "a lot".
-- Cider battle effect, see the walkthrough notes.
+- Cider battle effect: resolved, see the walkthrough notes.
 
 ## Held back
 
