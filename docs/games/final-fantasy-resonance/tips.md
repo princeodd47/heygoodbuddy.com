@@ -1,5 +1,5 @@
 ---
-platform: PS5
+platform: Switch
 spoilers: none
 status: draft
 tags:

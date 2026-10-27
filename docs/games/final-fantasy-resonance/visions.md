@@ -1,6 +1,6 @@
 ---
 game_version: Demo
-platform: PS5
+platform: Switch
 spoilers: none
 verified: 2026-10-19
 status: draft
