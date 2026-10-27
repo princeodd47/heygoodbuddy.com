@@ -19,6 +19,10 @@ from Telago's monster appendix and RPGClassics' monster pages).
 
 ## Open questions
 
+Flagged on the page with a "Check in game" note (2026-10-27): drop chances (top of the page).
+When the user confirms one in game, update the page, drop the note and
+move the item to Resolved.
+
 - RPGClassics drop numbers differ from Telago's percentages for some
   monsters. Telago's percentages are used.
 - Some boss drops and HP are from Telago only.

@@ -17,6 +17,10 @@ in-game, the in-game value wins. Fix the page and these notes.
 
 ## Open questions
 
+Flagged on the page with a "Check in game" note (2026-10-27): Gong's cut-off and Musashi's sign.
+When the user confirms one in game, update the page, drop the note and
+move the item to Resolved.
+
 - Gong's exact cut-off: DvD says Egress from Battle 1 or 2. Page says get
   him before Battle 3. Other guides only say he's at the cabin then.
 

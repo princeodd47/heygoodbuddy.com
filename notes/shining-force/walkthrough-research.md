@@ -17,6 +17,10 @@ in-game, the in-game value wins. Fix the page and these notes.
 
 ## Open questions
 
+Flagged on the page with a "Check in game" note (2026-10-27): the defeat rule, Gong's cut-off and Musashi's sign.
+When the user confirms one in game, update the page, drop the note and
+move the item to Resolved.
+
 - Defeat rule (keep EXP, lose half gold, return to the last priest) is
   general series knowledge, not from these guides.
 - Musashi: DV says a sign on the house with two doors north of the castle;

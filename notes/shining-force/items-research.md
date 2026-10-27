@@ -19,6 +19,10 @@ Data lives in `data/shining-force/items.yaml`.
 
 ## Open questions
 
+Flagged on the page with a "Check in game" note (2026-10-27): stat item amounts and Shower of Cure.
+When the user confirms one in game, update the page, drop the note and
+move the item to Resolved.
+
 - Stat item amounts: guide 14731 says +1 to 2 for all five; GLSicherman
   (2837) says +2 flat for attack/defense/agility/move and 1d2 for max HP.
   Page says +1 to 2. Confirm in-game if it matters.

@@ -17,6 +17,10 @@ in-game, the in-game value wins. Fix the page and these notes.
 
 ## Open questions
 
+Flagged on the page with a "Check in game" note (2026-10-27): the Catfish, Camu and Spido Jewel drop rates and the Ancient Cave blue chest rule.
+When the user confirms one in game, update the page, drop the note and
+move the item to Resolved.
+
 - Rare jewel drop rates (Catfish, Camu, Spido) not confirmed; bestiary has
   Catfish Jewel at 12.5%.
 

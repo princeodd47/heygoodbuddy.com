@@ -18,6 +18,10 @@ Data lives in `data/shining-force/equipment.yaml`.
 
 ## Open questions
 
+Flagged on the page with a "Check in game" note (2026-10-27): Steel Arrow and Elven Arrow attack, Power Ring attack and Shield Ring source.
+When the user confirms one in game, update the page, drop the note and
+move the item to Resolved.
+
 - Elven Arrow price: DV's walkthrough boxes and Dinob0t say 3,200; DV's
   shop list says 2,300. Page uses 3,200. Steel Arrow: DV weapons list +13,
   shop list +14. Page uses +13.

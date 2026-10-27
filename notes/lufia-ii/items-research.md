@@ -18,6 +18,10 @@ Data lives in `data/lufia-ii/items.yaml`.
 
 ## Open questions
 
+Flagged on the page with a "Check in game" note (2026-10-27): Apple Cider HP and the Potion, Hi Potion and Ex Potion amounts.
+When the user confirms one in game, update the page, drop the note and
+move the item to Resolved.
+
 - Exact heal amounts for potions are not on the page; sources give only
   "partially" / "a lot".
 - Cider battle effect: resolved, see the walkthrough notes.

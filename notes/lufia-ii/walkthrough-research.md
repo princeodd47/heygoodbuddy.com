@@ -17,6 +17,10 @@ in-game, the in-game value wins. Fix the page and these notes.
 
 ## Open questions
 
+Flagged on the page with a "Check in game" note (2026-10-27): the Ancient Cave blue chest rule and Darbi's location.
+When the user confirms one in game, update the page, drop the note and
+move the item to Resolved.
+
 - Exact Ancient Cave rule wording (blue chests kept) is from memory of the
   guides, not re-checked line by line.
 - Darbi location wording ("small tree shrine on the crescent-moon island")

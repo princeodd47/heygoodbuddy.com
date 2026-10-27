@@ -19,6 +19,10 @@ script from DV's enemy listing and battle rosters.
 
 ## Open questions
 
+Flagged on the page with a "Check in game" note (2026-10-27): per-battle enemy stats (top of the page).
+When the user confirms one in game, update the page, drop the note and
+move the item to Resolved.
+
 - DV lists stats per enemy type, not per battle; some enemies may differ
   between battles. "Skeleton (stronger)" is DV's Skeleton V2 in Battle 16.
 - Enemy "weapon" entries like Shield Ring are their equipment; only the

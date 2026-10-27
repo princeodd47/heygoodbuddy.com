@@ -21,6 +21,10 @@ in-game, the in-game value wins. Fix the page and these notes.
 
 ## Open questions
 
+Flagged on the page with a "Check in game" note (2026-10-27): Green Titan vs Green Giant, Flame vs Blaze Fruit, and the not-hungry hint.
+When the user confirms one in game, update the page, drop the note and
+move the item to Resolved.
+
 - Telago calls Gusto's form 4 "Green Giant"; RPGClassics forms table says
   "Green Titan". Page uses Green Titan.
 - RPGClassics names Zeppy's fruit "Blaze Fruit"; the item list and Telago
