@@ -1,0 +1,320 @@
+# Shining Force bestiary, battle by battle. Rosters, win conditions and enemy
+# stats from Dark_Vortex's GameFAQs guide (51880). A battle note names any item an
+# enemy carries: kill it with a unit that has a free item slot to get it.
+battles:
+  - number: 1
+    chapter: 1
+    name: "Gate of the Ancients"
+    win: "Kill the Rune Knight"
+    enemies:
+      - {name: "Goblin", count: 5, hp: 12, atk: 9, def: 6, agi: 5, mov: 5, weapon: "Short Sword"}
+      - {name: "Dark Dwarf", count: 2, hp: 12, atk: 12, def: 8, agi: 5, mov: 4, weapon: "Hand Axe"}
+      - {name: "Rune Knight", count: 1, hp: 14, atk: 16, def: 7, agi: 7, mov: 7, weapon: "Bronze Lance"}
+  - number: 2
+    chapter: 1
+    name: "Outside Guardiana"
+    win: "Defeat all enemies"
+    enemies:
+      - {name: "Goblin", count: 5, hp: 12, atk: 9, def: 6, agi: 5, mov: 5, weapon: "Short Sword"}
+      - {name: "Dark Dwarf", count: 3, hp: 12, atk: 12, def: 8, agi: 5, mov: 4, weapon: "Hand Axe"}
+      - {name: "Rune Knight", count: 2, hp: 14, atk: 16, def: 7, agi: 7, mov: 7, weapon: "Bronze Lance"}
+  - number: 3
+    chapter: 1
+    name: "To Alterone"
+    win: "Defeat all enemies, or reach Alterone"
+    enemies:
+      - {name: "Dark Dwarf", count: 5, hp: 12, atk: 12, def: 8, agi: 5, mov: 4, weapon: "Hand Axe"}
+      - {name: "Rune Knight", count: 5, hp: 14, atk: 16, def: 7, agi: 7, mov: 7, weapon: "Bronze Lance"}
+      - {name: "Giant Bat", count: 5, hp: 14, atk: 11, def: 6, agi: 9, mov: 7, note: "Can put you to sleep"}
+  - number: 4
+    chapter: 1
+    name: "Alterone"
+    win: "Defeat all enemies"
+    enemies:
+      - {name: "Dark Dwarf", count: 4, hp: 12, atk: 12, def: 8, agi: 5, mov: 4, weapon: "Hand Axe"}
+      - {name: "Rune Knight", count: 4, hp: 14, atk: 16, def: 7, agi: 7, mov: 7, weapon: "Bronze Lance"}
+      - {name: "Giant Bat", count: 4, hp: 14, atk: 11, def: 6, agi: 9, mov: 7, note: "Can put you to sleep"}
+      - {name: "Sniper", count: 2, hp: 13, atk: 15, def: 5, agi: 7, mov: 5, weapon: "Wooden Arrow"}
+      - {name: "Dark Mage", count: 1, hp: 13, atk: 10, def: 6, agi: 9, mov: 5, weapon: "Wooden Staff", spells: "Blaze 2"}
+  - number: 5
+    chapter: 2
+    name: "Outside Rindo"
+    win: "Defeat all enemies"
+    enemies:
+      - {name: "Dark Dwarf", count: 3, hp: 12, atk: 12, def: 8, agi: 5, mov: 4, weapon: "Hand Axe"}
+      - {name: "Giant Bat", count: 4, hp: 14, atk: 11, def: 6, agi: 9, mov: 7, note: "Can put you to sleep"}
+      - {name: "Sniper", count: 2, hp: 13, atk: 15, def: 5, agi: 7, mov: 5, weapon: "Wooden Arrow"}
+      - {name: "Dark Mage", count: 3, hp: 13, atk: 10, def: 6, agi: 9, mov: 5, weapon: "Wooden Staff", spells: "Blaze 2"}
+      - {name: "Zombie", count: 4, hp: 15, atk: 18, def: 13, agi: 7, mov: 5, note: "Poisons. Weak to fire"}
+  - number: 6
+    chapter: 2
+    name: "Cavern of Darkness"
+    win: "Kill the Skeleton"
+    enemies:
+      - {name: "Giant Bat", count: 5, hp: 14, atk: 11, def: 6, agi: 9, mov: 7, note: "Can put you to sleep"}
+      - {name: "Dark Mage", count: 4, hp: 13, atk: 10, def: 6, agi: 9, mov: 5, weapon: "Wooden Staff", spells: "Blaze 2"}
+      - {name: "Zombie", count: 3, hp: 15, atk: 18, def: 13, agi: 7, mov: 5, note: "Poisons. Weak to fire"}
+      - {name: "Skeleton", count: 1, hp: 15, atk: 21, def: 16, agi: 7, mov: 6, weapon: "Middle Sword"}
+  - number: 7
+    chapter: 2
+    name: "Rindo Circus"
+    win: "Kill the Marionette"
+    enemies:
+      - {name: "Giant Bat", count: 3, hp: 14, atk: 11, def: 6, agi: 9, mov: 7, note: "Can put you to sleep"}
+      - {name: "Mannequin", count: 3, hp: 16, atk: 16, def: 10, agi: 8, mov: 5, note: "Poisons"}
+      - {name: "Evil Puppet", count: 3, hp: 14, atk: 14, def: 10, agi: 7, mov: 5, weapon: "Power Staff or Shield Ring", spells: "Freeze, Heal", note: "Drains HP"}
+      - {name: "Dire Clown", count: 2, hp: 15, atk: 18, def: 11, agi: 7, mov: 5}
+    bosses:
+      - {name: "Marionette", hp: 35, atk: "25", def: 13, agi: "13", mov: 6, spells: "Freeze 3", note: "Regenerates"}
+  - number: 8
+    chapter: 2
+    name: "Shade Abbey"
+    win: "Kill the Ghoul"
+    enemies:
+      - {name: "Zombie", count: 6, hp: 15, atk: 18, def: 13, agi: 7, mov: 5, note: "Poisons. Weak to fire"}
+      - {name: "Skeleton", count: 3, hp: 15, atk: 21, def: 16, agi: 7, mov: 6, weapon: "Middle Sword"}
+      - {name: "Ghoul", count: 1, hp: 25, atk: 23, def: 14, agi: 9, mov: 6}
+  - number: 9
+    chapter: 3
+    name: "Bustoke Quarry"
+    win: "Kill the Master Mage"
+    enemies:
+      - {name: "Dark Mage", count: 2, hp: 13, atk: 10, def: 6, agi: 9, mov: 5, weapon: "Wooden Staff", spells: "Blaze 2"}
+      - {name: "Skeleton", count: 6, hp: 15, atk: 21, def: 16, agi: 7, mov: 6, weapon: "Middle Sword"}
+      - {name: "Dark Elf", count: 2, hp: 16, atk: 26, def: 9, agi: 10, mov: 6, weapon: "Steel Arrow"}
+      - {name: "Dark Priest", count: 4, hp: 16, atk: 21, def: 9, agi: 10, mov: 5, weapon: "Power Staff or Shield Ring", spells: "Heal"}
+      - {name: "Lizardman", count: 1, hp: 20, atk: 24, def: 12, agi: 12, mov: 6, weapon: "Middle Axe"}
+      - {name: "Master Mage", count: 1, hp: 22, atk: 33, def: 13, agi: 26, mov: 5, weapon: "Holy Staff", spells: "Freeze 2"}
+  - number: 10
+    chapter: 3
+    name: "To Pao Bridge"
+    win: "Defeat all enemies"
+    enemies:
+      - {name: "Skeleton", count: 5, hp: 15, atk: 21, def: 16, agi: 7, mov: 6, weapon: "Middle Sword"}
+      - {name: "Dark Elf", count: 2, hp: 16, atk: 26, def: 9, agi: 10, mov: 6, weapon: "Steel Arrow"}
+      - {name: "Dark Priest", count: 2, hp: 16, atk: 21, def: 9, agi: 10, mov: 5, weapon: "Power Staff or Shield Ring", spells: "Heal"}
+      - {name: "Lizardman", count: 2, hp: 20, atk: 24, def: 12, agi: 12, mov: 6, weapon: "Middle Axe"}
+      - {name: "Pegasus Knight", count: 4, hp: 18, atk: 21, def: 16, agi: 12, mov: 7, weapon: "Bronze Lance", note: "Flies"}
+  - number: 11
+    chapter: 3
+    name: "Pao Bridge"
+    win: "Defeat all enemies"
+    enemies:
+      - {name: "Dark Elf", count: 3, hp: 16, atk: 26, def: 9, agi: 10, mov: 6, weapon: "Steel Arrow"}
+      - {name: "Dark Priest", count: 2, hp: 16, atk: 21, def: 9, agi: 10, mov: 5, weapon: "Power Staff or Shield Ring", spells: "Heal"}
+      - {name: "Lizardman", count: 5, hp: 20, atk: 24, def: 12, agi: 12, mov: 6, weapon: "Middle Axe"}
+      - {name: "Pegasus Knight", count: 3, hp: 18, atk: 21, def: 16, agi: 12, mov: 7, weapon: "Bronze Lance", note: "Flies"}
+      - {name: "Silver Knight", count: 2, hp: 16, atk: 18, def: 12, agi: 11, mov: 7, weapon: "Bronze Lance"}
+      - {name: "Laser Eye", count: 1, hp: 30, atk: 14, def: 19, agi: 27, mov: 0, note: "Fires down the bridge every 10 turns, hitting its own side too"}
+  - number: 12
+    chapter: 4
+    name: "Pao Prairie"
+    win: "Kill Elliott"
+    note: "One Lizardman carries a Heat Axe"
+    enemies:
+      - {name: "Dark Priest", count: 3, hp: 16, atk: 21, def: 9, agi: 10, mov: 5, weapon: "Power Staff or Shield Ring", spells: "Heal"}
+      - {name: "Lizardman", count: 5, hp: 20, atk: 24, def: 12, agi: 12, mov: 6, weapon: "Middle Axe"}
+      - {name: "Pegasus Knight", count: 4, hp: 18, atk: 21, def: 16, agi: 12, mov: 7, weapon: "Bronze Lance", note: "Flies"}
+      - {name: "Silver Knight", count: 4, hp: 16, atk: 18, def: 12, agi: 11, mov: 7, weapon: "Bronze Lance"}
+      - {name: "Artillery", count: 1, hp: 14, atk: 24, def: 15, agi: 14, mov: 4, note: "Long range"}
+    bosses:
+      - {name: "Elliott", hp: 60, atk: "32", def: 17, agi: "16", mov: 5, weapon: "Long Sword", note: "Hits hard. No ranged attack"}
+  - number: 13
+    chapter: 4
+    name: "Uranbatol Fortress"
+    win: "Get into Uranbatol"
+    enemies:
+      - {name: "Dark Priest", count: 3, hp: 16, atk: 21, def: 9, agi: 10, mov: 5, weapon: "Power Staff or Shield Ring", spells: "Heal"}
+      - {name: "Pegasus Knight", count: 3, hp: 18, atk: 21, def: 16, agi: 12, mov: 7, weapon: "Bronze Lance", note: "Flies"}
+      - {name: "Silver Knight", count: 6, hp: 16, atk: 18, def: 12, agi: 11, mov: 7, weapon: "Bronze Lance"}
+      - {name: "Artillery", count: 1, hp: 14, atk: 24, def: 15, agi: 14, mov: 4, note: "Long range"}
+      - {name: "Hellhound", count: 2, hp: 19, atk: 10, def: 13, agi: 13, mov: 7, note: "Fire breath"}
+  - number: 14
+    chapter: 4
+    name: "Uranbatol Docks"
+    win: "Kill Balzabak"
+    enemies:
+      - {name: "Dark Priest", count: 1, hp: 16, atk: 21, def: 9, agi: 10, mov: 5, weapon: "Power Staff or Shield Ring", spells: "Heal"}
+      - {name: "Evil Puppet", count: 1, hp: 14, atk: 14, def: 10, agi: 7, mov: 5, weapon: "Power Staff or Shield Ring", spells: "Freeze, Heal", note: "Drains HP"}
+      - {name: "Silver Knight", count: 2, hp: 16, atk: 18, def: 12, agi: 11, mov: 7, weapon: "Bronze Lance"}
+      - {name: "Artillery", count: 3, hp: 14, atk: 24, def: 15, agi: 14, mov: 4, note: "Long range"}
+      - {name: "Hellhound", count: 2, hp: 19, atk: 10, def: 13, agi: 13, mov: 7, note: "Fire breath"}
+      - {name: "Seabat", count: 5, hp: 22, atk: 20, def: 14, agi: 14, mov: 7, note: "Can put you to sleep"}
+    bosses:
+      - {name: "Balzabak", hp: 65, atk: "34", def: 18, agi: "20", mov: 5, weapon: "Steel Sword", note: "Never moves. Regenerates"}
+  - number: 15
+    chapter: 5
+    name: "Sea Monsters"
+    win: "Defeat all enemies"
+    enemies:
+      - {name: "Pegasus Knight", count: 3, hp: 18, atk: 21, def: 16, agi: 12, mov: 7, weapon: "Bronze Lance", note: "Flies"}
+      - {name: "Seabat", count: 4, hp: 22, atk: 20, def: 14, agi: 14, mov: 7, note: "Can put you to sleep"}
+      - {name: "Conch", count: 3, hp: 21, atk: 20, def: 15, agi: 16, mov: 6, note: "Poisons"}
+      - {name: "Shellfish", count: 2, hp: 25, atk: 23, def: 16, agi: 23, mov: 6, note: "Poisons"}
+  - number: 16
+    chapter: 5
+    name: "The Ring Reef"
+    win: "Kill the Master Mage"
+    enemies:
+      - {name: "Hellhound", count: 5, hp: 19, atk: 10, def: 13, agi: 13, mov: 7, note: "Fire breath"}
+      - {name: "Seabat", count: 4, hp: 22, atk: 20, def: 14, agi: 14, mov: 7, note: "Can put you to sleep"}
+      - {name: "Skeleton (stronger)", count: 5, hp: 15, atk: 25, def: 20, agi: 7, mov: 6, weapon: "Long Sword or Shield Ring"}
+      - {name: "Worm", count: 3, hp: 17, atk: 20, def: 16, agi: 16, mov: 4, note: "Can put you to sleep"}
+      - {name: "Master Mage", count: 1, hp: 22, atk: 33, def: 13, agi: 26, mov: 5, weapon: "Holy Staff", spells: "Freeze 2"}
+  - number: 17
+    chapter: 5
+    name: "Sea Monsters again"
+    win: "Defeat all enemies"
+    note: "More arrive during the fight"
+    enemies:
+      - {name: "Pegasus Knight", count: 2, hp: 18, atk: 21, def: 16, agi: 12, mov: 7, weapon: "Bronze Lance", note: "Flies"}
+      - {name: "Seabat", count: 5, hp: 22, atk: 20, def: 14, agi: 14, mov: 7, note: "Can put you to sleep"}
+      - {name: "Conch", count: 6, hp: 21, atk: 20, def: 15, agi: 16, mov: 6, note: "Poisons"}
+      - {name: "Shellfish", count: 4, hp: 25, atk: 23, def: 16, agi: 23, mov: 6, note: "Poisons"}
+      - {name: "Gargoyle", count: 1, hp: 18, atk: 26, def: 15, agi: 20, mov: 6, spells: "Muddle"}
+  - number: 18
+    chapter: 6
+    name: "Rudo to Dragonia"
+    win: "Kill the Durahan"
+    enemies:
+      - {name: "Master Mage", count: 4, hp: 22, atk: 33, def: 13, agi: 26, mov: 5, weapon: "Holy Staff", spells: "Freeze 2"}
+      - {name: "Artillery", count: 5, hp: 14, atk: 24, def: 15, agi: 14, mov: 4, note: "Long range"}
+      - {name: "Worm", count: 3, hp: 17, atk: 20, def: 16, agi: 16, mov: 4, note: "Can put you to sleep"}
+      - {name: "High Priest", count: 1, hp: 20, atk: 13, def: 14, agi: 13, mov: 6, weapon: "Holy Staff", spells: "Heal 4"}
+      - {name: "Golem", count: 5, hp: 17, atk: 28, def: 28, agi: 16, mov: 4, note: "Use magic"}
+      - {name: "Durahan", count: 1, hp: 22, atk: 39, def: 28, agi: 13, mov: 5, weapon: "Broad Sword or Shield Ring", note: "Can put you to sleep"}
+  - number: 19
+    chapter: 6
+    name: "Dragonia"
+    win: "Kill Kane"
+    enemies:
+      - {name: "Master Mage", count: 3, hp: 22, atk: 33, def: 13, agi: 26, mov: 5, weapon: "Holy Staff", spells: "Freeze 2"}
+      - {name: "Gargoyle", count: 3, hp: 18, atk: 26, def: 15, agi: 20, mov: 6, spells: "Muddle"}
+      - {name: "High Priest", count: 2, hp: 20, atk: 13, def: 14, agi: 13, mov: 6, weapon: "Holy Staff", spells: "Heal 4"}
+      - {name: "Golem", count: 4, hp: 17, atk: 28, def: 28, agi: 16, mov: 4, note: "Use magic"}
+      - {name: "Durahan", count: 2, hp: 22, atk: 39, def: 28, agi: 13, mov: 5, weapon: "Broad Sword or Shield Ring", note: "Can put you to sleep"}
+    bosses:
+      - {name: "Kane", hp: 70, atk: "65", def: 30, agi: "29", mov: 6, weapon: "Sword of Darkness", note: "Sword of Darkness kills one unit outright. Lose if it hits Max"}
+  - number: 20
+    chapter: 6
+    name: "Mountain Pass"
+    win: "Defeat all enemies"
+    enemies:
+      - {name: "Master Mage", count: 4, hp: 22, atk: 33, def: 13, agi: 26, mov: 5, weapon: "Holy Staff", spells: "Freeze 2"}
+      - {name: "Gargoyle", count: 3, hp: 18, atk: 26, def: 15, agi: 20, mov: 6, spells: "Muddle"}
+      - {name: "High Priest", count: 2, hp: 20, atk: 13, def: 14, agi: 13, mov: 6, weapon: "Holy Staff", spells: "Heal 4"}
+      - {name: "Golem", count: 4, hp: 17, atk: 28, def: 28, agi: 16, mov: 4, note: "Use magic"}
+      - {name: "Bowrider", count: 2, hp: 18, atk: 40, def: 11, agi: 14, mov: 7, weapon: "Assault Shell"}
+      - {name: "Belial", count: 3, hp: 21, atk: 26, def: 20, agi: 22, mov: 6, spells: "Bolt 1", note: "Hard to hit"}
+  - number: 21
+    chapter: 6
+    name: "Mishaela's Lair"
+    win: "Kill Mishaela"
+    enemies:
+      - {name: "Master Mage", count: 4, hp: 22, atk: 33, def: 13, agi: 26, mov: 5, weapon: "Holy Staff", spells: "Freeze 2"}
+      - {name: "Gargoyle", count: 3, hp: 18, atk: 26, def: 15, agi: 20, mov: 6, spells: "Muddle"}
+      - {name: "Durahan", count: 2, hp: 22, atk: 39, def: 28, agi: 13, mov: 5, weapon: "Broad Sword or Shield Ring", note: "Can put you to sleep"}
+      - {name: "High Priest", count: 1, hp: 20, atk: 13, def: 14, agi: 13, mov: 6, weapon: "Holy Staff", spells: "Heal 4"}
+      - {name: "Bowrider", count: 3, hp: 18, atk: 40, def: 11, agi: 14, mov: 7, weapon: "Assault Shell"}
+      - {name: "Belial", count: 3, hp: 21, atk: 26, def: 20, agi: 22, mov: 6, spells: "Bolt 1", note: "Hard to hit"}
+    bosses:
+      - {name: "Mishaela", hp: 65, atk: "42", def: 30, agi: "35", mov: 6, spells: "Bolt 2", note: "Regenerates about 15 a turn"}
+  - number: 22
+    chapter: 7
+    name: "Outside Prompt"
+    win: "Defeat all enemies"
+    note: "One Durahan carries a Doom Blade"
+    enemies:
+      - {name: "Durahan", count: 4, hp: 22, atk: 39, def: 28, agi: 13, mov: 5, weapon: "Broad Sword or Shield Ring", note: "Can put you to sleep"}
+      - {name: "Belial", count: 2, hp: 21, atk: 26, def: 20, agi: 22, mov: 6, spells: "Bolt 1", note: "Hard to hit"}
+      - {name: "Jet", count: 2, hp: 28, atk: 45, def: 32, agi: 33, mov: 7, note: "Flies"}
+      - {name: "Torch Eye", count: 2, hp: 28, atk: 42, def: 32, agi: 27, mov: 6, note: "Ranged beam"}
+      - {name: "Wyvern", count: 2, hp: 32, atk: 39, def: 30, agi: 31, mov: 7, note: "Flies. Fire breath"}
+      - {name: "Minotaur", count: 1, hp: 31, atk: 46, def: 30, agi: 31, mov: 5}
+  - number: 23
+    chapter: 7
+    name: "Tower of the Ancients"
+    win: "Kill the Demon Master"
+    note: "The Demon Master carries a Demon Rod"
+    enemies:
+      - {name: "Jet", count: 3, hp: 28, atk: 45, def: 32, agi: 33, mov: 7, note: "Flies"}
+      - {name: "Torch Eye", count: 3, hp: 28, atk: 42, def: 32, agi: 27, mov: 6, note: "Ranged beam"}
+      - {name: "Wyvern", count: 2, hp: 32, atk: 39, def: 30, agi: 31, mov: 7, note: "Flies. Fire breath"}
+      - {name: "Ice Worm", count: 5, hp: 30, atk: 40, def: 25, agi: 26, mov: 5, note: "Ice breath"}
+      - {name: "Steel Claw", count: 4, hp: 25, atk: 43, def: 31, agi: 31, mov: 5}
+      - {name: "Demon Master", count: 1, hp: 27, atk: 52, def: 24, agi: 50, mov: 6, weapon: "Demon Rod (some)", spells: "Freeze 3"}
+  - number: 24
+    chapter: 7
+    name: "Chaos"
+    win: "Kill Chaos"
+    enemies:
+      - {name: "Jet", count: 4, hp: 28, atk: 45, def: 32, agi: 33, mov: 7, note: "Flies"}
+      - {name: "Torch Eye", count: 4, hp: 28, atk: 42, def: 32, agi: 27, mov: 6, note: "Ranged beam"}
+      - {name: "Minotaur", count: 2, hp: 31, atk: 46, def: 30, agi: 31, mov: 5}
+      - {name: "Ice Worm", count: 4, hp: 30, atk: 40, def: 25, agi: 26, mov: 5, note: "Ice breath"}
+      - {name: "Demon Master", count: 3, hp: 27, atk: 52, def: 24, agi: 50, mov: 6, weapon: "Demon Rod (some)", spells: "Freeze 3"}
+    bosses:
+      - {name: "Chaos", hp: 65, atk: "50", def: 35, agi: "32", mov: 6, note: "Laser ignores defense. Regenerates about 15 a turn"}
+  - number: 25
+    chapter: 7
+    name: "To the Gate"
+    win: "Defeat all enemies"
+    enemies:
+      - {name: "High Priest", count: 1, hp: 20, atk: 13, def: 14, agi: 13, mov: 6, weapon: "Holy Staff", spells: "Heal 4"}
+      - {name: "Minotaur", count: 3, hp: 31, atk: 46, def: 30, agi: 31, mov: 5}
+      - {name: "Demon Master", count: 2, hp: 27, atk: 52, def: 24, agi: 50, mov: 6, weapon: "Demon Rod (some)", spells: "Freeze 3"}
+      - {name: "Horseman", count: 3, hp: 24, atk: 53, def: 16, agi: 17, mov: 7, weapon: "Buster Shot"}
+      - {name: "Cerberus", count: 4, hp: 27, atk: 42, def: 26, agi: 38, mov: 7, note: "Magic breath"}
+      - {name: "Armed Skeleton", count: 4, hp: 36, atk: 62, def: 33, agi: 32, mov: 5, weapon: "Great Axe", note: "Use magic"}
+  - number: 26
+    chapter: 8
+    name: "Runefaust Castle"
+    win: "Defeat all enemies"
+    enemies:
+      - {name: "High Priest", count: 2, hp: 20, atk: 13, def: 14, agi: 13, mov: 6, weapon: "Holy Staff", spells: "Heal 4"}
+      - {name: "Horseman", count: 3, hp: 24, atk: 53, def: 16, agi: 17, mov: 7, weapon: "Buster Shot"}
+      - {name: "Cerberus", count: 3, hp: 27, atk: 42, def: 26, agi: 38, mov: 7, note: "Magic breath"}
+      - {name: "Armed Skeleton", count: 3, hp: 36, atk: 62, def: 33, agi: 32, mov: 5, weapon: "Great Axe", note: "Use magic"}
+      - {name: "Chimaera", count: 5, hp: 56, atk: 65, def: 30, agi: 40, mov: 6}
+      - {name: "Blue Dragon", count: 3, hp: 50, atk: 63, def: 32, agi: 42, mov: 5, note: "Ice breath"}
+  - number: 27
+    chapter: 8
+    name: "King Ramladu"
+    win: "Kill Ramladu"
+    enemies:
+      - {name: "Torch Eye", count: 6, hp: 28, atk: 42, def: 32, agi: 27, mov: 6, note: "Ranged beam"}
+      - {name: "Steel Claw", count: 6, hp: 25, atk: 43, def: 31, agi: 31, mov: 5}
+    bosses:
+      - {name: "Ramladu", hp: 99, atk: "93", def: 40, agi: "49", mov: 6, weapon: "Holy Staff", spells: "Aura 3", note: "Regenerates 24 a turn"}
+  - number: 28
+    chapter: 8
+    name: "The Colossus"
+    win: "Kill all three parts of the Colossus"
+    enemies:
+      - {name: "Jet", count: 3, hp: 28, atk: 45, def: 32, agi: 33, mov: 7, note: "Flies"}
+      - {name: "Horseman", count: 2, hp: 24, atk: 53, def: 16, agi: 17, mov: 7, weapon: "Buster Shot"}
+      - {name: "Armed Skeleton", count: 3, hp: 36, atk: 62, def: 33, agi: 32, mov: 5, weapon: "Great Axe", note: "Use magic"}
+      - {name: "Chimaera", count: 6, hp: 56, atk: 65, def: 30, agi: 40, mov: 6}
+      - {name: "Blue Dragon", count: 3, hp: 50, atk: 63, def: 32, agi: 42, mov: 5, note: "Ice breath"}
+    bosses:
+      - {name: "Colossus x3", hp: 65, atk: "50", def: 40, agi: "37", mov: 4, spells: "Freeze 3, Bolt 3, Blaze 3", note: "One spell per part"}
+  - number: 29
+    chapter: 8
+    name: "Raising the Darkness"
+    win: "Kill Darksol"
+    enemies:
+      - {name: "Torch Eye", count: 8, hp: 28, atk: 42, def: 32, agi: 27, mov: 6, note: "Ranged beam"}
+      - {name: "Steel Claw", count: 5, hp: 25, atk: 43, def: 31, agi: 31, mov: 5}
+      - {name: "High Priest", count: 2, hp: 20, atk: 13, def: 14, agi: 13, mov: 6, weapon: "Holy Staff", spells: "Heal 4"}
+      - {name: "Blue Dragon", count: 2, hp: 50, atk: 63, def: 32, agi: 42, mov: 5, note: "Ice breath"}
+    bosses:
+      - {name: "Darksol", hp: 150, atk: "40", def: 35, agi: "54", mov: 6, spells: "Demon Blaze"}
+  - number: 30
+    chapter: 8
+    name: "Dark Dragon"
+    win: "Kill the Dark Dragon"
+    note: "Armed Skeletons keep spawning from two black squares until you stand on them"
+    enemies:
+      - {name: "Armed Skeleton", count: 2, hp: 36, atk: 62, def: 33, agi: 32, mov: 5, weapon: "Great Axe", note: "Use magic"}
+    bosses:
+      - {name: "Dark Dragon (3 heads)", hp: 250, atk: "65–67", def: 40, agi: "52–60", mov: 0, spells: "Demon Blaze (center), Bolt 4 (left)", note: "250 HP per head. Kill the center first"}

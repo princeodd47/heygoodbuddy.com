@@ -1,0 +1,73 @@
+# Lufia II items. Prices and shop lists from RPGClassics' Lufia 2 shrine;
+# effects reworded. "first" is the first shop that stocks it, in story order.
+groups:
+  - type: "Healing"
+    items:
+      - {name: "Potion", price: "8", effect: "Restores a little HP to one ally.", first: "Elcid"}
+      - {name: "Charred Newt", price: "8", effect: "Restores a little HP and MP.", first: "Drop: Lizards and other newts"}
+      - {name: "Antidote", price: "6", effect: "Cures poison.", first: "Elcid"}
+      - {name: "Awake", price: "10", effect: "Wakes a sleeping ally.", first: "Sundletan"}
+      - {name: "Shriek", price: "5", effect: "Cures confusion.", first: "Sundletan"}
+      - {name: "Hi Potion", price: "100", effect: "Restores a fair amount of HP.", first: "Alunze"}
+      - {name: "Mystery Pin", price: "30", effect: "Cures paralysis.", first: "Alunze"}
+      - {name: "Magic Jar", price: "—", effect: "Restores a little MP.", first: "Chests and drops only"}
+      - {name: "Regain", price: "500", effect: "Revives a fallen ally with some HP.", first: "Parcelyte"}
+      - {name: "Hi Magic", price: "—", effect: "Restores a fair amount of MP.", first: "Chests and drops only"}
+      - {name: "Ex Potion", price: "500", effect: "Restores a lot of HP.", first: "Forfeit"}
+      - {name: "Miracle", price: "—", effect: "Revives an ally and fully restores HP and MP.", first: "Chests and drops only"}
+  - type: "Ciders and tea"
+    note: "From the menu they restore HP. In battle they restore ATP."
+    items:
+      - {name: "Green Tea", price: "10", effect: "Just a cup of tea.", first: "Sundletan"}
+      - {name: "Pear Cider", price: "10", effect: "Weakest cider.", first: "Sundletan"}
+      - {name: "Sour Cider", price: "20", effect: "", first: "Sundletan"}
+      - {name: "Lime Cider", price: "40", effect: "", first: "Sundletan"}
+      - {name: "Plum Cider", price: "80", effect: "", first: "Sundletan"}
+      - {name: "Apple Cider", price: "1,000", effect: "Strongest cider. Good class 3 capsule food.", first: "Sundletan"}
+  - type: "Battle items"
+    items:
+      - {name: "Boomerang", price: "20", effect: "Light damage to all enemies.", first: "Elcid"}
+      - {name: "Big Boomer", price: "500", effect: "Moderate damage to all enemies.", first: "Tanbel"}
+      - {name: "Magic Guard", price: "50", effect: "Raises DFP for a few turns.", first: "Tanbel"}
+      - {name: "Power Gourd", price: "100", effect: "Raises STR for a few turns.", first: "Parcelyte"}
+      - {name: "Mind Gourd", price: "100", effect: "Raises INT for a few turns.", first: "Parcelyte"}
+      - {name: "Fire Ball", price: "200", effect: "Fire damage to one enemy.", first: "Bound Kingdom"}
+      - {name: "Ice Ball", price: "200", effect: "Ice damage to one enemy.", first: "Bound Kingdom"}
+      - {name: "Confuse Ball", price: "100", effect: "Confuses enemies.", first: "Gruberik"}
+      - {name: "Sleep Ball", price: "100", effect: "Puts an enemy to sleep.", first: "Gruberik"}
+      - {name: "Freeze Ball", price: "100", effect: "Paralyzes an enemy.", first: "Treble"}
+      - {name: "Smoke Ball", price: "100", effect: "Escape from battle.", first: "Treble"}
+      - {name: "Terror Ball", price: "100", effect: "Chance to kill an enemy outright.", first: "Treble"}
+      - {name: "Ex-Boomer", price: "2,000", effect: "Heavy damage to all enemies.", first: "Eserikto"}
+      - {name: "Dragon Tooth", price: "500", effect: "Attacks all enemies.", first: "Chaed"}
+      - {name: "Statue", price: "2,000 (casino)", effect: "Heals the party during battle, but not every time.", first: "Forfeit casino"}
+      - {name: "Magic Lamp", price: "150,000 (casino)", effect: "Magic attack on enemies.", first: "Forfeit casino"}
+  - type: "Field items"
+    items:
+      - {name: "Escape", price: "100", effect: "Leaves a dungeon.", first: "Elcid"}
+      - {name: "Warp", price: "120", effect: "Teleports to a town you've visited.", first: "Elcid"}
+      - {name: "Jewel Sonar", price: "200,000 (casino)", effect: "In a dungeon, beeps once per chest still unopened.", first: "Forfeit casino"}
+  - type: "Stat potions"
+    note: "Permanent stat boosts. Found in chests only."
+    items:
+      - {name: "Power Potion", price: "—", effect: "Raises STR.", first: "Chests"}
+      - {name: "Mind Potion", price: "—", effect: "Raises INT.", first: "Chests"}
+      - {name: "Speed Potion", price: "—", effect: "Raises AGL.", first: "Chests"}
+      - {name: "Brave", price: "—", effect: "Raises GUT.", first: "Chests"}
+      - {name: "Life Potion", price: "—", effect: "Raises max HP.", first: "Chests"}
+      - {name: "Spell Potion", price: "—", effect: "Raises max MP.", first: "Chests"}
+  - type: "Capsule fruit"
+    note: "Only capsule monsters eat these. See Capsule Monsters for which one each monster asks for."
+    items:
+      - {name: "Secret Fruit", price: "—", effect: "Jelze's last form.", first: "Alunze basement; drop: Wood Gorem"}
+      - {name: "Flame Fruit", price: "—", effect: "Zeppy's last form.", first: "Ruby Cave; drop: Pug (Tower of Sacrifice)"}
+      - {name: "Breeze Fruit", price: "—", effect: "Sully's last form.", first: "Drop: Green Clay, Serfaco"}
+      - {name: "Earth Fruit", price: "—", effect: "Gusto's last form.", first: "Drop: Sand Gorem; Dankirk dungeon"}
+      - {name: "Charm Fruit", price: "—", effect: "Blaze's last form.", first: "Drop: Evil Fish, Merman"}
+      - {name: "Holy Fruit", price: "—", effect: "Darbi's last form.", first: "Drop: White Dragon"}
+      - {name: "Dark Fruit", price: "—", effect: "Flash's last form.", first: "Drop: Black Dragon"}
+      - {name: "Magic Fruit", price: "—", effect: "Any capsule monster. Fills 8 blocks at once.", first: "Drop: Groupies"}
+  - type: "Ancient Cave only"
+    items:
+      - {name: "Providence", price: "—", effect: "Leaves the Ancient Cave and keeps what you found.", first: "Ancient Cave"}
+      - {name: "Curselifter", price: "—", effect: "Removes a curse from equipment.", first: "Ancient Cave"}

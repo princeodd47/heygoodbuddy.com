@@ -1,0 +1,557 @@
+# Lufia II bestiary. Regular enemies: level, HP, EXP, gold, drop chance and
+# weaknesses from Iron Knuckle's GameFAQs guide (v5.5). Which enemies appear
+# where: RPGClassics' monster list, checked against that guide. Bosses: HP and
+# elements from the same guide. 'strong' halves that element's damage.
+areas:
+  - area: "Secret Skills Cave"
+    monsters:
+      - {name: "Red Jelly", level: 1, hp: 6, exp: 2, gold: 2}
+      - {name: "Lizard", level: 1, hp: 8, exp: 3, gold: 5, drop: "Charred Newt (12.5%)"}
+  - area: "Overworld: Elcid"
+    monsters:
+      - {name: "Red Jelly", level: 1, hp: 6, exp: 2, gold: 2}
+      - {name: "Lizard", level: 1, hp: 8, exp: 3, gold: 5, drop: "Charred Newt (12.5%)"}
+      - {name: "Moth", level: 2, hp: 14, exp: 5, gold: 8, weak: "Flying, Insect"}
+  - area: "Cave to Sundletan"
+    monsters:
+      - {name: "Red Jelly", level: 1, hp: 6, exp: 2, gold: 2}
+      - {name: "Lizard", level: 1, hp: 8, exp: 3, gold: 5, drop: "Charred Newt (12.5%)"}
+      - {name: "Moth", level: 2, hp: 14, exp: 5, gold: 8, weak: "Flying, Insect"}
+      - {name: "Mushroom", level: 2, hp: 16, exp: 7, gold: 10, drop: "Potion (25%)", weak: "Fire"}
+      - {name: "Bat", level: 3, hp: 22, exp: 10, gold: 15, weak: "Fire, Flying"}
+      - {name: "Spider", level: 3, hp: 23, exp: 12, gold: 12, drop: "Antidote (12.5%)", weak: "Fire, Insect"}
+    bosses:
+      - {name: "Lizard Man", hp: 80, drop: "Door Key"}
+  - area: "Overworld: Sundletan"
+    monsters:
+      - {name: "Red Jelly", level: 1, hp: 6, exp: 2, gold: 2}
+      - {name: "Blue Jelly", level: 5, hp: 26, exp: 16, gold: 20}
+      - {name: "Moth", level: 2, hp: 14, exp: 5, gold: 8, weak: "Flying, Insect"}
+      - {name: "Bat", level: 3, hp: 22, exp: 10, gold: 15, weak: "Fire, Flying"}
+      - {name: "Spider", level: 3, hp: 23, exp: 12, gold: 12, drop: "Antidote (12.5%)", weak: "Fire, Insect"}
+      - {name: "Mosquito", level: 5, hp: 20, exp: 15, gold: 18, drop: "Chop Board (12.5%)", weak: "Flying, Insect"}
+  - area: "Lake Cave"
+    monsters:
+      - {name: "Blue Jelly", level: 5, hp: 26, exp: 16, gold: 20}
+      - {name: "Moth", level: 2, hp: 14, exp: 5, gold: 8, weak: "Flying, Insect"}
+      - {name: "Mushroom", level: 2, hp: 16, exp: 7, gold: 10, drop: "Potion (25%)", weak: "Fire"}
+      - {name: "Spider", level: 3, hp: 23, exp: 12, gold: 12, drop: "Antidote (12.5%)", weak: "Fire, Insect"}
+      - {name: "Mosquito", level: 5, hp: 20, exp: 15, gold: 18, drop: "Chop Board (12.5%)", weak: "Flying, Insect"}
+      - {name: "Beetle", level: 6, hp: 24, exp: 22, gold: 25, drop: "Potion (25%)", weak: "Fire, Hard, Insect", strong: "Ice"}
+      - {name: "Eagle", level: 7, hp: 28, exp: 30, gold: 30, drop: "Eagle Rock (1%)", weak: "Flying"}
+      - {name: "Baby Frog", level: 6, hp: 30, exp: 20, gold: 25, drop: "Rapier (12.5%)", weak: "Fire"}
+    bosses:
+      - {name: "Big Catfish", hp: 200, strong: "Water", drop: "Catfish Jewel (12.5%)"}
+      - {name: "Goblin and Skeleton", hp: 30, note: "Two fights when you go back for Tia"}
+  - area: "Overworld: Alunze"
+    monsters:
+      - {name: "Moth", level: 2, hp: 14, exp: 5, gold: 8, weak: "Flying, Insect"}
+      - {name: "Mushroom", level: 2, hp: 16, exp: 7, gold: 10, drop: "Potion (25%)", weak: "Fire"}
+      - {name: "Spider", level: 3, hp: 23, exp: 12, gold: 12, drop: "Antidote (12.5%)", weak: "Fire, Insect"}
+      - {name: "Eagle", level: 7, hp: 28, exp: 30, gold: 30, drop: "Eagle Rock (1%)", weak: "Flying"}
+      - {name: "Mad Horse", level: 9, hp: 40, exp: 28, gold: 40, drop: "Horse Rock (0.25%)"}
+      - {name: "Mosquito", level: 5, hp: 20, exp: 15, gold: 18, drop: "Chop Board (12.5%)", weak: "Flying, Insect"}
+      - {name: "Sentopez", level: 8, hp: 48, exp: 25, gold: 30, drop: "Antidote (15%)", weak: "Hard, Insect"}
+      - {name: "Buffalo", level: 9, hp: 52, exp: 30, gold: 38, drop: "Cloth Helmet (10%)"}
+  - area: "Alunze Castle Basement"
+    monsters:
+      - {name: "Lizard", level: 1, hp: 8, exp: 3, gold: 5, drop: "Charred Newt (12.5%)"}
+      - {name: "Baby Frog", level: 6, hp: 30, exp: 20, gold: 25, drop: "Rapier (12.5%)", weak: "Fire"}
+      - {name: "Bat", level: 3, hp: 22, exp: 10, gold: 15, weak: "Fire, Flying"}
+      - {name: "Big Bat", level: 13, hp: 48, exp: 35, gold: 40, drop: "Bat Rock (0.25%)", weak: "Fire, Flying"}
+      - {name: "Eagle", level: 7, hp: 28, exp: 30, gold: 30, drop: "Eagle Rock (1%)", weak: "Flying"}
+      - {name: "Mad Horse", level: 9, hp: 40, exp: 28, gold: 40, drop: "Horse Rock (0.25%)"}
+      - {name: "Mosquito", level: 5, hp: 20, exp: 15, gold: 18, drop: "Chop Board (12.5%)", weak: "Flying, Insect"}
+      - {name: "Sentopez", level: 8, hp: 48, exp: 25, gold: 30, drop: "Antidote (15%)", weak: "Hard, Insect"}
+      - {name: "Buffalo", level: 9, hp: 52, exp: 30, gold: 38, drop: "Cloth Helmet (10%)"}
+      - {name: "Needle Lizard", level: 10, hp: 52, exp: 38, gold: 52, drop: "Charred Newt (25%)", weak: "Fire", strong: "Water"}
+      - {name: "Cobalt", level: 11, hp: 62, exp: 47, gold: 52, drop: "Long Knife (10%)"}
+  - area: "Alunze Northwest Cave"
+    monsters:
+      - {name: "Moth", level: 2, hp: 14, exp: 5, gold: 8, weak: "Flying, Insect"}
+      - {name: "Lizard", level: 1, hp: 8, exp: 3, gold: 5, drop: "Charred Newt (12.5%)"}
+      - {name: "Baby Frog", level: 6, hp: 30, exp: 20, gold: 25, drop: "Rapier (12.5%)", weak: "Fire"}
+      - {name: "Bat", level: 3, hp: 22, exp: 10, gold: 15, weak: "Fire, Flying"}
+      - {name: "Big Bat", level: 13, hp: 48, exp: 35, gold: 40, drop: "Bat Rock (0.25%)", weak: "Fire, Flying"}
+      - {name: "Red Bat", level: 16, hp: 88, exp: 140, gold: 120, drop: "Potion (25%)", weak: "Fire, Flying"}
+      - {name: "Mad Horse", level: 9, hp: 40, exp: 28, gold: 40, drop: "Horse Rock (0.25%)"}
+      - {name: "Needle Lizard", level: 10, hp: 52, exp: 38, gold: 52, drop: "Charred Newt (25%)", weak: "Fire", strong: "Water"}
+      - {name: "Cobalt", level: 11, hp: 62, exp: 47, gold: 52, drop: "Long Knife (10%)"}
+      - {name: "Mega Moth", level: 10, hp: 50, exp: 54, gold: 52, weak: "Flying, Insect"}
+      - {name: "Small Crab", level: 10, hp: 50, exp: 52, gold: 43, drop: "Hi-Potion (25%)", weak: "Fire, Hard"}
+    bosses:
+      - {name: "Regal Goblin", hp: 500, note: "Calls Goblins and Goblin Mages"}
+  - area: "Overworld: Tanbel"
+    monsters:
+      - {name: "Red Jelly", level: 1, hp: 6, exp: 2, gold: 2}
+      - {name: "Blue Jelly", level: 5, hp: 26, exp: 16, gold: 20}
+      - {name: "Bili Jelly", level: 12, hp: 62, exp: 62, gold: 53}
+      - {name: "Eagle", level: 7, hp: 28, exp: 30, gold: 30, drop: "Eagle Rock (1%)", weak: "Flying"}
+      - {name: "Hawk", level: 13, hp: 55, exp: 70, gold: 52, drop: "Eagle Rock (10%)", weak: "Flying"}
+      - {name: "Cobalt", level: 11, hp: 62, exp: 47, gold: 52, drop: "Long Knife (10%)"}
+      - {name: "Imp", level: 12, hp: 65, exp: 63, gold: 72, drop: "Magic Jar (6.25%)", weak: "Thunder, Light"}
+    bosses:
+      - {name: "Follower x2", hp: 150, weak: "Water", note: "In Tanbel, with Guy"}
+  - area: "Tanbel East Tower"
+    monsters:
+      - {name: "Cobalt", level: 11, hp: 62, exp: 47, gold: 52, drop: "Long Knife (10%)"}
+      - {name: "Imp", level: 12, hp: 65, exp: 63, gold: 72, drop: "Magic Jar (6.25%)", weak: "Thunder, Light"}
+      - {name: "Small Crab", level: 10, hp: 50, exp: 52, gold: 43, drop: "Hi-Potion (25%)", weak: "Fire, Hard"}
+      - {name: "Big Crab", level: 14, hp: 75, exp: 106, gold: 174, drop: "Power Potion (5%)", weak: "Fire, Hard"}
+      - {name: "Goblin", level: 13, hp: 102, exp: 105, gold: 227, drop: "Short Sword (10%)"}
+      - {name: "Needle Lizard", level: 10, hp: 52, exp: 38, gold: 52, drop: "Charred Newt (25%)", weak: "Fire", strong: "Water"}
+      - {name: "Newt", level: 10, hp: 67, exp: 72, gold: 120, drop: "Charred Newt (25%)", weak: "Fire", strong: "Water"}
+      - {name: "Poison Lizard", level: 16, hp: 62, exp: 87, gold: 160, drop: "Charred Newt (25%)", weak: "Fire", strong: "Water"}
+      - {name: "Scorpion", level: 14, hp: 69, exp: 90, gold: 108, drop: "Antidote (1.25%)", weak: "Water, Hard", strong: "Fire"}
+      - {name: "Skeleton", level: 15, hp: 112, exp: 150, gold: 50, drop: "Wood Shield (6.25%)", weak: "Light, Fire, Heal", strong: "Ice"}
+    bosses:
+      - {name: "Camu", hp: 1500, weak: "Thunder", strong: "Fire", drop: "Camu Jewel (3%)", note: "Calls Slaves (150 HP, weak to ice)"}
+  - area: "Overworld: Clamento"
+    monsters:
+      - {name: "Beetle", level: 6, hp: 24, exp: 22, gold: 25, drop: "Potion (25%)", weak: "Fire, Hard, Insect", strong: "Ice"}
+      - {name: "Scorpion", level: 14, hp: 69, exp: 90, gold: 108, drop: "Antidote (1.25%)", weak: "Water, Hard", strong: "Fire"}
+      - {name: "Big Bee", level: 15, hp: 72, exp: 131, gold: 218, drop: "Bee Rock (5%)", weak: "Flying, Insect"}
+      - {name: "Mega Moth", level: 10, hp: 50, exp: 54, gold: 52, weak: "Flying, Insect"}
+      - {name: "Needle Lizard", level: 10, hp: 52, exp: 38, gold: 52, drop: "Charred Newt (25%)", weak: "Fire", strong: "Water"}
+      - {name: "Poison Beetle", level: 15, hp: 68, exp: 114, gold: 196, drop: "Antidote (25%)", weak: "Fire, Hard, Insect", strong: "Ice"}
+      - {name: "Web Spider", level: 15, hp: 82, exp: 120, gold: 182, weak: "Fire, Insect"}
+  - area: "Ruby Cave"
+    monsters:
+      - {name: "Big Bee", level: 15, hp: 72, exp: 131, gold: 218, drop: "Bee Rock (5%)", weak: "Flying, Insect"}
+      - {name: "Mega Moth", level: 10, hp: 50, exp: 54, gold: 52, weak: "Flying, Insect"}
+      - {name: "Poison Beetle", level: 15, hp: 68, exp: 114, gold: 196, drop: "Antidote (25%)", weak: "Fire, Hard, Insect", strong: "Ice"}
+      - {name: "Web Spider", level: 15, hp: 82, exp: 120, gold: 182, weak: "Fire, Insect"}
+      - {name: "Armor Goblin", level: 16, hp: 92, exp: 155, gold: 200, drop: "Tough Hide (10%)"}
+      - {name: "Goblin", level: 13, hp: 102, exp: 105, gold: 227, drop: "Short Sword (10%)"}
+      - {name: "Bat", level: 3, hp: 22, exp: 10, gold: 15, weak: "Fire, Flying"}
+      - {name: "Big Bat", level: 13, hp: 48, exp: 35, gold: 40, drop: "Bat Rock (0.25%)", weak: "Fire, Flying"}
+      - {name: "Red Bat", level: 16, hp: 88, exp: 140, gold: 120, drop: "Potion (25%)", weak: "Fire, Flying"}
+      - {name: "Skeleton", level: 15, hp: 112, exp: 150, gold: 50, drop: "Wood Shield (6.25%)", weak: "Light, Fire, Heal", strong: "Ice"}
+    bosses:
+      - {name: "Tarantula", hp: 2000, weak: "Fire, Insect", strong: "Thunder", drop: "Spido Jewel (3%)", note: "Poison and paralysis; calls Web Spiders"}
+  - area: "Overworld: Parcelyte"
+    monsters:
+      - {name: "Red Core", level: 18, hp: 10, exp: 2222, gold: 1}
+      - {name: "Goblin", level: 13, hp: 102, exp: 105, gold: 227, drop: "Short Sword (10%)"}
+      - {name: "Armor Goblin", level: 16, hp: 92, exp: 155, gold: 200, drop: "Tough Hide (10%)"}
+      - {name: "Regal Goblin", level: 18, hp: 102, exp: 182, gold: 220, drop: "Franshiska (10%)"}
+      - {name: "Ork", level: 19, hp: 122, exp: 225, gold: 231, drop: "Jet Helm (2.5%)"}
+      - {name: "Wood Gorem", level: 18, hp: 112, exp: 185, gold: 208, drop: "Secret Fruit (5%)", weak: "Fire, Hard"}
+      - {name: "Nuborg", level: 18, hp: 122, exp: 175, gold: 202, drop: "Sour Cider (12.5%)", weak: "Hard"}
+  - area: "Treasure Sword Shrine"
+    monsters:
+      - {name: "Goblin", level: 13, hp: 102, exp: 105, gold: 227, drop: "Short Sword (10%)"}
+      - {name: "Armor Goblin", level: 16, hp: 92, exp: 155, gold: 200, drop: "Tough Hide (10%)"}
+      - {name: "Regal Goblin", level: 18, hp: 102, exp: 182, gold: 220, drop: "Franshiska (10%)"}
+      - {name: "Ork", level: 19, hp: 122, exp: 225, gold: 231, drop: "Jet Helm (2.5%)"}
+      - {name: "Wood Gorem", level: 18, hp: 112, exp: 185, gold: 208, drop: "Secret Fruit (5%)", weak: "Fire, Hard"}
+      - {name: "Nuborg", level: 18, hp: 122, exp: 175, gold: 202, drop: "Sour Cider (12.5%)", weak: "Hard"}
+      - {name: "Skeleton", level: 15, hp: 112, exp: 150, gold: 50, drop: "Wood Shield (6.25%)", weak: "Light, Fire, Heal", strong: "Ice"}
+      - {name: "Ghoul", level: 18, hp: 93, exp: 168, gold: 188, drop: "Antidote (25%)", weak: "Light, Fire, Heal", strong: "Ice"}
+    bosses:
+      - {name: "Pierre (blue)", hp: 1200, weak: "Water, Ice", strong: "Thunder"}
+      - {name: "Daniele (red)", hp: 1200, weak: "Fire, Thunder", strong: "Ice"}
+  - area: "Gordovan West Tower"
+    monsters:
+      - {name: "Wispy", level: 19, hp: 82, exp: 216, gold: 301, drop: "Magic Jar (12.5%)", weak: "Ice"}
+      - {name: "Big Mushr'm", level: 19, hp: 108, exp: 210, gold: 221, drop: "Hi-Potion (25%)", weak: "Fire"}
+      - {name: "Antares", level: 20, hp: 80, exp: 252, gold: 252, drop: "Antidote (25%)", weak: "Water", strong: "Fire"}
+      - {name: "Doben", level: 19, hp: 102, exp: 220, gold: 201, drop: "Blue Beret (7.5%)"}
+      - {name: "Evil Shell", level: 20, hp: 122, exp: 245, gold: 251, weak: "Fire, Hard"}
+      - {name: "Fighter Ork", level: 20, hp: 122, exp: 253, gold: 235, drop: "Power Gourd (12.5%)"}
+      - {name: "Ghoul", level: 18, hp: 93, exp: 168, gold: 188, drop: "Antidote (25%)", weak: "Light, Fire, Heal", strong: "Ice"}
+      - {name: "Goblin Mage", level: 20, hp: 122, exp: 272, gold: 277, drop: "Hi-Magic (7.5%)"}
+      - {name: "Ork", level: 19, hp: 122, exp: 225, gold: 231, drop: "Jet Helm (2.5%)"}
+      - {name: "Ork Mage", level: 22, hp: 145, exp: 353, gold: 280, drop: "Hi-Magic (7.5%)"}
+      - {name: "Red Lobster", level: 20, hp: 122, exp: 242, gold: 250, drop: "Hi-Potion (12.5%)", weak: "Fire", strong: "Water"}
+      - {name: "Regal Goblin", level: 18, hp: 102, exp: 182, gold: 220, drop: "Franshiska (10%)"}
+      - {name: "Zombie", level: 21, hp: 146, exp: 291, gold: 288, weak: "Light, Fire, Heal", strong: "Ice"}
+    bosses:
+      - {name: "Gades", hp: 7500, weak: "Light", strong: "Shadow", drop: "Gades Blade (only if you win)", note: "Meant to be lost"}
+  - area: "Overworld: Merix"
+    monsters:
+      - {name: "Wispy", level: 19, hp: 82, exp: 216, gold: 301, drop: "Magic Jar (12.5%)", weak: "Ice"}
+      - {name: "Big Mushr'm", level: 19, hp: 108, exp: 210, gold: 221, drop: "Hi-Potion (25%)", weak: "Fire"}
+      - {name: "Ork", level: 19, hp: 122, exp: 225, gold: 231, drop: "Jet Helm (2.5%)"}
+      - {name: "Regal Goblin", level: 18, hp: 102, exp: 182, gold: 220, drop: "Franshiska (10%)"}
+      - {name: "Doben", level: 19, hp: 102, exp: 220, gold: 201, drop: "Blue Beret (7.5%)"}
+  - area: "Cave to Bound Kingdom"
+    monsters:
+      - {name: "Doben", level: 19, hp: 102, exp: 220, gold: 201, drop: "Blue Beret (7.5%)"}
+      - {name: "Fighter Ork", level: 20, hp: 122, exp: 253, gold: 235, drop: "Power Gourd (12.5%)"}
+      - {name: "Goblin Mage", level: 20, hp: 122, exp: 272, gold: 277, drop: "Hi-Magic (7.5%)"}
+      - {name: "Lizardman", level: 22, hp: 140, exp: 320, gold: 281, drop: "Big Boomer (12.5%)", weak: "Fire"}
+      - {name: "Ork", level: 19, hp: 122, exp: 225, gold: 231, drop: "Jet Helm (2.5%)"}
+      - {name: "Ork Mage", level: 22, hp: 145, exp: 353, gold: 280, drop: "Hi-Magic (7.5%)"}
+  - area: "Overworld: Bound Kingdom"
+    monsters:
+      - {name: "Wispy", level: 19, hp: 82, exp: 216, gold: 301, drop: "Magic Jar (12.5%)", weak: "Ice"}
+      - {name: "Doben", level: 19, hp: 102, exp: 220, gold: 201, drop: "Blue Beret (7.5%)"}
+      - {name: "Fighter Ork", level: 20, hp: 122, exp: 253, gold: 235, drop: "Power Gourd (12.5%)"}
+      - {name: "Goblin Mage", level: 20, hp: 122, exp: 272, gold: 277, drop: "Hi-Magic (7.5%)"}
+      - {name: "Ork Mage", level: 22, hp: 145, exp: 353, gold: 280, drop: "Hi-Magic (7.5%)"}
+      - {name: "Green Clay", level: 21, hp: 137, exp: 308, gold: 278, drop: "Breeze Fruit (2.5%)", weak: "Thunder, Fire"}
+      - {name: "Sand Gorem", level: 22, hp: 151, exp: 336, gold: 285, drop: "Earth Fruit (5%)", weak: "Water, Ice"}
+  - area: "Northern Labyrinth"
+    monsters:
+      - {name: "Green Clay", level: 21, hp: 137, exp: 308, gold: 278, drop: "Breeze Fruit (2.5%)", weak: "Thunder, Fire"}
+      - {name: "Sand Gorem", level: 22, hp: 151, exp: 336, gold: 285, drop: "Earth Fruit (5%)", weak: "Water, Ice"}
+      - {name: "Skeleton", level: 15, hp: 112, exp: 150, gold: 50, drop: "Wood Shield (6.25%)", weak: "Light, Fire, Heal", strong: "Ice"}
+      - {name: "Lizardman", level: 22, hp: 140, exp: 320, gold: 281, drop: "Big Boomer (12.5%)", weak: "Fire"}
+      - {name: "Deadly Sword", level: 22, hp: 108, exp: 358, gold: 200, drop: "Deadly Sword (5%)", weak: "Ice", strong: "Neutral"}
+      - {name: "Shadowfly", level: 21, hp: 142, exp: 282, gold: 388, weak: "Light, Flying"}
+      - {name: "Winger", level: 21, hp: 110, exp: 395, gold: 380, drop: "Magic Jar (7.5%)", weak: "Flying"}
+      - {name: "Zombie", level: 21, hp: 146, exp: 291, gold: 288, weak: "Light, Fire, Heal", strong: "Ice"}
+      - {name: "Torrent", level: 25, hp: 175, exp: 531, gold: 453, drop: "Awake (25%)", weak: "Fire", strong: "Water"}
+    bosses:
+      - {name: "Mummy x4", hp: 150, weak: "Fire, Light, Water", strong: "Shadow"}
+      - {name: "Troll x3", hp: 200, weak: "Fire"}
+  - area: "Ancient Tower"
+    monsters:
+      - {name: "Bruse", level: 23, hp: 152, exp: 368, gold: 330, drop: "Hi-Potion (12.5%)"}
+      - {name: "Shadowfly", level: 21, hp: 142, exp: 282, gold: 388, weak: "Light, Flying"}
+      - {name: "Dark Fly", level: 25, hp: 160, exp: 400, gold: 331, weak: "Light, Flying, Insect"}
+      - {name: "Deadly Sword", level: 22, hp: 108, exp: 358, gold: 200, drop: "Deadly Sword (5%)", weak: "Ice", strong: "Neutral"}
+      - {name: "Deadly Armor", level: 24, hp: 142, exp: 422, gold: 383, drop: "Deadly Armor (5%)", weak: "Ice", strong: "Neutral"}
+      - {name: "Earth Viper", level: 23, hp: 150, exp: 358, gold: 320}
+      - {name: "Evil Shell", level: 20, hp: 122, exp: 245, gold: 251, weak: "Fire, Hard"}
+      - {name: "Pumpkin Head", level: 23, hp: 158, exp: 364, gold: 380, drop: "Pumkin Jewel (7.5%)", weak: "Fire"}
+      - {name: "Spinner", level: 24, hp: 165, exp: 408, gold: 340, drop: "Life Potion (10%)"}
+      - {name: "King Frog", level: 24, hp: 160, exp: 402, gold: 350, drop: "Regain (12.5%)", weak: "Fire"}
+      - {name: "Snell", level: 23, hp: 150, exp: 358, gold: 332, drop: "Hi-Potion (12.5%)", weak: "Fire, Hard", strong: "Ice"}
+    bosses:
+      - {name: "Gades", hp: 3000, weak: "Light", strong: "Shadow"}
+  - area: "Northern Lighthouse"
+    monsters:
+      - {name: "Fighter Ork", level: 20, hp: 122, exp: 253, gold: 235, drop: "Power Gourd (12.5%)"}
+      - {name: "Goblin Mage", level: 20, hp: 122, exp: 272, gold: 277, drop: "Hi-Magic (7.5%)"}
+      - {name: "Ork Mage", level: 22, hp: 145, exp: 353, gold: 280, drop: "Hi-Magic (7.5%)"}
+      - {name: "Ork", level: 19, hp: 122, exp: 225, gold: 231, drop: "Jet Helm (2.5%)"}
+      - {name: "Doben", level: 19, hp: 102, exp: 220, gold: 201, drop: "Blue Beret (7.5%)"}
+      - {name: "King Frog", level: 24, hp: 160, exp: 402, gold: 350, drop: "Regain (12.5%)", weak: "Fire"}
+      - {name: "Snell", level: 23, hp: 150, exp: 358, gold: 332, drop: "Hi-Potion (12.5%)", weak: "Fire, Hard", strong: "Ice"}
+      - {name: "Antares", level: 20, hp: 80, exp: 252, gold: 252, drop: "Antidote (25%)", weak: "Water", strong: "Fire"}
+      - {name: "Red Lobster", level: 20, hp: 122, exp: 242, gold: 250, drop: "Hi-Potion (12.5%)", weak: "Fire", strong: "Water"}
+      - {name: "Armor Horse", level: 24, hp: 158, exp: 481, gold: 383, drop: "Horse Rock (5%)"}
+      - {name: "Cancer", level: 24, hp: 165, exp: 502, gold: 379, drop: "Cancer Rock (5%)", weak: "Fire"}
+      - {name: "Drill Shell", level: 28, hp: 175, exp: 642, gold: 695, drop: "Confuse Ball (25%)", weak: "Fire, Hard", strong: "Water"}
+      - {name: "Snatcher", level: 24, hp: 172, exp: 521, gold: 390, weak: "Water, Light, Heal", strong: "Ice"}
+    bosses:
+      - {name: "Idura", hp: 1500, weak: "Ice", strong: "Thunder", note: "Calls Groupies, which drop Magic Fruit (25%). Not immune to sleep"}
+  - area: "Overworld: Aleyn"
+    monsters:
+      - {name: "Big Bee", level: 15, hp: 72, exp: 131, gold: 218, drop: "Bee Rock (5%)", weak: "Flying, Insect"}
+      - {name: "Dark Fly", level: 25, hp: 160, exp: 400, gold: 331, weak: "Light, Flying, Insect"}
+      - {name: "Armor Bee", level: 26, hp: 150, exp: 552, gold: 480, drop: "Bee Rock (7.5%)", weak: "Flying, Insect"}
+      - {name: "La Fleshia", level: 25, hp: 164, exp: 532, gold: 442, drop: "Mystery Pin (12.5%)", weak: "Fire", strong: "Water"}
+      - {name: "Stinger", level: 25, hp: 168, exp: 527, gold: 430, drop: "Speed Potion (2.5%)", weak: "Flying, Insect"}
+      - {name: "Torrent", level: 25, hp: 175, exp: 531, gold: 453, drop: "Awake (25%)", weak: "Fire", strong: "Water"}
+  - area: "Phantom Tree Mountain"
+    monsters:
+      - {name: "Big Bee", level: 15, hp: 72, exp: 131, gold: 218, drop: "Bee Rock (5%)", weak: "Flying, Insect"}
+      - {name: "Dark Fly", level: 25, hp: 160, exp: 400, gold: 331, weak: "Light, Flying, Insect"}
+      - {name: "Armor Bee", level: 26, hp: 150, exp: 552, gold: 480, drop: "Bee Rock (7.5%)", weak: "Flying, Insect"}
+      - {name: "La Fleshia", level: 25, hp: 164, exp: 532, gold: 442, drop: "Mystery Pin (12.5%)", weak: "Fire", strong: "Water"}
+      - {name: "Stinger", level: 25, hp: 168, exp: 527, gold: 430, drop: "Speed Potion (2.5%)", weak: "Flying, Insect"}
+      - {name: "Torrent", level: 25, hp: 175, exp: 531, gold: 453, drop: "Awake (25%)", weak: "Fire", strong: "Water"}
+      - {name: "Lizardman", level: 22, hp: 140, exp: 320, gold: 281, drop: "Big Boomer (12.5%)", weak: "Fire"}
+      - {name: "Mad Gorem", level: 26, hp: 182, exp: 572, gold: 450, drop: "Hi-Magic (7.5%)", weak: "Fire, Thunder"}
+      - {name: "Skull Lizard", level: 26, hp: 180, exp: 552, gold: 463, drop: "Mage Shield (2.5%)", weak: "Ice"}
+    bosses:
+      - {name: "Lion x2", hp: 1000, weak: "Ice", strong: "Water", note: "Not immune to instant death"}
+  - area: "Tower of Sacrifice"
+    monsters:
+      - {name: "Evil Fish", level: 28, hp: 208, exp: 664, gold: 700, drop: "Charm Fruit (7.5%)", weak: "Fire", strong: "Water"}
+      - {name: "Cancer", level: 24, hp: 165, exp: 502, gold: 379, drop: "Cancer Rock (5%)", weak: "Fire"}
+      - {name: "Drill Shell", level: 28, hp: 175, exp: 642, gold: 695, drop: "Confuse Ball (25%)", weak: "Fire, Hard", strong: "Water"}
+      - {name: "Dragonian", level: 27, hp: 188, exp: 594, gold: 690, drop: "Long Sword (7.5%)", weak: "Flying"}
+      - {name: "Ochi Warrior", level: 28, hp: 190, exp: 643, gold: 720, drop: "Samu Jewel (0.25%)", weak: "Light, Heal", strong: "Ice"}
+      - {name: "Pug", level: 27, hp: 182, exp: 592, gold: 682, drop: "Flame Fruit (7.5%)", weak: "Ice, Water", strong: "Fire"}
+      - {name: "Specter", level: 27, hp: 161, exp: 595, gold: 685, weak: "Light, Ice, Heal", strong: "Thunder"}
+    bosses:
+      - {name: "Idura", hp: 2500, weak: "Ice", strong: "Thunder", note: "Calls Followers (300 HP)"}
+  - area: "Overworld: Karlloon"
+    monsters:
+      - {name: "Big Bee", level: 15, hp: 72, exp: 131, gold: 218, drop: "Bee Rock (5%)", weak: "Flying, Insect"}
+      - {name: "Dark Fly", level: 25, hp: 160, exp: 400, gold: 331, weak: "Light, Flying, Insect"}
+      - {name: "Armor Bee", level: 26, hp: 150, exp: 552, gold: 480, drop: "Bee Rock (7.5%)", weak: "Flying, Insect"}
+      - {name: "La Fleshia", level: 25, hp: 164, exp: 532, gold: 442, drop: "Mystery Pin (12.5%)", weak: "Fire", strong: "Water"}
+      - {name: "Stinger", level: 25, hp: 168, exp: 527, gold: 430, drop: "Speed Potion (2.5%)", weak: "Flying, Insect"}
+      - {name: "Torrent", level: 25, hp: 175, exp: 531, gold: 453, drop: "Awake (25%)", weak: "Fire", strong: "Water"}
+      - {name: "Dragonian", level: 27, hp: 188, exp: 594, gold: 690, drop: "Long Sword (7.5%)", weak: "Flying"}
+  - area: "Karlloon North Shrine"
+    monsters:
+      - {name: "Ammonite", level: 29, hp: 198, exp: 725, gold: 840, drop: "Sleep Ball (25%)", weak: "Fire, Hard", strong: "Water"}
+      - {name: "Dark Skull", level: 31, hp: 205, exp: 800, gold: 955, drop: "Miracle (1%)", weak: "Fire, Light, Heal", strong: "Ice"}
+      - {name: "Dragonian", level: 27, hp: 188, exp: 594, gold: 690, drop: "Long Sword (7.5%)", weak: "Flying"}
+      - {name: "Drill Shell", level: 28, hp: 175, exp: 642, gold: 695, drop: "Confuse Ball (25%)", weak: "Fire, Hard", strong: "Water"}
+      - {name: "Hound", level: 29, hp: 195, exp: 728, gold: 887, drop: "Flame Jewel (2.5%)", weak: "Light"}
+      - {name: "Jurahan", level: 30, hp: 205, exp: 780, gold: 897, drop: "Hi-Magic (7.5%)", weak: "Light, Heal"}
+      - {name: "Lion", level: 29, hp: 204, exp: 1433, gold: 1475, drop: "Lion Fang (7.5%)"}
+      - {name: "Medusa", level: 30, hp: 195, exp: 760, gold: 882, drop: "Brave (10%)", strong: "Neutral"}
+      - {name: "Troll", level: 31, hp: 252, exp: 798, gold: 900, drop: "Multi Sword (7.5%)"}
+    bosses:
+      - {name: "Idura", hp: 3500, weak: "Ice", strong: "Thunder", note: "Can confuse; calls Groupies (Magic Fruit, 25%)"}
+  - area: "Overworld: Treadool"
+    monsters:
+      - {name: "Red Core", level: 18, hp: 10, exp: 2222, gold: 1}
+      - {name: "Blue Core", level: 32, hp: 20, exp: 11111, gold: 1}
+      - {name: "Hound", level: 29, hp: 195, exp: 728, gold: 887, drop: "Flame Jewel (2.5%)", weak: "Light"}
+      - {name: "Lion", level: 29, hp: 204, exp: 1433, gold: 1475, drop: "Lion Fang (7.5%)"}
+      - {name: "Earth Viper", level: 23, hp: 150, exp: 358, gold: 320}
+      - {name: "Gnome", level: 32, hp: 262, exp: 920, gold: 1066, drop: "Silver Armor (7.5%)"}
+  - area: "Flower Mountain"
+    monsters:
+      - {name: "Earth Viper", level: 23, hp: 150, exp: 358, gold: 320}
+      - {name: "Gnome", level: 32, hp: 262, exp: 920, gold: 1066, drop: "Silver Armor (7.5%)"}
+      - {name: "Skeleton", level: 15, hp: 112, exp: 150, gold: 50, drop: "Wood Shield (6.25%)", weak: "Light, Fire, Heal", strong: "Ice"}
+      - {name: "Necromancer", level: 33, hp: 272, exp: 982, gold: 1121, drop: "Mind Potion (7.5%)", weak: "Light"}
+      - {name: "Troll", level: 31, hp: 252, exp: 798, gold: 900, drop: "Multi Sword (7.5%)"}
+      - {name: "Tengu", level: 33, hp: 475, exp: 1687, gold: 1411, drop: "Hi-Magic (10%)", weak: "Ice, Hard, Flying", strong: "Thunder"}
+      - {name: "Crow Kelp", level: 50, hp: 405, exp: 1825, gold: 1418, weak: "Fire", strong: "Water"}
+      - {name: "Lunar Bear", level: 32, hp: 408, exp: 2031, gold: 2083, drop: "Power Potion (5%)"}
+    bosses:
+      - {name: "Rogue Flower", hp: 3000, weak: "Fire", strong: "Water"}
+  - area: "Overworld: Dankirk"
+    monsters:
+      - {name: "Tengu", level: 33, hp: 475, exp: 1687, gold: 1411, drop: "Hi-Magic (10%)", weak: "Ice, Hard, Flying", strong: "Thunder"}
+      - {name: "Crow Kelp", level: 50, hp: 405, exp: 1825, gold: 1418, weak: "Fire", strong: "Water"}
+      - {name: "Desert Rose", level: 34, hp: 281, exp: 1255, gold: 1330, weak: "Fire", strong: "Water"}
+      - {name: "Medusa", level: 30, hp: 195, exp: 760, gold: 882, drop: "Brave (10%)", strong: "Neutral"}
+      - {name: "Ramia", level: 34, hp: 285, exp: 1325, gold: 1300, drop: "Hi-Magic (12.5%)", strong: "Neutral"}
+  - area: "Dankirk North Dungeon"
+    monsters:
+      - {name: "Desert Rose", level: 34, hp: 281, exp: 1255, gold: 1330, weak: "Fire", strong: "Water"}
+      - {name: "Medusa", level: 30, hp: 195, exp: 760, gold: 882, drop: "Brave (10%)", strong: "Neutral"}
+      - {name: "Ramia", level: 34, hp: 285, exp: 1325, gold: 1300, drop: "Hi-Magic (12.5%)", strong: "Neutral"}
+      - {name: "Bat", level: 3, hp: 22, exp: 10, gold: 15, weak: "Fire, Flying"}
+      - {name: "Big Bat", level: 13, hp: 48, exp: 35, gold: 40, drop: "Bat Rock (0.25%)", weak: "Fire, Flying"}
+      - {name: "Red Bat", level: 16, hp: 88, exp: 140, gold: 120, drop: "Potion (25%)", weak: "Fire, Flying"}
+      - {name: "Vampire", level: 35, hp: 292, exp: 1420, gold: 1477, drop: "Bat Rock (12.5%)", weak: "Light, Heal", strong: "Ice"}
+      - {name: "Garbost", level: 34, hp: 282, exp: 1282, gold: 1219, drop: "Cancer Rock (10%)", weak: "Fire, Hard"}
+      - {name: "Mummy", level: 35, hp: 293, exp: 1399, gold: 1418, drop: "Antidote (25%)", weak: "Fire, Light, Water, Heal"}
+      - {name: "Shadow", level: 36, hp: 468, exp: 1451, gold: 1482, drop: "Gloom Jewel (1%)", weak: "Light", strong: "Shadow, Neutral"}
+      - {name: "Armour Dait", level: 36, hp: 302, exp: 1452, gold: 1422, drop: "Metal Coat (7.5%)", weak: "Flying"}
+      - {name: "Asashin", level: 36, hp: 220, exp: 1455, gold: 1421, drop: "Mysto Jewel (1.25%)", weak: "Light", strong: "Neutral"}
+    bosses:
+      - {name: "Soldier x4", hp: 400}
+  - area: "Overworld: Ferim"
+    monsters:
+      - {name: "Asashin", level: 36, hp: 220, exp: 1455, gold: 1421, drop: "Mysto Jewel (1.25%)", weak: "Light", strong: "Neutral"}
+      - {name: "Pumpkin Head", level: 23, hp: 158, exp: 364, gold: 380, drop: "Pumkin Jewel (7.5%)", weak: "Fire"}
+      - {name: "Mad Head", level: 37, hp: 315, exp: 1669, gold: 2070, drop: "Pumkin Jewel (10%)", weak: "Fire"}
+      - {name: "Medusa", level: 30, hp: 195, exp: 760, gold: 882, drop: "Brave (10%)", strong: "Neutral"}
+      - {name: "Ramia", level: 34, hp: 285, exp: 1325, gold: 1300, drop: "Hi-Magic (12.5%)", strong: "Neutral"}
+      - {name: "Minataurus", level: 34, hp: 621, exp: 3280, gold: 4000, drop: "Miracle (2%)", strong: "Fire"}
+  - area: "Ferim Northeast Tower"
+    monsters:
+      - {name: "Pumpkin Head", level: 23, hp: 158, exp: 364, gold: 380, drop: "Pumkin Jewel (7.5%)", weak: "Fire"}
+      - {name: "Mad Head", level: 37, hp: 315, exp: 1669, gold: 2070, drop: "Pumkin Jewel (10%)", weak: "Fire"}
+      - {name: "Medusa", level: 30, hp: 195, exp: 760, gold: 882, drop: "Brave (10%)", strong: "Neutral"}
+      - {name: "Ramia", level: 34, hp: 285, exp: 1325, gold: 1300, drop: "Hi-Magic (12.5%)", strong: "Neutral"}
+      - {name: "Minataurus", level: 34, hp: 621, exp: 3280, gold: 4000, drop: "Miracle (2%)", strong: "Fire"}
+      - {name: "Bone Gorem", level: 38, hp: 330, exp: 1738, gold: 2050, drop: "Spell Potion (10%)", weak: "Thunder, Hard"}
+      - {name: "Dark Spirit", level: 37, hp: 315, exp: 1729, gold: 2020, drop: "Shriek (25%)", weak: "Thunder, Light, Heal", strong: "Ice"}
+      - {name: "Hades Skull", level: 43, hp: 362, exp: 2389, gold: 2900, drop: "Miracle (3%)", weak: "Fire, Light, Heal", strong: "Ice"}
+      - {name: "Ninja", level: 39, hp: 340, exp: 1784, gold: 2250, drop: "Mysto Jewel (1%)"}
+      - {name: "Samurai", level: 38, hp: 329, exp: 1751, gold: 2060, drop: "Samu Jewel (1%)", strong: "Light"}
+      - {name: "Hidora", level: 38, hp: 529, exp: 3212, gold: 3090, drop: "Ex-Potion (10%)", weak: "Ice"}
+  - area: "Overworld: Portravia"
+    monsters:
+      - {name: "Red Core", level: 18, hp: 10, exp: 2222, gold: 1}
+      - {name: "Blue Core", level: 32, hp: 20, exp: 11111, gold: 1}
+      - {name: "Green Core", level: 39, hp: 30, exp: 33333, gold: 1}
+      - {name: "Mad Ent", level: 39, hp: 341, exp: 1725, gold: 1824, weak: "Fire", strong: "Water"}
+      - {name: "Vampire Rose", level: 39, hp: 340, exp: 8097, gold: 6796, weak: "Fire", strong: "Water"}
+      - {name: "Wheel Eel", level: 39, hp: 345, exp: 1720, gold: 2090, drop: "Hi-Potion (25%)"}
+  - area: "Mountain of No Return"
+    monsters:
+      - {name: "Desert Rose", level: 34, hp: 281, exp: 1255, gold: 1330, weak: "Fire", strong: "Water"}
+      - {name: "Mad Ent", level: 39, hp: 341, exp: 1725, gold: 1824, weak: "Fire", strong: "Water"}
+      - {name: "Vampire Rose", level: 39, hp: 340, exp: 8097, gold: 6796, weak: "Fire", strong: "Water"}
+      - {name: "Wheel Eel", level: 39, hp: 345, exp: 1720, gold: 2090, drop: "Hi-Potion (25%)"}
+    bosses:
+      - {name: "Gargoyle x4", hp: 1000, weak: "Hard, Flying", strong: "Neutral", note: "Not immune to instant death"}
+  - area: "Overworld: Eserikto"
+    monsters:
+      - {name: "Sly Fox", level: 48, hp: 654, exp: 6075, gold: 5555, drop: "Ex-Magic (20%)", weak: "Thunder, Flying", strong: "Light"}
+      - {name: "Waiban", level: 43, hp: 389, exp: 2415, gold: 2880, weak: "Flying"}
+      - {name: "T Rex", level: 43, hp: 888, exp: 4697, gold: 4820, weak: "Dragon"}
+      - {name: "Cokatoris", level: 41, hp: 365, exp: 2050, gold: 2415, drop: "Life Potion (10%)", weak: "Water, Ice"}
+      - {name: "Red Plant", level: 40, hp: 452, exp: 4080, gold: 4360, drop: "Ex-Potion (12.5%)", weak: "Fire", strong: "Water"}
+  - area: "Divine Shrine"
+    monsters:
+      - {name: "Cokatoris", level: 41, hp: 365, exp: 2050, gold: 2415, drop: "Life Potion (10%)", weak: "Water, Ice"}
+      - {name: "Red Plant", level: 40, hp: 452, exp: 4080, gold: 4360, drop: "Ex-Potion (12.5%)", weak: "Fire", strong: "Water"}
+      - {name: "Jurahan", level: 30, hp: 205, exp: 780, gold: 897, drop: "Hi-Magic (7.5%)", weak: "Light, Heal"}
+      - {name: "Gargoyle", level: 50, hp: 218, exp: 1523, gold: 960, weak: "Hard, Flying"}
+      - {name: "Iron Gorem", level: 42, hp: 377, exp: 2123, gold: 2400, drop: "Hi-Magic (7.5%)", weak: "Hard"}
+      - {name: "Coridras", level: 40, hp: 351, exp: 1950, gold: 2330, drop: "Antidote (25%)"}
+      - {name: "Rogue Shape", level: 41, hp: 362, exp: 2052, gold: 2330, drop: "Battledriver (25%)", weak: "Light, Flying"}
+      - {name: "Tartona", level: 42, hp: 376, exp: 2092, gold: 2411, drop: "Earth Jewel (10%)", weak: "Fire"}
+      - {name: "Brinz Lizard", level: 40, hp: 554, exp: 4042, gold: 4259, drop: "Twist Jewel (7.5%)", weak: "Fire, Flying", strong: "Ice"}
+      - {name: "Thunderbeast", level: 47, hp: 726, exp: 5002, gold: 5420, drop: "Thundo Jewel (7.5%)"}
+  - area: "Shrine of Vengeance"
+    monsters:
+      - {name: "Bat", level: 3, hp: 22, exp: 10, gold: 15, weak: "Fire, Flying"}
+      - {name: "Big Bat", level: 13, hp: 48, exp: 35, gold: 40, drop: "Bat Rock (0.25%)", weak: "Fire, Flying"}
+      - {name: "Red Bat", level: 16, hp: 88, exp: 140, gold: 120, drop: "Potion (25%)", weak: "Fire, Flying"}
+      - {name: "Waiban", level: 43, hp: 389, exp: 2415, gold: 2880, weak: "Flying"}
+      - {name: "T Rex", level: 43, hp: 888, exp: 4697, gold: 4820, weak: "Dragon"}
+      - {name: "Demise", level: 44, hp: 402, exp: 2458, gold: 2900, drop: "Brave (10%)", weak: "Light, Heal", strong: "Hard, Neutral"}
+      - {name: "Dark Warrior", level: 44, hp: 400, exp: 2393, gold: 2860, drop: "Hi-Magic (12.5%)", weak: "Water", strong: "Light"}
+      - {name: "Vampire", level: 35, hp: 292, exp: 1420, gold: 1477, drop: "Bat Rock (12.5%)", weak: "Light, Heal", strong: "Ice"}
+      - {name: "Nosferato", level: 45, hp: 614, exp: 2455, gold: 2950, drop: "Gloom Jewel (2%)", weak: "Light, Heal", strong: "Ice"}
+      - {name: "Wizard", level: 45, hp: 415, exp: 2420, gold: 2840, drop: "Hi-Magic (10%)", weak: "Light"}
+      - {name: "Hades Skull", level: 43, hp: 362, exp: 2389, gold: 2900, drop: "Miracle (3%)", weak: "Fire, Light, Heal", strong: "Ice"}
+      - {name: "Hade Chariot", level: 44, hp: 710, exp: 4401, gold: 4891, drop: "Power Potion (10%)", weak: "Fire, Light, Heal", strong: "Ice"}
+      - {name: "Fiend", level: 45, hp: 818, exp: 5052, gold: 5080, drop: "Evil Jewel (1%)", weak: "Light, Flying", strong: "Neutral, Shadow"}
+      - {name: "Jurahan", level: 30, hp: 205, exp: 780, gold: 897, drop: "Hi-Magic (7.5%)", weak: "Light, Heal"}
+      - {name: "Samurai", level: 38, hp: 329, exp: 1751, gold: 2060, drop: "Samu Jewel (1%)", strong: "Light"}
+    bosses:
+      - {name: "Venge Ghost", hp: 7500, weak: "Light, Heal", strong: "Ice, Shadow", note: "Instant-death attacks"}
+  - area: "Overworld: Durale"
+    monsters:
+      - {name: "Cokatoris", level: 41, hp: 365, exp: 2050, gold: 2415, drop: "Life Potion (10%)", weak: "Water, Ice"}
+      - {name: "Red Plant", level: 40, hp: 452, exp: 4080, gold: 4360, drop: "Ex-Potion (12.5%)", weak: "Fire", strong: "Water"}
+      - {name: "Waiban", level: 43, hp: 389, exp: 2415, gold: 2880, weak: "Flying"}
+      - {name: "T Rex", level: 43, hp: 888, exp: 4697, gold: 4820, weak: "Dragon"}
+      - {name: "Sly Fox", level: 48, hp: 654, exp: 6075, gold: 5555, drop: "Ex-Magic (20%)", weak: "Thunder, Flying", strong: "Light"}
+  - area: "Tower of Truth"
+    monsters:
+      - {name: "Sly Fox", level: 48, hp: 654, exp: 6075, gold: 5555, drop: "Ex-Magic (20%)", weak: "Thunder, Flying", strong: "Light"}
+      - {name: "Mimic", level: 10, hp: 60, exp: 130, gold: 250}
+      - {name: "Seirein", level: 46, hp: 430, exp: 2828, gold: 3400, drop: "Song Rock (7.5%)", weak: "Fire"}
+      - {name: "Moray Vine", level: 52, hp: 505, exp: 3880, gold: 4620, weak: "Fire", strong: "Water"}
+      - {name: "Serfaco", level: 47, hp: 440, exp: 5280, gold: 5410, drop: "Breeze Fruit (7.5%)", weak: "Flying"}
+      - {name: "Armour Dait", level: 36, hp: 302, exp: 1452, gold: 1422, drop: "Metal Coat (7.5%)", weak: "Flying"}
+      - {name: "Armour Nail", level: 48, hp: 452, exp: 3438, gold: 2752, drop: "Power Potion (10%)", weak: "Fire"}
+      - {name: "Sea Hidora", level: 46, hp: 631, exp: 5964, gold: 5490, drop: "Hidora Rock (7.5%)", weak: "Ice", strong: "Water"}
+      - {name: "Hidora", level: 38, hp: 529, exp: 3212, gold: 3090, drop: "Ex-Potion (10%)", weak: "Ice"}
+      - {name: "Grianos", level: 46, hp: 928, exp: 5230, gold: 5404}
+      - {name: "Cyclops", level: 47, hp: 1252, exp: 5292, gold: 5500, drop: "Ex-Potion (12.5%)"}
+      - {name: "Basilisk", level: 52, hp: 502, exp: 3902, gold: 4630, weak: "Ice"}
+      - {name: "Gorgon", level: 54, hp: 833, exp: 8354, gold: 8240, drop: "Gorgon Rock (7.5%)", weak: "Light", strong: "Fire"}
+      - {name: "Lunar Bear", level: 32, hp: 408, exp: 2031, gold: 2083, drop: "Power Potion (5%)"}
+      - {name: "Tartona", level: 42, hp: 376, exp: 2092, gold: 2411, drop: "Earth Jewel (10%)", weak: "Fire"}
+      - {name: "Thunderbeast", level: 47, hp: 726, exp: 5002, gold: 5420, drop: "Thundo Jewel (7.5%)"}
+    bosses:
+      - {name: "White Dragon x3", hp: 550, weak: "Fire, Flying, Dragon", strong: "Ice", drop: "Holy Fruit (12.5%)"}
+  - area: "Overworld: Chaed"
+    monsters:
+      - {name: "Red Core", level: 18, hp: 10, exp: 2222, gold: 1}
+      - {name: "Blue Core", level: 32, hp: 20, exp: 11111, gold: 1}
+      - {name: "Green Core", level: 39, hp: 30, exp: 33333, gold: 1}
+      - {name: "No Core", level: 50, hp: 50, exp: 55555, gold: 1}
+      - {name: "Gold Gorem", level: 53, hp: 521, exp: 4000, gold: 5000, weak: "Hard"}
+      - {name: "White Dragon", level: 50, hp: 550, exp: 4000, gold: 4820, drop: "Holy Fruit (12.5%)", weak: "Fire, Flying, Dragon", strong: "Ice"}
+      - {name: "Snow Gas", level: 50, hp: 1200, exp: 8508, gold: 7650, weak: "Fire", strong: "Ice"}
+      - {name: "Red Dragon", level: 51, hp: 700, exp: 6831, gold: 6130, drop: "Power Potion (7.5%)", weak: "Ice, Flying, Dragon", strong: "Fire"}
+      - {name: "Black Dragon", level: 54, hp: 1200, exp: 9386, gold: 9263, drop: "Dark Fruit (12.5%)", weak: "Light, Flying, Dragon", strong: "Neutral, Shadow"}
+  - area: "Dragon Mountain"
+    monsters:
+      - {name: "Red Dragon", level: 51, hp: 700, exp: 6831, gold: 6130, drop: "Power Potion (7.5%)", weak: "Ice, Flying, Dragon", strong: "Fire"}
+      - {name: "Black Dragon", level: 54, hp: 1200, exp: 9386, gold: 9263, drop: "Dark Fruit (12.5%)", weak: "Light, Flying, Dragon", strong: "Neutral, Shadow"}
+      - {name: "Sea Hidora", level: 46, hp: 631, exp: 5964, gold: 5490, drop: "Hidora Rock (7.5%)", weak: "Ice", strong: "Water"}
+      - {name: "Venus Fly", level: 50, hp: 479, exp: 2886, gold: 4062, weak: "Fire", strong: "Water"}
+      - {name: "Crow", level: 49, hp: 867, exp: 6608, gold: 4000}
+      - {name: "Green Dragon", level: 49, hp: 680, exp: 6630, gold: 6050, drop: "Life Potion (7.5%)", weak: "Fire, Flying, Dragon", strong: "Water"}
+      - {name: "Magma Gorem", level: 51, hp: 480, exp: 3470, gold: 4100, drop: "Magma Rock (7.5%)", weak: "Water, Ice"}
+      - {name: "Salamander", level: 51, hp: 692, exp: 6441, gold: 6109, drop: "Flame Jewel (10%)", weak: "Ice, Water, Flying", strong: "Fire, Thunder"}
+      - {name: "Behemoth", level: 49, hp: 1272, exp: 6325, gold: 6994, drop: "Earth Fruit (12.5%)", weak: "Water", strong: "Fire"}
+      - {name: "Brokion", level: 50, hp: 1290, exp: 6686, gold: 6100, drop: "Miracle (3%)", weak: "Water, Dragon", strong: "Fire"}
+      - {name: "Hidora", level: 38, hp: 529, exp: 3212, gold: 3090, drop: "Ex-Potion (10%)", weak: "Ice"}
+      - {name: "High Hidora", level: 50, hp: 700, exp: 6690, gold: 6080, drop: "Hidora Rock (7.5%)", weak: "Ice, Flying", strong: "Thunder"}
+    bosses:
+      - {name: "Fire Dragon", hp: 7500, weak: "Ice, Flying, Dragon", strong: "Fire, Earth"}
+  - area: "Underwater cave north of Preamarl"
+    monsters: []
+    bosses:
+      - {name: "Ghost Ship", hp: 10000, weak: "Fire, Light, Heal", strong: "Ice, Shadow", note: "Calls Deadly Swords and skulls; Doomcry if the screen fills"}
+  - area: "Gratze"
+    monsters:
+      - {name: "Venus Fly", level: 50, hp: 479, exp: 2886, gold: 4062, weak: "Fire", strong: "Water"}
+      - {name: "Moray Vine", level: 52, hp: 505, exp: 3880, gold: 4620, weak: "Fire", strong: "Water"}
+      - {name: "Basilisk", level: 52, hp: 502, exp: 3902, gold: 4630, weak: "Ice"}
+      - {name: "Warm Eye", level: 52, hp: 510, exp: 3905, gold: 4700, drop: "Ex-Magic (20%)"}
+      - {name: "White Dragon", level: 50, hp: 550, exp: 4000, gold: 4820, drop: "Holy Fruit (12.5%)", weak: "Fire, Flying, Dragon", strong: "Ice"}
+      - {name: "Snow Gas", level: 50, hp: 1200, exp: 8508, gold: 7650, weak: "Fire", strong: "Ice"}
+      - {name: "Gold Gorem", level: 53, hp: 521, exp: 4000, gold: 5000, weak: "Hard"}
+      - {name: "Squid", level: 53, hp: 520, exp: 3985, gold: 4700, weak: "Fire", strong: "Water"}
+      - {name: "Sphinx", level: 53, hp: 1224, exp: 8058, gold: 8720, drop: "Old Helmet (1%)"}
+    bosses:
+      - {name: "Soldier x4", hp: 400, note: "Twice"}
+      - {name: "Tank", hp: 10000, weak: "Hard", strong: "Fire, Water, Ice, Thunder", note: "Huge magic resistance; can silence"}
+  - area: "Overworld: Narvick"
+    monsters:
+      - {name: "Red Core", level: 18, hp: 10, exp: 2222, gold: 1}
+      - {name: "Blue Core", level: 32, hp: 20, exp: 11111, gold: 1}
+      - {name: "Green Core", level: 39, hp: 30, exp: 33333, gold: 1}
+      - {name: "No Core", level: 50, hp: 50, exp: 55555, gold: 1}
+      - {name: "Gold Gorem", level: 53, hp: 521, exp: 4000, gold: 5000, weak: "Hard"}
+      - {name: "White Dragon", level: 50, hp: 550, exp: 4000, gold: 4820, drop: "Holy Fruit (12.5%)", weak: "Fire, Flying, Dragon", strong: "Ice"}
+      - {name: "Snow Gas", level: 50, hp: 1200, exp: 8508, gold: 7650, weak: "Fire", strong: "Ice"}
+      - {name: "Red Dragon", level: 51, hp: 700, exp: 6831, gold: 6130, drop: "Power Potion (7.5%)", weak: "Ice, Flying, Dragon", strong: "Fire"}
+      - {name: "Black Dragon", level: 54, hp: 1200, exp: 9386, gold: 9263, drop: "Dark Fruit (12.5%)", weak: "Light, Flying, Dragon", strong: "Neutral, Shadow"}
+  - area: "Sealed Towers"
+    monsters:
+      - {name: "Basilisk", level: 52, hp: 502, exp: 3902, gold: 4630, weak: "Ice"}
+      - {name: "Black Dragon", level: 54, hp: 1200, exp: 9386, gold: 9263, drop: "Dark Fruit (12.5%)", weak: "Light, Flying, Dragon", strong: "Neutral, Shadow"}
+      - {name: "Blue Dragon", level: 54, hp: 882, exp: 9397, gold: 8220, weak: "Water, Flying, Dragon", strong: "Ice"}
+      - {name: "Nosferato", level: 45, hp: 614, exp: 2455, gold: 2950, drop: "Gloom Jewel (2%)", weak: "Light, Heal", strong: "Ice"}
+      - {name: "Sphinx", level: 53, hp: 1224, exp: 8058, gold: 8720, drop: "Old Helmet (1%)"}
+      - {name: "Thunderbeast", level: 47, hp: 726, exp: 5002, gold: 5420, drop: "Thundo Jewel (7.5%)"}
+      - {name: "Leech", level: 54, hp: 542, exp: 6388, gold: 6250, drop: "Old Sword (1%)", weak: "Light, Heal", strong: "Neutral, Ice, Hard"}
+      - {name: "Gorgon", level: 54, hp: 833, exp: 8354, gold: 8240, drop: "Gorgon Rock (7.5%)", weak: "Light", strong: "Fire"}
+      - {name: "Mega Cyclops", level: 54, hp: 1533, exp: 8391, gold: 8250, drop: "Old Armor (1%)"}
+      - {name: "Red Dragon", level: 51, hp: 700, exp: 6831, gold: 6130, drop: "Power Potion (7.5%)", weak: "Ice, Flying, Dragon", strong: "Fire"}
+    bosses:
+      - {name: "Gades (Shuman)", hp: 10000, weak: "Light", strong: "Shadow, Ice, Thunder"}
+      - {name: "Amon (Stradha)", hp: 10000, weak: "Light", strong: "Shadow", note: "Chaos Wave confuses"}
+  - area: "Daos' Shrine"
+    monsters: []
+    bosses:
+      - {name: "Gades", hp: 10000, weak: "Light", strong: "Shadow, Ice, Thunder"}
+      - {name: "Amon", hp: 10000, weak: "Light", strong: "Shadow"}
+      - {name: "Erim", hp: 15000, weak: "Light, Hard", strong: "Fire, Water, Ice, Thunder, Shadow", note: "Devastation Wave kills outright; a death empties everyone's IP"}
+      - {name: "Daos", hp: 20000, weak: "Light, Hard", strong: "Fire, Water, Ice, Thunder, Shadow", note: "Cast Absorb to break Dark Reflector"}
+  - area: "The Sea"
+    monsters:
+      - {name: "King Frog", level: 24, hp: 160, exp: 402, gold: 350, drop: "Regain (12.5%)", weak: "Fire"}
+      - {name: "Evil Fish", level: 28, hp: 208, exp: 664, gold: 700, drop: "Charm Fruit (7.5%)", weak: "Fire", strong: "Water"}
+      - {name: "Seahorse", level: 30, hp: 239, exp: 1090, gold: 1247, weak: "Fire", strong: "Water"}
+      - {name: "Moray", level: 50, hp: 261, exp: 1316, gold: 1579, weak: "Fire", strong: "Water"}
+      - {name: "Perch", level: 36, hp: 483, exp: 1585, gold: 1901, weak: "Fire", strong: "Water"}
+      - {name: "Bolt Fish", level: 36, hp: 306, exp: 1816, gold: 2179, weak: "Fire", strong: "Thunder"}
+      - {name: "Angler fish", level: 38, hp: 329, exp: 2080, gold: 2495, weak: "Fire", strong: "Water"}
+      - {name: "Unicorn", level: 40, hp: 352, exp: 2383, gold: 2859, weak: "Fire", strong: "Water"}
+      - {name: "She-Viper", level: 42, hp: 377, exp: 2690, gold: 2715, weak: "Fire", strong: "Water"}
+      - {name: "Killer Whale", level: 44, hp: 401, exp: 5693, gold: 5591, weak: "Fire", strong: "Water"}
+      - {name: "Merman", level: 46, hp: 426, exp: 3329, gold: 3394, drop: "Charm Fruit (7.5%)", weak: "Fire, Water"}
+      - {name: "Aqualoi", level: 50, hp: 479, exp: 3397, gold: 4496, weak: "Fire", strong: "Water"}
+      - {name: "Current", level: 50, hp: 779, exp: 1742, gold: 2079, weak: "Fire, Dragon", strong: "Water"}
+      - {name: "White Whale", level: 48, hp: 452, exp: 7703, gold: 7443, weak: "Fire", strong: "Water"}
+      - {name: "Kraken", level: 55, hp: 550, exp: 4450, gold: 5390, weak: "Fire", strong: "Water"}
+  - area: "Ancient Cave (deep floors)"
+    monsters:
+      - {name: "Blue Mimic", level: 40, hp: 365, exp: 2050, gold: 2415}
+      - {name: "Ghost Ship", level: 56, hp: 780, exp: 4570, gold: 5500, weak: "Fire, Light, Heal", strong: "Ice"}
+      - {name: "Orky", level: 50, hp: 2800, exp: 18870, gold: 15700, drop: "Gorgon Rock (1%)", weak: "Thunder, Dragon"}
+      - {name: "Great Coca", level: 58, hp: 2090, exp: 9900, gold: 9700, weak: "Flying"}
+      - {name: "Ice Roge", level: 57, hp: 565, exp: 8750, gold: 14450, weak: "Light, Flying", strong: "Water, Ice"}
+      - {name: "Archfiend", level: 58, hp: 1735, exp: 8980, gold: 8700, weak: "Light", strong: "Neutral, Shadow"}
+      - {name: "Hades", level: 58, hp: 1790, exp: 9254, gold: 9750, weak: "Fire, Light, Heal", strong: "Ice"}
+      - {name: "Earth Genie", level: 56, hp: 1262, exp: 4550, gold: 5550, weak: "Thunder", strong: "Ice"}
+      - {name: "Flame Genie", level: 56, hp: 1261, exp: 4550, gold: 5550, weak: "Ice", strong: "Fire"}
+      - {name: "Well Genie", level: 55, hp: 1246, exp: 4450, gold: 5350, weak: "Fire", strong: "Water"}
+      - {name: "Wind Genie", level: 57, hp: 1274, exp: 4750, gold: 5650, weak: "Water", strong: "Thunder"}
+      - {name: "Dark Sum'ner", level: 60, hp: 540, exp: 4897, gold: 5720, weak: "Light"}
+      - {name: "Copper Dragon", level: 59, hp: 2400, exp: 18980, gold: 18000}
+      - {name: "Silver Dragon", level: 90, hp: 2800, exp: 20280, gold: 20200, drop: "Silver Eye (1%)", weak: "Shadow, Flying, Dragon", strong: "Fire, Water, Thunder"}
+      - {name: "Gold Dragon", level: 60, hp: 2780, exp: 26980, gold: 26700, drop: "Gold Eye (1%)", weak: "Shadow, Flying, Dragon", strong: "Fire, Water, Ice"}
+    bosses:
+      - {name: "Master (Ancient Jelly)", hp: 9980, note: "Floor B99"}
+  - area: "Dragon Egg Shrine"
+    monsters: []
+    bosses:
+      - {name: "Egg Dragon", hp: 65535, weak: "Shadow, Flying, Dragon", strong: "Fire, Water, Light, Ice", drop: "Egg Sword and Egg Ring", note: "After your fourth wish"}

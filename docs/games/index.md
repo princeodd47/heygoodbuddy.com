@@ -12,7 +12,7 @@ hide:
 
     ---
 
-    **System:** PS5<br>
+    **System:** Nintendo Switch<br>
     **Genre:** JRPG<br>
     **Release Date:** October 22, 2026
 
@@ -48,6 +48,14 @@ hide:
     **Genre:** JRPG<br>
     **Release Date:** September 25, 2003
 
+-   :material-egg:{ .lg .middle } __[Lufia II: Rise of the Sinistrals](lufia-ii/index.md)__
+
+    ---
+
+    **System:** Super Nintendo<br>
+    **Genre:** JRPG<br>
+    **Release Date:** September 1996
+
 -   :material-script-text:{ .lg .middle } __[Treasure of the Rudras](treasure-of-the-rudras/index.md)__
 
     ---
@@ -55,5 +63,13 @@ hide:
     **System:** Super Famicom<br>
     **Genre:** JRPG<br>
     **Release Date:** April 5, 1996
+
+-   :material-chess-knight:{ .lg .middle } __[Shining Force](shining-force/index.md)__
+
+    ---
+
+    **System:** Sega Genesis<br>
+    **Genre:** Tactical RPG<br>
+    **Release Date:** May 1993
 
 </div>

@@ -1,0 +1,57 @@
+# Shining Force weapons and rings. Attack values and who can equip from
+# Dark_Vortex's GameFAQs guide (51880); prices from its shop list and
+# Dinob0t's shop FAQ. Each list is in the order you can first get the item.
+# Shining Force has no armor: units carry a weapon and a ring.
+weapons:
+  - type: "Swords"
+    items:
+      - {name: "Short Sword", atk: 5, price: "100", who: "Max, Balbaroy, Amon, Luke, Gort (before promotion)", where: "Guardiana"}
+      - {name: "Middle Sword", atk: 8, price: "250", who: "Max, Balbaroy, Amon, Luke, Gort (before promotion)", where: "Alterone (chest), Rindo"}
+      - {name: "Long Sword", atk: 12, price: "750", who: "Max, Balbaroy, Amon, Luke, Gort (before promotion)", where: "Pao (chest), Pao"}
+      - {name: "Steel Sword", atk: 18, price: "2,500", who: "Max, Balbaroy, Amon (promoted), Musashi", where: "Pao's second camp (chest), Waral"}
+      - {name: "Broad Sword", atk: 20, price: "4,800", who: "Max, Balbaroy, Amon (promoted), Musashi", where: "Dragonia (chest), Prompt"}
+      - {name: "Sword of Light", atk: 36, price: "—", who: "Max (promoted)", where: "Mishaela's Lair, after Battle 21"}
+      - {name: "Katana", atk: 30, price: "—", who: "Max, Balbaroy, Amon (promoted), Musashi, Hanzou", where: "Musashi has one"}
+      - {name: "Doom Blade", atk: 25, price: "—", who: "Max, Balbaroy, Amon (promoted), Musashi, Hanzou", where: "Carried by a Durahan in Battle 22; Hanzou has one"}
+      - {name: "Sword of Darkness", atk: 40, price: "—", who: "Max (promoted)", where: "The King of Prompt, after Battle 23"}
+      - {name: "Chaos Breaker", atk: 40, price: "—", who: "Max (promoted)", where: "Metapha, after Battle 24"}
+  - type: "Axes"
+    items:
+      - {name: "Hand Axe", atk: 7, price: "200", who: "Luke, Gort", where: "Guardiana"}
+      - {name: "Middle Axe", atk: 11, price: "600", who: "Luke, Gort", where: "Bustoke"}
+      - {name: "Heat Axe", atk: 22, price: "—", who: "Luke, Gort (promoted)", where: "Carried by a Lizardman in Battle 12"}
+      - {name: "Battle Axe", atk: 16, price: "2,600", who: "Luke, Gort", where: "Waral"}
+      - {name: "Great Axe", atk: 26, price: "10,000", who: "Luke, Gort (promoted)", where: "Prompt"}
+      - {name: "Atlas", atk: 33, price: "—", who: "Luke, Gort (promoted)", where: "Chest in Battle 26"}
+  - type: "Spears and lances"
+    items:
+      - {name: "Spear", atk: 8, price: "150", who: "Knights, Guntz, Kokichi", where: "Guardiana"}
+      - {name: "Bronze Lance", atk: 9, price: "300", who: "Knights, Guntz, Kokichi", where: "Alterone (chest), Rindo"}
+      - {name: "Power Spear", atk: 15, price: "900", who: "Knights, Guntz, Kokichi", where: "Bustoke"}
+      - {name: "Steel Lance", atk: 18, price: "3,000", who: "Promoted knights, Guntz, Kokichi", where: "Waral"}
+      - {name: "Chrome Lance", atk: 22, price: "4,500", who: "Promoted knights, Guntz, Kokichi", where: "Rudo"}
+      - {name: "Halberd", atk: 25, price: "—", who: "Promoted knights, Guntz, Kokichi", where: "Dragonia (chest); chest in Battle 26"}
+      - {name: "Devil Lance", atk: 35, price: "—", who: "Promoted knights, Guntz, Kokichi", where: "Tower of the Ancients, first room. Cursed"}
+      - {name: "Valkyrie", atk: 35, price: "—", who: "Promoted knights, Guntz, Kokichi", where: "Chest in Battle 23. Open it during the fight"}
+  - type: "Staves"
+    items:
+      - {name: "Wooden Staff", atk: 4, price: "80", who: "Healers, mages", where: "Guardiana"}
+      - {name: "Power Staff", atk: 12, price: "500", who: "Healers, mages", where: "Rindo; Cavern of Darkness (chest)"}
+      - {name: "Guardian Staff", atk: 18, price: "3,200", who: "Promoted healers and mages", where: "Rudo"}
+      - {name: "Holy Staff", atk: 26, price: "8,000", who: "Promoted healers", where: "Rudo (chest), Prompt"}
+      - {name: "Demon Rod", atk: 35, price: "—", who: "Promoted mages", where: "Carried by the Demon Master in Battle 23"}
+  - type: "Arrows and guns"
+    items:
+      - {name: "Wooden Arrow", atk: 8, price: "320", who: "Hans, Diane, Lyle", where: "Guardiana"}
+      - {name: "Steel Arrow", atk: 13, price: "1,200", who: "Hans, Diane, Lyle", where: "Rindo Circus (chest), Bustoke"}
+      - {name: "Elven Arrow", atk: 19, price: "3,200", who: "Hans, Diane, Lyle", where: "Pao's second camp (chest), Waral"}
+      - {name: "Assault Shell", atk: 27, price: "4,500", who: "Hans, Diane, Lyle (promoted)", where: "Prompt"}
+      - {name: "Buster Shot", atk: 35, price: "12,400", who: "Hans, Diane, Lyle (promoted)", where: "Runefaust"}
+rings:
+  - {name: "Speed Ring", effect: "AGI +4", who: "All", where: "Rindo, stone house right of the item shop"}
+  - {name: "Power Ring", effect: "ATT +5", who: "All", where: "Cavern of Darkness, after Battle 6"}
+  - {name: "Mobility Ring", effect: "MOV +2", who: "All", where: "Waral Castle basement"}
+  - {name: "White Ring", effect: "DEF +6", who: "Max, promoted healers", where: "Mishaela's Lair, after Battle 21"}
+  - {name: "Black Ring", effect: "ATT +6", who: "All", where: "Mishaela's Lair, after Battle 21"}
+  - {name: "Evil Ring", effect: "ATT +8", who: "All", where: "Mishaela's Lair, after Battle 21"}
+  - {name: "Shield Ring", effect: "DEF +4", who: "All", where: "Some Dark Priests, Evil Puppets and Durahans wear one"}

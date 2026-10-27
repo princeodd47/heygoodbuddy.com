@@ -1,0 +1,325 @@
+# Lufia II equipment. Stats, IP attacks, prices, who can equip and where
+# from RPGClassics' Lufia 2 shrine, cross-checked with Iron Knuckle's
+# GameFAQs guide. Prices are the shop price; sell for half. Listed in the
+# order you can first get them.
+weapons:
+  - {name: "Frypan", stats: "ATP+4", price: "10", who: "Tia, Selan", where: "Elcid"}
+  - {name: "Knife", stats: "ATP+5", price: "13", who: "Tia, Selan, Artea", where: "Elcid"}
+  - {name: "Small Knife", stats: "ATP+8", price: "20", who: "All", where: "Elcid"}
+  - {name: "Rapier", stats: "ATP+10", price: "100", who: "Maxim, Selan, Artea", where: "Elcid, Sundletan"}
+  - {name: "Battle Knife", stats: "ATP+14", ip: "Thunderblast", price: "200", who: "All", where: "Sundletan"}
+  - {name: "Dagger", stats: "ATP+22", price: "400", who: "Maxim, Guy, Dekar, Lexis, Artea", where: "Sundletan"}
+  - {name: "Whip", stats: "ATP+20", ip: "Flame Attack", price: "300", who: "Tia, Selan", where: "Sundletan"}
+  - {name: "Insect Crush", stats: "ATP+21", ip: "Bomb Attack", price: "650", who: "Maxim, Guy, Dekar", where: "Lake Cave"}
+  - {name: "Mace", stats: "ATP+30", price: "600", who: "Tia, Selan, Artea", where: "Alunze"}
+  - {name: "Long Knife", stats: "ATP+38", price: "800", who: "All", where: "Alunze"}
+  - {name: "Short Sword", stats: "ATP+42", ip: "Ice Attack", price: "900", who: "Maxim, Guy, Selan, Dekar, Lexis, Artea", where: "Alunze"}
+  - {name: "Light Knife", stats: "ATP+32, MGR+10", ip: "Light Attack", price: "1,000", who: "Maxim, Tia, Guy, Selan, Dekar, Artea", where: "Alunze Basement"}
+  - {name: "Wire", stats: "ATP+48", ip: "Water Attack", price: "1,200", who: "Tia, Selan", where: "Tanbel"}
+  - {name: "Kukri", stats: "ATP+52", ip: "Thunderblast", price: "1,500", who: "Maxim, Guy, Dekar", where: "Tanbel, Clamento"}
+  - {name: "Fire Dagger", stats: "ATP+56, DFP+5, STR+6", ip: "Blaze Attack", price: "6,000", who: "Maxim, Guy, Dekar, Artea", where: "Tanbel East Tower"}
+  - {name: "Rod", stats: "ATP+58", ip: "Thunderblast", price: "1,500", who: "Tia, Selan, Artea", where: "Clamento"}
+  - {name: "Aqua Whip", stats: "ATP+72", ip: "Aqua Attack", price: "3,800", who: "Tia, Selan", where: "Ruby Cave"}
+  - {name: "Franshiska", stats: "ATP+70", price: "2,600", who: "Guy, Dekar", where: "Parcelyte"}
+  - {name: "Chain", stats: "ATP+66", ip: "Dive Bomber", price: "2,200", who: "Tia, Selan", where: "Parcelyte"}
+  - {name: "Cold Rapier", stats: "ATP+76, DFP+5, GUT+2", ip: "Glacial Blast", price: "4,200", who: "Maxim, Selan, Artea", where: "Treasure Sword Shrine"}
+  - {name: "Scimitar", stats: "ATP+90", ip: "Ice Attack", price: "4,400", who: "Maxim, Selan, Artea", where: "Gordovan West Tower"}
+  - {name: "Gladius", stats: "ATP+68", ip: "Holy Energy", price: "2,400", who: "Maxim, Guy, Dekar, Lexis, Artea", where: "Merix"}
+  - {name: "Staff", stats: "ATP+78", price: "4,400", who: "Tia, Selan, Artea", where: "Bound Kingdom"}
+  - {name: "Bronze Sword", stats: "ATP+98", ip: "Water Attack", price: "5,000", who: "Maxim, Guy, Dekar", where: "Bound Kingdom"}
+  - {name: "Thunder Ax", stats: "ATP+108", ip: "Thunderball", price: "6,000", who: "Guy, Dekar", where: "Northern Labyrinth"}
+  - {name: "Deadly Sword", stats: "ATP+100, GUT+10, cursed", price: "20,000", who: "Maxim, Guy, Dekar", where: "Drop: Deadly Swords, Northern Labyrinth"}
+  - {name: "Hand Ax", stats: "ATP+104", ip: "Bomb Attack", price: "6,000", who: "Guy, Dekar", where: "Aleyn"}
+  - {name: "Long Staff", stats: "ATP+102", price: "6,200", who: "Tia, Selan, Artea", where: "Aleyn"}
+  - {name: "War Rapier", stats: "ATP+114", ip: "Thunderblast", price: "7,600", who: "Maxim, Selan, Artea", where: "Narcysus, Gruberik"}
+  - {name: "Long Sword", stats: "ATP+120", price: "8,000", who: "Maxim, Guy, Dekar", where: "Narcysus, Gruberik"}
+  - {name: "Multi Sword", stats: "ATP+86", ip: "Bomb Attack", price: "9,450", who: "Maxim, Guy, Dekar", where: "Karlloon"}
+  - {name: "Cutter Whip", stats: "ATP+132", ip: "Dive Bomber", price: "9,100", who: "Tia, Selan", where: "Karlloon"}
+  - {name: "Dekar Blade", stats: "ATP+188", ip: "Fatal Blow", price: "15,000", who: "Dekar", where: "Karlloon North Shrine"}
+  - {name: "Vice-pliers", stats: "ATP+140", price: "6,000", who: "Lexis", where: "Treadool, Forfeit"}
+  - {name: "Morning Star", stats: "ATP+172", price: "10,000", who: "Tia, Selan, Artea", where: "Treadool, Forfeit"}
+  - {name: "Rockbreaker", stats: "ATP+164", ip: "Thunderblast", price: "9,850", who: "Maxim", where: "Treadool, Forfeit"}
+  - {name: "Bronze Ax", stats: "ATP+162", ip: "Bomb Attack", price: "9,700", who: "Guy, Dekar", where: "Treadool, Forfeit"}
+  - {name: "Coma hit", stats: "ATP+180", ip: "Sleep Stinger", price: "8,000", who: "Lexis", where: "Forfeit"}
+  - {name: "Burn Sword", stats: "ATP+180", ip: "Firestorm", price: "15,000", who: "Maxim, Guy, Selan", where: "Flower Mountain"}
+  - {name: "Flying Ax", stats: "ATP+180", ip: "Deadly Smash", price: "9,900", who: "Guy, Dekar", where: "Flower Mountain"}
+  - {name: "Fortune Whip", stats: "ATP+260, DFP+4, AGL+8", price: "500,000", who: "Selan", where: "Forfeit Casino"}
+  - {name: "Dragon Blade", stats: "ATP+450", ip: "Dragonfire", price: "5,000,000", who: "Maxim, Guy", where: "Forfeit Casino"}
+  - {name: "Bunny Sword", stats: "ATP+500", ip: "Battle Fury", price: "60,000", who: "Selan", where: "Forfeit Casino"}
+  - {name: "Broadsword", stats: "ATP+188", price: "11,000", who: "Maxim, Guy, Dekar", where: "Auralio, Dankirk"}
+  - {name: "Estoc", stats: "ATP+188", ip: "Flame Attack", price: "11,500", who: "Maxim, Selan, Artea", where: "Auralio, Dankirk"}
+  - {name: "Superdriver", stats: "ATP+190", ip: "Bomb Attack", price: "12,000", who: "Lexis", where: "Auralio, Dankirk"}
+  - {name: "Figgoru", stats: "ATP+195", ip: "Confusion", price: "9,500", who: "Lexis", where: "Dankirk North Dungeon"}
+  - {name: "Royal Whip", stats: "ATP+220", ip: "Ice Attack", price: "13,000", who: "Tia, Selan", where: "Ferim"}
+  - {name: "Spear", stats: "ATP+222", ip: "Dive Bomber", price: "13,500", who: "Guy, Dekar", where: "Ferim"}
+  - {name: "Silvo Rapier", stats: "ATP+218", ip: "Holy Energy", price: "13,200", who: "Maxim, Selan, Artea", where: "Ferim"}
+  - {name: "Pounder Rod", stats: "ATP+240", price: "15,500", who: "Tia, Selan, Artea", where: "Treble, Portravia"}
+  - {name: "Rainy Ax", stats: "ATP+260", ip: "Bomb Attack", price: "18,500", who: "Guy, Dekar", where: "Portravia"}
+  - {name: "Battledriver", stats: "ATP+253", price: "18,200", who: "Lexis", where: "Portravia"}
+  - {name: "Launcher", stats: "ATP+50", ip: "Swoop", price: "13,000", who: "Lexis, Artea", where: "Portravia"}
+  - {name: "Aqua Sword", stats: "ATP+260", ip: "Torrent", price: "20,000", who: "Selan, Artea", where: "Mountain of No Return"}
+  - {name: "Crazy Blade", stats: "ATP+263", ip: "Dive Bomber", price: "19,700", who: "Maxim, Selan, Artea", where: "Eserikto"}
+  - {name: "Trident", stats: "ATP+268", ip: "Water Attack", price: "20,900", who: "Guy", where: "Eserikto"}
+  - {name: "Holy Whip", stats: "ATP+300", ip: "Celestial", price: "30,000", who: "Selan", where: "Divine Shrine"}
+  - {name: "Red Saber", stats: "ATP+282", ip: "Blaze Attack", price: "21,400", who: "Maxim", where: "Barnan"}
+  - {name: "Halberd", stats: "ATP+285", ip: "Thunderblast", price: "23,500", who: "Guy, Dekar", where: "Barnan"}
+  - {name: "Mist Rapier", stats: "ATP+283", ip: "Aqua Attack", price: "25,100", who: "Maxim, Selan, Artea", where: "Barnan"}
+  - {name: "Crystal Wand", stats: "ATP+280", ip: "Holy Energy", price: "25,100", who: "Selan, Artea", where: "Barnan"}
+  - {name: "Stun Gun", stats: "ATP+240", ip: "Stun Shocker", price: "14,500", who: "Lexis", where: "Ferim Northeast Tower"}
+  - {name: "Cursed Bow", stats: "Cursed", price: "25,000", who: "Artea", where: "Shrine of Vengeance"}
+  - {name: "Arty's Bow", stats: "ATP+300", ip: "Mirror Block", price: "30,000", who: "Artea", where: "Uncurse the Cursed Bow"}
+  - {name: "Boom Sword", stats: "ATP+300", ip: "Thundershriek", price: "28,000", who: "Maxim, Guy", where: "Shrine of Vengeance"}
+  - {name: "Freeze Sword", stats: "ATP+306, DFP+3, STR+6", ip: "Arctic Freeze", price: "28,000", who: "Maxim, Selan, Artea", where: "Shrine of Vengeance"}
+  - {name: "Silver Sword", stats: "ATP+314", ip: "Holy Energy", price: "29,000", who: "Maxim", where: "Durale"}
+  - {name: "Heavy Lance", stats: "ATP+330", ip: "Bomb Attack", price: "31,800", who: "Guy, Dekar", where: "Durale"}
+  - {name: "Silver Rod", stats: "ATP+320", ip: "Celestial", price: "35,000", who: "Tia, Selan, Artea", where: "Durale"}
+  - {name: "Freeze Bow", stats: "ATP+280", ip: "Glacial Blast", price: "37,600", who: "Artea", where: "Durale"}
+  - {name: "Buster Sword", stats: "ATP+355", ip: "Bomb Attack", price: "45,500", who: "Maxim", where: "Chaed"}
+  - {name: "Great Ax", stats: "ATP+365", price: "47,500", who: "Guy", where: "Chaed"}
+  - {name: "Zirco Rod", stats: "ATP+360", price: "48,000", who: "Selan, Artea", where: "Chaed, Narvick"}
+  - {name: "Rune Rapier", stats: "ATP+362", ip: "Bomb Attack", price: "49,300", who: "Artea", where: "Chaed"}
+  - {name: "Super Sword", stats: "ATP+320, GUT+10, MGR+10", ip: "Holy Energy", price: "30,000", who: "Selan", where: "Tower of Truth"}
+  - {name: "Lizard Blow", stats: "ATP+360, MGR+20", ip: "Dragon Rush", price: "50,000", who: "Maxim, Guy, Selan, Artea", where: "Dragon Mountain"}
+  - {name: "Zirco Sword", stats: "ATP+386", ip: "Firestorm", price: "51,000", who: "Maxim", where: "Preamarl, Narvick"}
+  - {name: "Zirco Flail", stats: "ATP+390", ip: "Arctic Freeze", price: "52,000", who: "Guy", where: "Preamarl, Narvick"}
+  - {name: "Zirco Ax", stats: "ATP+394", ip: "Torrent", price: "52,500", who: "Guy", where: "Narvick"}
+  - {name: "Zirco Whip", stats: "ATP+384", ip: "Thundershriek", price: "52,000", who: "Selan", where: "Narvick"}
+  - {name: "Dual Blade", stats: "ATP+400", ip: "Wave Motion", who: "Maxim", where: "Kamirno Tower"}
+  - {name: "Sky Sword", stats: "ATP+450, DFP+35, STR+50", ip: "Skysplitter", price: "65,000", who: "Maxim, Guy, Dekar", where: "Ancient Cave"}
+  - {name: "Snow Sword", stats: "ATP+380, DFP+50, MGR+50", ip: "Deep Freeze", price: "65,000", who: "Selan", where: "Ancient Cave"}
+  - {name: "Gades Blade", stats: "ATP+200", ip: "Octo-strike", price: "60,000", who: "Guy, Dekar", where: "Beat Gades in the first fight (Gordovan West Tower); Ancient Cave"}
+  - {name: "Water Spear", stats: "ATP+400, INT+20", ip: "Torrent", price: "55,000", who: "Lexis, Artea", where: "Ancient Cave"}
+  - {name: "Sizzle Sword", stats: "ATP+400, GUT+20", ip: "Firestorm", price: "55,000", who: "Maxim, Selan", where: "Ancient Cave"}
+  - {name: "Blaze Sword", stats: "ATP+400, INT+20, MGR+20", ip: "Celestial", price: "55,000", who: "Selan", where: "Ancient Cave"}
+  - {name: "Fry Sword", stats: "ATP+380, other stats +10", ip: "Sizzle", price: "65,000", who: "Guy, Dekar", where: "Ancient Cave"}
+  - {name: "Mega Ax", stats: "ATP+400, DFP+20", ip: "Thundershriek", price: "55,000", who: "Guy, Dekar", where: "Ancient Cave"}
+  - {name: "Spark Staff", stats: "ATP+350, INT+50, MGR+50", ip: "Phoenix Blow", price: "65,000", who: "Selan, Artea, Tia", where: "Ancient Cave"}
+  - {name: "Air Whip", stats: "ATP+400, MGR+20", ip: "Arctic Freeze", price: "55,000", who: "Selan, Tia", where: "Ancient Cave"}
+  - {name: "Dragon Spear", stats: "ATP+380", ip: "Flood", price: "65,000", who: "Selan, Artea", where: "Ancient Cave"}
+  - {name: "Egg Sword", ip: "Hardboiled", price: "65,000", who: "All", where: "Egg Dragon battle spoil"}
+armor:
+  - {name: "Apron", stats: "DFP+4", price: "60", who: "Tia, Selan", where: "Elcid"}
+  - {name: "Dress", stats: "DFP+5", price: "90", who: "Tia, Selan", where: "Elcid, Sundletan"}
+  - {name: "Cloth", stats: "DFP+6", price: "140", who: "All", where: "Elcid, Sundletan"}
+  - {name: "Hide Armor", stats: "DFP+9", price: "250", who: "Maxim, Guy, Selan, Dekar", where: "Sundletan"}
+  - {name: "Frock", stats: "DFP+11", ip: "Healing", price: "400", who: "Tia, Selan", where: "Sundletan"}
+  - {name: "Robe", stats: "DFP+13", price: "450", who: "Tia, Selan, Artea", where: "Alunze"}
+  - {name: "Cloth Armor", stats: "DFP+21", ip: "Antidote", price: "600", who: "Maxim, Guy, Dekar, Artea", where: "Alunze"}
+  - {name: "Coat", stats: "DFP+15", ip: "Re-energize", price: "700", who: "Tia, Selan", where: "Alunze Basement"}
+  - {name: "Tough Hide", stats: "DFP+19", ip: "Re-energize", price: "800", who: "Maxim, Guy, Dekar", where: "Tanbel"}
+  - {name: "Light Armor", stats: "DFP+15", ip: "Free Magic", price: "1,200", who: "Maxim, Guy, Dekar", where: "Tanbel, Clamento"}
+  - {name: "Light Dress", stats: "DFP+20", ip: "Re-energize", price: "1,000", who: "Tia, Selan", where: "Tanbel"}
+  - {name: "Camu Armor", stats: "DFP+32, ATP+5, STR+5", ip: "Divine Cure", price: "1,500", who: "Guy, Dekar", where: "Tanbel East Tower"}
+  - {name: "Baggy", stats: "DFP+26", price: "1,600", who: "Tia, Selan", where: "Clamento"}
+  - {name: "Chainmail", stats: "DFP+35", price: "3,000", who: "Maxim, Guy, Dekar, Lexis, Artea", where: "Parcelyte"}
+  - {name: "Tight Dress", stats: "DFP+35", ip: "Reawaken", price: "2,800", who: "Tia, Selan", where: "Parcelyte"}
+  - {name: "Ironmail", stats: "DFP+39", ip: "Cure Paralysis", price: "3,000", who: "Maxim, Guy, Dekar", where: "Parcelyte"}
+  - {name: "Holy Wings", stats: "ATP+5, DFP+35, STR+5", ip: "Holy Healing", price: "3,200", who: "Tia, Selan", where: "Parcelyte Castle"}
+  - {name: "Toga", stats: "DFP+40", price: "3,600", who: "Tia, Selan", where: "Merix"}
+  - {name: "Chain Armor", stats: "DFP+47", price: "4,500", who: "Maxim, Guy, Dekar", where: "Bound Kingdom"}
+  - {name: "Thick Cloth", stats: "DFP+48", ip: "Paralysis Cure", price: "4,700", who: "Guy, Dekar", where: "Bound Kingdom, Aleyn"}
+  - {name: "Stone Plate", stats: "DFP+49", ip: "Reviver", price: "4,850", who: "Dekar", where: "Bound Kingdom, Aleyn"}
+  - {name: "Deadly Armor", stats: "ATP+5, DFP+63, STR+5, cursed", ip: "Recovery", price: "100", who: "Maxim, Guy, Dekar", where: "Drop: Deadly Armor"}
+  - {name: "Magic Bikini", stats: "DFP+60", ip: "Magic Cure", price: "10,000", who: "Tia, Selan", where: "Ancient Tower"}
+  - {name: "Long Robe", stats: "DFP+50", ip: "Power Healing", price: "5,000", who: "Tia, Selan, Artea", where: "Aleyn, Gruberik, Narcysus"}
+  - {name: "Plated Cloth", stats: "DFP+54", ip: "Power Healing", price: "5,800", who: "Maxim, Guy, Dekar, Lexis, Artea", where: "Gruberik, Narcysus"}
+  - {name: "Metal Mail", stats: "DFP+68", price: "6,250", who: "Dekar", where: "Karlloon"}
+  - {name: "Iron Plate", stats: "DFP+59", ip: "Reviver", price: "5,950", who: "Guy, Dekar", where: "Karlloon"}
+  - {name: "Silk Toga", stats: "DFP+64", ip: "Power Healing", price: "6,300", who: "Selan", where: "Treadool, Forfeit"}
+  - {name: "Silver Armor", stats: "DFP+66", ip: "Magic Cure", price: "7,200", who: "Maxim, Guy, Dekar", where: "Treadool, Forfeit"}
+  - {name: "Light Jacket", stats: "DFP+68", price: "7,600", who: "Guy, Dekar", where: "Treadool, Forfeit"}
+  - {name: "Lab-coat", stats: "DFP+7", ip: "Power Healing", price: "180", who: "Lexis", where: "Comes with Lexis"}
+  - {name: "Seethru Silk", stats: "DFP+1", ip: "Regeneration", price: "100,000", who: "Selan", where: "Forfeit Casino"}
+  - {name: "Bunnysuit", stats: "DFP+20", ip: "Magic Rebirth", price: "600,000", who: "Selan, Artea", where: "Forfeit Casino"}
+  - {name: "Silver Mail", stats: "DFP+76", ip: "Magic cure", price: "8,700", who: "Maxim, Guy, Lexis", where: "Auralio, Dankirk"}
+  - {name: "Power Jacket", stats: "DFP+78", price: "9,000", who: "Guy", where: "Auralio, Dankirk"}
+  - {name: "Metal Coat", stats: "DFP+75", ip: "Magic cure", price: "7,750", who: "Selan", where: "Auralio, Dankirk"}
+  - {name: "Quilted silk", stats: "DFP+82", ip: "Reviver", price: "9,200", who: "Selan", where: "Ferim"}
+  - {name: "Metal Armor", stats: "DFP+80", ip: "Paralysis Cure", price: "9,300", who: "Guy, Dekar", where: "Portravia"}
+  - {name: "Power Cape", stats: "DFP+82", price: "10,000", who: "Selan", where: "Portravia"}
+  - {name: "Plate Armor", stats: "DFP+88", price: "11,300", who: "Maxim, Guy", where: "Eserikto"}
+  - {name: "Evening Gown", stats: "DFP+87", ip: "Sacred Song", price: "11,100", who: "Selan", where: "Eserikto"}
+  - {name: "Silver Robe", stats: "DFP+84", ip: "Revival Sleep", price: "11,000", who: "Selan, Artea", where: "Eserikto"}
+  - {name: "Revive Armor", stats: "DFP+90, MGR+5", ip: "Sacred Song", price: "14,000", who: "Maxim, Guy, Selan, Artea", where: "Divine Shrine"}
+  - {name: "Plati Plate", stats: "DFP+92", ip: "Divine Cure", price: "12,000", who: "Maxim, Guy", where: "Barnan"}
+  - {name: "Silk Robe", stats: "DFP+91", price: "12,700", who: "Selan", where: "Barnan"}
+  - {name: "Heal Armor", stats: "DFP+100", ip: "Rebirth", price: "18,000", who: "Maxim, Guy", where: "Shrine of Vengeance"}
+  - {name: "Power Robe", stats: "DFP+110", ip: "Rebirth", price: "30,000", who: "Selan, Artea", where: "Shrine of Vengeance"}
+  - {name: "Bright Armor", stats: "DFP+120, MGR+20", ip: "Sudden Cure", price: "24,000", who: "Maxim, Guy, Selan, Artea", where: "Shrine of Vengeance"}
+  - {name: "Crystal Mail", stats: "DFP+100", ip: "Sudden Cure", price: "14,500", who: "Maxim, Guy", where: "Durale"}
+  - {name: "Crystal Robe", stats: "DFP+98", ip: "Rejuvenation", price: "15,000", who: "Artea, Selan", where: "Durale"}
+  - {name: "Ghostclothes", stats: "DFP+100", ip: "Rejuvenation", price: "35,000", who: "Maxim, Guy, Selan, Artea", where: "Tower of Truth"}
+  - {name: "Eron Dress", stats: "DFP+110", ip: "Recovery", price: "22,000", who: "Tia, Selan", where: "Chaed"}
+  - {name: "Metal Jacket", stats: "DFP+106", price: "20,000", who: "Guy", where: "Chaed"}
+  - {name: "Magic Scales", stats: "ATP+10, DFP+110, STR+10, AGL+10, MGR+10", ip: "Magic Healing", price: "30,000", who: "Maxim, Selan, Artea", where: "Dragon Mountain"}
+  - {name: "Holy Robe", stats: "DFP+124, MGR+40", price: "32,000", who: "Selan, Artea", where: "Dragon Mountain"}
+  - {name: "Royal Dress", stats: "DFP+122", ip: "Rejuvenation", price: "38,000", who: "Selan", where: "Preamarl"}
+  - {name: "Full Mail", stats: "DFP+130", price: "40,000", who: "Guy", where: "Preamarl"}
+  - {name: "Zirco Armor", stats: "DFP+150", ip: "Magic Cure", price: "54,000", who: "Maxim, Guy", where: "Narvick"}
+  - {name: "Zirco Plate", stats: "DFP+142", ip: "Sudden Cure", price: "51,200", who: "Selan, Artea", where: "Narvick"}
+  - {name: "Pearl Armor", stats: "DFP+140", ip: "Phoenix", price: "30,000", who: "Maxim", where: "Shuman Tower"}
+  - {name: "Ruse Armor", stats: "DFP+140", ip: "Regeneration", price: "58,000", who: "Selan, Tia", where: "Ancient Cave"}
+  - {name: "Mirak Plate", stats: "DFP+120", ip: "Magic Rebirth", price: "55,000", who: "Selan, Tia", where: "Ancient Cave"}
+shields:
+  - {name: "Chop Board", stats: "DFP+1", price: "30", who: "Tia, Selan", where: "Elcid"}
+  - {name: "Small Shield", stats: "DFP+2", price: "100", who: "All", where: "Elcid, Sundletan"}
+  - {name: "Hide Shield", stats: "DFP+5", price: "400", who: "Maxim, Guy, Dekar, Lexis, Artea", where: "Alunze"}
+  - {name: "Buckler", stats: "DFP+8", price: "600", who: "Maxim, Guy, Dekar", where: "Alunze"}
+  - {name: "Mini Shield", stats: "DFP+10", ip: "Battle Lust", price: "800", who: "Tia, Selan, Lexis, Artea", where: "Alunze"}
+  - {name: "Power Brace", stats: "DFP+10, INT+5", ip: "Spell Repel", price: "2,000", who: "Maxim, Tia, Selan, Lexis, Artea", where: "Alunze NW Cave"}
+  - {name: "Bracelet", stats: "DFP+14", ip: "Ironclad", price: "1,400", who: "Tia, Selan", where: "Tanbel, Clamento"}
+  - {name: "Wood shield", stats: "DFP+15", price: "1,200", who: "Maxim, Guy, Dekar, Lexis, Artea", where: "Tanbel, Clamento"}
+  - {name: "Pearl Brace", stats: "DFP+16, INT+10", ip: "Lightbulb", price: "5,000", who: "Tia, Selan", where: "Tanbel East Tower"}
+  - {name: "Kite Shield", stats: "DFP+20", ip: "Fleet", price: "2,200", who: "Maxim, Guy, Dekar", where: "Parcelyte"}
+  - {name: "Tough Gloves", stats: "DFP+18", price: "2,600", who: "Maxim, Guy, Tia, Selan, Dekar, Lexis, Artea", where: "Parcelyte"}
+  - {name: "Anger Brace", stats: "ATP+5, DFP+30, STR+5, GUT+10", ip: "Battle Lust", price: "4,000", who: "Maxim, Guy, Tia, Selan, Dekar, Lexis, Artea", where: "Treasure Sword Shrine"}
+  - {name: "Round Shield", stats: "DFP+34", price: "4,600", who: "Maxim, Guy, Dekar", where: "Treasure Sword Shrine, Aleyn"}
+  - {name: "Block Shield", stats: "DFP+22", ip: "Ironclad", price: "4,200", who: "Tia, Selan", where: "Gordovan West Tower"}
+  - {name: "Brone Shield", stats: "DFP+28", ip: "Spell Repel", price: "3,600", who: "Maxim, Guy, Dekar", where: "Comes with Dekar"}
+  - {name: "Fayza Shield", stats: "DFP+40, AGL+5", ip: "Fleet", price: "5,000", who: "All", where: "Ancient Tower"}
+  - {name: "Big Shield", stats: "DFP+37", price: "5,900", who: "Maxim, Guy, Dekar", where: "Northern Lighthouse, Narcysus, Gruberik"}
+  - {name: "Tecto Gloves", stats: "DFP+30", ip: "Lightbulb", price: "4,300", who: "Tia, Selan, Artea", where: "Aleyn, Narcysus, Gruberik"}
+  - {name: "Silvo Shield", stats: "DFP+42", ip: "Aura Protect", price: "6,900", who: "Maxim", where: "Karlloon"}
+  - {name: "Tall Shield", stats: "DFP+40", ip: "Bezerker", price: "6,000", who: "Dekar", where: "Karlloon"}
+  - {name: "Slash Shield", stats: "ATP+10, DFP+45", ip: "Battle Lust", price: "7,500", who: "Selan, Lexis, Artea", where: "Treadool"}
+  - {name: "Spike Shield", stats: "ATP+15, DFP+44", price: "7,500", who: "Maxim, Guy, Dekar", where: "Treadool"}
+  - {name: "Bunny Lady", stats: "DFP+10", ip: "Beserker", price: "400,000", who: "Selan", where: "Forfeit Casino"}
+  - {name: "Tuff Buckler", stats: "DFP+48", price: "8,200", who: "Maxim, Guy", where: "Alunze NW Cave (need Hammer), Auralio, Dankirk, Ferim"}
+  - {name: "Tect Buckler", stats: "DFP+52", ip: "Quicksilver", price: "8,500", who: "All", where: "Portravia"}
+  - {name: "Gold Gloves", stats: "DFP+57", ip: "Fireguard", price: "8,600", who: "Selan, Lexis, Artea", where: "Eserikto"}
+  - {name: "Gold Shield", stats: "DFP+58", ip: "Fireguard", price: "8,800", who: "Maxim, Guy", where: "Eserikto"}
+  - {name: "Plati Gloves", stats: "DFP+61", ip: "Thunderguard", price: "10,600", who: "Selan, Lexis, Artea", where: "Barnan"}
+  - {name: "Plati Shield", stats: "DFP+63", ip: "Iceguard", price: "11,400", who: "Maxim, Guy", where: "Barnan"}
+  - {name: "Gauntlets", stats: "DFP+68", ip: "Power Guard", price: "13,200", who: "Maxim, Guy, Selan, Artea", where: "Durale"}
+  - {name: "Rune Glove", stats: "DFP+72, MGR+23", ip: "Shadow Guard", price: "18,800", who: "Artea", where: "Chaed"}
+  - {name: "Mega Shield", stats: "DFP+90", ip: "Iron Barrier", price: "38,000", who: "Guy", where: "Dragon Mountain"}
+  - {name: "Holy Shield", stats: "DFP+76, MGR+15", ip: "Light Guard", price: "26,300", who: "Maxim, Guy", where: "Preamarl"}
+  - {name: "Zirco Shield", stats: "DFP+84, MGR+8", ip: "Beserker", price: "34,400", who: "Maxim, Guy", where: "Narvick"}
+  - {name: "Zirco Gloves", stats: "DFP+80, MGR+14", ip: "Forcefield", price: "32,300", who: "Selan, Artea", where: "Narvick"}
+  - {name: "Pearl Shield", stats: "DFP+90", ip: "Miracle Care", price: "20,000", who: "Maxim", where: "Kamirno Tower"}
+  - {name: "Old Shield", stats: "DFP+95, AGL+10", ip: "Ancient Power", price: "35,000", who: "Guy, Artea", where: "Dragon Egg Reward"}
+  - {name: "Flame Shield", stats: "DFP+80, GUT+10", ip: "Flameblock", price: "35,000", who: "Maxim, Guy, Dekar", where: "Ancient Cave"}
+  - {name: "Water Gauntlet", stats: "DFP+75, AGL+10, MGR+10", ip: "Water Screen", price: "35,000", who: "Selan, Artea, Tia, Lexis", where: "Ancient Cave"}
+  - {name: "Bolt Shield", stats: "DFP+75, STR+10", ip: "Thunderblock", price: "37,000", who: "Guy, Dekar", where: "Ancient Cave"}
+  - {name: "Cryst Shield", stats: "DFP+80, MGR+10", ip: "Holy Shield", price: "37,000", who: "Selan, Tia", where: "Ancient Cave"}
+  - {name: "Dark Mirror", stats: "DFP+150, cursed", price: "38,000", who: "All", where: "Ancient Cave"}
+  - {name: "Apron Shield", stats: "DFP+85, STR+10, MGR+10", ip: "Holy Wall", price: "40,000", who: "Maxim, Guy, Dekar", where: "Ancient Cave"}
+helmets:
+  - {name: "Pot", stats: "DFP+1", price: "30", who: "Tia, Selan", where: "Elcid"}
+  - {name: "Beret", stats: "DFP+2", ip: "Sluggish", price: "150", who: "Tia, Selan, Lexis, Artea", where: "Sundletan"}
+  - {name: "Cap", stats: "DFP+2", who: "All", where: "Sundletan"}
+  - {name: "Hair Band", stats: "DFPMGR+6+2", price: "400", who: "Tia, Selan", where: "Comes with Tia"}
+  - {name: "Headband", stats: "DFPMGR+9+2", ip: "Forgetful", price: "600", who: "Tia, Selan", where: "Sundletan, Alunze"}
+  - {name: "Cloth Helmet", stats: "DFP+4", price: "400", who: "Maxim, Guy, Dekar, Lexis, Artea", where: "Alunze"}
+  - {name: "Jet Helm", stats: "DFP+9, AGL+10", ip: "Sluggish", price: "800", who: "Maxim, Guy, Dekar, Lexis, Artea", where: "Alunze NW Cave"}
+  - {name: "Hide Helmet", stats: "DFP+13", price: "800", who: "Maxim, Guy, Dekar, Lexis, Artea", where: "Tanbel"}
+  - {name: "Wood Helmet", stats: "DFP+18", price: "1,400", who: "Maxim, Guy, Dekar", where: "Clamento"}
+  - {name: "Jute Helm", stats: "DFP+18, MGR+8", ip: "Spellstruck", price: "3,000", who: "Maxim, Guy, Dekar", where: "Tanbel East Tower"}
+  - {name: "Red Beret", stats: "DFP+15", ip: "Spell Struck", price: "1,000", who: "Tia, Selan, Lexis, Artea", where: "Clamento"}
+  - {name: "Fury Helmet", stats: "DFP+26, ATP+8, GUT+10", ip: "Menace", price: "3,000", who: "Maxim, Guy, Dekar", where: "Ruby Cave"}
+  - {name: "Brone Helmet", stats: "DFP+22", ip: "Menace", price: "2,500", who: "Maxim, Guy, Dekar", where: "Parcelyte"}
+  - {name: "Stone Helmet", stats: "DFP+23", ip: "Weakpoint", price: "2,900", who: "Maxim, Guy, Dekar", where: "Parcelyte"}
+  - {name: "Blue Beret", stats: "DFP+20", price: "2,300", who: "Tia, Selan, Lexis, Artea", where: "Parcelyte"}
+  - {name: "Cloche", stats: "DFP+25", price: "3,000", who: "Tia, Selan, Lexis, Artea", where: "Merix"}
+  - {name: "Iron Helmet", stats: "DFP+28", ip: "Slow", price: "3,800", who: "Maxim, Guy, Dekar", where: "Bound Kingdom"}
+  - {name: "Tight Helmet", stats: "DFP+32", price: "3,800", who: "Dekar", where: "Bound Kingdom"}
+  - {name: "Turban", stats: "DFP+31", ip: "Dimwit", price: "4,100", who: "Tia, Selan, Lexis, Artea", where: "Aleyn"}
+  - {name: "Plate Cap", stats: "DFP+33", price: "4,500", who: "Maxim, Guy, Dekar", where: "Aleyn, Gruberik, Narcysus"}
+  - {name: "Roomy Helmet", stats: "DFP+34", price: "4,800", who: "Guy, Dekar", where: "Narcysus, Gruberik"}
+  - {name: "Rock Helmet", stats: "DFP+39", ip: "Weaponweak", price: "5,700", who: "Dekar", where: "Karlloon"}
+  - {name: "Tight Turban", stats: "DFP+36", ip: "Vulnerable", price: "5,000", who: "Tia, Selan, Lexis, Artea", where: "Karlloon"}
+  - {name: "Plate Helmet", stats: "DFP+38", price: "5,500", who: "Maxim, Guy, Dekar", where: "Karlloon"}
+  - {name: "Glass Cloche", stats: "DFP+42", price: "5,200", who: "Tia, Selan, Lexis, Artea", where: "Treadool, Forfeit"}
+  - {name: "Silver Helmet", stats: "DFP+42", ip: "Slow", price: "6,800", who: "Maxim, Guy, Dekar", where: "Treadool, Forfeit"}
+  - {name: "Metal Cloche", stats: "DFP+40", price: "6,300", who: "Lexis, Artea", where: "Treadool, Forfeit"}
+  - {name: "Bunny ears", stats: "DFP+10", ip: "Sword Splitter", price: "400,000", who: "Selan, Artea", where: "Forfeit Casino"}
+  - {name: "Shade Hat", stats: "DFP+46", price: "6,200", who: "Tia, Selan, Lexis, Artea", where: "Auralio, Dankirk"}
+  - {name: "Silver Hat", stats: "DFP+47, MGR+10", price: "8,500", who: "Maxim", where: "Auralio, Dankirk"}
+  - {name: "Fury Ribbon", stats: "DFP+50, GUT+10", ip: "Weakpoint", price: "8,000", who: "Tia, Selan", where: "Dankirk North Dungeon"}
+  - {name: "Eron Hat", stats: "DFP+49", ip: "Meltdown", price: "8,800", who: "Guy", where: "Alunze NW Cave (need Hammer), Ferim"}
+  - {name: "Circlet", stats: "DFP+50, MGR+20", price: "9,000", who: "Selan, Lexis", where: "Treble, Portravia"}
+  - {name: "Golden Helm", stats: "DFP+52", ip: "Slow", price: "9,800", who: "Maxim, Guy", where: "Portravia"}
+  - {name: "Gold Band", stats: "DFP+54", price: "9,400", who: "Selan, Lexis, Artea", where: "Eserikto"}
+  - {name: "Plati Helm", stats: "DFP+58", ip: "Vulnerable", price: "10,800", who: "Maxim, Guy", where: "Barnan"}
+  - {name: "Plati Band", stats: "DFP+58", ip: "Weaponweak", price: "10,400", who: "Selan, Lexis, Artea", where: "Barnan"}
+  - {name: "Crysto Helm", stats: "DFP+64, MGR+29", ip: "Weakpoint", price: "15,200", who: "Maxim, Guy", where: "Durale"}
+  - {name: "Crysto Beret", stats: "DFP+63, MGR+29", price: "14,600", who: "Selan, Artea", where: "Durale"}
+  - {name: "Holy Cap", stats: "DFP+68, MGR+23", ip: "Vulnerable", price: "18,600", who: "Selan, Artea", where: "Preamarl, Chaed"}
+  - {name: "Legend Helm", stats: "DFP+90", ip: "Boomerang", price: "39,000", who: "Maxim, Guy", where: "Dragon Mountain"}
+  - {name: "Zirco Helmet", stats: "DFP+76", ip: "Slow", price: "34,000", who: "Maxim, Guy", where: "Narvick"}
+  - {name: "Zirco Band", stats: "DFP+74", ip: "Dimwit", price: "33,200", who: "Selan, Artea", where: "Narvick"}
+  - {name: "Old Helmet", stats: "ATP+10, DFP+85, STR+10", ip: "Anger Mirror", price: "35,000", who: "Guy", where: "Drop: Sphinx"}
+  - {name: "Pearl Helmet", stats: "DFP+90", ip: "Brilliance", price: "20,000", who: "Maxim", where: "Stradha Tower"}
+  - {name: "Brill Helm", stats: "ATP+10, DFP+90, STR+10, AGL+10, GUT+10", ip: "Holy Mirror", price: "40,000", who: "All", where: "Ancient Cave"}
+  - {name: "Agony Helm", stats: "DFP+75, GUT+10", ip: "Flame Return", price: "35,000", who: "Maxim, Guy, Dekar", where: "Ancient Cave"}
+  - {name: "Boom Turban", stats: "DFP+85, STR+10", ip: "Thunderturn", price: "35,000", who: "Selan, Artea, Tia, Lexis", where: "Ancient Cave"}
+  - {name: "Aqua Helm", stats: "DFP+85, AGL+10", ip: "Aqua Mirror", price: "37,000", who: "Selan, Artea, Tia", where: "Ancient Cave"}
+  - {name: "Ice Hairband", stats: "DFP+80, MGR+10", ip: "Ice Mirror", price: "37,000", who: "Selan, Tia", where: "Ancient Cave"}
+  - {name: "Hairpin", stats: "DFP+80, INT+10, MGR+10", ip: "Dark Mirror", price: "40,000", who: "Selan, Tia", where: "Ancient Cave"}
+rings:
+  - {name: "Speedy Ring", stats: "DFP+5, AGL+10", ip: "Fake", price: "2,000", who: "All", where: "Lake Cave"}
+  - {name: "Witch Ring", stats: "INT+10, MGR+10", ip: "Deflect", price: "3,000", who: "Women", where: "Alunze NW Cave"}
+  - {name: "Ear Jewel", stats: "GUT+2", price: "500", who: "Women", where: "Clamento"}
+  - {name: "Glass Ring", stats: "GUT+2, INT+2", ip: "Confuse", price: "1,000", who: "Women", where: "Clamento"}
+  - {name: "Glass Brace", stats: "GUT+2, INT+2, DFP+1, AGL+2", price: "800", who: "Women", where: "Clamento"}
+  - {name: "Undead Ring", stats: "MGR+25", ip: "Perish", price: "13,000", who: "All", where: "Treasure Sword Shrine"}
+  - {name: "Muscle Ring", stats: "ATP+20", ip: "Bravery", price: "3,000", who: "All", where: "Gordovan West Tower, Ancient Tower"}
+  - {name: "Thunder Ring", stats: "ATP+10, DFP+5, STR+10", ip: "Bolt", price: "3,000", who: "All", where: "Northern Labyrinth"}
+  - {name: "Protect Ring", stats: "DFP+20", ip: "Courage", price: "3,000", who: "All", where: "Ancient Tower"}
+  - {name: "Mystery Ring", stats: "ATP+10, DFP+10", ip: "Mirror", price: "5,000", who: "All", where: "Northern Lighthouse"}
+  - {name: "Fire Ring", stats: "ATP+10", ip: "Fireball", price: "3,000", who: "All", where: "Northern Lighthouse"}
+  - {name: "Ice Ring", stats: "DFP+5, AGL+10", ip: "Blizzard", price: "3,000", who: "All", where: "Tower of Sacrifice"}
+  - {name: "Fury Ring", stats: "GUT+20", ip: "Dread", price: "4,000", who: "Tia, Selan", where: "Karlloon North Shrine"}
+  - {name: "Power Ring", stats: "ATP+20, DFP+10, STR+20", ip: "Trick", price: "3,000", who: "All", where: "Flower Mountain"}
+  - {name: "Bunny Ring", stats: "DFP+5", ip: "Thunder", price: "200,000", who: "Selan, Artea", where: "Forfeit Casino"}
+  - {name: "Rocket Ring", stats: "DFP+20, AGL+40", ip: "Fake", price: "14,000", who: "All", where: "Divine Shrine"}
+  - {name: "S-power Ring", stats: "ATP+40", ip: "Bravery", price: "9,000", who: "All", where: "Dragon Egg Reward, Dragon Mountain"}
+  - {name: "S-pro Ring", stats: "DFP+40", ip: "Courage", price: "12,000", who: "All", where: "Dragon Egg Reward, Dragon Mountain"}
+  - {name: "S-mind Ring", stats: "INT+40", ip: "Champion", price: "11,000", who: "All", where: "Dragon Egg Reward, Dragon Mountain"}
+  - {name: "S-witch Ring", stats: "INT+20, MGR+40", ip: "Deflect", price: "13,000", who: "Selan, Tia", where: "Dragon Egg Reward, Dragon Mountain"}
+  - {name: "S-myst Ring", stats: "ATP+20, DFP+20", ip: "Mirror", price: "26,000", who: "All", where: "Dragon Egg Reward, Dragon Mountain"}
+  - {name: "S-thun Ring", stats: "ATP+20, DFP+10, STR+20", ip: "Thunder", price: "8,000", who: "All", where: "Dragon Egg Reward, Shuman Tower"}
+  - {name: "S-fire Ring", stats: "ATP+20", ip: "Firebird", price: "8,000", who: "All", where: "Dragon Egg Reward, Kamirno Tower"}
+  - {name: "S-water Ring", stats: "DFP+20", ip: "Dragon", price: "8,000", who: "All", where: "Dragon Egg Reward, Shuman Tower"}
+  - {name: "S-ice Ring", stats: "DFP+10, AGL+20", ip: "Ice Valk", price: "8,000", who: "All", where: "Dragon Egg Reward, Shuman Tower"}
+  - {name: "Ghost Ring", stats: "MGR+50", ip: "Destroy", price: "14,000", who: "All", where: "Tower of Truth"}
+  - {name: "Sonic Ring", stats: "DFP+10, AGL+20", ip: "Fake", price: "6,000", who: "All", where: "Dragon Mountain"}
+  - {name: "Angry Ring", stats: "GUT+40", ip: "Dread", price: "25,000", who: "All", where: "Dragon Mountain"}
+  - {name: "Hipower Ring", stats: "ATP+40, DFP+20, STR+40", ip: "Trick", price: "6,000", who: "All", where: "Dragon Mountain"}
+  - {name: "Sea Ring", stats: "DFP+25, AGL+10, INT+10, MGR+20", ip: "Vortex", price: "32,000", who: "All", where: "Ancient Cave"}
+  - {name: "Dragon Ring", stats: "ATP+30, DFP+30, AGL+20, INT+20, MGR+20", ip: "Dragon", price: "42,000", who: "All", where: "Ancient Cave"}
+  - {name: "Earring", stats: "DFP+5, GUT+5", ip: "Thunder", price: "500", who: "Selan, Tia", where: "Ancient Cave"}
+  - {name: "Dia Ring", stats: "STR+30, MGR+20", ip: "Zap", price: "30,000", who: "Selan, Tia", where: "Ancient Cave"}
+  - {name: "Engage Ring", ip: "Courage", price: "50,000", who: "All", where: "Ancient Cave"}
+  - {name: "Egg Ring", stats: "All stats 999 (GUT 199)", price: "65,000", who: "All", where: "Egg Dragon battle spoil"}
+jewels:
+  - {name: "Eagle Rock", stats: "ATP+5, DFP+7, AGL+15", ip: "Dive", price: "5,000", where: "Drop: eagle-type monsters, Gordovan West Tower"}
+  - {name: "Catfish Jewel", stats: "GUT+20, MGR+20", ip: "Mega Quake", price: "40,000", where: "Drop: catfish boss, Ancient Cave"}
+  - {name: "Bat Rock", stats: "ATP+10, DFP+2, AGL+5", ip: "Vampire", price: "18,000", where: "Drop: bat-type monsters"}
+  - {name: "Horse Rock", stats: "ATP+10, DFP+5, STR+10", ip: "Frenzy", price: "5,000", where: "Drop: horse-type monsters, Alunze NW Cave"}
+  - {name: "Water Jewel", stats: "DFP+10, INT+20, GUT+10", ip: "Frost", price: "20,000", where: "Alunze Basement (need hook), Ancient Cave"}
+  - {name: "Pumkin Jewel", stats: "INT+10, MGR+20", ip: "Head Butt", price: "10,000", where: "Drop: pumpkin head-type monsters, Ancient Tower"}
+  - {name: "Bee Rock", stats: "DFP+10, AGL+20", ip: "Immobilize", price: "8,000", where: "Drop: bee-type monsters, Northern Lighthouse"}
+  - {name: "Cancer Rock", stats: "DFP+20", ip: "Scissor Slash", price: "8,000", where: "Drop: cancers, Northern Lighthouse"}
+  - {name: "Lion Fang", stats: "ATP+15, DFP+12, STR+15, AGL+10", ip: "Bite", price: "8,000", where: "Drop: lions, Karlloon North Shrine"}
+  - {name: "Snake Rock", stats: "ATP+10, DFP+5, STR+10, GUT+10", ip: "Tail Attack", price: "8,000", where: "Flower Mountain"}
+  - {name: "Flame Jewel", stats: "ATP+10, INT+10, MGR+5", ip: "Incendiary", price: "20,000", where: "Dankirk North Dungeon, dropped by Hounds"}
+  - {name: "Samu Jewel", stats: "ATP+20, DFP+20", ip: "Samurai", price: "15,000", where: "Ferim Northeast Tower"}
+  - {name: "Mysto Jewel", stats: "ATP+20, DFP+10, AGL+10", ip: "Ninja", price: "15,000", where: "Ferim Northeast Tower"}
+  - {name: "Twist Jewel", stats: "DFP+35, AGL+30", ip: "Twister", price: "20,000", where: "Drop: Brinz Lizard, Ancient Cave"}
+  - {name: "Evil Jewel", stats: "ATP+120 cursed, ATP+80 once uncursed", ip: "Perish", price: "25,000", where: "Shrine of Vengeance"}
+  - {name: "Magma Rock", stats: "ATP+20, DFP+30, STR+20, GUT+10", ip: "Magma Blast", price: "20,000", where: "Drop: Magma Gorem"}
+  - {name: "Hidora Rock", stats: "ATP+20, DFP+10, AGL+20, MGR+10", ip: "Triple Attack", price: "18,000", where: "Dragon Mountain"}
+  - {name: "Gorgon Rock", stats: "ATP+25, DFP+25", ip: "Ax Attack", price: "28,000", where: "Dragon Mountain"}
+  - {name: "Kraken Rock", stats: "ATP+30, DFP+20, MGR+10", ip: "Ten-legger", price: "28,000", where: "Dragon Mountain"}
+  - {name: "Black Eye", stats: "ATP+20, DFP+20, STR+20, AGL+20, GUT+20, MGR+20", ip: "Gloomsplash", price: "50,000", where: "Ancient Cave"}
+  - {name: "Gloom Jewel", stats: "MGR+50", ip: "Dark Force", price: "20,000", where: "Ancient Cave"}
+  - {name: "Camu Jewel", stats: "ATP+20, INT+20, MGR+20", ip: "Buster Attack", price: "40,000", where: "Drop: Camu, Ancient Cave"}
+  - {name: "Silver Eye", stats: "DFP+10, AGL+20, INT+20, GUT+20, MGR+20", ip: "Diamond Dust", price: "60,000", where: "Ancient Cave"}
+  - {name: "Thundo Jewel", stats: "ATP+30, DFP+5, INT+10", ip: "Voltage Bolt", price: "20,000", where: "Ancient Cave"}
+  - {name: "Earth Jewel", stats: "DFP+20, MGR+20", ip: "Groundshock", price: "40,000", where: "Ancient Cave"}
+  - {name: "Light Jewel", stats: "ATP+20, DFP+10, STR+20, INT+20, MGR+20", ip: "Flash", price: "45,000", where: "Ancient Cave"}
+  - {name: "Spido Jewel", stats: "ATP+10, GUT+20", ip: "Spiderweb", price: "40,000", where: "Drop: Tarantula boss, Ancient Cave"}
+  - {name: "Gorgan Rock", stats: "DFP+50, STR+20, MGR+20", ip: "Combo Attack", price: "42,000", where: "Ancient Cave"}
+  - {name: "Gold Eye", stats: "ATP+20, DFP+30, STR+20, MGR+20", ip: "Stardust Blow", price: "65,000", where: "Ancient Cave"}
+  - {name: "Tidal Jewel", stats: "GUT+20", price: "10,000", where: "Ancient Cave"}
