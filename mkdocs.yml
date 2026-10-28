@@ -52,6 +52,7 @@ plugins:
         sf_items: data/shining-force/items.yaml
         fab_quiz: data/flesh-and-blood/quiz.yaml
         fab_icons: data/flesh-and-blood/icons.yaml
+        fab_my_rulings: data/flesh-and-blood/my-rulings.yaml
 
 extra_css:
   - stylesheets/extra.css

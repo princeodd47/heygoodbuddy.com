@@ -13,6 +13,11 @@ Questions live in `data/flesh-and-blood/quiz.yaml`; the page script is
 `docs/javascripts/fab-quiz.js`, which saves missed question ids in
 localStorage under `fab-quiz-missed`.
 
+The user's own rulings live in `data/flesh-and-blood/my-rulings.yaml`
+(ids start with `m`). The "My rulings" set asks all of them in file order;
+only the choices are shuffled. Those are the user's to write; don't add or
+edit them unless asked.
+
 ## Sources (researched 2026-10-27)
 
 Every question cites the CR/PPG/TRP rule or release note it's based on;

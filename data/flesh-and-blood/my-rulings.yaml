@@ -1,0 +1,52 @@
+# Rulings I've run into myself, for the "My rulings" set on the practice quiz.
+# They're asked in the order written here, always all of them. Answer choices
+# are still shuffled so the right one isn't always in the same spot.
+#
+# Fields:
+#   id       unique, start with "m" (m01, m02...) so it can't clash with quiz.yaml
+#   q        the situation, as it happened
+#   choices  2 to 4 answers; quote bare Yes/No or they load as true/false
+#   answer   index of the right choice, counting from 0
+#   why      the explanation shown after answering; use "why: |" and a
+#            blank line between paragraphs for a longer one
+#   cite     optional: rule number, release note or article
+#   when     optional: where and when it came up, e.g. "Armory, 2026-10-12"
+#
+# Replace the [] below with your list (same indent as the example).
+# Card symbols can be written as {p} {d} {r} {h} {i} {c} {t} {u}.
+#
+# Example:
+#   - id: m01
+#     q: What happened, and the question that came up?
+#     choices:
+#       - "Yes"
+#       - "No"
+#     answer: 1
+#     why: |
+#       What the judge ruled and why.
+#
+#       A second paragraph, if it needs one.
+#     cite: CR 1.0.2
+#     when: Armory, 2026-10-12
+
+questions:
+  - id: m01
+    q: >-
+      Pillar of Unity has Unity: when it defends together with a card from
+      hand, it gets +1{d}. A player defends an attack with Pillar of Unity and
+      nothing else. In the reaction step they play a defense reaction from hand.
+      Does Pillar of Unity get +1{d}?
+    choices:
+      - "No"
+      - "Yes"
+    answer: 0
+    why: |
+      Unity is a triggered ability. It only checks the moment Pillar of Unity
+      defends, and in the defend step every declared defender joins the chain
+      link together as one event. Pillar went in with no card from hand, so
+      Unity didn't trigger.
+
+      The defense reaction does come from hand, but it joins in the reaction
+      step, as a separate, later event. By then the trigger window has passed,
+      and a trigger doesn't go back and check again.
+    cite: CR 8.4.10, 7.3.2d, 6.6.1c

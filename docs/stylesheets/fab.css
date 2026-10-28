@@ -115,6 +115,14 @@
   background: var(--md-default-bg-color);
 }
 
+#fab-quiz .fq-why-text {
+  margin: 0 0 0.5em;
+}
+
+#fab-quiz .fq-why-text:last-of-type {
+  margin-bottom: 0;
+}
+
 #fab-quiz .fq-why-wrong {
   border-left-color: var(--fq-wrong);
 }

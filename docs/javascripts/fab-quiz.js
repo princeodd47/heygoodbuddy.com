@@ -6,6 +6,12 @@
   if (!root) return;
 
   const data = JSON.parse(document.getElementById("fab-quiz-data").textContent);
+  // Rulings from data/flesh-and-blood/my-rulings.yaml: always asked in full,
+  // in file order.
+  const mineTag = document.getElementById("fab-quiz-mine");
+  const mine = mineTag ? JSON.parse(mineTag.textContent) : [];
+  mine.forEach((q) => (q.mine = true));
+  const everyQuestion = data.questions.concat(mine);
   const PASS = 0.85;
   const STORE = "fab-quiz-missed";
   const EXAMS = {
@@ -15,6 +21,9 @@
   };
   for (const [key, label] of Object.entries(data.topics)) {
     EXAMS[key] = { label: label + " only", topics: [key] };
+  }
+  if (mine.length) {
+    EXAMS.mine = { label: "My rulings (" + mine.length + ", in order)", fixed: true };
   }
 
   // Browser storage can be missing or blocked; the quiz still works without it.
@@ -104,7 +113,13 @@
     countLabel.append(count);
 
     const pool = () => data.questions.filter((q) => EXAMS[exam.value].topics.includes(q.topic));
+    const syncCount = () => (count.disabled = !!EXAMS[exam.value].fixed);
+    exam.addEventListener("change", syncCount);
     const start = button("md-button--primary", "Start", () => {
+      if (EXAMS[exam.value].fixed) {
+        begin(mine, EXAMS[exam.value].label);
+        return;
+      }
       const all = shuffle(pool());
       const n = count.value === "all" ? all.length : Number(count.value);
       begin(all.slice(0, n), EXAMS[exam.value].label);
@@ -113,7 +128,7 @@
     form.append(examLabel, countLabel, start);
     root.append(form);
 
-    const missedQs = data.questions.filter((q) => missed.has(q.id));
+    const missedQs = everyQuestion.filter((q) => missed.has(q.id));
     const review = el("p", "fq-review");
     if (missedQs.length) {
       review.append(
@@ -151,7 +166,10 @@
     root.append(head);
 
     const card = el("div", "fq-card");
-    card.append(el("div", "fq-topic", data.topics[q.topic]), el("p", "fq-q", q.q));
+    card.append(
+      el("div", "fq-topic", q.mine ? "My ruling" : data.topics[q.topic]),
+      el("p", "fq-q", q.q)
+    );
 
     const choices = el("div", "fq-choices");
     const order = shuffle(q.choices.map((text, i) => ({ text, right: i === q.answer })));
@@ -184,9 +202,18 @@
     saveMissed();
 
     const result = el("div", "fq-why " + (right ? "fq-why-right" : "fq-why-wrong"));
-    result.append(el("strong", null, right ? "Correct. " : "Not quite. "));
-    appendText(result, q.why);
-    result.append(el("div", "fq-cite", q.cite));
+    // A blank line in "why" starts a new paragraph.
+    String(q.why || "")
+      .trim()
+      .split(/\n\s*\n/)
+      .forEach((text, i) => {
+        const p = el("p", "fq-why-text");
+        if (i === 0) p.append(el("strong", null, right ? "Correct. " : "Not quite. "));
+        appendText(p, text.replace(/\s*\n\s*/g, " "));
+        result.append(p);
+      });
+    const source = [q.cite, q.when].filter(Boolean).join(" · ");
+    if (source) result.append(el("div", "fq-cite", source));
     card.append(result);
 
     const last = run.index + 1 >= run.questions.length;
@@ -220,7 +247,7 @@
       const list = el("ul");
       for (const q of run.wrong) {
         const li = el("li", null, q.q + " ");
-        li.append(el("span", "fq-cite", "(" + q.cite + ")"));
+        if (q.cite) li.append(el("span", "fq-cite", "(" + q.cite + ")"));
         list.append(li);
       }
       box.append(list);
