@@ -30,6 +30,7 @@ boxes once your running total reaches each box's threshold. Totals go up to
 | 28 | 1-Star Chamber 8 | **Astral Jacket** |
 | 32 | 2-Star Chamber 1 | **Cure Drop** |
 | 36 | 2-Star Chamber 2 | **Celaeno Fragments** |
+| 40 | 2-Star Chamber 3 | **Magicite** |
 
 ## Shard locations
 
@@ -75,3 +76,8 @@ Each :material-camera: opens a screenshot of that spot from
 | 35 | **Waterfall Way** | Second room, up the stairs and east, next to the ladder | [:material-camera:](https://www.powerpyx.com/wp-content/uploads/final-fantasy-resonance-tablet-shards-guide-35.jpg){ title="Screenshot" target="_blank" rel="noopener" } |
 | 36 | **Waterfall Way** | In the big waterfall room, on one of the stone platforms | [:material-camera:](https://www.powerpyx.com/wp-content/uploads/final-fantasy-resonance-tablet-shards-guide-36.jpg){ title="Screenshot" target="_blank" rel="noopener" } |
 | 37 | **Waterfall Way** | Same room, north over the wooden bridges, on a rock between the waterfalls | [:material-camera:](https://www.powerpyx.com/wp-content/uploads/final-fantasy-resonance-tablet-shards-guide-37.jpg){ title="Screenshot" target="_blank" rel="noopener" } |
+| 38 | **Town of Amore** | South of the weapon and item shops, by a well on a small grassy island | [:material-camera:](https://www.powerpyx.com/wp-content/uploads/final-fantasy-resonance-tablet-shards-guide-38.jpg){ title="Screenshot" target="_blank" rel="noopener" } |
+| 39 | **Town of Amore** | North of the item shop, before the long bridge, by a tree on the right | [:material-camera:](https://www.powerpyx.com/wp-content/uploads/final-fantasy-resonance-tablet-shards-guide-39.jpg){ title="Screenshot" target="_blank" rel="noopener" } |
+| 40 | **Water Shrine** | In the round room with four paths in a cross, down the north stairs once the water is lowered | [:material-camera:](https://www.powerpyx.com/wp-content/uploads/final-fantasy-resonance-tablet-shards-guide-40.jpg){ title="Screenshot" target="_blank" rel="noopener" } |
+| 41 | **Water Shrine** | In the room with the water level crystals, take the boat northeast past the balcony with the Viridian Pot. It's on a ledge to the right | [:material-camera:](https://www.powerpyx.com/wp-content/uploads/final-fantasy-resonance-tablet-shards-guide-41.jpg){ title="Screenshot" target="_blank" rel="noopener" } |
+| 42 | **Water Shrine** | After lowering the water again, at the bottom of a long ladder, just to the left | [:material-camera:](https://www.powerpyx.com/wp-content/uploads/final-fantasy-resonance-tablet-shards-guide-42.jpg){ title="Screenshot" target="_blank" rel="noopener" } |

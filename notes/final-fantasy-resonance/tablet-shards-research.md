@@ -28,8 +28,8 @@ Notes behind `docs/games/final-fantasy-resonance/tablet-shards.md`.
 | 28 | Astral Jacket (Slot VIII) | Yes |
 | 32 | Cure Drop (2-Star Chamber 1) | Yes |
 | 36 | Celaeno Fragments (2-Star Chamber 2) | Yes |
-| 40 | Magicite (meowdb; probably a Magicite Shard, confirm) | No (37 reachable) |
-| 44 | Phantom Robe | No |
+| 40 | Magicite (2★, not a Shard; meowdb item magicite-25001) | Yes |
+| 44 | Phantom Robe | No (42 reachable) |
 | 48 | Repeater Rifle | No |
 | 52 | Protective Gear | No |
 
@@ -42,14 +42,7 @@ Notes behind `docs/games/final-fantasy-resonance/tablet-shards.md`.
 
 ## Held back
 
-- **Town of Amore** (#38–39, PowerPyx): south of the weapon and item shops by
-  a well on a small grassy island · north of the item shop before the long
-  bridge, by a tree on the right.
-- **Water Shrine** (#40–42): central circular room, down the north stairs
-  after lowering the water · past the balcony with the Viridian Pot, on a
-  ledge to the right (by boat, NE) · just left of the bottom of a long ladder
-  after lowering the water again.
-- Shards after the Water Shrine (#43 onward). Warden's Cape has none.
+- Shards after the Water Shrine (#43 onward, starting in Mozul Station, ch. 4).
 
 ## Screenshot links
 
@@ -63,6 +56,7 @@ take the next PowerPyx numbers: Town of Amore 38–39, Water Shrine 40–42.
 
 ## Already on the page
 
-Box rewards up to 36 shards. 37 shards in availability order, from the
-Commercial District through the Cave of Waters (3) and Waterfall Way (3).
+Box rewards up to 40 shards. 42 shards, one row each with a running total,
+from the Commercial District through Town of Amore (2) and the Water Shrine
+(3). Warden's Cape has none.
 Celaeno Fragments' effect isn't on the page yet.

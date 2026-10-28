@@ -84,6 +84,11 @@ in **Grandport**. It gives a tutorial on using magicite and gives you a
 - **Olderion:** jump rope with the Spirited Girl on the west side. Reach 10 jumps.
 - **Cave of Waters:** chest on the west side of the first area
 - **Lake Dorr:** Boss Leviathan drops
+- **Town of Amore:** Sub Quest *The Tide from the Sky*. Talk to the soldier
+  in Amore, chase the pirates to the northeast pier, ask about Mercedes in
+  Olderion, then find her at Waterfall Way. Also gives 1,500 gil.
+- **Water Shrine:** chest at the start. Take the boat north through the
+  waterfall (the Scale Mail chest is there too).
 
 Tablet Shards are a separate item. See [Tablet Shards](tablet-shards.md)
 for where to find them and what they're traded for.

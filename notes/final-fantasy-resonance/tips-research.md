@@ -84,17 +84,26 @@ Rain Early Game Guide (Purplatypus), Vision tier list (Whiter).
 - **Carbuncle**: bulletin board / rumor in Olderion, then Ruby Cave in the
   mountains south of Olderion (a stele starts the quest). User chose to
   leave unobtained Espers out. Don't add until they have it.
-- **Water Shrine**: Viridian/other Pot; rare field enemy **Effigy** on the
-  bottom floor (steal: a 5% Speed accessory). Effigy is a "notorious" style
-  enemy.
+- **Water Shrine** (now on the page): Viridian Pot added to Pots; Megalodon
+  and Monster Effigy (1,350 EXP each) added to farming. Monster Effigy's rare
+  steal Aeolian Misanga (5% Speed accessory) is only on the Bestiary.
+- **Pot mechanics:** meowdb says to "give" the Pot its item; the page says to
+  use it on your own party. The user says that works in-game: items can only
+  target your party (2026-10-29). Page wording stays.
+- Pot facts from meowdb: two of each Pot, each a one-time fight; nullify
+  physical and magic; heal 99,999 each turn with "Gimme a ...!"; rare drop
+  Elixir. Later Pots: Crimson (Turbo Ether; Underground Tunnel, Weapons
+  Factory), Azure (Mist Turbo Ether; Arcane Library, Tower of Mysidia),
+  Violet (X-Ether; Research Center Ruins, Sanctissimus Shrine), Pearly
+  (Elixir; Crystal Tower ×2).
 - **Green Magicite (2★)** starts appearing at the end of ch. 3. Purplatypus's
   priorities: 1) Onion Knight (Blade Torrent comes at 2★; Resonance buffs it;
   Chuck +50% Throw), 2) Noctis (Plunge, +50% chance to join the Bonus
   Phase), 3) Terra (Auto-Faith, -ga spells, Meltdown hits allies too),
   4) Cloud (Cross Slash +25% vs staggered, crit +50% vs staggered).
   Throwing scrolls is strong.
-- Bosses ahead: Alluvion (Water Shrine; lv 26 on meowdb, weak Lightning,
-  immune Water). Warden's Cape and Town of Amore come first.
+- Town of Amore shops (meowdb): Icebrand 7,700, Shiranui 7,350, Knight
+  Armor 5,500, Calm Armlet 2,000, Mist Ether 2,500 and more. Not on the page.
 
 ## Held back: Chapter 4+
 
@@ -154,6 +163,6 @@ Resonance, Limit Bursts, status effects, Espers, Vision mastery rules, AP,
 early mastery abilities table, stealing, exploring, saving/healing,
 difficulty and result bonuses, drop rates, party elements and Libra
 sources including Nichol (joined in ch. 3), and farming spots through
-Olderion south, the Cave of Waters and Waterfall Way (Destroyer: 1,800
-EXP, 900 gil; Dhorme Chimera, Minituar, Siren's Tower Ethers, Metal
+Olderion south, the Cave of Waters, Waterfall Way (Destroyer: 1,800
+EXP, 900 gil) and the Water Shrine (Megalodon, Monster Effigy; Dhorme Chimera, Minituar, Siren's Tower Ethers, Metal
 Minituar, Mini Gil Snapper, Pots, Laserblade, Bronze Hammer).

@@ -25,10 +25,9 @@ Notes behind `docs/games/final-fantasy-resonance/bestiary.md` and
 - **Old Town "Defeat the monsters" fights:** no source names the regular
   enemies. Only Water Dragon is on the page.
 - **Alluvion lv 26** (meowdb, ch. 3, 48,000 HP, weak Lightning, immune Water,
-  drops Azure Amulet, "special skill grows with each prism core"). The story
-  has a battle with Alluvion in flooded Old Town before Waterfall Way, but
-  walkthroughs name Alluvion as the Water Shrine boss. Left off; ask the user
-  whether they fought it.
+  drops Azure Amulet, "special skill grows with each prism core"). Listed
+  under the Water Shrine as its boss. The story also has a battle with
+  Alluvion in flooded Old Town; unknown whether that's the same fight data.
 - **Olderion world map fields 5–8:** Destroyer, Gigas, Gigas Worm and
   Maelspike also appear there (field 5, 6, 7, 8). Not added to a world-map
   group; which fields the user has crossed is unknown.
@@ -37,8 +36,8 @@ Notes behind `docs/games/final-fantasy-resonance/bestiary.md` and
 
 ## Held back (deliberately excluded)
 
-- **Water Shrine and later in ch. 3:** Alluvion (see open questions). Warden's
-  Cape and Town of Amore not researched yet.
+- **After the Water Shrine** ("Go after Arsha", port to Zoldaad): not
+  researched.
 - **Anet and Adamantoise on the world map:** the wiki also lists them on the
   Olderion world map. They're only under Cave of Waters on the page until
   the user confirms where else they appear.
@@ -68,7 +67,11 @@ Cave, Mobliz Shipyard, Wind Shrine, Olderion (World Map, south), Rukh Cave,
 Cave of Waters (regular enemies, Wave Lopros and its two Snappers; areas
 3–7 have no new regular enemies), Old Town, Olderion (Water Dragon), Lake
 Dorr (Leviathan, Orbs of Light), Waterfall Way (Merman, Xiphactinus, Gigas
-Worm, Maelspike, Black Shark, Gigas, Destroyer).
+Worm, Maelspike, Black Shark, Gigas, Destroyer), Olderion (World Map,
+around Amore) = meowdb "Olderion field 6" (Hivesguard, Drosera, Dragon
+Junior, Destroyer, Vulture, Amoebozoa, Zuu), Water Shrine (Objet d'Art,
+Skadi, Pit Fiend, Red Marshmallow, Ribosome, Megalodon, Monster Effigy,
+boss Alluvion). Warden's Cape has no area page of its own on meowdb.
 
 Leviathan details not on the page: 40,000 HP, 4,500 EXP, 2,400 gil; resists
 Water; enrages if the fight drags on. Orbs of Light: one weak Fire (resists

@@ -264,8 +264,9 @@ tags:
 | **Ethers** | Siren's Tower | **Mage**, **Aqua Elemental** and **Green Slime** all drop them. |
 | **EXP** | Dirnado world map, southwest of the Dwarven Forge | **Metal Minituar** in about 3 of 10 fights: **2,500 EXP**. |
 | **EXP, gil** | Waterfall Way | **Destroyer**: 1,800 EXP and 900 gil. Weak to Fire and Dark, resists Lightning. Hard to stagger, and its attacks can Paralyze. |
+| **EXP** | Water Shrine | **Megalodon** and **Monster Effigy**: 1,350 EXP each. Megalodon is weak to Lightning, Monster Effigy to Wind and Dark. Both are hard to stagger. |
 | **Gil** | Olderion world map, south | **Mini Gil Snapper**: 1,500 gil. Weak to Ice. Steal from it first. |
-| **MRP** | Siren's Tower, Mobliz Shipyard, Wind Shrine | **Pots**. See below. |
+| **MRP** | Siren's Tower, Mobliz Shipyard, Wind Shrine, Water Shrine | **Pots**. See below. |
 | **Laserblade** | Dirnado world map, Mobliz Shipyard | Rare drop from **Centipede**. |
 | **Bronze Hammer** | Wind Shrine | Rare drop from **Headstone**. |
 
@@ -296,8 +297,11 @@ tags:
 - Switch to **Expert** first. There's no risk, and it's 1.5× MRP.
 - Each Pot only pays out once. If you don't have the item, run. It'll still
   be there when you come back.
+- Damage does nothing to a Pot. Every turn it asks for its item again and
+  heals itself to full.
+- Pots sometimes drop an **Elixir**.
 
 | Pot | Where | Wants | MRP (Normal) |
 |-----|-------|-------|--------------|
 | **Citrine Pot** | Siren's Tower, Mobliz Shipyard | Ether | 120 |
-| **Viridian Pot** | Wind Shrine | Mist Ether | 200 |
+| **Viridian Pot** | Wind Shrine, Water Shrine (on a balcony in the room with the water level crystals) | Mist Ether | 200 |

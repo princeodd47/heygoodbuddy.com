@@ -883,7 +883,96 @@ bestiary:
         steals: Unicorn Horn
       - name: Destroyer
         level: 24
-        where: Waterfall Way
+        where: Waterfall Way · Olderion (World Map, around Amore)
         weak: Fire, Dark
         drops: Lightning Scroll I · Heavy Crossbow (rare)
         steals: Hi-Potion · Mist Hi-Potion (rare)
+  - area: Olderion (World Map, around Amore)
+    enemies:
+      - name: Hivesguard
+        level: 23
+        where: Olderion (World Map, around Amore)
+        weak: Wind
+        drops: Herb of Awakening
+        steals: Knife of Sleep
+      - name: Drosera
+        level: 24
+        where: Olderion (World Map, around Amore)
+        weak: Fire, Wind
+        drops: Mist Potion · Knife of Paralysis (rare)
+        steals: Mist Hi-Potion
+      - name: Dragon Junior
+        level: 24
+        where: Olderion (World Map, around Amore)
+        weak: Wind
+        drops: Ether · Ice Scroll I (rare)
+        steals: ""
+      - name: Vulture
+        level: 24
+        where: Olderion (World Map, around Amore)
+        weak: Wind
+        drops: Wind Scroll I
+        steals: ""
+      - name: Amoebozoa
+        level: 26
+        where: Olderion (World Map, around Amore)
+        weak: Earth, Water
+        drops: Knife of Poison
+        steals: Gale Hairpin (rare)
+      - name: Zuu
+        level: 26
+        where: Olderion (World Map, around Amore)
+        weak: Wind
+        drops: Wind Scroll I · Wind Scroll II (rare)
+        steals: Fujin's Fuda (rare)
+  - area: Water Shrine
+    enemies:
+      - name: "Objet d'Art"
+        level: 23
+        where: Water Shrine
+        weak: Lightning
+        drops: Gold Needle · Earth Scroll I (rare)
+        steals: ""
+      - name: Skadi
+        level: 23
+        where: Water Shrine
+        weak: Lightning
+        drops: Water Scroll I · Mist Ether (rare)
+        steals: Ether · Arcana Blade (rare)
+      - name: Pit Fiend
+        level: 24
+        where: Water Shrine
+        weak: Water, Light
+        drops: ""
+        steals: Ether · Turbo Ether (rare)
+      - name: Red Marshmallow
+        level: 25
+        where: Water Shrine
+        weak: Water
+        drops: ""
+        steals: Flame Scroll I · Astral Blade (rare)
+      - name: Ribosome
+        level: 25
+        where: Water Shrine
+        weak: Earth, Water
+        drops: Knife of Poison · Turbo Ether (rare)
+        steals: Mist Turbo Ether (rare)
+      - name: Megalodon
+        level: 26
+        where: Water Shrine
+        weak: Lightning
+        drops: ""
+        steals: Mist Ether · Guardian Sword (rare)
+      - name: Monster Effigy
+        level: 26
+        where: Water Shrine
+        weak: Wind, Dark
+        drops: Earth Scroll I · Earth Scroll II (rare)
+        steals: Aeolian Misanga (rare)
+      - name: Alluvion
+        boss: true
+        level: 26
+        where: Water Shrine
+        weak: Lightning
+        drops: Azure Amulet
+        steals: ""

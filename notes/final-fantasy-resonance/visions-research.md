@@ -24,9 +24,7 @@ Notes behind `docs/games/final-fantasy-resonance/visions.md` and
 - **Clive:** Sanctum on Grandshelt per one guide. Not in the user's Vision
   list (possibly a pre-order or later unlock). Don't add unless the user has
   it.
-- **Magicite Shard sources still ahead:** The Tide from the Sky (Town of
-  Amore), rare steal from Cactuar, Water Shrine chest (boat north through
-  the waterfall, with Scale Mail), Colosseum Fledgling
+- **Magicite Shard sources still ahead:** The Tide from the Sky rare steal from Cactuar, Colosseum Fledgling
   Battles 1 and 4.
 - **Magicite (2★, green):** appears from the end of chapter 3. Priority advice
   is in `tips-research.md`.
@@ -41,7 +39,13 @@ Notes behind `docs/games/final-fantasy-resonance/visions.md` and
 Tronn, Leah, Warrior of Light, Cloud, Terra, Zidane, Onion Knight, Noctis,
 Firion, Squall, Tidus, with how to get each. Mastery and Awakening basics.
 "Where to get Magicite Shards" (17 sources, through the Cave of Waters
-area-1 chest and the Leviathan drop at Lake Dorr).
+area-1 chest, the Leviathan drop at Lake Dorr, *The Tide from the Sky* in
+Town of Amore (meowdb quest the-tide-from-the-sky-request-21; also 1,500 gil)
+and the Water Shrine waterfall chest).
+
+No Vision Sanctum in Olderion past Squall/Firion/Tidus: the unlisted ones are
+Bartz and Lightning (Mysidia), Clive (Grandshelt), Y'shtola (Zoldaad).
+The 40-shard box gives a Magicite (2★); listed on the Tablet Shards page only.
 
 Chests checked (meowdb) with no Magicite Shard: Old Town (Lightning Scroll I
 ×3, Ether, Mist Hi-Potion), Waterfall Way (Devout's Armor, Eye Drops ×2,
