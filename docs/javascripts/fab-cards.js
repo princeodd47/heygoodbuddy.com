@@ -10,11 +10,14 @@ window.FabCards = (function () {
     return e;
   }
 
+  // Some card text writes life as {g} instead of {h}; both are the same icon.
+  const SYMBOL_ALIASES = { g: "h" };
+
   // Card symbols written as {p}, {r} and so on. iconFor(key) returns an <img>
-  // for the symbol, or null to leave the text as it is (as with {g} and {x}).
+  // for the symbol, or null to leave the text as it is (as with {x}).
   function appendSymbols(parent, text, iconFor) {
     text.split(/(\{[a-z]\})/).forEach((part) => {
-      const icon = /^\{([a-z])\}$/.test(part) && iconFor(part[1]);
+      const icon = /^\{([a-z])\}$/.test(part) && iconFor(SYMBOL_ALIASES[part[1]] || part[1]);
       if (icon) parent.append(icon);
       else if (part) parent.append(part);
     });

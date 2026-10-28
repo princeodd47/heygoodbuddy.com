@@ -54,10 +54,12 @@ see the rules, policy and interactions notes for those sources.
 
 ## Open questions
 
-- Card text uses `{g}` (life, as in "gain 1{g}": Arena Medic, Arcane
-  Polarity) and `{x}` (X resources, as in "costs {x} less": Bleed Out, Touch
-  of Reality). rules.fabtcg.com has no icons for them. The user wants them
-  kept as plain text.
+- `{g}` is life, the same as `{h}`: they appear in the same phrases ("gain
+  1{g}", "less {g} than"), and Rampant Growth // Life uses both for one
+  thing. Mostly newer sets use `{g}` (checked 2026-10-28). It's shown with
+  the `{h}` icon (`SYMBOL_ALIASES` in fab-cards.js) and has its own row in
+  the Rules symbols table. `{x}` (X resources, as in "costs {x} less") has
+  no icon and stays plain text, as the user asked.
 
 When a document changes, search the YAML for its rule numbers.
 

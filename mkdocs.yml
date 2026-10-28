@@ -59,14 +59,14 @@ extra_css:
   - stylesheets/extra.css
   - stylesheets/dqm.css
   - stylesheets/synth-builder.css
-  - stylesheets/fab.css?v=2026-10-28.1
+  - stylesheets/fab.css?v=2026-10-28.2
 
 extra_javascript:
   - javascripts/synth-builder.js
   - javascripts/dqm-monsters.js
   - javascripts/dqm-talents.js
-  - javascripts/fab-cards.js?v=2026-10-28.1
-  - javascripts/fab-quiz.js?v=2026-10-28.1
+  - javascripts/fab-cards.js?v=2026-10-28.2
+  - javascripts/fab-quiz.js?v=2026-10-28.2
 
 markdown_extensions:
   - admonition
