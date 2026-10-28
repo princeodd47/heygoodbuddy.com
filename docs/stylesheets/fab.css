@@ -250,3 +250,8 @@
 .fab-cardpop .fab-cardtext {
   font-size: 0.75rem;
 }
+
+/* Rule numbers that link to rules.fabtcg.com. */
+.md-typeset a.fab-rulelink {
+  text-decoration: underline dotted;
+}

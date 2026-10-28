@@ -78,6 +78,12 @@
     FabCards.appendSymbols(parent, text, iconFor);
   }
 
+  // Like appendText, but rule numbers ("TRP 5.9") link to the official rules.
+  function appendRuleText(parent, text) {
+    FabCards.appendRuleLinks(parent, text, appendText);
+    return parent;
+  }
+
   function cardFaces(q) {
     return (q.cards || []).filter((id) => cards[id]).flatMap((id) => FabCards.faces(cards[id]));
   }
@@ -158,7 +164,7 @@
       }
       const all = shuffle(pool());
       const n = count.value === "all" ? all.length : Number(count.value);
-      begin(all.slice(0, n), EXAMS[exam.value].label);
+      begin(all.slice(0, n), EXAMS[exam.value].label, true);
     });
 
     form.append(examLabel, countLabel, start);
@@ -184,8 +190,10 @@
     root.append(review);
   }
 
-  function begin(questions, label) {
-    run = { questions, label, index: 0, right: 0, wrong: [] };
+  // Only fresh practice runs are compared with the 85% pass mark. Reviews,
+  // retries and My rulings repeat questions you've already seen.
+  function begin(questions, label, graded = false) {
+    run = { questions, label, graded, index: 0, right: 0, wrong: [] };
     showQuestion();
   }
 
@@ -245,11 +253,11 @@
       .forEach((text, i) => {
         const p = el("p", "fq-why-text");
         if (i === 0) p.append(el("strong", null, right ? "Correct. " : "Not quite. "));
-        appendText(p, text.replace(/\s*\n\s*/g, " "));
+        appendRuleText(p, text.replace(/\s*\n\s*/g, " "));
         result.append(p);
       });
     const source = [q.cite, q.when].filter(Boolean).join(" · ");
-    if (source) result.append(el("div", "fq-cite", source));
+    if (source) result.append(appendRuleText(el("div", "fq-cite"), source));
     result.append(...cardTexts(q));
     card.append(result);
 
@@ -270,21 +278,35 @@
     const pass = pct >= PASS;
 
     const box = el("div", "fq-card fq-results");
-    box.append(
-      el("p", "fq-score", run.right + " / " + total + " (" + Math.round(pct * 100) + "%)"),
-      el(
-        "p",
-        pass ? "fq-pass" : "fq-fail",
-        pass ? "At or above the 85% the real exams need." : "Below the 85% the real exams need."
-      )
-    );
+    box.append(el("p", "fq-score", run.right + " / " + total + " (" + Math.round(pct * 100) + "%)"));
+    if (run.graded) {
+      box.append(
+        el(
+          "p",
+          pass ? "fq-pass" : "fq-fail",
+          pass ? "At or above the 85% the real exams need." : "Below the 85% the real exams need."
+        )
+      );
+    } else {
+      const left = run.questions.filter((q) => missed.has(q.id)).length;
+      box.append(
+        el(
+          "p",
+          "fq-review-note",
+          "Review round, so it isn't scored against the 85% pass mark. " +
+            (left
+              ? left + " of these " + (left === 1 ? "is" : "are") + " still on your missed list."
+              : "None of these are on your missed list now.")
+        )
+      );
+    }
 
     if (run.wrong.length) {
       box.append(el("p", null, "Missed this time:"));
       const list = el("ul");
       for (const q of run.wrong) {
         const li = el("li", null, q.q + " ");
-        if (q.cite) li.append(el("span", "fq-cite", "(" + q.cite + ")"));
+        if (q.cite) li.append(appendRuleText(el("span", "fq-cite"), "(" + q.cite + ")"));
         list.append(li);
       }
       box.append(list);
