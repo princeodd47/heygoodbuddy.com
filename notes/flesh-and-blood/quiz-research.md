@@ -41,9 +41,10 @@ see the rules, policy and interactions notes for those sources.
 
 ## Open questions
 
-- Card text uses `{g}` (167 times) and `{x}` (8 times), which have no icon on
-  rules.fabtcg.com, so the quiz shows them as plain text. Find the official
-  icons if a tagged card needs them.
+- Card text uses `{g}` (life, as in "gain 1{g}": Arena Medic, Arcane
+  Polarity) and `{x}` (X resources, as in "costs {x} less": Bleed Out, Touch
+  of Reality). rules.fabtcg.com has no icons for them. The user wants them
+  kept as plain text.
 
 When a document changes, search the YAML for its rule numbers.
 
@@ -53,5 +54,8 @@ Nothing.
 
 ## Already on the page
 
-115 questions: rules 45, interactions 11, policy 37, tournament 22. Quote
+115 questions: rules 45, interactions 11, policy 37, tournament 22.
+14 are tagged with cards (r17, r36, r43, r44, i01, i03-i05, i07-i11), plus
+m01. Not tagged on purpose: r03 (overpower the keyword), p24 (Marked Cards
+infraction), p25 (rewind), t19 (Silver Age format). Quote
 bare Yes/No answers in the YAML, or they load as booleans.
