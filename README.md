@@ -25,6 +25,11 @@ Then open http://127.0.0.1:8000. The page reloads as you edit.
 To check the site builds without serving it, run `.venv/bin/zensical build`.
 It should end with "No issues found".
 
+GitHub Pages lets browsers cache scripts and stylesheets for 10 minutes, so a
+page can load new HTML with an old script. The Flesh and Blood files in
+`mkdocs.yml` carry a `?v=` tag for that reason: change it (e.g. to today's
+date) whenever `fab-cards.js`, `fab-quiz.js` or `fab.css` changes.
+
 ## Layout
 
 ```
