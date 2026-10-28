@@ -15,6 +15,8 @@ until you get them right. The real exams need **85%**.
 - **L1A practice** draws from the [Rules](rules.md) and
   [Card Interactions](interactions.md) pages.
 - **L1B practice** draws from [Policy & Penalties](policy.md).
+- **My rulings** asks every ruling from `data/flesh-and-blood/my-rulings.yaml`,
+  in the order they're written there.
 
 <div id="fab-quiz"></div>
 
@@ -26,6 +28,7 @@ until you get them right. The real exams need **85%**.
 </div>
 
 <script id="fab-quiz-data" type="application/json">{{ fab_quiz | tojson }}</script>
+<script id="fab-quiz-mine" type="application/json">{{ (fab_my_rulings.questions or []) | tojson }}</script>
 
 ---
 
