@@ -12,6 +12,10 @@
   const mine = mineTag ? JSON.parse(mineTag.textContent) : [];
   mine.forEach((q) => (q.mine = true));
   const everyQuestion = data.questions.concat(mine);
+  // Card details for questions with a `cards:` list, from
+  // data/flesh-and-blood/cards.yaml (written by scripts/fab_cards.py).
+  const cardsTag = document.getElementById("fab-quiz-cards");
+  const cards = cardsTag ? JSON.parse(cardsTag.textContent) : {};
   const PASS = 0.85;
   const STORE = "fab-quiz-missed";
   const EXAMS = {
@@ -50,6 +54,11 @@
     icons[img.dataset.key] = img;
   }
 
+  // Card images sit in a cards/ folder next to the icons, so the icons' URL
+  // gives the right path from whatever page this runs on.
+  const anyIcon = Object.values(icons)[0];
+  const cardImageBase = anyIcon ? new URL("cards/", anyIcon.src) : null;
+
   function el(tag, cls, text) {
     const e = document.createElement(tag);
     if (cls) e.className = cls;
@@ -68,6 +77,57 @@
       } else if (part) {
         parent.append(part);
       }
+    });
+  }
+
+  // Card text marks bold with **, italics with _ and line breaks with {br}.
+  function appendCardText(parent, text) {
+    text.split("{br}").forEach((line) => {
+      const div = el("div");
+      line.split(/(\*\*[^*]+\*\*|_[^_]+_)/).forEach((part) => {
+        if (/^\*\*.+\*\*$/.test(part)) div.append(el("strong", null, part.slice(2, -2)));
+        else if (/^_.+_$/.test(part)) div.append(el("em", null, part.slice(1, -1)));
+        else if (part) appendText(div, part);
+      });
+      parent.append(div);
+    });
+  }
+
+  function cardFaces(q) {
+    return (q.cards || [])
+      .filter((id) => cards[id])
+      .flatMap((id) => [cards[id].front, cards[id].back].filter(Boolean));
+  }
+
+  // Thumbnails above the question; click one to see it full size.
+  function cardImages(q) {
+    const faces = cardFaces(q);
+    if (!faces.length || !cardImageBase) return null;
+    const row = el("div", "fq-cards");
+    for (const face of faces) {
+      const b = el("button", "fq-cardimg");
+      b.type = "button";
+      b.title = "Click to enlarge";
+      const img = el("img");
+      img.src = new URL(face.image, cardImageBase).href;
+      img.alt = face.name;
+      img.loading = "lazy";
+      b.append(img);
+      b.addEventListener("click", () => b.classList.toggle("fq-zoom"));
+      row.append(b);
+    }
+    return row;
+  }
+
+  // The current official text of each card, shown with the explanation.
+  function cardTexts(q) {
+    return cardFaces(q).map((face) => {
+      const box = el("div", "fq-cardtext");
+      const title = el("div", "fq-cardname", face.name + (face.color ? " (" + face.color + ")" : ""));
+      title.append(el("span", "fq-typebox", face.typebox));
+      box.append(title);
+      if (face.text) appendCardText(box, face.text);
+      return box;
     });
   }
 
@@ -166,10 +226,10 @@
     root.append(head);
 
     const card = el("div", "fq-card");
-    card.append(
-      el("div", "fq-topic", q.mine ? "My ruling" : data.topics[q.topic]),
-      el("p", "fq-q", q.q)
-    );
+    card.append(el("div", "fq-topic", q.mine ? "My ruling" : data.topics[q.topic]));
+    const images = cardImages(q);
+    if (images) card.append(images);
+    card.append(el("p", "fq-q", q.q));
 
     const choices = el("div", "fq-choices");
     const order = shuffle(q.choices.map((text, i) => ({ text, right: i === q.answer })));
@@ -214,6 +274,7 @@
       });
     const source = [q.cite, q.when].filter(Boolean).join(" · ");
     if (source) result.append(el("div", "fq-cite", source));
+    result.append(...cardTexts(q));
     card.append(result);
 
     const last = run.index + 1 >= run.questions.length;

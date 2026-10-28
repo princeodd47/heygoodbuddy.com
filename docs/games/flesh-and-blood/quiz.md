@@ -29,6 +29,7 @@ until you get them right. The real exams need **85%**.
 
 <script id="fab-quiz-data" type="application/json">{{ fab_quiz | tojson }}</script>
 <script id="fab-quiz-mine" type="application/json">{{ (fab_my_rulings.questions or []) | tojson }}</script>
+<script id="fab-quiz-cards" type="application/json">{{ (fab_cards.cards or {}) | tojson }}</script>
 
 ---
 

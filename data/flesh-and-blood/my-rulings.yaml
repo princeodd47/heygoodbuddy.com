@@ -9,6 +9,9 @@
 #   answer   index of the right choice, counting from 0
 #   why      the explanation shown after answering; use "why: |" and a
 #            blank line between paragraphs for a longer one
+#   cards    optional: card ids to show with the question, e.g. [pillar-of-unity];
+#            ids are in data/flesh-and-blood/cards.csv. Run
+#            .venv/bin/python scripts/fab_cards.py after changing them.
 #   cite     optional: rule number, release note or article
 #   when     optional: where and when it came up, e.g. "Armory, 2026-10-12"
 #
@@ -40,6 +43,7 @@ questions:
       - "No"
       - "Yes"
     answer: 0
+    cards: [pillar-of-unity]
     why: |
       Unity is a triggered ability. It only checks the moment Pillar of Unity
       defends, and in the defend step every declared defender joins the chain
