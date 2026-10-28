@@ -17,7 +17,10 @@ Click a card name to see the card and its current text.
 - **Tournament rules beat card text, and card text beats the CR**
   (CR 1.0.1a–b). *Example:* the CR says you play cards from hand or arsenal,
   but {{ card("ghostly-visit-1") }} says you may play it from your banished
-  zone. The card wins.
+  zone. The card wins. *Example:* {{ card("taylor") }} lets you put equipment
+  of any class into your inventory, but the Card Legality Policy (TRP 7) says
+  a banned card can't be in a card-pool at all. The tournament rule wins, so
+  Taylor still can't bring a banned piece of equipment.
 - **A restriction beats a requirement, and a requirement beats an allowance**
   (CR 1.0.2). A "can't" beats a "must", and a "must" beats a "may". If one
   effect says you can't play cards from your banished zone and another says
