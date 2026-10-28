@@ -214,6 +214,7 @@ questions:
       - Only if they play it again this turn
       - Only if the opponent agrees
     answer: 0
+    cards: [endless-arrow-1]
     why: The chain link keeps the arrow's last known information, including go again.
     cite: CR 1.2.3a
 
@@ -442,6 +443,7 @@ questions:
       - Up to 1 of each
       - Up to 2 of each
     answer: 0
+    cards: [sink-below-1, sink-below-2]
     why: Cards with a different name or pitch are different cards. CC allows 3 of each.
     cite: CR 1.3.4, TRP 7.1
 
@@ -526,6 +528,7 @@ questions:
       - Only if it was applied after the attack.
       - Only for the first attack this turn.
     answer: 0
+    cards: [ironsong-determination-2]
     why: An attack-proxy inherits its source's properties, including changes from effects.
     cite: CR 1.4.3d
 
@@ -538,6 +541,7 @@ questions:
       - Yes, but only if the sword has no go again of its own.
       - Only on the first attack each turn.
     answer: 0
+    cards: [mage-master-boots]
     why: An attack-layer and the attack it produces are separate objects.
     cite: CR 1.4.4b
 
@@ -563,6 +567,7 @@ questions:
       - Yes, but only during the Pay Asset-Costs step.
       - Only if the card is in your arsenal.
     answer: 0
+    cards: [predatory-plating]
     why: Activating an instant ability needs priority, and there is none during the steps of playing a card.
     cite: CR 1.11.5, 5.2.2; Compendium of Rathe release notes
 
@@ -587,6 +592,7 @@ questions:
       - Yes, but only to prevent the second instruction.
       - Only if you're the turn-player.
     answer: 0
+    cards: [starflow-robes]
     why: No one has priority while a layer is resolving.
     cite: CR 1.11.5; Omens of the Third Age release notes
 
@@ -599,6 +605,7 @@ questions:
       - Only if it's caused by an attack
       - Only arcane life loss
     answer: 0
+    cards: [constella-tiara]
     why: Losing life isn't damage, so prevention effects don't apply to it.
     cite: Omens of the Third Age release notes
 
@@ -611,6 +618,7 @@ questions:
       - Only if damage was prevented.
       - It's banished instead.
     answer: 0
+    cards: [touch-of-reality]
     why: Applying a Ward prevention means destroying the card, whatever N is.
     cite: CR 8.3.20; Compendium of Rathe release notes
 
@@ -635,6 +643,7 @@ questions:
       - It targets the opposing hero by default.
       - It's a Missed Trigger.
     answer: 0
+    cards: [sigil-of-silphidae-3]
     why: With an optional targeted effect, choosing no target means none of it is created.
     cite: CR 1.8.5e; Compendium of Rathe release notes
 
@@ -647,18 +656,20 @@ questions:
       - Yes, if both cards are controlled by the same player.
       - Only for arcane damage.
     answer: 0
+    cards: [flicker-reality-3]
     why: Triggered layers wait for the next time triggers go on the stack. The damage event has finished by then.
     cite: CR 6.6.6; Omens of the Third Age release notes
 
   - id: i09
     topic: interactions
-    q: Mist Hunter's contract needs you to banish an opponent's card. An effect makes the opponent banish one of their own cards. Does it count?
+    q: Mist Hunter's contract is to banish opponents' blue cards. An effect makes the opponent banish one of their own blue cards. Does it count?
     choices:
       - No. You have to be the one banishing.
       - Yes. A card was banished.
       - Only if your effect caused it.
       - Only in the end phase.
     answer: 0
+    cards: [mist-hunter-1]
     why: The contract needs you to be the player told to banish.
     cite: Compendium of Rathe release notes
 
@@ -671,6 +682,7 @@ questions:
       - You intimidate yourself and draw.
       - Nothing happens.
     answer: 0
+    cards: [lay-down-the-challenge-2]
     why: You can target yourself, but you can never have strictly more cards than yourself.
     cite: Compendium of Rathe release notes
 
@@ -683,6 +695,7 @@ questions:
       - Both playing and activating
       - Neither. It's a discard event only.
     answer: 0
+    cards: [cosmic-duality-1]
     why: Paying a cost with a card from hand activates its ability. It isn't playing the card.
     cite: Omens of the Third Age release notes
 

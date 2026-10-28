@@ -2,6 +2,82 @@
 # The cards tagged in quiz.yaml and my-rulings.yaml. © Legend Story Studios.
 
 cards:
+  constella-tiara:
+    front:
+      name: Constella Tiara
+      defense: '0'
+      typebox: Lightning Equipment - Head
+      text: '**Instant** -- {r}{r}, destroy this: Prevent the next 1 damage that would be dealt to you this turn. If you prevent damage this way, create a Ponder token.'
+      image: constella-tiara.webp
+  cosmic-duality-1:
+    front:
+      name: Cosmic Duality
+      pitch: '1'
+      color: red
+      cost: '2'
+      power: '7'
+      defense: '3'
+      typebox: Lightning Illusionist Action - Attack
+      text: '**Instant** -- {r}, discard this: Deal 1 arcane damage to target hero. Create a Lightning Flow token.{br}**Fragment**'
+      image: cosmic-duality-1.webp
+  endless-arrow-1:
+    front:
+      name: Endless Arrow
+      pitch: '1'
+      color: red
+      cost: '0'
+      power: '4'
+      defense: '3'
+      typebox: Ranger Action - Arrow Attack
+      text: When this hits, put it into its owner's hand.
+      image: endless-arrow-1.webp
+  flicker-reality-3:
+    front:
+      name: Flicker Reality
+      pitch: '3'
+      color: blue
+      cost: '0'
+      typebox: Lightning Illusionist Instant - Aura
+      text: When this leaves the arena, you may banish another Lightning aura permanent you control with no holo counters, then return it to the arena with a holo counter.{br}**Ward 1**
+      image: flicker-reality-3.webp
+  ironsong-determination-2:
+    front:
+      name: Ironsong Determination
+      pitch: '2'
+      color: yellow
+      cost: '0'
+      defense: '3'
+      typebox: Warrior Action
+      text: Target weapon’s attacks get +1{p} and **dominate** until end of turn.{br}**Go again**
+      image: ironsong-determination-2.webp
+  lay-down-the-challenge-2:
+    front:
+      name: Lay Down the Challenge
+      pitch: '2'
+      color: yellow
+      cost: '0'
+      defense: '3'
+      typebox: Brute Action
+      text: '**Intimidate** target hero, then if they have more cards in hand than you, draw a card. _(They banish a random card from their hand face-down. At the beginning of the end phase, return it to their hand.)_{br}**Go again**'
+      image: lay-down-the-challenge-2.webp
+  mage-master-boots:
+    front:
+      name: Mage Master Boots
+      defense: '0'
+      typebox: Generic Equipment - Legs
+      text: '**Action** -- {r}, destroy this: The next non-attack action card you play this turn gets **go again**. **Go again**'
+      image: mage-master-boots.webp
+  mist-hunter-1:
+    front:
+      name: Mist Hunter
+      pitch: '1'
+      color: red
+      cost: '0'
+      power: '4'
+      defense: '3'
+      typebox: Assassin Action - Attack
+      text: '**Contract** - You are contracted to banish opponents'' blue cards. Whenever you complete this contract, create a Silver token.{br}When this hits a Mystic hero, search their deck for any number of Inner Chi and banish them. They shuffle.'
+      image: mist-hunter-1.webp
   pillar-of-unity:
     front:
       name: Pillar of Unity
@@ -9,3 +85,53 @@ cards:
       typebox: Warrior Equipment - Legs
       text: '**Unity** - When this defends together with a card from hand, this gets +1{d} until end of turn.{br}**Temper** _(When the combat chain closes, if this defended, put a -1{d} counter on it, then if it has 0{d}, destroy it.)_'
       image: pillar-of-unity.webp
+  predatory-plating:
+    front:
+      name: Predatory Plating
+      defense: '2'
+      typebox: Brute Equipment - Chest
+      text: '**Instant** -- Destroy this: Gain {r}. Activate this only if you control a card with 6 or more {p}.{br}**Guardwell** _(When the combat chain closes, if this defended, put -1{d} counters on it equal to its {d}.)_'
+      image: predatory-plating.webp
+  sigil-of-silphidae-3:
+    front:
+      name: Sigil of Silphidae
+      pitch: '3'
+      color: blue
+      cost: '0'
+      defense: '3'
+      typebox: Runeblade Action - Aura
+      text: '**Go again**{br}When this enters or leaves the arena, you may banish another aura from your graveyard. If you do, deal 1 arcane damage to target hero.{br}At the beginning of your action phase, destroy this.'
+      image: sigil-of-silphidae-3.webp
+  sink-below-1:
+    front:
+      name: Sink Below
+      pitch: '1'
+      color: red
+      cost: '0'
+      defense: '4'
+      typebox: Generic Defense Reaction
+      text: You may put a card from your hand on the bottom of your deck. If you do, draw a card.
+      image: sink-below-1.webp
+  sink-below-2:
+    front:
+      name: Sink Below
+      pitch: '2'
+      color: yellow
+      cost: '0'
+      defense: '3'
+      typebox: Generic Defense Reaction
+      text: You may put a card from your hand on the bottom of your deck. If you do, draw a card.
+      image: sink-below-2.webp
+  starflow-robes:
+    front:
+      name: Starflow Robes
+      defense: '0'
+      typebox: Lightning Equipment - Chest
+      text: '**Instant** -- {r}{r}, destroy this: Prevent the next 1 damage that would be dealt to you this turn. If you prevent damage this way, create a Lightning Flow token.'
+      image: starflow-robes.webp
+  touch-of-reality:
+    front:
+      name: Touch of Reality
+      typebox: Illusionist Equipment - Arms
+      text: '**Instant** -- {x}, {t}: This gets **ward X** until end of turn. Destroy this at the beginning of the end phase. _(If you would be dealt damage, destroy this to prevent X of that damage.)_'
+      image: touch-of-reality.webp
