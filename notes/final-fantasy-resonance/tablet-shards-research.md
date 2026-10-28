@@ -51,6 +51,16 @@ Notes behind `docs/games/final-fantasy-resonance/tablet-shards.md`.
   after lowering the water again.
 - Shards after the Water Shrine (#43 onward). Warden's Cape has none.
 
+## Screenshot links
+
+Each spot on the page links (doesn't embed or rehost) to PowerPyx's image
+for it: `https://www.powerpyx.com/wp-content/uploads/final-fantasy-resonance-tablet-shards-guide-<N>.jpg`,
+where N is the PowerPyx shard number. PowerPyx is all rights reserved, so
+links only. Our order differs from theirs in a few rows: Grandport Harbor is
+8, 7; Felicitas 3, 4; Mt. Thunderclap 18, 17, 19. Everything else is in
+PowerPyx order (Commercial District 1 through Waterfall Way 37). New shards
+take the next PowerPyx numbers: Town of Amore 38–39, Water Shrine 40–42.
+
 ## Already on the page
 
 Box rewards up to 36 shards. 37 shards in availability order, from the
