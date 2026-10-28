@@ -474,6 +474,7 @@ they appear as the letter in braces, like `{p}`.
 | {{ sym("r") }} | `{r}` | Resource. Each one is 1 resource point |
 | {{ sym("c") }} | `{c}` | Chi. Pays resource costs too, and is spent first |
 | {{ sym("h") }} | `{h}` | Life |
+| {{ sym("h") }} | `{g}` | Also life. Newer cards' text usually writes it this way; the icon is the same |
 | {{ sym("i") }} | `{i}` | Intellect: how many cards you draw up to |
 | {{ sym("t") }} | `{t}` | Tap a permanent |
 | {{ sym("u") }} | `{u}` | Untap a permanent |
