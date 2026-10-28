@@ -66,37 +66,20 @@
     return e;
   }
 
-  function appendText(parent, text) {
-    text.split(/(\{[a-z]\})/).forEach((part) => {
-      const icon = /^\{([a-z])\}$/.exec(part) && icons[part[1]];
-      if (icon) {
-        const img = icon.cloneNode();
-        img.className = "fab-icon";
-        img.title = img.alt;
-        parent.append(img);
-      } else if (part) {
-        parent.append(part);
-      }
-    });
+  function iconFor(key) {
+    if (!icons[key]) return null;
+    const img = icons[key].cloneNode();
+    img.className = "fab-icon";
+    img.title = img.alt;
+    return img;
   }
 
-  // Card text marks bold with **, italics with _ and line breaks with {br}.
-  function appendCardText(parent, text) {
-    text.split("{br}").forEach((line) => {
-      const div = el("div");
-      line.split(/(\*\*[^*]+\*\*|_[^_]+_)/).forEach((part) => {
-        if (/^\*\*.+\*\*$/.test(part)) div.append(el("strong", null, part.slice(2, -2)));
-        else if (/^_.+_$/.test(part)) div.append(el("em", null, part.slice(1, -1)));
-        else if (part) appendText(div, part);
-      });
-      parent.append(div);
-    });
+  function appendText(parent, text) {
+    FabCards.appendSymbols(parent, text, iconFor);
   }
 
   function cardFaces(q) {
-    return (q.cards || [])
-      .filter((id) => cards[id])
-      .flatMap((id) => [cards[id].front, cards[id].back].filter(Boolean));
+    return (q.cards || []).filter((id) => cards[id]).flatMap((id) => FabCards.faces(cards[id]));
   }
 
   // Thumbnails above the question; click one to see it full size.
@@ -121,14 +104,7 @@
 
   // The current official text of each card, shown with the explanation.
   function cardTexts(q) {
-    return cardFaces(q).map((face) => {
-      const box = el("div", "fq-cardtext");
-      const title = el("div", "fq-cardname", face.name + (face.color ? " (" + face.color + ")" : ""));
-      title.append(el("span", "fq-typebox", face.typebox));
-      box.append(title);
-      if (face.text) appendCardText(box, face.text);
-      return box;
-    });
+    return cardFaces(q).map((face) => FabCards.faceText(face, iconFor));
   }
 
   function button(cls, text, onClick) {

@@ -28,3 +28,7 @@ Nothing.
 ## Already on the page
 
 About 50 terms from the CR, PPG and TRP.
+
+Card examples (added 2026-10-28): the table has an Example column with a
+`card()` preview for terms about game rules. Policy and tournament terms,
+and terms no single card shows well (Arena, Timestamp), have none.

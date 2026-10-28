@@ -65,6 +65,7 @@ extra_javascript:
   - javascripts/synth-builder.js
   - javascripts/dqm-monsters.js
   - javascripts/dqm-talents.js
+  - javascripts/fab-cards.js
   - javascripts/fab-quiz.js
 
 markdown_extensions:

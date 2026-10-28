@@ -41,3 +41,13 @@ costs and pitching, playing cards (9 steps), resolving layers, optional /
 conditional / targeted effects, events, continuous-effect staging,
 replacement order, triggers, combat steps, ally attacks, attack-proxies,
 attack-layers, keyword table, number rules.
+
+Card examples (added 2026-10-28): most points end with an *Example:* naming a
+card through the `card()` macro, which opens a preview of the card's image and
+current text. Most examples come from the CR's own examples; each was checked
+against the card's current text in `data/flesh-and-blood/cards.csv`. The
+keyword table has an Example column. Points with no natural card example
+(priority basics, payment order, ending a game) have none. After adding or
+changing a `card()` call, run `.venv/bin/python scripts/fab_cards.py`.
+
+Usurp the Shadow Throne cards use set code IAR in the card data.
