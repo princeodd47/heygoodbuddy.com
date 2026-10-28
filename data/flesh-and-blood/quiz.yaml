@@ -1,6 +1,8 @@
 # Practice questions for the Flesh and Blood judge study quiz.
 # topic: rules | interactions (L1A) or policy | tournament (L1B).
 # answer is the index into choices; the quiz shuffles choices when shown.
+# cards (optional) lists card ids from cards.csv to show with the question;
+# run .venv/bin/python scripts/fab_cards.py after changing them.
 # Checked against the CR, PPG and TRP on 2026-10-27.
 
 topics:

@@ -53,6 +53,7 @@ plugins:
         fab_quiz: data/flesh-and-blood/quiz.yaml
         fab_icons: data/flesh-and-blood/icons.yaml
         fab_my_rulings: data/flesh-and-blood/my-rulings.yaml
+        fab_cards: data/flesh-and-blood/cards.yaml
 
 extra_css:
   - stylesheets/extra.css

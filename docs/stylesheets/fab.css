@@ -137,6 +137,52 @@
   margin-top: 0.8em;
 }
 
+#fab-quiz .fq-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin: 0.6em 0;
+}
+
+#fab-quiz .fq-cardimg {
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: zoom-in;
+}
+
+#fab-quiz .fq-cardimg img {
+  display: block;
+  width: 9rem;
+  max-width: 100%;
+  border-radius: 4.5%;
+}
+
+#fab-quiz .fq-cardimg.fq-zoom {
+  cursor: zoom-out;
+}
+
+#fab-quiz .fq-cardimg.fq-zoom img {
+  width: 22rem;
+}
+
+#fab-quiz .fq-cardtext {
+  margin-top: 0.6em;
+  padding-top: 0.5em;
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+  font-size: 0.85em;
+}
+
+#fab-quiz .fq-cardname {
+  font-weight: 700;
+}
+
+#fab-quiz .fq-typebox {
+  margin-left: 0.5em;
+  font-weight: 400;
+  color: var(--md-default-fg-color--light);
+}
+
 #fab-quiz .fq-score {
   margin: 0;
   font-size: 1.6em;

@@ -37,6 +37,7 @@ docs/
   tags.md                  # auto-generated tag index
   CNAME                    # custom domain for GitHub Pages
 data/<game>/               # YAML data used to build tables
+scripts/                   # helper scripts, e.g. fab_cards.py (Flesh and Blood card data)
 ```
 
 ## Adding things
