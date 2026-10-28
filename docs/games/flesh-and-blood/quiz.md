@@ -10,7 +10,8 @@ tags:
 Pick a question set and start. Answers are shuffled every time. After each
 answer you get the reason and the rule number to look up. Questions you
 miss are saved in this browser, and **Review missed** brings them back
-until you get them right. The real exams need **85%**.
+until you get them right. The real exams need **85%**. Only fresh practice
+runs are checked against that; reviews and My rulings just show your score.
 
 - **L1A practice** draws from the [Rules](rules.md) and
   [Card Interactions](interactions.md) pages.

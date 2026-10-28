@@ -13,6 +13,19 @@ Questions live in `data/flesh-and-blood/quiz.yaml`; the page script is
 `docs/javascripts/fab-quiz.js`, which saves missed question ids in
 localStorage under `fab-quiz-missed`.
 
+Rule numbers in `cite` and `why` ("CR 1.0.2b", "PPG 3.2", "TRP 5.9, A.1")
+link to that rule on rules.fabtcg.com, opening in a new tab. The links are
+built in `docs/javascripts/fab-cards.js` (`appendRuleLinks`): each chapter is
+its own page there, e.g. `/en/trp/05-gameplay-logistics/#trp5.9`. Checked
+2026-10-28: all 135 links in the quiz hit an anchor that exists. If LSS renames
+a chapter page, update `RULE_PAGES` in that file. The same script links rule
+numbers in the text of every Flesh and Blood page, including table columns
+headed CR, PPG or TRP.
+
+Only fresh practice runs (a preset from the menu) are compared with the 85%
+pass mark. Review missed, Retry these misses and My rulings show the score
+and how many are still on the missed list instead.
+
 The user's own rulings live in `data/flesh-and-blood/my-rulings.yaml`
 (ids start with `m`). The "My rulings" set asks all of them in file order;
 only the choices are shuffled. Those are the user's to write; don't add or
