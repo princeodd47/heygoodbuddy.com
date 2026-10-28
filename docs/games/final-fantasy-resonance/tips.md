@@ -292,8 +292,8 @@ tags:
 
 ### Pots
 
-- A Pot asks for one item. Use that item on **your own party** and the Pot
-  knocks itself out, which counts as a win.
+- A Pot asks for one item. Use that item **on the Pot** and it vanishes,
+  which counts as a win.
 - Switch to **Expert** first. There's no risk, and it's 1.5× MRP.
 - Each Pot only pays out once. If you don't have the item, run. It'll still
   be there when you come back.

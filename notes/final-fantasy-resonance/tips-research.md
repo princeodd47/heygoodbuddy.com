@@ -87,9 +87,9 @@ Rain Early Game Guide (Purplatypus), Vision tier list (Whiter).
 - **Water Shrine** (now on the page): Viridian Pot added to Pots; Megalodon
   and Monster Effigy (1,350 EXP each) added to farming. Monster Effigy's rare
   steal Aeolian Misanga (5% Speed accessory) is only on the Bestiary.
-- **Pot mechanics:** meowdb says to "give" the Pot its item; the page says to
-  use it on your own party. The user says that works in-game: items can only
-  target your party (2026-10-29). Page wording stays.
+- **Pot mechanics:** use the item **on the Pot** (the user confirmed in-game,
+  2026-10-29, that Mist Ethers can target enemies; matches meowdb). The IGN
+  video's "use it on your own party" was wrong.
 - Pot facts from meowdb: two of each Pot, each a one-time fight; nullify
   physical and magic; heal 99,999 each turn with "Gimme a ...!"; rare drop
   Elixir. Later Pots: Crimson (Turbo Ether; Underground Tunnel, Weapons
