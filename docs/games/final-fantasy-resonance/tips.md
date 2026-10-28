@@ -263,6 +263,7 @@ tags:
 | **MRP** | Grandport world map | **Minituar**: weak to Ice and Water. Stagger it first or it dodges everything. |
 | **Ethers** | Siren's Tower | **Mage**, **Aqua Elemental** and **Green Slime** all drop them. |
 | **EXP** | Dirnado world map, southwest of the Dwarven Forge | **Metal Minituar** in about 3 of 10 fights: **2,500 EXP**. |
+| **EXP, gil** | Waterfall Way | **Destroyer**: 1,800 EXP and 900 gil. Weak to Fire and Dark, resists Lightning. Hard to stagger, and its attacks can Paralyze. |
 | **Gil** | Olderion world map, south | **Mini Gil Snapper**: 1,500 gil. Weak to Ice. Steal from it first. |
 | **MRP** | Siren's Tower, Mobliz Shipyard, Wind Shrine | **Pots**. See below. |
 | **Laserblade** | Dirnado world map, Mobliz Shipyard | Rare drop from **Centipede**. |

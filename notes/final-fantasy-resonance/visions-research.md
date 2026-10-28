@@ -25,7 +25,8 @@ Notes behind `docs/games/final-fantasy-resonance/visions.md` and
   list (possibly a pre-order or later unlock). Don't add unless the user has
   it.
 - **Magicite Shard sources still ahead:** The Tide from the Sky (Town of
-  Amore), Leviathan boss drop (Cave of Waters, after Wave Lopros), rare steal from Cactuar, Colosseum Fledgling
+  Amore), rare steal from Cactuar, Water Shrine chest (boat north through
+  the waterfall, with Scale Mail), Colosseum Fledgling
   Battles 1 and 4.
 - **Magicite (2★, green):** appears from the end of chapter 3. Priority advice
   is in `tips-research.md`.
@@ -40,4 +41,9 @@ Notes behind `docs/games/final-fantasy-resonance/visions.md` and
 Tronn, Leah, Warrior of Light, Cloud, Terra, Zidane, Onion Knight, Noctis,
 Firion, Squall, Tidus, with how to get each. Mastery and Awakening basics.
 "Where to get Magicite Shards" (17 sources, through the Cave of Waters
-area-1 chest).
+area-1 chest and the Leviathan drop at Lake Dorr).
+
+Chests checked (meowdb) with no Magicite Shard: Old Town (Lightning Scroll I
+×3, Ether, Mist Hi-Potion), Waterfall Way (Devout's Armor, Eye Drops ×2,
+Phoenix Pinion, Guardian Sword, Aquatic Veil), the rest of the Cave of
+Waters (Total Calisthenics, Shuriken ×3, Ice Scroll I ×2, Ninja Gear).

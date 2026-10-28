@@ -23,7 +23,7 @@ reachable. 9 Espers in total.
 | **Titan** | Sealed in the Grandshelt desert; needs Colosseum Fledgling Battle 5 | Not yet possible |
 | **Ifrit** | Zoldaad, Esper's Dwelling | Chapter 4+ |
 | **Shiva** | Mysidia, Esper's Dwelling | Chapter 5 |
-| **Leviathan** | Lake Dorr, reached through the Cave of Waters, after Wave Lopros. The wiki calls it a "summon trial" | Ch. 3, just past the user's progress. Check whether it joins as an Esper. |
+| **Leviathan** | Story fight at Lake Dorr (ch. 3) doesn't give it: the user confirmed 2026-10-28 it didn't join. itemlevel.net says it joins in ch. 5 after side quest *Nichol's Duty*, back at Lake Dorr | Later (ch. 5?) |
 | **Odin** | Beat Odin's Shadow (lv 45) | Later |
 | **Bahamut** | Lv 50 fight | Later |
 

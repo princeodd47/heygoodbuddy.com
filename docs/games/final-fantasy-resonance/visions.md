@@ -83,6 +83,7 @@ in **Grandport**. It gives a tutorial on using magicite and gives you a
 - **Rukh Cave** (southern Olderion Federation world map): Boss Rukh drops
 - **Olderion:** jump rope with the Spirited Girl on the west side. Reach 10 jumps.
 - **Cave of Waters:** chest on the west side of the first area
+- **Lake Dorr:** Boss Leviathan drops
 
 Tablet Shards are a separate item. See [Tablet Shards](tablet-shards.md)
 for where to find them and what they're traded for.

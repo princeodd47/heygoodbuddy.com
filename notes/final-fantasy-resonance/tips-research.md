@@ -75,15 +75,15 @@ Rain Early Game Guide (Purplatypus), Vision tier list (Whiter).
 
 ## Held back: Chapter 3 (rest of chapter)
 
-- **Cave of Waters, after Wave Lopros:** chests in area 3 (Shuriken ×3) and
-  area 4 (Ninja Gear, Ice Scroll I ×2). Leviathan strategy: break the Orbs
-  of Light first (each weakens it 30% for 3 turns), then Lightning. Cast
-  Shell first; Esuna for Paralysis; it enrages if the fight drags on.
+- The user is past Lake Dorr, Waterfall Way and the Altar (2026-10-28).
+  Leviathan strategy (break the Orbs first, Lightning, Shell, Esuna) is no
+  longer useful, so it was dropped.
+- **Archwitch Fina** joins the party around the Old Town flood (story
+  summary). Not mentioned on any page.
 
 - **Carbuncle**: bulletin board / rumor in Olderion, then Ruby Cave in the
   mountains south of Olderion (a stele starts the quest). User chose to
   leave unobtained Espers out. Don't add until they have it.
-- **Points of no return**: the game warns before Old Town of Olderion.
 - **Water Shrine**: Viridian/other Pot; rare field enemy **Effigy** on the
   bottom floor (steal: a 5% Speed accessory). Effigy is a "notorious" style
   enemy.
@@ -93,8 +93,8 @@ Rain Early Game Guide (Purplatypus), Vision tier list (Whiter).
   Phase), 3) Terra (Auto-Faith, -ga spells, Meltdown hits allies too),
   4) Cloud (Cross Slash +25% vs staggered, crit +50% vs staggered).
   Throwing scrolls is strong.
-- Bosses ahead: Wave Lopros (Cave of Waters), Water Dragon (Old Town),
-  Alluvion (Water Shrine). The wiki has boss pages.
+- Bosses ahead: Alluvion (Water Shrine; lv 26 on meowdb, weak Lightning,
+  immune Water). Warden's Cape and Town of Amore come first.
 
 ## Held back: Chapter 4+
 
@@ -154,5 +154,6 @@ Resonance, Limit Bursts, status effects, Espers, Vision mastery rules, AP,
 early mastery abilities table, stealing, exploring, saving/healing,
 difficulty and result bonuses, drop rates, party elements and Libra
 sources including Nichol (joined in ch. 3), and farming spots through
-Olderion south and the Cave of Waters (Dhorme Chimera, Minituar, Siren's Tower Ethers, Metal
+Olderion south, the Cave of Waters and Waterfall Way (Destroyer: 1,800
+EXP, 900 gil; Dhorme Chimera, Minituar, Siren's Tower Ethers, Metal
 Minituar, Mini Gil Snapper, Pots, Laserblade, Bronze Hammer).

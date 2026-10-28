@@ -819,3 +819,71 @@ bestiary:
         weak: Ice
         drops: Water Scroll I
         steals: ""
+  - area: Old Town, Olderion
+    enemies:
+      - name: Water Dragon
+        boss: true
+        level: 21
+        where: Old Town, Olderion
+        weak: Lightning
+        drops: Water Scroll I
+        steals: ""
+  - area: Lake Dorr
+    enemies:
+      - name: Orbs of Light
+        level: 23
+        where: Lake Dorr (with Leviathan)
+        weak: Fire, Water or Earth (one each)
+        drops: ""
+        steals: ""
+      - name: Leviathan
+        boss: true
+        level: 23
+        where: Lake Dorr
+        weak: Lightning
+        drops: Magicite Shard
+        steals: ""
+  - area: Waterfall Way
+    enemies:
+      - name: Merman
+        level: 22
+        where: Waterfall Way
+        weak: Lightning
+        drops: Mist Potion
+        steals: ""
+      - name: Xiphactinus
+        level: 22
+        where: Waterfall Way
+        weak: Lightning
+        drops: Mist Potion · Hi-Potion (rare)
+        steals: ""
+      - name: Gigas Worm
+        level: 22
+        where: Waterfall Way
+        weak: Ice, Water
+        drops: Hi-Potion
+        steals: ""
+      - name: Maelspike
+        level: 23
+        where: Waterfall Way
+        weak: Lightning
+        drops: Hi-Potion · Water Scroll I (rare)
+        steals: ""
+      - name: Black Shark
+        level: 24
+        where: Waterfall Way
+        weak: Lightning
+        drops: Hi-Potion
+        steals: Mist Hi-Potion
+      - name: Gigas
+        level: 24
+        where: Waterfall Way
+        weak: Ice, Dark
+        drops: Hi-Potion
+        steals: Unicorn Horn
+      - name: Destroyer
+        level: 24
+        where: Waterfall Way
+        weak: Fire, Dark
+        drops: Lightning Scroll I · Heavy Crossbow (rare)
+        steals: Hi-Potion · Mist Hi-Potion (rare)

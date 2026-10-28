@@ -29,6 +29,7 @@ boxes once your running total reaches each box's threshold. Totals go up to
 | 24 | 1-Star Chamber 7 | **Magicite Shard** |
 | 28 | 1-Star Chamber 8 | **Astral Jacket** |
 | 32 | 2-Star Chamber 1 | **Cure Drop** |
+| 36 | 2-Star Chamber 2 | **Celaeno Fragments** |
 
 ## Shard locations
 
@@ -48,4 +49,5 @@ boxes once your running total reaches each box's threshold. Totals go up to
 | **Mobliz Shipyard** | 3 | After the event battle, go far west from the entrance to the bottom-left corner · after the first switch, take the ladder in the southeast of the fenced room down and turn left · top-right area, north of some stairs, behind the red shipping container |
 | **Wind Shrine** | 3 | Lower the elevator with the glowing stone at the entrance, cross it, and look right · right of the stairs up to the Tsukiyo no Tachi chest · after the Armor of Gales chest, go back up, take the platform across to the left, and look left before the elevator |
 | **Olderion** | 4 | Right of the entrance, left of the man by the boat, half hidden by a staircase · city center, west of the big staircase, in front of the benches behind the left statue · on the high northeast bridge, behind a pot · behind the northernmost tree, next to the Rock Piercer chest |
-| **Cave of Waters** | 2 | Just left of the dock at the end of the first boat maze · after the longer boat maze, through the door, in front of the waterfall in the save point room |
+| **Cave of Waters** | 3 | Just left of the dock at the end of the first boat maze · after the longer boat maze, through the door, in front of the waterfall in the save point room · on the hidden path that opens later in the room left of the entrance, up a couple of ladders |
+| **Waterfall Way** | 3 | Second room, up the stairs and east, next to the ladder · in the big waterfall room, on one of the stone platforms · same room, north over the wooden bridges, on a rock between the waterfalls |

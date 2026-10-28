@@ -7,6 +7,10 @@ Notes behind `docs/games/final-fantasy-resonance/tablet-shards.md`.
 - ffresonance.wiki tablet shard list (99 shards across 48 places)
 - RPG Site walkthrough, for availability order and placement descriptions
 - IGN and Legendary Hero Chronicles videos (demo shards, first four boxes)
+- PowerPyx tablet shard guide (powerpyx.com/?p=367156), numbered by chapter.
+  Says no shard is missable.
+- meowdb.com/db/final-fantasy-resonance/guides/tablet-shards (box rewards,
+  per-area counts)
 
 ## Rewards (Oblivion Palace princess)
 
@@ -23,7 +27,11 @@ Notes behind `docs/games/final-fantasy-resonance/tablet-shards.md`.
 | 24 | Magicite Shard (Slot VII) | Yes |
 | 28 | Astral Jacket (Slot VIII) | Yes |
 | 32 | Cure Drop (2-Star Chamber 1) | Yes |
-| 36 | Celaeno Fragments (2-Star Chamber 2) | No (33 reachable) |
+| 36 | Celaeno Fragments (2-Star Chamber 2) | Yes |
+| 40 | Magicite (meowdb; probably a Magicite Shard, confirm) | No (37 reachable) |
+| 44 | Phantom Robe | No |
+| 48 | Repeater Rifle | No |
+| 52 | Protective Gear | No |
 
 89 shards are enough for the trophy.
 
@@ -34,11 +42,17 @@ Notes behind `docs/games/final-fantasy-resonance/tablet-shards.md`.
 
 ## Held back
 
-- **Cave of Waters shard #34** (PowerPyx numbering): area 7 of 7, up a couple
-  of ladders on a narrow path. Past Wave Lopros.
-- Shards after the Cave of Waters (#35 onward).
+- **Town of Amore** (#38–39, PowerPyx): south of the weapon and item shops by
+  a well on a small grassy island · north of the item shop before the long
+  bridge, by a tree on the right.
+- **Water Shrine** (#40–42): central circular room, down the north stairs
+  after lowering the water · past the balcony with the Viridian Pot, on a
+  ledge to the right (by boat, NE) · just left of the bottom of a long ladder
+  after lowering the water again.
+- Shards after the Water Shrine (#43 onward). Warden's Cape has none.
 
 ## Already on the page
 
-Box rewards up to 32 shards. 33 shards in availability order, from the
-Commercial District through the Cave of Waters (2).
+Box rewards up to 36 shards. 37 shards in availability order, from the
+Commercial District through the Cave of Waters (3) and Waterfall Way (3).
+Celaeno Fragments' effect isn't on the page yet.
