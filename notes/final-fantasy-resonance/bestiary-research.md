@@ -15,6 +15,13 @@ Notes behind `docs/games/final-fantasy-resonance/bestiary.md` and
 
 ## Open questions
 
+- **Resistances** (added 2026-10-29) are all from meowdb enemy pages:
+  "Halved" → listed plain, "Immune" → "(immune)". No enemy so far absorbs.
+  Pots nullify all damage; Metal Minituar halves every element.
+- **Weakness mismatches with meowdb:** Soul (page: Fire, Earth; meowdb: Fire
+  only, resists Ice) and Sergeant (page: Fire, Earth, Water, Light; meowdb:
+  Fire, Light). Page left as is; Libra them if the user revisits.
+
 - **Uncertain placements:** Minituar, Imp, Killer Mantis. (Medusa and Dhorme
   Chimera were confirmed by the walkthrough.)
 - **Southern Olderion cluster:** only Basilisk, Mini Gil Snapper, Mu, Sea

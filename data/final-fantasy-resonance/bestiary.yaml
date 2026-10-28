@@ -5,36 +5,42 @@ bestiary:
         level: 4
         where: Grandshelt Castle
         weak: Ice, Water
+        resist: Fire
         drops: Ether
         steals: ""
       - name: Skeleton
         level: 4
         where: Grandshelt Castle
         weak: Fire, Light
+        resist: Dark
         drops: Knife of Poison
         steals: ""
       - name: Dark Skeleton
         level: 5
         where: Grandshelt Castle
         weak: Fire, Light
+        resist: Dark
         drops: Mist Potion
         steals: ""
       - name: Soul
         level: 5
         where: Grandshelt Castle
         weak: Fire, Earth
+        resist: Ice
         drops: Knife of Blind · Ether (rare)
         steals: ""
       - name: Wraith Soldier
         level: 5
         where: Grandshelt Castle · Kolobos Ruins
         weak: Fire, Light
+        resist: Dark
         drops: Knife of Poison
         steals: ""
       - name: Sergeant
         level: 6
         where: Grandshelt Castle
         weak: Fire, Earth, Water, Light
+        resist: ""
         drops: Mist Potion · Ether (rare)
         steals: ""
       - name: "Hell's Rider"
@@ -42,6 +48,7 @@ bestiary:
         level: 6
         where: Grandshelt Castle
         weak: Ice, Light
+        resist: ""
         drops: Mist Potion
         steals: ""
       - name: Umbra
@@ -49,6 +56,7 @@ bestiary:
         level: 17
         where: Grandshelt Castle
         weak: Light
+        resist: Dark
         drops: "Demon's Ring"
         steals: ""
   - area: Earth Shrine
@@ -57,24 +65,28 @@ bestiary:
         level: 1
         where: Earth Shrine
         weak: Fire, Wind
+        resist: ""
         drops: Potion · Knife of Blind (rare)
         steals: ""
       - name: Steel Bat
         level: 1
         where: Earth Shrine · Grandshelt (World Map)
         weak: Ice, Wind
+        resist: ""
         drops: Potion
         steals: Potion
       - name: Dire Rat
         level: 2
         where: Earth Shrine · Grandshelt (World Map)
         weak: Ice
+        resist: ""
         drops: Potion
         steals: Potion
       - name: Mandragora
         level: 3
         where: Earth Shrine · Grandshelt (World Map)
         weak: Fire
+        resist: ""
         drops: Antidote Herb
         steals: Potion (rare)
       - name: Belmodar
@@ -82,6 +94,7 @@ bestiary:
         level: 4
         where: Earth Shrine
         weak: Fire, Dark
+        resist: Lightning
         drops: Phoenix Down
         steals: ""
   - area: Grandshelt (World Map)
@@ -90,66 +103,77 @@ bestiary:
         level: 1
         where: Earth Shrine · Grandshelt (World Map)
         weak: Ice, Wind
+        resist: ""
         drops: Potion
         steals: Potion
       - name: Dire Rat
         level: 2
         where: Earth Shrine · Grandshelt (World Map)
         weak: Ice
+        resist: ""
         drops: Potion
         steals: Potion
       - name: Mandragora
         level: 3
         where: Earth Shrine · Grandshelt (World Map)
         weak: Fire
+        resist: ""
         drops: Antidote Herb
         steals: Potion (rare)
       - name: Chick
         level: 4
         where: Grandshelt (World Map)
         weak: Ice
+        resist: ""
         drops: Potion
         steals: ""
       - name: Gigantoad
         level: 4
         where: Grandshelt (World Map)
         weak: Ice, Lightning
+        resist: ""
         drops: Smoke Bomb
         steals: ""
       - name: Goblin
         level: 4
         where: Grandshelt (World Map) · Kolobos (World Map)
         weak: Ice, Dark
+        resist: ""
         drops: Potion · Mist Potion
         steals: Potion
       - name: Nutkin
         level: 4
         where: Grandshelt (World Map)
         weak: Earth
+        resist: ""
         drops: Antidote Herb
         steals: ""
       - name: Goblin Guard
         level: 5
         where: Grandshelt (World Map)
         weak: Ice, Dark
+        resist: ""
         drops: Knife of Poison (rare)
         steals: Antidote Herb · Knife of Poison (rare)
       - name: Mammon
         level: 5
         where: Grandshelt (World Map)
         weak: Fire
+        resist: Earth
         drops: Ether (rare)
         steals: ""
       - name: Dive Talon
         level: 6
         where: Grandshelt (World Map)
         weak: Wind
+        resist: Earth
         drops: Phoenix Down
         steals: ""
       - name: Poison Flora
         level: 7
         where: Grandshelt (World Map)
         weak: Fire, Wind
+        resist: ""
         drops: Potion
         steals: ""
   - area: Grandport (World Map)
@@ -158,54 +182,63 @@ bestiary:
         level: 6
         where: Grandport (World Map)
         weak: Water
+        resist: ""
         drops: Knife of Poison
         steals: Knife of Poison
       - name: Crawler
         level: 7
         where: Grandport (World Map)
         weak: Ice, Water
+        resist: ""
         drops: Phoenix Down
         steals: ""
       - name: Human Trap
         level: 7
         where: Grandport (World Map)
         weak: Fire, Wind
+        resist: ""
         drops: Antidote Herb · Knife of Poison (rare)
         steals: Knife of Poison (rare)
       - name: Wild Rat
         level: 8
         where: Grandport (World Map)
         weak: Ice
+        resist: ""
         drops: ""
         steals: ""
       - name: Desert Sahagin
         level: 9
         where: Grandport (World Map)
         weak: Water
+        resist: Earth
         drops: Potion
         steals: Earth Scroll I (rare)
       - name: Sahagin
         level: 9
         where: "Grandport (World Map) · Siren's Tower"
         weak: Lightning
+        resist: Water
         drops: Potion
         steals: Echo Herb
       - name: Aqua Elemental
         level: 10
         where: "Grandport (World Map) · Siren's Tower"
         weak: Lightning
+        resist: Water (immune)
         drops: Ether · Water Scroll I (rare)
         steals: ""
       - name: Dhorme Chimera
         level: 16
         where: Grandport (World Map)
         weak: Water
+        resist: ""
         drops: ""
         steals: Earth Scroll I · Ring of Rage (rare)
       - name: Minituar
         level: 16
         where: Grandport (World Map)
         weak: Ice, Water
+        resist: Earth (immune)
         drops: ""
         steals: ""
       - name: Antlion
@@ -213,6 +246,7 @@ bestiary:
         level: 20
         where: Grandport (World Map)
         weak: Water
+        resist: ""
         drops: Mist Potion
         steals: Earth Scroll I
   - area: Kolobos (World Map)
@@ -221,48 +255,56 @@ bestiary:
         level: 4
         where: Grandshelt (World Map) · Kolobos (World Map)
         weak: Ice, Dark
+        resist: ""
         drops: Potion · Mist Potion
         steals: Potion
       - name: Alraune
         level: 6
         where: Kolobos (World Map)
         weak: Fire
+        resist: ""
         drops: Smoke Bomb
         steals: ""
       - name: Cutpurse
         level: 6
         where: Kolobos (World Map)
         weak: Earth
+        resist: ""
         drops: Potion · Ether (rare)
         steals: ""
       - name: Hornet
         level: 6
         where: Kolobos (World Map)
         weak: Wind
+        resist: ""
         drops: Antidote Herb · Knife of Poison (rare)
         steals: Knife of Poison
       - name: Poison Toad
         level: 6
         where: Kolobos (World Map)
         weak: Ice, Lightning
+        resist: ""
         drops: Antidote Herb · Knife of Poison (rare)
         steals: Potion
       - name: Ghoul
         level: 7
         where: Kolobos (World Map) · Kolobos Ruins
         weak: Fire, Light
+        resist: Dark
         drops: ""
         steals: ""
       - name: Shadow
         level: 7
         where: Kolobos (World Map)
         weak: Ice, Light
+        resist: ""
         drops: Ether
         steals: ""
       - name: Skuldier
         level: 7
         where: Kolobos (World Map)
         weak: Fire, Light
+        resist: Dark
         drops: Smoke Bomb · Knife of Paralysis (rare)
         steals: ""
   - area: Kolobos Ruins
@@ -271,42 +313,49 @@ bestiary:
         level: 5
         where: Grandshelt Castle · Kolobos Ruins
         weak: Fire, Light
+        resist: Dark
         drops: Knife of Poison
         steals: ""
       - name: Ghost
         level: 7
         where: Kolobos Ruins
         weak: Ice, Light
+        resist: ""
         drops: Ether
         steals: Smoke Bomb
       - name: Ghoul
         level: 7
         where: Kolobos (World Map) · Kolobos Ruins
         weak: Fire, Light
+        resist: Dark
         drops: ""
         steals: ""
       - name: Poplium
         level: 8
         where: Kolobos Ruins
         weak: Water, Light
+        resist: Dark
         drops: Antidote Herb · Eye Drops (rare)
         steals: ""
       - name: Enhanced Wraith Soldier
         level: 9
         where: Kolobos Ruins
         weak: Fire, Light
+        resist: ""
         drops: Potion · Mist Potion (rare)
         steals: ""
       - name: Floateye
         level: 9
         where: Kolobos Ruins
         weak: Ice, Light
+        resist: ""
         drops: Echo Herb · Mist Potion (rare)
         steals: ""
       - name: Imposter Soldier
         level: 10
         where: Kolobos Ruins
         weak: Ice, Dark
+        resist: ""
         drops: Potion
         steals: ""
       - name: The Hunger
@@ -314,6 +363,7 @@ bestiary:
         level: 9
         where: Kolobos Ruins
         weak: Ice
+        resist: ""
         drops: Potion
         steals: ""
       - name: The Hunger v2
@@ -321,6 +371,7 @@ bestiary:
         level: 10
         where: Kolobos Ruins
         weak: Light
+        resist: ""
         drops: Potion
         steals: ""
   - area: "Siren's Tower"
@@ -329,42 +380,49 @@ bestiary:
         level: 9
         where: "Siren's Tower"
         weak: Lightning
+        resist: Water
         drops: Potion
         steals: ""
       - name: Sahagin
         level: 9
         where: "Grandport (World Map) · Siren's Tower"
         weak: Lightning
+        resist: Water
         drops: Potion
         steals: Echo Herb
       - name: Aqua Elemental
         level: 10
         where: "Grandport (World Map) · Siren's Tower"
         weak: Lightning
+        resist: Water (immune)
         drops: Ether · Water Scroll I (rare)
         steals: ""
       - name: Mage
         level: 10
         where: "Siren's Tower"
         weak: Ice, Light
+        resist: ""
         drops: Ether
         steals: ""
       - name: Green Slime
         level: 11
         where: "Siren's Tower"
         weak: Lightning
+        resist: Water
         drops: Ether
         steals: Water Scroll I (rare)
       - name: Shark
         level: 11
         where: "Siren's Tower"
         weak: Lightning
+        resist: Water
         drops: Phoenix Down
         steals: Mist Potion · Water Scroll I (rare)
       - name: Citrine Pot
         level: 15
         where: "Siren's Tower · Mobliz Shipyard"
         weak: ""
+        resist: All damage (immune)
         drops: Elixir (rare)
         steals: ""
       - name: Siren
@@ -372,6 +430,7 @@ bestiary:
         level: 11
         where: "Siren's Tower"
         weak: Lightning
+        resist: Water
         drops: Magicite Shard
         steals: ""
   - area: Marauder Cave
@@ -381,6 +440,7 @@ bestiary:
         level: 15
         where: Marauder Cave
         weak: Wind
+        resist: ""
         drops: Turbo Ether · Magicite Shard
         steals: ""
   - area: Dirnado (World Map)
@@ -389,132 +449,154 @@ bestiary:
         level: 11
         where: Dirnado (World Map)
         weak: Fire
+        resist: Earth
         drops: Ether
         steals: ""
       - name: Bomb
         level: 12
         where: Dirnado (World Map) · Mt. Thunderclap
         weak: Water
+        resist: Fire
         drops: Flame Scroll I
         steals: ""
       - name: Damia
         level: 12
         where: Dirnado (World Map) · Mt. Thunderclap
         weak: Earth
+        resist: Lightning
         drops: Phoenix Down
         steals: ""
       - name: Footpad
         level: 12
         where: Dirnado (World Map) · Mt. Thunderclap
         weak: Earth
+        resist: ""
         drops: Potion · Ether (rare)
         steals: ""
       - name: Warlock
         level: 12
         where: Dirnado (World Map) · Mt. Thunderclap
         weak: Earth
+        resist: ""
         drops: Phoenix Down · Ether (rare)
         steals: ""
       - name: Zombie
         level: 12
         where: Dirnado (World Map)
         weak: Fire, Light
+        resist: Dark
         drops: Antidote Herb · Knife of Poison (rare)
         steals: ""
       - name: Captain
         level: 13
         where: Dirnado (World Map) · Mt. Thunderclap
         weak: Earth, Water
+        resist: ""
         drops: Mist Potion · Knife of Silence (rare)
         steals: ""
       - name: Sprinter
         level: 13
         where: Dirnado (World Map) · Mt. Thunderclap
         weak: Wind
+        resist: ""
         drops: Ether
         steals: Wind Scroll I · Knife of Blind (rare)
       - name: Thief Boss
         level: 13
         where: Dirnado (World Map) · Mt. Thunderclap
         weak: Earth
+        resist: ""
         drops: ""
         steals: Mist Potion · Knife of Paralysis (rare)
       - name: Ipooh
         level: 14
         where: Dirnado (World Map)
         weak: Earth
+        resist: ""
         drops: Potion
         steals: ""
       - name: Iron bat
         level: 14
         where: Dirnado (World Map) · Mobliz Shipyard
         weak: Ice, Wind
+        resist: ""
         drops: ""
         steals: ""
       - name: Osprey
         level: 14
         where: Dirnado (World Map)
         weak: Wind
+        resist: Earth
         drops: ""
         steals: Mist Potion · Wind Scroll I (rare)
       - name: Wild Nakk
         level: 14
         where: Dirnado (World Map)
         weak: Earth
+        resist: ""
         drops: Antidote Herb · Knife of Poison (rare)
         steals: ""
       - name: Centipede
         level: 15
         where: Dirnado (World Map) · Mobliz Shipyard
         weak: Lightning, Water
+        resist: ""
         drops: Mist Potion · Laserblade (rare)
         steals: ""
       - name: Pecking Chick
         level: 15
         where: Dirnado (World Map)
         weak: Ice
+        resist: ""
         drops: Mist Potion
         steals: ""
       - name: White Peak
         level: 15
         where: Dirnado (World Map)
         weak: Fire
+        resist: Ice
         drops: ""
         steals: ""
       - name: Ninlil
         level: 16
         where: Dirnado (World Map) · Wind Shrine
         weak: Ice
+        resist: Wind
         drops: Phoenix Down · Echo Herb (rare)
         steals: ""
       - name: Imp
         level: 17
         where: Dirnado (World Map)
         weak: Water, Light
+        resist: ""
         drops: Smelling Salts · Hi-Potion (rare)
         steals: ""
       - name: Mini Dragon
         level: 17
         where: Dirnado (World Map) · Wind Shrine
         weak: Ice
+        resist: Fire
         drops: Ether
         steals: Ether (rare)
       - name: Killer Mantis
         level: 18
         where: Dirnado (World Map)
         weak: Fire, Wind
+        resist: ""
         drops: Antidote Herb · Knife of Poison (rare)
         steals: Wind Scroll I
       - name: Medusa
         level: 18
         where: Dirnado (World Map)
         weak: Lightning
+        resist: ""
         drops: Earth Scroll I
         steals: Jeweled Ring (rare)
       - name: Metal Minituar
         level: 18
         where: Dirnado (World Map)
         weak: ""
+        resist: All elements
         drops: ""
         steals: ""
       - name: Ramuh
@@ -522,6 +604,7 @@ bestiary:
         level: 20
         where: Dirnado (World Map) · Mt. Thunderclap
         weak: Earth
+        resist: Lightning (immune)
         drops: Magicite Shard
         steals: ""
   - area: Mt. Thunderclap
@@ -530,48 +613,56 @@ bestiary:
         level: 11
         where: Mt. Thunderclap
         weak: Earth
+        resist: ""
         drops: Potion
         steals: Potion
       - name: Bomb
         level: 12
         where: Dirnado (World Map) · Mt. Thunderclap
         weak: Water
+        resist: Fire
         drops: Flame Scroll I
         steals: ""
       - name: Damia
         level: 12
         where: Dirnado (World Map) · Mt. Thunderclap
         weak: Earth
+        resist: Lightning
         drops: Phoenix Down
         steals: ""
       - name: Footpad
         level: 12
         where: Dirnado (World Map) · Mt. Thunderclap
         weak: Earth
+        resist: ""
         drops: Potion · Ether (rare)
         steals: ""
       - name: Warlock
         level: 12
         where: Dirnado (World Map) · Mt. Thunderclap
         weak: Earth
+        resist: ""
         drops: Phoenix Down · Ether (rare)
         steals: ""
       - name: Captain
         level: 13
         where: Dirnado (World Map) · Mt. Thunderclap
         weak: Earth, Water
+        resist: ""
         drops: Mist Potion · Knife of Silence (rare)
         steals: ""
       - name: Sprinter
         level: 13
         where: Dirnado (World Map) · Mt. Thunderclap
         weak: Wind
+        resist: ""
         drops: Ether
         steals: Wind Scroll I · Knife of Blind (rare)
       - name: Thief Boss
         level: 13
         where: Dirnado (World Map) · Mt. Thunderclap
         weak: Earth
+        resist: ""
         drops: ""
         steals: Mist Potion · Knife of Paralysis (rare)
       - name: Liquid Thunder
@@ -579,6 +670,7 @@ bestiary:
         level: 13
         where: Mt. Thunderclap
         weak: Earth
+        resist: Lightning (immune)
         drops: Lightning Scroll I
         steals: ""
       - name: Ramuh
@@ -586,6 +678,7 @@ bestiary:
         level: 20
         where: Dirnado (World Map) · Mt. Thunderclap
         weak: Earth
+        resist: Lightning (immune)
         drops: Magicite Shard
         steals: ""
   - area: Dwarven Forge
@@ -594,6 +687,7 @@ bestiary:
         level: 13
         where: Dwarven Forge
         weak: Water
+        resist: Fire
         drops: Flame Scroll I
         steals: ""
       - name: Mom Bomb
@@ -601,6 +695,7 @@ bestiary:
         level: 14
         where: Dwarven Forge
         weak: Water
+        resist: Fire
         drops: Flame Scroll II
         steals: ""
   - area: Shoggoth Cave
@@ -610,6 +705,7 @@ bestiary:
         level: 25
         where: Shoggoth Cave
         weak: Earth, Water
+        resist: ""
         drops: Turbo Ether · Magicite Shard
         steals: ""
   - area: Mobliz Shipyard
@@ -618,36 +714,42 @@ bestiary:
         level: 14
         where: Dirnado (World Map) · Mobliz Shipyard
         weak: Ice, Wind
+        resist: ""
         drops: ""
         steals: ""
       - name: Security Eye
         level: 14
         where: Mobliz Shipyard
         weak: Lightning
+        resist: ""
         drops: Potion · Eye Drops (rare)
         steals: ""
       - name: Centipede
         level: 15
         where: Dirnado (World Map) · Mobliz Shipyard
         weak: Lightning, Water
+        resist: ""
         drops: Mist Potion · Laserblade (rare)
         steals: ""
       - name: Citrine Pot
         level: 15
         where: "Siren's Tower · Mobliz Shipyard"
         weak: ""
+        resist: All damage (immune)
         drops: Elixir (rare)
         steals: ""
       - name: Pawn
         level: 15
         where: Mobliz Shipyard
         weak: Lightning
+        resist: ""
         drops: Mist Potion
         steals: ""
       - name: Epimetheus
         level: 16
         where: Mobliz Shipyard
         weak: Lightning
+        resist: ""
         drops: Lightning Scroll I
         steals: Iron Sandals (rare)
       - name: Adrastea
@@ -655,6 +757,7 @@ bestiary:
         level: 16
         where: Mobliz Shipyard
         weak: Lightning, Water
+        resist: ""
         drops: Lightning Scroll II
         steals: ""
       - name: Guardian
@@ -662,6 +765,7 @@ bestiary:
         level: 25
         where: Mobliz Shipyard
         weak: Lightning
+        resist: ""
         drops: Lightning Scroll I · Hi-Potion (rare)
         steals: ""
   - area: Wind Shrine
@@ -670,48 +774,56 @@ bestiary:
         level: 16
         where: Wind Shrine
         weak: Lightning
+        resist: ""
         drops: Mist Potion · Bronze Hammer (rare)
         steals: ""
       - name: Ninlil
         level: 16
         where: Dirnado (World Map) · Wind Shrine
         weak: Ice
+        resist: Wind
         drops: Phoenix Down · Echo Herb (rare)
         steals: ""
       - name: Bloody Eye
         level: 17
         where: Wind Shrine
         weak: Ice, Light
+        resist: ""
         drops: Mist Potion · Knife of Confuse (rare)
         steals: ""
       - name: Green Elemental
         level: 17
         where: Wind Shrine
         weak: Ice
+        resist: Wind (immune)
         drops: Wind Scroll I · Hi-Potion (rare)
         steals: ""
       - name: Mini Dragon
         level: 17
         where: Dirnado (World Map) · Wind Shrine
         weak: Ice
+        resist: Fire
         drops: Ether
         steals: Ether (rare)
       - name: "Aether's Guardian"
         level: 18
         where: Wind Shrine
         weak: Ice
+        resist: Wind
         drops: ""
         steals: ""
       - name: "Aether's Minion"
         level: 18
         where: Wind Shrine
         weak: Ice
+        resist: Wind
         drops: ""
         steals: ""
       - name: Viridian Pot
         level: 22
         where: Wind Shrine
         weak: ""
+        resist: All damage (immune)
         drops: Elixir (rare)
         steals: ""
       - name: Aether
@@ -719,6 +831,7 @@ bestiary:
         level: 18
         where: Wind Shrine
         weak: Ice
+        resist: Wind (immune)
         drops: "Sylph's Tiara"
         steals: ""
   - area: Olderion (World Map)
@@ -727,42 +840,49 @@ bestiary:
         level: 18
         where: Olderion (World Map)
         weak: Ice
+        resist: ""
         drops: Mist Potion · Gold Needle (rare)
         steals: Gold Needle (rare)
       - name: Mini Gil Snapper
         level: 18
         where: Olderion (World Map)
         weak: Ice
+        resist: Fire, Wind, Earth, Lightning, Water, Light
         drops: ""
         steals: Mist Ether · Small Golden Shell (rare)
       - name: Mu
         level: 18
         where: Olderion (World Map)
         weak: Earth
+        resist: ""
         drops: Mist Potion
         steals: Potion · Berserker Ring (rare)
       - name: Sea Scorpion
         level: 18
         where: Olderion (World Map)
         weak: Lightning
+        resist: Water
         drops: Knife of Poison
         steals: Knife of Paralysis
       - name: Sorcerer
         level: 18
         where: Olderion (World Map)
         weak: Earth
+        resist: ""
         drops: Ether
         steals: Ice Scroll I · Gold Needle (rare)
       - name: Diresaur
         level: 19
         where: Olderion (World Map)
         weak: Ice
+        resist: Fire
         drops: Mist Potion · Hi-Potion (rare)
         steals: ""
       - name: Green Soul
         level: 19
         where: Olderion (World Map) · Cave of Waters
         weak: Ice
+        resist: Wind
         drops: Ether
         steals: Wind Scroll I · Mist Ether (rare)
   - area: Rukh Cave
@@ -772,6 +892,7 @@ bestiary:
         level: 26
         where: Rukh Cave
         weak: Wind
+        resist: Earth (immune)
         drops: X-Ether · Magicite Shard
         steals: ""
   - area: Cave of Waters
@@ -780,36 +901,42 @@ bestiary:
         level: 18
         where: Cave of Waters
         weak: Ice, Light
+        resist: Dark
         drops: Knife of Poison · Mist Potion (rare)
         steals: Gold Needle
       - name: Anet
         level: 19
         where: Cave of Waters
         weak: Lightning
+        resist: Water
         drops: Mist Potion
         steals: ""
       - name: Green Soul
         level: 19
         where: Olderion (World Map) · Cave of Waters
         weak: Ice
+        resist: Wind
         drops: Ether
         steals: Wind Scroll I · Mist Ether (rare)
       - name: Adamantoise
         level: 20
         where: Cave of Waters
         weak: Ice
+        resist: ""
         drops: Hi-Potion · Bulletproof Vest (rare)
         steals: ""
       - name: Azure Snapper
         level: 20
         where: Cave of Waters (with Wave Lopros)
         weak: Lightning
+        resist: ""
         drops: ""
         steals: ""
       - name: Land Snapper
         level: 20
         where: Cave of Waters (with Wave Lopros)
         weak: Wind
+        resist: ""
         drops: ""
         steals: ""
       - name: Wave Lopros
@@ -817,6 +944,7 @@ bestiary:
         level: 20
         where: Cave of Waters
         weak: Ice
+        resist: ""
         drops: Water Scroll I
         steals: ""
   - area: Old Town, Olderion
@@ -826,6 +954,7 @@ bestiary:
         level: 21
         where: Old Town, Olderion
         weak: Lightning
+        resist: Water
         drops: Water Scroll I
         steals: ""
   - area: Lake Dorr
@@ -834,6 +963,7 @@ bestiary:
         level: 23
         where: Lake Dorr (with Leviathan)
         weak: Fire, Water or Earth (one each)
+        resist: Ice, Fire or Wind (one each)
         drops: ""
         steals: ""
       - name: Leviathan
@@ -841,6 +971,7 @@ bestiary:
         level: 23
         where: Lake Dorr
         weak: Lightning
+        resist: Water
         drops: Magicite Shard
         steals: ""
   - area: Waterfall Way
@@ -849,42 +980,49 @@ bestiary:
         level: 22
         where: Waterfall Way
         weak: Lightning
+        resist: Water
         drops: Mist Potion
         steals: ""
       - name: Xiphactinus
         level: 22
         where: Waterfall Way
         weak: Lightning
+        resist: Water
         drops: Mist Potion · Hi-Potion (rare)
         steals: ""
       - name: Gigas Worm
         level: 22
         where: Waterfall Way
         weak: Ice, Water
+        resist: ""
         drops: Hi-Potion
         steals: ""
       - name: Maelspike
         level: 23
         where: Waterfall Way
         weak: Lightning
+        resist: Water
         drops: Hi-Potion · Water Scroll I (rare)
         steals: ""
       - name: Black Shark
         level: 24
         where: Waterfall Way
         weak: Lightning
+        resist: Water
         drops: Hi-Potion
         steals: Mist Hi-Potion
       - name: Gigas
         level: 24
         where: Waterfall Way
         weak: Ice, Dark
+        resist: Wind
         drops: Hi-Potion
         steals: Unicorn Horn
       - name: Destroyer
         level: 24
         where: Waterfall Way · Olderion (World Map, around Amore)
         weak: Fire, Dark
+        resist: Lightning
         drops: Lightning Scroll I · Heavy Crossbow (rare)
         steals: Hi-Potion · Mist Hi-Potion (rare)
   - area: Olderion (World Map, around Amore)
@@ -893,36 +1031,42 @@ bestiary:
         level: 23
         where: Olderion (World Map, around Amore)
         weak: Wind
+        resist: ""
         drops: Herb of Awakening
         steals: Knife of Sleep
       - name: Drosera
         level: 24
         where: Olderion (World Map, around Amore)
         weak: Fire, Wind
+        resist: ""
         drops: Mist Potion · Knife of Paralysis (rare)
         steals: Mist Hi-Potion
       - name: Dragon Junior
         level: 24
         where: Olderion (World Map, around Amore)
         weak: Wind
+        resist: Ice
         drops: Ether · Ice Scroll I (rare)
         steals: ""
       - name: Vulture
         level: 24
         where: Olderion (World Map, around Amore)
         weak: Wind
+        resist: Earth
         drops: Wind Scroll I
         steals: ""
       - name: Amoebozoa
         level: 26
         where: Olderion (World Map, around Amore)
         weak: Earth, Water
+        resist: ""
         drops: Knife of Poison
         steals: Gale Hairpin (rare)
       - name: Zuu
         level: 26
         where: Olderion (World Map, around Amore)
         weak: Wind
+        resist: Earth (immune)
         drops: Wind Scroll I · Wind Scroll II (rare)
         steals: Fujin's Fuda (rare)
   - area: Water Shrine
@@ -931,42 +1075,49 @@ bestiary:
         level: 23
         where: Water Shrine
         weak: Lightning
+        resist: ""
         drops: Gold Needle · Earth Scroll I (rare)
         steals: ""
       - name: Skadi
         level: 23
         where: Water Shrine
         weak: Lightning
+        resist: Water
         drops: Water Scroll I · Mist Ether (rare)
         steals: Ether · Arcana Blade (rare)
       - name: Pit Fiend
         level: 24
         where: Water Shrine
         weak: Water, Light
+        resist: ""
         drops: ""
         steals: Ether · Turbo Ether (rare)
       - name: Red Marshmallow
         level: 25
         where: Water Shrine
         weak: Water
+        resist: Fire
         drops: ""
         steals: Flame Scroll I · Astral Blade (rare)
       - name: Ribosome
         level: 25
         where: Water Shrine
         weak: Earth, Water
+        resist: ""
         drops: Knife of Poison · Turbo Ether (rare)
         steals: Mist Turbo Ether (rare)
       - name: Megalodon
         level: 26
         where: Water Shrine
         weak: Lightning
+        resist: Water
         drops: ""
         steals: Mist Ether · Guardian Sword (rare)
       - name: Monster Effigy
         level: 26
         where: Water Shrine
         weak: Wind, Dark
+        resist: ""
         drops: Earth Scroll I · Earth Scroll II (rare)
         steals: Aeolian Misanga (rare)
       - name: Alluvion
@@ -974,5 +1125,6 @@ bestiary:
         level: 26
         where: Water Shrine
         weak: Lightning
+        resist: Water (immune)
         drops: Azure Amulet
         steals: ""
