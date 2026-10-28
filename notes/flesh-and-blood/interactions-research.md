@@ -48,3 +48,8 @@ Nothing.
 Six recurring themes; dated update/article summaries; per-set notes for
 UST, MP Warrior, Omens, CoR (Predatory Plating callout), Super Slam,
 High Seas.
+
+Card examples (added 2026-10-28): every card the page names is a `card()`
+preview, and each theme and keyword has an example card. Super Slam and High
+Seas examples come from those sets (SUP, SEA). See rules-research.md for how
+the macro works.
