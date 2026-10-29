@@ -89,6 +89,12 @@ in **Grandport**. It gives a tutorial on using magicite and gives you a
   Olderion, then find her at Waterfall Way. Also gives 1,500 gil.
 - **Water Shrine:** chest at the start. Take the boat north through the
   waterfall (the Scale Mail chest is there too).
+- **Colosseum** (Grandshelt): first win of Fledgling Battle 1
+- **Colosseum** (Grandshelt): first win of Fledgling Battle 4
+- **Colosseum** (Grandshelt): the shop sells them for 10,000 gil once you've
+  won all five Fledgling League battles. See [Colosseum](colosseum.md).
+- **Cactuar:** rare steal. They're common in the far south of the Zoldaad
+  world map.
 
 Tablet Shards are a separate item. See [Tablet Shards](tablet-shards.md)
 for where to find them and what they're traded for.

@@ -1128,3 +1128,203 @@ bestiary:
         resist: Water (immune)
         drops: Azure Amulet
         steals: ""
+  - area: Zoldaad (World Map)
+    enemies:
+      - name: Red Elemental
+        level: 28
+        where: Zoldaad (World Map)
+        weak: Water
+        resist: Fire (immune)
+        drops: Flame Scroll I · Mist Turbo Ether (rare)
+        steals: ""
+      - name: Magma Tortoise
+        level: 26
+        where: Zoldaad (World Map) · Colosseum
+        weak: Water
+        resist: Fire
+        drops: Mist Hi-Potion · Mist Turbo Ether (rare)
+        steals: Flame Scroll I
+      - name: Earth Elemental
+        level: 28
+        where: Zoldaad (World Map)
+        weak: Wind
+        resist: Earth (immune)
+        drops: Earth Scroll I · Earth Scroll II (rare)
+        steals: ""
+      - name: Huri Kamuy
+        level: 26
+        where: Zoldaad (World Map)
+        weak: Wind
+        resist: Earth
+        drops: Phoenix Down · Wind Scroll I (rare)
+        steals: ""
+      - name: Vamplant
+        level: 25
+        where: Zoldaad (World Map)
+        weak: Fire, Wind
+        resist: ""
+        drops: Antidote Herb · Hi-Potion (rare)
+        steals: ""
+      - name: Poison Eagle
+        level: 25
+        where: Zoldaad (World Map), around the capital
+        weak: Wind
+        resist: Earth
+        drops: Phoenix Down · Wind Scroll I (rare)
+        steals: ""
+      - name: Soul Eater
+        level: 25
+        where: Zoldaad (World Map), around Capital Station
+        weak: Earth
+        resist: ""
+        drops: Hi-Potion
+        steals: Hi-Potion · Mist Turbo Ether (rare)
+      - name: Giant Bear
+        level: 27
+        where: Zoldaad (World Map), around Capital Station
+        weak: Earth
+        resist: ""
+        drops: Unicorn Horn
+        steals: Knife of Paralysis
+      - name: Fire Lizard
+        level: 26
+        where: Zoldaad (World Map), south of Capital Station
+        weak: Water
+        resist: Fire (immune)
+        drops: Phoenix Down · Flame Scroll I (rare)
+        steals: ""
+      - name: Worgen
+        level: 21
+        where: Zoldaad (World Map), east
+        weak: Earth
+        resist: ""
+        drops: Hi-Potion · Knife of Paralysis (rare)
+        steals: ""
+      - name: Coeurl
+        level: 27
+        where: Zoldaad (World Map), east · Colosseum
+        weak: Earth
+        resist: ""
+        drops: Lightning Scroll I · Lightning Scroll II (rare)
+        steals: ""
+      - name: Yellow Jelly
+        level: 26
+        where: Zoldaad (World Map), east
+        weak: Earth
+        resist: Lightning
+        drops: Mist Ether · Turbo Ether (rare)
+        steals: ""
+      - name: Chimera
+        level: 28
+        where: Zoldaad (World Map), east · Colosseum
+        weak: Earth, Dark
+        resist: Fire (immune), Ice (immune), Lightning (immune)
+        drops: Water Scroll I · Water Scroll II (rare)
+        steals: Arcane Pendant (rare)
+      - name: Scolopendra
+        level: 26
+        where: Zoldaad (World Map), east and southeast
+        weak: Lightning, Water
+        resist: ""
+        drops: Mist Potion · Hi-Potion (rare)
+        steals: Lightning Scroll I
+      - name: Treant
+        level: 26
+        where: Zoldaad (World Map), east and south
+        weak: Fire
+        resist: Earth
+        drops: Mist Ether
+        steals: ""
+      - name: Balloon
+        level: 26
+        where: Zoldaad (World Map), east
+        weak: Ice
+        resist: Wind
+        drops: Wind Scroll I · Mist Hi-Potion (rare)
+        steals: ""
+      - name: Wyvern
+        level: 26
+        where: Zoldaad (World Map), east and southeast · Colosseum
+        weak: Ice, Dark
+        resist: ""
+        drops: Wind Scroll I
+        steals: Smoke Bomb · Rune Scales (rare)
+      - name: Sandworm
+        level: 28
+        where: Zoldaad (World Map), southeast and far south
+        weak: Water
+        resist: Earth
+        drops: ""
+        steals: Earth Scroll II · Golem Core (rare)
+      - name: Cactuar
+        level: 30
+        where: Zoldaad (World Map), far south
+        weak: Ice, Water
+        resist: Earth (immune)
+        drops: Healing Spring
+        steals: Mist Ether · Magicite Shard (rare)
+  - area: Colosseum (Fledgling League)
+    enemies:
+      - name: Balaur
+        level: 32
+        where: Colosseum (Fledgling Battle 3)
+        weak: Fire
+        resist: Ice
+        drops: Ice Scroll I · Ice Scroll II (rare)
+        steals: ""
+      - name: Simurgh
+        level: 32
+        where: Colosseum (Fledgling Battle 3)
+        weak: Wind
+        resist: Earth
+        drops: Lightning Scroll I · Phoenix Pinion (rare)
+        steals: Phoenix Pinion (rare)
+      - name: Blood Worm
+        level: 32
+        where: Colosseum (Fledgling Battle 3)
+        weak: Ice, Water
+        resist: ""
+        drops: Mist Hi-Potion · Smoke Bomb (rare)
+        steals: ""
+      - name: Gray Bomb
+        level: 33
+        where: Colosseum (Fledgling Battle 4)
+        weak: Fire
+        resist: Ice
+        drops: ""
+        steals: Ice Scroll I · Ice Scroll II (rare)
+      - name: Ice Lizard
+        level: 34
+        where: Colosseum (Fledgling Battle 4)
+        weak: Fire
+        resist: Ice (immune)
+        drops: ""
+        steals: ""
+      - name: Lieutenant
+        level: 34
+        where: Colosseum (Fledgling Battle 4)
+        weak: Earth, Water
+        resist: ""
+        drops: Shuriken
+        steals: Fuma Shuriken · Mirage Coat (rare)
+      - name: Allosaur
+        level: 37
+        where: Colosseum (Fledgling Battle 5)
+        weak: Ice
+        resist: Earth
+        drops: Antidote Herb · Knife of Poison (rare)
+        steals: ""
+      - name: Ice Sculpture
+        level: 37
+        where: Colosseum (Fledgling Battle 5)
+        weak: Fire
+        resist: Ice (immune)
+        drops: Ice Scroll I
+        steals: Ice Scroll II (rare)
+      - name: Ahriman
+        level: 37
+        where: Colosseum (Fledgling Battle 5)
+        weak: Ice, Light
+        resist: ""
+        drops: X-Potion · Phoenix Pinion (rare)
+        steals: Striking Staff

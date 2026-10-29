@@ -31,6 +31,8 @@ boxes once your running total reaches each box's threshold. Totals go up to
 | 32 | 2-Star Chamber 1 | **Cure Drop** |
 | 36 | 2-Star Chamber 2 | **Celaeno Fragments** |
 | 40 | 2-Star Chamber 3 | **Magicite** |
+| 44 | 2-Star Chamber 4 | **Phantom Robe** (15% chance to evade magic) |
+| 48 | 2-Star Chamber 5 | **Repeater Rifle** (+10% critical hit rate) |
 
 ## Shard locations
 
@@ -81,3 +83,9 @@ Each :material-camera: opens a screenshot of that spot from
 | 40 | **Water Shrine** | In the round room with four paths in a cross, down the north stairs once the water is lowered | [:material-camera:](https://www.powerpyx.com/wp-content/uploads/final-fantasy-resonance-tablet-shards-guide-40.jpg){ title="Screenshot" target="_blank" rel="noopener" } |
 | 41 | **Water Shrine** | In the room with the water level crystals, take the boat northeast past the balcony with the Viridian Pot. It's on a ledge to the right | [:material-camera:](https://www.powerpyx.com/wp-content/uploads/final-fantasy-resonance-tablet-shards-guide-41.jpg){ title="Screenshot" target="_blank" rel="noopener" } |
 | 42 | **Water Shrine** | After lowering the water again, at the bottom of a long ladder, just to the left | [:material-camera:](https://www.powerpyx.com/wp-content/uploads/final-fantasy-resonance-tablet-shards-guide-42.jpg){ title="Screenshot" target="_blank" rel="noopener" } |
+| 43 | **Mozul Station** | In the southwest corner of the station | [:material-camera:](https://www.powerpyx.com/wp-content/uploads/final-fantasy-resonance-tablet-shards-guide-43.jpg){ title="Screenshot" target="_blank" rel="noopener" } |
+| 44 | **Capital Station** | Beside the eastern staircase and entrance. Enter from the south on the world map and you appear next to it | [:material-camera:](https://www.powerpyx.com/wp-content/uploads/final-fantasy-resonance-tablet-shards-guide-44.jpg){ title="Screenshot" target="_blank" rel="noopener" } |
+| 45 | **Zoldaad Castle Plaza** | Directly east of where you get off the tram | [:material-camera:](https://www.powerpyx.com/wp-content/uploads/final-fantasy-resonance-tablet-shards-guide-45.jpg){ title="Screenshot" target="_blank" rel="noopener" } |
+| 46 | **Imperial Residences** | In the southeast corner | [:material-camera:](https://www.powerpyx.com/wp-content/uploads/final-fantasy-resonance-tablet-shards-guide-46.jpg){ title="Screenshot" target="_blank" rel="noopener" } |
+| 47 | **Slums** | Just east of where you enter, next to some barrels | [:material-camera:](https://www.powerpyx.com/wp-content/uploads/final-fantasy-resonance-tablet-shards-guide-47.jpg){ title="Screenshot" target="_blank" rel="noopener" } |
+| 48 | **Colosseum (Grandshelt)** | Head all the way west on the first path | [:material-camera:](https://www.powerpyx.com/wp-content/uploads/final-fantasy-resonance-tablet-shards-guide-58.jpg){ title="Screenshot" target="_blank" rel="noopener" } |

@@ -112,7 +112,6 @@ Rain Early Game Guide (Purplatypus), Vision tier list (Whiter).
 | Ch. | Where | What |
 |-----|-------|------|
 | 2* | Dirnado, W of Sanctum of Onion Knight (lv 30) | Cactuars only: 1,111 EXP/gil, 220 MRP, Healing Spring drops. *Left off: Cactuar was excluded from the bestiary; confirm the user has met them.* |
-| 4 | Zoldaad, Infernal Hollow ↔ Rebel Hideout | Cactuars, Sandworms (2,000 EXP) |
 | 4 | Zoldaad, near Mozul Station / Sanctum of Cecil | Mist Turbo Ethers, Hi-Potions; Cactuar 1 in 3 near Sanctum of Shantotto |
 | 5 | Mysidia, near Jotunn Cave / Sanctum of Vaan | Metal Cactuar: 25,000 EXP, 1 in 3 |
 | 5 | Mysidia, N of Salome Cave | Gil Snapper: 13,000 gil |
@@ -157,6 +156,9 @@ turn.
 - 9 Espers total. 26 Visions. 99 Tablet Shards (89 for the trophy).
 
 ## Already on the page
+
+Added 2026-10-29: farming rows for Zoldaad field 8 (Cactuar, Sandworm) and
+Chimera in the east (fields 5–6).
 
 Combat basics, stagger numbers, timeline, Bonus Phase / Sweeping Stagger /
 Resonance, Limit Bursts, status effects, Espers, Vision mastery rules, AP,

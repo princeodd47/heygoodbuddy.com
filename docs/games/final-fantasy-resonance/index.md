@@ -37,6 +37,12 @@ save data carries over.
 
     How summoning works, and how to get each Esper.
 
+-   :material-sword-cross:{ .lg .middle } __[Colosseum](colosseum.md)__
+
+    ---
+
+    Every Fledgling League battle, its enemies and rewards, and the shop.
+
 -   :material-lightbulb-on:{ .lg .middle } __[Tips](tips.md)__
 
     ---

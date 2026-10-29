@@ -43,8 +43,12 @@ Notes behind `docs/games/final-fantasy-resonance/bestiary.md` and
 
 ## Held back (deliberately excluded)
 
-- **After the Water Shrine** ("Go after Arsha", port to Zoldaad): not
-  researched.
+- **Chapter 4 after "Gather information in Zoldaad":** Underground Tunnel
+  (Fire Lizard in area 2, Crimson Pot), Weapons Factory (Ignis lv 27, 56,000
+  HP, weak Water, halves Fire, enrages when hit), Zoldaad Castle, Emperor of
+  Zoldaad (lv 30, 52,000 HP, weak Water, Poison), Lazarov (lv 30, 45,000 HP,
+  weak Earth, Sleep). Optional: Gogmagog Cave and Pyroviper Cave bosses.
+  Not researched in detail.
 - **Anet and Adamantoise on the world map:** the wiki also lists them on the
   Olderion world map. They're only under Cave of Waters on the page until
   the user confirms where else they appear.
@@ -56,8 +60,8 @@ Notes behind `docs/games/final-fantasy-resonance/bestiary.md` and
 - **Gilgamesh:** Siren's Tower to the Genji Armor chain (see wiki
   gilgamesh-genji-gloves). Later.
 - **Titan:** sealed desert Esper; needs Colosseum Fledgling Battle 5.
-- **Cactuar:** Dirnado west of the Sanctum of Onion Knight (lv 30). Left out;
-  confirm whether the user has met them.
+- **Cactuar:** now listed under Zoldaad (World Map). Also Dirnado field 6
+  and Grandshelt field 9 (meowdb); those aren't in its Where.
 - **Northern Olderion cluster** (lv 24+): Anet, Adamantoise, Destroyer,
   Dragon Junior, Drosera, Gigas, Golden Eagle, Thug, Vulture, Twinscythe,
   Amoebozoa, Zuu.
@@ -84,3 +88,19 @@ Leviathan details not on the page: 40,000 HP, 4,500 EXP, 2,400 gil; resists
 Water; enrages if the fight drags on. Orbs of Light: one weak Fire (resists
 Ice), one weak Water (resists Fire), one weak Earth (resists Wind); breaking
 one weakens Leviathan. Water Dragon: 24,000 HP, resists Water.
+
+## Zoldaad (added 2026-10-29)
+
+From meowdb's encounter map (`/db/final-fantasy-resonance/tools/encounter-map`,
+JSON embedded in the page). Fields: 1 near Mozul Station, 2 near the capital,
+3 and 4 near Capital Station, 5 and 6 "near Rebel Hideout" (east), 7 near the
+Weapons Factory (far east), 8 near Infernal Hollow (far south, plus a small
+northern patch). All eight are one "Zoldaad (World Map)" group; Where gives
+rough directions. Field 8 is only Cactuar, Sandworm, Sandworm + 2 Treants
+(a third each). Sandworm is typed "Boss" on meowdb but is a random encounter;
+not marked boss.
+
+Colosseum (Fledgling League) group: Balaur, Simurgh, Blood Worm, Gray Bomb,
+Ice Lizard, Lieutenant, Allosaur, Ice Sculpture, Ahriman. Most also roam
+Mysidia (ch. 5); that's left out of Where. Wyvern, Magma Tortoise, Coeurl
+and Chimera are in the Zoldaad group with "Colosseum" added to Where.

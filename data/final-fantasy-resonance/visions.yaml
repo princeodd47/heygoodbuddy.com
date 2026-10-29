@@ -32,3 +32,9 @@ visions:
   - name: Tidus
     how_to_get: Sanctum of Tidus, far west in the southern Olderion Federation
     status: unverified
+  - name: Cecil
+    how_to_get: Sanctum of Cecil, southeast of Capital Station (Zoldaad)
+    status: unverified
+  - name: Y'shtola
+    how_to_get: Sanctum of Y'shtola, in the far east of Zoldaad
+    status: unverified

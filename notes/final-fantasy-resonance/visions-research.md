@@ -24,8 +24,15 @@ Notes behind `docs/games/final-fantasy-resonance/visions.md` and
 - **Clive:** Sanctum on Grandshelt per one guide. Not in the user's Vision
   list (possibly a pre-order or later unlock). Don't add unless the user has
   it.
-- **Magicite Shard sources still ahead:** The Tide from the Sky rare steal from Cactuar, Colosseum Fledgling
-  Battles 1 and 4.
+- **Shantotto:** Sanctum of Light east of Mozul Station (encounter-map
+  coordinates 1925, 1351). Reachable, but the user hasn't found it. Don't
+  add or hint until they report it.
+- **Other Magicite sources now reachable but not on the page:** Olderion jump
+  rope 60 jumps (Magicite 2★; 30 = Mist X-Potion, 40 = Swift Badge),
+  Arise, Mechabo! follow-up (kill three Sandworms, back to Verun: Magicite
+  2★ + Mecha Behemoth), Weapons Factory chest (Magicite, after the
+  current step), Underground Tunnel chest NE of the Crimson Pot (Magicite
+  Shard, next story step).
 - **Magicite (2★, green):** appears from the end of chapter 3. Priority advice
   is in `tips-research.md`.
 - 26 Visions in total. Seven are side-quest rewards in chapters 4–7. Later
@@ -35,6 +42,12 @@ Notes behind `docs/games/final-fantasy-resonance/visions.md` and
   has it.**
 
 ## Already on the page
+
+Added 2026-10-29: Cecil (Sanctum SE of Capital Station, coordinates 1706,
+1595) and Y'shtola (far east of Zoldaad, near the Weapons Factory, 2040,
+1754), from meowdb's encounter-map data and RPG Site. Magicite Shard sources:
+Colosseum Fledgling Battles 1 and 4, the Colosseum shop (10,000 gil after
+the Fledgling League) and Cactuar's rare steal (meowdb cactuar-38).
 
 Tronn, Leah, Warrior of Light, Cloud, Terra, Zidane, Onion Knight, Noctis,
 Firion, Squall, Tidus, with how to get each. Mastery and Awakening basics.

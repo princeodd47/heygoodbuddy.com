@@ -266,6 +266,8 @@ tags:
 | **EXP, gil** | Waterfall Way | **Destroyer**: 1,800 EXP and 900 gil. Weak to Fire and Dark, resists Lightning. Hard to stagger, and its attacks can Paralyze. |
 | **EXP** | Water Shrine | **Megalodon** and **Monster Effigy**: 1,350 EXP each. Megalodon is weak to Lightning, Monster Effigy to Wind and Dark. Both are hard to stagger. |
 | **Gil** | Olderion world map, south | **Mini Gil Snapper**: 1,500 gil. Weak to Ice. Steal from it first. |
+| **EXP, gil, MRP** | Zoldaad world map, far south through the southern mountains | **Cactuar** (1,111 EXP and 1,111 gil, lots of MRP) and **Sandworm** (2,000 EXP, 1,500 gil) show up in every fight there. Cactuars are weak to Ice and Water and dodge until staggered; they rarely give a **Magicite Shard** when you steal. Sandworms are weak to Water and hard to stagger. |
+| **EXP** | Zoldaad world map, east | **Chimera**: 2,000 EXP and 1,400 gil. Weak to Earth and Dark, immune to Fire, Ice and Lightning. Hard to stagger. |
 | **MRP** | Siren's Tower, Mobliz Shipyard, Wind Shrine, Water Shrine | **Pots**. See below. |
 | **Laserblade** | Dirnado world map, Mobliz Shipyard | Rare drop from **Centipede**. |
 | **Bronze Hammer** | Wind Shrine | Rare drop from **Headstone**. |
