@@ -41,3 +41,5 @@ Espers are summons. Only **Fina** can call them.
 | **Other moves** | Attack · Lightning · Lightning Bolt · Thundara (one or all enemies) · Thundaga (one or all enemies) · Gigavolt · Supercell (all enemies, Paralysis) · Thunderspark (one enemy, chance of Paralysis) |
 | **The fight** | Level 20. Weak to Earth, immune to Lightning. |
 | **Rewards** | Magicite Shard · 2,250 EXP · 1,500 Gil |
+
+<script id="ffr-items-data" type="application/json">{{ {"equipment": ffr_equipment, "items": ffr_items} | tojson }}</script>

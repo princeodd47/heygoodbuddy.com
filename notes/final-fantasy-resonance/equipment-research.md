@@ -83,6 +83,20 @@ have no user in the party yet ("Nobody in your party uses these yet").
 - Some starting gear and NPC-only items may be missing: RPG Site doesn't
   list starting equipment.
 
+## Item popups
+
+`docs/javascripts/ffr-items.js` turns every known item name on a page into
+a clickable span that opens a preview (type, stats, effect, where, and a
+"Full entry" link to the Equipment/Accessories/Items section). It only runs
+on pages that end with the `ffr-items-data` script tag (equipment.yaml and
+items.yaml as JSON): bestiary, colosseum, tablet-shards, tips, visions,
+espers, key-items. A new FFR page that mentions items needs that tag.
+Names are matched longest-first ("Mist Ether" before "Ether"), skipping
+links, headings, table headers and code. Key items aren't matched. YAML
+groups use `entries`, not `items` (Jinja reads `g.items` as dict.items).
+Styles are in `docs/stylesheets/extra.css`. Tested in headless Chrome
+2026-10-29: 307 names on the Bestiary, popup opens and closes.
+
 ## Already on the pages
 
 108 weapons and armor, 37 accessories, 46 consumables (2026-10-29).

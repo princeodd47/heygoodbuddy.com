@@ -127,3 +127,5 @@ Sources: battle lineups, enemy stats and shop stock from
 [NiaDB](https://meowdb.com/db/final-fantasy-resonance/colosseum); prices
 from [vorxu](https://vorxu.com/final-fantasy-resonance/colosseum); rules
 from [allthings.how](https://allthings.how/final-fantasy-resonance-colosseum/).
+
+<script id="ffr-items-data" type="application/json">{{ {"equipment": ffr_equipment, "items": ffr_items} | tojson }}</script>

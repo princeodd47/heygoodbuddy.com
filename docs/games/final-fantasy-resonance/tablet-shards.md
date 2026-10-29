@@ -89,3 +89,5 @@ Each :material-camera: opens a screenshot of that spot from
 | 46 | **Imperial Residences** | In the southeast corner | [:material-camera:](https://www.powerpyx.com/wp-content/uploads/final-fantasy-resonance-tablet-shards-guide-46.jpg){ title="Screenshot" target="_blank" rel="noopener" } |
 | 47 | **Slums** | Just east of where you enter, next to some barrels | [:material-camera:](https://www.powerpyx.com/wp-content/uploads/final-fantasy-resonance-tablet-shards-guide-47.jpg){ title="Screenshot" target="_blank" rel="noopener" } |
 | 48 | **Colosseum (Grandshelt)** | Head all the way west on the first path | [:material-camera:](https://www.powerpyx.com/wp-content/uploads/final-fantasy-resonance-tablet-shards-guide-58.jpg){ title="Screenshot" target="_blank" rel="noopener" } |
+
+<script id="ffr-items-data" type="application/json">{{ {"equipment": ffr_equipment, "items": ffr_items} | tojson }}</script>

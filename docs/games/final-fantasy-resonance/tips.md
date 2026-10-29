@@ -307,3 +307,5 @@ tags:
 |-----|-------|-------|--------------|
 | **Citrine Pot** | Siren's Tower, Mobliz Shipyard | Ether | 120 |
 | **Viridian Pot** | Wind Shrine, Water Shrine (on a balcony in the room with the water level crystals) | Mist Ether | 200 |
+
+<script id="ffr-items-data" type="application/json">{{ {"equipment": ffr_equipment, "items": ffr_items} | tojson }}</script>

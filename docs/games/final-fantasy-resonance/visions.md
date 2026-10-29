@@ -98,3 +98,5 @@ in **Grandport**. It gives a tutorial on using magicite and gives you a
 
 Tablet Shards are a separate item. See [Tablet Shards](tablet-shards.md)
 for where to find them and what they're traded for.
+
+<script id="ffr-items-data" type="application/json">{{ {"equipment": ffr_equipment, "items": ffr_items} | tojson }}</script>

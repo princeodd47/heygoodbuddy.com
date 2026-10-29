@@ -23,3 +23,5 @@ marks a rare drop or rare steal.
 | **{{ e.name }}**{% if e.boss %} (boss){% endif %} | {{ e.level }} | {{ e.where }} | {{ e.weak or "—" }} | {{ e.resist or "—" }} | {{ e.drops or "—" }} | {{ e.steals or "—" }} |
 {% endfor %}
 {% endfor %}
+
+<script id="ffr-items-data" type="application/json">{{ {"equipment": ffr_equipment, "items": ffr_items} | tojson }}</script>

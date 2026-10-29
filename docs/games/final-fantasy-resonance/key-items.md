@@ -28,3 +28,5 @@ Valuable items and artifacts you can have so far.
 
 Item details come from
 [NiaDB](https://meowdb.com/db/final-fantasy-resonance/items).
+
+<script id="ffr-items-data" type="application/json">{{ {"equipment": ffr_equipment, "items": ffr_items} | tojson }}</script>
