@@ -57,6 +57,10 @@ plugins:
         fab_icons: data/flesh-and-blood/icons.yaml
         fab_my_rulings: data/flesh-and-blood/my-rulings.yaml
         fab_cards: data/flesh-and-blood/cards.yaml
+        ffx2_arena: data/final-fantasy-x-2/arena.yaml
+        ffx2_creatures: data/final-fantasy-x-2/creatures.yaml
+        ffx2_feeding: data/final-fantasy-x-2/feeding.yaml
+        ffx2_accessories: data/final-fantasy-x-2/accessories.yaml
 
 extra_css:
   - stylesheets/extra.css
@@ -114,6 +118,14 @@ nav:
       - Unicorn Overlord:
           - games/unicorn-overlord/index.md
           - Post-Game Teams: games/unicorn-overlord/post-game-teams.md
+      - Final Fantasy X-2 HD Remaster:
+          - games/final-fantasy-x-2/index.md
+          - Walkthrough: games/final-fantasy-x-2/walkthrough.md
+          - Fiend Arena: games/final-fantasy-x-2/fiend-arena.md
+          - Building the Team: games/final-fantasy-x-2/creature-team.md
+          - Creatures: games/final-fantasy-x-2/creatures.md
+          - Feeding: games/final-fantasy-x-2/feeding.md
+          - Accessories: games/final-fantasy-x-2/accessories.md
       - Final Fantasy XII The Zodiac Age:
           - games/final-fantasy-xii-the-zodiac-age/index.md
           - Changes from PS2: games/final-fantasy-xii-the-zodiac-age/changes.md
