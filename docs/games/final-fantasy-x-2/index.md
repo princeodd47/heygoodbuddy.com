@@ -16,7 +16,7 @@ and Fiend Arena from the International release.
 
     ---
 
-    From the Luca concert to the Fiend Arena, with your first three catches.
+    All of Chapter 1 for 100%, with steals, drops and what to trap where.
 
 -   :material-trophy:{ .lg .middle } __[Fiend Arena](fiend-arena.md)__
 
@@ -41,6 +41,24 @@ and Fiend Arena from the International release.
     ---
 
     What each item teaches a creature, and how many it takes.
+
+-   :material-tshirt-crew:{ .lg .middle } __[Dresspheres](dresspheres.md)__
+
+    ---
+
+    All 19, how to get each one, and their abilities.
+
+-   :material-grid:{ .lg .middle } __[Garment Grids](garment-grids.md)__
+
+    ---
+
+    All 64 grids: gates, what creatures get, and where to find them.
+
+-   :material-skull:{ .lg .middle } __[Bestiary](bestiary.md)__
+
+    ---
+
+    Every enemy with HP, weaknesses, steals, drops and bribes.
 
 -   :material-ring:{ .lg .middle } __[Accessories](accessories.md)__
 

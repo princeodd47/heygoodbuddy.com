@@ -33,3 +33,9 @@ scratchpad and parsed by `tools/build_data.py`; re-download to rebuild.
 
 Pods, sizes, tales and releases table, easy-to-miss list, full location
 table (177 creatures).
+
+## Tutorial pods (2026-10-29)
+
+Jegged says you start with one Trap Pod S. The user confirmed in game the
+Creature Creator tutorial gives a Trap Pod S, M and L; page follows the
+game.

@@ -21,23 +21,45 @@ scratchpad and parsed by `tools/build_data.py`; re-download to rebuild.
 
 ## Scope
 
-The user asked for a walkthrough up to the point the Fiend Arena is
-playable. The arena opens on the first Celsius visit, but the page runs to
-the end of the Gagazet mission so Red Elemental has Black Mage. Next stops
-if extended: Besaid (White Mage, Protection Halo, Flame Dragon L-pod
-catch), Kilika brief trip, Luca balloons, Mi'ihen, Mushroom Rock (Turbo
-Ether chest, Heart of Flame, Restless Sleep), Moonflow (Helios Guard).
+First pass ran Luca to the end of the Gagazet mission. Extended
+2026-10-29 to all of Chapter 1 (Besaid through YSLS-Zero) with 100%
+markers, checkpoints, notable steals/drops and creature catches.
 
-## Open questions
+Chapter 1 sources: Jegged Chapter 1 pages 01 to 20 (one per area), with
+Gamer Guides Chapter 1 pages as the cross-check.
 
+## Checkpoint semantics
+
+Jegged's "Expected" completion figure after each box is the running total
+once everything above it is done. Page uses 3%, 4%, 9%, 12%, 20%, and 25%
+at chapter end; Gamer Guides also gives 25% at the end of Chapter 1.
+
+## Conflicts and decisions
+
+- Creature Creator tutorial pods: Jegged says the tutorial hands over one
+  Trap Pod S. The user checked in game: it gives a Trap Pod S, M and L.
+  In-game wins; walkthrough, Creatures page updated. The L pod is the one
+  to use on Flame Dragon in Besaid.
+- Gagazet Ronso answers: Jegged's marked answers were checked against the
+  Gamer Guides list and the page uses the 100% set (Leave it to the
+  Gullwings / never forget their sacrifice / I'm sure you're right / I can
+  imagine how you must feel / I wouldn't forgive them either / a change
+  for the better; Kimahri: learn to deal with these things; Garik: we'll
+  take care of Lian and Ayde).
 - Steals differ between guides: Gamer Guides gives Ormi (Gagazet) Iron
   Bangle and Logos (Luca) nothing specific; Jegged gives Gauntlets and
   Silver Glasses. Page uses Jegged.
 - Gamer Guides lists Boris weak to fire and ice; Jegged doesn't list
   weaknesses. Page keeps fire/ice.
 
-## Already on the page
+## "Creatures scenes"
 
-Luca bosses, Celsius talks and rewards, engine room chests, Gagazet chests
-(Yellow Ring, Elixir, Mega Phoenix, White Ring, Red Ring, Star Pendant,
-Muscle Belt), both Gagazet bosses, Brother "comfort" scene, first catches.
+Read as creature-related events in Chapter 1: what to trap where
+(**Creatures:** lines), the Flame Dragon L-pod catch, and the chapter-end
+Fiend Tale Story Level plus 3 Trap Pod SP. Fiend Tale text itself is not
+copied; summaries could be a later page if wanted.
+
+## Next if extended
+
+Chapter 2: Bevelle (Kukulcan, YAC-13, YAU-28, YSLS-99 are Chapter 2 only),
+Youth League vs New Yevon choice, Besaid/Kilika/Luca missions.

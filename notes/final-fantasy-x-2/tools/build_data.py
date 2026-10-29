@@ -206,3 +206,125 @@ dump('arena.yaml',
      '# See notes/final-fantasy-x-2/fiend-arena-research.md.\n',
      'cups', cups)
 print(len(feed_items), len(accs), len(creatures), len(cups))
+
+# Garment Grids, in Jegged's game order.
+gg = read('jeg_Garment-Grids_idx.html')
+grids, seen = [], set()
+for m in re.finditer(r'<div[^>]*class="alert-heading">((?:(?!alert-heading).)*?)</div>((?:(?!alert-heading).)*?)</dl>', gg, flags=re.S):
+    name = txt(m.group(1))
+    if name in seen:
+        continue
+    seen.add(name)
+    d = {}
+    gates = []
+    for k, v in re.findall(r'<dt[^>]*>(.*?)</dt>\s*<dd[^>]*>(.*?)</dd>', m.group(2), flags=re.S):
+        k = txt(k).rstrip(':')
+        if k == 'Gates':
+            for colour, ab in re.findall(r'alt="(\w+) Gate Icon"[^>]*>(.*?)</span>', v, flags=re.S):
+                gates.append(f"{colour}: {txt(ab)}")
+            if not gates:
+                gates.append(txt(v))
+        else:
+            d[k] = txt(v)
+    grids.append({'name': name, 'equip': d.get('Equip Ability', ''), 'gates': '<br>'.join(gates),
+                  'creature': d.get('Creature Ability', ''), 'chapter': d.get('Chapter', ''),
+                  'where': d.get('Acquisition', '').replace('|', '/')})
+dump('garment-grids.yaml',
+     '# Garment Grids in the order you can first get them, from Jegged\'s Garment Grids list.\n'
+     '# See notes/final-fantasy-x-2/garment-grids-research.md.\n',
+     'grids', grids)
+
+# Dresspheres: ability lists from Jegged; how to get them is our own wording.
+DRESS = [
+    ('Warrior', 'Starting Dressphere (Paine).'),
+    ('Thief', 'Starting Dressphere (Rikku).'),
+    ('Gunner', 'Starting Dressphere (Yuna).'),
+    ('Songstress', 'Chapter 1, Luca: Yuna gets it in the opening fight with Leblanc.'),
+    ('Festivalist', 'Chapter 1, Celsius: Brother gives it to you on your first visit. HD Remaster and International only.'),
+    ('Black Mage', 'Chapter 1, Celsius: Shinra gives it to you after the Mt. Gagazet Floating Ruins.'),
+    ('White Mage', 'Chapter 1, Besaid: beat the Flame Dragon in the cave.'),
+    ('Gun Mage', 'Chapter 1, Moonflow: finish "Shave the Hypello?" for Tobli. Missed it? Sell at least six of Tobli\'s ten tickets without a loss in Chapter 2.'),
+    ('Psychic', 'Fiend Arena: first Standard Cup win. HD Remaster and International only.'),
+    ('Alchemist', 'Chapter 2, Calm Lands: the "Clean Sweep" mission at the Chocobo Ranch. Clasko has to reach the Calm Lands first.'),
+    ('Dark Knight', 'Chapter 2, Bevelle Underground: a chest at the end of the lift and switch puzzle. It stays there if you miss it.'),
+    ('Samurai', 'Chapter 3, Kilika Temple: on the floor after the two Daevas. If you miss it, it\'s in a chest there in Chapter 5.'),
+    ('Lady Luck', 'Chapter 3, Luca: win the Sphere Break tournament and beat Shinra. Or beat him in the stadium basement in Chapter 5.'),
+    ('Berserker', 'Chapter 3, Lake Macalania: defend the Travel Agency and win six battles in a row. Chapter 3 only.'),
+    ('Trainer', 'Chapter 3, Mt. Gagazet: Kimahri gives it if you answered him right in Chapter 2.'),
+    ('Mascot', 'Episode Complete in all 15 locations (scene on the Celsius in Chapter 5), or the first Youth League Tournament win in the Fiend Arena.'),
+    ('Full Throttle', 'Paine\'s Special. Chapter 1, Macalania Woods: talk to Tromell at the Spring four times. Last chance: the same in Chapter 2.'),
+    ('Floral Fallal', 'Yuna\'s Special. Chapter 2, Djose Highroad, during that chapter\'s mission.'),
+    ('Machina Maw', 'Rikku\'s Special. Chapter 2, Bikanel Desert: comes in the Oasis mission cutscene.'),
+]
+dresses = []
+for name, how in DRESS:
+    page = read(os.path.join('dress', name.replace(' ', '-') + '.html'))
+    la = page[page.find('List of Abilities'):]
+    la = la[:la.find('<h2')] if '<h2' in la else la
+    tabs = [txt(b) for b in re.findall(r'<button[^>]*role="tab"[^>]*>(.*?)</button>', la, flags=re.S)]
+    groups = []
+    for i, table in enumerate(re.findall(r'<table.*?</table>', la, flags=re.S)):
+        abil = []
+        for c in rows(table):
+            if c[0] == 'Ability':
+                continue
+            abil.append({'name': c[0], 'ap': c[1], 'needs': c[2] if len(c) > 2 else ''})
+        if not tabs and len(re.findall(r'<table', la)) == 3:
+            tabs = ['Yuna', 'Rikku', 'Paine']
+        groups.append({'who': tabs[i] if i < len(tabs) else '', 'abilities': abil})
+    dresses.append({'name': name, 'how': how, 'groups': groups})
+dump('dresspheres.yaml',
+     '# Dresspheres in the order you can first get them. Ability lists from Jegged\'s\n'
+     '# Dressphere pages; "how" is our own wording. See notes/final-fantasy-x-2/dresspheres-research.md.\n',
+     'dresspheres', dresses)
+print(len(grids), len(dresses))
+
+# Bestiary, from Jegged's enemy pages (saved under enemies/).
+ENEMY_DIR = os.path.join(src, 'enemies')
+if os.path.isdir(ENEMY_DIR):
+    enemies = []
+    for fn in sorted(os.listdir(ENEMY_DIR), key=str.lower):
+        page = open(os.path.join(ENEMY_DIR, fn), encoding='utf-8').read()
+        name = txt(re.search(r'<h1[^>]*>(.*?)</h1>', page, flags=re.S).group(1))
+        secs = re.split(r'<h2[^>]*>(.*?)</h2>', page)
+        stats_html = secs[0]
+        sec = {txt(secs[i]): secs[i + 1] for i in range(1, len(secs), 2)}
+        stats = {}
+        for c in rows(stats_html):
+            if len(c) == 2:
+                stats[c[0]] = c[1]
+        where = [txt(li) for li in re.findall(r'<li[^>]*>(.*?)</li>', sec.get('Where to Find It', ''), flags=re.S)]
+        if not where:
+            where = [x for x in txt(re.sub(r'</p>|<br\s*/?>', '\n', sec.get('Where to Find It', ''))).split('\n') if x]
+        loot = {'Steal': [], 'Drop': [], 'Bribe': []}
+        cur = None
+        for c in rows(sec.get('Steals, Drops, and Bribes', '')):
+            if c[0] in loot:
+                cur = c[0]
+                c = c[1:]
+            elif c[0] == 'Source':
+                continue
+            if cur and c and c[0] and c[0] != '—':
+                loot[cur].append(c[0])
+        el = {}
+        for c in rows(sec.get('Elemental Affinities', '')):
+            if len(c) == 2 and c[0] != 'Element' and c[1] != 'Normal':
+                el.setdefault(c[1], []).append(c[0])
+
+        def pair(lst):
+            if not lst:
+                return ''
+            if len(lst) == 1 or lst[0] == lst[1]:
+                return lst[0]
+            return f"{lst[0]}; rare: {lst[1]}"
+
+        affin = '; '.join(f"{k}: {', '.join(v)}" for k, v in sorted(el.items()) if k != 'Weak')
+        enemies.append({'name': name, 'level': stats.get('Level', ''), 'hp': stats.get('HP', ''),
+                        'weak': ', '.join(el.get('Weak', [])), 'other': affin,
+                        'steal': pair(loot['Steal']), 'drop': pair(loot['Drop']), 'bribe': pair(loot['Bribe']),
+                        'where': '<br>'.join(where).replace('|', '/')})
+    dump('bestiary.yaml',
+         '# Every enemy, alphabetical, from Jegged\'s bestiary pages. Steal and drop give the\n'
+         '# common item first, then the rare one. See notes/final-fantasy-x-2/bestiary-research.md.\n',
+         'enemies', enemies)
+    print(len(enemies))

@@ -20,7 +20,8 @@ creature can be trapped.
 | **Trap Pod L** | A random Large creature |
 | **Trap Pod SP** | A random creature of the family you pick (Machina, Elemental, Humanoid and so on). The only pod that can catch people. |
 
-- You start with one Trap Pod S and can hold eight.
+- Shinra's Creature Creator tutorial on your first Celsius visit gives a
+  Trap Pod S, M and L. You can hold eight.
 - **Getting more:** play any Fiend Arena tournament (win or lose), release
   a creature whose story is finished, or finish Chapters 1 to 4 (three SP
   pods each).
