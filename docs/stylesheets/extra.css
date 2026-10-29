@@ -73,3 +73,58 @@
 [data-md-color-scheme="slate"] .md-typeset tr:has(.permanent) {
   background-color: rgba(239, 83, 80, 0.2);
 }
+
+/* Final Fantasy Resonance item names; click one to preview the item. */
+.md-typeset .ffr-itemref {
+  border-bottom: 1px dotted currentColor;
+  cursor: pointer;
+}
+
+.ffr-itempop {
+  position: absolute;
+  z-index: 10;
+  width: min(20rem, calc(100vw - 16px));
+  max-height: 70vh;
+  overflow-y: auto;
+  padding: 0.6rem 0.7rem;
+  font-size: 0.7rem;
+  background: var(--md-default-bg-color);
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 0.3rem;
+  box-shadow: var(--md-shadow-z2);
+}
+
+.ffr-itempop[hidden] {
+  display: none;
+}
+
+.ffr-itempop p {
+  margin: 0.4em 0;
+}
+
+.ffr-itempop-close {
+  float: right;
+  padding: 0 0.2rem;
+  color: var(--md-default-fg-color--light);
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.ffr-itempop-name {
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.ffr-itempop-type,
+.ffr-itempop-stats {
+  color: var(--md-default-fg-color--light);
+}
+
+.ffr-itempop-where {
+  margin-top: 0.4em;
+}
+
+.ffr-itempop-link {
+  margin-bottom: 0;
+}

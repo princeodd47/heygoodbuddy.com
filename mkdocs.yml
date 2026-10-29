@@ -70,6 +70,7 @@ extra_javascript:
   - javascripts/dqm-talents.js
   - javascripts/fab-cards.js?v=2026-10-28.2
   - javascripts/fab-quiz.js?v=2026-10-28.2
+  - javascripts/ffr-items.js?v=2026-10-29
 
 markdown_extensions:
   - admonition
