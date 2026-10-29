@@ -33,6 +33,9 @@ plugins:
       include_yaml:
         ffr: data/final-fantasy-resonance/visions.yaml
         ffr_bestiary: data/final-fantasy-resonance/bestiary.yaml
+        ffr_equipment: data/final-fantasy-resonance/equipment.yaml
+        ffr_items: data/final-fantasy-resonance/items.yaml
+        ffr_key_items: data/final-fantasy-resonance/key-items.yaml
         dqm: data/dragon-quest-monsters-the-withered-world/monsters.yaml
         dqm_synth: data/dragon-quest-monsters-the-withered-world/synthesis.yaml
         dqm_talents: data/dragon-quest-monsters-the-withered-world/talents.yaml
@@ -94,6 +97,10 @@ nav:
           - Bestiary: games/final-fantasy-resonance/bestiary.md
           - Espers: games/final-fantasy-resonance/espers.md
           - Colosseum: games/final-fantasy-resonance/colosseum.md
+          - Equipment: games/final-fantasy-resonance/equipment.md
+          - Accessories: games/final-fantasy-resonance/accessories.md
+          - Items: games/final-fantasy-resonance/items.md
+          - Key Items: games/final-fantasy-resonance/key-items.md
           - Tips: games/final-fantasy-resonance/tips.md
       - Dragon Quest Monsters The Withered World:
           - games/dragon-quest-monsters-the-withered-world/index.md

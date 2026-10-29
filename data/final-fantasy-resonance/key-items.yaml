@@ -1,0 +1,45 @@
+# Key items and artifacts; see notes/final-fantasy-resonance/key-items-research.md
+key_items:
+  - name: Tablet Shard
+    what: A stone fragment with curious engravings. Trade them in for rewards.
+    where: Golden glows on the ground. See [Tablet Shards](tablet-shards.md).
+  - name: Magicite Shard
+    what: Awakens a Vision to ★.
+    where: Bosses, sub quests, chests and more. See [Visions](visions.md#where-to-get-magicite-shards).
+  - name: Magicite
+    what: Awakens a Vision to ★★.
+    where: "Tablet Shard box: 40 shards<br>Olderion jump rope: 60 jumps<br>Sub quest *Mechabo Evolved* (Dwarven Forge): beat three Sandworms on the Zoldaad world map<br>Boss drop: Mindflayer (Mindflayer Cave, Olderion world map, north)<br>Boss drop: Gogmagog (Gogmagog Cave, Zoldaad world map)<br>Boss drop: Pyroviper (Pyroviper Cave, Zoldaad world map)"
+  - name: Adamantite
+    what: An extremely hard and rare metal, used to craft weapons.
+    where: "Colosseum: first win of Fledgling Battle 2"
+  - name: Fledgling's Proof of Victory
+    what: Proof of conquering the Fledgling League. Adds stock to the Colosseum shop.
+    where: "Colosseum: win all five Fledgling League battles. See [Colosseum](colosseum.md)."
+  - name: Dew of Reprieve
+    what: A rare liquid from a monster, said to halt the progress of illnesses.
+    where: "Sub quest *Dream of an Idealist*: beat the Poison Flora east of the Village of Kol"
+  - name: Super Salubrious Salad Stem
+    what: An expensive vegetable said to ease all manner of symptoms.
+    where: "Sub quest *Medicinal Mission* (Olderion): buy it from the merchant at the Secluded Dwelling for 50,000 gil. One of three ways to finish the quest."
+  - name: Viscus Vitae
+    what: Nutrient-rich monster innards.
+    where: "Sub quest *Medicinal Mission* (Olderion): beat the Blood Dragon just south of Olderion. One of three ways to finish the quest."
+  - name: Rushroom
+    what: An energy-packed mushroom used in medicine.
+    where: "Sub quest *Medicinal Mission* (Olderion): south of Ruby Cave on the Olderion world map. Bring it with Pure Water."
+  - name: Pure Water
+    what: Water of the highest purity.
+    where: "Sub quest *Medicinal Mission* (Olderion): in the Cave of Waters, near the Total Calisthenics chest. Bring it with a Rushroom."
+  - name: Convalescence Draught
+    what: Medicine made from the Rushroom and Pure Water.
+    where: "Sub quest *Medicinal Mission* (Olderion): Illias makes it from the Rushroom and Pure Water."
+artifacts:
+  - name: Bandit Cuff Links
+    what: Shows treasure chests on the mini-map.
+    where: You start with it.
+  - name: Sorcerer's Cape
+    what: Cuts damage taken in battle by 20%.
+    where: You start with it.
+  - name: Tome of Sages
+    what: Raises EXP earned by 20%.
+    where: You start with it.

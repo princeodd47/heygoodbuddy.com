@@ -84,8 +84,9 @@ Fire covers both the Ice Lizard and the Gray Bomb.
 | Ice Sculpture | Fire | Ice (immune) | Petrify attacks |
 | Ahriman | Ice, Light | — | 31,300 HP, hard to stagger, Petrify and Instant Death attacks |
 
-All three are level 37. The **Jeweled Ring** (from a chest in Olderion)
-prevents Petrify and Paralysis.
+All three are level 37. The **Jeweled Ring** (2,000 gil in the Town of
+Amore, or a chest in Olderion) prevents Petrify and Paralysis, and a **Gold
+Needle** cures Petrify.
 
 ## Shop
 

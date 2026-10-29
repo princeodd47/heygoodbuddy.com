@@ -43,6 +43,31 @@ save data carries over.
 
     Every Fledgling League battle, its enemies and rewards, and the shop.
 
+-   :material-sword:{ .lg .middle } __[Equipment](equipment.md)__
+
+    ---
+
+    Every weapon and armor you can get so far, with stats and where to find
+    it.
+
+-   :material-ring:{ .lg .middle } __[Accessories](accessories.md)__
+
+    ---
+
+    Every accessory so far, what it does and where to find it.
+
+-   :material-bottle-tonic-plus:{ .lg .middle } __[Items](items.md)__
+
+    ---
+
+    Potions, cures, scrolls and knives: what they do and where to buy them.
+
+-   :material-key-variant:{ .lg .middle } __[Key Items](key-items.md)__
+
+    ---
+
+    Valuable items and artifacts, and where each one comes from.
+
 -   :material-lightbulb-on:{ .lg .middle } __[Tips](tips.md)__
 
     ---

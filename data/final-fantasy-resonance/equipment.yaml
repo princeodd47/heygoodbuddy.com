@@ -1,0 +1,833 @@
+# Generated from NiaDB (meowdb.com) data; see notes/final-fantasy-resonance/equipment-research.md
+weapons:
+  - type: "Greatswords"
+    who: "Rain"
+    entries:
+      - name: "Bronze Sword"
+        atk: 28
+        mag: 13
+        other: ""
+        effect: ""
+        where: "Shop: Town of Mitra (350 gil)<br>Shop: Grandshelt (350 gil)"
+      - name: "Longsword"
+        atk: 32
+        mag: 15
+        other: ""
+        effect: ""
+        where: "Shop: Grandshelt Commercial District (650 gil)<br>Shop: Town of Felicitas (650 gil)"
+      - name: "Flamberge"
+        atk: 41
+        mag: 19
+        other: "HP 140"
+        effect: "Increases HP by 140."
+        where: "Sub quest *Dream of an Idealist* (Grandshelt → Village of Kol)"
+      - name: "Claymore"
+        atk: 39
+        mag: 18
+        other: ""
+        effect: ""
+        where: "Shop: Grandport Harbor (1,400 gil)"
+      - name: "Knight's Blade"
+        atk: 43
+        mag: 21
+        other: ""
+        effect: ""
+        where: "Shop: Dilmagia (1,800 gil)<br>Shop: Dwarven Forge (1,800 gil)<br>Shop: Capital Market (Zoldaad) (9,000 gil)"
+      - name: "Moon Saber"
+        atk: 27
+        mag: 58
+        other: ""
+        effect: "Increases damage dealt by magic attacks by 10%."
+        where: "Mt. Thunderclap"
+      - name: "Flametongue"
+        atk: 52
+        mag: 24
+        other: ""
+        effect: "Increases damage dealt by Fire attacks by 20%."
+        where: "Shop: Dwarven Forge (3,800 gil)"
+      - name: "Greatsword"
+        atk: 66
+        mag: 31
+        other: ""
+        effect: ""
+        where: "Shop: Olderion (5,500 gil)"
+      - name: "Guardian Sword"
+        atk: 71
+        mag: 35
+        other: "Def 36"
+        effect: ""
+        where: "Waterfall Way<br>Steal: Megalodon (rare)"
+      - name: "Icebrand"
+        atk: 75
+        mag: 36
+        other: ""
+        effect: "Imbues non-elemental physical attacks with Ice."
+        where: "Shop: Town of Amore (7,700 gil)"
+      - name: "Arcana Blade"
+        atk: 48
+        mag: 112
+        other: ""
+        effect: "Increases damage dealt by magic attacks by 10%."
+        where: "Steal: Skadi (rare)"
+      - name: "Ancient Greatsword"
+        atk: 1
+        mag: 1
+        other: ""
+        effect: ""
+        where: "Colosseum: first win of Fledgling Battle 3"
+      - name: "Lunar Sword"
+        atk: 114
+        mag: 61
+        other: ""
+        effect: ""
+        where: "Grandshelt (Chapter 4): the man east of the Colosseum entrance"
+      - name: "Variable Steel"
+        atk: 105
+        mag: 57
+        other: "Def 75"
+        effect: "Grants Protect for 3 turns at the start of battle."
+        where: "Shop: Colosseum (27,500 gil; limit 1)"
+      - name: "Bladed Shield"
+        atk: 99
+        mag: 52
+        other: "Def 40"
+        effect: ""
+        where: "Shop: Slums (Zoldaad) (10,000 gil)"
+  - type: "Katanas"
+    who: "Lasswell"
+    entries:
+      - name: "Nodachi"
+        atk: 21
+        mag: 20
+        other: ""
+        effect: ""
+        where: "Earth Shrine"
+      - name: "Uchigatana"
+        atk: 24
+        mag: 17
+        other: ""
+        effect: ""
+        where: "Shop: Town of Mitra (350 gil)<br>Shop: Grandshelt (350 gil)"
+      - name: "Dodanuki"
+        atk: 28
+        mag: 21
+        other: ""
+        effect: ""
+        where: "Shop: Grandshelt Commercial District (700 gil)<br>Shop: Town of Felicitas (700 gil)"
+      - name: "Iwakirimaru"
+        atk: 37
+        mag: 27
+        other: "MP 20"
+        effect: "Increases MP by 20."
+        where: "Sub quest *The Weight of Mercy* (Grandport Harbor)"
+      - name: "Kogarasumaru"
+        atk: 34
+        mag: 25
+        other: ""
+        effect: ""
+        where: "Shop: Grandport Harbor (1,500 gil)"
+      - name: "Sakura-Fubuki"
+        atk: 43
+        mag: 22
+        other: ""
+        effect: ""
+        where: "Siren's Tower"
+      - name: "Samurai's Katana"
+        atk: 39
+        mag: 28
+        other: "HP 30"
+        effect: "Increases HP by 30."
+        where: "Shop: Dilmagia (2,200 gil)<br>Shop: Dwarven Forge (2,200 gil)<br>Shop: Capital Market (Zoldaad) (11,000 gil)"
+      - name: "Laserblade"
+        atk: 30
+        mag: 78
+        other: ""
+        effect: "Increases damage dealt by magic attacks by 10%."
+        where: "Dirnado world map<br>Drop: Centipede (rare)"
+      - name: "Ashura"
+        atk: 49
+        mag: 34
+        other: "Speed 10"
+        effect: ""
+        where: "Shop: Dwarven Forge (4,200 gil)"
+      - name: "Tsukiyo no Tachi"
+        atk: 52
+        mag: 36
+        other: ""
+        effect: "Halves damage taken from Wind attacks."
+        where: "Wind Shrine"
+      - name: "Hasaito"
+        atk: 88
+        mag: 58
+        other: ""
+        effect: "Increases stagger power by 10%."
+        where: "Olderion world map (south), west of Ruby Cave"
+      - name: "Hototogisu"
+        atk: 65
+        mag: 43
+        other: ""
+        effect: ""
+        where: "Shop: Olderion (5,250 gil)"
+      - name: "Shiranui"
+        atk: 76
+        mag: 50
+        other: ""
+        effect: ""
+        where: "Shop: Town of Amore (7,350 gil)"
+      - name: "Astral Blade"
+        atk: 36
+        mag: 92
+        other: ""
+        effect: "Increases damage dealt by magic attacks by 10%."
+        where: "Steal: Red Marshmallow (rare)"
+      - name: "Reito"
+        atk: 50
+        mag: 133
+        other: ""
+        effect: "Increases damage dealt by magic attacks by 10%."
+        where: "Zoldaad world map"
+      - name: "Rikudo"
+        atk: 66
+        mag: 189
+        other: "Speed 20"
+        effect: "Increases damage dealt by magic attacks by 10%."
+        where: "Shop: Colosseum (28,000 gil; limit 1) after the Fledgling League"
+      - name: "Kuki"
+        atk: 105
+        mag: 73
+        other: ""
+        effect: ""
+        where: "Shop: Slums (Zoldaad) (9,500 gil)"
+  - type: "Bows"
+    who: "Fina"
+    entries:
+      - name: "Floral Arc"
+        atk: 22
+        mag: 18
+        other: "Sanctity 32"
+        effect: ""
+        where: "Grandshelt world map (desert)"
+      - name: "Crescent Bow"
+        atk: 33
+        mag: 27
+        other: "Sanctity 20"
+        effect: ""
+        where: "Shop: Grandport Harbor (1,600 gil)"
+      - name: "Shortbow"
+        atk: 26
+        mag: 21
+        other: "Sanctity 27"
+        effect: ""
+        where: "Shop: Town of Felicitas (600 gil)"
+      - name: "Composite Bow"
+        atk: 37
+        mag: 31
+        other: "Sanctity 36"
+        effect: ""
+        where: "Shop: Dilmagia (2,000 gil)<br>Shop: Dwarven Forge (2,000 gil)<br>Shop: Capital Market (Zoldaad) (10,000 gil)"
+      - name: "Compound Bow"
+        atk: 82
+        mag: 20
+        other: ""
+        effect: "Increases physical attack by 10%."
+        where: "Tablet Shard box: 20 shards"
+      - name: "Silver Bow"
+        atk: 43
+        mag: 39
+        other: "Sanctity 41"
+        effect: ""
+        where: "Shop: Dwarven Forge (4,000 gil)"
+      - name: "Elfin Bow"
+        atk: 52
+        mag: 50
+        other: "Sanctity 48"
+        effect: ""
+        where: "Shop: Olderion (4,500 gil)"
+      - name: "Rock Piercer"
+        atk: 118
+        mag: 34
+        other: ""
+        effect: "Increases physical attack by 10%."
+        where: "Olderion"
+      - name: "Cure Drop"
+        atk: 54
+        mag: 58
+        other: "Sanctity 70"
+        effect: "Increases potency of healing magic by 10%."
+        where: "Tablet Shard box: 32 shards"
+      - name: "Heavy Crossbow"
+        atk: 130
+        mag: 41
+        other: ""
+        effect: "Increases physical attack by 10%."
+        where: "Drop: Destroyer (rare)"
+      - name: "Midnight Longbow"
+        atk: 73
+        mag: 86
+        other: "Sanctity 68"
+        effect: ""
+        where: "Shop: Slums (Zoldaad) (10,500 gil)"
+  - type: "Whips"
+    who: "Archwitch Fina"
+    entries:
+      - name: "Leather Whip"
+        atk: 67
+        mag: 94
+        other: "Speed 10"
+        effect: ""
+        where: "Shop: Town of Amore (7,000 gil)"
+  - type: "Hammers"
+    who: "Lid"
+    entries:
+      - name: "Dreadwing Mallet"
+        atk: 25
+        mag: 87
+        other: ""
+        effect: "Increases magic attack by 10%."
+        where: "Tablet Shard box: 16 shards"
+      - name: "Bronze Hammer"
+        atk: 45
+        mag: 45
+        other: ""
+        effect: ""
+        where: "Dirnado world map<br>Drop: Headstone (rare)"
+      - name: "Slam Hammer"
+        atk: 39
+        mag: 40
+        other: ""
+        effect: ""
+        where: "Shop: Dwarven Forge (3,600 gil)"
+      - name: "Sledgehammer"
+        atk: 39
+        mag: 40
+        other: ""
+        effect: "Increases critical hit rate."
+        where: "Dwarven Forge"
+      - name: "Cross Pein Hammer"
+        atk: 51
+        mag: 49
+        other: ""
+        effect: ""
+        where: "Shop: Olderion (5,000 gil)<br>Shop: Capital Market (Zoldaad) (25,000 gil)"
+      - name: "Warpick"
+        atk: 61
+        mag: 59
+        other: "Speed 20"
+        effect: ""
+        where: "Shop: Olderion (5,500 gil)"
+      - name: "Buster Mace"
+        atk: 58
+        mag: 57
+        other: ""
+        effect: ""
+        where: "Shop: Town of Amore (7,000 gil)"
+      - name: "Morning Star"
+        atk: 35
+        mag: 118
+        other: ""
+        effect: "Increases magic attack by 10%."
+        where: "Town of Amore"
+      - name: "Piercing Mace"
+        atk: 73
+        mag: 70
+        other: ""
+        effect: "Increases damage dealt by 20% when using attacks of the target's elemental weakness."
+        where: "Water Shrine"
+      - name: "Clown Hammer"
+        atk: 78
+        mag: 76
+        other: ""
+        effect: "Adds a chance to inflict Confuse when using a standard attack or a battle skill."
+        where: "Zoldaad world map"
+      - name: "Divine Mallet"
+        atk: 48
+        mag: 168
+        other: "Sanctity 66"
+        effect: "Increases magic attack by 10%."
+        where: "Shop: Colosseum (26,500 gil; limit 1)"
+      - name: "Gaia Hammer"
+        atk: 95
+        mag: 93
+        other: ""
+        effect: "A hammer that can pulverize boulders."
+        where: "Colosseum: first win of Fledgling Battle 5"
+  - type: "Grimoires"
+    who: "Nichol"
+    entries:
+      - name: "Total Calisthenics"
+        atk: 89
+        mag: 37
+        other: ""
+        effect: "Increases physical attack by 10%."
+        where: "Cave of Waters"
+      - name: "Celaeno Fragments"
+        atk: 59
+        mag: 105
+        other: ""
+        effect: ""
+        where: "Tablet Shard box: 36 shards"
+      - name: "Disciple's Grimoire"
+        atk: 37
+        mag: 69
+        other: ""
+        effect: ""
+        where: "Shop: Town of Amore (4,500 gil)<br>Shop: Capital Market (Zoldaad) (22,500 gil)"
+      - name: "Knightly Tactics"
+        atk: 45
+        mag: 81
+        other: ""
+        effect: ""
+        where: "Shop: Town of Amore (6,300 gil)"
+      - name: "Blessed Cults"
+        atk: 52
+        mag: 93
+        other: ""
+        effect: "Increases the duration of buffs applied by the wielder by 1 turn."
+        where: "Olderion world map (north)"
+      - name: "R'lyeh Text"
+        atk: 35
+        mag: 93
+        other: ""
+        effect: "Increases damage dealt by Water attacks by 30%."
+        where: "Water Shrine"
+      - name: "Annihilaticon"
+        atk: 59
+        mag: 105
+        other: ""
+        effect: "Inflicts Deprotect for 3 turns upon staggering an enemy."
+        where: "Zoldaad world map"
+  - type: "Guns"
+    who: ""
+    entries:
+      - name: "Impetus Breaker"
+        atk: 153
+        mag: 63
+        other: ""
+        effect: "Inflicts Slow on a random enemy at the start of battle."
+        where: "Shop: Colosseum (27,000 gil; limit 1) after the Fledgling League"
+      - name: "Repeater Rifle"
+        atk: 128
+        mag: 87
+        other: ""
+        effect: "Increases critical hit rate by 10%."
+        where: "Tablet Shard box: 48 shards"
+  - type: "Rods"
+    who: ""
+    entries:
+      - name: "Rod of Focus"
+        atk: 105
+        mag: 151
+        other: ""
+        effect: "Increases stagger power by 30% when using attacks of the target's elemental weakness."
+        where: "Shop: Colosseum (27,500 gil; limit 1) after the Fledgling League"
+      - name: "Striking Staff"
+        atk: 230
+        mag: 84
+        other: ""
+        effect: "Increases damage dealt by physical attacks by 10%."
+        where: "Steal: Ahriman"
+armor:
+  - type: "Heavy armor"
+    who: "Rain, Lasswell, Lid"
+    entries:
+      - name: "Iron Armor"
+        def: 60
+        mdef: 41
+        other: "HP 70 · Speed -11"
+        effect: "Increases HP by 70."
+        where: "Shop: Dilmagia (1,080 gil)<br>Shop: Capital Market (Zoldaad) (5,400 gil)"
+      - name: "Phalanx"
+        def: 72
+        mdef: 48
+        other: "HP 90 · Speed -16"
+        effect: "Increases HP by 90."
+        where: "Shop: Dwarven Forge (2,250 gil)"
+      - name: "Armor of Gales"
+        def: 46
+        mdef: 87
+        other: "MP 20 · Speed -20"
+        effect: "Increases MP by 20."
+        where: "Wind Shrine"
+      - name: "Silver Chestplate"
+        def: 91
+        mdef: 57
+        other: "HP 110 · Speed -21"
+        effect: "Increases HP by 110."
+        where: "Shop: Olderion (3,300 gil)"
+      - name: "Devout's Armor"
+        def: 63
+        mdef: 109
+        other: "MP 25 · Speed -28"
+        effect: "Increases MP by 25."
+        where: "Waterfall Way"
+      - name: "Knight Armor"
+        def: 103
+        mdef: 62
+        other: "HP 140 · Speed -25"
+        effect: "Increases HP by 140."
+        where: "Shop: Town of Amore (5,500 gil)"
+      - name: "Scale Mail"
+        def: 121
+        mdef: 70
+        other: "HP 170 · Speed -29"
+        effect: "Increases HP by 170. Grants constant Protect when at less than half of max HP."
+        where: "Water Shrine"
+      - name: "Ether Plate"
+        def: 78
+        mdef: 133
+        other: "MP 30 · Speed -34"
+        effect: "Increases MP by 30."
+        where: "Zoldaad world map"
+      - name: "Guardian's Plate"
+        def: 159
+        mdef: 93
+        other: "Speed -35"
+        effect: "Grants constant Protect and Shell when at less than half of max HP."
+        where: "Shop: Colosseum (22,000 gil; limit 4) after the Fledgling League"
+      - name: "Shielded Armor"
+        def: 133
+        mdef: 78
+        other: "HP 190 · Speed -31"
+        effect: "Increases HP by 190."
+        where: "Shop: Slums (Zoldaad) (6,300 gil)"
+  - type: "Light armor"
+    who: "everyone"
+    entries:
+      - name: "Bronze Chestplate"
+        def: 24
+        mdef: 22
+        other: ""
+        effect: ""
+        where: "Shop: Town of Mitra (300 gil)<br>Shop: Grandshelt Commercial District (300 gil)<br>Shop: Grandshelt (300 gil)<br>Shop: Town of Felicitas (300 gil)"
+      - name: "Tunic"
+        def: 16
+        mdef: 18
+        other: "Speed 5"
+        effect: ""
+        where: "Shop: Town of Mitra (200 gil)<br>Shop: Grandshelt Commercial District (200 gil)<br>Shop: Grandshelt (200 gil)<br>Shop: Town of Felicitas (200 gil)"
+      - name: "Black Garb"
+        def: 26
+        mdef: 23
+        other: "Speed 8"
+        effect: ""
+        where: "Grandshelt Castle<br>Grandshelt Castle (Chapter 4)"
+      - name: "Knight's Jacket"
+        def: 31
+        mdef: 28
+        other: ""
+        effect: ""
+        where: "Shop: Grandport Harbor (750 gil)<br>Shop: Town of Felicitas (750 gil)"
+      - name: "Surcoat"
+        def: 42
+        mdef: 36
+        other: "HP 80"
+        effect: "Increases HP by 80."
+        where: "Shop: Grandport Harbor (980 gil)"
+      - name: "Prickly Straitjacket"
+        def: 29
+        mdef: 15
+        other: "MP 50 · Speed -8"
+        effect: "Increases MP by 50."
+        where: "Kolobos Ruins"
+      - name: "Anti-Magic Gear"
+        def: 34
+        mdef: 65
+        other: ""
+        effect: ""
+        where: "Dilmagia"
+      - name: "Engineer's Jacket"
+        def: 48
+        mdef: 41
+        other: ""
+        effect: ""
+        where: "Shop: Dilmagia (1,200 gil)<br>Shop: Capital Market (Zoldaad) (6,000 gil)"
+      - name: "Power Vest"
+        def: 57
+        mdef: 48
+        other: ""
+        effect: ""
+        where: "Shop: Dwarven Forge (2,500 gil)"
+      - name: "Astral Jacket"
+        def: 55
+        mdef: 90
+        other: ""
+        effect: ""
+        where: "Tablet Shard box: 28 shards"
+      - name: "Red Jacket"
+        def: 74
+        mdef: 57
+        other: ""
+        effect: ""
+        where: "Shop: Olderion (3,000 gil)"
+      - name: "Ninja Gear"
+        def: 78
+        mdef: 61
+        other: ""
+        effect: "Adds a 15% chance of evading physical attacks."
+        where: "Cave of Waters"
+      - name: "Kenpo Gi"
+        def: 85
+        mdef: 66
+        other: ""
+        effect: ""
+        where: "Shop: Town of Amore (5,000 gil)"
+      - name: "Rune Scales"
+        def: 80
+        mdef: 132
+        other: "Speed 30"
+        effect: ""
+        where: "Steal: Wyvern (rare)"
+      - name: "Adamite Jacket"
+        def: 145
+        mdef: 103
+        other: "HP 250"
+        effect: "Increases HP by 250."
+        where: "Shop: Colosseum (30,000 gil; limit 4)"
+      - name: "Brigandine"
+        def: 127
+        mdef: 93
+        other: ""
+        effect: ""
+        where: "Grandshelt (Chapter 4): the man east of the Colosseum entrance"
+      - name: "Hoodwink Garb"
+        def: 117
+        mdef: 86
+        other: ""
+        effect: "Adds a 15% chance of evading physical attacks."
+        where: "Grandshelt Castle (Chapter 4)"
+  - type: "Robes"
+    who: "Fina, Archwitch Fina, Nichol"
+    entries:
+      - name: "Cotton Robe"
+        def: 32
+        mdef: 46
+        other: "MP 20"
+        effect: "Increases MP by 20."
+        where: "Shop: Grandport Harbor (1,000 gil)"
+      - name: "Spirit Veil"
+        def: 32
+        mdef: 46
+        other: "Sanctity 13"
+        effect: ""
+        where: "Shop: Grandport Harbor (750 gil)"
+      - name: "White Dress"
+        def: 37
+        mdef: 51
+        other: "Sanctity 14"
+        effect: ""
+        where: "Shop: Dilmagia (1,320 gil)<br>Shop: Capital Market (Zoldaad) (6,600 gil)"
+      - name: "Cape of the Raiju"
+        def: 45
+        mdef: 57
+        other: "MP 30"
+        effect: "Halves damage taken from Lightning attacks. Increases MP by 30."
+        where: "Mt. Thunderclap"
+      - name: "Silk Robe"
+        def: 45
+        mdef: 57
+        other: "Sanctity 16"
+        effect: ""
+        where: "Shop: Dwarven Forge (2,750 gil)"
+      - name: "Protective Overcoat"
+        def: 86
+        mdef: 30
+        other: "Sanctity 17"
+        effect: ""
+        where: "Mobliz Shipyard"
+      - name: "Lunar Eclipse Robe"
+        def: 57
+        mdef: 67
+        other: "Sanctity 19"
+        effect: ""
+        where: "Shop: Olderion (2,900 gil)"
+      - name: "Mirage Robe"
+        def: 57
+        mdef: 67
+        other: "Speed 21"
+        effect: "Adds a 15% chance of evading magic attacks."
+        where: "Olderion"
+      - name: "Aegis Robe"
+        def: 127
+        mdef: 40
+        other: "Sanctity 28"
+        effect: ""
+        where: "Town of Amore"
+      - name: "Bard's Tunic"
+        def: 65
+        mdef: 73
+        other: "Sanctity 21"
+        effect: ""
+        where: "Shop: Town of Amore (4,500 gil)"
+      - name: "Phantom Robe"
+        def: 87
+        mdef: 97
+        other: "Sanctity 34"
+        effect: "Adds a 15% chance of evading magic attacks."
+        where: "Tablet Shard box: 44 shards"
+      - name: "Arch Robe"
+        def: 101
+        mdef: 116
+        other: "Sanctity 66"
+        effect: "Increases potency of healing magic by 20%."
+        where: "Shop: Colosseum (20,000 gil; limit 4) after the Fledgling League"
+      - name: "Mirage Coat"
+        def: 96
+        mdef: 109
+        other: "Sanctity 39"
+        effect: "Adds a 15% chance of evading magic attacks."
+        where: "Steal: Lieutenant (rare)"
+      - name: "Solar Eclipse Robe"
+        def: 84
+        mdef: 95
+        other: "Sanctity 27"
+        effect: ""
+        where: "Shop: Slums (Zoldaad) (7,700 gil)"
+accessories:
+  - name: "Bulletproof Vest"
+    other: "Def 10"
+    effect: ""
+    where: "Earth Shrine<br>Drop: Adamantoise (rare)"
+  - name: "Hairband"
+    other: "Def 5"
+    effect: ""
+    where: "Shop: Town of Mitra (200 gil)<br>Shop: Grandshelt Commercial District (200 gil)<br>Shop: Grandport Harbor (200 gil)<br>Shop: Town of Felicitas (200 gil)"
+  - name: "Idaten's Shoes"
+    other: "Speed 5"
+    effect: ""
+    where: "Grandshelt world map<br>Shop: Grandshelt Commercial District (600 gil)<br>Shop: Grandport Harbor (600 gil)<br>Shop: Olderion (600 gil)<br>Shop: Town of Amore (600 gil)"
+  - name: "Demon's Ring"
+    other: ""
+    effect: "Imbues non-elemental physical attacks with Dark."
+    where: "Boss drop: Umbra"
+  - name: "Mage's Glasses"
+    other: "MP 15"
+    effect: "Increases MP by 15."
+    where: "Shop: Grandshelt Commercial District (800 gil)<br>Shop: Grandport Harbor (800 gil)<br>Shop: Town of Felicitas (800 gil)<br>Shop: Olderion (800 gil)<br>Shop: Town of Amore (800 gil)"
+  - name: "Monk's Prayer Beads"
+    other: ""
+    effect: "Prevents Charm."
+    where: "Shop: Grandport Harbor (1,500 gil; limit 2)<br>Sub quest *Secrets Unearthed* (Town of Felicitas)<br>Siren's Tower<br>Shop: Town of Amore (1,500 gil)"
+  - name: "Ring of Rage"
+    other: ""
+    effect: "Fills the LB gauge by 10% upon receiving damage."
+    where: "Steal: Dhorme Chimera (rare)"
+  - name: "Star Pendant"
+    other: ""
+    effect: "Prevents Poison."
+    where: "Shop: Grandport Harbor (1,000 gil)<br>Shop: Town of Felicitas (1,000 gil)"
+  - name: "Vitality Charm"
+    other: "HP 120"
+    effect: "Increases HP by 120."
+    where: "Tablet Shard box: 3 shards"
+  - name: "Earrings"
+    other: "Mag 10"
+    effect: ""
+    where: "Tablet Shard box: 6 shards"
+  - name: "Genji Gloves"
+    other: ""
+    effect: "Increases critical hit rate by 50%."
+    where: "Siren's Tower"
+  - name: "Stagger Ring"
+    other: ""
+    effect: "Increases stagger power by 10%."
+    where: "Tablet Shard box: 12 shards"
+  - name: "Insulated Gloves"
+    other: ""
+    effect: "Halves damage taken from Lightning attacks."
+    where: "Dilmagia"
+  - name: "Power Wristbands"
+    other: "Atk 10"
+    effect: ""
+    where: "Mt. Thunderclap"
+  - name: "Jeweled Ring"
+    other: ""
+    effect: "Prevents Petrify and Paralysis."
+    where: "Steal: Medusa (rare)<br>Olderion<br>Shop: Town of Amore (2,000 gil)"
+  - name: "Headband"
+    other: ""
+    effect: "Prevents Sleep."
+    where: "Dwarven Forge"
+  - name: "Chocobo Down Charm"
+    other: ""
+    effect: "Grants the ability to survive with 1 HP upon receiving damage exceeding HP once per battle."
+    where: "Mobliz Shipyard"
+  - name: "Iron Sandals"
+    other: ""
+    effect: "Grants constant Slow."
+    where: "Steal: Epimetheus (rare)"
+  - name: "Sylph's Tiara"
+    other: ""
+    effect: "Imbues non-elemental physical attacks with Wind."
+    where: "Boss drop: Aether"
+  - name: "Berserker Ring"
+    other: ""
+    effect: "Grants constant Berserk."
+    where: "Steal: Mu (rare)"
+  - name: "Aquatic Veil"
+    other: ""
+    effect: "Halves damage taken from Water attacks."
+    where: "Waterfall Way"
+  - name: "Calm Armlet"
+    other: ""
+    effect: "Prevents Confuse and Berserk."
+    where: "Shop: Town of Amore (2,000 gil)<br>Water Shrine"
+  - name: "Heart Anklet"
+    other: ""
+    effect: "Increases HP by 10%."
+    where: "Shop: Town of Amore (1,000 gil)"
+  - name: "Fujin's Fuda"
+    other: ""
+    effect: "Halves damage taken from Wind attacks."
+    where: "Steal: Zuu (rare)"
+  - name: "Gale Hairpin"
+    other: ""
+    effect: "Allows the wielder to act first at the start of battle."
+    where: "Steal: Amoebozoa (rare)"
+  - name: "Aeolian Misanga"
+    other: ""
+    effect: "Increases speed by 5%."
+    where: "Steal: Monster Effigy (rare)"
+  - name: "Azure Amulet"
+    other: ""
+    effect: "Imbues non-elemental physical attacks with Water."
+    where: "Boss drop: Alluvion"
+  - name: "Swift Badge"
+    other: ""
+    effect: "Increases speed by 10%."
+    where: "Olderion jump rope: 40 jumps"
+  - name: "Arcane Pendant"
+    other: ""
+    effect: "Restores 5% of max MP upon staggering an enemy."
+    where: "Steal: Chimera (rare)"
+  - name: "Cursed Ring"
+    other: ""
+    effect: "Consumes 300 HP with every action, but increases stagger power by 10%."
+    where: "Zoldaad world map"
+  - name: "Fire Sprite Earrings"
+    other: ""
+    effect: "Halves damage taken from Fire attacks."
+    where: "Zoldaad world map"
+  - name: "Golem Core"
+    other: ""
+    effect: "Imbues non-elemental physical attacks with Earth."
+    where: "Steal: Sandworm (rare)"
+  - name: "Foe Attractor"
+    other: ""
+    effect: "Increases the chance of encounters."
+    where: "Shop: Colosseum (12,000 gil; limit 1) after the Fledgling League"
+  - name: "Precognizant Beads"
+    other: ""
+    effect: "Adds a 20% chance of evading physical attacks."
+    where: "Shop: Colosseum (10,000 gil; limit 4)"
+  - name: "Warding Bell"
+    other: ""
+    effect: "Halves the chance of encounters."
+    where: "Shop: Colosseum (12,000 gil; limit 1) after the Fledgling League"
+  - name: "Warrior's Bandana"
+    other: ""
+    effect: "Fills the LB gauge by 5% upon dealing damage with a standard attack."
+    where: "Shop: Colosseum (15,000 gil; limit 1) after the Fledgling League"
+  - name: "Zephyr Cloak"
+    other: ""
+    effect: "Adds a 20% chance of evading magic attacks."
+    where: "Shop: Colosseum (10,000 gil; limit 4)"
