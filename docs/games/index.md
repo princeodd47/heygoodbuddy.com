@@ -32,6 +32,14 @@ hide:
     **Genre:** Tactical RPG<br>
     **Release Date:** March 8, 2024
 
+-   :material-account-group:{ .lg .middle } __[Final Fantasy X-2 HD Remaster](final-fantasy-x-2/index.md)__
+
+    ---
+
+    **System:** Nintendo Switch<br>
+    **Genre:** JRPG<br>
+    **Release Date:** April 16, 2019
+
 -   :material-shield-sword:{ .lg .middle } __[Final Fantasy XII: The Zodiac Age](final-fantasy-xii-the-zodiac-age/index.md)__
 
     ---

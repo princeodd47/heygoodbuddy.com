@@ -1,0 +1,180 @@
+# Where each creature can be trapped, by location, from Jegged's Trap Creature page.
+# size is the Trap Pod size; SP-only creatures (mostly people) say SP.
+creatures:
+  - {"name": "Aculeate", "size": "S", "where": "Bikanel Desert: S/SP (Wasp), Ch. 3–5 (S/SP only in Ch. 5, before Cactuar Hollow starts)"}
+  - {"name": "Adamantoise", "size": "L", "where": "Luca: L, Ch. 5<br>Calm Lands: L, Ch. 1–5 (L only in Ch. 2–5, before the Ruin Depths open)"}
+  - {"name": "Adamantortoise", "size": "L", "where": "Besaid Island: L, Ch. 5"}
+  - {"name": "Aeshma", "size": "M", "where": "Kilika Island: M, Ch. 3–5 (Can’t be trapped. Aka Manah turns into it after being released)<br>Luca: M, Ch. 3–5 (Can’t be trapped. Aka Manah turns into it after being released)"}
+  - {"name": "Agama", "size": "S", "where": "Luca: S, Ch. 1–5<br>Djose Temple: S/SP (Reptile), Ch. 1–5 (S only in Ch. 5, before entering the Farplane)<br>Moonflow: S/SP (Reptile), Ch. 1–2"}
+  - {"name": "Ahriman", "size": "S", "where": "Luca: S, Ch. 1–5<br>Calm Lands: S/SP (Evil Eye), Ch. 1<br>Mt. Gagazet: S/SP (Evil Eye), Ch. 1–2"}
+  - {"name": "Aka Manah", "size": "M", "where": "Kilika Island: M, Ch. 3–5 (Can’t be trapped. Daeva turns into it after being released)<br>Luca: M, Ch. 3–5 (Can’t be trapped. Daeva turns into it after being released)"}
+  - {"name": "Amorphous Gel", "size": "M", "where": "Luca: M, Ch. 1–5<br>Macalania Woods: M, Ch. 1–5<br>Calm Lands: M, Ch. 1–5"}
+  - {"name": "Anole", "size": "S", "where": "Luca: S, Ch. 1–5<br>Thunder Plains: S/SP (Reptile), Ch. 3–5 (S only in Ch. 5, before New Cave Opens)<br>Zanarkand Ruins: S/SP (Reptile), Ch. 1–5"}
+  - {"name": "Anything Eater", "size": "L", "where": "Calm Lands: L, Ch. 2–5 (after the Ruin Depths open)"}
+  - {"name": "Aquila", "size": "S", "where": "Bikanel Desert: S/SP (Bird), Ch. 3–5 (S only in Ch. 5, before Cactuar Hollow starts)"}
+  - {"name": "Aranea", "size": "L", "where": "Bevelle: L, Ch. 5 (Pass Via Infinito’s Cloister 20)"}
+  - {"name": "Arast", "size": "S", "where": "Besaid Island: S/SP (Imp/Revenant), Ch. 5<br>Djose Temple: S/SP (Imp/Revenant), Ch. 5 (after entering the Farplane)"}
+  - {"name": "Archaeothyris", "size": "S", "where": "Mushroom Rock Road: S/SP (Reptile), Ch. 3–5<br>Djose Temple: S/SP (Reptile), Ch. 3–5 (S only in Ch. 5, before entering the Farplane)<br>Moonflow: S/SP (Reptile), Ch. 3–5"}
+  - {"name": "Armet", "size": "S", "where": "Luca: S, Ch. 2–5<br>Thunder Plains: S/SP (Helm), Ch. 2–5 (S only in Ch. 5, before New Cave Opens)"}
+  - {"name": "Assassin Bee", "size": "S", "where": "Kilika Island: S/SP (Wasp), Ch. 3–5<br>Djose Temple: S/SP (Wasp), Ch. 3–5 (S only in Ch. 5, before entering the Farplane)<br>Thunder Plains: S/SP (Wasp), Ch. 3–5 (S only in Ch. 5, before New Cave Opens)"}
+  - {"name": "Assault Machina", "size": "M", "where": "Thunder Plains: M/SP (Machina), Ch. 5 (after New Cave is complete)"}
+  - {"name": "Azi Dahaka", "size": "L", "where": "Bevelle: L, Ch. 5"}
+  - {"name": "Balivarha", "size": "M", "where": "Moonflow: M/SP (Ruminant), Ch. 3–5 (after releasing Spine Drake)<br>Thunder Plains: M/SP (Ruminant), Ch. 3–5 (after releasing Spine Drake; M Ch. 5, Before New Cave Opens)<br>Mt. Gagazet: M/SP (Ruminant), Ch. 3–5 (after releasing Spine Drake)"}
+  - {"name": "Baralai", "size": "SP", "where": "Bevelle: SP (Humanoid), Ch. 5 (complete Den of Woe)"}
+  - {"name": "Barbuta", "size": "S", "where": "Besaid Island: S/SP (Helm), Ch. 3–4<br>Luca: S, Ch. 3–5<br>Mi’ihen Highroad: S/SP (Helm), Ch. 3–5 (S only in Ch. 5, before the Fiend Colony opens)<br>Moonflow: S/SP (Helm), Ch. 3–5<br>Thunder Plains: S/SP (Helm), Ch. 3–5 (S only in Ch. 5, before New Cave Opens)<br>Macalania Woods: S/SP (Helm), Ch. 3–5"}
+  - {"name": "Barong", "size": "M", "where": "Luca: M, Ch. 2–5<br>Bevelle: M/SP (Blade), Ch. 3–5 (M only in Ch. 5, before starting Via Infinito)"}
+  - {"name": "Bascinet", "size": "S", "where": "Mt. Gagazet: S/SP (Helm), Ch. 3–5"}
+  - {"name": "Battlesnake", "size": "S", "where": "Guadosalam: S/SP (Bandoleer), Ch. 2–5"}
+  - {"name": "Behemoth", "size": "L", "where": "Luca: L, Ch. 5<br>Zanarkand Ruins: L, Ch. 1–2"}
+  - {"name": "Bicocette", "size": "S", "where": "Luca: S, Ch. 1–5<br>Thunder Plains: S/SP (Helm), Ch. 1–2<br>Mt. Gagazet: S/SP (Helm), Ch. 1–2"}
+  - {"name": "Big Bully Cap", "size": "M", "where": "Bikanel Desert: M/SP (Fungus), Ch. 5 (after Cactuar Hollow starts)"}
+  - {"name": "Black Elemental", "size": "M", "where": "Bevelle: M/SP (Elemental), Ch. 5 (Pass Via Infinito’s Cloister 40)"}
+  - {"name": "Blue Elemental", "size": "S", "where": "Thunder Plains: S/SP (Elemental), Ch. 3–5 (S only in Ch. 5, before New Cave Opens)<br>Macalania Woods: S/SP (Elemental), Ch. 3–5"}
+  - {"name": "Bolt Drake", "size": "M", "where": "Luca: M, Ch. 1–5<br>Thunder Plains: M/SP (Drake), Ch. 2–5 (M only in Ch. 5, before New Cave Opens)<br>Bikanel Desert: M/SP (Drake), Ch. 1–2"}
+  - {"name": "Bomb", "size": "M", "where": "Luca: M, Ch. 1–5<br>Mt. Gagazet: M/SP (Bomb), Ch. 1–2"}
+  - {"name": "Boris", "size": "L", "where": "Luca: L, Ch. 5<br>Mt. Gagazet: L, Ch. 1–5"}
+  - {"name": "Buddy", "size": "SP", "where": "Besaid Island: SP (Humanoid), Ch. 3<br>Kilika Island: SP (Humanoid), Ch. 3<br>Djose Temple: SP (Humanoid), Ch. 3<br>Mt. Gagazet: SP (Humanoid), Ch. 4–5"}
+  - {"name": "Bully Cap", "size": "S", "where": "Luca: S, Ch. 1–5<br>Mushroom Rock Road: S/SP (Fungus), Ch. 1–5"}
+  - {"name": "Cactuar", "size": "S", "where": "Bikanel Desert: S, Ch. 5 (after Cactuar Hollow starts)"}
+  - {"name": "Canis Major", "size": "S", "where": "Bikanel Desert: S/SP (Lupine), Ch. 3–5 (S only in Ch. 5, before Cactuar Hollow starts)"}
+  - {"name": "Cephalotus", "size": "M", "where": "Besaid Island: M/SP (Plant), Ch. 3–5<br>Luca: M, Ch. 3–5<br>Mi’ihen Highroad: M/SP (Plant), Ch. 3–5 (M only before the Fiend Colony opens)"}
+  - {"name": "Chac", "size": "L", "where": "Bevelle: L/SP (Basilisk), Ch. 5 (SP complete Via Infinito; L Pass Via Infinito’s Cloister 80)"}
+  - {"name": "Chocobo", "size": "S", "where": "Luca: S, Ch. 1–5<br>Mi’ihen Highroad: S, Ch. 1–5 (S only in Ch. 5, before the Fiend Colony opens)<br>Calm Lands: S, Ch. 1–5 (S only in Ch. 5, before the Ruin Depths open)"}
+  - {"name": "Chocobo Eater", "size": "L", "where": "Luca: L, Ch. 5<br>Mi’ihen Highroad: L, Ch. 2–5"}
+  - {"name": "Claret Dragon", "size": "L", "where": "Djose Temple: L, Ch. 5 (after entering the Farplane)"}
+  - {"name": "Coeurl", "size": "M", "where": "Besaid Island: M/SP (Chimera/Coeurl), Ch. 1–4<br>Luca: M, Ch. 1–5<br>Calm Lands: M/SP (Chimera/Coeurl), Ch. 1–2"}
+  - {"name": "Concherer", "size": "L", "where": "Bevelle: L, Ch. 5 (Pass Via Infinito’s Cloister 60)"}
+  - {"name": "Coyote", "size": "S", "where": "Besaid Island: S/SP (Lupine), Ch. 1–4 (SP only in Ch. 1–2)<br>Luca: S, Ch. 1–5<br>Mushroom Rock Road: S/SP (Lupine), Ch. 1–2"}
+  - {"name": "Creeper", "size": "S", "where": "Mi’ihen Highroad: S, Ch. 5 (after the Fiend Colony opens)"}
+  - {"name": "Critical Bug", "size": "M", "where": "Bevelle: M, Ch. 5 (after starting Via Infinito)"}
+  - {"name": "Daeva", "size": "M", "where": "Kilika Island: M, Ch. 3–5<br>Luca: M, Ch. 3–5"}
+  - {"name": "Dark Elemental", "size": "S", "where": "Besaid Island: S/SP (Elemental), Ch. 5<br>Djose Temple: S/SP (Elemental), Ch. 5 (after entering the Farplane)"}
+  - {"name": "Death Dauber", "size": "S", "where": "Kilika Island: S/SP (Wasp), Ch. 1–2<br>Luca: S, Ch. 1–5<br>Djose Temple: S/SP (Wasp), Ch. 1–2<br>Calm Lands: S, Ch. 2–4"}
+  - {"name": "Deep Haizhe", "size": "M", "where": "Luca: M, Ch. 1–5 (after releasing Haizhe)<br>Macalania Woods: M, Ch. 1–5 (after releasing Haizhe)"}
+  - {"name": "Detonator", "size": "M", "where": "Luca: M, Ch. 2–5<br>Bevelle: M/SP (Bomb), Ch. 3–5 (M only in Ch. 5, before starting Via Infinito)"}
+  - {"name": "Dinictus", "size": "M", "where": "Luca: M, Ch. 3–5<br>Macalania Woods: M/SP (Sahagin/Dinofish), Ch. 3–5"}
+  - {"name": "Divebeak", "size": "S", "where": "Luca: S, Ch. 1–5<br>Mi’ihen Highroad: S/SP (Bird), Ch. 1<br>Calm Lands: S/SP (Bird), Ch. 1"}
+  - {"name": "Dolmen", "size": "M", "where": "Kilika Island: M, Ch. 5 (after releasing Tomb)<br>Djose Temple: M, Ch. 5 (after releasing Tomb; before entering the Farplane)"}
+  - {"name": "Dr. Goon", "size": "S", "where": "Guadosalam: S/SP (Humanoid), Ch. 3–5"}
+  - {"name": "Drowsy Ochu", "size": "L", "where": "Mushroom Rock Road: L, Ch. 2–5"}
+  - {"name": "Elder Drake", "size": "M", "where": "Bevelle: M/SP (Drake), Ch. 5 (M only after Starting Via Infinito; SP Pass Via Infinito’s Cloister 1)"}
+  - {"name": "Elder Zurvan", "size": "L", "where": "Bikanel Desert: L/SP (Imp/Revenant), Ch. 5 (after Cactuar Hollow starts)"}
+  - {"name": "Elma", "size": "SP", "where": "Mushroom Rock Road: SP (Humanoid), Ch. 2–5 (Give Awesome Sphere to Youth League; SP Ch. 5, Before Den of Woe)"}
+  - {"name": "Fem-Goon", "size": "S", "where": "Guadosalam: S/SP (Humanoid), Ch. 3–5"}
+  - {"name": "Flailing Ochu", "size": "L", "where": "Zanarkand Ruins: L, Ch. 3–5"}
+  - {"name": "Flak Python", "size": "S", "where": "Luca: S, Ch. 1–5<br>Guadosalam: S/SP (Bandoleer), Ch. 1–5 (SP only in Ch. 1)"}
+  - {"name": "Flame Dragon", "size": "L", "where": "Besaid Island: L, Ch. 1–4<br>Luca: L, Ch. 5"}
+  - {"name": "Flan Amarillo", "size": "S", "where": "Luca: S, Ch. 2–5<br>Bevelle: S/SP (Flan), Ch. 2–5 (S only in Ch. 5, before starting Via Infinito)<br>Mt. Gagazet: S/SP (Flan), Ch. 3–5"}
+  - {"name": "Flan Azabache", "size": "L", "where": "Calm Lands: L/SP (Flan), Ch. 2–5 (after the Ruin Depths open; SP Ch. 3-5)"}
+  - {"name": "Flan Azul", "size": "S", "where": "Besaid Island: S/SP (Flan), Ch. 1–4<br>Luca: S, Ch. 1–5<br>Moonflow: S/SP (Flan), Ch. 1"}
+  - {"name": "Flan Blanco", "size": "S", "where": "Luca: S, Ch. 2–5<br>Moonflow: S/SP (Flan), Ch. 2–5<br>Macalania Woods: S/SP (Flan), Ch. 3–5<br>Bevelle: S/SP (Flan), Ch. 2–5 (S only in Ch. 5, before starting Via Infinito)<br>Calm Lands: S/SP (Flan), Ch. 2–5 (S only in Ch. 5, before the Ruin Depths open; SP Ch. 3-5, Before the Ruin Depths open)"}
+  - {"name": "Flan Palido", "size": "S", "where": "Luca: S, Ch. 1–5<br>Mi’ihen Highroad: S/SP (Flan), Ch. 1–2<br>Mt. Gagazet: S/SP (Flan), Ch. 1–2"}
+  - {"name": "Flan Rojo", "size": "M", "where": "Besaid Island: M/SP (Flan), Ch. 3–4<br>Luca: M, Ch. 3–5"}
+  - {"name": "Fly Eye", "size": "S", "where": "Luca: S, Ch. 1–5<br>Mi’ihen Highroad: S/SP (Evil Eye), Ch. 1–2<br>Bikanel Desert: S/SP (Evil Eye), Ch. 1"}
+  - {"name": "Garik Ronso", "size": "SP", "where": "Mt. Gagazet: SP (Humanoid), Ch. 4–5"}
+  - {"name": "Gecko", "size": "S", "where": "Luca: S, Ch. 1–5<br>Zanarkand Ruins: S/SP (Reptile), Ch. 1–2"}
+  - {"name": "Gigas", "size": "M", "where": "Mt. Gagazet: M/SP (Ogre/Iron Giant), Ch. 3–5"}
+  - {"name": "Gippal", "size": "SP", "where": "Djose Temple: SP (Humanoid), Ch. 5 (complete Den of Woe)"}
+  - {"name": "Gold Elemental", "size": "S", "where": "Luca: S, Ch. 1–5<br>Djose Temple: S/SP (Elemental), Ch. 1–2<br>Thunder Plains: S/SP (Elemental), Ch. 1–2<br>Macalania Woods: S/SP (Elemental), Ch. 1–2"}
+  - {"name": "Goon", "size": "S", "where": "Luca: S, Ch. 1–5<br>Guadosalam: S/SP (Humanoid), Ch. 1–2 (SP only in Ch. 1)"}
+  - {"name": "Great Malboro", "size": "L", "where": "Besaid Island: L, Ch. 5"}
+  - {"name": "Greater Drake", "size": "M", "where": "Luca: M, Ch. 3–5<br>Djose Temple: M/SP (Drake), Ch. 3–5 (M only in Ch. 5, before entering the Farplane)<br>Mt. Gagazet: M/SP (Drake), Ch. 3–5"}
+  - {"name": "Grim Gaze", "size": "S", "where": "Mt. Gagazet: S/SP (Evil Eye), Ch. 3–5"}
+  - {"name": "Guard Machina", "size": "M", "where": "Luca: M, Ch. 2–5<br>Bikanel Desert: M/SP (Machina), Ch. 2–5 (M only in Ch. 5, before Cactuar Hollow starts)"}
+  - {"name": "Guardian Beast", "size": "L", "where": "Luca: L, Ch. 5<br>Zanarkand Ruins: L, Ch. 2–5"}
+  - {"name": "Gucumatz", "size": "M", "where": "Mushroom Rock Road: M/SP (Basilisk), Ch. 3–5<br>Thunder Plains: M/SP (Basilisk), Ch. 3–5 (M only in Ch. 5, before New Cave Opens)<br>Bikanel Desert: M/SP (Basilisk), Ch. 3–5 (M only in Ch. 5, before Cactuar Hollow starts)<br>Zanarkand Ruins: M/SP (Basilisk), Ch. 3–5"}
+  - {"name": "Gug", "size": "M", "where": "Djose Temple: M/SP (Ogre/Iron Giant), Ch. 5 (after entering the Farplane)"}
+  - {"name": "Haizhe", "size": "S", "where": "Luca: S, Ch. 1–5<br>Macalania Woods: S, Ch. 1–2"}
+  - {"name": "Haunt", "size": "M", "where": "Kilika Island: M/SP (Imp/Revenant), Ch. 3–4<br>Luca: M, Ch. 3–5<br>Djose Temple: M/SP (Imp/Revenant), Ch. 3–4"}
+  - {"name": "Heavy Sallet", "size": "L", "where": "Bikanel Desert: L/SP (Helm), Ch. 5 (after Cactuar Hollow starts)"}
+  - {"name": "Hexapod", "size": "S", "where": "Mi’ihen Highroad: S, Ch. 5 (after the Fiend Colony opens)"}
+  - {"name": "Hrimthurs", "size": "M", "where": "Luca: M, Ch. 1–5<br>Bikanel Desert: M/SP (Ogre/Iron Giant), Ch. 1–2"}
+  - {"name": "Hug Bug", "size": "S", "where": "Mi’ihen Highroad: S, Ch. 5 (after the Fiend Colony opens)"}
+  - {"name": "Humbaba", "size": "L", "where": "Thunder Plains: L, Ch. 5 (after New Cave is complete)"}
+  - {"name": "Insect Matriarch", "size": "M", "where": "Bevelle: M, Ch. 5 (after starting Via Infinito)"}
+  - {"name": "Iron Giant", "size": "M", "where": "Besaid Island: M/SP (Ogre/Iron Giant), Ch. 1–2<br>Luca: M, Ch. 1–5<br>Mi’ihen Highroad: M/SP (Ogre/Iron Giant), Ch. 1–2"}
+  - {"name": "Ironside", "size": "L", "where": "Kilika Island: L, Ch. 3–5<br>Zanarkand Ruins: L, Ch. 3–5"}
+  - {"name": "Jahi", "size": "M", "where": "Kilika Island: M, Ch. 3–5 (Can’t be trapped. Aeshma turns into it after being released)<br>Luca: M, Ch. 3–5 (Can’t be trapped. Aeshma turns into it after being released)"}
+  - {"name": "Jumbo Cactuar", "size": "L", "where": "Bikanel Desert: L, Ch. 5 (after Cactuar Hollow starts)"}
+  - {"name": "Killer Hound", "size": "S", "where": "Luca: S, Ch. 1–5<br>Bikanel Desert: S/SP (Lupine), Ch. 1–2"}
+  - {"name": "Killer Machina", "size": "M", "where": "Thunder Plains: M/SP (Machina), Ch. 5 (after New Cave is complete)"}
+  - {"name": "Kimahri", "size": "SP", "where": "Mt. Gagazet: SP (Humanoid), Ch. 1–5 (New Game Plus Only)"}
+  - {"name": "King Takouba", "size": "L", "where": "Bikanel Desert: L/SP (Blade), Ch. 5 (after Cactuar Hollow starts)"}
+  - {"name": "King VERMIN!", "size": "M", "where": "Mi’ihen Highroad: M, Ch. 3–5 (after the Fiend Colony opens)"}
+  - {"name": "Kukulcan", "size": "M", "where": "Bevelle: M/SP (Basilisk), Ch. 2"}
+  - {"name": "Lacerta", "size": "S", "where": "Bevelle: S, Ch. 5 (after starting Via Infinito)"}
+  - {"name": "Leblanc", "size": "SP", "where": "Guadosalam: SP (Humanoid), Ch. 1–5 (New Game Plus Only)"}
+  - {"name": "Lesser Drake", "size": "M", "where": "Luca: M, Ch. 1–5<br>Thunder Plains: M/SP (Drake), Ch. 1–2<br>Bikanel Desert: M/SP (Drake), Ch. 2–5 (M only in Ch. 5, before Cactuar Hollow starts)"}
+  - {"name": "Leucophylla", "size": "M", "where": "Calm Lands: M/SP (Plant), Ch. 3–5"}
+  - {"name": "Lich", "size": "M", "where": "Djose Temple: M/SP (Imp/Revenant), Ch. 5 (before entering the Farplane)"}
+  - {"name": "Logos", "size": "SP", "where": "Guadosalam: SP (Humanoid), Ch. 1–5 (New Game Plus Only)"}
+  - {"name": "Lucil", "size": "SP", "where": "Mushroom Rock Road: SP (Humanoid), Ch. 5 (Give Awesome Sphere to Youth League)"}
+  - {"name": "Lulu", "size": "SP", "where": "Besaid Island: SP (Humanoid), Ch. 1–5 (New Game Plus Only)"}
+  - {"name": "Lupus", "size": "S", "where": "Mushroom Rock Road: S/SP (Lupine), Ch. 3–5<br>Mt. Gagazet: S/SP (Lupine), Ch. 3–5"}
+  - {"name": "Machina Hunter", "size": "S", "where": "Luca: S, Ch. 2–5<br>Bikanel Desert: S/SP (Machina), Ch. 2–5 (S only in Ch. 5, before Cactuar Hollow starts)"}
+  - {"name": "Machina Leader", "size": "S", "where": "Thunder Plains: S/SP (Machina), Ch. 5 (after New Cave is complete)"}
+  - {"name": "Machina Panzer", "size": "L", "where": "Luca: L, Ch. 5 (after releasing YSLS-Zero)<br>Thunder Plains: L, Ch. 1–5 (after releasing YSLS-Zero)"}
+  - {"name": "Machina Ranger", "size": "S", "where": "Luca: S, Ch. 3–5<br>Mi’ihen Highroad: S/SP (Machina), Ch. 3–5 (S only in Ch. 3–4)"}
+  - {"name": "Machina Soldier", "size": "S", "where": "Thunder Plains: S/SP (Machina), Ch. 5 (after New Cave is complete)"}
+  - {"name": "Machina Striker", "size": "L", "where": "Thunder Plains: L, Ch. 5 (after New Cave is complete)"}
+  - {"name": "Malboro", "size": "L", "where": "Besaid Island: L, Ch. 3–4<br>Luca: L, Ch. 5<br>Thunder Plains: L, Ch. 3–5 (L only in Ch. 5, before New Cave Opens)"}
+  - {"name": "Mega Tonberry", "size": "M", "where": "Bevelle: M, Ch. 5 (after starting Via Infinito)"}
+  - {"name": "Monolith", "size": "M", "where": "Djose Temple: M, Ch. 5 (after releasing Dolmen; after entering the Farplane)"}
+  - {"name": "Mr. Goon", "size": "S", "where": "Guadosalam: S/SP (Humanoid), Ch. 2–5 (SP only in Ch. 2)"}
+  - {"name": "Ms. Goon", "size": "S", "where": "Guadosalam: S/SP (Humanoid), Ch. 2–5 (SP only in Ch. 2)"}
+  - {"name": "Mushroom Cloud", "size": "S", "where": "Bevelle: S, Ch. 5 (after starting Via Infinito)"}
+  - {"name": "Mycotoxin", "size": "S", "where": "Luca: S, Ch. 3–5<br>Mi’ihen Highroad: S/SP (Fungus), Ch. 3–5 (S only in Ch. 5, before the Fiend Colony opens)<br>Zanarkand Ruins: S/SP (Fungus), Ch. 3–5"}
+  - {"name": "Nashorn", "size": "M", "where": "Luca: M, Ch. 1–5<br>Calm Lands: M/SP (Ruminant), Ch. 1–2<br>Zanarkand Ruins: M/SP (Ruminant), Ch. 1–5"}
+  - {"name": "Nooj", "size": "SP", "where": "Mushroom Rock Road: SP (Humanoid), Ch. 5 (complete Den of Woe)"}
+  - {"name": "Ochu", "size": "L", "where": "Luca: L, Ch. 5<br>Thunder Plains: L, Ch. 1–2"}
+  - {"name": "Ormi", "size": "SP", "where": "Guadosalam: SP (Humanoid), Ch. 1–5 (New Game Plus Only)"}
+  - {"name": "Paragon", "size": "L", "where": "Bevelle: L, Ch. 5 (complete Via Infinito)"}
+  - {"name": "Peregrine", "size": "S", "where": "Luca: S, Ch. 2–5<br>Mi’ihen Highroad: S/SP (Bird), Ch. 2–5 (S only in Ch. 5, before the Fiend Colony opens)<br>Calm Lands: S/SP (Bird), Ch. 2–4 (SP only in Ch. 2)"}
+  - {"name": "Pop Fry", "size": "L", "where": "Bikanel Desert: L, Ch. 3–5 (L only in Ch. 5, before Cactuar Hollow starts)"}
+  - {"name": "Protean Gel", "size": "M", "where": "Luca: M, Ch. 3–5<br>Macalania Woods: M, Ch. 3–5<br>Calm Lands: M, Ch. 3–5"}
+  - {"name": "Protochimera", "size": "M", "where": "Kilika Island: M/SP (Chimera/Coeurl), Ch. 1–2<br>Luca: M, Ch. 1–5<br>Moonflow: M/SP (Chimera/Coeurl), Ch. 1–5<br>Mt. Gagazet: M/SP (Chimera/Coeurl), Ch. 1–2"}
+  - {"name": "Purpurea", "size": "M", "where": "Besaid Island: M/SP (Plant), Ch. 1–2<br>Luca: M, Ch. 1–5<br>Mi’ihen Highroad: M/SP (Plant), Ch. 1–2"}
+  - {"name": "Quadricorn", "size": "M", "where": "Luca: M, Ch. 1–5<br>Mi’ihen Highroad: M/SP (Ruminant), Ch. 1–2<br>Moonflow: M/SP (Ruminant), Ch. 1–2"}
+  - {"name": "Queen Coeurl", "size": "M", "where": "Kilika Island: M/SP (Chimera/Coeurl), Ch. 3–5 (M only in Ch. 3–4)<br>Luca: M, Ch. 3–5"}
+  - {"name": "Recoil", "size": "S", "where": "Luca: S, Ch. 1–5<br>Guadosalam: S/SP (Bandoleer), Ch. 1–5 (SP only in Ch. 1)"}
+  - {"name": "Red Elemental", "size": "S", "where": "Kilika Island: S/SP (Elemental), Ch. 1–5<br>Luca: S, Ch. 1–5<br>Mushroom Rock Road: S/SP (Elemental), Ch. 1–2<br>Thunder Plains: S/SP (Elemental), Ch. 2<br>Macalania Woods: S/SP (Elemental), Ch. 1–2"}
+  - {"name": "Rhyos", "size": "M", "where": "Luca: M, Ch. 3–5<br>Thunder Plains: M/SP (Chimera/Coeurl), Ch. 5 (after New Cave is complete)<br>Macalania Woods: M/SP (Chimera/Coeurl), Ch. 3–5 (M only in Ch. 3–4)<br>Mt. Gagazet: M/SP (Chimera/Coeurl), Ch. 3–5"}
+  - {"name": "Rukh", "size": "L", "where": "Djose Temple: L, Ch. 3–5 (L only in Ch. 5, before entering the Farplane)<br>Mt. Gagazet: L, Ch. 2–5"}
+  - {"name": "Sahagin", "size": "S", "where": "Besaid Island: S/SP (Sahagin/Dinofish), Ch. 1–4<br>Luca: S, Ch. 1–5"}
+  - {"name": "Sahagin Chief", "size": "L", "where": "Bikanel Desert: L/SP (Sahagin/Dinofish), Ch. 5 (after Cactuar Hollow starts)"}
+  - {"name": "Sahagin Prince", "size": "S", "where": "Calm Lands: S/SP (Sahagin/Dinofish), Ch. 3–5 (after the Ruin Depths open; S Ch. 5)"}
+  - {"name": "Sallet", "size": "S", "where": "Besaid Island: S/SP (Helm), Ch. 1–2<br>Luca: S, Ch. 1–5<br>Djose Temple: S/SP (Helm), Ch. 1–2<br>Macalania Woods: S/SP (Helm), Ch. 1–2"}
+  - {"name": "Scout Machina", "size": "M", "where": "Mi’ihen Highroad: M/SP (Machina), Ch. 3–5 (M only before the Fiend Colony opens)"}
+  - {"name": "Shantak", "size": "L", "where": "Luca: L, Ch. 5<br>Mi’ihen Highroad: L, Ch. 1–2"}
+  - {"name": "She-Goon", "size": "S", "where": "Luca: S, Ch. 1–5<br>Guadosalam: S/SP (Humanoid), Ch. 1–2 (SP only in Ch. 1)"}
+  - {"name": "Shell Shocker", "size": "L", "where": "Moonflow: L, Ch. 1–5"}
+  - {"name": "Skink", "size": "S", "where": "Luca: S, Ch. 2–5<br>Djose Temple: S/SP (Reptile), Ch. 3–5 (S only in Ch. 5, before entering the Farplane)<br>Bevelle: S/SP (Reptile), Ch. 2–5 (S only in Ch. 5, before starting Via Infinito)"}
+  - {"name": "Spine Drake", "size": "M", "where": "Mushroom Rock Road: M/SP (Drake), Ch. 3–5<br>Mt. Gagazet: M/SP (Drake), Ch. 3–5"}
+  - {"name": "Stalwart", "size": "L", "where": "Kilika Island: L, Ch. 1–2<br>Luca: L, Ch. 5<br>Thunder Plains: L, Ch. 1–2"}
+  - {"name": "Takouba", "size": "M", "where": "Luca: M, Ch. 1–5<br>Moonflow: M/SP (Blade), Ch. 1–2<br>Mt. Gagazet: M/SP (Blade), Ch. 1–2"}
+  - {"name": "Tentacles", "size": "M", "where": "Luca: M, Ch. 3–5<br>Macalania Woods: M, Ch. 3–5"}
+  - {"name": "Tindalos", "size": "S", "where": "Besaid Island: S/SP (Lupine), Ch. 5<br>Djose Temple: S/SP (Lupine), Ch. 5 (after entering the Farplane)"}
+  - {"name": "Tomb", "size": "M", "where": "Luca: M, Ch. 3–5 (after releasing Jahi)<br>Djose Temple: M, Ch. 3–5 (after releasing Jahi)"}
+  - {"name": "Tonberry", "size": "S", "where": "Luca: S, Ch. 1–5<br>Mushroom Rock Road: S, Ch. 1–5"}
+  - {"name": "Trema", "size": "SP", "where": "Bevelle: SP (Humanoid), Ch. 5 (complete Via Infinito)"}
+  - {"name": "Varan", "size": "S", "where": "Moonflow: S/SP (Imp/Revenant), Ch. 3–5<br>Calm Lands: S/SP (Imp/Revenant), Ch. 3–5 (S only in Ch. 5, before the Ruin Depths open)"}
+  - {"name": "Vertigo", "size": "S", "where": "Luca: S, Ch. 2–5<br>Macalania Woods: S/SP (Evil Eye), Ch. 3–5<br>Bevelle: S/SP (Evil Eye), Ch. 2"}
+  - {"name": "Vespa", "size": "S", "where": "Calm Lands: S/SP (Wasp), Ch. 2–5 (S only in Ch. 5, before the Ruin Depths open)<br>Mt. Gagazet: S/SP (Wasp), Ch. 3–5"}
+  - {"name": "Viper Sniper", "size": "S", "where": "Guadosalam: S/SP (Bandoleer), Ch. 2–5"}
+  - {"name": "Volcano", "size": "M", "where": "Besaid Island: M/SP (Bomb), Ch. 5"}
+  - {"name": "Wasp Queen", "size": "L", "where": "Bikanel Desert: L/SP (Wasp), Ch. 5 (after Cactuar Hollow starts)"}
+  - {"name": "White Elemental", "size": "S", "where": "Luca: S, Ch. 1–5<br>Zanarkand Ruins: S/SP (Elemental), Ch. 1–2"}
+  - {"name": "White Fang", "size": "S", "where": "Luca: S, Ch. 1–5<br>Mt. Gagazet: S/SP (Lupine), Ch. 1–2"}
+  - {"name": "Wild Wolf", "size": "S", "where": "Luca: S, Ch. 1–5<br>Mi’ihen Highroad: S/SP (Lupine), Ch. 1–2<br>Calm Lands: S/SP (Lupine), Ch. 1–4 (SP only in Ch. 1–2)"}
+  - {"name": "Xiphactinus", "size": "M", "where": "Luca: M, Ch. 1–5<br>Moonflow: M/SP (Sahagin/Dinofish), Ch. 1–2"}
+  - {"name": "YAC-13", "size": "M", "where": "Bevelle: M/SP (Defender/Mech), Ch. 2"}
+  - {"name": "YAC-62", "size": "M", "where": "Luca: M, Ch. 2–5<br>Bevelle: M/SP (Defender/Mech), Ch. 3–5 (M only in Ch. 5, before starting Via Infinito)"}
+  - {"name": "Yaibal", "size": "SP", "where": "Mushroom Rock Road: SP (Humanoid), Ch. 1–5 (SP only in Ch. 5, before Den of Woe; SP Ch. 2-4, Give Awesome Sphere to Youth League)"}
+  - {"name": "YAU-28", "size": "M", "where": "Bevelle: M/SP (Defender/Mech), Ch. 2"}
+  - {"name": "YAU-71", "size": "M", "where": "Kilika Island: M/SP (Defender/Mech), Ch. 5<br>Luca: M, Ch. 2–5<br>Bevelle: M/SP (Defender/Mech), Ch. 3–5 (M only in Ch. 5, before starting Via Infinito)"}
+  - {"name": "Yellow Elemental", "size": "S", "where": "Luca: S, Ch. 1–5<br>Mt. Gagazet: S/SP (Elemental), Ch. 1–2"}
+  - {"name": "YSLS-99", "size": "M", "where": "Bevelle: M/SP (Defender/Mech), Ch. 2"}
+  - {"name": "YSLS-Zero", "size": "M", "where": "Luca: M, Ch. 1–5 (after releasing Killer Hound)<br>Zanarkand Ruins: M/SP (Defender/Mech), Ch. 1–5 (after releasing Killer Hound)"}
+  - {"name": "Zalamander", "size": "L", "where": "Thunder Plains: L, Ch. 5 (before New Cave Opens)"}
+  - {"name": "Zu", "size": "L", "where": "Luca: L, Ch. 5<br>Mi’ihen Highroad: L, Ch. 3–5<br>Bikanel Desert: L, Ch. 1–5 (L only in Ch. 5, before Cactuar Hollow starts)"}
+  - {"name": "Zurvan", "size": "S", "where": "Calm Lands: S/SP (Imp/Revenant), Ch. 3–5 (S only in Ch. 5, before the Ruin Depths open)"}

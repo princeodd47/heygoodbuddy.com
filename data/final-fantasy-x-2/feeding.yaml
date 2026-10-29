@@ -1,0 +1,70 @@
+# Items a creature can eat in Develop Creature, from Jegged's Develop Creature page.
+# qty is how many it eats at once. See notes/final-fantasy-x-2/creature-team-research.md.
+items:
+  - {"name": "Potion", "qty": 48, "teaches": "Cure", "type": "Command", "gain": "HP +1"}
+  - {"name": "Hi-Potion", "qty": 33, "teaches": "Cura", "type": "Command", "gain": "HP +2"}
+  - {"name": "X-Potion", "qty": 3, "teaches": "Curaga", "type": "Command", "gain": "HP +10"}
+  - {"name": "Mega-Potion", "qty": 3, "teaches": "White Wind", "type": "Enemy ability", "gain": "HP +10"}
+  - {"name": "Ether", "qty": 2, "teaches": "Magicide", "type": "Command", "gain": "MP +1"}
+  - {"name": "Turbo Ether", "qty": 3, "teaches": "Vigor", "type": "Command", "gain": "MP +3"}
+  - {"name": "Phoenix Down", "qty": 3, "teaches": "Life", "type": "Command", "gain": "HP +1"}
+  - {"name": "Mega Phoenix", "qty": 3, "teaches": "Full-Life", "type": "Command", "gain": "HP +3"}
+  - {"name": "Elixir", "qty": 1, "teaches": "Clean Slate", "type": "Command", "gain": "HP +5"}
+  - {"name": "Megalixir", "qty": 1, "teaches": "Full-Cure", "type": "Command", "gain": "HP +20"}
+  - {"name": "Antidote", "qty": 99, "teaches": "Bio", "type": "Command", "gain": ""}
+  - {"name": "Soft", "qty": 99, "teaches": "Break", "type": "Command", "gain": ""}
+  - {"name": "Eye Drops", "qty": 99, "teaches": "Blind", "type": "Command", "gain": ""}
+  - {"name": "Echo Screen", "qty": 99, "teaches": "Silence", "type": "Command", "gain": ""}
+  - {"name": "Holy Water", "qty": 30, "teaches": "Dismissal", "type": "Command", "gain": ""}
+  - {"name": "Remedy", "qty": 3, "teaches": "Esuna", "type": "Command", "gain": ""}
+  - {"name": "Budget Grenade", "qty": 5, "teaches": "Assault", "type": "Command", "gain": ""}
+  - {"name": "Grenade", "qty": 10, "teaches": "Confuse", "type": "Command", "gain": ""}
+  - {"name": "L-Bomb", "qty": 10, "teaches": "Fireworks", "type": "Command", "gain": ""}
+  - {"name": "M-Bomb", "qty": 10, "teaches": "Sparkler", "type": "Command", "gain": ""}
+  - {"name": "S-Bomb", "qty": 10, "teaches": "Fingersnap", "type": "Command", "gain": ""}
+  - {"name": "Sleep Grenade", "qty": 10, "teaches": "Sleep", "type": "Command", "gain": ""}
+  - {"name": "Silence Grenade", "qty": 10, "teaches": "Unhinge", "type": "Command", "gain": ""}
+  - {"name": "Dark Grenade", "qty": 10, "teaches": "Intimidate", "type": "Command", "gain": ""}
+  - {"name": "Petrify Grenade", "qty": 10, "teaches": "Hurt", "type": "Command", "gain": ""}
+  - {"name": "Bomb Fragment", "qty": 3, "teaches": "Fire", "type": "Command", "gain": ""}
+  - {"name": "Bomb Core", "qty": 4, "teaches": "Fira", "type": "Command", "gain": ""}
+  - {"name": "Fire Gem", "qty": 5, "teaches": "Firaga", "type": "Command", "gain": ""}
+  - {"name": "Antarctic Wind", "qty": 3, "teaches": "Blizzard", "type": "Command", "gain": ""}
+  - {"name": "Arctic Wind", "qty": 4, "teaches": "Blizzara", "type": "Command", "gain": ""}
+  - {"name": "Ice Gem", "qty": 5, "teaches": "Blizzaga", "type": "Command", "gain": ""}
+  - {"name": "Electro Marble", "qty": 3, "teaches": "Thunder", "type": "Command", "gain": ""}
+  - {"name": "Lightning Marble", "qty": 4, "teaches": "Thundara", "type": "Command", "gain": ""}
+  - {"name": "Lightning Gem", "qty": 5, "teaches": "Thundaga", "type": "Command", "gain": ""}
+  - {"name": "Fish Scale", "qty": 3, "teaches": "Water", "type": "Command", "gain": ""}
+  - {"name": "Dragon Scale", "qty": 4, "teaches": "Watera", "type": "Command", "gain": ""}
+  - {"name": "Water Gem", "qty": 5, "teaches": "Waterga", "type": "Command", "gain": ""}
+  - {"name": "Shadow Gem", "qty": 10, "teaches": "Demi", "type": "Command", "gain": ""}
+  - {"name": "Shining Gem", "qty": 40, "teaches": "Flare", "type": "Command", "gain": ""}
+  - {"name": "Blessed Gem", "qty": 40, "teaches": "Holy", "type": "Command", "gain": ""}
+  - {"name": "Supreme Gem", "qty": 60, "teaches": "Ultima", "type": "Command", "gain": ""}
+  - {"name": "Poison Fang", "qty": 3, "teaches": "Envenom", "type": "Command", "gain": ""}
+  - {"name": "Silver Hourglass", "qty": 3, "teaches": "Slow", "type": "Enemy ability", "gain": ""}
+  - {"name": "Gold Hourglass", "qty": 8, "teaches": "Delay Attack", "type": "Command", "gain": ""}
+  - {"name": "Candle of Life", "qty": 5, "teaches": "Doom", "type": "Command", "gain": ""}
+  - {"name": "Farplane Shadow", "qty": 5, "teaches": "Death", "type": "Command", "gain": ""}
+  - {"name": "Dark Matter", "qty": 1, "teaches": "Meteor", "type": "Enemy ability", "gain": ""}
+  - {"name": "Chocobo Feather", "qty": 5, "teaches": "Haste", "type": "Command", "gain": ""}
+  - {"name": "Chocobo Wing", "qty": 5, "teaches": "Hastega", "type": "Command", "gain": ""}
+  - {"name": "Lunar Curtain", "qty": 3, "teaches": "Shell", "type": "Command", "gain": ""}
+  - {"name": "Light Curtain", "qty": 3, "teaches": "Protect", "type": "Command", "gain": ""}
+  - {"name": "Star Curtain", "qty": 3, "teaches": "Reflect", "type": "Command", "gain": ""}
+  - {"name": "Healing Spring", "qty": 3, "teaches": "Regen", "type": "Command", "gain": ""}
+  - {"name": "Mana Spring", "qty": 5, "teaches": "MP Absorb", "type": "Command", "gain": ""}
+  - {"name": "Stamina Spring", "qty": 5, "teaches": "Drain", "type": "Command", "gain": ""}
+  - {"name": "Soul Spring", "qty": 3, "teaches": "Absorb", "type": "Command", "gain": ""}
+  - {"name": "Dispel Tonic", "qty": 3, "teaches": "Dispel", "type": "Command", "gain": ""}
+  - {"name": "Stamina Tablet", "qty": 8, "teaches": "Howl", "type": "Command", "gain": ""}
+  - {"name": "Mana Tablet", "qty": 1, "teaches": "", "type": "", "gain": "MP +5"}
+  - {"name": "Stamina Tonic", "qty": 1, "teaches": "", "type": "", "gain": "HP +20"}
+  - {"name": "Mana Tonic", "qty": 1, "teaches": "", "type": "", "gain": "MP +20"}
+  - {"name": "Twin Stars", "qty": 1, "teaches": "SOS Spellspring", "type": "Auto-Ability", "gain": ""}
+  - {"name": "Three Stars", "qty": 8, "teaches": "One MP Cost", "type": "Auto-Ability", "gain": ""}
+  - {"name": "Hero Drink", "qty": 1, "teaches": "Critical", "type": "Auto-Ability", "gain": ""}
+  - {"name": "Gysahl Greens", "qty": 1, "teaches": "Strength Up", "type": "Enemy ability", "gain": ""}
+  - {"name": "Sylkis Greens", "qty": 1, "teaches": "Defense Up", "type": "Enemy ability", "gain": ""}
+  - {"name": "Mimett Greens", "qty": 1, "teaches": "Magic Up", "type": "Enemy ability", "gain": ""}
