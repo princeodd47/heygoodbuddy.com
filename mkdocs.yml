@@ -61,6 +61,9 @@ plugins:
         ffx2_creatures: data/final-fantasy-x-2/creatures.yaml
         ffx2_feeding: data/final-fantasy-x-2/feeding.yaml
         ffx2_accessories: data/final-fantasy-x-2/accessories.yaml
+        ffx2_bestiary: data/final-fantasy-x-2/bestiary.yaml
+        ffx2_dresspheres: data/final-fantasy-x-2/dresspheres.yaml
+        ffx2_grids: data/final-fantasy-x-2/garment-grids.yaml
 
 extra_css:
   - stylesheets/extra.css
@@ -125,6 +128,9 @@ nav:
           - Building the Team: games/final-fantasy-x-2/creature-team.md
           - Creatures: games/final-fantasy-x-2/creatures.md
           - Feeding: games/final-fantasy-x-2/feeding.md
+          - Dresspheres: games/final-fantasy-x-2/dresspheres.md
+          - Garment Grids: games/final-fantasy-x-2/garment-grids.md
+          - Bestiary: games/final-fantasy-x-2/bestiary.md
           - Accessories: games/final-fantasy-x-2/accessories.md
       - Final Fantasy XII The Zodiac Age:
           - games/final-fantasy-xii-the-zodiac-age/index.md
