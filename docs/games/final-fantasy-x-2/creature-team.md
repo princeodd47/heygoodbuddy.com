@@ -292,6 +292,23 @@ the fight. Esuna can't keep up.
 - Until then, losing to it is fine. You still get a Trap Pod, and the
   bracket is random, so the next run may not put it in your way.
 
+**Paying for the anklets.** Six Gold Anklets cost 30,000 gil. Rikku's
+Thief ability **Pilfer Gil** (30 AP) steals gil on top of what an enemy
+drops, once per enemy:
+
+| Enemy | Where | Gil | Pilfer Gil | Also |
+|-------|-------|----:|-----------:|------|
+| **Amorphous Gel** | Macalania Woods, Calm Lands | 380 | 720 | 480 EXP; drops a **Blue Ring** (sells for 750) |
+| **Shell Shocker** | Moonflow, mainly Chapter 2 on | 780 | 1,300 | 860 EXP; drops a **Black Ring** (sells for 2,500) |
+| **Ochu** | Thunder Plains | 133 | 290 | Rare Twist Headband |
+| **Shantak** | Mi'ihen Highroad | 120 | 520 | Remedy steal |
+
+In Chapter 1, Amorphous Gel is the one you'll actually meet: a pilfered
+kill with its Blue Ring sold is about 1,850 gil. It resists physical
+attacks and changes its weakness; the spell it casts tells you which
+element to use (Blizzard means hit it with Fire). See the
+[walkthrough](walkthrough.md#moonflow) for more on Shell Shocker.
+
 ### Step 7: Grind in the Battle Simulator
 
 | Team | Creatures | Why |

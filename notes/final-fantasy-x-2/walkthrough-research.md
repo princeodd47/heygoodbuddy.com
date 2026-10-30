@@ -90,3 +90,11 @@ Youth League vs New Yevon choice, Besaid/Kilika/Luca missions.
   the sparkling path during the O'aka chase. Removed the "skip most
   fights / forced Amorphous Gel" claim (from Jegged); kept the directions.
 - 2026-10-30: added a Making gil tip box (Moonflow section): Pilfer Gil targets ranked by Gil and Gil (stolen) from Jegged enemy pages, sell prices from accessories.yaml. Pilfer amounts not checked in game.
+- 2026-10-30: Shell Shocker location conflict. Jegged bestiary and FF Wiki
+  infobox say Moonflow Chapters 1-5; Gamer Guides' Chapter 1 Moonflow
+  bestiary lists it; but FF Wiki's Moonflow encounter lists (fandom API,
+  Moonflow_(Final_Fantasy_X)) have no Shell Shocker formation in Chapter 1,
+  only a lone Shell Shocker from Chapter 2. Jegged's Chapter 1 South Bank
+  Road list doesn't include it. No source names a sub-area. Gil tip now
+  points Chapter 1 players at Amorphous Gel. FF Wiki: its normal attack is
+  a fraction of current HP, so it can't KO.

@@ -371,10 +371,13 @@ mission without meeting Tobli and lose his scene.
     | **Ochu** | Thunder Plains | 133 | 290 | Rare Twist Headband |
     | **Shantak** | Mi'ihen Highroad | 120 | 520 | Remedy steal |
 
-    Shell Shocker is the one to farm: a pilfered kill with a Black Ring to
-    sell is worth about 4,500 gil, and the EXP is the best in Chapter 1.
-    It's level 24 with 4,700 HP, so come back once your team is around
-    level 18 or higher. Amorphous Gel resists physical attacks and keeps
+    **Shell Shocker** pays best (a pilfered kill with a Black Ring to sell
+    is about 4,500 gil), and its normal attack takes a share of current
+    HP, so it can't KO anyone. But it's hard to find in Chapter 1: Gamer
+    Guides lists it in the Moonflow then, while the Final Fantasy Wiki's
+    encounter lists only start it in Chapter 2, as a lone enemy. No guide
+    says which part of the Moonflow. In Chapter 1, farm **Amorphous Gel**
+    in Macalania instead. Amorphous Gel resists physical attacks and keeps
     changing its weakness; the spell it casts tells you which element to
     use (if it casts Blizzard, hit it with Fire).
 
