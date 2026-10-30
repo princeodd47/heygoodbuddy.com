@@ -275,6 +275,20 @@ wins open Standard Cup: Hard.
 Any team you fight in a tournament becomes available in the Battle
 Simulator, whether you beat it or not.
 
+**Terrible Sky** (a lone Rukh, level 36 and 12,850 HP) is the wall in
+Standard Cup: Hard. Its normal attack petrifies, then Sonic Storm hits
+your whole team and shatters anyone who's stone, which takes them out of
+the fight. Esuna can't keep up.
+
+- **Stop it from landing:** feed **2 Gold Anklets** to each creature for
+  **Stoneproof**. Steal them from **Deep Haizhe** in Macalania Woods (the
+  common steal), or buy them in Guadosalam for 5,000 gil. Deep Haizhe's
+  rare steal, the **Dragonfly Orb**, teaches Stopproof the same way.
+- **Hit it physically.** Its Magic Defense is maxed but its Defense is
+  only 44, and it's immune to Telekinesis and nearly every status.
+- Until then, losing to it is fine. You still get a Trap Pod, and the
+  bracket is random, so the next run may not put it in your way.
+
 ### Step 7: Grind in the Battle Simulator
 
 | Team | Creatures | Why |

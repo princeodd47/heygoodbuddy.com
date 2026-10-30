@@ -147,3 +147,4 @@ and saving Speed Bracers and Shmooth Shailing for the Machina.
   step 6.
 - 2026-10-30: same rewording in step 9 (Grand Cup: Hard teams), at the user's request.
 - 2026-10-30: added Fayth fragments subsection (step 17) with all eight, trap windows from creatures.yaml, and how to release (5 Story Levels, Creature History message) from Jegged's Creature History page.
+- 2026-10-30: Terrible Sky (Rukh) note in step 6. User saw in game: normal attack petrifies, then a party-wide physical shatters the stone creatures. Jegged's Rukh page lists only Sonic Storm and Attack (arena version likely differs). Fix: Gold Anklet x2 (Stoneproof), Deep Haizhe steal or Guadosalam 5,000 gil.
