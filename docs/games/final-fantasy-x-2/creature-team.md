@@ -281,9 +281,12 @@ your whole team and shatters anyone who's stone, which takes them out of
 the fight. Esuna can't keep up.
 
 - **Stop it from landing:** feed **2 Gold Anklets** to each creature for
-  **Stoneproof**. Steal them from **Deep Haizhe** in Macalania Woods (the
-  common steal), or buy them in Guadosalam for 5,000 gil. Deep Haizhe's
-  rare steal, the **Dragonfly Orb**, teaches Stopproof the same way.
+  **Stoneproof**. In Chapter 1, buy them in Guadosalam for 5,000 gil each.
+  They're also the common steal from **Deep Haizhe** (level 20) on the
+  Macalania Woods forest paths, but it's rare there until Chapter 2, and
+  easy to confuse with the regular **Haizhe** (level 16, steals a Phoenix
+  Down). Deep Haizhe's rare steal, the **Dragonfly Orb**, teaches
+  Stopproof the same way.
 - **Hit it physically.** Its Magic Defense is maxed but its Defense is
   only 44, and it's immune to Telekinesis and nearly every status.
 - Until then, losing to it is fine. You still get a Trap Pod, and the
