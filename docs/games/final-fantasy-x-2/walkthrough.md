@@ -20,7 +20,9 @@ whenever you like.
   are the spots where it does. Check it on your save file or the NavMap.
 - **Steal:** and **Drop:** lines list the items worth taking. See the
   [Bestiary](bestiary.md) for every enemy.
-- **Creatures:** lines say what's worth trapping while you're there. See
+- **Creatures:** lines say what's worth trapping at that location. Pods
+  are set from the Creature Creator menu on the Celsius, so you don't
+  have to be there. See
   [Creatures](creatures.md) and [Building the Team](creature-team.md).
 
 **Order matters.** Each chapter ends when you finish its last Hotspot, and
@@ -167,9 +169,13 @@ Give each creature a Garment Grid and a Dressphere before it fights.
 
 ## Besaid Island
 
-- **100%:** reunion with Wakka, then talk to Lulu in her hut. Walk to the
-  Promontory, talk to Lulu again, and answer "Yes, I'd love to" to stay
-  the night. Talk to her outside in the morning.
+- **100%:** walk north from the Save Sphere into the village for the
+  reunion with Wakka, then talk to Lulu in her hut (middle door, east
+  side). Yuna and Lulu go up to the Promontory in a scene. When you're
+  back, talk to Lulu again and answer "Yes, I'd love to" to stay the
+  night. Talk to her outside in the morning to start the mission.
+- The shop offers the **Besaid Key** for 900,000 gil. Skip it; the door
+  it opens waits until Chapter 3.
 
 ### Mission: Where's Wakka?
 
@@ -201,7 +207,8 @@ the minimap, and shown on the door panel once you have all four.
   from a Black Mage is your best damage.
 - You get the **White Mage Dressphere**, then the **Besaid Sphere** and
   the **Protection Halo Garment Grid** when you show Wakka.
-- **Creatures:** set your **Trap Pod L** in Besaid for a Flame Dragon.
+- **Creatures:** Besaid Island is where to set your **Trap Pod L** for a
+  Flame Dragon.
 - **Steal:** Sallets sometimes give a Light Curtain, Purpureas a Remedy.
 
 ## Kilika Island

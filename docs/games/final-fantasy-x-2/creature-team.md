@@ -31,7 +31,9 @@ Dukes that make the Machina the strongest team in the arena.
 
 ### Step 1: Trap the starter three
 
-Use a Trap Pod S for each, as soon as you're on the Celsius. The
+Trapping is done from Shinra's Creature Creator menu on the Celsius: pick
+a location from the list and a pod, then Round Up. You don't have to be
+anywhere near the location. Use a Trap Pod S for each of these. The
 [walkthrough](walkthrough.md#your-first-catches) covers pods and the
 free-pod trick.
 
@@ -46,9 +48,9 @@ free-pod trick.
 - **Tonberry:** players report it has Death Strike from the start.
 - **Red Elemental:** a pure caster. Players report it learns an MP-saving
   ability at high levels.
-- **While you're in Besaid,** set your Trap Pod L there for a
-  **Flame Dragon**. It's only there in Chapters 1 to 4, and the Aeon Cup
-  needs it ([step 17](#step-17-open-the-farplane-cup)).
+- **Flame Dragon:** set your Trap Pod L at Besaid Island. It's only on
+  Besaid's list in Chapters 1 to 4, and the Aeon Cup needs it
+  ([step 17](#step-17-open-the-farplane-cup)).
 
 ### Step 2: Collect White Mage and the Chapter 1 grids
 
@@ -66,10 +68,20 @@ to Strength, Defense, Magic and Magic Defense) and Shinra's tutorial gives
 
 #### White Mage and Protection Halo (Besaid)
 
-Pick Besaid Island from the Celsius and do the **"Where's Wakka?"**
-mission.
+Pick Besaid Island from the Celsius. The **"Where's Wakka?"** mission
+starts after a few village scenes, which also count toward 100%:
 
-1. Collect the four ciphers that open the cave. They change every game,
+1. Walk north from the Save Sphere into Besaid Village. The reunion with
+   Wakka plays as you arrive.
+2. Go into Wakka and Lulu's hut (the middle door on the east side) and
+   talk to Lulu. Yuna and Lulu head up to the Promontory in a scene, then
+   come back.
+3. Talk to Lulu again. When she asks if you're staying the night, choose
+   **"Yes, I'd love to."**
+4. In the morning, talk to Lulu outside the hut. Wakka has gone off to
+   the cave, and the mission starts. Skip the Besaid Key at the shop
+   (900,000 gil); it's for a door that waits until Chapter 3.
+5. Collect the four ciphers that open the cave. They change every game,
    but the minimap marks them, and the cave door shows them once you have
    all four. In order of the areas:
     - **Promontory:** on the stone structure to the right.
@@ -80,16 +92,14 @@ mission.
     - **Beach:** follow the child left and climb the ruins (chests with a
       Hi-Potion and 1,000 gil around the back). The last cipher is up the
       cliff at the far southwest end of the beach.
-2. In the cave, talk to Wakka and ignore the second locked door. Equip
+6. In the cave, talk to Wakka and ignore the second locked door. Equip
    the **Red Ring**, save, and touch the sphere on the pedestal.
-3. **Boss: Flame Dragon** (980 HP, weak to ice, absorbs fire). Flame
+7. **Boss: Flame Dragon** (980 HP, weak to ice, absorbs fire). Flame
    Breath hits everyone for 150 to 200, which the Red Ring cuts down. Its
    normal attack always targets whoever has the most HP. Blizzard from a
    Black Mage does the most damage.
-4. Winning gives the **White Mage Dressphere**. Show Wakka the sphere
+8. Winning gives the **White Mage Dressphere**. Show Wakka the sphere
    afterwards for the **Protection Halo Garment Grid**.
-5. Before you leave, set your **Trap Pod L** in Besaid for a Flame Dragon
-   of your own ([step 1](#step-1-trap-the-starter-three)).
 
 #### Helios Guard (Moonflow)
 

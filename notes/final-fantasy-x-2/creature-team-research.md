@@ -126,3 +126,7 @@ and saving Speed Bracers and Shmooth Shailing for the Machina.
   Hellbreeders, Shady Duo and Tonberry the Ripper at 3 wins; Lulu joins
   the Youth League after 1 win. Unerring Path source corrected to Tromell
   ×4 in Macalania (was "first Special Dressphere").
+- 2026-10-30: user pointed out trapping doesn't depend on where you are.
+  Confirmed by Jegged's Trap Creature page (pick a location and a pod
+  from the menu). Flame Dragon isn't special. Reworded step 1, removed
+  the "before you leave Besaid" step, and fixed two walkthrough lines.

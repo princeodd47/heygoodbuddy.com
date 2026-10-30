@@ -66,3 +66,6 @@ Youth League vs New Yevon choice, Besaid/Kilika/Luca missions.
 
 - Boris drop: user got Star Pendant and Faerie Earrings from one fight;
   guides list only Star Pendant. Page shows both.
+- 2026-10-30: Besaid opening reworded. Jegged's Besaid page describes the
+  Promontory walk as a scene, not something you walk to; Gamer Guides
+  doesn't mention it. Added the Besaid Key shop note (900,000 gil, skip).
