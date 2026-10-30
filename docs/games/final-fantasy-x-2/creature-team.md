@@ -57,14 +57,69 @@ helps more than a few levels. You start with **First Steps** (Cure, and +5
 to Strength, Defense, Magic and Magic Defense) and Shinra's tutorial gives
 **Vanguard** (Armor Break, Strength +10, Magic +10). Pick these up next:
 
-1. **Besaid mission, "Where's Wakka?":** beating the Flame Dragon gives
-   the **White Mage Dressphere**. Showing Wakka the sphere afterwards gives
-   **Protection Halo** (Esuna, and Defense and Magic Defense +10).
-2. **Moonflow mission, perfect escort:** **Helios Guard** (Protect and
-   SOS Protect).
-3. **Macalania Woods:** talk to Tromell at the spring off the Lake Road
-   four times for **Unerring Path** (HP and MP +30%, all stats +20,
-   Crackdown). It's the best creature grid in Chapter 1.
+| Item | What creatures get | Where |
+|------|--------------------|-------|
+| **White Mage Dressphere** | A healer's stats for Red Elemental | Besaid mission |
+| **Protection Halo** | Esuna, Defense and Magic Defense +10 | Besaid, after the mission |
+| **Helios Guard** | Protect and SOS Protect | Moonflow mission, perfect escort |
+| **Unerring Path** | HP and MP +30%, all stats +20, Crackdown. The best creature grid in Chapter 1 | Tromell in Macalania Woods |
+
+#### White Mage and Protection Halo (Besaid)
+
+Pick Besaid Island from the Celsius and do the **"Where's Wakka?"**
+mission.
+
+1. Collect the four ciphers that open the cave. They change every game,
+   but the minimap marks them, and the cave door shows them once you have
+   all four. In order of the areas:
+    - **Promontory:** on the stone structure to the right.
+    - **The next area:** climb up onto the structure on the right before
+      you walk under it.
+    - **Waterfall Way:** drop off the back of the wooden bridge to the
+      riverbed. The **2 Chocobo Wings** there are a start on Hastega.
+    - **Beach:** follow the child left and climb the ruins (chests with a
+      Hi-Potion and 1,000 gil around the back). The last cipher is up the
+      cliff at the far southwest end of the beach.
+2. In the cave, talk to Wakka and ignore the second locked door. Equip
+   the **Red Ring**, save, and touch the sphere on the pedestal.
+3. **Boss: Flame Dragon** (980 HP, weak to ice, absorbs fire). Flame
+   Breath hits everyone for 150 to 200, which the Red Ring cuts down. Its
+   normal attack always targets whoever has the most HP. Blizzard from a
+   Black Mage does the most damage.
+4. Winning gives the **White Mage Dressphere**. Show Wakka the sphere
+   afterwards for the **Protection Halo Garment Grid**.
+5. Before you leave, set your **Trap Pod L** in Besaid for a Flame Dragon
+   of your own ([step 1](#step-1-trap-the-starter-three)).
+
+#### Helios Guard (Moonflow)
+
+The grid is only for a perfect run of **"Shave the Hypello?"**.
+
+1. **Warp to the Moonflow from the Celsius.** Walking in from Djose can
+   start the mission before you meet Tobli.
+2. Go east to the South Bank and talk to **Tobli** first.
+3. Talk to the Hypello on the South Bank Road and escort the wagon.
+   Bandits attack three times: one bandit, then two from the front, then
+   two from the front and back.
+4. **Don't let any bandit escape with a box.** If one does, reload your
+   save and try again.
+5. A perfect run gets you the **Helios Guard Garment Grid** and a
+   **Circlet** from Tobli, along with the **Gun Mage Dressphere** you
+   get either way.
+
+#### Unerring Path (Macalania Woods)
+
+1. Head into Macalania Woods. The Amorphous Gels here can hit everyone
+   with magic, so escape them if they're giving you trouble.
+2. Take the Lake Road toward Lake Macalania and find the **Spring** off
+   it.
+3. Talk to **Tromell** there **four times**. He gives the
+   **Unerring Path Garment Grid** and Paine's **Full Throttle** Special
+   Dressphere.
+
+Do this in Chapter 1. Full Throttle can still be had in Chapter 2, but
+the completion percent for it can't. The
+[walkthrough](walkthrough.md#macalania-woods) has the rest of Macalania.
 
 ### Step 3: Equip and feed them
 
