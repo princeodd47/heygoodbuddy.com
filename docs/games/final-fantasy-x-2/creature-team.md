@@ -268,13 +268,11 @@ wins open Standard Cup: Hard.
 ### Step 6: Standard Cup: Hard, then the Grand Cup
 
 1. Win **Standard Cup: Hard** once to open the **Grand Cup**.
-2. Keep coming back to Standard Cup: Hard. At 3 wins it adds
-   **Black Chandelier** and **No Mercy**, and at 4 wins **Hellbreeders**,
-   which you want in the Battle Simulator next. The Grand Cup also has
-   Black Chandelier.
+2. Keep playing Standard Cup: Hard and the Grand Cup until you've fought
+   **Black Chandelier**, **No Mercy** and **Hellbreeders**.
 
-You only have to *meet* a team in a cup to add it to the Simulator, not
-beat it.
+Any team you fight in a tournament becomes available in the Battle
+Simulator, whether you beat it or not.
 
 ### Step 7: Grind in the Battle Simulator
 
@@ -306,7 +304,7 @@ Red Elemental:
 1. The first win gives the **Abominable Garment Grid** (Ribbon, and +10
    to Strength, Defense, Magic and Magic Defense) and opens the
    **Chocobo Cup**. Put Abominable on the Chocobo.
-2. After 3 wins, four teams join:
+2. Keep playing Grand Cup: Hard until you've fought these four:
     - **Hellbreeders** shows up here more than anywhere. If the bracket
       shows Shady Duo or Tonberry the Ripper reaching you first, set the
       stars to 0 in your next fight and run to restart the cup.

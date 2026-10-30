@@ -141,3 +141,8 @@ and saving Speed Bracers and Shmooth Shailing for the Machina.
   means it doesn't remove them). Fixed Creatures page and step 3/step 7.
   Psychic recommendation for the starter team: Chocobo (most turns, Magic
   and MP), all three for the Black Chandelier farm.
+- 2026-10-30: user says the step 6 note was wrong: teams open in the
+  Simulator once you've battled them in a tournament. Dropped the
+  per-win-count unlock wording (from Jegged's "Unlock Conditions") in
+  step 6.
+- 2026-10-30: same rewording in step 9 (Grand Cup: Hard teams), at the user's request.
