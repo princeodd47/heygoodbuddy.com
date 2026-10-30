@@ -101,6 +101,21 @@ starts after a few village scenes, which also count toward 100%:
 8. Winning gives the **White Mage Dressphere**. Show Wakka the sphere
    afterwards for the **Protection Halo Garment Grid**.
 
+**Level and steal on the way.** Besaid's enemies are levels 2 to 7
+(Coeurl in the cave is 12), so it's a good place to get the creatures to
+level 10 ([step 4](#step-4-level-to-10-on-the-miihen-highroad)). Put them
+in your party while you hunt ciphers, and leave Coeurl until they're
+close to 10. Have Rikku or Paine steal from these as you go:
+
+| Enemy | Steal | Feed it for |
+|-------|-------|-------------|
+| **Coeurl** (cave) | Phoenix Down (common) | **Life** on Red Elemental: 3 Phoenix Downs |
+| **Sallet** | Light Curtain (rare) | **Protect**: 3 Light Curtains |
+| **Purpurea** | Remedy (rare) | **Esuna**: 3 Remedies (the Grand Cup gives 30 later) |
+| **Sahagin, Flan Azul** | Fish Scale (rare) | **Water**: 3 Fish Scales, if you want an elemental spell on Red Elemental |
+
+Iron Giant's Budget Grenades aren't worth feeding.
+
 #### Helios Guard (Moonflow)
 
 The grid is only for a perfect run of **"Shave the Hypello?"**.
