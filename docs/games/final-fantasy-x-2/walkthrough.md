@@ -340,8 +340,8 @@ mission without meeting Tobli and lose his scene.
 ### Mission: Shave the Hypello?
 
 - Talk to the Hypello on the South Bank Road and escort the wagon. Three
-  bandit ambushes: one bandit, then two from the front, then two from
-  front and back.
+  bandit ambushes: one bandit, then two from the front, then one from
+  the front and one from the back.
 - **Don't let a bandit get away with a box.** If one does, reload and
   redo it. A clean run changes Tobli's later scenes and rewards.
 - Tobli gives the **Gun Mage Dressphere**, plus a **Circlet** and the

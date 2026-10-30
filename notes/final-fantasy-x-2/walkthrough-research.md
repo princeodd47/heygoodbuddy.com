@@ -73,3 +73,6 @@ Youth League vs New Yevon choice, Besaid/Kilika/Luca missions.
   one: Jegged and Gamer Guides both put ciphers at the Promontory, the
   next (ruins) area, and two on the beach. Waterfall Way only has the
   Chocobo Wings. Cipher bullets now numbered on both pages.
+- 2026-10-30: Moonflow escort third wave checked in game by the user: one
+  bandit from the front and one from the back (we had "two from front and
+  back"). In-game wins; both pages updated.

@@ -128,7 +128,7 @@ The grid is only for a perfect run of **"Shave the Hypello?"**.
 2. Go east to the South Bank and talk to **Tobli** first.
 3. Talk to the Hypello on the South Bank Road and escort the wagon.
    Bandits attack three times: one bandit, then two from the front, then
-   two from the front and back.
+   one from the front and one from the back.
 4. **Don't let any bandit escape with a box.** If one does, reload your
    save and try again.
 5. A perfect run gets you the **Helios Guard Garment Grid** and a
