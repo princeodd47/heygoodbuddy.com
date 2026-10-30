@@ -135,3 +135,9 @@ and saving Speed Bracers and Shmooth Shailing for the Machina.
 - 2026-10-30: Mushroom Rock and Kilika level/steal tips added under step 4,
   from bestiary.yaml Chapter 1 entries and walkthrough chest lists. Kilika's
   Chapter 1 enemies all belong to the end-of-chapter heist.
+- 2026-10-30: user confirmed in game that a creature's Dressphere ADDS
+  its abilities (Thief: Mug, Psychic: Telekinesis) without removing
+  existing ones. Jegged's "doesn't change their abilities" is wrong (or
+  means it doesn't remove them). Fixed Creatures page and step 3/step 7.
+  Psychic recommendation for the starter team: Chocobo (most turns, Magic
+  and MP), all three for the Black Chandelier farm.

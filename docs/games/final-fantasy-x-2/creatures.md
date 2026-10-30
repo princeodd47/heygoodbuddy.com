@@ -39,8 +39,10 @@ Creatures act on their own. The 1 to 5 star cheer gauge in battle nudges
 how aggressive they are, but young creatures mostly ignore it.
 
 Every creature needs a **Garment Grid** and a **Dressphere** before it can
-fight. The Dressphere can't be changed in battle and doesn't change the
-creature's abilities, but it does change its stats. The Garment Grid gives
+fight. The Dressphere can't be changed in battle. It changes the
+creature's stats and adds that Dressphere's abilities (Thief adds Mug,
+Psychic adds Telekinesis) without removing any it already has. The
+Garment Grid gives
 the creature its own set of abilities, which are different from what the
 grid gives Yuna, Rikku and Paine.
 

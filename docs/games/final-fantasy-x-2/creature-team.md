@@ -184,12 +184,21 @@ the three you need for Vigor.
 
 | Creature | Dressphere | Garment Grid |
 |----------|------------|--------------|
-| **Chocobo** | Thief | Unerring Path |
+| **Chocobo** | Thief, then Psychic once you have it | Unerring Path |
 | **Tonberry** | Thief, or Festivalist against high Defense | Vanguard |
 | **Red Elemental** | Black Mage, or White Mage as the healer | Helios Guard or Protection Halo (First Steps until you have them) |
 
-**Thief** on the attackers gives them Mug, which steals while it hits,
-and stolen items are what you feed them.
+A creature's Dressphere adds that Dressphere's abilities on top of the
+ones it already has. **Thief** on the attackers gives them Mug, which
+steals while it hits, and stolen items are what you feed them.
+
+Once you win the Standard Cup you also have **Psychic**, and any number
+of creatures can wear it. Its **Telekinesis** is an instant kill that
+works more often the further above the enemy's level you are. Put it on
+**Chocobo**: it's the fastest of the three, so it gets the most tries,
+and its Magic and MP suit a spell. Tonberry stays in Thief for Mug, and
+Red Elemental stays the healer. From [step 7](#step-7-grind-in-the-battle-simulator)
+on, switch all three to Psychic for the Black Chandelier farm.
 
 Feed on the main menu's **Creature** screen (see [Feeding](feeding.md)).
 Creatures choose their own moves, so make them forget anything you don't
@@ -275,12 +284,11 @@ beat it.
 | **Hellbreeders** | Gug, 2 Tindalos | 2,500+ EXP, good until about level 50 |
 | **No Mercy** | Machina Panzer | Decent EXP, drops a Crystal Bangle every time (+50 HP each when fed) |
 
-**Psychic shortcut (test it first):** one video farms Black Chandelier
-with all three creatures in the **Psychic** Dressphere. It shows
-Telekinesis killing the Dark Elemental in one hit, almost every time from
-about level 12. Jegged says a creature's Dressphere doesn't change its
-abilities, so check that your creatures get Telekinesis before you rely on
-it.
+**Psychic shortcut:** put all three creatures in the **Psychic**
+Dressphere for this farm. Psychic gives a creature **Telekinesis**, which
+kills the Dark Elemental in one hit. How often it works depends on how
+far above the enemy's level you are, and from about level 12 it almost
+never misses.
 
 ### Step 8: Grand Cup ×3
 
