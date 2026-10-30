@@ -146,3 +146,4 @@ and saving Speed Bracers and Shmooth Shailing for the Machina.
   per-win-count unlock wording (from Jegged's "Unlock Conditions") in
   step 6.
 - 2026-10-30: same rewording in step 9 (Grand Cup: Hard teams), at the user's request.
+- 2026-10-30: added Fayth fragments subsection (step 17) with all eight, trap windows from creatures.yaml, and how to release (5 Story Levels, Creature History message) from Jegged's Creature History page.

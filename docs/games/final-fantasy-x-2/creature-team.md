@@ -49,8 +49,9 @@ free-pod trick.
 - **Red Elemental:** a pure caster. Players report it learns an MP-saving
   ability at high levels.
 - **Flame Dragon:** set your Trap Pod L at Besaid Island. It's only on
-  Besaid's list in Chapters 1 to 4, and the Aeon Cup needs it
-  ([step 17](#step-17-open-the-farplane-cup)).
+  Besaid's list in Chapters 1 to 4, and it's one of the eight
+  [Fayth fragment](#fayth-fragments) creatures the Aeon Cup needs. Once
+  you have it, just keep it in your roster until it's ready to release.
 
 ### Step 2: Collect White Mage and the Chapter 1 grids
 
@@ -439,9 +440,45 @@ Win every other cup. Two need extra work:
 
 - **Cactuar Cup:** needs a Cactuar, Trap Pod S in Bikanel after Cactuar
   Hollow starts in Chapter 5.
-- **Aeon Cup:** needs all eight Fayth-fragment fiends finished and
-  released, including the Flame Dragon from Besaid. See
-  [Creatures](creatures.md#fiend-tales-and-releasing).
+- **Aeon Cup:** needs all eight [Fayth fragment](#fayth-fragments)
+  creatures levelled and released.
+
+#### Fayth fragments
+
+Eight creatures have a **Fayth fragment** instead of a Fiend Tale. Each
+one unlocks an Aeon in the Fiend Arena when you release it, and releasing
+all eight opens the Aeon Cup.
+
+1. **Trap it** and keep it in your roster. You don't have to fight with
+   it; the Large ones would take your whole party anyway.
+2. **Give it 5 Story Levels.** Every cup you win gives all your creatures
+   one, so do the others' cups while it sits in the roster. The end of
+   each of Chapters 1 to 4 gives one too, and so does any level it gains
+   in battle.
+3. **Check Creature History.** Once it's ready, its Story Level 1 tab says
+   "this fiend has a Fayth fragment!".
+4. **Release it.** The Aeon joins the Fiend Arena and you can fight it in
+   the Battle Simulator straight away, which is good EXP. You also get a
+   Trap Pod back.
+
+A creature that joins at level 99 can never level, so it can never be
+released this way. Catch them before your party gets that high, or in
+New Game Plus.
+
+| Creature | Size | Where and when | Unlocks |
+|----------|------|----------------|---------|
+| **Flame Dragon** | L | Besaid Island, Chapters 1 to 4 (Luca in Chapter 5, rarely) | Ifrit |
+| **Flan Blanco** | S | Moonflow or Bevelle (S, or SP: Flan), Chapter 2 on. Also Macalania Woods from Chapter 3, the Calm Lands and Luca | Shiva |
+| **Mycotoxin** | S | Mi'ihen Highroad or Zanarkand Ruins (S, or SP: Fungus), Chapter 3 on. Also Luca | Valefor |
+| **Machina Striker** | L | Thunder Plains, Chapter 5, after the New Cave | Ixion |
+| **Azi Dahaka** | L | Bevelle, Chapter 5 | Bahamut |
+| **Critical Bug** | M | Bevelle, Chapter 5, after you start the Via Infinito | Yojimbo |
+| **Aranea** | L | Bevelle, Chapter 5, after Cloister 20 of the Via Infinito | Anima |
+| **Jumbo Cactuar** | L | Bikanel Desert, Chapter 5, after Cactuar Hollow starts | The Magus Sisters |
+
+Some of these windows close in Chapter 5 (Flan Blanco's S pod in Bevelle
+and the Calm Lands, Mycotoxin's on the Mi'ihen Highroad); the
+[Creatures](creatures.md#where-to-trap-them) table has the details.
 
 Almighty Shinra and Mushroom Cloud beat nearly everything. The exception
 is **Trema** in the Farplane Cup, whose Defense makes the fight slow. It's
