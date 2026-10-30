@@ -25,6 +25,11 @@ whenever you like.
   have to be there. See
   [Creatures](creatures.md) and [Building the Team](creature-team.md).
 
+**Visit every Hotspot.** Only Gagazet and Zanarkand are required, but
+every area in Chapter 1 has scenes that count toward 100%, and most play
+just by arriving or walking through. The sections below follow the order
+that keeps the percent on track.
+
 **Order matters.** Each chapter ends when you finish its last Hotspot, and
 anything you skipped stays skipped. Zanarkand sends you straight into the
 Kilika finale, so finish everything else first.
@@ -322,13 +327,15 @@ the minimap, and shown on the door panel once you have all four.
 
 ## Djose Temple
 
+- **100%:** Djose's scenes all play on their own: the arrival, the
+  scene inside the temple, and Gippal. Just walk through them.
 - Wait for the line outside the tent to clear, then tell the receptionist
   "I want to dig!"
 - **Chest outside:** Phoenix Down. **Inside the temple:** an Al Bhed
   Primer on the floor of the Great Hall and an Echo Screen in the Living
   Quarters.
-- Talk to Gippal on the Pilgrimage Road and confirm. You get the **Letter
-  of Introduction**. A chest further south has 2 Potions.
+- Talk to Gippal on the Pilgrimage Road and tell him you're sure. You get
+  the **Letter of Introduction**. A chest further south has 2 Potions.
 
 ## Moonflow
 
@@ -344,6 +351,7 @@ mission without meeting Tobli and lose his scene.
   the front and one from the back.
 - **Don't let a bandit get away with a box.** If one does, reload and
   redo it. A clean run changes Tobli's later scenes and rewards.
+- **100%:** finishing the mission counts, perfect run or not.
 - Tobli gives the **Gun Mage Dressphere**, plus a **Circlet** and the
   **Helios Guard Garment Grid** for a perfect run.
 - Start the Gun Mage on **Mech Destroyer** for the Kilika boss.
@@ -353,12 +361,14 @@ mission without meeting Tobli and lose his scene.
 
 ## Guadosalam
 
-- **100%:** go to the top level and try to enter the Farplane.
+- **100%:** a short scene plays as you arrive. Then go to the top level
+  and try to enter the Farplane for another.
 - Walk down the hall from the Save Sphere to the Thunder Plains.
 
 ## Thunder Plains
 
-- The arrival scene is all you need.
+- **100%:** the arrival scene is all you need.
+- **Checkpoint:** 18% after it.
 - **South chests:** 3 Echo Screens, 2 Potions, **Black Choker**.
 - **North chests:** Phoenix Down, 2 Grenades, Ether.
 - **Steal:** Ochu, rare **Twist Headband**; Stalwart, rare **Gauntlets**.
@@ -388,10 +398,8 @@ magic. Escaping is fine.
 ### Mission: Follow That O'aka!
 
 - Go north to the Agency Front for the O'aka scene and an Al Bhed Primer.
-- Follow him by the sparkling path to skip most fights (one forced
-  Amorphous Gel at the old Celestial Mirror junction, which you can
-  escape). Past the Save Sphere go east, east again, then north. He's up
-  in the trees.
+- Follow him back to the Save Sphere, where he runs again. Go east, east
+  again, then north. He's up in the trees.
 - **100%:** find **O'aka**.
 - **Checkpoint:** 20% once you've found him.
 - **Let him hide aboard the Celsius.** Later 100% scenes depend on it.
@@ -414,17 +422,21 @@ magic. Escaping is fine.
   **Still of Night Garment Grid**.
 - **Steal:** Bolt Drake, rare **Yellow Ring**. **Drop:** Bolt Drake, rare
   **NulShock Ring**; Fly Eye, rare **Black Choker**.
+- **100%:** the Bikanel scenes play on their own as you go.
+- **Checkpoint:** 21% once the mission is done.
 - **Don't do extra digging yet.** Dig treasure powers up a later boss, and
   for 100% you'll want to beat it at a low level first.
 
 ## Bevelle
 
-- Walk the Highbridge for the Baralai scene.
+- **100%:** walk the Highbridge for the scenes with a priest and then
+  Baralai.
 - Ride the elevator in New Yevon HQ to the second floor and talk to
   Baralai again for a **Tiara**.
 
 ## Calm Lands
 
+- **100%:** a short scene plays the first time you enter.
 - Talk to the Open Air, Inc. or Argent, Inc. worker by the hover, open
   the Publicity menu and sign up. Either company is fine.
 - The man in the middle starts the **Marriage Campaign**. Say "Why not!?"
@@ -438,8 +450,9 @@ magic. Escaping is fine.
 
 ## Mt. Gagazet
 
-- To Garik's "Ronso not saved yet", answer **"We'll take care of Lian and
-  Ayde."**
+- **100%:** a short scene plays as you arrive.
+- There are eight Ronso to talk to, Kimahri included. To Garik's "Ronso
+  not saved yet", answer **"We'll take care of Lian and Ayde."**
 - Talk to **Kimahri** (more than once if needed) and answer "You have to
   learn to deal with these things!"
 - Answer the other Ronso this way. None of it is 100% yet, but it decides
@@ -459,12 +472,14 @@ magic. Escaping is fine.
 
 ## Zanarkand Ruins
 
+- **100%:** Zanarkand's scenes play on their own as you go through.
 - Talk to **Isaaru** up the hill; your answer doesn't matter.
 - **Dome chests:** **Mega Phoenix**, Phoenix Down.
 - **Drop:** Behemoth, **Circlet** (rare **Yellow Ring**).
 - In the Chamber of the Fayth, **Cid** asks if you have a bone to pick.
-  Answer **"You bet I do!"** It gives you two chances later (Thunder
-  Plains, Chapters 2 and 3) at a 100% scene instead of one.
+  Neither answer counts now. Answer **"You bet I do!"** anyway: it gives
+  you two chances later (Thunder Plains, Chapters 2 and 3) at a 100% scene
+  instead of one.
 - Talk to the researcher by Cid to free the monkeys. In the Great Hall,
   don't touch the monkeys (they steal gil), but open the chests:
   Hi-Potion, Phoenix Down, **Elixir**, 3 Remedies, Ether.
@@ -517,7 +532,9 @@ Getting every one right gives the **Menace of the Deep Garment Grid**.
 
 - You get the Chapter 1 **Fiend Tale bonus** (every creature you hold
   gains a Fiend Tale level) and **three Trap Pod SP**. Accept them.
-- **Checkpoint:** you should be at 25%.
+- **100%:** the end-of-chapter scenes play on their own.
+- **Checkpoint:** you should be at 25% (25.2% exactly; the game rounds
+  down).
 
 ## Sources
 

@@ -24,7 +24,7 @@ Creature Creator's "Develop Creature" just sends you to the same menu.
 
 Accessories can be fed too. Their **Feed** column is on the
 [Accessories](accessories.md) page. For which abilities are worth it, see
-[Building the Team](creature-team.md#what-to-teach).
+[Building the Team](creature-team.md#step-3-equip-and-feed-them).
 
 ## Items
 

@@ -76,3 +76,16 @@ Youth League vs New Yevon choice, Besaid/Kilika/Luca missions.
 - 2026-10-30: Moonflow escort third wave checked in game by the user: one
   bandit from the front and one from the back (we had "two from front and
   back"). In-game wins; both pages updated.
+- 2026-10-30: full Chapter 1 100% audit against every Jegged Story
+  Completion checkbox (pages 01 to 15; 01 Luca re-downloaded). All
+  checkbox items were already on the page. Added: "visit every Hotspot"
+  note, 100% markers for automatic scenes (Djose, Guadosalam arrival,
+  Thunder Plains, Bikanel, Bevelle, Calm Lands, Mt. Gagazet, Zanarkand,
+  chapter end), Shave the Hypello? completion as its own 100% item,
+  checkpoints 18% (after Thunder Plains) and 21% (after Bikanel), Cid's
+  answer doesn't count now, chapter end is 25.2%. Page-end expected totals:
+  3.4, 6.6, 8.8, 9.4, 11.2, 15.8, 16.8, 17.4, 18.0, 20.2, 21.0, 21.8, 22.2,
+  24.2, 25.2.
+- 2026-10-30: user checked in game that random battles aren't reduced on
+  the sparkling path during the O'aka chase. Removed the "skip most
+  fights / forced Amorphous Gel" claim (from Jegged); kept the directions.
