@@ -89,3 +89,4 @@ Youth League vs New Yevon choice, Besaid/Kilika/Luca missions.
 - 2026-10-30: user checked in game that random battles aren't reduced on
   the sparkling path during the O'aka chase. Removed the "skip most
   fights / forced Amorphous Gel" claim (from Jegged); kept the directions.
+- 2026-10-30: added a Making gil tip box (Moonflow section): Pilfer Gil targets ranked by Gil and Gil (stolen) from Jegged enemy pages, sell prices from accessories.yaml. Pilfer amounts not checked in game.

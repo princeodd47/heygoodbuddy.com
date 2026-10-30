@@ -359,6 +359,25 @@ mission without meeting Tobli and lose his scene.
   Protochimera, rare **Yellow Ring**.
 - **Drop:** Shell Shocker, **Black Ring** (rare **Titanium Bangle**).
 
+!!! tip "Making gil"
+    Rikku's Thief ability **Pilfer Gil** (30 AP) steals gil on top of what
+    an enemy drops. Like Steal, it only works once per enemy. The best
+    Chapter 1 targets:
+
+    | Enemy | Where | Gil | Pilfer Gil | Also |
+    |-------|-------|----:|-----------:|------|
+    | **Shell Shocker** | Moonflow | 780 | 1,300 | 860 EXP; drops a **Black Ring** (sells for 2,500) |
+    | **Amorphous Gel** | Macalania Woods, Calm Lands | 380 | 720 | 480 EXP; drops a **Blue Ring** (sells for 750) |
+    | **Ochu** | Thunder Plains | 133 | 290 | Rare Twist Headband |
+    | **Shantak** | Mi'ihen Highroad | 120 | 520 | Remedy steal |
+
+    Shell Shocker is the one to farm: a pilfered kill with a Black Ring to
+    sell is worth about 4,500 gil, and the EXP is the best in Chapter 1.
+    It's level 24 with 4,700 HP, so come back once your team is around
+    level 18 or higher. Amorphous Gel resists physical attacks and keeps
+    changing its weakness; the spell it casts tells you which element to
+    use (if it casts Blizzard, hit it with Fire).
+
 ## Guadosalam
 
 - **100%:** a short scene plays as you arrive. Then go to the top level
