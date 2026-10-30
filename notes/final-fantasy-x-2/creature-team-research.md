@@ -67,3 +67,62 @@ develop table omits it but its accessory page has it.
   Strike, Mercurial Strike grid, Speed Bracers.
 - Heavy Sallet (Large, Bikanel Ch. 5 after Cactuar Hollow) learns Quick
   Hit on its own; Logos (NG+) has Hail of Bullets.
+
+## Primalliquid Chapter 1 video (added 2026-10-29)
+
+### Source (researched 2026-10-29)
+
+- Primalliquid, "Final Fantasy X-2 How OVERPOWERED! Can You Get In
+  Chapter 1", https://www.youtube.com/watch?v=hcxPXGfBwdk (20:12,
+  uploaded 2020-11-06). Auto captions (en-orig) via yt-dlp; the user asked
+  for a write-up of this video.
+- Recorded on the PC version with the speed-up on. Total grind 174 h 13 m.
+
+### Caption fixes (checked against our data files)
+
+tom berry/tomboy = Tonberry; dive beak = Divebeak; flag/flak python = Flak
+Python; hal breeders = Hellbreeders (Gug, Tindalos ×2); black chandelier =
+Black Chandelier (Dark Elemental); megatonbury = Mega Tonberry (Tonberry the
+Ripper); humbaba behemoth = Humbaba (Elephant Eater team); mocking a panzer
+= Machina Panzer (No Mercy); alma = Elma; monotonics = Mana Tonics (Shady
+Duo drop); smooth shavings = Shmooth Shailing; rabbit's foot = Rabite's
+Foot; black law = Black Lore; ys alzad zero = YSLS-Zero; xanax = Zanarkand;
+beaconell = Bikanel; fifa drastic = Psychic.
+
+### Checks
+
+- Matches our data: Psychic is the first Standard Cup prize; Abominable
+  has a Ribbon gate; Chocobo Cup prizes; Youth League opens after 6 Grand
+  Cup: Hard wins and its prizes (Mascot, Tetra Bracelet, Defense Bracer,
+  Speed Bracer, Shmooth Shailing); Adamantite from the Machina Panzer tale;
+  Crystal Bangle from Machina Panzer; Mana Tonic from Mushroom Cloud and
+  Black Elemental; Black Tome from Yaibal and Black Lore from Lulu in the
+  arena; 60 Supreme Gems teach Ultima; Regal Crown teaches Darkness; Dark
+  Matter teaches Meteor.
+- Video says "these eight monsters" but names seven (Killer Hound is later
+  released). Page says seven.
+- Conflict: video uses Telekinesis from creatures in Psychic; Jegged's
+  Equipping Creatures page says a creature's Dressphere doesn't change its
+  abilities. Flagged on the page as something to test.
+- Conflict: video says Adamantite gives +100 Def/MDef; Jegged data says
+  +120. Page uses the data.
+- EXP figures (670, 852 Oversoul) and level-12 Telekinesis note are the
+  video's own numbers.
+
+### What went where
+
+The user decided not to build the video's Divebeak / Flak Python / Recoil
+team (they're doing the Impale Machina later), so the standalone page was
+deleted. Kept on Building the Team: Meteor /
+Full-Life / Turbo Black Magic / Ultima / Flare sources in What to teach,
+Simulator tips and the Psychic shortcut flag (Stage 2), Adamantite chain,
+and saving Speed Bracers and Shmooth Shailing for the Machina.
+- 2026-10-29: user asked to drop the Luca EXP farm from the page. Added a
+  tip at the top: every tournament gives a Trap Pod, win or lose.
+- 2026-10-29: page restructured into 19 numbered steps in play order at
+  the user's request. Team unlock counts per cup checked against
+  arena.yaml: Black Chandelier and No Mercy join Standard Cup: Hard at 3
+  wins, Hellbreeders at 4; Grand Cup: Hard adds Elephant Eater,
+  Hellbreeders, Shady Duo and Tonberry the Ripper at 3 wins; Lulu joins
+  the Youth League after 1 win. Unerring Path source corrected to Tromell
+  ×4 in Macalania (was "first Special Dressphere").

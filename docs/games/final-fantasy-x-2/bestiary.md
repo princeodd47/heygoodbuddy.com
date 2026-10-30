@@ -15,6 +15,10 @@ needs Lady Luck's Bribe ability. **Where** gives each place and the
 chapters it appears there; Fiend Arena enemies are on the
 [Fiend Arena](fiend-arena.md) page.
 
+Drops aren't guaranteed, and one enemy can drop more than one thing:
+an item listed after "also" was dropped in our game but isn't in the
+guides.
+
 Butterfingers (a creature on the Ray of Hope Garment Grid) makes every
 drop the rare one, and Master Thief always steals the rare one.
 

@@ -86,6 +86,19 @@ for m in re.finditer(r'<h3 id="[^"]+">(.*?)</h3>|<div[^>]*class="alert-heading">
     accs.append({'name': name, 'category': cat, 'effect': d.get('Effect', ''),
                  'feed': feed, 'sell': d.get('Sell Price', '').replace(' Gil', ''),
                  'where': '<br>'.join(where).replace('|', '/')})
+# Drops the user saw in game that the guides don't list. In-game data wins.
+IN_GAME_DROPS = {'Boris': ['Faerie Earrings']}
+for a in accs:
+    found = [e for e, items in IN_GAME_DROPS.items() if a['name'] in items]
+    if found:
+        parts = a['where'].split('<br>') if a['where'] else []
+        for i, w in enumerate(parts):
+            if w.startswith('*Drop:* '):
+                parts[i] = w + '; ' + '; '.join(found)
+                break
+        else:
+            parts.append('*Drop:* ' + '; '.join(found))
+        a['where'] = '<br>'.join(parts)
 cats = ['Attribute', 'Elemental', 'Status effect', 'Ability', 'Special']
 with open(os.path.join(out, 'accessories.yaml'), 'w', encoding='utf-8') as fh:
     fh.write('# Accessories by Jegged category. Effects, sell prices and sources from Jegged\'s\n'
@@ -321,7 +334,7 @@ if os.path.isdir(ENEMY_DIR):
         affin = '; '.join(f"{k}: {', '.join(v)}" for k, v in sorted(el.items()) if k != 'Weak')
         enemies.append({'name': name, 'level': stats.get('Level', ''), 'hp': stats.get('HP', ''),
                         'weak': ', '.join(el.get('Weak', [])), 'other': affin,
-                        'steal': pair(loot['Steal']), 'drop': pair(loot['Drop']), 'bribe': pair(loot['Bribe']),
+                        'steal': pair(loot['Steal']), 'drop': '; also: '.join([pair(loot['Drop'])] + IN_GAME_DROPS.get(name, [])), 'bribe': pair(loot['Bribe']),
                         'where': '<br>'.join(where).replace('|', '/')})
     dump('bestiary.yaml',
          '# Every enemy, alphabetical, from Jegged\'s bestiary pages. Steal and drop give the\n'

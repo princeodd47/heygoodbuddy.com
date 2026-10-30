@@ -63,3 +63,6 @@ copied; summaries could be a later page if wanted.
 
 Chapter 2: Bevelle (Kukulcan, YAC-13, YAU-28, YSLS-99 are Chapter 2 only),
 Youth League vs New Yevon choice, Besaid/Kilika/Luca missions.
+
+- Boris drop: user got Star Pendant and Faerie Earrings from one fight;
+  guides list only Star Pendant. Page shows both.

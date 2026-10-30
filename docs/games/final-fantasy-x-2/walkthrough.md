@@ -122,7 +122,7 @@ Save first. Part of this mission is timed and you only get one try.
 - **HP:** 480
 - **Weak:** fire, ice
 - **Steal:** Remedy
-- **Drop:** Star Pendant
+- **Drop:** Star Pendant and Faerie Earrings, both from one fight
 - Sticky End hits everyone for about 50 and causes Stop. Power Break and
   Armor Break make it short. The Red and White Rings cast Fire and
   Blizzard.
