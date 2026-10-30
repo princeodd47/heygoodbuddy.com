@@ -210,6 +210,44 @@ Put the three creatures in your normal party and fight on the Mi'ihen
 Highroad until they're around level 10. They get the EXP from field
 battles. The cups are rough before that.
 
+Besaid, the Moonflow and Macalania ([step 2](#step-2-collect-white-mage-and-the-chapter-1-grids))
+work too. So do these two:
+
+#### Mushroom Rock Road
+
+Enemies are levels 2 to 16, so it works from the start. Avoid the
+**Tonberry** (level 21, 9,999 HP) until you're much stronger, apart from
+one Steal for its Ether. Grab the **Turbo Ether** in the Ravine chest
+(one of three for Vigor).
+
+| Enemy | Steal | Feed it for |
+|-------|-------|-------------|
+| **League Ranger** | Phoenix Down (always) | **Life**: 3 Phoenix Downs |
+| **Gold Elemental** | Electro Marble (common) | **Thunder**: 3 Electro Marbles |
+| **Agama** | Remedy (rare) | **Esuna**: 3 Remedies |
+| **Bully Cap** | Remedy (rare) | **Esuna** |
+| **Sallet** | Light Curtain (rare) | **Protect**: 3 Light Curtains |
+| **Red Elemental** | Bomb Fragment (rare) | **Fire**: 3 Bomb Fragments |
+
+The League soldiers' Grenades aren't worth feeding.
+
+#### Kilika Island
+
+The first visit is the port only, with no fights, but its chests help:
+a **Light Curtain** and **Lunar Curtain** (Protect and Shell, 3 each), a
+**Star Curtain** (Reflect, 3), and a **Mana Tablet** (+5 MP when fed).
+The fights come in the forest and temple during the Awesome Sphere heist
+at the end of the chapter. Enemies there are levels 5 to 14. Escape from
+**Stalwart** (level 30).
+
+| Enemy | Steal | Feed it for |
+|-------|-------|-------------|
+| **Death Dauber**, **League Fighter**, **League Scout** | Phoenix Down (rare) | **Life** |
+| **Red Elemental** | Bomb Fragment (rare) | **Fire**: 3 Bomb Fragments |
+| **Yevon Guard**, **Yevon Defender** | Hi-Potion (rare) | Not worth it (Cura takes 33) |
+
+Kilika's best catch is Red Elemental itself, set from Shinra's menu.
+
 ## The early cups
 
 ### Step 5: Standard Cup ×3

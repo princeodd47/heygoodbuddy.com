@@ -132,3 +132,6 @@ and saving Speed Bracers and Shmooth Shailing for the Machina.
   the "before you leave Besaid" step, and fixed two walkthrough lines.
 - 2026-10-30: Moonflow and Macalania steal/levelling tips added to step 2,
   built from bestiary.yaml (Chapter 1 enemies) and feeding.yaml counts.
+- 2026-10-30: Mushroom Rock and Kilika level/steal tips added under step 4,
+  from bestiary.yaml Chapter 1 entries and walkthrough chest lists. Kilika's
+  Chapter 1 enemies all belong to the end-of-chapter heist.
