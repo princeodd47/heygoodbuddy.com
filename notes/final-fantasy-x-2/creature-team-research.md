@@ -130,3 +130,5 @@ and saving Speed Bracers and Shmooth Shailing for the Machina.
   Confirmed by Jegged's Trap Creature page (pick a location and a pod
   from the menu). Flame Dragon isn't special. Reworded step 1, removed
   the "before you leave Besaid" step, and fixed two walkthrough lines.
+- 2026-10-30: Moonflow and Macalania steal/levelling tips added to step 2,
+  built from bestiary.yaml (Chapter 1 enemies) and feeding.yaml counts.

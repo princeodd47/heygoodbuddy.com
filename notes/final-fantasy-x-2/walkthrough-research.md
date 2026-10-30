@@ -69,3 +69,7 @@ Youth League vs New Yevon choice, Besaid/Kilika/Luca missions.
 - 2026-10-30: Besaid opening reworded. Jegged's Besaid page describes the
   Promontory walk as a scene, not something you walk to; Gamer Guides
   doesn't mention it. Added the Besaid Key shop note (900,000 gil, skip).
+- 2026-10-30: user asked where the Waterfall Way cipher is. There isn't
+  one: Jegged and Gamer Guides both put ciphers at the Promontory, the
+  next (ruins) area, and two on the beach. Waterfall Way only has the
+  Chocobo Wings. Cipher bullets now numbered on both pages.

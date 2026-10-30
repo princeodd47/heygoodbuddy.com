@@ -84,14 +84,17 @@ starts after a few village scenes, which also count toward 100%:
 5. Collect the four ciphers that open the cave. They change every game,
    but the minimap marks them, and the cave door shows them once you have
    all four. In order of the areas:
-    - **Promontory:** on the stone structure to the right.
-    - **The next area:** climb up onto the structure on the right before
-      you walk under it.
-    - **Waterfall Way:** drop off the back of the wooden bridge to the
-      riverbed. The **2 Chocobo Wings** there are a start on Hastega.
-    - **Beach:** follow the child left and climb the ruins (chests with a
-      Hi-Potion and 1,000 gil around the back). The last cipher is up the
-      cliff at the far southwest end of the beach.
+    - **Cipher 1, Promontory:** on the stone structure to the right.
+    - **Cipher 2, the next area:** climb up onto the structure on the
+      right before you walk under it.
+    - **Waterfall Way** has no cipher, but drop off the back of the
+      wooden bridge to the riverbed for **2 Chocobo Wings**, a start on
+      Hastega. The cave door is on the left of the next path; pass it for
+      now.
+    - **Cipher 3, Beach:** follow the child left and climb the ruins. It's
+      at the top (chests with a Hi-Potion and 1,000 gil around the back).
+    - **Cipher 4, Beach:** up the cliff at the far southwest end of the
+      beach. Then go back to the cave door and enter the code.
 6. In the cave, talk to Wakka and ignore the second locked door. Equip
    the **Red Ring**, save, and touch the sphere on the pedestal.
 7. **Boss: Flame Dragon** (980 HP, weak to ice, absorbs fire). Flame
@@ -132,6 +135,20 @@ The grid is only for a perfect run of **"Shave the Hypello?"**.
    **Circlet** from Tobli, along with the **Gun Mage Dressphere** you
    get either way.
 
+**Level and steal on the way.** Moonflow's enemies are levels 4 to 16,
+a step up from Besaid once the creatures are near 10. The exception is
+**Shell Shocker** (level 24, 4,700 HP): escape from it. Worth stealing:
+
+| Enemy | Steal | Feed it for |
+|-------|-------|-------------|
+| **Takouba** | Phoenix Down (common) | **Life**: 3 Phoenix Downs |
+| **Agama** | Remedy (rare) | **Esuna**: 3 Remedies |
+| **Quadricorn** | Phoenix Down (rare) | **Life** |
+| **Flan Azul** | Fish Scale (rare) | **Water**: 3 Fish Scales |
+
+The bandits' grenades aren't worth feeding. The **Circlet** (Magic and Magic
+Defense +10) is a good accessory for Red Elemental.
+
 #### Unerring Path (Macalania Woods)
 
 1. Head into Macalania Woods. The Amorphous Gels here can hit everyone
@@ -143,7 +160,24 @@ The grid is only for a perfect run of **"Shave the Hypello?"**.
    Dressphere.
 
 Do this in Chapter 1. Full Throttle can still be had in Chapter 2, but
-the completion percent for it can't. The
+the completion percent for it can't.
+
+**Level and steal on the way.** Macalania is the best Chapter 1 spot to
+teach Red Elemental its elemental spells, and the enemies (levels 9 to
+20) suit creatures at 10 or more. **Amorphous Gel** (level 28) can hit
+everyone with magic; escape it unless you're stealing its White Ring.
+Grab the **Turbo Ether** chest on the sparkling path in Central, one of
+the three you need for Vigor.
+
+| Enemy | Steal | Feed it for |
+|-------|-------|-------------|
+| **Gold Elemental** | Electro Marble (common) | **Thunder**: 3 Electro Marbles |
+| **White Elemental** (Lake Macalania) | Antarctic Wind (common) | **Blizzard**: 3 Antarctic Winds |
+| **Xiphactinus** | Fish Scale (always) | **Water**: 3 Fish Scales |
+| **Red Elemental** | Bomb Fragment (rare) | **Fire**: 3 Bomb Fragments |
+| **Haizhe** | Phoenix Down (common) | **Life**: 3 Phoenix Downs |
+| **Sallet** (Lake Macalania) | Light Curtain (rare) | **Protect**: 3 Light Curtains |
+ The
 [walkthrough](walkthrough.md#macalania-woods) has the rest of Macalania.
 
 ### Step 3: Equip and feed them

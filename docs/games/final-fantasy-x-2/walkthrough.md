@@ -182,14 +182,16 @@ Give each creature a Garment Grid and a Dressphere before it fights.
 Find four ciphers to open the cave. They're random each game, marked on
 the minimap, and shown on the door panel once you have all four.
 
-- **Promontory:** the stone structure on the right.
-- **Next area:** climb onto the structure on the right before you pass
-  under it.
-- **Waterfall Way:** drop off the back of the wooden bridge to the
-  riverbed for **2 Chocobo Wings**.
-- **Beach:** follow the child left and climb the ruins. Around the back
-  of the ruins are chests with a **Hi-Potion** and **1,000 gil**. The last
-  cipher is up the cliff in the far southwest of the beach.
+- **Cipher 1, Promontory:** the stone structure on the right.
+- **Cipher 2, next area:** climb onto the structure on the right before
+  you pass under it.
+- **Waterfall Way:** no cipher here. Drop off the back of the wooden
+  bridge to the riverbed for **2 Chocobo Wings**. The cave door is on the
+  left of the next path; pass it for now.
+- **Cipher 3, Beach:** follow the child left and climb the ruins; it's at
+  the top. Around the back of the ruins are chests with a **Hi-Potion**
+  and **1,000 gil**.
+- **Cipher 4, Beach:** up the cliff in the far southwest of the beach.
 - **Achievement:** change each girl's Dressphere once in any battle here
   for Dressed for the Occasion.
 - **Cave:** talk to Wakka. Ignore the second locked door until Chapter 3.
