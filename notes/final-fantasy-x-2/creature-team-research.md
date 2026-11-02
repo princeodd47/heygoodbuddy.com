@@ -200,3 +200,12 @@ and saving Speed Bracers and Shmooth Shailing for the Machina.
 - 2026-11-02: user tips, added as a note box at the top of the page:
   Fiend Arena menu config Default -> Short (skips battles your team isn't
   in), and Config > ATB Speed: Fast.
+- 2026-11-02: Auto-Wall vs Vigor confirmed. Final Fantasy Wiki: Shell in
+  FFX-2 "halves magic damage and healing received", and the Vigor page
+  says its recovery is halved by Shell. Auto-Wall, Auto-Shell, Adamantite
+  and a worn Defense Bracer all give constant Shell. GameFAQs threads
+  (69030157, 69175270) say White Wind still heals in full; forum only, not
+  on the page. User's call: Auto-Wall is worth it anyway; the "don't" lines
+  became notes (steps 3, 13, 19).
+- 2026-11-02: Feeding page now lists every accessory (128, from
+  accessories.yaml feed field) under the 67 items, at the user's request.

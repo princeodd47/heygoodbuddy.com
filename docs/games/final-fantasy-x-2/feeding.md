@@ -22,8 +22,9 @@ Creature Creator's "Develop Creature" just sends you to the same menu.
   their own actions, so a short list of good moves beats a long one.
 - Creatures also learn some abilities by being hit by them in battle.
 
-Accessories can be fed too. Their **Feed** column is on the
-[Accessories](accessories.md) page. For which abilities are worth it, see
+Both tables below cover everything a creature can eat:
+[items](#items) and [accessories](#accessories). For which abilities are
+worth it, see
 [Building the Team](creature-team.md#step-3-equip-and-feed-them).
 
 ## Feeding gains
@@ -54,6 +55,23 @@ No guide documents the exact formula, but this much is known:
 |------|----:|---------|------|-----------|
 {% for i in ffx2_feeding['items'] -%}
 | **{{ i.name }}** | {{ i.qty }} | {{ i.teaches or "—" }} | {{ i.type or "—" }} | {{ i.gain or "—" }} |
+{% endfor %}
+
+## Accessories
+
+Grouped as on the [Accessories](accessories.md) page, which also lists
+where to find each one. **Feeds for** is the ability it teaches or the
+stats it adds.
+
+{% for c in ffx2_accessories.categories %}
+### {{ c.name }}
+
+| Accessory | Qty | Feeds for |
+|-----------|----:|-----------|
+{% for a in c.accessories -%}
+{% set f = a.feed.split(": ", 1) -%}
+| **{{ a.name }}** | {{ f[0] if f | length > 1 else "—" }} | {{ f[1] if f | length > 1 else (a.feed or "—") }} |
+{% endfor %}
 {% endfor %}
 
 ## Sources

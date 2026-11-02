@@ -224,7 +224,8 @@ want them wasting turns on. Teach these now if you have the items:
 | **Vigor** | 3 Turbo Ether | Everyone | One in a Mushroom Rock chest in Chapter 1; the rest come in [step 9](#step-9-grand-cup-hard-once) |
 
 **Vigor** heals half the creature's max HP for no MP. It's the single best
-thing to teach.
+thing to teach. Shell halves it to a quarter (see
+[step 13](#step-13-win-the-youth-league)).
 
 ### Step 4: Level to 10 on the Mi'ihen Highroad
 
@@ -443,9 +444,11 @@ Protect up; for Lulu, use Reflect or Shell instead.
       levelling, so you need 3 each for Tonberry and Red Elemental, then
       3 for each Machina later.
     - **Defense Bracer:** feed 3 for **Auto-Wall** (constant Protect and
-      Shell) on the starter team. Red Elemental may learn it on its own.
-      Don't teach it to the Machina
-      ([step 19](#step-19-set-up-the-impale-team)).
+      Shell). Red Elemental may learn it on its own. Shell halves all
+      healing a creature receives, so Vigor heals a quarter of max HP
+      instead of half. It's usually worth it anyway, since Protect and
+      Shell cut so much incoming damage. Adamantite and a worn Defense
+      Bracer give the same constant Shell.
     - **Shmooth Shailing:** don't farm it here.
 4. **Run from Ex-Crimson Squad.** Nooj, Gippal and Baralai join the
    bracket after your third win, and at this point you'll need to escape
@@ -622,7 +625,8 @@ Keep each Machina's ability list short so it spams Impale.
 - **Garment Grid:** Abominable for Ribbon and stats, Unerring Path for
   HP, MP and stats, or Higher Power for Break HP Limit and HP +50%
   (Chocobo Ranch dungeon, Chapter 5).
-- Don't teach **Auto-Wall** to a creature that relies on Vigor.
+- **Auto-Wall** halves Vigor's healing (Shell halves healing received),
+  but its Protect and Shell help against many more attacks.
 - **Weakness:** Impale is purely physical. Against a physical-immune
   enemy, swap one Machina for Mushroom Cloud.
 
