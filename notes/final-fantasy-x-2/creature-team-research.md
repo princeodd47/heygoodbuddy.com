@@ -150,3 +150,53 @@ and saving Speed Bracers and Shmooth Shailing for the Machina.
 - 2026-10-30: Terrible Sky (Rukh) note in step 6. User saw in game: normal attack petrifies, then a party-wide physical shatters the stone creatures. Jegged's Rukh page lists only Sonic Storm and Attack (arena version likely differs). Fix: Gold Anklet x2 (Stoneproof), Deep Haizhe steal or Guadosalam 5,000 gil.
 - 2026-10-30: user confirmed in game that Deep Haizhe appears on the Macalania forest paths and its steal is a Gold Anklet. Final Fantasy Wiki encounter lists: Deep Haizhe in only one Chapter 1 formation, many in Chapter 2. Terrible Sky note now says buy in Chapter 1.
 - 2026-10-30: added the gil table under the Terrible Sky note (step 6) so the cost and the farming sit together; Amorphous Gel first for Chapter 1.
+- 2026-11-02: Lulu clarified as New Game Plus only for trapping (user: many
+  sites leave this out). She's only a Youth League opponent in a first run.
+  Flare row and Creatures page "New Game Plus only" bullet updated.
+- 2026-11-02: user's Grand Cup: Hard plan added to step 12: farm Crystal
+  Bangles from No Mercy (Machina Panzer, drop every fight) until each
+  creature shows 9,999 HP wearing one bangle (worn: Max HP +100%), then
+  Magic Defense. User forgot which Simulator fight gave Magic Defense
+  items; the only Magic Defense feeds in the Jegged table are Oath Veil
+  (+1; Machina Panzer's steal, so the same fight), Minerva's Plate (+40;
+  Chocobo Cup), Shmooth Shailing and Iron Duke. Page names Oath Veil and
+  Minerva's Plate. Step 13 now says farm the Youth League for Speed and
+  Defense Bracers, not Shmooth Shailing (user's instruction). Step 2 says
+  Helios Guard and Unerring Path are for 100% (user never used them).
+- 2026-11-02: feeding gains (Feeding page, "How stat gains work"). No
+  formula found anywhere. Steam guide 898744691 (author's test plus
+  comments): the fed amount goes to base HP and percentage gear multiplies
+  what's shown; a commenter saw Iron Bangle feeds show more with Crystal
+  Bangles worn. GameFAQs 69219900 (search snippet only, page 403s): +137
+  per Crystal Bangle on a level 99 Tonberry, +40 on a Coeurl, +45 on the
+  same Tonberry about 50 levels earlier. User in game: level 60 Red
+  Elemental, ~1,100 base HP (2,200 shown with a bangle worn), +120 shown
+  from one Crystal Bangle until leaving the menu; at 9,999 shown (bangle
+  worn) a bangle gave only +42. The forum's level-based rise and the
+  user's drop at high HP don't agree; page says gains vary and can shrink.
+- 2026-11-02: user in game: HP feeding greys out once a creature shows
+  9,999 (gear included); unequip the Crystal Bangle to keep feeding.
+  Feeding page section renamed "Feeding gains". User confirmed Chocobo
+  learns Auto-Haste by levelling (level 40 is still Steam's number), so
+  Speed Bracers are for Tonberry, Red Elemental and the Machina.
+- 2026-11-02: re-checked walkthrough Chapter 1 against Jegged's 100%
+  checkboxes (sca.py): every item is covered. All Chapter 1 garment
+  grids are in the walkthrough except Raging Giant, which needs the
+  Besaid Key and stays available through Chapter 5.
+- 2026-11-02: "Mascot or Thief" subsection under step 13 (user, in game):
+  Mascot gives Ribbon and the best stats, Thief gives Mug; the user keeps
+  Thief while farming the Youth League. Abominable already gives Ribbon,
+  so Mascot's is redundant. Steam guide 898744691 (checked in game by its
+  author, 2022) agrees: Mascot = Ribbon, Thief = Mug + Initiative.
+  Tonberry has Ailment Def. innately (user); Jegged's auto-ability page
+  describes Ailment Def. and Ribbon with the same text ("guards against
+  all status ailments"). Red Elemental learns Auto-Regen and One MP Cost
+  by levelling, maybe Auto-Wall (user, in game; Auto-Wall unconfirmed).
+  Replaced the old "players report an MP-saving ability" line.
+- 2026-11-02: user, in game: at the bracer-farming stage, run from
+  Ex-Crimson Squad (Youth League, joins at 3 wins per arena.yaml). Running
+  in the first battle restarts the cup fastest; or fight the earlier
+  rounds for steals and run when you reach them. Added as step 13 item 4.
+- 2026-11-02: user tips, added as a note box at the top of the page:
+  Fiend Arena menu config Default -> Short (skips battles your team isn't
+  in), and Config > ATB Speed: Fast.

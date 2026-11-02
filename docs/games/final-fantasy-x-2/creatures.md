@@ -101,7 +101,10 @@ the arena; see the "Appears after" column on the
 - **Youth League only:** Lucil, Elma and Yaibal (Chapters 2 to 4) need the
   Awesome Sphere to have gone to the Youth League.
 - **New Game Plus only:** Leblanc, Logos and Ormi (Guadosalam), Lulu
-  (Besaid) and Kimahri (Mt. Gagazet), all with a Trap Pod SP.
+  (Besaid) and Kimahri (Mt. Gagazet), all with a Trap Pod SP. Many
+  guides list Lulu as a Besaid catch without saying so, but she can't be
+  trapped in a first playthrough. She only fights you as a Youth League
+  opponent there.
 
 ## Where to trap them
 

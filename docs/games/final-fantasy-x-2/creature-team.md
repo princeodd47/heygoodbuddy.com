@@ -13,6 +13,13 @@ The starter team wins the early cups and the Mascot Dressphere. Almighty
 Shinra and Mushroom Cloud clear the late cups. Then they farm the Iron
 Dukes that make the Machina the strongest team in the arena.
 
+!!! note "Change two settings first"
+    - **Fiend Arena config: Short.** In the Fiend Arena menu, change the
+      setting from Default to Short. It skips the battles your team isn't
+      in, which otherwise waste a lot of time and button presses on every
+      tournament run.
+    - **ATB Speed: Fast.** Set it in the main Config menu.
+
 !!! tip "Tournaments give Trap Pods"
     Every Fiend Arena tournament you play gives you a Trap Pod, whether you
     win or lose. If you're short on pods, enter a cup, even one you can't
@@ -43,11 +50,14 @@ free-pod trick.
 | **Tonberry** | Mushroom Rock Road (or Luca) | Hard hitter. High Strength |
 | **Red Elemental** | Kilika Island (or Luca, Mushroom Rock Road and Macalania Woods in Ch. 1 and 2) | Caster with high defenses |
 
-- **Chocobo:** you need one in the party to enter the Chocobo Cup. Players
-  report it learns Auto-Haste at level 40, and it can learn Choco Meteor.
-- **Tonberry:** players report it has Death Strike from the start.
-- **Red Elemental:** a pure caster. Players report it learns an MP-saving
-  ability at high levels.
+- **Chocobo:** you need one in the party to enter the Chocobo Cup. It
+  learns Auto-Haste on its own as it levels (players report level 40),
+  and it can learn Choco Meteor.
+- **Tonberry:** players report it has Death Strike from the start. It
+  also has **Ailment Def.** from the start, which guards against all
+  status ailments, the same as Ribbon.
+- **Red Elemental:** a pure caster. It learns **Auto-Regen** and **One MP
+  Cost** on its own as it levels, and possibly Auto-Wall.
 - **Flame Dragon:** set your Trap Pod L at Besaid Island. It's only on
   Besaid's list in Chapters 1 to 4, and it's one of the eight
   [Fayth fragment](#fayth-fragments) creatures the Aeon Cup needs. Once
@@ -55,10 +65,12 @@ free-pod trick.
 
 ### Step 2: Collect White Mage and the Chapter 1 grids
 
-Creatures get their abilities from their Garment Grid, so a better grid
-helps more than a few levels. You start with **First Steps** (Cure, and +5
-to Strength, Defense, Magic and Magic Defense) and Shinra's tutorial gives
-**Vanguard** (Armor Break, Strength +10, Magic +10). Pick these up next:
+You start with the **First Steps** Garment Grid (Cure, and +5 to
+Strength, Defense, Magic and Magic Defense) and Shinra's tutorial gives
+**Vanguard** (Armor Break, Strength +10, Magic +10). Pick these up next.
+The team can win without Helios Guard or Unerring Path, but every grid
+counts toward 100% and both can be missed in Chapter 1, so get them
+anyway:
 
 | Item | What creatures get | Where |
 |------|--------------------|-------|
@@ -315,7 +327,7 @@ element to use (Blizzard means hit it with Fire). See the
 |------|-----------|-----|
 | **Black Chandelier** | Dark Elemental | 600+ EXP, dies fast |
 | **Hellbreeders** | Gug, 2 Tindalos | 2,500+ EXP, good until about level 50 |
-| **No Mercy** | Machina Panzer | Decent EXP, drops a Crystal Bangle every time (+50 HP each when fed) |
+| **No Mercy** | Machina Panzer | Decent EXP, drops a Crystal Bangle every time, steal an Oath Veil ([step 12](#step-12-grand-cup-hard-6)) |
 
 **Psychic shortcut:** put all three creatures in the **Psychic**
 Dressphere for this farm. Psychic gives a creature **Telekinesis**, which
@@ -386,13 +398,30 @@ Bring a Chocobo. Prizes in order: **Regal Crown**, **Champion Belt**,
 
 ### Step 12: Grand Cup: Hard ×6
 
-Six wins open the **Youth League Tournament**. Play it a few times even
-before you can win, so its fighters show up in the Simulator. Three of
-them carry spells for Red Elemental:
+Six wins open the **Youth League Tournament**. Winning Grand Cup: Hard
+over and over takes HP and Magic Defense more than levels, so build both
+first in the Battle Simulator:
+
+1. **HP: farm Crystal Bangles from No Mercy.** Machina Panzer drops one
+   every fight. Feed them until each creature shows **9,999 HP while
+   wearing one Crystal Bangle**, then leave one equipped on each. A worn
+   Crystal Bangle doubles max HP, so you only need to feed each creature
+   to about 5,000. Red Elemental can wear Adamantite instead, which
+   doubles HP the same way. Once a creature shows 9,999, HP items are
+   greyed out until you unequip the bangle. Each bangle also gives less
+   as HP climbs; see [Feeding gains](feeding.md#feeding-gains).
+2. **Magic Defense: steal Oath Veils in the same fight.** Machina Panzer's
+   steal is an **Oath Veil** (Magic Defense +1 per one fed), so put Mug
+   on an attacker and you get a bangle and a veil from every win. Each
+   **Minerva's Plate** from the Chocobo Cup gives +40 in one go.
+
+With both, Grand Cup: Hard becomes a repeatable win. Play the Youth
+League a few times even before you can win, so its fighters show up in
+the Simulator. Three of them carry spells for Red Elemental:
 
 | Ability | Feed | Where |
 |---------|------|-------|
-| **Flare** | 1 Black Lore, or 40 Shining Gems | Lulu's rare drop (she joins after your first win) |
+| **Flare** | 1 Black Lore, or 40 Shining Gems | Lulu's rare drop. She joins the Youth League as an opponent after your first win there. You can only trap her as a creature in New Game Plus |
 | **Turbo Black Magic** | 2 Black Tome | Yaibal's rare drop |
 | **Ultima** | 60 Supreme Gem | Elma's rare drop or Lucil's rare steal. It takes a lot of fights |
 
@@ -402,16 +431,42 @@ Aim for the mid-50s. One player's team was 52, 54 and 52 after six to
 eight hours. **Nooj** is the biggest threat, then Baralai and Lucil. Keep
 Protect up; for Lulu, use Reflect or Shell instead.
 
-1. The first win gives the **Mascot Dressphere**. Put Mascot on every
-   creature from here on. It gives the biggest stat boost of any
-   Dressphere.
+1. The first win gives the **Mascot Dressphere**: the biggest stat boost
+   of any Dressphere, plus Ribbon. See [Mascot or Thief](#mascot-or-thief)
+   for when to use it.
 2. Later wins give a **Tetra Bracelet**, **Defense Bracer**,
-   **Speed Bracer** and **Shmooth Shailing**. Put them away instead of
-   feeding them now. Each Machina needs 3 Speed Bracers for Auto-Haste,
-   and Shmooth Shailing (+5 to every stat) is the only Agility source
-   besides Iron Dukes. Feeding is per creature, so anything the starter
-   team eats is lost to the Machina. Defense Bracers teach Auto-Wall,
-   which the Machina shouldn't learn ([step 19](#step-19-set-up-the-impale-team)).
+   **Speed Bracer** and **Shmooth Shailing**. After the fifth win, each
+   win gives one of the five prizes at random.
+3. **Keep winning it to farm bracers.** With the HP and Magic Defense
+   from step 12 you can win it repeatedly with some luck.
+    - **Speed Bracer:** feed 3 for **Auto-Haste**. Chocobo learns it by
+      levelling, so you need 3 each for Tonberry and Red Elemental, then
+      3 for each Machina later.
+    - **Defense Bracer:** feed 3 for **Auto-Wall** (constant Protect and
+      Shell) on the starter team. Red Elemental may learn it on its own.
+      Don't teach it to the Machina
+      ([step 19](#step-19-set-up-the-impale-team)).
+    - **Shmooth Shailing:** don't farm it here.
+4. **Run from Ex-Crimson Squad.** Nooj, Gippal and Baralai join the
+   bracket after your third win, and at this point you'll need to escape
+   that fight. If the bracket puts them in your path, run from your first
+   battle, whoever it's against, to restart the cup and save time. Or
+   keep fighting the rounds before them for the Mug steals, and run when
+   you reach them.
+
+#### Mascot or Thief
+
+A creature wears one Dressphere, so pick by what the fight is for:
+
+- **Mascot:** the highest stat gains of any Dressphere, and Ribbon.
+- **Thief:** **Mug**, which steals while it attacks, plus Initiative.
+  Wear it while you farm a cup, like the Youth League, so you Mug items
+  from the fighters on top of the prizes.
+
+Mascot's Ribbon often adds nothing. **Abominable** already gives a
+creature Ribbon, and **Tonberry** has Ailment Def. built in, which does
+the same job. So Mascot is mostly about the stats; switch to Thief
+whenever you want the steals.
 
 ## Chapters 2 to 5: the Machina
 
