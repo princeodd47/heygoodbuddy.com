@@ -209,3 +209,33 @@ and saving Speed Bracers and Shmooth Shailing for the Machina.
   became notes (steps 3, 13, 19).
 - 2026-11-02: Feeding page now lists every accessory (128, from
   accessories.yaml feed field) under the 67 items, at the user's request.
+- 2026-11-02: Varan route for Break limits added to step 18. Jegged
+  Creature History: Varan's tale ends with him as a Sphere Break player in
+  the Aurochs' locker room; his Cursed Core Sphere gives Enterprise.
+  Underground Core Sphere (Invincible) assumed to be there too from a
+  GameFAQs board post (918914/65898434) and GameFAQs walkthrough 81757
+  (Luca Ch 5): all three elites appear after Varan's tale. Varan trap:
+  Moonflow or Calm Lands, Ch. 3-5 (creatures.yaml).
+- 2026-11-02: loadouts at the user's request (starter end loadouts under
+  step 13, Machina and Mushroom Cloud in step 19). Slot rule (4 commands
+  + 4 auto-abilities innate; equipment abilities extra) from Steam guide
+  898744691. Final Fantasy Wiki pages: Machina Hunter ideal setup (Impale,
+  Vigor, Esuna, Life/Full-Life; BDL, BHL, First Strike, Auto-Haste;
+  Peerless + Mascot); Hunter innate Attack, Impale, Ailment Def.,
+  Lightning Eater; Wiki says Hunter capturable from Ch. 3 but Jegged
+  says Ch. 2 (page keeps Jegged). Tonberry: Ailment Def. + Deathtouch
+  innate; setup Vigor, Darkness, Life/Full-Life, Thief, Unerring Path,
+  Adamantite. Red Elemental innate Magic Up, Fire, Fire Eater; learns
+  Fira, Firaga, Auto-Regen, One MP Cost, Ribbon in battle. Chocobo arena
+  list: Meteor and Auto-Haste at 40. Mushroom Cloud: Pernicious Powder,
+  can't learn Ailment Def., Ultima at 60+ surviving strong magic, One MP
+  Cost at 80+ using a boost (Songstress), Black Tabard recommended.
+  Our choices: dropped Esuna from the Machina (Mascot gives Ribbon) to
+  keep the list short; Critical from Peerless grid; Life Preserver and
+  Auto-Wall as swaps.
+- 2026-11-02: user, in game: a creature with a free command slot relearns
+  Attack whenever a basic Attack hits it, so the Machina need Esuna in
+  the fourth slot (Black Sky takes it on one). Added to steps 3, 13
+  (Tonberry gets Esuna) and 19. User: Hero Drinks only come from the
+  final boss, so Critical by feeding is New Game Plus only; removed the
+  Hero Drink suggestions, Peerless is the Critical source.

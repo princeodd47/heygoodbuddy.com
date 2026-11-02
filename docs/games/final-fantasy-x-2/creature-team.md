@@ -214,8 +214,12 @@ Red Elemental stays the healer. From [step 7](#step-7-grind-in-the-battle-simula
 on, switch all three to Psychic for the Black Chandelier farm.
 
 Feed on the main menu's **Creature** screen (see [Feeding](feeding.md)).
-Creatures choose their own moves, so make them forget anything you don't
-want them wasting turns on. Teach these now if you have the items:
+A creature knows up to **4 commands and 4 auto-abilities** of its own.
+What its Dressphere, Garment Grid and two accessories give comes on top
+and doesn't use those slots. Creatures choose their own moves, so make
+them forget anything you don't want them wasting turns on, but keep the
+command slots full: a creature with a free slot relearns Attack the next
+time a basic Attack hits it. Teach these now if you have the items:
 
 | Ability | Feed | Who | Where to get the items |
 |---------|------|-----|------------------------|
@@ -457,6 +461,28 @@ Protect up; for Lulu, use Reflect or Shell instead.
    keep fighting the rounds before them for the Mug steals, and run when
    you reach them.
 
+#### End loadouts for the starter team
+
+Where the three should end up once the bracers are in. Make each one
+forget its other abilities to fit these in.
+
+| | Chocobo | Tonberry | Red Elemental |
+|-|---------|----------|---------------|
+| **Commands** | Meteor, Darkness, Vigor, Full-Life | Darkness, Vigor, Full-Life, Esuna | Ultima (Flare until then), White Wind, Full-Life, Vigor |
+| **Auto-abilities** | Auto-Haste (learned at about 40), Auto-Wall, First Strike, one open | Ailment Def. (built in), Auto-Haste, Auto-Wall, First Strike | Auto-Regen and One MP Cost (learned), Auto-Haste, Auto-Wall |
+| **Dressphere** | Mascot, or Thief to farm | Mascot, or Thief to farm | Mascot |
+| **Garment Grid** | Abominable (Ribbon) | Unerring Path | Protection Halo or First Steps |
+| **Accessories** | Crystal Bangle, Rabite's Foot | Crystal Bangle, Rabite's Foot | Adamantite, Minerva's Plate (off while levelling) |
+
+- **Darkness:** 1 Regal Crown each, from the Chocobo Cup.
+- **Meteor:** Chocobo learns it from Elephant Eater ([step 9](#step-9-grand-cup-hard-once))
+  or by levelling to about 40.
+- **First Strike:** 2 Sprint Shoes each.
+- **Command slots:** fill all four, or a creature hit by a basic
+  Attack relearns Attack and uses it in place of better moves (see
+  [step 19](#step-19-set-up-the-impale-team)). Keep Invincible and
+  Enterprise for the Machina ([step 18](#step-18-farm-iron-dukes)).
+
 #### Mascot or Thief
 
 A creature wears one Dressphere, so pick by what the fight is for:
@@ -606,29 +632,77 @@ Hope, Numerus drops **Invincible** (Break Damage Limit) and **Enterprise**
 Feed the Iron Dukes into the three Machina, Agility first, along with the
 Shmooth Shailings you saved.
 
+#### Break Damage Limit and Break HP Limit early
+
+Each Machina needs an **Invincible** (Break Damage Limit) and an
+**Enterprise** (Break HP Limit), and Mushroom Cloud needs an Invincible.
+You can get one of each from Chapter 3, long before Major Numerus:
+
+1. **Trap a Varan** (Trap Pod S, or SP set to Imp/Revenant) at the
+   Moonflow or the Calm Lands, Chapter 3 on.
+2. **Finish its Fiend Tale.** Varan then turns up as a Sphere Break
+   player in the Aurochs' locker room in Luca's stadium.
+3. **Beat his Cursed Core Sphere** for the **Enterprise**. The
+   **Underground Core Sphere** player there gives an **Invincible**. Both
+   are very hard, and one win each is enough.
+
+Other sources:
+
+- **Invincible:** a chest in Kilika's Island Base in Chapter 5, if you
+  said "Okay, thanks!" to the camera operator on the east docks in
+  Chapters 1, 3 and 5.
+- **Enterprise:** a chest in Chapter 2 if you skipped the Chapter 1
+  Moonflow mission. You can't get it if you did the mission.
+- **Both:** Major Numerus, until you put Ray of Hope on (above).
+- **Higher Power Garment Grid** (Ruin Depths, Chapter 5) gives Break HP
+  Limit while worn, so one Machina can do without an Enterprise.
+
 ### Step 19: Set up the Impale team
 
-Keep each Machina's ability list short so it spams Impale.
+Keep each Machina's ability list short so it spams Impale. Each one
+comes with Impale; the Machina Hunter also starts with Ailment Def. and
+Lightning Eater. Make it forget everything not in this loadout.
 
-| Teach | Feed | Why |
-|-------|------|-----|
-| **Vigor** | 3 Turbo Ether | Free self-heal |
-| **Auto-Haste** | 3 Speed Bracer | More turns |
-| **First Strike** | 2 Sprint Shoes | Act before the enemy |
-| **Break Damage Limit** | 1 Invincible | Impale past 9,999 |
-| **Break HP Limit** | 1 Enterprise | Survive big hits |
-| **Critical** | 1 Hero Drink | Guaranteed critical hits |
-| **Life Preserver** | 3 Safety Bit | No instant KO or petrify |
-| **Black Sky** | 1 Arcane Lore | On **one** Machina only. Its long animation doesn't stop the other two from acting. |
+**Keep all four command slots full.** If a Machina forgets Attack and
+has a free slot, the next basic Attack that hits it teaches it Attack
+again, and it uses Impale less often. Esuna fills the fourth slot.
 
-- **Dressphere:** Mascot.
-- **Garment Grid:** Abominable for Ribbon and stats, Unerring Path for
-  HP, MP and stats, or Higher Power for Break HP Limit and HP +50%
-  (Chocobo Ranch dungeon, Chapter 5).
+| Slot | Each Machina |
+|------|--------------|
+| **Commands** | Impale, Vigor (3 Turbo Ether), Full-Life (3 Mega Phoenix), Esuna (3 Remedy). On **one** Machina only, Black Sky (1 Arcane Lore) takes Esuna's slot: its long animation doesn't stop the other two from acting |
+| **Auto-abilities** | Break Damage Limit (1 Invincible), Break HP Limit (1 Enterprise), First Strike (2 Sprint Shoes), Auto-Haste (3 Speed Bracer) |
+| **Dressphere** | Mascot (Ribbon, best stats) |
+| **Garment Grid** | **Peerless** (Critical: every hit is critical; win the Aeon Cup three times). Until then, Abominable |
+| **Accessories** | Crystal Bangle (HP ×2), plus a second for what the fight needs |
+
+- **No Peerless yet:** wear **Higher Power** for Break HP Limit and
+  feed something else in that slot. A **Hero Drink** also teaches
+  Critical, but the only one comes from the final boss, so it's a New
+  Game Plus option.
+- **Life Preserver** (3 Safety Bit) stops instant KO and petrify. Swap it
+  in for First Strike if a fight keeps killing a Machina outright.
 - **Auto-Wall** halves Vigor's healing (Shell halves healing received),
-  but its Protect and Shell help against many more attacks.
+  but its Protect and Shell help against many more attacks. It needs a
+  slot, so it's a swap here too.
 - **Weakness:** Impale is purely physical. Against a physical-immune
-  enemy, swap one Machina for Mushroom Cloud.
+  enemy (Aeshma, Protean Gel), swap one Machina for Mushroom Cloud.
+
+#### Mushroom Cloud with two Machina
+
+| Slot | Mushroom Cloud |
+|------|----------------|
+| **Commands** | Pernicious Powder (built in), Ultima, Vigor, Full-Life |
+| **Auto-abilities** | Break Damage Limit, Auto-Haste, First Strike, One MP Cost (learned at 80) |
+| **Dressphere** | Mascot. It can't learn Ailment Def., so it needs Mascot's Ribbon |
+| **Garment Grid** | Black Tabard (Turbo Black Magic, and Flare; Moonflow, Chapter 4) |
+| **Accessories** | Crystal Bangle, plus Minerva's Plate for Magic (it blocks EXP, so only once it's levelled) |
+
+- **Ultima:** 60 Supreme Gems, or it learns it at level 60 or higher by
+  surviving a strong magic attack.
+- **One MP Cost:** it learns it at level 80 or higher by using a boost
+  like Magic Up, which the Songstress Dressphere gives it. Until then,
+  use Break HP Limit or Life Preserver there.
+- The two Machina keep the loadout above.
 
 ## Sources
 
