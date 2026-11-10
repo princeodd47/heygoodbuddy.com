@@ -18,8 +18,9 @@ nuyen and Karma. See [Tips](tips.md) for getting started.
 
 ### Stoker's Coffin Motel (Redmond Barrens)
 
-- Pay **Stoker 250 nuyen** for Michael's belongings. Short on money? Take
-  Gunderson's easy runs at the Jump House.
+- Pay **Stoker 250 nuyen** for Michael's belongings. Short on money? Go
+  northwest to the **Jump House** and take Gunderson's courier and escort
+  runs. **Skip his ghoul run for now**: ghouls are too tough this early.
 - You get a scented letter from Tabatha Shale, a DocWagon wristband, an
   Allegiance Alpha cyberdeck, holopix of Dr. Ivanna Haversheen and
   Mr. Caleb Brightmore, and a credstick with 500 nuyen.
@@ -38,9 +39,12 @@ nuyen and Karma. See [Tips](tips.md) for getting started.
     The first real fight. Bring a healer, your best armor and heaviest
     weapons. Shamans: cast Rockskin first.
 
-- **Boris Errascoe** sells you information: Michael bought weapons and a
-  truck as "Owlfeather," and **Mako Sachou** of Renraku was hunting him.
-- A Renraku Strike Team attacks inside, then two tough goons outside.
+- Pay **Boris Errascoe** for his story (sources say 100 or 500 nuyen).
+  Michael bought weapons and a truck as "Owlfeather," and **Mako Sachou**
+  of Renraku was hunting him. Boris also tells you where to find
+  Owlfeather.
+- A Renraku Strike Team attacks inside, then two tough goons outside. You
+  may not be strong enough to win yet.
 
 ### Downtown Seattle
 
@@ -49,6 +53,8 @@ nuyen and Karma. See [Tips](tips.md) for getting started.
 - **Icarus Descending** (just above the hospital): Caleb Brightmore says
   Michael's team was hired to find a cave. Caleb was a front for an elf
   named **Frosty**, who's often in the Puyallup Barrens.
+- Back at the **Tarislar City Inn**, ask about Frosty. The owner says she
+  belongs to the **Sinsearach elves**.
 
 You now have two leads: Mako Sachou and Frosty. Either order works. This
 walkthrough does Sachou first.
@@ -59,8 +65,8 @@ walkthrough does Sachou first.
 
 - Ask Mortimer Reed about Sachou: he's hiding at Club Penumbra, the
   building with plants out front.
-- You need a **reputation of about 3** to get in. Pay the **75 nuyen**
-  cover and find Mako at a corner table.
+- You need a **reputation of 4** to get in (one source says 3). Pay the
+  **75 nuyen** cover and find Mako at a corner table.
 
 !!! danger "Boss: four Renraku elites"
     Aim for skill 7 in Firearms, Sorcery or Melee, two hired runners, and
@@ -72,9 +78,10 @@ walkthrough does Sachou first.
 ### Ito Ogami
 
 - The new project director, **Ito Ogami**, stays at the **Gates Undersound
-  Hotel** (Downtown). He's gone to a meeting at **Matchsticks**.
+  Hotel** (Downtown). The owner says he's gone to a meeting at the
+  **Matchstick** nightclub, also Downtown.
 
-!!! danger "Boss: Ito Ogami and Renraku elites (Matchsticks)"
+!!! danger "Boss: Ito Ogami and Renraku elites (Matchstick)"
 
 - Loot Ogami's body and the papers: holopix of Michael with a cybered
   Amerindian, a photo of the death scene, reports on **Stark** and
@@ -87,46 +94,57 @@ Do one or both.
 - **Matrix:** jack into Ogami's system. Its ICE includes **Tar Pits, which
   delete programs for good**. Read the Management, Project and
   Confidential files.
-- **Renraku run (no pay):**
+- **Renraku run (no pay):** in the Renraku Arcology, go through the
+  building at the top of the escalator.
     1. 2nd floor: use the computer station with Electronics to shut down
        security.
-    2. 6th floor, **left elevator**: open the safe for the envelope marked
-       **ELLISIA**. Inside is an animal-hide map overlay.
+    2. 6th floor, **left elevator**: open the safe in the **northwest
+       corner** for the envelope marked **ELLISIA**. Inside is the **Map
+       Overlay**, an animal-hide map.
     3. When the alarm goes off, fight or hide until it stops, then leave
        from the 1st floor.
 
 ## 3. Finding Frosty
 
-Frosty is in the Salish-Shidhe. You need a **permit from Council Island**
-to enter.
+Frosty is in the Salish-Shidhe. Cabs won't take you there without an
+**Indian Lands Visa**.
 
-- If the background check fails because you were caught on a Corp run, see
-  **Sgt. Chillicut**. Or have **Sharkey** drive you to the Sinsearach.
+| Way in | Nuyen | Notes |
+|--------|-------|-------|
+| Passport Lodge, Council Island | 500 | Needs a clean record |
+| Boris, Greenhouse, Redmond Barrens | 1,000 | Forged |
+| Sharkey | 3,000 to the Salish-Shidhe, 5,000 to the Sinsearach | A ride, no visa needed. Meet him through Capt. Quinton Jaymes (1,000, via Julius Strouther at the Matchstick), then pay 2,800 to meet Sharkey. |
+
+- Got a record from a Corp run? Henry J. Culver (2,500) or Sgt. Chillicut
+  (5,000) can delete it.
 - To reach the **Amerindian village**: from the highway go south, then
   east, and cross the bridge.
-- **David Owlfeather** asks you to bring home his brother **Aragorn**. Do
-  it: he gives you the name of an ally you need later.
+- **David Owlfeather**, in the village's largest building, asks you to
+  bring home his brother **Aragorn**. Do it: he gives you the name of an
+  ally you need later.
 
 ## 4. Aragorn and Spirit Eyes
 
 ### Rescue Aragorn (Mitsuhama)
 
-- Mortimer Reed says Aragorn was caught on a solo run against Mitsuhama.
-- Run the **Mitsuhama offices** (Penumbra District, north side). Aragorn
-  is on the **5th floor, right elevator**. Clear the way and he escapes on
-  his own.
+- Boris says Aragorn took a run for a local Johnson. **Mortimer Reed** at
+  the **Big Rhino** (Penumbra District) says Mitsuhama caught him.
+- Run the **Mitsuhama offices**, just north of the Big Rhino. Take the
+  **northeast elevator** to the **5th floor**. Aragorn is near the middle.
+  Clear the way and he escapes on his own.
 - Back at the village, David names **Spirit Eyes**.
 
 ### Spirit Eyes' Ritual
 
-At the **Medicine Lodge** on Council Island, ask for the wisest one to get
-a pass to Spirit Eyes. He needs three things:
+At the **Medicine Lodge** (northeast Council Island), ask for the "most
+wise one" and you're taken out a side door to Spirit Eyes. He needs three
+things. **The horn and pelt only drop after he asks for them.**
 
 | Ingredient | Where |
 |------------|-------|
-| Gargoyle's horn | Where ghouls gather. Try the northeast building in the Redmond Barrens. |
-| Hell hound skin | The Sinsearach. Renraku hell hound patrols also drop it. |
-| Living scale of a feathered serpent | Salish-Shidhe caves (below) |
+| Gargoyle Horn | Gargoyles in Salish-Shidhe caves or abandoned warehouses, such as the one in the Redmond Barrens |
+| Hell Hound Pelt | Hell hounds in the Salish-Shidhe, or random encounters in the city |
+| Feathered Serpent's scale | Salish-Shidhe caves (below) |
 
 ### The Feathered Serpent
 
@@ -142,6 +160,7 @@ a pass to Spirit Eyes. He needs three things:
 4. Through the next west exit, the dragon is fighting Renraku. **Kill the
    humans first, then fight the dragon.**
 5. Answer **Licourtrix** honestly. He bonds with you and gives you a scale.
+6. To leave the Sinsearach, pay the gate man **1,000 nuyen** for a lift.
 
 Take all three to Spirit Eyes. His ritual shows **Thon**, the
 jackal-headed demon who killed Michael.
@@ -159,26 +178,37 @@ corner of the map.
 
 Ask the elders for a chance to prove yourself.
 
-1. **Trial of Friendship:** go back to the Amerindian village, on foot or
-   by helicopter, and give **Buffalo Woman** the elders' gift.
+1. **Trial of Friendship:** Lady Gillian gives you a gift for **Red
+   Buffalo Woman** in the Amerindian village. She gives you one back for
+   Lady Gillian.
 2. **Trial of Rescue:** free **Ilene Two Fists** from **Hollywood
-   Correctional**. Caleb knows where she is.
-    - Get in without a fight through Sgt. Macklemann, Sgt. Chillicut or
-      Henry J. Culver, or fight your way in.
-    - She's in the **northwest-most cell**.
-    - Afterward you can hire her at the Jump House.
-3. **Final Test:** make the promise. With Spirit Eyes' ritual done, the
-   elders tell you about Thon, Ellisia and Frosty.
+   Correctional** (Redmond Barrens). Caleb knows where she is.
+    - Get in without a fight by paying a contact, or fight your way in.
 
-**Frosty** then names her employer: **Harlequin**, at the Tarislar Garden
-Apartments in the Puyallup Barrens.
+        | Contact | Nuyen |
+        |---------|-------|
+        | Henry J. Culver (Ork gang leader, Puyallup Barrens) | 1,500 |
+        | Sgt. Chillicut (via Caleb Brightmore) | 3,000 |
+        | Sgt. Macklemann (via Alessandro Hobbs) | 5,000 |
+
+    - She's in the **northwest cell**, behind a **level 5 Maglock**. Pick
+      it with Electronics, or buy a level 5 Maglock Passkey from Alessandro
+      Hobbs (20,000) or Max (42,000).
+    - Afterward you can hire her at the Jump House.
+3. **Final Test:** promise to aid, defend and respect the Sinsearach. With
+   Spirit Eyes' ritual done, the elders tell you about Thon, Ellisia and
+   Frosty.
+
+**Lady Gillian** takes you to **Frosty**, who names her employer:
+**Harlequin**, at the Tarislar Garden Apartments in the Puyallup Barrens.
 
 ## 6. Harlequin and the Final Battle
 
 1. Harlequin explains Thon, **Vigore** and **Jarl**, and asks you to find
    them.
-2. Ask **Gunderson**. The rebels' base is in the **Rat's Nest** (Redmond
-   Barrens). Vigore and Jarl aren't there, but you find a **map**.
+2. Ask **Gunderson**. The rebels' base is the **Rat's Nest**, in the
+   southwest corner of the Redmond Barrens. Vigore and Jarl are gone, but
+   you find the **Landmark Map**.
 3. Take the map to Harlequin.
 
 ### Before the Tomb
@@ -188,7 +218,8 @@ There's no coming back, so bring your best:
 - **Heavy Combat Armor for all three runners.** The Yakuza contact sells
   it.
 - Your strongest runners, guns and spells.
-- Medkits and spell foci.
+- Medkits, spare clips and spell foci.
+- Harlequin flies you to Ellisia's Tomb.
 
 !!! danger "Final Boss: Thon, Vigore and Jarl"
     - Attack the moment you enter.
@@ -198,7 +229,42 @@ There's no coming back, so bring your best:
       anyone who falls. He heals about as fast as you hurt him.
     - Hold on until **Licourtrix** arrives and helps you finish him.
 
+## Side Quests
+
+### Stark's Run
+
+Stark, Michael's best friend, survived. Saving him gets you a strong
+Samurai who **joins for free**.
+
+1. On the way to the Sinsearach, take the **east fork** to a shaman's hut.
+   Stark is there, badly hurt. Magic can't fix his cyberware.
+2. Dr. Haversheen flies him to Seattle General Hospital and asks you to get
+   him a new heart.
+3. Run the **Fuchi offices** (Penumbra District). A security terminal on
+   the 1st floor shows where the heart is. The **Prototype Cyber-heart**
+   is in a safe on the **east side of the 3rd floor**.
+4. Take it to Dr. Haversheen. Stark recovers.
+5. Hire him at **Underground 93** in the Puyallup Barrens.
+
+### CHERNOBYL
+
+A Matrix run worth **50,000 nuyen**. Each of these Corp systems has part
+of the passcode **CHERNOBYL** in one datastore. Read all five:
+
+| System | Datastore |
+|--------|-----------|
+| Ares | Confidential Data |
+| Aztechnology | Confidential Data |
+| Fuchi | Security Files |
+| Mitsuhama | Confidential Data |
+| Renraku | Confidential Data |
+
+Then log into the **UCAS Fed. Gov.** system with CHERNOBYL and read its
+**System Files** to delete a virus. Its ICE is the deadliest in the game.
+
 ## Sources
+
+- [Mike's RPG Center: Shadowrun Walkthrough](https://www.mikesrpgcenter.com/shadowrun/walkthrough.html)
 
 - [RPGClassics Shadowrun Shrine: Walkthrough](https://shrines.rpgclassics.com/genesis/shadowrun/walkthrough.shtml)
 - [StrategyWiki: Shadowrun (Sega Genesis) Walkthrough](https://strategywiki.org/wiki/Shadowrun_(Sega_Genesis)/Walkthrough)

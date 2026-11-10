@@ -18,6 +18,35 @@ search-result excerpts.
 - StrategyWiki FAQ (search excerpt): Magic = Essence rounded down.
 - GameFAQs board threads (search excerpts): Shaman is the strongest pick;
   claims that a Datajack costs no Magic.
+- Mike's RPG Center (2026-11-09): armor, weapons, items, cyberware,
+  cyberdecks, programs, contacts and shadowrunners pages. Added: gear
+  before ghoul runs, the silencer/alarm rule, Datajack prices elsewhere,
+  the Cyber Shack PCD-500 upgrade, Ricky at the Jackal's Lantern, the Ork
+  Armband and other gang items, the Weapon Permit, shop-discount contacts,
+  Wilma Temmenhoff's programs and the CHERNOBYL payday. Prices are at
+  Negotiation 0. Maps were deliberately not copied.
+- GameFAQs via Chrome (2026-11-10), three guides compared:
+  - **Also_Eller** (v0.97): the only one with program prices. Size table
+    (Small/Medium/Large) with price per level by Negotiation, and each
+    program's size and shop. Shops match Mike's RPG Center. Note: Eller's
+    text says Medium is 2x and Large 3x Small, but his tables show 1.5x
+    and 2x; the page uses the tables. Also: try Deception before Attack,
+    files are 30-40 Mp.
+  - **The_Key_of_E** (v1.1): Matrix run pay and Karma by difficulty and
+    Johnson, the fence is Roscoe the Fixer, re-jacking the same passcode to
+    farm data, Computer 5 for easy runs and 7 for hard, selling the starter
+    pistol and buying the Predator in the Renraku Arcology.
+  - **Skarr** (Final): terminals (ATM-like) are where you jack in, call cabs
+    and phone contacts; terminal menu options; programs carry between decks.
+    Cabs "cost a little nuyen", no number.
+- Random encounters (2026-11-10): Skarr's events list (street, corp
+  building and Salish-Shidhe events, Lone Star's 500 bribe, Mafia keeps
+  Lone Star away, the slow-walk warning sign, don't leave the screen with
+  a downed runner). Eller: gang protection items may do little, ghoul
+  runs mean wandering an abandoned building, escort attackers target you.
+  RPGClassics shadowruns page: runs are randomly generated from templates,
+  with random encounters "same as on the street." The_Key_of_E: run from
+  Halloweeners early.
 - **In-game (2026-11-09, from the player):** the Shaman starts with **1
   Fetish**, and it sells for **257 nuyen**. This overrides a search excerpt
   of the RPGClassics magic page that said 10.
@@ -29,10 +58,18 @@ search-result excerpts.
   it rounds up (no loss). Check Magic in-game before and after a Datajack.
 - **What lost Magic does.** RPGClassics says Magic caps the spell level you
   can learn. Unconfirmed whether it affects casting already-known spells.
+- **Cab fares.** No source gives a number; Skarr says "a little nuyen."
+  Program prices are now on the page (Eller). The player had
+  139 nuyen after the Datajack and couldn't tell if that covered a cab
+  and a program.
+- **How you get named-system passcodes** outside of runs. The_Key_of_E
+  says you get them later in the game; how isn't covered.
+- **Encounter rules.** No source gives encounter odds, whether they vary
+  by district or time, or what makes enemies leave. Eller dropped his
+  random-encounter section. Leaving the screen probably ends an attack,
+  but that's unconfirmed, so the page doesn't say it.
 - **Samurai starting gear.** RPGClassics says hand razors and "retractable
   finger claws" (maybe Spurs). The page only lists Hand Razors.
-- **Hired runner to strip.** Before I Play says "the first bar"; vegetaman
-  names Ricky. Which bar and runner isn't confirmed.
 
 ## Held back
 
@@ -41,4 +78,6 @@ Nothing.
 ## Already on the page
 
 Archetype choice, Stoker fee and belongings, selling the Fetish, cyberware and
-Magic, money tricks, Karma costs, Shaman spells, Matrix programs, debug code.
+Magic, money tricks, Karma costs, Shaman spells, Matrix Runs (shopping list, programs, ICE, deck upgrades),
+random encounters (Lone Star, choice events, corp building events), debug
+code.
