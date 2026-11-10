@@ -63,7 +63,7 @@ Scarlett's Divine Blessing and Sanatio's Hastened Heal.
     | Yahna | Active | Trinity Rain | None |
     | Yahna | Passive | Quick Cast | Start of battle |
     | Yahna | Passive | Hawk Eye | None |
-    | Sanatio | Active | Limited Heal | None |
+    | Sanatio | Active | Overheal | Anyone below 75% HP |
     | Sanatio | Passive | Quick Impetus | Target Yahna |
     | Scarlett | Active | Curing Call | Anyone below 75% HP |
     | Scarlett | Passive | Sorcerous Connection | Target Yahna |
@@ -80,9 +80,7 @@ Scarlett's Divine Blessing and Sanatio's Hastened Heal.
     mock battle that Hawk Eye fires on the cast itself, not when Yahna starts
     charging. Quick Impetus costs 4 PP, so Sanatio needs the Hood and the
     Lapis Pendant to reach it. If the enemy has a Thief with Sneaking Edge,
-    check that a barrier doesn't use up her PP first. Limited Heal is
-    assumed to come from Euros' Staff; if it doesn't show up for Sanatio,
-    use Overheal on her own row instead.
+    check that a barrier doesn't use up her PP first.
 
 ### 2. Hilda: Dragoon Dive
 

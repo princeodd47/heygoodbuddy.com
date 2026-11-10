@@ -60,8 +60,9 @@ wasn't needed.
   Lens (Hawk Eye, 2 PP: truestrike and guaranteed crit) and a Sapphire
   Pendant, replacing her Sorcerer's Medallion and Lapis. Quick Cast plus
   Hawk Eye = 4 PP. Not yet verified in-game: Hawk Eye firing on the cast
-  rather than the charge start, a Sorceress equipping the Lens, and Limited
-  Heal coming from Euros' Staff.
+  rather than the charge start, and a Sorceress equipping the Lens.
+- **From the user:** Limited Heal is a Wereowl class skill, not from Euros'
+  Staff. Sanatio uses Overheal in squad 1 instead.
 - Trinity Rain: Millennium Scepter (Divine Shards). Quick Cast gives max
   initiative, -50% crit. White Cat-Ear Hood's Quick Impetus lets the caster
   act again, skipping the charge. Familiar's Choker = Sorcerous Connection,
