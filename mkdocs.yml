@@ -180,6 +180,10 @@ nav:
           - Card Interactions: games/flesh-and-blood/interactions.md
           - Practice Quiz: games/flesh-and-blood/quiz.md
           - Glossary: games/flesh-and-blood/glossary.md
+      - Shadowrun:
+          - games/shadowrun/index.md
+          - Tips: games/shadowrun/tips.md
+          - Walkthrough: games/shadowrun/walkthrough.md
   - Articles:
       - blog/index.md
   - Tags: tags.md

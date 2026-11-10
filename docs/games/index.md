@@ -88,4 +88,12 @@ hide:
     **Genre:** Judge exam study<br>
     **Release Date:** October 11, 2019
 
+-   :material-lightning-bolt:{ .lg .middle } __[Shadowrun](shadowrun/index.md)__
+
+    ---
+
+    **System:** Sega Genesis<br>
+    **Genre:** Action RPG<br>
+    **Release Date:** 1994
+
 </div>
