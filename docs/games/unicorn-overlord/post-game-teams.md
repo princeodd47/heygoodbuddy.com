@@ -39,22 +39,22 @@ listed is in exactly one squad.
 ### 1. Alain: Trinity Rain
 
 A magic nuke that hits the whole enemy side three times before most enemies
-act. Yahna starts the battle with Quick Cast, Ramona's White Cat-Ear Hood lets
-her act again right away so the charge skips a turn, and Scarlett's
-Familiar's Choker adds +50% magic attack to the cast. Three hits burn through
-evasion passives on Thieves and Werefoxes. Alain and Celeste clean up and
-tank.
+act. Yahna starts the battle with Quick Cast, Sanatio's White Cat-Ear Hood
+lets her act again right away so the charge skips a turn, and Scarlett's
+Familiar's Choker adds +50% magic attack to the cast. The Sniper's Amber
+Lens gives Yahna Hawk Eye, so the cast is a truestrike and a guaranteed
+crit and can't be dodged. Alain and Celeste clean up and tank.
 
 | Row | Unit | Class | Equipment |
 | --- | --- | --- | --- |
 | Front | Alain | High Lord | Holy Unicorn Blade, Holy Unicorn Shield, Ring of the Unicorn, Lapis Pendant |
 | Front | Celeste | Gryphon Master | Boreas' Axe, Heavenwyvern Reins, Elite Beret, Royal Scarf |
 | Back | Scarlett | High Priestess | Kingstaff Albiore, Familiar's Choker, Ring of the Maiden |
-| Back | Yahna | Sorceress | Millennium Scepter, Sorcerer's Medallion, Lapis Pendant, Carnelian Pendant |
-| Back | Ramona | Wereowl | Euros' Staff, White Cat-Ear Hood, Lapis Pendant, Holy Unicorn Signet |
+| Back | Yahna | Sorceress | Millennium Scepter, Sniper's Amber Lens, Sapphire Pendant, Carnelian Pendant |
+| Back | Sanatio | Featherstaff | Euros' Staff, White Cat-Ear Hood, Lapis Pendant, Holy Unicorn Signet |
 
-**Start-of-battle skill:** Yahna's Quick Cast. Turn off Alain's Rapid Order
-and Scarlett's Divine Blessing.
+**Start-of-battle skill:** Yahna's Quick Cast. Turn off Alain's Rapid Order,
+Scarlett's Divine Blessing and Sanatio's Hastened Heal.
 
 ??? note "Tactics"
 
@@ -62,8 +62,9 @@ and Scarlett's Divine Blessing.
     | --- | --- | --- | --- |
     | Yahna | Active | Trinity Rain | None |
     | Yahna | Passive | Quick Cast | Start of battle |
-    | Ramona | Active | Limited Heal | None |
-    | Ramona | Passive | Quick Impetus | Target Yahna |
+    | Yahna | Passive | Hawk Eye | None |
+    | Sanatio | Active | Limited Heal | None |
+    | Sanatio | Passive | Quick Impetus | Target Yahna |
     | Scarlett | Active | Curing Call | Anyone below 75% HP |
     | Scarlett | Passive | Sorcerous Connection | Target Yahna |
     | Alain | Active | Spinning Edge | Row with 2 or more enemies |
@@ -74,9 +75,14 @@ and Scarlett's Divine Blessing.
     | Celeste | Active | Aerial Smite | Lowest HP enemy |
     | Celeste | Passive | Gryphon Glide | None |
 
-    Quick Cast lowers Yahna's crit rate by 50%. That's fine; the cast still
-    clears most squads. If the enemy has a Thief with Sneaking Edge, check
-    that a barrier doesn't use up the PP Ramona needs for Quick Impetus.
+    Quick Cast (2 PP) and Hawk Eye (2 PP) use all 4 of Yahna's PP. Hawk
+    Eye's guaranteed crit overrides Quick Cast's -50% crit rate. Check in a
+    mock battle that Hawk Eye fires on the cast itself, not when Yahna starts
+    charging. Quick Impetus costs 4 PP, so Sanatio needs the Hood and the
+    Lapis Pendant to reach it. If the enemy has a Thief with Sneaking Edge,
+    check that a barrier doesn't use up her PP first. Limited Heal is
+    assumed to come from Euros' Staff; if it doesn't show up for Sanatio,
+    use Overheal on her own row instead.
 
 ### 2. Hilda: Dragoon Dive
 
@@ -91,10 +97,10 @@ sooner, and Lex blocks the archers that would ground the flyers.
 | Front | Lex | Vanguard | Meteorite Sword, Unyielding Shield, Cloth Gauntlets, Lapis Pendant |
 | Back | Hilda | Wyvern Master | Dragoon's Warspear, Celestial Talisman, Sapphire Pendant, Carnelian Pendant |
 | Back | Raenys | Featherbow | Apeliotes' Bow, Raven Plume, Lapis Pendant, Clearsight Amulet |
-| Back | Sanatio | Featherstaff | Papal Crosier, Lapis Pendant, Gold Bangle |
+| Back | Ramona | Wereowl | Papal Crosier, Lapis Pendant, Gold Bangle |
 
-**Start-of-battle skill:** Lex's Provoke. Turn off Hilda's Dragon's Roar and
-Sanatio's Hastened Heal.
+**Start-of-battle skill:** Hilda's Hastened Charge. Turn off Lex's Provoke
+and Hilda's Dragon's Roar.
 
 ??? note "Tactics"
 
@@ -102,22 +108,30 @@ Sanatio's Hastened Heal.
     | --- | --- | --- | --- |
     | Hilda | Active | Dragoon Dive | None |
     | Hilda | Active | Diving Thrust | Lowest HP enemy |
-    | Hilda | Passive | Hastened Charge | None |
+    | Hilda | Passive | Hastened Charge | Start of battle |
     | Ochlys | Active | Shield Smite | Armored |
     | Ochlys | Active | Spiral Sword | None |
     | Ochlys | Passive | Powerful Call | Target Hilda |
     | Lex | Active | Defender | Lowest evasion |
-    | Lex | Passive | Provoke | Start of battle |
     | Lex | Passive | Arrow Cover | Flying ally |
     | Raenys | Active | Photon Arrow | None |
     | Raenys | Active | attack | Flying or cavalry |
     | Raenys | Passive | Tailwind | None |
-    | Sanatio | Active | Row heal | Anyone below 75% HP |
-    | Sanatio | Passive | Barrier | Lowest HP ally, magic attacks |
+    | Ramona | Active | Extra Heal | Anyone below 75% HP |
+    | Ramona | Active | Aurora Veil | None |
+    | Ramona | Passive | Restore | Target Ochlys |
+
+    Restore gives back 1 PP after an ally uses a passive. Aimed at Ochlys,
+    it keeps Powerful Call going for later dives.
 
     Hastened Charge costs 4 PP and the Talisman lowers Hilda's AP by 1, so
     the two pendants are there to keep her points up. Photon Arrow goes first
     so Tailwind triggers before Hilda's turn.
+
+    Hastened Charge uses all 4 of Hilda's PP, so she has none left for
+    Aerial Wing. That's why the Heavenwyvern Reins stay with Celeste.
+    Dragoon Dive isn't a truestrike, so an evasive enemy can still dodge it.
+    Check the forecast against Thieves and Werefoxes.
 
 ### 3. Yunifi: Glacial Rain
 
@@ -474,19 +488,19 @@ Items you only have one of, and who holds them.
 | --- | --- | --- |
 | Holy Unicorn Blade | Alain | 1 |
 | Holy Unicorn Shield | Alain | 1 |
-| Holy Unicorn Signet | Ramona | 1 |
+| Holy Unicorn Signet | Sanatio | 1 |
 | Ring of the Unicorn | Alain | 1 |
 | Ring of the Maiden | Scarlett | 1 |
 | Millennium Scepter | Yahna | 1 |
-| White Cat-Ear Hood | Ramona | 1 |
+| White Cat-Ear Hood | Sanatio | 1 |
 | Familiar's Choker | Scarlett | 1 |
 | Kingstaff Albiore | Scarlett | 1 |
 | Boreas' Axe | Celeste | 1 |
-| Euros' Staff | Ramona | 1 |
+| Euros' Staff | Sanatio | 1 |
 | Heavenwyvern Reins | Celeste | 1 |
 | Celestial Talisman | Hilda | 2 |
 | Apeliotes' Bow | Raenys | 2 |
-| Papal Crosier | Sanatio | 2 |
+| Papal Crosier | Ramona | 2 |
 | Kingsbow Bastorik | Yunifi | 3 |
 | Angel Plume | Yunifi | 3 |
 | Black Cat-Ear Hood | Travis | 3 |
@@ -519,13 +533,13 @@ Items you only have one of, and who holds them.
 | Item | Used | Holders |
 | --- | --- | --- |
 | Ruby Pendant (3) | 2 | Rosalinde, Eltolinde |
-| Sapphire Pendant (3) | 2 | Hilda, Amalia |
+| Sapphire Pendant (3) | 3 | Yahna, Hilda, Amalia |
 | Amethyst Pendant (1) | 1 | Gloucester |
 | Carnelian Pendant | 7 | Yahna, Hilda, Morard, Dinah, Selvie, Clive, Renault |
-| Lapis Pendant | 12 | Alain, Yahna, Ramona, Lex, Raenys, Sanatio, Travis, Lhinalagos, Dinah, Ithilion, Gammel, Nigel |
+| Lapis Pendant | 11 | Alain, Sanatio, Lex, Raenys, Ramona, Travis, Lhinalagos, Dinah, Ithilion, Gammel, Nigel |
 | Warrior's Medallion (5) | 5 | Yunifi, Morard, Berenice, Jeremy, Bruno |
 | Knight's Medallion (5) | 5 | Bryce, Hodrick, Fodoquia, Adel, Jerome |
-| Sorcerer's Medallion (5) | 3 | Yahna, Railanor, Rosalinde |
+| Sorcerer's Medallion (5) | 2 | Railanor, Rosalinde |
 
 Other repeated items (Sage's Hood, Royal Scarf, Elite Beret, Blue
 Spectacles, Meteorite weapons, Citadel Guard's Sabatons and so on) can be
@@ -555,8 +569,8 @@ can still fire Elemental Roar at the end of the battle.
 | Back | Raenys | Featherbow | Apeliotes' Bow, Raven Plume, Royal Scarf, Lapis Pendant |
 | Back | Rosalinde | Elven Augur | Kingslance Elhal, Ruby Pendant, Sage's Hood, Sorcerer's Medallion |
 
-**Start-of-battle skill:** none. Hilda's Hastened Charge isn't Limited.
-Turn off Rosalinde's Rage of the Faeries and Hilda's Dragon's Roar.
+**Start-of-battle skill:** Hilda's Hastened Charge. Turn off Rosalinde's
+Rage of the Faeries and Hilda's Dragon's Roar.
 
 ??? note "Tactics"
 
@@ -566,7 +580,7 @@ Turn off Rosalinde's Rage of the Faeries and Hilda's Dragon's Roar.
     | Raenys | Passive | Tailwind | None |
     | Hilda | Active | Dragoon Dive | None |
     | Hilda | Active | Diving Thrust | Lowest HP enemy |
-    | Hilda | Passive | Hastened Charge | None |
+    | Hilda | Passive | Hastened Charge | Start of battle |
     | Amalia | Active | Penetrate | Full column |
     | Amalia | Active | Omega Shatter | None |
     | Amalia | Passive | Powerful Call | Target Hilda |

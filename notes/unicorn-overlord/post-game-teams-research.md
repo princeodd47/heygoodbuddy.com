@@ -47,6 +47,21 @@ wasn't needed.
 ## Key facts
 
 - Only one Limited start-of-battle skill fires per side. Turn the others off.
+- **From the user:** PP and AP cap at 4. Hastened Charge (Celestial
+  Talisman, 4 PP) triggers at the start of battle and counts as that
+  squad's one start-of-battle skill. It uses all of Hilda's PP, so Aerial
+  Wing (Heavenwyvern Reins, 1 PP, truestrike) can't fire too. The only PP
+  refill found is the Wereowl skill Restore (+1 PP after an ally's passive),
+  and Ramona is the only Wereowl. Dragoon Dive has a 100% hit rate but
+  isn't a truestrike.
+- **User decision (2026-11-10):** Ramona and Sanatio swap squads and gear.
+  Sanatio wears the White Cat-Ear Hood in squad 1; Ramona (Papal Crosier)
+  goes to squad 2 with Restore on Ochlys. Yahna wears the Sniper's Amber
+  Lens (Hawk Eye, 2 PP: truestrike and guaranteed crit) and a Sapphire
+  Pendant, replacing her Sorcerer's Medallion and Lapis. Quick Cast plus
+  Hawk Eye = 4 PP. Not yet verified in-game: Hawk Eye firing on the cast
+  rather than the charge start, a Sorceress equipping the Lens, and Limited
+  Heal coming from Euros' Staff.
 - Trinity Rain: Millennium Scepter (Divine Shards). Quick Cast gives max
   initiative, -50% crit. White Cat-Ear Hood's Quick Impetus lets the caster
   act again, skipping the charge. Familiar's Choker = Sorcerous Connection,
