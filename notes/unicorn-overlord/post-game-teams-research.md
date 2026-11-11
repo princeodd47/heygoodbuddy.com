@@ -180,4 +180,9 @@ User asked whether this beats squad 6 (Iron Wall). Not added to the page.
   1 PP, Lv 15, Limited, 100% crit on the ally's next attack. Restore: 1 PP,
   Lv 1, +1 PP to an ally after any ally's passive. Wingcrest Staff (Base PP
   +1, 14,000 G, Albion) chosen for the Wereowl. Sapphire Pendants are all
-  used, so Chloe and the Wereowl wear Lapis Pendants.
+  used, so Chloe and the Wereowl each wear one Lapis Pendant (Chloe's
+  Thorn Spear and the Wereowl's Wingcrest Staff add +1 PP each).
+- **From the user:** a unit can't equip two of the same item. No doubled
+  pendants.
+- Other Base PP +1 gear (miraheze): Undead Ring (source unknown), spears
+  Icefall, Dragonbone, Thorn, Wingcrest, General's Pike, Orchis.

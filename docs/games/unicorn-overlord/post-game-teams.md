@@ -276,8 +276,8 @@ covers Amalia and Sharon heals.
 | --- | --- | --- | --- |
 | Front | Hodrick | Legionnaire | Zenoiran Knight's Spear, Hero's Greatshield, Knight's Medallion, Salamander Ring |
 | Front | Amalia | Dreadnought | Dancer's Delight, Champion's Towershield, Druid's Robes, Sapphire Pendant |
-| Back | Chloe | Sergeant | Thorn Spear, Lapis Pendant, Lapis Pendant, Royal Scarf |
-| Back | Generic Wereowl | Wereowl | Wingcrest Staff, Lapis Pendant, Lapis Pendant |
+| Back | Chloe | Sergeant | Thorn Spear, Lapis Pendant, Royal Scarf, Cloth Gauntlets |
+| Back | Generic Wereowl | Wereowl | Wingcrest Staff, Lapis Pendant, Royal Scarf |
 | Back | Sharon | Bishop | Cleric's Cane, Awakening Amulet, Gold Circlet |
 
 **Start-of-battle skill:** none needed. Turn off Amalia's Provoking Wall. It
@@ -308,7 +308,7 @@ Wingcrest Staff in select Albion shops, 14,000 G.
     Amalia's Hawk Eye, Heavy Guard and Wild Kick are off so all her PP goes
     to Cursed Impetus. Each point of her PP is one more Leaping Slash. Each
     Keen Call makes a Slash free, since the crit refunds its AP. PP caps at
-    4, so Amalia, Chloe and the Wereowl add up to about 12 extra Slashes on
+    4, so Amalia, Chloe and the Wereowl add up to 12 extra Slashes on
     top of her own AP. Turn off Chloe's First Aid and Active Gift so her PP
     goes to Keen Call.
 
@@ -541,7 +541,7 @@ Items you only have one of, and who holds them.
 | Sapphire Pendant (3) | 3 | Yahna, Hilda, Amalia |
 | Amethyst Pendant (1) | 1 | Gloucester |
 | Carnelian Pendant | 7 | Yahna, Hilda, Morard, Dinah, Selvie, Clive, Renault |
-| Lapis Pendant | 15 | Alain, Sanatio, Lex, Raenys, Ramona, Travis, Lhinalagos, Dinah, Ithilion, Gammel, Nigel, Chloe (2), Wereowl (2) |
+| Lapis Pendant | 13 | Alain, Sanatio, Lex, Raenys, Ramona, Travis, Lhinalagos, Dinah, Ithilion, Gammel, Nigel, Chloe, Wereowl |
 | Warrior's Medallion (5) | 3 | Yunifi, Morard, Bruno |
 | Knight's Medallion (5) | 5 | Bryce, Hodrick, Fodoquia, Adel, Jerome |
 | Sorcerer's Medallion (5) | 2 | Railanor, Rosalinde |
