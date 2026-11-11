@@ -263,45 +263,54 @@ Iron Veil.
     | Galadmir | Active | Attack | Flying |
     | Galadmir | Active | Attack | Lowest HP enemy |
 
-### 6. Amalia: Iron Wall
+### 6. Amalia: Leaping Slash
 
-Amalia hits whole columns or rows with Omega Shatter and Penetrate, and Hawk
-Eye makes her own attacks land as crits. She's slow, so Hodrick holds the
-line while the two Landsknechts counter every hit an ally takes with
-Following Slash.
+Amalia attacks over and over with Leaping Slash from the Dancer's Delight. A
+critical Leaping Slash gives back the 1 AP it cost, and every Leaping Slash
+gives her a crit-rate debuff, which sets off the Druid's Robes' Cursed
+Impetus for +1 AP. Chloe's Keen Call makes each attack a guaranteed crit, and
+the Wereowl's Restore refills Chloe's PP so she can keep calling. Hodrick
+covers Amalia and Sharon heals.
 
 | Row | Unit | Class | Equipment |
 | --- | --- | --- | --- |
 | Front | Hodrick | Legionnaire | Zenoiran Knight's Spear, Hero's Greatshield, Knight's Medallion, Salamander Ring |
-| Front | Amalia | Dreadnought | Hunter's Claymore, Champion's Towershield, Outlaw's Bracelet, Sapphire Pendant |
-| Back | Berenice | Landsknecht | Dragonbone Blade, Golden Ram Shield, Blue Spectacles, Warrior's Medallion |
-| Back | Jeremy | Landsknecht | Bandit Longsword, Manalith Buckler, Blue Spectacles, Warrior's Medallion |
+| Front | Amalia | Dreadnought | Dancer's Delight, Champion's Towershield, Druid's Robes, Sapphire Pendant |
+| Back | Chloe | Sergeant | Thorn Spear, Lapis Pendant, Lapis Pendant, Royal Scarf |
+| Back | Generic Wereowl | Wereowl | Wingcrest Staff, Lapis Pendant, Lapis Pendant |
 | Back | Sharon | Bishop | Cleric's Cane, Awakening Amulet, Gold Circlet |
 
-**Start-of-battle skill:** Amalia's Provoking Wall (Champion's Towershield).
+**Start-of-battle skill:** none needed. Turn off Amalia's Provoking Wall. It
+costs 2 PP that she needs for Cursed Impetus.
+
+**Where to buy:** Dancer's Delight at the Znova Town armorer (Drakenhold),
+8,000 G. Druid's Robes at the Tarvihai Town shop (Elheim), 12,000 G.
+Wingcrest Staff in select Albion shops, 14,000 G.
 
 ??? note "Tactics"
 
     | Unit | Type | Skill | Condition |
     | --- | --- | --- | --- |
-    | Amalia | Active | Omega Shatter | Row with 2 or more enemies |
-    | Amalia | Active | Penetrate | Full column |
-    | Amalia | Active | Heavy Slash | None |
-    | Amalia | Passive | Wide Pursuit | Own PP 3 or more |
-    | Amalia | Passive | Hawk Eye | None |
-    | Amalia | Passive | Heavy Guard | None |
+    | Amalia | Active | Leaping Slash | Lowest HP enemy |
+    | Amalia | Active | Leaping Slash | None |
+    | Amalia | Passive | Cursed Impetus | None |
+    | Chloe | Active | Long Thrust | Full column |
+    | Chloe | Passive | Keen Call | Target Amalia |
+    | Wereowl | Active | Night Vision | Front row |
+    | Wereowl | Active | Aurora Veil | None |
+    | Wereowl | Passive | Restore | Target Chloe |
     | Hodrick | Active | Row attack | Row with 2 or more enemies |
+    | Hodrick | Passive | Heavy Cover | Target Amalia |
     | Hodrick | Passive | Heavy Cover | Lowest HP ally |
-    | Berenice | Active | Killing Chain | Lowest HP enemy |
-    | Berenice | Active | Heavy Slash | None |
-    | Berenice | Passive | Following Slash | None |
-    | Berenice | Passive | Bull Force | None |
-    | Jeremy | Active | Killing Chain | Lowest HP enemy |
-    | Jeremy | Active | Heavy Slash | None |
-    | Jeremy | Passive | Following Slash | None |
-    | Jeremy | Passive | Bull Force | None |
     | Sharon | Active | Row heal | Anyone below 75% HP |
     | Sharon | Passive | Dispel | Buffed enemy |
+
+    Amalia's Hawk Eye, Heavy Guard and Wild Kick are off so all her PP goes
+    to Cursed Impetus. Each point of her PP is one more Leaping Slash. Each
+    Keen Call makes a Slash free, since the crit refunds its AP. PP caps at
+    4, so Amalia, Chloe and the Wereowl add up to about 12 extra Slashes on
+    top of her own AP. Turn off Chloe's First Aid and Active Gift so her PP
+    goes to Keen Call.
 
 ### 7. Bruno: Grand Smash
 
@@ -464,14 +473,12 @@ Fran's Gryphon in the back for flyers, and Tatiana to keep them healed.
 
 ## Bench
 
-Everyone else: Chloe, Aubin, Rolf, Auch, Kitra, Melisandre, Colm, Leah,
-Aramis, Liza, Ridiel, Umerus, Millé, Elgor, Alcina, Gailey, Hermann,
+Everyone else: Berenice, Jeremy, Aubin, Rolf, Auch, Kitra, Melisandre, Colm,
+Leah, Aramis, Liza, Ridiel, Umerus, Millé, Elgor, Alcina, Gailey, Hermann,
 Beaumont, Laurent, Govil and Bertrand.
 
 Good swaps:
 
-- **Chloe** (Sergeant) for Celeste in squad 1. Her Keen Call guarantees a
-  crit on Trinity Rain, which makes up for Quick Cast's crit loss.
 - **Liza** (Shieldshooter) with Skiron's Shield for Lex in squad 2. Hastened
   Cover makes the ally she covers act right away, so a covered Hilda dives
   immediately.
@@ -534,8 +541,8 @@ Items you only have one of, and who holds them.
 | Sapphire Pendant (3) | 3 | Yahna, Hilda, Amalia |
 | Amethyst Pendant (1) | 1 | Gloucester |
 | Carnelian Pendant | 7 | Yahna, Hilda, Morard, Dinah, Selvie, Clive, Renault |
-| Lapis Pendant | 11 | Alain, Sanatio, Lex, Raenys, Ramona, Travis, Lhinalagos, Dinah, Ithilion, Gammel, Nigel |
-| Warrior's Medallion (5) | 5 | Yunifi, Morard, Berenice, Jeremy, Bruno |
+| Lapis Pendant | 15 | Alain, Sanatio, Lex, Raenys, Ramona, Travis, Lhinalagos, Dinah, Ithilion, Gammel, Nigel, Chloe (2), Wereowl (2) |
+| Warrior's Medallion (5) | 3 | Yunifi, Morard, Bruno |
 | Knight's Medallion (5) | 5 | Bryce, Hodrick, Fodoquia, Adel, Jerome |
 | Sorcerer's Medallion (5) | 2 | Railanor, Rosalinde |
 
@@ -1527,6 +1534,46 @@ Hilda clear rows, and Yunifi covers armored and flying enemies.
     | Yunifi | Passive | Eagle Eye | None |
     | Yunifi | Passive | Triple Counter | None |
 
+### Amalia: Iron Wall
+
+Amalia hits whole columns or rows with Omega Shatter and Penetrate, and Hawk
+Eye makes her own attacks land as crits. She's slow, so Hodrick holds the
+line while the two Landsknechts counter every hit an ally takes with
+Following Slash. Berenice and Jeremy come from the bench.
+
+| Row | Unit | Class | Equipment |
+| --- | --- | --- | --- |
+| Front | Hodrick | Legionnaire | Zenoiran Knight's Spear, Hero's Greatshield, Knight's Medallion, Salamander Ring |
+| Front | Amalia | Dreadnought | Hunter's Claymore, Champion's Towershield, Outlaw's Bracelet, Sapphire Pendant |
+| Back | Berenice | Landsknecht | Dragonbone Blade, Golden Ram Shield, Blue Spectacles, Warrior's Medallion |
+| Back | Jeremy | Landsknecht | Bandit Longsword, Manalith Buckler, Blue Spectacles, Warrior's Medallion |
+| Back | Sharon | Bishop | Cleric's Cane, Awakening Amulet, Gold Circlet |
+
+**Start-of-battle skill:** Amalia's Provoking Wall (Champion's Towershield).
+
+??? note "Tactics"
+
+    | Unit | Type | Skill | Condition |
+    | --- | --- | --- | --- |
+    | Amalia | Active | Omega Shatter | Row with 2 or more enemies |
+    | Amalia | Active | Penetrate | Full column |
+    | Amalia | Active | Heavy Slash | None |
+    | Amalia | Passive | Wide Pursuit | Own PP 3 or more |
+    | Amalia | Passive | Hawk Eye | None |
+    | Amalia | Passive | Heavy Guard | None |
+    | Hodrick | Active | Row attack | Row with 2 or more enemies |
+    | Hodrick | Passive | Heavy Cover | Lowest HP ally |
+    | Berenice | Active | Killing Chain | Lowest HP enemy |
+    | Berenice | Active | Heavy Slash | None |
+    | Berenice | Passive | Following Slash | None |
+    | Berenice | Passive | Bull Force | None |
+    | Jeremy | Active | Killing Chain | Lowest HP enemy |
+    | Jeremy | Active | Heavy Slash | None |
+    | Jeremy | Passive | Following Slash | None |
+    | Jeremy | Passive | Bull Force | None |
+    | Sharon | Active | Row heal | Anyone below 75% HP |
+    | Sharon | Passive | Dispel | Buffed enemy |
+
 ## Sources
 
 YouTube:
@@ -1547,6 +1594,7 @@ YouTube:
 Written:
 
 - Merqurial, [Unicorn Overlord guide on GameFAQs](https://gamefaqs.gamespot.com/switch/426397-unicorn-overlord/faqs/81216): items, class skills, sample units
+- GameFAQs board, [Amalia thread](https://gamefaqs.gamespot.com/boards/426397-unicorn-overlord/80732519): squad 6's Leaping Slash loop
 - [Game8 Unicorn Overlord wiki](https://game8.co/games/Unicorn-Overlord): character builds and weapon types
 - [Unicorn Overlord Fandom wiki](https://unicornoverlord.fandom.com/wiki/Characters): classes, Black Cat-Ear Hood
 - [Unicorn Overlord Miraheze wiki](https://unilord.miraheze.org/wiki/Main_Page): item sources and counts

@@ -135,3 +135,49 @@ wasn't needed.
   starting weapon.
 - Raenys's Tailwind is assumed to come from the Raven Plume (the Angel Plume
   also gives Tailwind).
+
+## Amalia Dancer's Delight + Druid's Robes idea (researched 2026-11-11)
+
+User asked whether this beats squad 6 (Iron Wall). Not added to the page.
+
+- Dancer's Delight: sword, 16 P.Atk, Crit +10%, Leaping Slash. Bought at
+  Znova (8000 G), so a second copy is fine. Dreadnought can equip swords
+  (miraheze Swords page).
+- Leaping Slash (fandom, via search): 1 AP, 100 potency, 100% hit; on a
+  crit, +1 AP; gives the user -30% crit rate, stacking.
+- Druid's Robes: P.Def 1, M.Def 1, Cursed Impetus (1 PP, +1 AP after the
+  user is debuffed). Tarvihai shop, 12000 G. A GameFAQs poster says Leaping
+  Slash's own debuff triggers it (thread 80732519, read via Chrome).
+- Thread's full combo (SheenavsKilley): Amalia with Dancer's Delight +
+  Druid's Robes, plus a Sergeant feeding Keen Call (forced crit, so Leaping
+  Slash refunds its AP) and a Wereowl using Restore to refill the PP. Poster
+  claims 14-16 crit Leaping Slashes a battle. Optimistic: it counts every PP
+  as one free attack. The poster also says the Robes "purge" the crit
+  debuff; the item text doesn't say so. Unverified.
+- Roster fit: Chloe (Sergeant) is on the bench. Ramona is the only
+  Wereowl and is in squad 2 (Restore on Ochlys), so the full version
+  costs squad 2 its PP refill.
+- Hunter's Claymore: 22 P.Atk, follow-up skills +20 damage, Crit +10%.
+- Outlaw's Bracelet = Wide Pursuit. Hawk Eye is a Dreadnought class skill
+  (Lv 25, 2 PP), not from the bracelet.
+- Miraheze lists Omega Shatter as one enemy hit twice (100 x2, 2 AP,
+  unguardable), not a row attack. The page's squad 6 text calls it a row
+  attack. Unverified; ask the user to check in-game.
+- Verdict given: just the two items in Iron Wall is a sidegrade at best.
+  A real Leaping Slash squad (with Chloe, plus Ramona if squad 2 can spare
+  her) would hit far more often. Suggested a mock battle to compare.
+- Earlier verdict, kept for context: sidegrade at best for Iron Wall. Loop is capped by PP
+  (max 4), competes with Heavy Guard and Hawk Eye, drops Wide Pursuit and
+  the Claymore's ATK, and Leaping Slash is single-target with no P.Def
+  shred.
+- **User decision (2026-11-11):** squad 6 is now the Leaping Slash build
+  (Hodrick, Amalia, Chloe, a generic Wereowl the user recruits, Sharon).
+  Iron Wall moved to the end of the alternatives; Berenice and Jeremy went
+  to the bench.
+- Read via Chrome (fandom): Champion's Towershield = Provoking Wall, 2 PP,
+  Limited, start of battle, a row of enemies focuses on the user, negates
+  one physical hit. Turned off in the new squad 6 to save PP. Keen Call:
+  1 PP, Lv 15, Limited, 100% crit on the ally's next attack. Restore: 1 PP,
+  Lv 1, +1 PP to an ally after any ally's passive. Wingcrest Staff (Base PP
+  +1, 14,000 G, Albion) chosen for the Wereowl. Sapphire Pendants are all
+  used, so Chloe and the Wereowl wear Lapis Pendants.
