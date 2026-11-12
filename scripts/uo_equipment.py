@@ -73,6 +73,8 @@ OVERRIDES = {
     "Lamplight Ring": {"where": ["From a resident on Albion's southern coast, near Largion Citadel"]},
     # The Quests page lists the ring under quests that need it, not ones that give it.
     "Ring of the Unicorn": {"where": ["Alain's starting accessory"]},
+    # From the user (in-game): only one Flame-Hex Staff exists.
+    "Flame-Hex Staff": {"where": ["Shop, 8,000 G: Nestascheft Town (Drakenhold), stock 1"]},
 }
 
 GROUPS = {"sword": "Swords", "greatsword": "Swords", "axe": "Axes", "spear": "Spears", "lance": "Spears",

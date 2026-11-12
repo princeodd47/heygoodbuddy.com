@@ -410,7 +410,7 @@ groups:
           details: "1 AP · Attack · Hit rate True · Ranged"
           text: "Inflicts Burn on a row of enemies."
         price: "8,000 G"
-        where: ["Shop, 8,000 G: Nestascheft Town (Drakenhold)"]
+        where: ["Shop, 8,000 G: Nestascheft Town (Drakenhold), stock 1"]
       - name: "Icestorm Staff"
         id: "icestorm-staff"
         stats: "M.Atk 22"

@@ -233,3 +233,35 @@ User asked whether this beats squad 6 (Iron Wall). Not added to the page.
   Maiden in place of the Hero's Medallion. The freed Hero's Medallion went
   to Bruno (squad 7, replacing his Carnelian Pendant); Scarlett took the
   Carnelian Pendant in place of the Ring.
+- **From the user (2026-11-12):** only one Flame-Hex Staff exists (recorded
+  as "stock 1" in uo_equipment.py OVERRIDES and equipment.yaml). Selvie keeps
+  it. Alcina's kit is poison/PP drain/blind (Aqua Venom, Maelstrom +25 v.
+  poisoned, Passive Curse, Dark Conferral), so without the staff she adds
+  little burn; she fits an affliction/poison squad better and went to the
+  bench (user: don't put her in another squad). Jeremy (Landsknecht) took
+  the slot in the front row: a second Following Slash on every ally attack,
+  Hunter's Claymore (follow-up +20 damage), Spellsteel Shield (M.Def +5),
+  Warrior's Medallion, Elite Beret. Berenice now opens with Fire Slash
+  (Searing Rapier) on non-burning targets.
+- **User decision (2026-11-12):** Bruno: Burn Squad and Gilbert and Nina:
+  Breakers moved to the end of the alternatives. User wants a team with
+  Alcina and one with Nigel (Gilbert and Aramis a stretch). Built squad 7,
+  Nigel and Alcina: Venom Stun, with all four plus Primm. Skills (Fandom):
+  Dark Marquess (Sword): Burning Edge, Death Spin (row, Stun, +75 v.
+  afflicted), Inferno (row, ignores 50% Def, Burn, +1 PP), Advance Cover
+  (+1 AP), Phantom Counter, Parting Death. Prince: Banishing Stab, Defensive
+  Order, Offensive Order (+20% Atk all), Rapid Order, Guard Order, Sniping
+  Order (2 PP, row truestrike). Swordmaster: Keen Edge, Impale, Meteor Slash
+  (2 AP, 9x20, crit +30%), Hastened Strike, Parry (+1 AP), Charged Impetus
+  (2 PP, +1 AP, +50% crit dmg). Swordmaster slots (appmedia Aramis page):
+  sword + 3 accessories. Flame-Hex Staff went to Alcina (Selvie's team is
+  an alternative now). Squad 9 slot left open pending the user.
+- **From the user (in-game):** Swordmaster (Aramis) has 2 sword slots and 2
+  accessory slots (appmedia's "sword + infantry" was wrong). Aramis now uses
+  Zenoiran Knight's Sword + Hunter's Claymore (crit +10%), Veteran's
+  Eyepatch, Lapis Pendant; Elite Beret dropped.
+- **From the user (in-game):** Alcina (Dark Marquess (Staff)) can equip
+  staves but not the Flame-Hex Staff. She now uses a Meteorite Rod (M.Atk
+  24, Max HP +20; Star Iron trade); not yet confirmed she can equip it.
+  Fire Curse dropped from her tactics; Maelstrom (all enemies, +25 v.
+  poisoned) takes its place.

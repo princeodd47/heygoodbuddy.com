@@ -308,45 +308,55 @@ costs 2 PP that she needs for Cursed Impetus.
     top of her own AP. Turn off Chloe's First Aid and Active Gift so her PP
     goes to Keen Call.
 
-### 7. Bruno: Burn Squad
+### 7. Nigel and Alcina: Venom Stun
 
-Every unit spreads burn. Selvie and Alcina burn rows with Fire Curse, Auch
-burns with Fireball and Volcano, and his Flamebrand Tome sets Bruno's Wide
-Smash on fire. Berenice follows up with Following Slash. At the end of each
-battle the Chlorotic Wand's Fire Burst hits every enemy if its target is
-burning. The Sacral Axe makes Bruno immune to stun and other afflictions,
-and heals him on every active skill.
+Alcina poisons a row with Aqua Venom, and Nigel's Death Spin hits that row with +75 potency against afflicted enemies
+and stuns it. Every Advance Cover gives Nigel another AP for more spins.
+Gilbert's Offensive Order raises the squad's attack and his Inspiration
+makes Aramis's Meteor Slash, a nine-hit crit flurry, crit harder. Sniping
+Order makes the front row's next attacks truestrikes. Charged Impetus gives
+Aramis his AP back, and Primm's Active Heal gives him one more. Alcina's
+Ominous Wall blocks one attack on every ally at the start of battle.
 
 | Row | Unit | Class | Equipment |
 | --- | --- | --- | --- |
-| Front | Bruno | Berserker | Sacral Axe, Leaf Broach, Hero's Medallion, Lapis Pendant |
-| Front | Berenice | Landsknecht | Searing Rapier, Blessed Round Shield, Retaliation Earrings, Warrior's Medallion |
-| Back | Auch | Warlock | Chlorotic Wand, Flamebrand Tome, Sorcerer's Medallion, Lapis Pendant |
-| Back | Selvie | Druid | Flame-Hex Staff, Acrobat's Shoes, Lapis Pendant, Vitality Talisman |
-| Back | Alcina | Dark Marquess | Flame-Hex Staff, Dragonbone Greatshield, Sorcerer's Medallion, Lapis Pendant |
+| Front | Nigel | Dark Marquess | Sacral Sword, Unyielding Greatshield, Leaf Broach, Lapis Pendant |
+| Front | Aramis | Swordmaster | Zenoiran Knight's Sword, Hunter's Claymore, Veteran's Eyepatch, Lapis Pendant |
+| Front | Gilbert | Prince | Kingsblade Cornix, Scarlet Crest Shield, Dove Plume, Gambler's Coin |
+| Back | Alcina | Dark Marquess | Meteorite Rod, Dragonbone Greatshield, Sorcerer's Medallion, Lapis Pendant |
+| Back | Primm | Bishop | Lyrical Wand, Awakening Amulet, Gold Circlet, Lapis Pendant |
 
-**Start-of-battle skill:** Selvie's Impetus Stance (Acrobat's Shoes). Turn
-off Alcina's Ominous Wall.
+**Start-of-battle skill:** Alcina's Ominous Wall. Turn off Gilbert's Rapid
+Order and Aramis's Hastened Strike.
 
 ??? note "Tactics"
 
     | Unit | Type | Skill | Condition |
     | --- | --- | --- | --- |
-    | Bruno | Active | Wide Smash | None |
-    | Bruno | Passive | Bulk Up | Own HP below 75% |
-    | Auch | Active | Volcano | Full column |
-    | Auch | Active | Fireball | None |
-    | Auch | Passive | Flame Conferral | Target Bruno |
-    | Auch | Passive | Fire Burst | Burning |
-    | Berenice | Active | Bastard's Cross | Highest HP enemy |
-    | Berenice | Passive | Following Slash | None |
-    | Selvie | Active | Fire Curse | Not burning |
-    | Selvie | Active | Offensive Curse | Row with most enemies, own AP 3 or more |
-    | Selvie | Passive | Impetus Stance | Start of battle |
-    | Selvie | Passive | Quick Curse | None |
-    | Alcina | Active | Fire Curse | Not burning |
-    | Alcina | Active | Passive Curse | Row with most enemies |
+    | Alcina | Active | Aqua Venom | Row with most enemies |
+    | Alcina | Active | Maelstrom | None |
+    | Alcina | Passive | Ominous Wall | Start of battle |
     | Alcina | Passive | Cursed Gaol | None |
+    | Nigel | Active | Death Spin | Afflicted |
+    | Nigel | Active | Inferno | Row with 2 or more enemies |
+    | Nigel | Passive | Advance Cover | Lowest HP ally |
+    | Nigel | Passive | Phantom Counter | None |
+    | Gilbert | Active | Offensive Order | First action |
+    | Gilbert | Active | Banishing Stab | Buffed enemy |
+    | Gilbert | Passive | Inspiration | Target Aramis |
+    | Gilbert | Passive | Sniping Order | None |
+    | Aramis | Active | Meteor Slash | None |
+    | Aramis | Active | Keen Edge | Lowest HP enemy |
+    | Aramis | Passive | Charged Impetus | None |
+    | Aramis | Passive | Parry | None |
+    | Primm | Active | Active Heal | Target Aramis |
+    | Primm | Active | Row heal | Anyone below 75% HP |
+    | Primm | Passive | Refresh | Afflicted ally |
+
+    Alcina acts before Nigel in most fights, so his first Death Spin lands
+    on a row she has already poisoned. Maelstrom hits every enemy and gets
+    +25 potency against poisoned ones. Gilbert's Gambler's Coin
+    fires Inspiration once per battle, so aim it at Meteor Slash.
 
 ### 8. Gloucester: Doom Knight Cavalry
 
@@ -396,42 +406,6 @@ squad, and Miriam shields it from magic.
     | Miriam | Passive | Row Barrier | Magic attacks |
     | Miriam | Passive | Magic Barrier | Magic attacks |
 
-### 9. Gilbert and Nina: Breakers
-
-Nina gets extra actions from both Gilbert and Primm and hits like a truck.
-Gilbert's Rapid Order speeds the squad up, his orders make Nina's hits true
-strikes with more attack, and his Gambler's Coin passes Inspiration to her.
-Nigel and Mordon tank and add damage.
-
-| Row | Unit | Class | Equipment |
-| --- | --- | --- | --- |
-| Front | Nigel | Dark Marquess | Sacral Sword, Unyielding Greatshield, Leaf Broach, Lapis Pendant |
-| Front | Mordon | Breaker | Meteorite Axe, Blue Spectacles, Elite Beret, Power Belt |
-| Back | Nina | Breaker | Juggernaut, Veteran's Eyepatch, Elite Beret, Mirrored Spectacles |
-| Back | Gilbert | Prince | Kingsblade Cornix, Scarlet Crest Shield, Dove Plume, Gambler's Coin |
-| Back | Primm | Bishop | Lyrical Wand, Awakening Amulet, Gold Circlet, Lapis Pendant |
-
-**Start-of-battle skill:** Gilbert's Rapid Order.
-
-??? note "Tactics"
-
-    | Unit | Type | Skill | Condition |
-    | --- | --- | --- | --- |
-    | Nina | Active | Row Smash | Row with 2 or more enemies |
-    | Nina | Active | Assaulting Blow | Lowest HP enemy |
-    | Nina | Passive | Enrage | None |
-    | Gilbert | Active | Offensive Order | First action |
-    | Gilbert | Active | Sniping Order | None |
-    | Gilbert | Passive | Rapid Order | Start of battle |
-    | Gilbert | Passive | Inspiration | Target Nina |
-    | Primm | Active | Lyrical Wand AP skill | Target Nina |
-    | Primm | Active | Row heal | Anyone below 75% HP |
-    | Primm | Passive | Refresh | Afflicted ally |
-    | Nigel | Active | Row attack | Row with 2 or more enemies |
-    | Nigel | Passive | Cover | Lowest HP ally |
-    | Mordon | Active | Row Smash | Row with 2 or more enemies |
-    | Mordon | Active | Heavy Smash | Armored |
-
 ### 10. Four Horsemen: Cavalry Rush
 
 A fast cavalry squad that covers ground quickly. Three riders in the front,
@@ -468,9 +442,9 @@ Fran's Gryphon in the back for flyers, and Tatiana to keep them healed.
 
 ## Bench
 
-Everyone else: Gammel, Fodoquia, Mandrin, Jeremy, Aubin, Rolf, Kitra,
-Melisandre, Colm, Leah, Aramis, Liza, Ridiel, Umerus, Millé, Elgor, Gailey,
-Hermann, Beaumont, Laurent, Govil and Bertrand.
+Everyone else: Bruno, Berenice, Jeremy, Auch, Selvie, Mordon, Nina, Gammel,
+Fodoquia, Mandrin, Aubin, Rolf, Kitra, Melisandre, Colm, Leah, Liza, Ridiel,
+Umerus, Millé, Elgor, Gailey, Hermann, Beaumont, Laurent, Govil and Bertrand.
 
 Good swaps:
 
@@ -515,16 +489,13 @@ Items you only have one of, and who holds them.
 | Hero's Greatshield | Hodrick | 6 |
 | Champion's Towershield | Amalia | 6 |
 | Cleric's Cane | Sharon | 6 |
-| Sacral Axe | Bruno | 7 |
-| Chlorotic Wand | Auch | 7 |
-| Hero's Medallion | Bruno | 7 |
+| Sacral Sword | Nigel | 7 |
+| Kingsblade Cornix | Gilbert | 7 |
+| Scarlet Crest Shield | Gilbert | 7 |
+| Lyrical Wand | Primm | 7 |
 | Zephyros' Spear | Renault | 8 |
 | Heavensteed Reins | Gloucester | 8 |
 | Holy Broach | Eltolinde | 8 |
-| Sacral Sword | Nigel | 9 |
-| Kingsblade Cornix | Gilbert | 9 |
-| Scarlet Crest Shield | Gilbert | 9 |
-| Lyrical Wand | Primm | 9 |
 
 ### Pendants and Medallions
 
@@ -534,10 +505,10 @@ Items you only have one of, and who holds them.
 | Sapphire Pendant (3) | 3 | Yahna, Hilda, Amalia |
 | Amethyst Pendant (1) | 1 | Gloucester |
 | Carnelian Pendant | 7 | Scarlett, Yahna, Hilda, Morard, Dinah, Clive, Renault |
-| Lapis Pendant | 19 | Alain, Scarlett, Sanatio, Lex, Raenys, Ramona, Travis, Lhinalagos, Dinah, Ithilion, Chloe, Wereowl, Sharon, Bruno, Auch, Selvie, Alcina, Nigel, Primm |
-| Warrior's Medallion (5) | 3 | Yunifi, Morard, Berenice |
+| Lapis Pendant | 17 | Alain, Scarlett, Sanatio, Lex, Raenys, Ramona, Travis, Lhinalagos, Dinah, Ithilion, Chloe, Wereowl, Sharon, Nigel, Aramis, Alcina, Primm |
+| Warrior's Medallion (5) | 2 | Yunifi, Morard |
 | Knight's Medallion (5) | 5 | Bryce, Hodrick, Fodoquia, Adel, Jerome |
-| Sorcerer's Medallion (5) | 4 | Railanor, Rosalinde, Auch, Alcina |
+| Sorcerer's Medallion (5) | 3 | Railanor, Rosalinde, Alcina |
 
 Other repeated items (Sage's Hood, Royal Scarf, Elite Beret, Blue
 Spectacles, Meteorite weapons, Citadel Guard's Sabatons and so on) can be
@@ -1607,6 +1578,85 @@ smash lands. Fodoquia guards him and reflects magic.
     | Selvie | Passive | Quick Curse | None |
     | Mandrin | Active | Attack | Flying |
     | Mandrin | Active | Attack | Lowest HP enemy |
+
+### Bruno: Burn Squad
+
+Bruno's Wide Smash hits a row, and Auch's Flamebrand Tome sets it on fire.
+Selvie burns a row with Fire Curse, and Auch burns with Fireball and
+Volcano. Berenice and Jeremy follow up every ally attack with Following
+Slash, and Berenice's Searing Rapier adds more burn. At the end of each
+battle the Chlorotic Wand's Fire Burst hits every enemy if its target is
+burning. The Sacral Axe makes Bruno immune to stun and other afflictions,
+and heals him on every active skill.
+
+| Row | Unit | Class | Equipment |
+| --- | --- | --- | --- |
+| Front | Bruno | Berserker | Sacral Axe, Leaf Broach, Hero's Medallion, Lapis Pendant |
+| Front | Berenice | Landsknecht | Searing Rapier, Blessed Round Shield, Retaliation Earrings, Warrior's Medallion |
+| Front | Jeremy | Landsknecht | Hunter's Claymore, Spellsteel Shield, Warrior's Medallion, Elite Beret |
+| Back | Auch | Warlock | Chlorotic Wand, Flamebrand Tome, Sorcerer's Medallion, Lapis Pendant |
+| Back | Selvie | Druid | Flame-Hex Staff, Acrobat's Shoes, Lapis Pendant, Vitality Talisman |
+
+**Start-of-battle skill:** Selvie's Impetus Stance (Acrobat's Shoes).
+
+??? note "Tactics"
+
+    | Unit | Type | Skill | Condition |
+    | --- | --- | --- | --- |
+    | Bruno | Active | Wide Smash | None |
+    | Bruno | Passive | Bulk Up | Own HP below 75% |
+    | Auch | Active | Volcano | Full column |
+    | Auch | Active | Fireball | None |
+    | Auch | Passive | Flame Conferral | Target Bruno |
+    | Auch | Passive | Fire Burst | Burning |
+    | Berenice | Active | Fire Slash | Not burning |
+    | Berenice | Active | Bastard's Cross | Highest HP enemy |
+    | Berenice | Passive | Following Slash | None |
+    | Jeremy | Active | Killing Chain | Lowest HP enemy |
+    | Jeremy | Active | Heavy Slash | None |
+    | Jeremy | Passive | Following Slash | None |
+    | Selvie | Active | Fire Curse | Not burning |
+    | Selvie | Active | Offensive Curse | Row with most enemies, own AP 3 or more |
+    | Selvie | Passive | Impetus Stance | Start of battle |
+    | Selvie | Passive | Quick Curse | None |
+
+    There's only one Flame-Hex Staff, so Selvie holds it.
+
+### Gilbert and Nina: Breakers
+
+Nina gets extra actions from both Gilbert and Primm and hits like a truck.
+Gilbert's Rapid Order speeds the squad up, his orders make Nina's hits true
+strikes with more attack, and his Gambler's Coin passes Inspiration to her.
+Nigel and Mordon tank and add damage.
+
+| Row | Unit | Class | Equipment |
+| --- | --- | --- | --- |
+| Front | Nigel | Dark Marquess | Sacral Sword, Unyielding Greatshield, Leaf Broach, Lapis Pendant |
+| Front | Mordon | Breaker | Meteorite Axe, Blue Spectacles, Elite Beret, Power Belt |
+| Back | Nina | Breaker | Juggernaut, Veteran's Eyepatch, Elite Beret, Mirrored Spectacles |
+| Back | Gilbert | Prince | Kingsblade Cornix, Scarlet Crest Shield, Dove Plume, Gambler's Coin |
+| Back | Primm | Bishop | Lyrical Wand, Awakening Amulet, Gold Circlet, Lapis Pendant |
+
+**Start-of-battle skill:** Gilbert's Rapid Order.
+
+??? note "Tactics"
+
+    | Unit | Type | Skill | Condition |
+    | --- | --- | --- | --- |
+    | Nina | Active | Row Smash | Row with 2 or more enemies |
+    | Nina | Active | Assaulting Blow | Lowest HP enemy |
+    | Nina | Passive | Enrage | None |
+    | Gilbert | Active | Offensive Order | First action |
+    | Gilbert | Active | Sniping Order | None |
+    | Gilbert | Passive | Rapid Order | Start of battle |
+    | Gilbert | Passive | Inspiration | Target Nina |
+    | Primm | Active | Lyrical Wand AP skill | Target Nina |
+    | Primm | Active | Row heal | Anyone below 75% HP |
+    | Primm | Passive | Refresh | Afflicted ally |
+    | Nigel | Active | Row attack | Row with 2 or more enemies |
+    | Nigel | Passive | Cover | Lowest HP ally |
+    | Mordon | Active | Row Smash | Row with 2 or more enemies |
+    | Mordon | Active | Heavy Smash | Armored |
 
 ## Sources
 
