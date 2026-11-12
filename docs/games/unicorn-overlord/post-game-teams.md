@@ -418,15 +418,18 @@ Chlorotic Wand's Fire Burst hits every enemy if its target is burning.
 
 Elgor tanks by dodging. At the start of battle, Dead Booing pulls every
 enemy attack onto him and lets him dodge the first 2 hits. Dark Step dodges
-another hit, and the Mirage Greatshield and Royal Scarf push his evasion
-far past his already high base. The Sacral Axe makes Bruno immune to stun
+another hit, and the Royal Scarf pushes his evasion past his already high
+base. The Gran Baris covers the hits he doesn't dodge with the best defense
+and guard rate a greatshield gets, and its debuff immunity stops enemies
+from lowering his evasion. It uses no PP, so all of his goes to Dark Step.
+The Sacral Axe makes Bruno immune to stun
 and other afflictions, and heals him on every active skill.
 
 | Row | Unit | Class | Equipment |
 | --- | --- | --- | --- |
 | Front | Bruno | Berserker | Sacral Axe, Leaf Broach, Hero's Medallion, Lapis Pendant |
 | Front | Berenice | Landsknecht | Searing Rapier, Blessed Round Shield, Elite Beret, Warrior's Medallion |
-| Front | Elgor | Dark Marquess | Thorn Spear, Mirage Greatshield, Royal Scarf, Lapis Pendant |
+| Front | Elgor | Dark Marquess | Thorn Spear, Gran Baris, Royal Scarf, Lapis Pendant |
 | Back | Auch | Warlock | Chlorotic Wand, Flamebrand Tome, Sorcerer's Medallion, Lapis Pendant |
 | Back | Selvie | Druid | Flame-Hex Staff, Sage's Hood, Lapis Pendant, Vitality Talisman |
 
@@ -460,9 +463,9 @@ Swamp.
     Dark Mist gives Elgor +50 evasion and +2 PP, so he uses it when his PP
     runs low to keep Dark Step going. With every attack aimed at Elgor,
     Berenice rarely gets hit, so she wears an Elite Beret for more damage
-    instead of counter gear. Elgor's defense and guard are low, so attacks
-    that can't miss (Hawk Eye, Eagle Eye, truestrike skills) and magic
-    hurt him. Check the forecast against archers and mages, and against
+    instead of counter gear. Elgor's own defense and guard are low, so
+    attacks that can't miss (Hawk Eye, Eagle Eye, truestrike skills) and
+    magic hurt him. Check the forecast against archers and mages, and against
     enemies immune to Burn.
 
 ### 10. Four Horsemen: Cavalry Rush
@@ -559,6 +562,7 @@ Items you only have one of, and who holds them.
 | Hero's Medallion | Bruno | 9 |
 | Chlorotic Wand | Auch | 9 |
 | Flame-Hex Staff | Selvie | 9 |
+| Gran Baris | Elgor | 9 |
 
 ### Pendants and Medallions
 

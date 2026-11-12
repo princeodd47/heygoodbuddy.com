@@ -698,7 +698,7 @@ groups:
         stats: "P.Def 3 · Guard 20%"
         effects: ["Guard Efficiency +50%", "Evasion +50"]
         price: "10,000 G"
-        where: ["Shop, 10,000 G: Kiulkukka Town (Elheim)"]
+        where: ["Shop, 10,000 G: Kiulkukka Town (Elheim), stock 1"]
       - name: "Skiron's Shield"
         id: "skirons-shield"
         stats: "P.Def 16 · Guard 40%"

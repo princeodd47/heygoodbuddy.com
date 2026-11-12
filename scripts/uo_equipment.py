@@ -75,6 +75,8 @@ OVERRIDES = {
     "Ring of the Unicorn": {"where": ["Alain's starting accessory"]},
     # From the user (in-game): only one Flame-Hex Staff exists.
     "Flame-Hex Staff": {"where": ["Shop, 8,000 G: Nestascheft Town (Drakenhold), stock 1"]},
+    # From the user (in-game): only one Mirage Greatshield exists.
+    "Mirage Greatshield": {"where": ["Shop, 10,000 G: Kiulkukka Town (Elheim), stock 1"]},
 }
 
 GROUPS = {"sword": "Swords", "greatsword": "Swords", "axe": "Axes", "spear": "Spears", "lance": "Spears",

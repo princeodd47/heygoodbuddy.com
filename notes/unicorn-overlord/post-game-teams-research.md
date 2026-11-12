@@ -287,9 +287,19 @@ User asked whether this beats squad 6 (Iron Wall). Not added to the page.
     Swamp is off.
   - Berenice's Retaliation Earrings became an Elite Beret, since Dead
     Booing means she rarely gets hit.
-  - Elgor wears a Thorn Spear (PP +1, 10,000 G), a Mirage Greatshield
-    (Evasion +50, 10,000 G, a second copy alongside Berengaria's), a Royal
+  - Elgor wears a Thorn Spear (PP +1, 10,000 G), the Gran Baris, a Royal
     Scarf and a Lapis Pendant (buyable).
   - Unconfirmed: Elgor's slot layout (assumed spear + greatshield + 2
-    accessories), and whether he can equip the Thorn Spear and the Mirage
-    Greatshield.
+    accessories), and whether he can equip the Thorn Spear and the Gran
+    Baris.
+- **From the user (in-game):** only one Mirage Greatshield exists and
+  Berengaria wears it. It is recorded as stock 1 in the uo_equipment.py
+  OVERRIDES. Elgor got the Gran Baris instead:
+  - Why the Gran Baris: P.Def 16, Guard 40%, Debuff Immunity, no PP cost,
+    and only the Grand Smash alternative uses it.
+  - Alternatives considered:
+    - Unyielding Greatshield (Enduring Guard, 2 PP; competes with Dark
+      Step).
+    - Heaven Mirror Greatshield (Reflect Magick, 2 PP; covers his magic
+      weakness, but P.Def 6 and Guard 10%).
+    - Skiron's Shield (kept for the Liza bench swap).
