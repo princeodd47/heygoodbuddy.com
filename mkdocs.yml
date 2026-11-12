@@ -64,6 +64,7 @@ plugins:
         ffx2_bestiary: data/final-fantasy-x-2/bestiary.yaml
         ffx2_dresspheres: data/final-fantasy-x-2/dresspheres.yaml
         ffx2_grids: data/final-fantasy-x-2/garment-grids.yaml
+        uo_equipment: data/unicorn-overlord/equipment.yaml
 
 extra_css:
   - stylesheets/extra.css
@@ -78,6 +79,7 @@ extra_javascript:
   - javascripts/fab-cards.js?v=2026-10-28.2
   - javascripts/fab-quiz.js?v=2026-10-28.2
   - javascripts/ffr-items.js?v=2026-10-29
+  - javascripts/uo-items.js?v=2026-11-11
 
 markdown_extensions:
   - admonition
@@ -121,6 +123,7 @@ nav:
       - Unicorn Overlord:
           - games/unicorn-overlord/index.md
           - Post-Game Teams: games/unicorn-overlord/post-game-teams.md
+          - Equipment: games/unicorn-overlord/equipment.md
       - Final Fantasy X-2 HD Remaster:
           - games/final-fantasy-x-2/index.md
           - Walkthrough: games/final-fantasy-x-2/walkthrough.md
