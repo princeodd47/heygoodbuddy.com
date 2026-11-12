@@ -31,6 +31,8 @@ listed is in exactly one squad.
   Scarlett a Lapis Pendant.
 - **Tactics tables** list each unit's skills in priority order, top to
   bottom, the way they appear in the Tactics menu. Skills not listed are off.
+- **Item names:** click one to see its stats, skill, price and where to get
+  it. The [Equipment](equipment.md) page lists them all.
 - Test every squad in a mock battle before a hard fight. The forecast tells
   you whether the combo kills before the enemy acts.
 
@@ -283,10 +285,6 @@ covers Amalia and Sharon heals.
 **Start-of-battle skill:** none needed. Turn off Amalia's Provoking Wall. It
 costs 2 PP that she needs for Cursed Impetus.
 
-**Where to buy:** Dancer's Delight at the Znova Town armorer (Drakenhold),
-8,000 G. Druid's Robes at the Tarvihai Town shop (Elheim), 12,000 G.
-Wingcrest Staff in select Albion shops, 14,000 G.
-
 ??? note "Tactics"
 
     | Unit | Type | Skill | Condition |
@@ -312,46 +310,45 @@ Wingcrest Staff in select Albion shops, 14,000 G.
     top of her own AP. Turn off Chloe's First Aid and Active Gift so her PP
     goes to Keen Call.
 
-### 7. Bruno: Grand Smash
+### 7. Bruno: Burn Squad
 
-Bruno's Grand Smash hits every ground enemy and gets +50 potency at full HP.
-The two crowns stack AP, PP and stats on him, Gammel's Dancer's Bracelet
-buffs his attack, and Selvie's Cursed Swamp cuts enemy evasion by 30 so the
-smash lands. Fodoquia guards him and reflects magic.
+Every unit spreads burn. Selvie and Alcina burn rows with Fire Curse, Auch
+burns with Fireball and Volcano, and his Flamebrand Tome sets Bruno's Wide
+Smash on fire. Berenice follows up with Following Slash. At the end of each
+battle the Chlorotic Wand's Fire Burst hits every enemy if its target is
+burning. The Sacral Axe makes Bruno immune to stun and other afflictions,
+and heals him on every active skill.
 
 | Row | Unit | Class | Equipment |
 | --- | --- | --- | --- |
-| Front | Bruno | Berserker | Sacral Axe, Dream Crown, Ancient Crown, Warrior's Medallion |
-| Front | Fodoquia | Feathershield | Zenoiran Knight's Sword, Gran Baris, Knight's Medallion, Cloth Gauntlets |
-| Back | Gammel | Rogue | Sylph's Bane, Dancer's Bracelet, Large Aid Kit, Lapis Pendant |
-| Back | Selvie | Druid | Flame-Hex Staff, Carnelian Pendant, Lamplight Ring, Dove Plume |
-| Back | Mandrin | Sniper | Alminster, Veteran's Eyepatch, Mirrored Spectacles, Elite Beret |
+| Front | Bruno | Berserker | Sacral Axe, Leaf Broach, Carnelian Pendant, Lapis Pendant |
+| Back | Auch | Warlock | Chlorotic Wand, Flamebrand Tome, Sorcerer's Medallion, Lapis Pendant |
+| Back | Berenice | Landsknecht | Searing Rapier, Blessed Round Shield, Retaliation Earrings, Warrior's Medallion |
+| Back | Selvie | Druid | Flame-Hex Staff, Acrobat's Shoes, Lapis Pendant, Vitality Talisman |
+| Back | Alcina | Dark Marquess | Flame-Hex Staff, Sorcerer's Medallion, Lapis Pendant |
 
-**Start-of-battle skill:** Selvie's Cursed Swamp.
+**Start-of-battle skill:** Selvie's Impetus Stance (Acrobat's Shoes). Turn
+off Alcina's Ominous Wall.
 
 ??? note "Tactics"
 
     | Unit | Type | Skill | Condition |
     | --- | --- | --- | --- |
-    | Bruno | Active | Mounting Charge | First action |
-    | Bruno | Active | Grand Smash | None |
-    | Bruno | Active | Wide Smash | Row with 2 or more enemies |
+    | Bruno | Active | Wide Smash | None |
     | Bruno | Passive | Bulk Up | Own HP below 75% |
-    | Fodoquia | Active | Row Resistance | First action, casters present |
-    | Fodoquia | Active | Mystic Shield | Own AP 2 or more |
-    | Fodoquia | Passive | Reflect Magic | None |
-    | Fodoquia | Passive | Sacrifice | Own HP 50% or more |
-    | Gammel | Active | Sonic Blast | Flying |
-    | Gammel | Active | Passive Steal | None |
-    | Gammel | Passive | Powerful Call | Target Bruno, own PP 3 or more |
-    | Gammel | Passive | Party Aid | None |
-    | Gammel | Passive | Evade | None |
-    | Selvie | Active | Glowing Light | Flying enemies present |
-    | Selvie | Active | Offensive Curse | None |
-    | Selvie | Passive | Cursed Swamp | Start of battle |
+    | Auch | Active | Volcano | Full column |
+    | Auch | Active | Fireball | None |
+    | Auch | Passive | Flame Conferral | Target Bruno |
+    | Auch | Passive | Fire Burst | Burning |
+    | Berenice | Active | Bastard's Cross | Highest HP enemy |
+    | Berenice | Passive | Following Slash | None |
+    | Selvie | Active | Fire Curse | Not burning |
+    | Selvie | Active | Offensive Curse | Row with most enemies, own AP 3 or more |
+    | Selvie | Passive | Impetus Stance | Start of battle |
     | Selvie | Passive | Quick Curse | None |
-    | Mandrin | Active | Attack | Flying |
-    | Mandrin | Active | Attack | Lowest HP enemy |
+    | Alcina | Active | Fire Curse | Not burning |
+    | Alcina | Active | Passive Curse | Row with most enemies |
+    | Alcina | Passive | Cursed Gaol | None |
 
 ### 8. Gloucester: Doom Knight Cavalry
 
@@ -473,9 +470,9 @@ Fran's Gryphon in the back for flyers, and Tatiana to keep them healed.
 
 ## Bench
 
-Everyone else: Berenice, Jeremy, Aubin, Rolf, Auch, Kitra, Melisandre, Colm,
-Leah, Aramis, Liza, Ridiel, Umerus, Millé, Elgor, Alcina, Gailey, Hermann,
-Beaumont, Laurent, Govil and Bertrand.
+Everyone else: Gammel, Fodoquia, Mandrin, Jeremy, Aubin, Rolf, Kitra,
+Melisandre, Colm, Leah, Aramis, Liza, Ridiel, Umerus, Millé, Elgor, Gailey,
+Hermann, Beaumont, Laurent, Govil and Bertrand.
 
 Good swaps:
 
@@ -521,10 +518,7 @@ Items you only have one of, and who holds them.
 | Champion's Towershield | Amalia | 6 |
 | Cleric's Cane | Sharon | 6 |
 | Sacral Axe | Bruno | 7 |
-| Dream Crown | Bruno | 7 |
-| Ancient Crown | Bruno | 7 |
-| Gran Baris | Fodoquia | 7 |
-| Alminster | Mandrin | 7 |
+| Chlorotic Wand | Auch | 7 |
 | Zephyros' Spear | Renault | 8 |
 | Heavensteed Reins | Gloucester | 8 |
 | Holy Broach | Eltolinde | 8 |
@@ -540,11 +534,11 @@ Items you only have one of, and who holds them.
 | Ruby Pendant (3) | 2 | Rosalinde, Eltolinde |
 | Sapphire Pendant (3) | 3 | Yahna, Hilda, Amalia |
 | Amethyst Pendant (1) | 1 | Gloucester |
-| Carnelian Pendant | 7 | Yahna, Hilda, Morard, Dinah, Selvie, Clive, Renault |
-| Lapis Pendant | 13 | Alain, Sanatio, Lex, Raenys, Ramona, Travis, Lhinalagos, Dinah, Ithilion, Gammel, Nigel, Chloe, Wereowl |
-| Warrior's Medallion (5) | 3 | Yunifi, Morard, Bruno |
+| Carnelian Pendant | 7 | Yahna, Hilda, Morard, Dinah, Clive, Renault, Bruno |
+| Lapis Pendant | 16 | Alain, Sanatio, Lex, Raenys, Ramona, Travis, Lhinalagos, Dinah, Ithilion, Bruno, Auch, Selvie, Alcina, Nigel, Chloe, Wereowl |
+| Warrior's Medallion (5) | 3 | Yunifi, Morard, Berenice |
 | Knight's Medallion (5) | 5 | Bryce, Hodrick, Fodoquia, Adel, Jerome |
-| Sorcerer's Medallion (5) | 2 | Railanor, Rosalinde |
+| Sorcerer's Medallion (5) | 4 | Railanor, Rosalinde, Auch, Alcina |
 
 Other repeated items (Sage's Hood, Royal Scarf, Elite Beret, Blue
 Spectacles, Meteorite weapons, Citadel Guard's Sabatons and so on) can be
@@ -1006,8 +1000,8 @@ Tatiana fills that slot.
 ### Bruno and the Braves (TitaniumLegman)
 
 Bruno with a King's weapon, both crowns and the Hero's Medallion, built up
-over the battle and then unleashing Grand Smash on everyone. Squad 7 is a
-version of this.
+over the battle and then unleashing Grand Smash on everyone. Bruno: Grand
+Smash, further down, is a version of this.
 
 | Row | Unit | Class | Equipment |
 | --- | --- | --- | --- |
@@ -1574,6 +1568,47 @@ Following Slash. Berenice and Jeremy come from the bench.
     | Sharon | Active | Row heal | Anyone below 75% HP |
     | Sharon | Passive | Dispel | Buffed enemy |
 
+### Bruno: Grand Smash
+
+Bruno's Grand Smash hits every ground enemy and gets +50 potency at full HP.
+The two crowns stack AP, PP and stats on him, Gammel's Dancer's Bracelet
+buffs his attack, and Selvie's Cursed Swamp cuts enemy evasion by 30 so the
+smash lands. Fodoquia guards him and reflects magic.
+
+| Row | Unit | Class | Equipment |
+| --- | --- | --- | --- |
+| Front | Bruno | Berserker | Sacral Axe, Dream Crown, Ancient Crown, Warrior's Medallion |
+| Front | Fodoquia | Feathershield | Zenoiran Knight's Sword, Gran Baris, Knight's Medallion, Cloth Gauntlets |
+| Back | Gammel | Rogue | Sylph's Bane, Dancer's Bracelet, Large Aid Kit, Lapis Pendant |
+| Back | Selvie | Druid | Flame-Hex Staff, Carnelian Pendant, Lamplight Ring, Dove Plume |
+| Back | Mandrin | Sniper | Alminster, Veteran's Eyepatch, Mirrored Spectacles, Elite Beret |
+
+**Start-of-battle skill:** Selvie's Cursed Swamp.
+
+??? note "Tactics"
+
+    | Unit | Type | Skill | Condition |
+    | --- | --- | --- | --- |
+    | Bruno | Active | Mounting Charge | First action |
+    | Bruno | Active | Grand Smash | None |
+    | Bruno | Active | Wide Smash | Row with 2 or more enemies |
+    | Bruno | Passive | Bulk Up | Own HP below 75% |
+    | Fodoquia | Active | Row Resistance | First action, casters present |
+    | Fodoquia | Active | Mystic Shield | Own AP 2 or more |
+    | Fodoquia | Passive | Reflect Magic | None |
+    | Fodoquia | Passive | Sacrifice | Own HP 50% or more |
+    | Gammel | Active | Sonic Blast | Flying |
+    | Gammel | Active | Passive Steal | None |
+    | Gammel | Passive | Powerful Call | Target Bruno, own PP 3 or more |
+    | Gammel | Passive | Party Aid | None |
+    | Gammel | Passive | Evade | None |
+    | Selvie | Active | Glowing Light | Flying enemies present |
+    | Selvie | Active | Offensive Curse | None |
+    | Selvie | Passive | Cursed Swamp | Start of battle |
+    | Selvie | Passive | Quick Curse | None |
+    | Mandrin | Active | Attack | Flying |
+    | Mandrin | Active | Attack | Lowest HP enemy |
+
 ## Sources
 
 YouTube:
@@ -1598,3 +1633,5 @@ Written:
 - [Game8 Unicorn Overlord wiki](https://game8.co/games/Unicorn-Overlord): character builds and weapon types
 - [Unicorn Overlord Fandom wiki](https://unicornoverlord.fandom.com/wiki/Characters): classes, Black Cat-Ear Hood
 - [Unicorn Overlord Miraheze wiki](https://unilord.miraheze.org/wiki/Main_Page): item sources and counts
+
+<script id="uo-items-data" type="application/json">{{ uo_equipment | tojson }}</script>

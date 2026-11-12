@@ -186,3 +186,29 @@ User asked whether this beats squad 6 (Iron Wall). Not added to the page.
   pendants.
 - Other Base PP +1 gear (miraheze): Undead Ring (source unknown), spears
   Icefall, Dragonbone, Thorn, Wingcrest, General's Pike, Orchis.
+- **User decision (2026-11-11):** squad 7 is now a Thief evasion squad
+  (Gammel, two generic Rogues, Fodoquia, Mandrin). Bruno: Grand Smash moved
+  to the end of the alternatives; Bruno and Selvie went to the bench. No
+  community build found (guides, Reddit search), so it's designed from:
+  Rogue skills (miraheze): Passive Steal 1 AP (steal all PP), Toxic Throw,
+  Shadowbite 2 AP (row, Blindness, Init/Eva -20), Active Steal 2 AP (steal
+  1 AP), Evade 1 PP (dodge one hit), Sneaking Edge 1 PP Lv 25 (Limited,
+  battle start). Thief's Bell = Grant Evade (2 PP, Limited, ally dodges one
+  hit), Black Market Dealer (Drakenhold) 8,000 G, stock 1. Thief's Mantle
+  gives Evade too (redundant on a Rogue). Royal Scarf Eva +30, Silken Scarf
+  +20, Sylph's Bane and Bandit Longsword +10. Sniper (miraheze): Single
+  Shot, Eagle Eye, Pursuit (75 potency follow-up), Aerial Snipe. Alminster
+  = Checkmate (2 AP, 150, +100 at <=50% HP, Passive Seal). Earrings of
+  Pursuit are on Berengaria (squad 4), so Mandrin can't have them.
+- Named Thieves/Rogues: only Travis (squad 3) and Gammel, hence generics.
+- **User decision (2026-11-11):** squad 7 is the Bruno Burn Squad instead of
+  the Thief evasion squad (Thief build dropped from the page). Adapted from
+  TitaniumLegman's burn squad: Kingsaxe Drakenash is on Berengaria, so Bruno
+  uses the Sacral Axe (Affliction Immunity, heal 20% on active), which also
+  removes the need for a stun-clearing Cleric. Yahna (squad 1) → Auch
+  (Warlock: Fireball 1 AP 3x40 Burn, Volcano 2 AP column 150 Burn, Magick
+  Pursuit, Concentrate; Fandom). Tatiana (squad 10) → Alcina (Dark Marquess
+  staff: Passive Curse, Aqua Venom, Maelstrom, Dark Conferral, Cursed Gaol,
+  Ominous Wall (Limited, start of battle, turned off)) with a second
+  Flame-Hex Staff (Nestascheft, 8,000 G). Alcina's slot count unverified, so
+  she has three items.

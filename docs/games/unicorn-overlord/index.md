@@ -18,4 +18,10 @@ Notes from the Nintendo Switch version.
     Ten squads to field at once, with equipment and tactics, plus other strong
     builds.
 
+-   :material-sword:{ .lg .middle } __[Equipment](equipment.md)__
+
+    ---
+
+    Stats, skills, prices and where to get every item the squads use.
+
 </div>
