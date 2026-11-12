@@ -223,3 +223,13 @@ User asked whether this beats squad 6 (Iron Wall). Not added to the page.
   became an alternative), squad 6 Wereowl Gold Bangle, Sharon and Primm
   Lapis Pendant, Alcina Dragonbone Greatshield (Base PP +1, 8,000 G).
   Alternative teams keep their sources' three-item builds.
+- **From the user:** a row holds at most 3 units. Fixed squad 7 and the Bruno
+  Burn alternative (Berenice to the front: counters need her to be hit, and
+  she has a shield) and Super Tax Brothers (Magellan to the front with the
+  Manalith Buckler). The user wanted an Alcina team; she stays in squad 7
+  with Bruno, so Nina's team stays as squad 9. Scarlett is already in
+  squad 1.
+- **From the user:** Alain married Berengaria, so she wears the Ring of the
+  Maiden in place of the Hero's Medallion. The freed Hero's Medallion went
+  to Bruno (squad 7, replacing his Carnelian Pendant); Scarlett took the
+  Carnelian Pendant in place of the Ring.

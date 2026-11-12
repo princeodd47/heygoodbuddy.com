@@ -26,9 +26,7 @@ listed is in exactly one squad.
   charge skill, the ally starts charging, Quick Impetus fires, and they
   immediately use the big skill (Trinity Rain, Glacial Rain, Dragoon Dive)
   instead of waiting a turn.
-- **Ring of the Maiden** goes on Alain's bonded partner. The squads assume
-  that's Scarlett. If you married someone else, swap the Ring to them and give
-  Scarlett a Lapis Pendant.
+- **Ring of the Maiden** goes on Alain's bonded partner, Berengaria.
 - **Tactics tables** list each unit's skills in priority order, top to
   bottom, the way they appear in the Tactics menu. Skills not listed are off.
 - **Item names:** click one to see its stats, skill, price and where to get
@@ -51,7 +49,7 @@ crit and can't be dodged. Alain and Celeste clean up and tank.
 | --- | --- | --- | --- |
 | Front | Alain | High Lord | Holy Unicorn Blade, Holy Unicorn Shield, Ring of the Unicorn, Lapis Pendant |
 | Front | Celeste | Gryphon Master | Boreas' Axe, Heavenwyvern Reins, Elite Beret, Royal Scarf |
-| Back | Scarlett | High Priestess | Kingstaff Albiore, Familiar's Choker, Ring of the Maiden, Lapis Pendant |
+| Back | Scarlett | High Priestess | Kingstaff Albiore, Familiar's Choker, Carnelian Pendant, Lapis Pendant |
 | Back | Yahna | Sorceress | Millennium Scepter, Sniper's Amber Lens, Sapphire Pendant, Carnelian Pendant |
 | Back | Sanatio | Featherstaff | Euros' Staff, White Cat-Ear Hood, Lapis Pendant, Holy Unicorn Signet |
 
@@ -184,7 +182,7 @@ Monica heals.
 | Row | Unit | Class | Equipment |
 | --- | --- | --- | --- |
 | Front | Virginia | Valkyria | Hallowed Blade, Blue Rose Shield, Azure Crest Shield, Vengeful Caligae |
-| Front | Berengaria | Dark Marquess | Kingsaxe Drakenash, Mirage Greatshield, Earrings of Pursuit, Hero's Medallion |
+| Front | Berengaria | Dark Marquess | Kingsaxe Drakenash, Mirage Greatshield, Earrings of Pursuit, Ring of the Maiden |
 | Front | Dinah | Werefox | Corroded Spear, Lionheart, Carnelian Pendant, Lapis Pendant |
 | Back | Railanor | Elven Fencer | Spellsteel Sword, Sorcerer's Medallion, Sage's Hood, Royal Scarf |
 | Back | Monica | Sainted Knight | Dragonbone Blade, Dragonbone Shield, Monk's Mitre, First Aid Kit |
@@ -321,9 +319,9 @@ and heals him on every active skill.
 
 | Row | Unit | Class | Equipment |
 | --- | --- | --- | --- |
-| Front | Bruno | Berserker | Sacral Axe, Leaf Broach, Carnelian Pendant, Lapis Pendant |
+| Front | Bruno | Berserker | Sacral Axe, Leaf Broach, Hero's Medallion, Lapis Pendant |
+| Front | Berenice | Landsknecht | Searing Rapier, Blessed Round Shield, Retaliation Earrings, Warrior's Medallion |
 | Back | Auch | Warlock | Chlorotic Wand, Flamebrand Tome, Sorcerer's Medallion, Lapis Pendant |
-| Back | Berenice | Landsknecht | Searing Rapier, Blessed Round Shield, Retaliation Earrings, Warrior's Medallion |
 | Back | Selvie | Druid | Flame-Hex Staff, Acrobat's Shoes, Lapis Pendant, Vitality Talisman |
 | Back | Alcina | Dark Marquess | Flame-Hex Staff, Dragonbone Greatshield, Sorcerer's Medallion, Lapis Pendant |
 
@@ -492,7 +490,6 @@ Items you only have one of, and who holds them.
 | Holy Unicorn Shield | Alain | 1 |
 | Holy Unicorn Signet | Sanatio | 1 |
 | Ring of the Unicorn | Alain | 1 |
-| Ring of the Maiden | Scarlett | 1 |
 | Millennium Scepter | Yahna | 1 |
 | White Cat-Ear Hood | Sanatio | 1 |
 | Familiar's Choker | Scarlett | 1 |
@@ -510,7 +507,7 @@ Items you only have one of, and who holds them.
 | Cutthroat's Boon | Travis | 3 |
 | Sacral Bow | Lhinalagos | 3 |
 | Kingsaxe Drakenash | Berengaria | 4 |
-| Hero's Medallion | Berengaria | 4 |
+| Ring of the Maiden | Berengaria | 4 |
 | Notos' Sword | Ilenia | 5 |
 | Holy Knight's Shield | Ilenia | 5 |
 | Kingslance Elhal | Rosalinde | 5 |
@@ -520,6 +517,7 @@ Items you only have one of, and who holds them.
 | Cleric's Cane | Sharon | 6 |
 | Sacral Axe | Bruno | 7 |
 | Chlorotic Wand | Auch | 7 |
+| Hero's Medallion | Bruno | 7 |
 | Zephyros' Spear | Renault | 8 |
 | Heavensteed Reins | Gloucester | 8 |
 | Holy Broach | Eltolinde | 8 |
@@ -535,7 +533,7 @@ Items you only have one of, and who holds them.
 | Ruby Pendant (3) | 2 | Rosalinde, Eltolinde |
 | Sapphire Pendant (3) | 3 | Yahna, Hilda, Amalia |
 | Amethyst Pendant (1) | 1 | Gloucester |
-| Carnelian Pendant | 7 | Yahna, Hilda, Morard, Dinah, Clive, Renault, Bruno |
+| Carnelian Pendant | 7 | Scarlett, Yahna, Hilda, Morard, Dinah, Clive, Renault |
 | Lapis Pendant | 19 | Alain, Scarlett, Sanatio, Lex, Raenys, Ramona, Travis, Lhinalagos, Dinah, Ithilion, Chloe, Wereowl, Sharon, Bruno, Auch, Selvie, Alcina, Nigel, Primm |
 | Warrior's Medallion (5) | 3 | Yunifi, Morard, Berenice |
 | Knight's Medallion (5) | 5 | Bryce, Hodrick, Fodoquia, Adel, Jerome |
@@ -929,8 +927,8 @@ and Heavy Slash finish the back.
 | Row | Unit | Class | Equipment |
 | --- | --- | --- | --- |
 | Front | Hodrick | Legionnaire | Black Iron Spear, Dragonbone Greatshield, Salamander Ring, Detoxifying Amulet |
+| Front | Magellan | Landsknecht | Dragonbone Blade, Manalith Buckler, Blue Spectacles, Golden Egg |
 | Back | Berenice | Landsknecht | Dragonbone Blade, Twin Dragon Shield, Blue Spectacles, Golden Egg |
-| Back | Magellan | Landsknecht | Dragonbone Blade, Manalith Buckler, Blue Spectacles, Golden Egg |
 | Back | Jeremy | Landsknecht | Bandit Longsword, Golden Ram Shield, Blue Spectacles, Golden Egg |
 | Back | Sharon | Bishop | Cleric's Cane, Awakening Amulet, Gold Circlet |
 
@@ -968,8 +966,8 @@ detonates a burning enemy to hit the whole enemy side.
 | Row | Unit | Class | Equipment |
 | --- | --- | --- | --- |
 | Front | Bruno | Berserker | Kingsaxe Drakenash, Leaf Broach, Carnelian Pendant, Lapis Pendant |
+| Front | Berenice | Landsknecht | Searing Rapier, Blessed Round Shield, Retaliation Earrings, Warrior's Medallion |
 | Back | Yahna | Sorceress | Chlorotic Wand, Sorcerer's Medallion, Lapis Pendant, Flamebrand Tome |
-| Back | Berenice | Landsknecht | Searing Rapier, Blessed Round Shield, Retaliation Earrings, Warrior's Medallion |
 | Back | Selvie | Druid | Flame-Hex Staff, Acrobat's Shoes, Lapis Pendant, Vitality Talisman |
 | Back | Tatiana | Bishop | Phosphorescent Staff, Barbed Ribbon, Awakening Amulet |
 
