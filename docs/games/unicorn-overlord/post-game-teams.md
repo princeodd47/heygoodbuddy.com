@@ -51,7 +51,7 @@ crit and can't be dodged. Alain and Celeste clean up and tank.
 | --- | --- | --- | --- |
 | Front | Alain | High Lord | Holy Unicorn Blade, Holy Unicorn Shield, Ring of the Unicorn, Lapis Pendant |
 | Front | Celeste | Gryphon Master | Boreas' Axe, Heavenwyvern Reins, Elite Beret, Royal Scarf |
-| Back | Scarlett | High Priestess | Kingstaff Albiore, Familiar's Choker, Ring of the Maiden |
+| Back | Scarlett | High Priestess | Kingstaff Albiore, Familiar's Choker, Ring of the Maiden, Lapis Pendant |
 | Back | Yahna | Sorceress | Millennium Scepter, Sniper's Amber Lens, Sapphire Pendant, Carnelian Pendant |
 | Back | Sanatio | Featherstaff | Euros' Staff, White Cat-Ear Hood, Lapis Pendant, Holy Unicorn Signet |
 
@@ -97,7 +97,7 @@ sooner, and Lex blocks the archers that would ground the flyers.
 | Front | Lex | Vanguard | Meteorite Sword, Unyielding Shield, Cloth Gauntlets, Lapis Pendant |
 | Back | Hilda | Wyvern Master | Dragoon's Warspear, Celestial Talisman, Sapphire Pendant, Carnelian Pendant |
 | Back | Raenys | Featherbow | Apeliotes' Bow, Raven Plume, Lapis Pendant, Clearsight Amulet |
-| Back | Ramona | Wereowl | Papal Crosier, Lapis Pendant, Gold Bangle |
+| Back | Ramona | Wereowl | Papal Crosier, Lapis Pendant, Gold Bangle, Ancient Crown |
 
 **Start-of-battle skill:** Hilda's Hastened Charge. Turn off Lex's Provoke
 and Hilda's Dragon's Roar.
@@ -279,8 +279,8 @@ covers Amalia and Sharon heals.
 | Front | Hodrick | Legionnaire | Zenoiran Knight's Spear, Hero's Greatshield, Knight's Medallion, Salamander Ring |
 | Front | Amalia | Dreadnought | Dancer's Delight, Champion's Towershield, Druid's Robes, Sapphire Pendant |
 | Back | Chloe | Sergeant | Thorn Spear, Lapis Pendant, Royal Scarf, Cloth Gauntlets |
-| Back | Generic Wereowl | Wereowl | Wingcrest Staff, Lapis Pendant, Royal Scarf |
-| Back | Sharon | Bishop | Cleric's Cane, Awakening Amulet, Gold Circlet |
+| Back | Generic Wereowl | Wereowl | Wingcrest Staff, Lapis Pendant, Royal Scarf, Gold Bangle |
+| Back | Sharon | Bishop | Cleric's Cane, Awakening Amulet, Gold Circlet, Lapis Pendant |
 
 **Start-of-battle skill:** none needed. Turn off Amalia's Provoking Wall. It
 costs 2 PP that she needs for Cursed Impetus.
@@ -325,7 +325,7 @@ and heals him on every active skill.
 | Back | Auch | Warlock | Chlorotic Wand, Flamebrand Tome, Sorcerer's Medallion, Lapis Pendant |
 | Back | Berenice | Landsknecht | Searing Rapier, Blessed Round Shield, Retaliation Earrings, Warrior's Medallion |
 | Back | Selvie | Druid | Flame-Hex Staff, Acrobat's Shoes, Lapis Pendant, Vitality Talisman |
-| Back | Alcina | Dark Marquess | Flame-Hex Staff, Sorcerer's Medallion, Lapis Pendant |
+| Back | Alcina | Dark Marquess | Flame-Hex Staff, Dragonbone Greatshield, Sorcerer's Medallion, Lapis Pendant |
 
 **Start-of-battle skill:** Selvie's Impetus Stance (Acrobat's Shoes). Turn
 off Alcina's Ominous Wall.
@@ -411,7 +411,7 @@ Nigel and Mordon tank and add damage.
 | Front | Mordon | Breaker | Meteorite Axe, Blue Spectacles, Elite Beret, Power Belt |
 | Back | Nina | Breaker | Juggernaut, Veteran's Eyepatch, Elite Beret, Mirrored Spectacles |
 | Back | Gilbert | Prince | Kingsblade Cornix, Scarlet Crest Shield, Dove Plume, Gambler's Coin |
-| Back | Primm | Bishop | Lyrical Wand, Awakening Amulet, Gold Circlet |
+| Back | Primm | Bishop | Lyrical Wand, Awakening Amulet, Gold Circlet, Lapis Pendant |
 
 **Start-of-battle skill:** Gilbert's Rapid Order.
 
@@ -503,6 +503,7 @@ Items you only have one of, and who holds them.
 | Celestial Talisman | Hilda | 2 |
 | Apeliotes' Bow | Raenys | 2 |
 | Papal Crosier | Ramona | 2 |
+| Ancient Crown | Ramona | 2 |
 | Kingsbow Bastorik | Yunifi | 3 |
 | Angel Plume | Yunifi | 3 |
 | Black Cat-Ear Hood | Travis | 3 |
@@ -535,7 +536,7 @@ Items you only have one of, and who holds them.
 | Sapphire Pendant (3) | 3 | Yahna, Hilda, Amalia |
 | Amethyst Pendant (1) | 1 | Gloucester |
 | Carnelian Pendant | 7 | Yahna, Hilda, Morard, Dinah, Clive, Renault, Bruno |
-| Lapis Pendant | 16 | Alain, Sanatio, Lex, Raenys, Ramona, Travis, Lhinalagos, Dinah, Ithilion, Bruno, Auch, Selvie, Alcina, Nigel, Chloe, Wereowl |
+| Lapis Pendant | 19 | Alain, Scarlett, Sanatio, Lex, Raenys, Ramona, Travis, Lhinalagos, Dinah, Ithilion, Chloe, Wereowl, Sharon, Bruno, Auch, Selvie, Alcina, Nigel, Primm |
 | Warrior's Medallion (5) | 3 | Yunifi, Morard, Berenice |
 | Knight's Medallion (5) | 5 | Bryce, Hodrick, Fodoquia, Adel, Jerome |
 | Sorcerer's Medallion (5) | 4 | Railanor, Rosalinde, Auch, Alcina |

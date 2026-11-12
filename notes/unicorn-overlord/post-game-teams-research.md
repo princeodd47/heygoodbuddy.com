@@ -212,3 +212,14 @@ User asked whether this beats squad 6 (Iron Wall). Not added to the page.
   Ominous Wall (Limited, start of battle, turned off)) with a second
   Flame-Hex Staff (Nestascheft, 8,000 G). Alcina's slot count unverified, so
   she has three items.
+- **From the user:** every unit has 4 equipment slots; slot types vary by
+  class (Valkyria: weapon, 2 shields, 1 accessory; some classes weapon + 3
+  accessories). Slot types from Miraheze class pages (CType): Bishop, High
+  Priestess, Wereowl, Warlock, Druid = staff + 3 accessories; Sniper = bow +
+  3; Berserker = axe + 3; Dark Marquess (Axe) = axe + greatshield.
+  appmedia.jp (Alcina page): Dark Marquess (Staff) = staff / greatshield.
+- Fourth slots filled in the ten squads: Scarlett Lapis Pendant, Ramona
+  Ancient Crown (Sapphire/Amethyst all used; crown freed when Grand Smash
+  became an alternative), squad 6 Wereowl Gold Bangle, Sharon and Primm
+  Lapis Pendant, Alcina Dragonbone Greatshield (Base PP +1, 8,000 G).
+  Alternative teams keep their sources' three-item builds.
