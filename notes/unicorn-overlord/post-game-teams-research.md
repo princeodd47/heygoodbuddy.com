@@ -265,3 +265,31 @@ User asked whether this beats squad 6 (Iron Wall). Not added to the page.
   24, Max HP +20; Star Iron trade); not yet confirmed she can equip it.
   Fire Curse dropped from her tactics; Maelstrom (all enemies, +25 v.
   poisoned) takes its place.
+- **User decision (2026-11-12):** squad 9 is Bruno and Elgor: Burn Squad.
+  It replaces the "Bruno: Burn Squad" alternative, with Elgor in for Jeremy.
+  Jeremy went back to the bench, which also frees the Hunter's Claymore for
+  Aramis. Elgor's kit is from appmedia.jp/uol/77676712; the Fandom page
+  returned 402. Class: Dark Marquess (Spear), using spear + greatshield.
+  Growth: Evasion S, Accuracy A, Init A, Guard F, P.Def D. Skills, all
+  learned at Lv1:
+  - Flame Thrust: 1 AP, column, 100 potency, Burn.
+  - Deadly Rush: 1 AP, 4x40, Stun + Burn.
+  - Dark Mist: 1 AP, +50 evasion, +2 PP.
+  - Dead Booing: 1 PP, Limited, start of battle, draws all enemy attacks,
+    evades 2 hits.
+  - Evil Cover: 1 PP, Limited, medium guard, steals 1 PP.
+  - Dark Step: 1 PP, evade 1 hit, +25 evasion.
+  Skill names are our English translations of the Japanese names. Check
+  them in-game.
+- Squad 9 choices:
+  - Dead Booing is the start skill. Selvie's Acrobat's Shoes (Impetus
+    Stance, also Limited) were swapped for a Sage's Hood. Selvie's Cursed
+    Swamp is off.
+  - Berenice's Retaliation Earrings became an Elite Beret, since Dead
+    Booing means she rarely gets hit.
+  - Elgor wears a Thorn Spear (PP +1, 10,000 G), a Mirage Greatshield
+    (Evasion +50, 10,000 G, a second copy alongside Berengaria's), a Royal
+    Scarf and a Lapis Pendant (buyable).
+  - Unconfirmed: Elgor's slot layout (assumed spear + greatshield + 2
+    accessories), and whether he can equip the Thorn Spear and the Mirage
+    Greatshield.

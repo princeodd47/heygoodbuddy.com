@@ -406,6 +406,65 @@ squad, and Miriam shields it from magic.
     | Miriam | Passive | Row Barrier | Magic attacks |
     | Miriam | Passive | Magic Barrier | Magic attacks |
 
+### 9. Bruno and Elgor: Burn Squad
+
+Everything here sets enemies on fire. Elgor is fast, so he usually acts
+first and Flame Thrust burns a front and back enemy in one column. Bruno's
+Wide Smash hits a row, and Auch's Flamebrand Tome adds Burn to it. Selvie
+burns a row with Fire Curse, Auch burns with Fireball and Volcano, and
+Berenice's Searing Rapier burns whatever is left. Berenice also follows up
+every ally attack with Following Slash. At the end of each battle, the
+Chlorotic Wand's Fire Burst hits every enemy if its target is burning.
+
+Elgor tanks by dodging. At the start of battle, Dead Booing pulls every
+enemy attack onto him and lets him dodge the first 2 hits. Dark Step dodges
+another hit, and the Mirage Greatshield and Royal Scarf push his evasion
+far past his already high base. The Sacral Axe makes Bruno immune to stun
+and other afflictions, and heals him on every active skill.
+
+| Row | Unit | Class | Equipment |
+| --- | --- | --- | --- |
+| Front | Bruno | Berserker | Sacral Axe, Leaf Broach, Hero's Medallion, Lapis Pendant |
+| Front | Berenice | Landsknecht | Searing Rapier, Blessed Round Shield, Elite Beret, Warrior's Medallion |
+| Front | Elgor | Dark Marquess | Thorn Spear, Mirage Greatshield, Royal Scarf, Lapis Pendant |
+| Back | Auch | Warlock | Chlorotic Wand, Flamebrand Tome, Sorcerer's Medallion, Lapis Pendant |
+| Back | Selvie | Druid | Flame-Hex Staff, Sage's Hood, Lapis Pendant, Vitality Talisman |
+
+**Start-of-battle skill:** Elgor's Dead Booing. Turn off Selvie's Cursed
+Swamp.
+
+??? note "Tactics"
+
+    | Unit | Type | Skill | Condition |
+    | --- | --- | --- | --- |
+    | Elgor | Active | Flame Thrust | Full column, not burning |
+    | Elgor | Active | Dark Mist | Own PP 1 or less |
+    | Elgor | Active | Flame Thrust | Not burning |
+    | Elgor | Active | Deadly Rush | None |
+    | Elgor | Passive | Dead Booing | Start of battle |
+    | Elgor | Passive | Dark Step | None |
+    | Elgor | Passive | Evil Cover | Ally below 50% HP |
+    | Bruno | Active | Wide Smash | None |
+    | Bruno | Passive | Bulk Up | Own HP below 75% |
+    | Auch | Active | Volcano | Full column |
+    | Auch | Active | Fireball | None |
+    | Auch | Passive | Flame Conferral | Target Bruno |
+    | Auch | Passive | Fire Burst | Burning |
+    | Berenice | Active | Fire Slash | Not burning |
+    | Berenice | Active | Bastard's Cross | Highest HP enemy |
+    | Berenice | Passive | Following Slash | None |
+    | Selvie | Active | Fire Curse | Row with most enemies, not burning |
+    | Selvie | Active | Offensive Curse | None |
+    | Selvie | Passive | Quick Curse | None |
+
+    Dark Mist gives Elgor +50 evasion and +2 PP, so he uses it when his PP
+    runs low to keep Dark Step going. With every attack aimed at Elgor,
+    Berenice rarely gets hit, so she wears an Elite Beret for more damage
+    instead of counter gear. Elgor's defense and guard are low, so attacks
+    that can't miss (Hawk Eye, Eagle Eye, truestrike skills) and magic
+    hurt him. Check the forecast against archers and mages, and against
+    enemies immune to Burn.
+
 ### 10. Four Horsemen: Cavalry Rush
 
 A fast cavalry squad that covers ground quickly. Three riders in the front,
@@ -442,9 +501,9 @@ Fran's Gryphon in the back for flyers, and Tatiana to keep them healed.
 
 ## Bench
 
-Everyone else: Bruno, Berenice, Jeremy, Auch, Selvie, Mordon, Nina, Gammel,
-Fodoquia, Mandrin, Aubin, Rolf, Kitra, Melisandre, Colm, Leah, Liza, Ridiel,
-Umerus, Millé, Elgor, Gailey, Hermann, Beaumont, Laurent, Govil and Bertrand.
+Everyone else: Jeremy, Mordon, Nina, Gammel, Fodoquia, Mandrin, Aubin, Rolf,
+Kitra, Melisandre, Colm, Leah, Liza, Ridiel, Umerus, Millé, Gailey, Hermann,
+Beaumont, Laurent, Govil and Bertrand.
 
 Good swaps:
 
@@ -496,6 +555,10 @@ Items you only have one of, and who holds them.
 | Zephyros' Spear | Renault | 8 |
 | Heavensteed Reins | Gloucester | 8 |
 | Holy Broach | Eltolinde | 8 |
+| Sacral Axe | Bruno | 9 |
+| Hero's Medallion | Bruno | 9 |
+| Chlorotic Wand | Auch | 9 |
+| Flame-Hex Staff | Selvie | 9 |
 
 ### Pendants and Medallions
 
@@ -505,10 +568,10 @@ Items you only have one of, and who holds them.
 | Sapphire Pendant (3) | 3 | Yahna, Hilda, Amalia |
 | Amethyst Pendant (1) | 1 | Gloucester |
 | Carnelian Pendant | 7 | Scarlett, Yahna, Hilda, Morard, Dinah, Clive, Renault |
-| Lapis Pendant | 17 | Alain, Scarlett, Sanatio, Lex, Raenys, Ramona, Travis, Lhinalagos, Dinah, Ithilion, Chloe, Wereowl, Sharon, Nigel, Aramis, Alcina, Primm |
-| Warrior's Medallion (5) | 2 | Yunifi, Morard |
+| Lapis Pendant | 21 | Alain, Scarlett, Sanatio, Lex, Raenys, Ramona, Travis, Lhinalagos, Dinah, Ithilion, Chloe, Wereowl, Sharon, Nigel, Aramis, Alcina, Primm, Bruno, Elgor, Auch, Selvie |
+| Warrior's Medallion (5) | 3 | Yunifi, Morard, Berenice |
 | Knight's Medallion (5) | 5 | Bryce, Hodrick, Fodoquia, Adel, Jerome |
-| Sorcerer's Medallion (5) | 3 | Railanor, Rosalinde, Alcina |
+| Sorcerer's Medallion (5) | 4 | Railanor, Rosalinde, Alcina, Auch |
 
 Other repeated items (Sage's Hood, Royal Scarf, Elite Beret, Blue
 Spectacles, Meteorite weapons, Citadel Guard's Sabatons and so on) can be
@@ -1578,49 +1641,6 @@ smash lands. Fodoquia guards him and reflects magic.
     | Selvie | Passive | Quick Curse | None |
     | Mandrin | Active | Attack | Flying |
     | Mandrin | Active | Attack | Lowest HP enemy |
-
-### Bruno: Burn Squad
-
-Bruno's Wide Smash hits a row, and Auch's Flamebrand Tome sets it on fire.
-Selvie burns a row with Fire Curse, and Auch burns with Fireball and
-Volcano. Berenice and Jeremy follow up every ally attack with Following
-Slash, and Berenice's Searing Rapier adds more burn. At the end of each
-battle the Chlorotic Wand's Fire Burst hits every enemy if its target is
-burning. The Sacral Axe makes Bruno immune to stun and other afflictions,
-and heals him on every active skill.
-
-| Row | Unit | Class | Equipment |
-| --- | --- | --- | --- |
-| Front | Bruno | Berserker | Sacral Axe, Leaf Broach, Hero's Medallion, Lapis Pendant |
-| Front | Berenice | Landsknecht | Searing Rapier, Blessed Round Shield, Retaliation Earrings, Warrior's Medallion |
-| Front | Jeremy | Landsknecht | Hunter's Claymore, Spellsteel Shield, Warrior's Medallion, Elite Beret |
-| Back | Auch | Warlock | Chlorotic Wand, Flamebrand Tome, Sorcerer's Medallion, Lapis Pendant |
-| Back | Selvie | Druid | Flame-Hex Staff, Acrobat's Shoes, Lapis Pendant, Vitality Talisman |
-
-**Start-of-battle skill:** Selvie's Impetus Stance (Acrobat's Shoes).
-
-??? note "Tactics"
-
-    | Unit | Type | Skill | Condition |
-    | --- | --- | --- | --- |
-    | Bruno | Active | Wide Smash | None |
-    | Bruno | Passive | Bulk Up | Own HP below 75% |
-    | Auch | Active | Volcano | Full column |
-    | Auch | Active | Fireball | None |
-    | Auch | Passive | Flame Conferral | Target Bruno |
-    | Auch | Passive | Fire Burst | Burning |
-    | Berenice | Active | Fire Slash | Not burning |
-    | Berenice | Active | Bastard's Cross | Highest HP enemy |
-    | Berenice | Passive | Following Slash | None |
-    | Jeremy | Active | Killing Chain | Lowest HP enemy |
-    | Jeremy | Active | Heavy Slash | None |
-    | Jeremy | Passive | Following Slash | None |
-    | Selvie | Active | Fire Curse | Not burning |
-    | Selvie | Active | Offensive Curse | Row with most enemies, own AP 3 or more |
-    | Selvie | Passive | Impetus Stance | Start of battle |
-    | Selvie | Passive | Quick Curse | None |
-
-    There's only one Flame-Hex Staff, so Selvie holds it.
 
 ### Gilbert and Nina: Breakers
 
