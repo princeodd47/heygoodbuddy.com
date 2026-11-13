@@ -30,8 +30,6 @@ in-game, the in-game value wins. Fix the page and these notes.
 - Hunt rewards are left off the page except Rogue Tomato and Thextera
   (already confirmed on New Playthrough). TZA rewards changed; sources
   didn't agree.
-- Petitioners not found: Ixtab, Feral Retriever, Trickster, Bloodwing,
-  Roblon, Belito, Deathgaze, Fafnir. Page gives location only.
 - One site says Trial Mode stage 62 gives the Zodiac Spear; not checked,
   not on the page.
 
@@ -50,6 +48,13 @@ in-game, the in-game value wins. Fix the page and these notes.
   spear, respawns; no Diamond Armlet needed. Or the Hunt Club (10 trophies
   each to Atak, Blok, Stok, then 999,999 gil). The Jegged missables page's
   "Phase 2 Dig, wear the Diamond Armlet" is wrong.
+- **Petitioners** (wiki mark pages): Ixtab, High-chief Zayalu (Jahara);
+  Feral Retriever, Hymms, and Trickster, Gurdy (both Sand-strewn Pass, Mt
+  Bur-Omisace); Bloodwing, No. 381 (South Bank Village); Roblon, Morgen
+  (West Ward, Nalbina); Belito, Montblanc; Deathgaze, a traveler at any
+  aerodrome; Fafnir, Ieeha (Temple Approach, Mt Bur-Omisace).
+- **Ixtab** is in the Henne Mines Phase 1 Shaft, not the Phase 1 Dig
+  (Jegged said Phase 1 Dig).
 
 ## Held back
 

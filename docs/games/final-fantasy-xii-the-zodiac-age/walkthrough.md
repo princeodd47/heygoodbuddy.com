@@ -467,7 +467,8 @@ You get **Lente's Tear** back in Eruyt.
 
 ### Hunt: Ixtab (Rank II)
 
-- **Where:** Henne Mines, Phase 1 Dig. Bill No. 11 in the Sandsea.
+- **Petitioner:** High-chief Zayalu, Jahara
+- **Where:** Henne Mines, Phase 1 Shaft. Bill No. 11 in the Sandsea.
 
 ### Side quest: Earth Tyrant
 
@@ -500,6 +501,7 @@ You get **Lente's Tear** back in Eruyt.
 
 ### Hunt: Feral Retriever (Rank III)
 
+- **Petitioner:** Hymms, Sand-strewn Pass on Mt Bur-Omisace
 - **Where:** Paramina Rift, Spine of the Icewyrm. Bill No. 12 in the
   Sandsea.
 
@@ -639,8 +641,8 @@ Good time to clear these.
 
 | Mark | Rank | Where |
 |------|------|-------|
-| Bloodwing | V | Barheim Passage, newly opened area |
-| Trickster | V | Paramina Rift (invisible chocobo) |
+| Bloodwing | V | Barheim Passage, newly opened area (No. 381, South Bank Village) |
+| Trickster | V | Paramina Rift, invisible chocobo (Gurdy, Sand-strewn Pass on Mt Bur-Omisace) |
 | Antlion | V | Lhusu Mines, new area |
 
 - **Adrammelech:** Zertinan Caverns.
@@ -743,7 +745,7 @@ The lab can't be revisited.
 
 | Mark | Rank | Where |
 |------|------|-------|
-| Roblon | VI | Nabreus Deadlands |
+| Roblon | VI | Nabreus Deadlands (Morgen, West Ward of Nalbina) |
 | Darksteel | IV | Sochen Cave Palace, Temptation Eluded (Homesick Man, Archades) |
 | Vyraal | V | Cerobi Steppe |
 | Lindwyrm | V | Tchita Uplands, when it's raining or cloudy |
@@ -751,7 +753,7 @@ The lab can't be revisited.
 | Goliath | VI | Necrohol of Nabudis |
 | Deathscythe | VI | Necrohol of Nabudis |
 | Carrot | VII | Salikawood (Zammadria) |
-| Belito | V | Nam-Yensa, through the Zertinan Caverns |
+| Belito | V | Nam-Yensa, through the Zertinan Caverns (Montblanc) |
 | Gilgamesh (part 1) | VII | Lhusu Mines |
 
 - **Gilgamesh:** steal the **Genji** gear in both fights. **Missable:**
@@ -838,7 +840,7 @@ joins** as a guest and the **Strahl** opens at every aerodrome.
 
 | Mark | Rank | Where |
 |------|------|-------|
-| Deathgaze | VII | On a skyferry; keep flying until it appears |
+| Deathgaze | VII | On a skyferry; keep flying until it appears (a traveler at any aerodrome) |
 | Diabolos | VII | Lhusu Mines (Bhujerba petitioner) |
 | Piscodaemon | V | Giruvegan, on foot |
 | Wild Malboro | VI | The Feywood |
@@ -923,7 +925,7 @@ All optional. In roughly increasing difficulty:
 
 | Content | Where |
 |---------|-------|
-| Fafnir (Rank VII) | Paramina Rift |
+| Fafnir (Rank VII) | Paramina Rift (Ieeha, Temple Approach on Mt Bur-Omisace) |
 | Pylraster (Rank VII) | Win Rikken's races first |
 | Ultima (Esper) | The Great Crystal, upper levels |
 | Ixion, Shadowseer (Rank VI) | Pharos Subterra |
