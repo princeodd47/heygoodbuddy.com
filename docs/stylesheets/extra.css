@@ -26,6 +26,17 @@
   .md-sidebar--primary {
     width: 10rem;
   }
+
+  /* Show the top-level section (e.g. "Games") as a link above the game's
+     pages in the left navigation. The theme hides it on desktop. */
+  .md-nav--lifted > .md-nav__list > .md-nav__item--active > .md-nav__link {
+    display: flex;
+    margin-top: 0;
+  }
+
+  .md-nav--lifted > .md-nav__list > .md-nav__item--active > .md-nav__link > label {
+    display: none;
+  }
 }
 
 /* Pages keep their tags (the Tags page uses them), but don't show the tag
