@@ -17,6 +17,12 @@ Notes from the Nintendo Switch version.
 
     What to do early, and when each thing unlocks.
 
+-   :material-map-marker-path:{ .lg .middle } __[Walkthrough](walkthrough.md)__
+
+    ---
+
+    The story in order, with what to buy and steal, bosses, hunts and side quests.
+
 -   :material-swap-horizontal:{ .lg .middle } __[Changes from PS2](changes.md)__
 
     ---
