@@ -26,6 +26,7 @@ Shaman.
 - The Samurai is the easier first playthrough. The Shaman is slower to make
   money with at the start.
 - A Shaman gives up one item slot for his totem.
+- Where to spend Karma: see [Attributes and Karma](#attributes-and-karma).
 
 ## Paying for Michael's Things
 
@@ -218,17 +219,94 @@ Medic repairs your persona. **Tar Pits delete programs for good.**
 Caleb Brightmore also gives paid Matrix runs. For the 50,000 nuyen
 CHERNOBYL run, see the [Walkthrough](walkthrough.md#chernobyl).
 
-## Karma
+## Attributes and Karma
 
-- **Spend Karma at a hotel.** You can't spend it anywhere else.
+- **Spend Karma at a hotel.** You can't spend it anywhere else. Stoker's
+  Coffin Motel is one.
 - Raising an attribute costs Karma equal to the new level: Quickness 4
-  costs 4 Karma.
-- Skills cost twice that. Pistols, SMGs and Shotguns cost half as much as
-  other skills, but **Firearms covers every gun**, so raise it instead.
-- **Early Karma:** escort and delivery runs from Gunderson.
-- **Shaman priorities:** Body and Intelligence first, then Sorcery.
-  Willpower lowers drain.
-- Charisma lowers what runners cost to hire.
+  costs 4 Karma. Joshua is human, so every attribute tops out at **6**.
+- Skills cost twice that and top out at 12. Pistols, SMGs and Shotguns cost
+  less than other skills, but **Firearms covers every gun**. A Pistols
+  rating below your Firearms is ignored.
+- **Karma comes from runs.** You also get 1 for roughly every 15–20 kills
+  or ICE crashed, and some for story steps. You never lose it.
+- **Early Karma:** escort and courier runs from Gunderson, 1 each.
+  **Medium corp runs** (4 Karma, from Julius Strouther, Caleb Brightmore
+  or Vigore and Jarl) are the best Karma later. Vigore and Jarl pay more
+  nuyen but 1 less Karma.
+
+### What Each Attribute Does
+
+| Attribute | Does | Priority |
+|-----------|------|----------|
+| **Body** | Resists damage from guns, melee, physical spells and Black ICE | **First.** Get it to 4 early, 6 by the end. |
+| **Quickness** | Movement and attack speed, hit chance, Matrix combat | High. Max it by the end. |
+| **Intelligence** | Attack speed, hit chance, Matrix combat | High. Max it by the end. |
+| **Willpower** | Lowers spell drain, resists mana spells, a little hit chance | **High for the Shaman.** Low for others. |
+| **Charisma** | Cheaper runners, talking past guards and Lone Star | Medium. 5 early, 6 later. Only Joshua's counts. |
+| **Strength** | Melee damage and grenade accuracy | Only for fists, Hand Razors and Spurs |
+| **Essence** | Magical healing. Only cyberware changes it. | Can't be raised |
+| **Magic** | Highest spell Force. Equals Essence rounded down. | Can't be raised |
+
+- **Attack speed** comes from Quickness and Intelligence together, so
+  raise them as a pair. One guide says attack speed is their average
+  rounded down, so even totals waste nothing.
+
+### Skills Worth Raising
+
+| Skill | Does | How high |
+|-------|------|----------|
+| **Sorcery** | Spell success | 5 early, 8 or more late |
+| **Firearms** | Every gun | 5 for most of the game, 7–8 late |
+| **Computer** | Matrix | 5 for easy runs, 7 for hard ones |
+| **Electronics** | Security terminals and Maglocks on corp runs | 4–6. A level 5 Maglock needs about 8. |
+| **Biotech** | Medkit healing | 4–5 on one runner |
+| **Negotiation** | Run pay and shop prices | 4–5. Raise it early. |
+| **Reputation** | Gets you into clubs; cheaper runners | 4 for Club Penumbra, then leave it |
+| Melee | Fists, Hand Razors, Spurs | Only with Spurs |
+| Throwing | Grenades | Skip |
+
+- Pistols, SMGs and Shotguns: pick one instead of Firearms only if you'll
+  never switch guns.
+- Only the runner you control talks to guards, so their Charisma is the one
+  that counts there.
+
+### Shaman Build
+
+Joshua starts with Body 2, Quickness 4, Strength 1, Charisma 2,
+Intelligence 3, Willpower 4, Sorcery 3 and Negotiation 3. Raise things in
+this order:
+
+| Step | Raise | Karma |
+|------|-------|-------|
+| 1 | **Body** 2 → 4 | 7 |
+| 2 | **Sorcery** 3 → 5 | 18 |
+| 3 | **Willpower** 4 → 6 | 11 |
+| 4 | **Reputation** 1 → 4, for Club Penumbra | 18 |
+| 5 | **Charisma** 2 → 5 | 12 |
+| 6 | **Negotiation** 3 → 5. You buy your own spells. | 18 |
+| 7 | **Body**, **Quickness** and **Intelligence** to 6 | 37 |
+| 8 | **Sorcery** to 8, Charisma to 6 | 48 |
+
+- Leave **Strength** alone. A Shaman who casts can skip guns too, or raise
+  only Pistols as a backup.
+- A full build takes about 230 Karma over the game.
+- Skip stat cyberware. Each piece costs 0.5–2 Essence, and that costs
+  Magic. See [Cyberware on a Shaman](#cyberware-on-a-shaman).
+
+### Samurai and Decker
+
+- **Buy stat cyberware before you max the attribute.** Dermal Plating
+  (+1 Body) and Muscle Replacement (+1 Strength and Quickness) only add a
+  point if the attribute is below 6 when installed. Raising it to 6
+  afterward shows as "6 c7". Install it at 6 and you get nothing.
+- **Samurai:** starts with Body 4 and Firearms 4. Raise **Firearms**,
+  Quickness and Intelligence, then Charisma to 5 and Biotech to 4.
+  Strength only if you fight with Spurs. Wired Reflexes is the best
+  cyberware: two levels roughly double attack speed.
+- **Decker:** starts with Computer 3, Quickness 5 and Intelligence 4. Get
+  **Computer to 5** before easy Matrix runs and Body up early, since Black
+  ICE hits Body. Electronics to 5.
 
 ## Spells for a Shaman
 
@@ -268,7 +346,8 @@ you don't. No guide gives the actual odds or rules for when enemies leave.
 
 ### Lone Star
 
-A patrol may stop you in the street. Choose **Talk**.
+A patrol may stop you in the street. Choose **Talk**. Higher Charisma
+helps.
 
 - With an illegal weapon and no permit, they ask for a **500 nuyen**
   "on-sight fee" and leave. Fight or run instead, and you're fighting cops.

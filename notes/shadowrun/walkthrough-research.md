@@ -17,6 +17,10 @@
   side quests. Maps were deliberately not copied; the Sources list links
   the site.
 
+- 2026-11-13: stat checkpoints from Eller's walkthrough (Section V) and
+  The_Key_of_E (corp-run Electronics, Computer for Matrix). Details and
+  conflicts are in tips-research.md.
+
 ## Open questions
 
 - **Boris's fee.** Mike's walkthrough says 500 nuyen; Mike's Redmond
@@ -45,5 +49,6 @@ Nothing.
 ## Already on the page
 
 The six main-story chapters, bosses, ways into the Salish-Shidhe, Spirit
-Eyes' ingredients, the Sinsearach trials, final-fight prep, and the Stark
-and CHERNOBYL side quests.
+Eyes' ingredients, the Sinsearach trials, final-fight prep, the Stark
+and CHERNOBYL side quests, and stat checkpoints (early Karma, Greenhouse,
+Club Penumbra Reputation, corp runs, Salish-Shidhe, final prep).

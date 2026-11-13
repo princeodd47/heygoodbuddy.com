@@ -26,6 +26,13 @@ nuyen and Karma. See [Tips](tips.md) for getting started.
   Mr. Caleb Brightmore, and a credstick with 500 nuyen.
 - Call a cab from any vidphone in the Barrens.
 
+!!! tip "Stats"
+    Spend the Karma from Gunderson's runs at the motel. Get **Body to 4**
+    first. Shamans: then **Sorcery to 5** and Willpower. Samurai and
+    Deckers: Firearms and Biotech, and hold off maxing Body, Quickness and
+    Strength until you've bought cyberware for them. See
+    [Attributes and Karma](tips.md#attributes-and-karma).
+
 ### Tarislar City Inn (Puyallup Barrens, top right)
 
 - Meet **Tabatha Shale**. She tells you about the Johnson who hired Michael
@@ -37,7 +44,8 @@ nuyen and Karma. See [Tips](tips.md) for getting started.
 
 !!! danger "Boss: Renraku Strike Team"
     The first real fight. Bring a healer, your best armor and heaviest
-    weapons. Shamans: cast Rockskin first.
+    weapons. Shamans: cast Rockskin first. Body 4 and Sorcery or Firearms
+    5 give you a fighting chance.
 
 - Pay **Boris Errascoe** for his story (sources say 100 or 500 nuyen).
   Michael bought weapons and a truck as "Owlfeather," and **Mako Sachou**
@@ -65,7 +73,8 @@ walkthrough does Sachou first.
 
 - Ask Mortimer Reed about Sachou: he's hiding at Club Penumbra, the
   building with plants out front.
-- You need a **reputation of 4** to get in (one source says 3). Pay the
+- You need a **Reputation of 4** to get in (one source says 3). It's a
+  skill you raise with Karma at a hotel: 18 Karma from 1. Pay the
   **75 nuyen** cover and find Mako at a corner table.
 
 !!! danger "Boss: four Renraku elites"
@@ -95,7 +104,9 @@ Do one or both.
   delete programs for good**. Read the Management, Project and
   Confidential files.
 - **Renraku run (no pay):** in the Renraku Arcology, go through the
-  building at the top of the escalator.
+  building at the top of the escalator. Bring someone with
+  **Electronics 5–6** for the security computers, and Charisma or
+  Invisibility for guards.
     1. 2nd floor: use the computer station with Electronics to shut down
        security.
     2. 6th floor, **left elevator**: open the safe in the **northwest
@@ -117,6 +128,8 @@ Frosty is in the Salish-Shidhe. Cabs won't take you there without an
 
 - Got a record from a Corp run? Henry J. Culver (2,500) or Sgt. Chillicut
   (5,000) can delete it.
+- The wilderness is full of tough monsters. Bring an Armor Jacket or
+  better, and get **Body to 5–6** before you go.
 - To reach the **Amerindian village**: from the highway go south, then
   east, and cross the bridge.
 - **David Owlfeather**, in the village's largest building, asks you to
@@ -132,6 +145,9 @@ Frosty is in the Salish-Shidhe. Cabs won't take you there without an
 - Run the **Mitsuhama offices**, just north of the Big Rhino. Take the
   **northeast elevator** to the **5th floor**. Aragorn is near the middle.
   Clear the way and he escapes on his own.
+- The doors are level 2 Maglocks: **Electronics 5** or a passkey. A guard
+  patrols the halls, so high Charisma, a corp badge or Invisibility gets
+  you past him.
 - Back at the village, David names **Spirit Eyes**.
 
 ### Spirit Eyes' Ritual
@@ -155,7 +171,8 @@ things. **The horn and pelt only drop after he asks for them.**
    save here.
 
 !!! danger "Boss: Renraku Strike Team"
-    Tough. Attack first and fast.
+    Tough. Attack first and fast. By now aim for Body, Quickness and
+    Intelligence at 5–6, and Sorcery or Firearms at 6–7.
 
 4. Through the next west exit, the dragon is fighting Renraku. **Kill the
    humans first, then fight the dragon.**
@@ -192,8 +209,9 @@ Ask the elders for a chance to prove yourself.
         | Sgt. Macklemann (via Alessandro Hobbs) | 5,000 |
 
     - She's in the **northwest cell**, behind a **level 5 Maglock**. Pick
-      it with Electronics, or buy a level 5 Maglock Passkey from Alessandro
-      Hobbs (20,000) or Max (42,000).
+      it with Electronics (6–7 can work with retries, 8 is reliable), or
+      buy a level 5 Maglock Passkey from Alessandro Hobbs (20,000) or Max
+      (42,000).
     - Afterward you can hire her at the Jump House.
 3. **Final Test:** promise to aid, defend and respect the Sinsearach. With
    Spirit Eyes' ritual done, the elders tell you about Thon, Ellisia and
@@ -218,6 +236,9 @@ There's no coming back, so bring your best:
 - **Heavy Combat Armor for all three runners.** The Yakuza contact sells
   it.
 - Your strongest runners, guns and spells.
+- **Every attribute at 6** except Strength and Charisma, which don't help
+  here. Aim for 8 or more in Sorcery or your gun skill, and Biotech 4–5
+  on whoever carries the Medkits. Expect to grind runs for Karma first.
 - Medkits, spare clips and spell foci.
 - Harlequin flies you to Ellisia's Tomb.
 
@@ -240,7 +261,8 @@ Samurai who **joins for free**.
    Stark is there, badly hurt. Magic can't fix his cyberware.
 2. Dr. Haversheen flies him to Seattle General Hospital and asks you to get
    him a new heart.
-3. Run the **Fuchi offices** (Penumbra District). A security terminal on
+3. Run the **Fuchi offices** (Penumbra District). Bring a passkey and
+   corp badges, or high Electronics and Charisma. A security terminal on
    the 1st floor shows where the heart is. The **Prototype Cyber-heart**
    is in a safe on the **east side of the 3rd floor**.
 4. Take it to Dr. Haversheen. Stark recovers.
@@ -248,7 +270,8 @@ Samurai who **joins for free**.
 
 ### CHERNOBYL
 
-A Matrix run worth **50,000 nuyen**. Each of these Corp systems has part
+A Matrix run worth **50,000 nuyen**. Your decker needs **Computer 7**
+and decent Body for the Black ICE. Each of these Corp systems has part
 of the passcode **CHERNOBYL** in one datastore. Read all five:
 
 | System | Datastore |

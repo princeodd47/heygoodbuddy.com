@@ -47,6 +47,12 @@ search-result excerpts.
   RPGClassics shadowruns page: runs are randomly generated from templates,
   with random encounters "same as on the street." The_Key_of_E: run from
   Halloweeners early.
+- Attributes and Karma (2026-11-13): RPGClassics attributes and
+  cyberware pages; Eller's Section VI (attribute and skill list, race
+  maxes, Karma sources, cyberware-before-raising rule from VII.5); The_Key_of_E's
+  attribute advice and Recommended Growth charts (starting stats for each
+  Joshua archetype and every hireable runner, target ratings, ~230 Karma
+  for a full Shaman). Shaman step order on the page is a blend of the two.
 - **In-game (2026-11-09, from the player):** the Shaman starts with **1
   Fetish**, and it sells for **257 nuyen**. This overrides a search excerpt
   of the RPGClassics magic page that said 10.
@@ -71,13 +77,34 @@ search-result excerpts.
 - **Samurai starting gear.** RPGClassics says hand razors and "retractable
   finger claws" (maybe Spurs). The page only lists Hand Razors.
 
+- **Attribute priorities differ.** Eller: Body first for everyone,
+  Quickness the main offense stat, Strength and Charisma not needed for the
+  final fight. Key_of_E: Body to 4 ASAP, Willpower is the caster's main
+  stat, Charisma 5 early. Before I Play: Shaman Body and Intelligence first.
+  The page blends them (Body 4, Sorcery 5, Willpower 6, then the rest).
+- **Hidden formulas.** Key_of_E says attack speed = (Quickness +
+  Intelligence) / 2 and Combat Pool = (Q + I + W) / 2, rounded down.
+  Unverified; the page only hints at the even-total idea.
+- **Weapon skill cost.** RPGClassics says Pistols/SMGs/Shotguns cost half;
+  Eller says "slightly less." The page says "less." Key_of_E says casters
+  should pick one specialization rather than Firearms.
+- **Club Penumbra.** Eller's Reputation entry says 5 gets you in without an
+  elf; his walkthrough says 4. Pages say 4.
+- **Level 5 Maglock.** Eller: Electronics 6–7. Key_of_E: 8+ reliably.
+  Walkthrough gives both.
+- **Muscle Replacement max.** RPGClassics 3, Eller 4. Not on the page.
+- **Starting stats** are from Key_of_E's charts; check in-game. Decker
+  Joshua's Pistols start value is unclear in the chart, so it's left off.
+- **Karma costs** on the page assume the attribute = new level, skill =
+  2x rule from RPGClassics and Eller.
+
 ## Held back
 
 Nothing.
 
 ## Already on the page
 
-Archetype choice, Stoker fee and belongings, selling the Fetish, cyberware and
+Archetype choice, attributes and skills (priorities, Shaman Karma order, Samurai/Decker notes, cyberware-before-raising), Stoker fee and belongings, selling the Fetish, cyberware and
 Magic, money tricks, Karma costs, Shaman spells, Matrix Runs (shopping list, programs, ICE, deck upgrades),
 random encounters (Lone Star, choice events, corp building events), debug
 code.
