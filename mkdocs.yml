@@ -2,6 +2,9 @@ site_name: heygoodbuddy.com
 site_url: https://heygoodbuddy.com/
 site_description: Game guides, notes and articles.
 
+# Local preview port. 8080 on levia belongs to levia-web (network-config), so never use it here.
+dev_addr: 127.0.0.1:8000
+
 theme:
   name: material
   palette:
