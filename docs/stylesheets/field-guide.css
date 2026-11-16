@@ -322,6 +322,12 @@ html.fg .md-nav--primary a.md-nav__link--active::before {
 }
 
 @media screen and (min-width: 76.25em) {
+  /* A little wider than the site's 10rem, so the cursor and status icon
+     leave room for one-word page names like "Walkthrough". */
+  html.fg .md-sidebar--primary {
+    width: 11rem;
+  }
+
   /* The "Games" link above the game's pages: a quiet way back. */
   html.fg .md-nav--lifted > .md-nav__list > .md-nav__item--active > .md-nav__link > a.md-nav__link {
     color: var(--fg-ink-dim);
@@ -488,3 +494,54 @@ html.fg .md-nav--secondary .md-nav__link--active,
 html.fg .md-nav--secondary .md-nav__link--passed.md-nav__link--active {
   color: var(--fg-gold);
 }
+
+/* ---------- Callout boxes and collapsible sections ---------- */
+
+/* The field guide's walkthrough boxes: a tinted box with a thick left edge,
+   and the title in the pixel face, all in the box's own color (--k). */
+html.fg .md-typeset .admonition,
+html.fg .md-typeset details {
+  --k: #7fdcff;
+  font-size: .72rem;
+  color: var(--fg-ink);
+  background: color-mix(in srgb, var(--k) 9%, var(--fg-ground));
+  border: 1px solid var(--k);
+  border-left-width: 4px;
+  border-radius: 6px;
+  box-shadow: none;
+}
+
+html.fg .md-typeset .admonition > .admonition-title,
+html.fg .md-typeset details > summary {
+  font-family: var(--fg-display);
+  font-weight: 500;
+  font-size: .74rem;
+  letter-spacing: .6px;
+  text-transform: uppercase;
+  color: var(--k);
+  background: transparent;
+  border: 0;
+}
+
+html.fg .md-typeset .admonition > .admonition-title::before,
+html.fg .md-typeset details > summary::before {
+  background-color: var(--k);
+}
+
+html.fg .md-typeset details > summary::after {
+  color: var(--k);
+}
+
+/* One color per kind, from the field guide's walkthrough boxes. */
+html.fg .md-typeset .admonition:is(.note, .info, .question),
+html.fg .md-typeset details:is(.note, .info, .question) { --k: #7fdcff; }
+html.fg .md-typeset .admonition:is(.abstract, .example),
+html.fg .md-typeset details:is(.abstract, .example) { --k: #c78bff; }
+html.fg .md-typeset .admonition:is(.tip, .success),
+html.fg .md-typeset details:is(.tip, .success) { --k: #7cf0a2; }
+html.fg .md-typeset .admonition.warning,
+html.fg .md-typeset details.warning { --k: #ffb35c; }
+html.fg .md-typeset .admonition:is(.danger, .failure, .bug),
+html.fg .md-typeset details:is(.danger, .failure, .bug) { --k: #ff8a8a; }
+html.fg .md-typeset .admonition.quote,
+html.fg .md-typeset details.quote { --k: var(--fg-ink-dim); }
