@@ -252,9 +252,24 @@ html.fg .md-typeset .grid.cards svg {
   color: var(--fg-gold);
 }
 
+/* Card text: values bright, labels ("System:") dim, as in the field guide. */
 html.fg .md-typeset .grid.cards > ul > li > p,
 html.fg .md-typeset .grid > .card > p {
+  color: var(--fg-ink);
+}
+
+html.fg .md-typeset .grid.cards > ul > li > p strong,
+html.fg .md-typeset .grid > .card > p strong {
   color: var(--fg-ink-dim);
+  font-weight: 500;
+}
+
+/* One card per row on a phone: fill the width instead of a fixed card. */
+@media screen and (max-width: 37.5em) {
+  html.fg .md-typeset .grid.cards {
+    grid-template-columns: minmax(0, 1fr);
+    max-width: none;
+  }
 }
 
 /* ---------- Footer ---------- */
