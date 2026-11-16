@@ -1,0 +1,275 @@
+/* Field guide look: the Final Fantasy VI Advance field guide's menu windows,
+   night-sky ground, pixel headings and gold accents, applied site-wide.
+
+   Rolled out one page at a time: everything here is scoped to html.fg, which
+   overrides/main.html sets only on pages with `skin: field-guide` in their
+   front matter. Dark only; the light/dark toggle is hidden on these pages. */
+
+/* ---------- Tokens ---------- */
+
+html.fg {
+  --fg-ground: #0b1024;
+  --fg-glow: #1b2766;
+  --fg-win-top: #2a3f9e;
+  --fg-win-bot: #0f1a5c;
+  --fg-win-line: #e8ecff;
+  --fg-win-edge: #5d6fd0;
+  --fg-ink: #f1f3ff;
+  --fg-ink-dim: #aab3e6;
+  --fg-ink-faint: #7c86c4;
+  --fg-gold: #ffd66b;
+  --fg-row: #16226b;
+  --fg-row-hover: #1d2c84;
+  --fg-row-open: #22348f;
+  --fg-chip: #0a124a;
+  --fg-display: "Pixelify Sans", "Courier New", monospace;
+  --fg-body: "IBM Plex Sans", system-ui, sans-serif;
+  --fg-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  /* The window: blue gradient, light outer line, blue inner line, hard shadow. */
+  --fg-win-bg: linear-gradient(180deg, var(--fg-win-top), var(--fg-win-bot));
+  --fg-win-shadow: 0 0 0 2px var(--fg-win-edge) inset, 0 6px 0 rgba(0, 0, 0, .35);
+
+  color-scheme: dark;
+  background: var(--fg-ground);
+}
+
+/* Map the theme's variables onto the tokens, whichever scheme the body
+   carries (a visitor may have chosen light mode on another page). */
+html.fg [data-md-color-scheme] {
+  color-scheme: dark;
+  --md-hue: 230;
+  --md-text-font: "IBM Plex Sans";
+  --md-code-font: "IBM Plex Mono";
+
+  --md-primary-fg-color: var(--fg-win-bot);
+  --md-primary-fg-color--light: var(--fg-win-top);
+  --md-primary-fg-color--dark: var(--fg-ground);
+  --md-primary-bg-color: var(--fg-ink);
+  --md-primary-bg-color--light: var(--fg-ink-dim);
+  --md-accent-fg-color: var(--fg-gold);
+  --md-accent-fg-color--transparent: rgba(255, 214, 107, .1);
+  --md-accent-bg-color: var(--fg-ground);
+
+  --md-default-fg-color: var(--fg-ink);
+  --md-default-fg-color--light: var(--fg-ink-dim);
+  --md-default-fg-color--lighter: var(--fg-ink-faint);
+  --md-default-fg-color--lightest: rgba(232, 236, 255, .14);
+  --md-default-bg-color: var(--fg-ground);
+  --md-default-bg-color--light: rgba(11, 16, 36, .54);
+  --md-default-bg-color--lighter: rgba(11, 16, 36, .26);
+  --md-default-bg-color--lightest: rgba(11, 16, 36, .07);
+
+  --md-code-fg-color: var(--fg-ink);
+  --md-code-bg-color: var(--fg-chip);
+  --md-code-bg-color--light: rgba(10, 18, 74, .9);
+  --md-code-bg-color--lighter: rgba(10, 18, 74, .54);
+
+  --md-typeset-color: var(--fg-ink);
+  --md-typeset-a-color: var(--fg-gold);
+  --md-typeset-mark-color: rgba(255, 214, 107, .3);
+  --md-typeset-table-color: rgba(232, 236, 255, .18);
+  --md-typeset-table-color--light: rgba(232, 236, 255, .05);
+
+  --md-admonition-fg-color: var(--fg-ink);
+  --md-admonition-bg-color: var(--fg-row);
+  --md-footer-fg-color: var(--fg-ink);
+  --md-footer-fg-color--light: var(--fg-ink-dim);
+  --md-footer-fg-color--lighter: var(--fg-ink-faint);
+  --md-footer-bg-color: var(--fg-ground);
+  --md-footer-bg-color--dark: var(--fg-ground);
+
+  --md-shadow-z1: 0 4px 0 rgba(0, 0, 0, .3);
+  --md-shadow-z2: 0 6px 0 rgba(0, 0, 0, .35);
+  --md-shadow-z3: 0 0 0 2px var(--fg-win-edge), 0 12px 32px rgba(0, 0, 0, .55);
+
+  /* The modern variant also reads these RGB triples. */
+  --color-foreground: 241 243 255;
+  --color-background: 11 16 36;
+  --color-background-subtle: 22 34 107;
+  --color-backdrop: 5 8 20;
+
+  background: var(--fg-ground) radial-gradient(ellipse at 50% -10%, var(--fg-glow) 0%, transparent 60%) no-repeat;
+  color: var(--fg-ink);
+}
+
+html.fg body {
+  font-family: var(--fg-body);
+}
+
+html.fg :focus-visible {
+  outline: 2px solid var(--fg-gold);
+  outline-offset: 2px;
+}
+
+/* Dark only. */
+html.fg [data-md-component="palette"] {
+  display: none;
+}
+
+/* ---------- Header and top tabs: one menu window ---------- */
+
+html.fg .md-header {
+  background: var(--fg-win-bg);
+  border-bottom: 2px solid var(--fg-win-line);
+  box-shadow: 0 -2px 0 var(--fg-win-edge) inset, 0 4px 0 rgba(0, 0, 0, .35);
+  color: var(--fg-ink);
+}
+
+html.fg .md-header__title,
+html.fg .md-header__topic {
+  font-family: var(--fg-display);
+  font-weight: 700;
+  letter-spacing: .5px;
+  text-shadow: 2px 2px 0 #000;
+}
+
+html.fg .md-tabs {
+  background: var(--fg-win-bot);
+  border-bottom: 2px solid var(--fg-win-line);
+  color: var(--fg-ink);
+}
+
+html.fg .md-tabs__link {
+  font-family: var(--fg-display);
+  font-size: .8rem;
+  opacity: 1;
+  color: var(--fg-ink-dim);
+}
+
+html.fg .md-tabs__item--active .md-tabs__link,
+html.fg .md-tabs__link:hover {
+  color: var(--fg-ink);
+}
+
+/* The menu cursor beside the current tab. */
+html.fg .md-tabs__item--active .md-tabs__link::before {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-right: .35rem;
+  background: none;
+  border-left: 7px solid var(--fg-ink);
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  vertical-align: 0;
+  transform: translateY(2px);
+}
+
+/* Search box. */
+html.fg .md-search__form {
+  background: var(--fg-chip);
+  border: 1px solid var(--fg-win-edge);
+  border-radius: 4px;
+}
+
+/* ---------- Text ---------- */
+
+html.fg .md-typeset {
+  color: var(--fg-ink);
+}
+
+html.fg .md-typeset h1,
+html.fg .md-typeset h2,
+html.fg .md-typeset h3,
+html.fg .md-typeset h4 {
+  font-family: var(--fg-display);
+  color: var(--fg-ink);
+  letter-spacing: .5px;
+}
+
+html.fg .md-typeset h1 {
+  font-weight: 700;
+  text-shadow: 2px 2px 0 #000;
+}
+
+html.fg .md-typeset h2 {
+  font-weight: 500;
+  text-shadow: 2px 2px 0 #000;
+}
+
+html.fg .md-typeset h3,
+html.fg .md-typeset h4 {
+  font-weight: 500;
+  color: var(--fg-gold);
+}
+
+html.fg .md-typeset a {
+  color: var(--fg-gold);
+}
+
+html.fg .md-typeset a:hover {
+  color: #ffe7a6;
+}
+
+html.fg .md-typeset strong {
+  color: var(--fg-ink);
+  font-weight: 600;
+}
+
+html.fg .md-typeset code,
+html.fg .md-typeset kbd,
+html.fg .md-typeset pre {
+  font-family: var(--fg-mono);
+}
+
+html.fg .md-typeset hr {
+  border-bottom: 1px dashed rgba(232, 236, 255, .25);
+}
+
+/* ---------- Link cards: menu windows with a cursor on hover ---------- */
+
+html.fg .md-typeset .grid.cards > ul > li,
+html.fg .md-typeset .grid > .card {
+  background: var(--fg-win-bg);
+  border: 2px solid var(--fg-win-line);
+  border-radius: 7px;
+  box-shadow: var(--fg-win-shadow);
+  transition: transform .12s, box-shadow .12s;
+}
+
+html.fg .md-typeset .grid.cards > ul > li:hover,
+html.fg .md-typeset .grid > .card:hover {
+  border-color: var(--fg-win-line);
+  box-shadow: 0 0 0 2px var(--fg-gold) inset, 0 6px 0 rgba(0, 0, 0, .35);
+}
+
+html.fg .md-typeset .grid.cards > ul > li > hr,
+html.fg .md-typeset .grid > .card > hr {
+  border-bottom: 1px dashed rgba(232, 236, 255, .3);
+}
+
+html.fg .md-typeset .grid.cards a {
+  font-family: var(--fg-display);
+  font-weight: 500;
+  font-size: 1.08em;
+  text-decoration: none;
+}
+
+html.fg .md-typeset .grid.cards .twemoji,
+html.fg .md-typeset .grid.cards svg {
+  color: var(--fg-gold);
+}
+
+html.fg .md-typeset .grid.cards > ul > li > p,
+html.fg .md-typeset .grid > .card > p {
+  color: var(--fg-ink-dim);
+}
+
+/* ---------- Footer ---------- */
+
+html.fg .md-footer,
+html.fg .md-footer-meta {
+  background: var(--fg-ground);
+  color: var(--fg-ink-faint);
+}
+
+html.fg .md-footer-meta {
+  border-top: 1px dashed rgba(232, 236, 255, .2);
+}
+
+html.fg .md-footer-meta a,
+html.fg .md-copyright a {
+  color: var(--fg-ink-dim);
+}

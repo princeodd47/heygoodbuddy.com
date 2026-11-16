@@ -1,0 +1,13 @@
+{#-
+  Field guide look, rolled out one page at a time: a page opts in with
+  `skin: field-guide` in its front matter. The styles live in
+  docs/stylesheets/field-guide.css and apply only under html.fg.
+-#}
+{% extends "base.html" %}
+{% block extrahead %}
+  {% if page and page.meta and page.meta.skin == "field-guide" %}
+    <script>document.documentElement.classList.add("fg")</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  {% endif %}
+{% endblock %}
