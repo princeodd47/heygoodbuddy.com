@@ -1,4 +1,5 @@
 ---
+skin: field-guide
 platform: Genesis
 spoilers: full
 status: draft
@@ -10,9 +11,6 @@ tags:
 
 The main story, in order. Between steps, take runs from the Johnsons for
 nuyen and Karma. See [Tips](tips.md) for getting started.
-
-!!! warning
-    Spoilers for the whole game.
 
 ## 1. Picking Up the Trail
 
