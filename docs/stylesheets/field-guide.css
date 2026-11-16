@@ -386,3 +386,105 @@ html.fg .md-nav--primary a.md-nav__link--active::before {
     border-top-color: rgba(232, 236, 255, .1);
   }
 }
+
+/* ---------- Tables: a window holding list rows ---------- */
+
+/* The window frame goes on the scroll wrapper (which the theme adds around
+   every table), so it always fits the column and a wide table scrolls inside
+   it instead of running past the frame. It shrinks to fit narrow tables. */
+html.fg .md-typeset__scrollwrap {
+  width: fit-content;
+  max-width: 100%;
+  margin: 1em 0 1.4em;
+  overflow-x: auto;
+  background: var(--fg-win-bg);
+  border: 2px solid var(--fg-win-line);
+  border-radius: 7px;
+  box-shadow: var(--fg-win-shadow);
+}
+
+html.fg .md-typeset__table {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+html.fg .md-typeset__scrollwrap {
+  scrollbar-width: thin;
+  scrollbar-color: var(--fg-win-edge) transparent;
+}
+
+html.fg .md-typeset table:not([class]) {
+  display: table;
+  margin: 0;
+  font-size: .72rem;
+  color: var(--fg-ink);
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+html.fg .md-typeset table:not([class]) th {
+  font-family: var(--fg-body);
+  font-size: .56rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--fg-ink-dim);
+  background: transparent;
+  border-bottom: 1px dashed rgba(232, 236, 255, .3);
+}
+
+html.fg .md-typeset table:not([class]) td {
+  border-top: 1px solid rgba(232, 236, 255, .1);
+  vertical-align: top;
+}
+
+html.fg .md-typeset table:not([class]) tbody tr {
+  background: rgba(10, 18, 74, .35);
+  transition: background-color .12s;
+}
+
+html.fg .md-typeset table:not([class]) tbody tr:nth-child(even) {
+  background: rgba(10, 18, 74, .6);
+}
+
+html.fg .md-typeset table:not([class]) tbody tr:hover {
+  background: var(--fg-row-hover);
+  box-shadow: inset 3px 0 0 var(--fg-gold);
+}
+
+/* Numeric (right-aligned) columns use the mono face, as in the field guide. */
+html.fg .md-typeset table:not([class]) td[style*="right"] {
+  font-family: var(--fg-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+html.fg .md-typeset table:not([class]) em {
+  color: var(--fg-ink-dim);
+}
+
+/* ---------- "On this page" ---------- */
+
+html.fg .md-nav--secondary .md-nav__title {
+  font-family: var(--fg-display);
+  font-weight: 500;
+  font-size: .74rem;
+  color: var(--fg-gold);
+  background: transparent;
+  box-shadow: none;
+}
+
+html.fg .md-nav--secondary .md-nav__link {
+  color: var(--fg-ink-dim);
+}
+
+html.fg .md-nav--secondary .md-nav__link:hover {
+  color: var(--fg-ink);
+}
+
+html.fg .md-nav--secondary .md-nav__link--active,
+html.fg .md-nav--secondary .md-nav__link--passed.md-nav__link--active {
+  color: var(--fg-gold);
+}
