@@ -288,3 +288,101 @@ html.fg .md-footer-meta a,
 html.fg .md-copyright a {
   color: var(--fg-ink-dim);
 }
+
+/* ---------- Left navigation ---------- */
+
+/* Links: plain, with a soft highlight on hover. */
+html.fg .md-nav {
+  font-family: var(--fg-body);
+}
+
+html.fg .md-nav--primary .md-nav__link[href]:hover:not(.md-nav__link--active),
+html.fg .md-nav--primary .md-nav__link[for]:hover:not(.md-nav__link--active) {
+  color: var(--fg-ink);
+  background-color: rgba(255, 255, 255, .07);
+}
+
+/* The current page: bright, with the menu cursor instead of a filled box. */
+html.fg .md-nav--primary .md-nav__item .md-nav__link--active {
+  color: var(--fg-ink);
+  background: rgba(255, 255, 255, .12);
+  font-weight: 600;
+}
+
+html.fg .md-nav--primary a.md-nav__link--active::before {
+  content: "";
+  flex: none;
+  width: 0;
+  height: 0;
+  margin-right: .4rem;
+  border-left: 7px solid var(--fg-gold);
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  align-self: center;
+}
+
+@media screen and (min-width: 76.25em) {
+  /* The "Games" link above the game's pages: a quiet way back. */
+  html.fg .md-nav--lifted > .md-nav__list > .md-nav__item--active > .md-nav__link > a.md-nav__link {
+    color: var(--fg-ink-dim);
+    font-size: .62rem;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+  }
+
+  /* The game's pages sit in one menu window. */
+  html.fg .md-nav--primary [data-md-level="1"] > .md-nav__list > .md-nav__item--section.md-nav__item--active {
+    margin: .4rem .2rem 0 .6rem;
+    padding: .35rem .25rem .45rem;
+    background: var(--fg-win-bg);
+    border: 2px solid var(--fg-win-line);
+    border-radius: 7px;
+    box-shadow: var(--fg-win-shadow);
+  }
+
+  /* The game's name heads the window. */
+  html.fg .md-nav--primary [data-md-level="1"] > .md-nav__list > .md-nav__item--section.md-nav__item--active > .md-nav__container > a.md-nav__link {
+    font-family: var(--fg-display);
+    font-weight: 500;
+    font-size: .74rem;
+    color: var(--fg-gold);
+    letter-spacing: .3px;
+    padding-bottom: .35rem;
+    margin-bottom: .2rem;
+    border-bottom: 1px dashed rgba(232, 236, 255, .3);
+    border-radius: 4px 4px 0 0;
+  }
+
+  html.fg .md-nav--primary [data-md-level="1"] > .md-nav__list > .md-nav__item--section.md-nav__item--active > .md-nav__container > a.md-nav__link--active {
+    background: rgba(255, 255, 255, .12);
+  }
+}
+
+/* Phone and tablet drawer: night-sky ground under a window-style title bar. */
+@media screen and (max-width: 76.234375em) {
+  html.fg .md-sidebar--primary .md-sidebar__scrollwrap {
+    background-color: var(--fg-ground);
+  }
+
+  html.fg .md-nav--primary,
+  html.fg .md-nav--primary .md-nav {
+    background-color: transparent;
+  }
+
+  html.fg .md-nav--primary .md-nav__title {
+    background: var(--fg-win-bg);
+    color: var(--fg-ink);
+    border-bottom: 2px solid var(--fg-win-line);
+    font-family: var(--fg-display);
+    font-weight: 500;
+  }
+
+  html.fg .md-nav--primary .md-nav__title .md-nav__button.md-logo {
+    color: var(--fg-ink);
+  }
+
+  html.fg .md-nav--primary .md-nav__item {
+    border-top-color: rgba(232, 236, 255, .1);
+  }
+}
