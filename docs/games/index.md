@@ -96,4 +96,12 @@ hide:
     **Genre:** Action RPG<br>
     **Release Date:** 1994
 
+-   :material-book-open-variant:{ .lg .middle } __[Final Fantasy VI Advance](final-fantasy-vi-advance/index.md)__
+
+    ---
+
+    **System:** Game Boy Advance<br>
+    **Genre:** JRPG<br>
+    **Release Date:** February 5, 2007
+
 </div>

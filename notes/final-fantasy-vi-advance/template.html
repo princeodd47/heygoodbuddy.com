@@ -1,0 +1,1462 @@
+<title>FF6 Advance Field Guide</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: classic menu-window panels on a night-sky ground; one sticky tab bar, then a filter window and a list of expandable rows. */
+:root{
+  --ground:#0b1024;
+  --win-top:#2a3f9e; --win-bot:#0f1a5c;
+  --win-line:#e8ecff; --win-edge:#5d6fd0;
+  --ink:#f1f3ff; --ink-dim:#aab3e6; --ink-faint:#7c86c4;
+  --gold:#ffd66b; --row:#16226b; --row-hover:#1d2c84; --row-open:#22348f;
+  --chip:#0a124a;
+  --f-fire:#ff6b4a; --f-ice:#7fdcff; --f-lightning:#ffe45c; --f-poison:#c78bff;
+  --f-wind:#7cf0a2; --f-holy:#ffffff; --f-earth:#d9a066; --f-water:#4f9dff;
+  --display:"Pixelify Sans", "Courier New", monospace;
+  --body:"IBM Plex Sans", system-ui, sans-serif;
+  --mono:"IBM Plex Mono", ui-monospace, monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{background:var(--ground)}
+body{background:var(--ground) radial-gradient(ellipse at 50% -10%, #1b2766 0%, transparent 60%) no-repeat;color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.45;min-height:100%}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--ground)}
+a{color:var(--gold)}
+button,input,select{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 48px}
+
+.win{background:linear-gradient(180deg,var(--win-top),var(--win-bot));border:2px solid var(--win-line);border-radius:7px;box-shadow:0 0 0 2px var(--win-edge) inset,0 6px 0 rgba(0,0,0,.35)}
+
+header.top{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px 24px;padding-block:6px 16px}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(26px,4.6vw,40px);line-height:1;margin:0;letter-spacing:.5px;text-wrap:balance;text-shadow:2px 2px 0 #000}
+h1 small{display:block;font-size:.42em;color:var(--gold);letter-spacing:2px;text-transform:uppercase;margin-bottom:8px}
+.tagline{color:var(--ink-dim);max-width:46ch;margin:0;font-size:14px}
+
+nav.tabs{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;display:flex;flex-wrap:wrap;gap:4px;padding:8px;margin-bottom:14px}
+nav.tabs a{flex:1 1 auto;text-align:center;text-decoration:none;color:var(--ink);font-family:var(--display);font-size:18px;padding:8px 6px;border-radius:4px;display:flex;align-items:center;justify-content:center;gap:8px}
+nav.tabs a .cnt{font-family:var(--mono);font-size:10.5px;color:var(--ink-faint)}
+nav.tabs a[aria-current="page"]{background:rgba(255,255,255,.12)}
+nav.tabs a[aria-current="page"]::before{content:"";width:0;height:0;border-left:9px solid var(--ink);border-top:6px solid transparent;border-bottom:6px solid transparent}
+nav.tabs a:hover{background:rgba(255,255,255,.07)}
+
+.intro{color:var(--ink-dim);font-size:14px;margin:0 0 12px;max-width:80ch}
+.intro b{color:var(--ink)}
+
+.filters{padding:12px;display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center;margin-bottom:12px}
+.filters label.lbl{font-size:11px;text-transform:uppercase;letter-spacing:1.2px;color:var(--ink-dim);display:block;margin-bottom:4px}
+.filters .grp{display:flex;flex-direction:column;min-width:0}
+.filters input[type=search],.filters input[type=number],.filters select{color:inherit;font:inherit;background:var(--chip);border:1px solid var(--win-edge);border-radius:4px;padding:7px 10px;min-width:0}
+.filters input[type=search]{width:min(280px,100%)}
+.filters .grow{flex:1 1 220px}
+.filters .grow input{width:100%}
+.chips{display:flex;flex-wrap:wrap;gap:5px}
+.chip{border:1px solid var(--win-edge);background:var(--chip);border-radius:999px;padding:3px 10px;font-size:12.5px;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
+.chip[aria-pressed="true"]{background:var(--ink);color:#0f1a5c;border-color:var(--ink);font-weight:600}
+.chip .dot{width:8px;height:8px;border-radius:50%}
+.count{font-family:var(--mono);font-size:12.5px;color:var(--ink-dim);margin:0 0 8px 2px}
+
+.list{display:flex;flex-direction:column;gap:4px}
+.row{background:var(--row);border:1px solid rgba(232,236,255,.18);border-radius:5px}
+.row>button.head{all:unset;box-sizing:border-box;cursor:pointer;display:grid;width:100%;padding:9px 12px;gap:4px 12px;align-items:center}
+.row>button.head:hover{background:var(--row-hover)}
+.row>button.head:focus-visible{outline:2px solid var(--gold);outline-offset:-2px;border-radius:5px}
+.row.open{background:var(--row-open);border-color:var(--win-line)}
+.row .name{font-weight:600;display:flex;align-items:center;gap:8px;min-width:0}
+.row .name .cursor{width:0;height:0;border-left:8px solid var(--gold);border-top:5px solid transparent;border-bottom:5px solid transparent;opacity:0;flex:none}
+.row.open .name .cursor,.row>button.head:hover .cursor{opacity:1}
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums;font-size:13.5px}
+.dim{color:var(--ink-dim)}
+.faint{color:var(--ink-faint)}
+.k{font-size:10.5px;text-transform:uppercase;letter-spacing:1px;color:var(--ink-faint);display:block}
+.badge{font-family:var(--mono);font-size:10.5px;padding:1px 6px;border-radius:3px;border:1px solid var(--gold);color:var(--gold);white-space:nowrap}
+.badge.alt{border-color:var(--ink-faint);color:var(--ink-dim)}
+
+.el{display:inline-flex;align-items:center;gap:4px;font-size:12px;padding:1px 7px 1px 5px;border-radius:3px;background:var(--chip);white-space:nowrap;margin:1px 3px 1px 0}
+.el i{width:8px;height:8px;border-radius:50%;background:var(--c,#999)}
+.el.weak{box-shadow:inset 0 0 0 1px var(--c)}
+.el.abs::after{content:"absorb";color:var(--ink-faint);font-size:10.5px;margin-left:2px}
+.el.nul::after{content:"null";color:var(--ink-faint);font-size:10.5px;margin-left:2px}
+.badge.trait{border-style:dashed;border-color:var(--ink-dim);color:var(--ink)}
+details.legend{margin:0 0 12px;padding:0 14px}
+details.legend>summary{cursor:pointer;font-family:var(--display);font-size:15px;color:var(--gold);padding:9px 0;list-style:none;display:flex;align-items:center;gap:8px}
+details.legend>summary::-webkit-details-marker{display:none}
+details.legend>summary::before{content:"";border-left:8px solid var(--gold);border-top:5px solid transparent;border-bottom:5px solid transparent;transition:transform .12s}
+details.legend[open]>summary::before{transform:rotate(90deg)}
+details.legend dl{margin:0 0 12px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:8px 22px}
+details.legend dl>div{display:grid;grid-template-columns:118px 1fr;gap:10px;align-items:start;min-width:0}
+details.legend dt{display:flex;flex-wrap:wrap;gap:3px;align-items:flex-start}
+details.legend dd{margin:0;font-size:13.5px;color:var(--ink-dim);min-width:0}
+details.legend dd b{color:var(--ink);font-weight:600}
+.tags{display:flex;flex-wrap:wrap;gap:2px}
+
+.detail{padding:4px 14px 16px 30px;display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));border-top:1px dashed rgba(232,236,255,.25)}
+.detail section{min-width:0}
+.detail h3{font-family:var(--display);font-weight:500;font-size:15px;color:var(--gold);margin:10px 0 6px;letter-spacing:.5px}
+.statgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px 10px}
+.statgrid div{min-width:0}
+dl.kv{margin:0;display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:14px}
+dl.kv dt{color:var(--ink-dim)}
+dl.kv dd{margin:0;min-width:0}
+.prose{font-size:14px;margin:0;color:var(--ink)}
+.linkbtn{all:unset;cursor:pointer;color:var(--gold);text-decoration:underline;text-underline-offset:2px}
+.linkbtn:focus-visible{outline:2px solid var(--gold)}
+
+/* list column templates: one variable per list, shared by header and rows */
+.mon{--cols:minmax(0,1.5fr) 46px 84px 76px 72px minmax(0,1.1fr) minmax(0,1.5fr)}
+.rage{--cols:38px minmax(0,1.2fr) minmax(0,.9fr) minmax(0,1.8fr) minmax(0,1.4fr)}
+.eq{--cols:minmax(0,1.4fr) 104px minmax(0,1.3fr) minmax(0,1.3fr)}
+.row>button.head,.colhead{grid-template-columns:var(--cols)}
+.row>button.head>*{min-width:0;overflow-wrap:anywhere}
+.row .name{flex-wrap:wrap;row-gap:3px}
+.colhead{display:grid;gap:4px 12px;padding:0 13px 4px;font-size:10.5px;text-transform:uppercase;letter-spacing:1px;color:var(--ink-faint)}
+.r{text-align:right}
+nav.subtabs{display:flex;flex-wrap:wrap;gap:4px;margin:-6px 0 16px}
+nav.subtabs[hidden]{display:none}
+nav.subtabs a{flex:1 1 0;min-width:0;display:flex;flex-direction:column;align-items:center;gap:1px;padding:6px 4px;border-radius:4px;border:1px solid rgba(232,236,255,.18);background:rgba(255,255,255,.04);text-decoration:none;color:var(--ink)}
+nav.subtabs a b{font-family:var(--display);font-weight:500;font-size:15px;white-space:nowrap}
+nav.subtabs a .cnt{font-family:var(--mono);font-size:10.5px;color:var(--ink-faint);font-weight:400}
+nav.subtabs a .who{font-size:11.5px;color:var(--ink-faint)}
+nav.subtabs a:hover{background:rgba(255,255,255,.09)}
+nav.subtabs a[aria-current="page"]{border-color:var(--gold);background:rgba(255,213,107,.12)}
+nav.subtabs a[aria-current="page"] .who{color:var(--gold)}
+.gauge{display:flex;gap:3px;margin:8px 0 4px}
+.gauge i{flex:1;max-width:30px;height:12px;border-radius:2px;border:1px solid rgba(232,236,255,.3);background:rgba(232,236,255,.06);display:grid;place-items:center;font:600 9px var(--mono);font-style:normal;color:var(--ink-faint)}
+.gauge i.on{background:var(--gold);border-color:var(--gold);color:#1a1440}
+.reels{display:flex;gap:5px;margin:8px 0 4px}
+.reel{width:58px;height:58px;border-radius:6px;display:grid;place-items:center;text-align:center;font-family:var(--display);font-weight:700;line-height:1;background:linear-gradient(180deg,#fdfdff,#cfd5f5);color:#0f1a5c;box-shadow:inset 0 0 0 2px #0f1a5c,0 3px 0 rgba(0,0,0,.35)}
+.reel b{font-size:30px}
+.reel small{font-size:10px;letter-spacing:.3px}
+.reel.seven b{color:#d4372a;font-family:var(--mono);font-weight:700;font-size:34px}
+.reel.bar b{font-size:16px;background:#0f1a5c;color:#fff;padding:3px 5px;border-radius:2px}
+.reel.diamond b{color:#2f7de1}
+.reel.any{background:var(--chip);color:var(--ink-dim);box-shadow:inset 0 0 0 1px var(--ink-faint)}
+.esp.danger{border-color:#ff8a8a;box-shadow:inset 3px 0 0 #ff8a8a}
+.danger-tag{font-family:var(--mono);font-size:10.5px;padding:1px 6px;border-radius:3px;background:#ff8a8a;color:#2a0b12;white-space:nowrap}
+.tips-h{font-family:var(--display);font-weight:500;font-size:22px;margin:22px 0 4px}
+.tips-sub{color:var(--ink-dim);font-size:14px;margin:0 0 12px;max-width:80ch}
+.chest{display:grid;grid-template-columns:minmax(0,1fr);gap:6px;padding:10px 0;border-top:1px dashed rgba(232,236,255,.16)}
+.chest .spot{font-size:14px;display:flex;flex-wrap:wrap;gap:4px 8px;align-items:center}
+.stages{display:flex;flex-wrap:wrap;align-items:stretch;gap:4px}
+.stage{display:flex;flex-direction:column;background:var(--chip);border:1px solid rgba(232,236,255,.2);border-radius:4px;padding:4px 10px;min-width:0}
+.stage .when{font-size:10.5px;text-transform:uppercase;letter-spacing:.8px;color:var(--ink-faint)}
+.stage .what{font-weight:600}
+.stage.best{border-color:var(--gold);box-shadow:inset 0 0 0 1px var(--gold)}
+.stage.best .what{color:var(--gold)}
+.stages .arrow{align-self:center;color:var(--ink-faint);font-family:var(--display)}
+.wait{font-family:var(--mono);font-size:10.5px;padding:1px 6px;border-radius:3px;background:var(--gold);color:#1a1440;white-space:nowrap}
+.chest .tip{font-size:13px;color:var(--ink-dim)}
+.blitz .lvl{font-family:var(--mono);font-size:12px;color:var(--gold);border:1px solid var(--gold);border-radius:3px;padding:1px 7px;white-space:nowrap}
+.keys{display:flex;flex-wrap:wrap;gap:5px;align-items:center;margin:4px 0}
+.key{display:inline-grid;place-items:center;min-width:32px;height:32px;padding:0 6px;border-radius:6px;background:linear-gradient(180deg,#f1f3ff,#c5cbf0);color:#0f1a5c;font-family:var(--display);font-size:17px;font-weight:700;box-shadow:0 3px 0 #6b76b8,0 4px 0 rgba(0,0,0,.4)}
+.key.sh{border-radius:11px 11px 5px 5px;min-width:38px;font-size:15px;background:linear-gradient(180deg,#ffe7a3,#ffcf5a);box-shadow:0 3px 0 #a37b1c,0 4px 0 rgba(0,0,0,.4)}
+.key.a{border-radius:50%;width:32px;min-width:32px;background:linear-gradient(180deg,#ff9b8a,#e2584a);color:#fff;box-shadow:0 3px 0 #8a2a20,0 4px 0 rgba(0,0,0,.4)}
+.keys .then{color:var(--ink-faint);font-size:12px}
+.blitz-meta{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:8px 0 6px}
+.blitz .eff{font-size:14px;margin:8px 0 0}
+.blitz .flav{font-size:13px;color:var(--ink-faint);font-style:italic;margin:4px 0 0}
+.blitz .easy{margin-top:8px}
+.dance-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,420px),1fr));gap:10px;align-items:start}
+.moves{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.moves li{display:grid;grid-template-columns:62px minmax(0,1fr);gap:4px 12px;padding:8px 0;border-top:1px dashed rgba(232,236,255,.16)}
+.moves li.hit{background:rgba(255,214,107,.13);box-shadow:inset 3px 0 0 var(--gold);padding-left:7px}
+.odds{display:flex;flex-direction:column;gap:4px;font-family:var(--mono);font-size:13px}
+.odds b{font-weight:500}
+.pips{display:grid;grid-template-columns:repeat(16,1fr);gap:1px;width:64px}
+.pips i{height:5px;border-radius:1px;background:var(--chip)}
+.pips i.on{background:var(--gold)}
+.mv-name{font-weight:600;display:flex;flex-wrap:wrap;align-items:center;gap:4px 8px}
+.mv-desc{font-size:13px;color:var(--ink-dim);margin-top:2px}
+.kind{font-family:var(--mono);font-size:10.5px;padding:1px 6px;border-radius:3px;border:1px solid var(--ink-faint);color:var(--ink-dim);white-space:nowrap}
+.kind.heal{border-color:#7cf0a2;color:#7cf0a2}
+.kind.death{border-color:#ff8a8a;color:#ff8a8a}
+.learn-in{display:flex;flex-wrap:wrap;gap:4px;margin:6px 0 10px}
+.learn-in span{font-size:12px;background:var(--chip);border-radius:3px;padding:2px 7px;color:var(--ink-dim)}
+.sk{--cols:minmax(0,1.3fr) 46px minmax(0,1.2fr) minmax(0,1.2fr) 70px}
+.odds{font-family:var(--mono);font-size:11px;color:var(--ink-faint);margin-left:6px}
+.hit-lo{color:#ff8a8a}.hit-mid{color:var(--gold)}
+.thr{--cols:minmax(0,1.6fr) minmax(0,1fr) 100px minmax(0,1fr)}
+.stl{--cols:minmax(0,1.3fr) 46px minmax(0,1.2fr) minmax(0,1.2fr) 70px}
+.charnav{display:flex;flex-wrap:wrap;gap:4px;margin:0 0 14px}
+.charnav a{font-size:13px;padding:4px 10px;border-radius:999px;border:1px solid rgba(232,236,255,.2);text-decoration:none;color:var(--ink);background:rgba(255,255,255,.04)}
+.charnav a:hover{background:rgba(255,255,255,.1)}
+.char h2 .cls{font-family:var(--sans,inherit);font-size:13px;color:var(--ink-faint);font-weight:400;margin-left:8px}
+.char .statgrid{grid-template-columns:repeat(5,minmax(0,1fr));margin:8px 0}
+.char h3{font-size:11px;letter-spacing:.8px;text-transform:uppercase;color:var(--gold);margin:12px 0 4px;font-weight:600}
+.char .cmdrow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:8px 0 2px}
+.char .cmd{font-family:var(--display);font-size:14px;padding:3px 10px;border-radius:4px;border:1px solid var(--gold);color:var(--gold);background:none;cursor:pointer}
+.char span.cmd{cursor:default}
+.lvtable{display:grid;grid-template-columns:52px 1fr 52px 1fr;gap:2px 10px;font-size:14px}
+.lvtable .num{color:var(--ink-faint)}
+@media (max-width:820px){.char .statgrid{grid-template-columns:repeat(3,minmax(0,1fr))}.lvtable{grid-template-columns:52px 1fr}}
+.badge.best{background:var(--gold);color:#1a1440;border-color:var(--gold);font-weight:600}
+.badge.good{border-color:rgba(255,213,107,.5);color:var(--gold);background:none}
+.row.rage.top{box-shadow:inset 4px 0 0 var(--gold);background:linear-gradient(90deg,rgba(255,213,107,.18),var(--row) 60%)}
+.row.rage.good{box-shadow:inset 3px 0 0 rgba(255,213,107,.45)}
+.lore{--cols:72px minmax(0,1fr) minmax(0,.9fr) minmax(0,2fr) 128px}
+.who-list{display:flex;flex-direction:column;gap:6px;margin:0;padding:0;list-style:none}
+.who-list li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 10px;font-size:14px;padding-bottom:6px;border-bottom:1px dashed rgba(232,236,255,.14)}
+.who-list li .loc{grid-column:1/-1;font-size:12.5px;color:var(--ink-faint)}
+.world{font-family:var(--mono);font-size:11px;padding:1px 6px;border-radius:3px;white-space:nowrap}
+.world.wob{background:#2f6b4a;color:#e6fff0}
+.world.wor{background:#7a3047;color:#ffe6ee}
+/* espers */
+.esp-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,330px),1fr));gap:10px;align-items:start}
+.esp{background:var(--row);border:1px solid rgba(232,236,255,.18);border-radius:6px;padding:12px 14px 14px;min-width:0}
+.esp h2{font-family:var(--display);font-weight:500;font-size:21px;margin:0;display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;line-height:1.1}
+.esp .sum{font-size:13.5px;margin:6px 0 2px}
+.esp .where{font-size:12.5px;color:var(--ink-faint);margin:0 0 10px}
+.bonus{font-family:var(--mono);font-size:11.5px;padding:2px 7px;border-radius:3px;background:var(--gold);color:#1a1440;font-weight:500;white-space:nowrap}
+.bonus.none{background:transparent;color:var(--ink-faint);border:1px solid var(--ink-faint)}
+table.spells{width:100%;border-collapse:collapse;font-size:14px}
+table.spells th{font-weight:400;font-size:10.5px;text-transform:uppercase;letter-spacing:1px;color:var(--ink-faint);text-align:left;padding:0 0 4px}
+table.spells td{padding:5px 0;border-top:1px dashed rgba(232,236,255,.16);vertical-align:middle}
+table.spells td.mp{width:44px;text-align:right;padding-right:14px;font-family:var(--mono);color:var(--ink-dim);font-size:13px}
+table.spells td.rt{width:118px}
+table.spells tr.hit td{background:rgba(255,214,107,.13)}
+table.spells tr.hit td:first-child{box-shadow:inset 3px 0 0 var(--gold);padding-left:7px}
+.rate{display:flex;align-items:center;gap:8px}
+.rate b{font-family:var(--mono);font-weight:500;width:30px;text-align:right;font-size:13px}
+.rate .bar{flex:1;height:6px;border-radius:3px;background:var(--chip);overflow:hidden}
+.rate .bar i{display:block;height:100%;background:var(--gold)}
+.finder{padding:12px 14px;margin-bottom:12px}
+.finder h3{font-family:var(--display);font-weight:500;font-size:16px;color:var(--gold);margin:0 0 8px}
+.finder ol{margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:6px}
+.finder li{background:var(--chip);border-radius:4px;padding:4px 10px;font-size:13.5px}
+.finder li b{font-family:var(--mono);color:var(--gold);margin-left:6px}
+.row>button.head>.r,.colhead>.r{padding-right:20px}
+@media (max-width:820px){.row>button.head>.r{padding-right:0}}
+
+.empty{padding:28px;text-align:center;color:var(--ink-dim)}
+footer{margin-top:28px;font-size:12.5px;color:var(--ink-faint)}
+footer a{color:var(--ink-dim)}
+
+@media (max-width:820px){
+  .colhead{display:none}
+  .row>button.head{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .row .head>.name{grid-column:1/-1;order:-1}
+  .row .head>.mlab::before{content:attr(data-k);display:block;font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--ink-faint)}
+  .row .head>.r{text-align:left}
+  .row .head>.hide-sm{display:none}
+  .detail{padding-left:14px}
+  nav.tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2px;padding:6px}
+  nav.tabs a{font-size:12px;padding:9px 1px;gap:4px;letter-spacing:0}
+  nav.subtabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:3px}
+  nav.subtabs[hidden]{display:none}
+  nav.subtabs a{padding:5px 1px}
+  nav.subtabs a b{font-size:11.5px}
+  nav.subtabs a .cnt{display:none}
+  nav.subtabs a .who{font-size:10.5px}
+  nav.tabs a[aria-current="page"]::before{display:none}
+  nav.tabs a .cnt{display:none}
+}/* Walkthrough */
+.row.wt>button.head{grid-template-columns:58px minmax(0,1fr) auto}
+.row.wt .head .num{font-family:var(--mono);color:var(--ink-dim);font-size:13px}
+.row.wt .head .name{font-weight:600;display:block}
+.row.wt .head .tags{display:flex;flex-wrap:wrap;gap:4px;justify-content:flex-end}
+.badge.miss{border-color:#ff8a8a;color:#ff8a8a}
+.badge.boss{border-color:var(--ink);color:var(--ink)}
+.badge.gau{border-color:#ffb35c;color:#ffb35c}
+.wt-body{display:grid;gap:10px;max-width:86ch}
+.wt-steps{margin:0;padding-left:20px}
+.wt-steps li{margin:3px 0}
+.wt-box{--k:var(--gold);border:1px solid var(--k);border-left-width:4px;border-radius:6px;padding:8px 12px;background:color-mix(in srgb,var(--k) 9%,transparent)}
+.wt-box .k{display:block;font-family:var(--display);font-size:13px;letter-spacing:.6px;text-transform:uppercase;color:var(--k);margin-bottom:2px}
+.wt-box.miss{--k:#ff8a8a}.wt-box.get{--k:var(--gold)}.wt-box.side{--k:#7cf0a2}.wt-box.tip{--k:#7fdcff}.wt-box.gau{--k:#ffb35c}.wt-box.lore{--k:#c78bff}.wt-box.route{--k:#ff8ad8}.wt-box.chest{--k:#5ee0c8;display:block}.chest-area{font-family:var(--display);font-size:14px;color:var(--ink);margin:8px 0 2px}.chest-list{list-style:none;margin:2px 0 0;padding:0;display:grid;grid-template-columns:1fr;gap:4px}.chest-list li{display:block;font-size:14px;padding:1px 0;line-height:1.45}.chest-list .ab{color:var(--ink-dim);font-size:13px}.chest-list .ab::before{content:" — ";color:var(--ink-faint)}.chest-list .it .badge{margin-left:4px;font-size:10px;text-decoration:none}.wt-box.veldt{border-width:2px;border-left-width:6px}.wt-box details{margin-top:8px}.wt-box summary{cursor:pointer;color:var(--k);font-size:13.5px}
+.wt-box .linkbtn{color:inherit;text-decoration-color:var(--k)}
+.wt-bosses{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,330px),1fr));gap:10px}
+.wt-boss{background:var(--chip);border:1px solid var(--win-edge);border-top:3px solid #ff8a8a;border-radius:6px;padding:10px 12px}
+.wt-boss h4{margin:0 0 4px;font-family:var(--display);font-weight:500;font-size:18px;display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+.wt-boss h4 small{font-family:var(--mono);font-size:12px;color:var(--ink-dim)}
+.wt-boss dl{display:grid;grid-template-columns:auto 1fr;gap:3px 10px;margin:6px 0;font-size:13.5px}
+.wt-boss dt{color:var(--ink-faint);font-size:11px;text-transform:uppercase;letter-spacing:1px;padding-top:2px}
+.wt-boss dd{margin:0}
+.wt-boss p{margin:6px 0 0;font-size:14px}
+.wt-list{display:flex;flex-wrap:wrap;gap:4px 12px;margin:2px 0 0;padding:0;list-style:none}
+.wt-list li{font-size:14px}
+.wt-list .ab{color:var(--ink-dim);font-size:12.5px}
+.wt-meta{font-size:13px;color:var(--ink-dim)}
+.wt-meta b{color:var(--ink-faint);font-weight:500;text-transform:uppercase;letter-spacing:1px;font-size:11px;margin-right:6px}
+.wt-meta .linkbtn{color:var(--ink-dim)}
+@media (max-width:820px){
+  nav.tabs{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .row.wt>button.head{grid-template-columns:44px minmax(0,1fr)}
+  .row.wt .head .name{grid-column:auto;order:0}
+  .row.wt .head .tags{grid-column:2;justify-content:flex-start}
+}
+.colo-card h2.colo-trade{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:17px}
+.colo-card h2 .arrow,.colo-row .arrow{color:var(--ink-faint)}
+.colo-card h2 .prize .linkbtn{color:var(--gold)}
+.colo-card.top{border-color:var(--gold);box-shadow:inset 3px 0 0 var(--gold)}
+.colo-card .eff{margin:6px 0 0;font-size:14px}
+.colo-card .eff b{color:var(--ink-dim);font-weight:600}
+.colo-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:4px 12px;padding:7px 12px;border-top:1px solid rgba(255,255,255,.06);font-size:14px;align-items:center}
+.colo-row.colo-head{font-size:11px;text-transform:uppercase;letter-spacing:1.2px;color:var(--ink-faint);border-top:0}
+.colo-row.pick{background:rgba(255,214,107,.07)}
+.colo-row .star{color:var(--gold);margin-right:6px}
+.colo-row .linkbtn{color:var(--ink);text-decoration-color:var(--ink-faint)}
+.colo-row .dim .linkbtn{color:var(--ink-dim)}
+@media (max-width:620px){.colo-row{grid-template-columns:1fr 1fr;font-size:13.5px}.colo-row>span:nth-child(2){grid-column:1/-1;order:3;font-size:12.5px}.colo-row.colo-head>span:nth-child(2){display:none}}
+.eqpop:focus{outline:none}
+.eqpop{position:absolute;z-index:50;width:min(360px,calc(100vw - 32px));background:var(--row);border:2px solid var(--win-line);border-radius:8px;box-shadow:0 0 0 2px var(--win-edge),0 12px 32px rgba(0,0,0,.55);padding:12px 14px 14px;font-size:14px;max-height:min(70vh,520px);overflow:auto}
+.eqpop.sheet{position:fixed;left:16px;right:16px;bottom:16px;top:auto;width:auto;max-height:65vh}
+.eqpop .pop-head{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+.eqpop h2{font-family:var(--display);font-size:18px;margin:0;color:var(--gold);font-weight:500}
+.eqpop .pop-x{margin-left:auto;background:none;border:0;color:var(--ink-dim);font-size:16px;cursor:pointer;padding:2px 6px;border-radius:4px}
+.eqpop .pop-x:hover{color:var(--ink);background:var(--row-hover)}
+.eqpop .pop-stats{display:flex;flex-wrap:wrap;gap:4px 14px;margin-bottom:6px;font-size:13.5px}
+.eqpop .k{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:1px;color:var(--ink-faint)}
+.eqpop .pop-flags{margin:0 0 6px;color:var(--ink-dim);font-size:13px}
+.eqpop .pop-note{margin:0 0 6px;line-height:1.45}
+.eqpop .pop-note.dim{color:var(--ink-dim)}
+.eqpop .pop-loc{display:grid;grid-template-columns:auto 1fr;gap:3px 10px;margin:8px 0 0;padding-top:8px;border-top:1px solid rgba(255,255,255,.1);font-size:13.5px}
+.eqpop .pop-loc dt{color:var(--ink-faint)}
+.eqpop .pop-loc dd{margin:0;display:flex;flex-wrap:wrap;gap:3px 4px;align-items:center}
+.eqpop .pop-open{margin-top:12px;width:100%;background:var(--chip);color:var(--gold);border:1px solid var(--gold);border-radius:5px;padding:7px 10px;font:inherit;font-weight:600;cursor:pointer}
+.eqpop .pop-open:hover{background:var(--row-hover)}
+.eqpop .pop-btns{display:flex;gap:8px}.eqpop .pop-btns .pop-open{flex:1 1 0;width:auto;white-space:nowrap}
+.glitch-grid{max-width:86ch}
+.esp.glitch h2 .badge{font-size:10.5px;margin-left:6px;vertical-align:middle}
+.esp.glitch h3{font-family:var(--display);font-weight:500;font-size:15px;color:var(--gold);margin:14px 0 4px}
+.esp.glitch .eff{margin:0;font-size:14.5px}
+.glitch-steps,.glitch-notes{margin:4px 0 0;padding-left:22px;font-size:14.5px;display:grid;gap:5px}
+.glitch-steps li::marker{color:var(--gold);font-family:var(--mono);font-size:13px}
+.glitch-notes li::marker{color:var(--ink-faint)}
+.game-q{font-style:italic;color:var(--ink-dim)}
+@media (prefers-reduced-motion:no-preference){
+  .row.open .detail{animation:drop .14s ease-out}
+  @keyframes drop{from{opacity:.4;transform:translateY(-3px)}to{opacity:1;transform:none}}
+}
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <h1><small>Final Fantasy VI Advance</small>Field Guide</h1>
+    <p class="tagline">Every playable character and their special ability, the full bestiary, all equipment and Espers, and story tips, using the Game Boy Advance names and stats.</p>
+  </header>
+
+  <nav class="tabs win" aria-label="Sections">
+    <a href="#characters" data-view="characters">Characters <span class="cnt" id="c-chars"></span></a>
+    <a href="#rages" data-view="abilities" id="tab-abilities">Abilities</a>
+    <a href="#bestiary" data-view="bestiary">Bestiary <span class="cnt" id="c-bestiary"></span></a>
+    <a href="#equipment" data-view="equipment">Equipment <span class="cnt" id="c-equipment"></span></a>
+    <a href="#espers" data-view="espers">Espers <span class="cnt" id="c-espers"></span></a>
+    <a href="#walkthrough" data-view="walkthrough">Walkthrough</a>
+    <a href="#colosseum" data-view="colosseum">Colosseum</a>
+    <a href="#tips" data-view="tips">Tips</a>
+  </nav>
+  <nav class="subtabs" id="subtabs" aria-label="Character abilities" hidden>
+    <a href="#magitek" data-view="magitek"><b>Magitek</b><span class="who">Terra</span></a>
+    <a href="#steal" data-view="steal"><b>Steal <span class="cnt" id="c-steal"></span></b><span class="who">Locke</span></a>
+    <a href="#tools" data-view="tools"><b>Tools <span class="cnt" id="c-tools"></span></b><span class="who">Edgar</span></a>
+    <a href="#blitzes" data-view="blitzes"><b>Blitz <span class="cnt" id="c-blitzes"></span></b><span class="who">Sabin</span></a>
+    <a href="#bushido" data-view="bushido"><b>Bushido <span class="cnt" id="c-bushido"></span></b><span class="who">Cyan</span></a>
+    <a href="#throw" data-view="throw"><b>Throw <span class="cnt" id="c-throw"></span></b><span class="who">Shadow</span></a>
+    <a href="#rages" data-view="rages"><b>Rage <span class="cnt" id="c-rages"></span></b><span class="who">Gau</span></a>
+    <a href="#dances" data-view="dances"><b>Dance <span class="cnt" id="c-dances"></span></b><span class="who">Mog</span></a>
+    <a href="#lores" data-view="lores"><b>Lore <span class="cnt" id="c-lores"></span></b><span class="who">Strago</span></a>
+    <a href="#sketch" data-view="sketch"><b>Sketch <span class="cnt" id="c-sketch"></span></b><span class="who">Relm</span></a>
+    <a href="#slots" data-view="slots"><b>Slots</b><span class="who">Setzer</span></a>
+  </nav>
+
+  <main id="view"></main>
+
+  <footer>
+    Data from <a href="https://www.cavesofnarshe.com/ff6/" target="_blank" rel="noopener">Caves of Narshe</a> (GBA mode: stats, items, equipment),
+    Espers and Lores from the same site, the <a href="https://finalfantasy.fandom.com/wiki/Rage_(Final_Fantasy_VI_command)" target="_blank" rel="noopener">Final Fantasy Wiki</a> Rage and <a href="https://finalfantasy.fandom.com/wiki/Dance_(Final_Fantasy_VI)" target="_blank" rel="noopener">Dance</a> lists, Djibriel's <a href="https://www.cavesofnarshe.com/ff6/walkthrough.php" target="_blank" rel="noopener">Caves of Narshe walkthrough</a> and <a href="https://www.cavesofnarshe.com/ff6/colosseum-guide.php" target="_blank" rel="noopener">Colosseum guide</a> (chapter order, enemies and treasure for the Walkthrough tab; the steps, tips and strategies there are summarized in our own words), and Master ZED's monster guide (locations and special-attack formulas, written for the SNES release, so a few location notes use the older names).
+  </footer>
+</div>
+
+<script id="data" type="application/json">__DATA__</script>
+<script>
+(function(){
+const D=JSON.parse(document.getElementById('data').textContent);
+const ELC={Fire:'--f-fire',Ice:'--f-ice',Lightning:'--f-lightning',Thunder:'--f-lightning',Poison:'--f-poison',Wind:'--f-wind',Holy:'--f-holy',Earth:'--f-earth',Water:'--f-water'};
+const ELEMS=['Fire','Ice','Lightning','Water','Wind','Earth','Poison','Holy'];
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const el=(n,cls='')=>`<span class="el ${cls}" style="--c:var(${ELC[n]||'--ink-faint'})"><i></i>${esc(n)}</span>`;
+const els=(a,cls)=>a&&a.length?a.map(x=>el(x,cls)).join(''):'<span class="faint">—</span>';
+const fmt=n=>n==null||n===''?'—':(typeof n==='number'?n.toLocaleString('en-US'):esc(n));
+const list=a=>a&&a.length?esc(a.join(', ')):'<span class="faint">None</span>';
+const store={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
+
+document.getElementById('c-rages').textContent=D.rages.length;
+document.getElementById('c-bestiary').textContent=D.monsters.length;
+document.getElementById('c-equipment').textContent=D.equipment.filter(x=>x.sub!=='Tools').length;
+document.getElementById('c-espers').textContent=D.espers.length;
+document.getElementById('c-lores').textContent=D.lores.length;
+document.getElementById('c-dances').textContent=D.dances.length;
+document.getElementById('c-blitzes').textContent=D.blitzes.length;
+document.getElementById('c-tools').textContent=D.tools.length;
+document.getElementById('c-bushido').textContent=D.bushido.length;
+document.getElementById('c-sketch').textContent=D.monsters.filter(m=>m.sketch).length;
+
+const monByName=Object.fromEntries(D.monsters.map(m=>[m.name,m]));
+const rageByMon={};D.rages.forEach(r=>{if(r.monster)(rageByMon[r.monster]=rageByMon[r.monster]||[]).push(r)});
+
+const state={rages:{q:'',el:'',elMode:'weak',sort:'n',best:''},bestiary:{q:'',el:'',sort:'bestiary',only:''},equipment:{q:'',cat:'Weapon',sub:'',who:'',sort:'power'},espers:{q:'',spell:'',bonus:'',sort:'name'},lores:{q:'',world:'',sort:'first'},dances:{q:'',kind:''},steal:{q:'',lv:20,bracer:false,only:'',sort:'name'},throw:{q:'',type:''},sketch:{q:'',lv:30,beret:false,only:'',sort:'name'}};
+let pendingOpen=null;
+const view=document.getElementById('view');
+
+function legend(id,items){
+  const open=store.get('ff6-legend')!=='closed';
+  return `<details class="legend win" id="${id}"${open?' open':''}><summary>Legend</summary><dl>${items.map(([k,v])=>`<div><dt>${k}</dt><dd>${v}</dd></div>`).join('')}</dl></details>`;
+}
+document.addEventListener('toggle',e=>{if(e.target.matches&&e.target.matches('details.legend'))store.set('ff6-legend',e.target.open?'open':'closed')},true);
+const trait=t=>`<span class="badge trait">${esc(t)}</span>`;
+function rowHTML(kind,id,head,detail,open){
+  return `<div class="row ${kind}${open?' open':''}" data-id="${esc(id)}"><button class="head" aria-expanded="${open?'true':'false'}">${head}</button>${open?`<div class="detail">${detail()}</div>`:''}</div>`;
+}
+function bindRows(container,detailFor){
+  container.addEventListener('click',e=>{
+    const b=e.target.closest('button.head');
+    if(b){const row=b.parentElement;toggle(row,detailFor);return}
+    const j=e.target.closest('[data-jump]');
+    if(j){e.preventDefault();jump(j.dataset.jump,j.dataset.target)}
+  });
+}
+function toggle(row,detailFor,force){
+  const open=force??!row.classList.contains('open');
+  row.classList.toggle('open',open);
+  row.querySelector('button.head').setAttribute('aria-expanded',open);
+  const d=row.querySelector('.detail');
+  if(open&&!d){const div=document.createElement('div');div.className='detail';div.innerHTML=detailFor(row.dataset.id);row.appendChild(div)}
+  if(!open&&d)d.remove();
+}
+function jump(view_,target){
+  if(POPV.has(view_)&&location.hash!=='#'+view_&&pop.show(view_,target,lastJumpEl))return;
+  pop.hide();pendingOpen=target;if(location.hash==='#'+view_)render();else location.hash=view_;
+}
+const POPV=new Set(['equipment','bestiary','espers']);
+let lastJumpEl=null;
+document.addEventListener('click',e=>{lastJumpEl=e.target.closest&&e.target.closest('[data-jump]')},true);
+/* ---------- POPUP CARDS (items, enemies) ---------- */
+const pop=(()=>{
+  let box=null,anchor=null,key=null,eqMap=null;
+  const sg=v=>(v>0?'+':'')+v;
+  const lkE=n=>eqMap[n]?`<button class="linkbtn" data-jump="equipment" data-target="${esc(n)}">${esc(n)}</button>`:esc(n);
+  const lkM=n=>monByName[n]?`<button class="linkbtn" data-jump="bestiary" data-target="${esc(n)}">${esc(n)}</button>`:esc(n);
+  const head=(n,badge)=>`<div class="pop-head"><h2 id="pop-t">${esc(n)}</h2>${badge?`<span class="badge alt">${esc(badge)}</span>`:''}<button class="pop-x" aria-label="Close">✕</button></div>`;
+  const stats=st=>st.length?`<div class="pop-stats">${st.map(([k,v])=>`<span><span class="k">${k}</span> <span class="num">${typeof v==='number'?fmt(v):v}</span></span>`).join('')}</div>`:'';
+  function eqBody(x){
+    const main=x.cat==='Weapon'?[['Attack',x.atk]]:x.cat==='Relic'?[]:[['Defense',x.def],['Mag. Def',x.mdef]];
+    const bon=[['Str','str'],['Sta','sta'],['Mag','mag'],['Spd','spd'],['Eva','evade'],['MEva','mevade']].filter(([,k])=>x[k]).map(([l,k])=>[l,sg(x[k])]);
+    const flags=x.cat==='Weapon'?[x.twohand&&'Two-hand',x.runic&&'Runic',x.bushido&&'Bushido'].filter(Boolean):[];
+    const notes=x.notes.map(n=>n.replace(/^Technical Info:\s*/,''));
+    const loc=x.loc.filter(([k])=>k!=='Metamorph from');
+    return head(x.name,x.cat==='Weapon'?x.sub:x.cat)+stats([...main,...bon])
+      +(flags.length?`<p class="pop-flags">${flags.join(' · ')}</p>`:'')
+      +notes.map((n,i)=>i===0?`<p class="pop-note game-q" title="In-game description">“${esc(n)}”</p>`:`<p class="pop-note">${esc(n)}</p>`).join('')
+      +(x.elem?`<p class="pop-note">Elements: ${esc(x.elem)}</p>`:'')
+      +`<p class="pop-note"><span class="k">Equips</span> ${x.who==='All Characters'?'Everyone':esc(x.who)}</p>`
+      +(loc.length?`<dl class="pop-loc">${loc.map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v).split(', ').map(n=>monByName[n]?lkM(n):n).join(', ')}</dd>`).join('')}</dl>`:'')
+      +`<button class="pop-open" data-popopen>Open in Equipment →</button>`;
+  }
+  function monBody(m){
+    const st=m.steal||{},dr=m.drop||{};
+    const sd=o=>o.common||o.rare?[o.common?lkE(o.common):'<span class="faint">—</span>',o.rare&&o.rare!==o.common?lkE(o.rare)+' <span class="faint">(rare)</span>':''].filter(Boolean).join(' / '):'<span class="faint">—</span>';
+    const kv=[['Weak',els(m.elemWeak,'weak')]];
+    if(m.elemAbsorb.length)kv.push(['Absorbs',els(m.elemAbsorb,'abs')]);
+    if(m.elemImmune.length)kv.push(['Nullifies',els(m.elemImmune)]);
+    kv.push(['Steal',sd(st)],['Drop',sd(dr)]);
+    if(m.lores&&m.lores.length)kv.push(['Lore',esc(m.lores.join(', '))]);
+    if(m.morph&&m.morph.items.length)kv.push(['Metamorph',m.morph.items.map((x,i,a)=>`<span>${lkE(x)}${i<a.length-1?',':''}</span>`).join(' ')]);
+    const rg=D.rages.find(r=>(r.monster||r.name)===m.name);
+    if(rg)kv.push(['Rage',`<b>${esc(rg.ability)}</b>${rg.effect?` <span class="dim">${esc(rg.effect)}</span>`:''} <span class="faint">· attack: ${esc(rg.attack)}</span>`]);
+    return head(m.name,m.gba?'GBA only':'')+stats([['Lv',m.level],['HP',m.hp],['MP',m.mp],['EXP',m.exp],['Gil',m.gil]])
+      +(m.loc?`<p class="pop-note dim">${esc(m.loc)}</p>`:'')
+      +`<dl class="pop-loc">${kv.map(([k,v])=>`<dt>${k}</dt><dd>${v}</dd>`).join('')}</dl>`
+      +(m.statusImmune&&m.statusImmune.length?`<p class="pop-note dim" style="margin-top:8px;font-size:13px"><span class="k">Immune</span> ${esc(m.statusImmune.join(', '))}</p>`:'')
+      +`<div class="pop-btns"><button class="pop-open" data-popopen>Open in Bestiary →</button>${rg?`<button class="pop-open" data-poprage="${rg.n}">Open in Rages →</button>`:''}</div>`;
+  }
+  function espBody(x){
+    const sp=x.spells||[];
+    return head(x.name,'Esper')
+      +`<p class="pop-note"><b>${esc(x.summon)}</b> <span class="faint">· ${esc(x.mp)} MP</span>${x.summonElem&&x.summonElem.length?' '+els(x.summonElem):''}</p>`
+      +(x.summonDesc?`<p class="pop-note game-q" title="In-game description">“${esc(x.summonDesc)}”</p>`:'')
+      +`<dl class="pop-loc"><dt>Level-up</dt><dd>${x.bonus&&x.bonus!=='None'?`<b>${esc(x.bonus)}</b>`:'<span class="faint">No bonus</span>'}</dd>`
+      +`<dt>Teaches</dt><dd>${sp.length?sp.map((m,i)=>`<span>${esc(m.name)} <span class="faint">${esc(m.rate.replace('x','×'))}</span>${i<sp.length-1?',':''}</span>`).join(' '):'<span class="faint">Nothing</span>'}</dd>`
+      +(x.loc?`<dt>Where</dt><dd><span>${esc(x.loc)}</span></dd>`:'')+`</dl>`
+      +`<button class="pop-open" data-popopen>Open in Espers →</button>`;
+  }
+  function place(){
+    if(!box||!anchor)return;
+    if(innerWidth<=620){box.classList.add('sheet');box.style.left=box.style.top='';return}
+    box.classList.remove('sheet');
+    const r=anchor.getBoundingClientRect(),w=box.offsetWidth,h=box.offsetHeight;
+    const left=Math.min(Math.max(16,r.left),innerWidth-w-16);
+    let top=r.bottom+8;if(top+h>innerHeight-8&&r.top-h-8>8)top=r.top-h-8;
+    box.style.left=left+scrollX+'px';box.style.top=top+scrollY+'px';
+  }
+  function hide(back){
+    if(!box)return;box.remove();box=null;key=null;
+    if(back&&anchor&&anchor.isConnected)anchor.focus();anchor=null;
+  }
+  function go(v,t){hide();pendingOpen=t;if(location.hash==='#'+v)render();else location.hash=v}
+  function show(v,n,a,keepAnchor){
+    eqMap=eqMap||Object.fromEntries(D.equipment.map(x=>[x.name,x]));
+    const x=v==='equipment'?eqMap[n]:v==='espers'?D.espers.find(e=>e.name===n):monByName[n];if(!x)return false;
+    const k=v+'|'+n;
+    if(box&&key===k){hide(true);return true}
+    const keep=keepAnchor&&anchor;hide();anchor=keep||a;key=k;
+    box=document.createElement('div');box.className='eqpop';box.setAttribute('role','dialog');box.setAttribute('aria-labelledby','pop-t');
+    box.innerHTML=v==='equipment'?eqBody(x):v==='espers'?espBody(x):monBody(x);box.dataset.v=v;box.dataset.n=n;
+    document.body.appendChild(box);place();
+    box.addEventListener('click',e=>{
+      if(e.target.closest('.pop-x')){hide(true);return}
+      if(e.target.closest('[data-popopen]')){go(box.dataset.v,box.dataset.n);return}
+      const pr=e.target.closest('[data-poprage]');if(pr){go('rages',pr.dataset.poprage);return}
+      const j=e.target.closest('[data-jump]');if(!j)return;e.preventDefault();e.stopPropagation();
+      const jv=j.dataset.jump,jt=j.dataset.target;
+      if(POPV.has(jv)&&location.hash!=='#'+jv&&show(jv,jt,null,true))return;
+      go(jv,jt);
+    });
+    box.tabIndex=-1;box.focus({preventScroll:true});
+    return true;
+  }
+  document.addEventListener('pointerdown',e=>{if(box&&!box.contains(e.target)&&!(e.target.closest&&e.target.closest('[data-jump="equipment"],[data-jump="bestiary"],[data-jump="espers"]')))hide()},true);
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&box)hide(true)});
+  addEventListener('resize',()=>place());
+  addEventListener('hashchange',()=>hide());
+  return {show,hide};
+})();
+
+/* ---------- RAGES ---------- */
+function rages(){
+  const s=state.rages;
+  view.innerHTML=`
+  <p class="intro">Gau learns a Rage by <b>Leaping</b> onto the Veldt and returning after it has shown up there; a monster appears on the Veldt once you've fought it somewhere else. In battle a Rage picks between its <b>Attack</b> and its <b>Ability</b> about half the time each, and Gau takes on the monster's elemental traits and status immunities until the fight ends.</p>
+  <div class="filters win">
+    <div class="grp grow"><label class="lbl" for="rq">Search</label><input type="search" id="rq" placeholder="Name, ability, status" value="${esc(s.q)}"></div>
+    <div class="grp"><label class="lbl" for="rsort">Sort</label><select id="rsort">
+      <option value="n">Rage list order</option><option value="name">Name</option><option value="level">Monster level</option></select></div>
+    <div class="grp"><label class="lbl" for="rbest">Show</label><select id="rbest"><option value="">All Rages</option><option value="top">Top picks only</option><option value="any">Top picks and worth learning</option></select></div>
+    <div class="grp"><label class="lbl" for="relm">Element</label><select id="relm"><option value="weak">Gau becomes weak to</option><option value="absorb">Gau absorbs / nullifies</option></select></div>
+    <div class="grp" style="flex-basis:100%"><div class="chips" id="rel">${ELEMS.map(e=>`<button class="chip" data-el="${e}" aria-pressed="${s.el===e}"><span class="dot" style="background:var(${ELC[e]})"></span>${e}</button>`).join('')}</div></div>
+  </div>
+  ${legend('lg-rages',[
+    ['<span class="badge best">★ Top pick</span>','One of the strongest Rages, recommended by fan guides. The gold bar marks it in the list; open it to see why.'],
+    ['<span class="badge good">Worth learning</span>','Recommended by a walkthrough as a Rage worth picking up.'],
+    ['<b>Early · Mid · Late</b>','Roughly when you can get it, by the monster\'s level.'],
+    [el('Fire','weak'),'<b>Weak.</b> While raging, Gau takes double damage from this element.'],
+    [el('Poison','abs'),'<b>Absorbs.</b> Attacks of this element heal Gau instead of hurting him.'],
+    [el('Earth','nul'),'<b>Nullifies.</b> Gau takes no damage from this element.'],
+    ['<span class="badge alt">Float</span>','<b>Starts with.</b> A status Gau gains when the Rage begins. Float, Protect, Shell, Haste and Reflect help; Sap (slow HP drain), Darkness, Poison, Berserk and Confuse hurt.'],
+    [trait('Human'),'<b>Human.</b> Gau counts as human, so human-slaying effects such as the Man-Eater dagger do extra damage to him.'],
+    [trait('Undead'),'<b>Undead.</b> Healing spells and items damage Gau, and revival magic such as Raise can KO him.'],
+    [trait('0 MP equals death'),'<b>Dies at 0 MP.</b> Gau is KO\'d if his MP drops to 0, for example from Rasp or Osmose.'],
+    ['<span class="badge">Can\'t select</span>','This Rage can be learned but can\'t be chosen in battle.'],
+    ['<b>Attack</b>','The normal hit. The weapon named is only its look and sound; it doesn\'t add that weapon\'s effects.'],
+    ['<b>Ability</b>','The special move, spell or skill. Each turn Gau uses either the Attack or the Ability, about half the time each.']
+  ])}
+  <p class="count" id="rcount"></p>
+  <div class="rage colhead"><span>#</span><span>Rage</span><span>Attack</span><span>Ability</span><span>Traits</span></div>
+  <div class="list" id="rlist"></div>`;
+  const q=document.getElementById('rq'),so=document.getElementById('rsort'),em=document.getElementById('relm'),rb=document.getElementById('rbest');
+  so.value=s.sort;em.value=s.elMode;rb.value=s.best;rb.onchange=()=>{s.best=rb.value;draw()};
+  q.oninput=()=>{s.q=q.value;draw()};so.onchange=()=>{s.sort=so.value;draw()};em.onchange=()=>{s.elMode=em.value;draw()};
+  document.getElementById('rel').onclick=e=>{const c=e.target.closest('.chip');if(!c)return;s.el=s.el===c.dataset.el?'':c.dataset.el;document.querySelectorAll('#rel .chip').forEach(x=>x.setAttribute('aria-pressed',x.dataset.el===s.el));draw()};
+  const L=document.getElementById('rlist');
+  const byN=Object.fromEntries(D.rages.map(r=>[String(r.n),r]));
+  bindRows(L,id=>rageDetail(byN[id]));
+  function draw(){
+    const t=s.q.trim().toLowerCase();
+    let a=D.rages.filter(r=>{
+      if(t){const hay=[r.name,r.snes,r.ability,r.attack,r.effect,r.loc,...r.immune,...r.grants,...r.weak,...r.absorb,...r.traits].join(' ').toLowerCase();if(!hay.includes(t))return false}
+      const B=D.rageBest[r.n];if(s.best==='top'&&!(B&&B.tier==='top'))return false;if(s.best==='any'&&!B)return false;
+      if(s.el){if(s.elMode==='weak'&&!r.weak.includes(s.el))return false;if(s.elMode==='absorb'&&!r.absorb.includes(s.el)&&!r.nullify.includes(s.el))return false}
+      return true});
+    if(s.sort==='name')a.sort((x,y)=>x.name.localeCompare(y.name));
+    else if(s.sort==='level')a.sort((x,y)=>(x.level??0)-(y.level??0)||x.n-y.n);
+    document.getElementById('rcount').textContent=`${a.length} of ${D.rages.length} Rages`;
+    L.innerHTML=a.length?a.map(r=>{const B=D.rageBest[r.n];return rowHTML('rage'+(B?' '+B.tier:''),r.n,`
+      <span class="num faint">${String(r.n).padStart(3,'0')}</span>
+      <span class="name"><span class="cursor"></span><span>${esc(r.name)}${r.footnote?' <span class="badge">Can\'t select</span>':''}${B?(B.tier==='top'?' <span class="badge best">★ Top pick</span>':' <span class="badge good">Worth learning</span>'):''}</span></span>
+      <span class="mlab dim" data-k="Attack">${esc(r.attack)}</span>
+      <span class="mlab" data-k="Ability"><b>${esc(r.ability)}</b>${r.effect?` <span class="dim">· ${esc(r.effect)}</span>`:''}</span>
+      <span class="mlab tags" data-k="Traits">${r.weak.map(x=>el(x,'weak')).join('')}${r.absorb.map(x=>el(x,'abs')).join('')}${r.nullify.map(x=>el(x,'nul')).join('')}${r.grants.map(g=>`<span class="badge alt">${esc(g)}</span>`).join(' ')}${r.traits.map(trait).join(' ')}${!r.weak.length&&!r.absorb.length&&!r.nullify.length&&!r.grants.length&&!r.traits.length?'<span class="faint">—</span>':''}</span>`,()=>rageDetail(r),String(r.n)===pendingOpen)}).join(''):'<div class="empty">No Rages match. Clear the search or element filter.</div>';
+    afterDraw(L);
+  }
+  draw();
+}
+function rageDetail(r){
+  const m=monByName[r.monster];
+  const B=D.rageBest[r.n];
+  return `${B?`<section class="why"><h3>${B.tier==='top'?'★ Why it\'s a top pick':'Worth learning'}</h3><p class="prose">${B.why?esc(B.why):'Recommended by a walkthrough as a Rage worth picking up.'}</p><p class="prose dim" style="margin-top:6px">${B.target?esc(B.target)+' · ':''}${B.stage} game</p></section>`:''}<section><h3>In battle</h3><dl class="kv">
+      <dt>Attack</dt><dd>Normal hit, shown as ${esc(r.attack)}</dd>
+      <dt>Ability</dt><dd><b>${esc(r.ability)}</b> <span class="dim">(${esc(r.abilityKind)})</span>${r.effect?`<br>${esc(r.effect)}`:''}</dd>
+      ${r.grants.length?`<dt>Starts with</dt><dd>${list(r.grants)}</dd>`:''}
+      ${r.traits.length?`<dt>Counts as</dt><dd>${list(r.traits)}</dd>`:''}
+    </dl>${r.footnote?`<p class="prose dim" style="margin-top:8px">${esc(r.footnote)}</p>`:''}</section>
+    <section><h3>Elements while raging</h3><dl class="kv">
+      <dt>Weak</dt><dd>${els(r.weak,'weak')}</dd><dt>Absorbs</dt><dd>${els(r.absorb)}</dd><dt>Nullifies</dt><dd>${els(r.nullify)}</dd></dl>
+      <h3>Status immunities</h3><p class="prose">${list(r.immune)}</p></section>
+    <section><h3>Where to find it</h3><p class="prose">${r.loc?esc(r.loc):'<span class="faint">Unknown</span>'}</p>
+      ${m?`<p class="prose" style="margin-top:8px">Lv ${m.level} · ${fmt(m.hp)} HP · <button class="linkbtn" data-jump="bestiary" data-target="${esc(m.name)}">Bestiary entry</button></p>`:''}
+      ${r.snes!==r.name?`<p class="prose dim" style="margin-top:6px">SNES name: ${esc(r.snes)}</p>`:''}</section>`;
+}
+
+/* ---------- BESTIARY ---------- */
+function bestiary(){
+  const s=state.bestiary;
+  view.innerHTML=`
+  <p class="intro">All ${D.monsters.length} enemies and bosses. Steal shows the <b>Common</b> and <b>Rare</b> slots; the Thief's Bracer raises the odds on rare steals. The GBA release has no per-monster AP: magic points for Espers are awarded per battle formation, so they aren't listed here.</p>
+  <div class="filters win">
+    <div class="grp grow"><label class="lbl" for="bq">Search</label><input type="search" id="bq" placeholder="Monster, item, lore, location" value="${esc(s.q)}"></div>
+    <div class="grp"><label class="lbl" for="bsort">Sort</label><select id="bsort">
+      <option value="bestiary">Bestiary #</option><option value="name">Name</option><option value="level">Level</option><option value="hp">HP</option><option value="exp">EXP</option><option value="gil">Gil</option></select></div>
+    <div class="grp"><label class="lbl" for="bonly">Show</label><select id="bonly"><option value="">All enemies</option><option value="rage">Has a Rage</option><option value="lore">Teaches a Lore</option><option value="gba">GBA additions</option><option value="rare">Has a rare steal</option><option value="suplex">Immune to Meteor Strike</option></select></div>
+    <div class="grp" style="flex-basis:100%"><label class="lbl">Weak to</label><div class="chips" id="bel">${ELEMS.map(e=>`<button class="chip" data-el="${e}" aria-pressed="${s.el===e}"><span class="dot" style="background:var(${ELC[e]})"></span>${e}</button>`).join('')}</div></div>
+  </div>
+  ${legend('lg-bestiary',[
+    [el('Fire','weak'),'<b>Weak to.</b> The enemy takes double damage from this element. Open a row to see what it absorbs or nullifies.'],
+    ['<span class="badge alt">Rage</span>','Gau can learn this enemy\'s Rage on the Veldt. The entry links to it.'],
+    ['<span class="badge">GBA</span>','Added in the GBA release (Dragons\' Den, Soul Shrine and other bonus content).'],
+    ['<b>Steal · Drop</b>','Stealable items first, Common / Rare, then the item it drops after a win (dimmer text). — means nothing.'],
+    ['<b>Metamorph</b>','Items the Ragnarok Esper\'s Metamorphose summon can turn the enemy into, with the success chance out of 256.'],
+    ['<b>Status immunities</b>','Statuses that never land on this enemy.'],
+    ['<b>Mag. Def / M. Evade</b>','Magic defense (lowers spell damage) and magic evasion (chance to dodge spells).'],
+    ['<b>Can\'t Suplex, Can\'t Run…</b>','Notes at the bottom of an open entry: commands that don\'t work on it and battles you can\'t flee. "Critical hits if Imp" means it lands crits on Imped party members.']
+  ])}
+  <p class="count" id="bcount"></p>
+  <div class="mon colhead"><span>Monster</span><span class="r">Lv</span><span class="r">HP</span><span class="r">EXP</span><span class="r">Gil</span><span>Weak to</span><span>Steal / Drop</span></div>
+  <div class="list" id="blist"></div>`;
+  const q=document.getElementById('bq'),so=document.getElementById('bsort'),on=document.getElementById('bonly');
+  so.value=s.sort;on.value=s.only;
+  q.oninput=()=>{s.q=q.value;draw()};so.onchange=()=>{s.sort=so.value;draw()};on.onchange=()=>{s.only=on.value;draw()};
+  document.getElementById('bel').onclick=e=>{const c=e.target.closest('.chip');if(!c)return;s.el=s.el===c.dataset.el?'':c.dataset.el;document.querySelectorAll('#bel .chip').forEach(x=>x.setAttribute('aria-pressed',x.dataset.el===s.el));draw()};
+  const L=document.getElementById('blist');
+  bindRows(L,id=>monDetail(monByName[id]));
+  if(pendingOpen&&monByName[pendingOpen]){s.q='';q.value='';s.el='';s.only='';on.value=''}
+  function draw(){
+    const t=s.q.trim().toLowerCase();
+    let a=D.monsters.filter(m=>{
+      if(t){const hay=[m.name,m.loc,m.type,m.steal.common,m.steal.rare,m.drop.common,m.drop.rare,...m.lores,...m.morph.items].join(' ').toLowerCase();if(!hay.includes(t))return false}
+      if(s.el&&!m.elemWeak.includes(s.el))return false;
+      if(s.only==='rage'&&!rageByMon[m.name])return false;
+      if(s.only==='lore'&&!m.lores.length)return false;
+      if(s.only==='gba'&&!m.gba)return false;
+      if(s.only==='rare'&&!m.steal.rare)return false;
+      if(s.only==='suplex'&&!/Suplex/.test(m.info))return false;
+      return true});
+    const k=s.sort;
+    a.sort((x,y)=>k==='name'?x.name.localeCompare(y.name):k==='bestiary'?((x.bestiary??9999)-(y.bestiary??9999)||x.name.localeCompare(y.name)):((y[k]??0)-(x[k]??0)));
+    if(k==='level')a.reverse();
+    document.getElementById('bcount').textContent=`${a.length} of ${D.monsters.length} enemies`;
+    L.innerHTML=a.length?a.map(m=>rowHTML('mon',m.name,`
+      <span class="name"><span class="cursor"></span><span>${esc(m.name)}</span>${m.gba?'<span class="badge">GBA</span>':''}${rageByMon[m.name]?'<span class="badge alt">Rage</span>':''}</span>
+      <span class="num r mlab" data-k="Lv">${m.level}</span>
+      <span class="num r mlab" data-k="HP">${fmt(m.hp)}</span>
+      <span class="num r mlab" data-k="EXP">${fmt(m.exp)}</span>
+      <span class="num r mlab" data-k="Gil">${fmt(m.gil)}</span>
+      <span class="mlab tags" data-k="Weak to">${els(m.elemWeak,'weak')}</span>
+      <span class="mlab" data-k="Steal / Drop" style="font-size:13.5px">${m.steal.rare||m.steal.common?esc([m.steal.common,m.steal.rare].filter(Boolean).join(' / ')):'<span class="faint">—</span>'} <span class="faint">·</span> <span class="dim">${esc([m.drop.common,m.drop.rare].filter(Boolean).join(' / ')||'—')}</span></span>`,()=>monDetail(m),m.name===pendingOpen)).join(''):'<div class="empty">No enemies match. Clear the search or filters.</div>';
+    afterDraw(L);
+  }
+  draw();
+}
+function itemCell(o){return `${o.common?`<div><span class="k">Common</span>${esc(o.common)}</div>`:''}${o.rare?`<div><span class="k">Rare</span>${esc(o.rare)}</div>`:''}${!o.common&&!o.rare?'<span class="faint">Nothing</span>':''}`}
+function monDetail(m){
+  const rs=rageByMon[m.name]||[];
+  return `<section><h3>Stats</h3><div class="statgrid">
+    ${[['Level',m.level],['HP',m.hp],['MP',m.mp],['EXP',m.exp],['Gil',m.gil],['Speed',m.speed],['Attack',m.str],['Magic',m.mag],['Evade',m.evade],['Defense',m.def],['Mag. Def',m.mdef],['M. Evade',m.mevade]].map(([k,v])=>`<div><span class="k">${k}</span><span class="num">${fmt(v)}</span></div>`).join('')}
+    </div>${m.type?`<p class="prose dim" style="margin-top:8px">Type: ${esc(m.type)}</p>`:''}</section>
+    <section><h3>Elements</h3><dl class="kv"><dt>Weak</dt><dd>${els(m.elemWeak,'weak')}</dd><dt>Absorbs</dt><dd>${els(m.elemAbsorb)}</dd><dt>Nullifies</dt><dd>${els(m.elemImmune)}</dd></dl>
+      <h3>Status immunities</h3><p class="prose">${list(m.statusImmune)}</p>
+      ${m.cmdImmune?`<p class="prose dim" style="margin-top:6px">Immune to: ${esc(m.cmdImmune)}</p>`:''}</section>
+    <section><h3>Items</h3><div class="statgrid" style="grid-template-columns:1fr 1fr"><div><span class="k" style="color:var(--gold)">Steal</span>${itemCell(m.steal)}</div><div><span class="k" style="color:var(--gold)">Drop</span>${itemCell(m.drop)}</div></div>
+      <h3>Metamorph</h3><p class="prose">${m.morph.items.length?esc([...new Set(m.morph.items)].join(', '))+` <span class="dim">(${esc(m.morph.rate)} success)</span>`:'<span class="faint">Immune</span>'}</p></section>
+    <section><h3>Location</h3><p class="prose">${m.loc?esc(m.loc):m.gba?"GBA bonus content: Dragons' Den or Soul Shrine":'<span class="faint">Unknown</span>'}</p>
+      <h3>Lore</h3><p class="prose">${m.lores.length?m.lores.map(n=>`<button class="linkbtn" data-jump="lores" data-target="${esc(n)}">${esc(n)}</button>`).join(', '):'<span class="faint">None</span>'}</p>
+      <h3>Sketch</h3><p class="prose">${skMoves(m)}</p>
+      ${rs.length?`<h3>Rage</h3><p class="prose">${rs.map(r=>`<button class="linkbtn" data-jump="rages" data-target="${r.n}">${esc(r.ability)}</button> <span class="dim">(Rage #${r.n})</span>`).join('<br>')}</p>`:''}
+      ${m.info?`<p class="prose dim" style="margin-top:8px">${esc(m.info.replace(/Can't Suplex/,"Immune to Meteor Strike (Suplex)"))}</p>`:''}</section>`;
+}
+
+/* ---------- EQUIPMENT ---------- */
+const CATS=[['Weapon','Weapons'],['Shield','Shields'],['Helmet','Helmets'],['Armor','Armor'],['Relic','Accessories']];
+const CHARS=['Terra','Locke','Cyan','Shadow','Edgar','Sabin','Celes','Strago','Relm','Setzer','Mog','Gau','Gogo','Umaro'];
+function eqWho(x){return x.who==='All Characters'?CHARS:x.who.split(',').map(s=>s.trim())}
+function equipment(){
+  const s=state.equipment;
+  {const it=pendingOpen&&D.equipment.find(x=>x.name===pendingOpen&&x.sub!=='Tools');if(it){s.cat=it.cat;s.sub='';s.who='';s.q=''}}
+  const subs=[...new Set(D.equipment.filter(x=>x.cat==='Weapon'&&x.sub!=='Tools').map(x=>x.sub))].sort();
+  view.innerHTML=`
+  <p class="intro">Weapons, shields, helmets, body armor and accessories (relics). Pick a character to see only what they can equip. Edgar's Tools are on the <a href="#tools">Tools</a> tab.</p>
+  <div class="filters win">
+    <div class="grp" style="flex-basis:100%"><div class="chips" id="ecat">${CATS.map(([k,l])=>`<button class="chip" data-cat="${k}" aria-pressed="${s.cat===k}">${l} <span class="faint">${D.equipment.filter(x=>x.cat===k&&x.sub!=='Tools').length}</span></button>`).join('')}</div></div>
+    <div class="grp grow"><label class="lbl" for="eq">Search</label><input type="search" id="eq" placeholder="Name, effect, where to find" value="${esc(s.q)}"></div>
+    <div class="grp"><label class="lbl" for="ewho">Equippable by</label><select id="ewho"><option value="">Anyone</option>${CHARS.map(c=>`<option>${c}</option>`).join('')}</select></div>
+    <div class="grp" id="esubg"><label class="lbl" for="esub">Weapon type</label><select id="esub"><option value="">All types</option>${subs.map(c=>`<option>${esc(c)}</option>`).join('')}</select></div>
+    <div class="grp"><label class="lbl" for="esort">Sort</label><select id="esort"><option value="power">Attack / Defense</option><option value="name">Name</option></select></div>
+  </div>
+  ${legend('lg-equip',[
+    ['<span class="num">Str Sta Mag Spd</span>','Bonuses to Strength (Vigor), Stamina, Magic and Speed while equipped.'],
+    ['<span class="num">Eva MEva</span>','Bonuses to physical Evade and Magic Evade, in percent.'],
+    ['<span class="badge alt">Sword</span>','Weapon type. Use the Weapon type filter to show one kind.'],
+    ['<b>Attack</b> / <b>Def / MDef</b>','Weapon attack power, or physical and magic defense for shields, helmets and armor.'],
+    ['<b>Two-hand</b>','Can be held in both hands with the Gauntlet for extra damage.'],
+    ['<b>Runic</b>','Celes can use Runic with it to absorb the next spell.'],
+    ['<b>Bushido</b>','Cyan can use his Bushido techniques with it.'],
+    ['<b>Equips</b>','Who can use it. Pick a character in "Equippable by" to see only their gear.'],
+    ['<b>Metamorph odds</b>','In an open row: the chance one Ragnarok summon (Metamorphose) turns that enemy into this item. It is the enemy\'s hit chance times the item\'s share of its four-item package. It ignores Death immunity and Magic Evade; bosses are immune.']
+  ])}
+  <p class="count" id="ecount"></p>
+  <div class="eq colhead"><span>Item</span><span class="r" id="ehpow">Attack</span><span>Bonuses</span><span>Equips</span></div>
+  <div class="list" id="elist"></div>`;
+  const q=document.getElementById('eq'),w=document.getElementById('ewho'),sb=document.getElementById('esub'),so=document.getElementById('esort');
+  w.value=s.who;sb.value=s.sub;so.value=s.sort;
+  q.oninput=()=>{s.q=q.value;draw()};w.onchange=()=>{s.who=w.value;store.set('ff6-who',s.who);draw()};sb.onchange=()=>{s.sub=sb.value;draw()};so.onchange=()=>{s.sort=so.value;draw()};
+  document.getElementById('ecat').onclick=e=>{const c=e.target.closest('.chip');if(!c)return;s.cat=c.dataset.cat;document.querySelectorAll('#ecat .chip').forEach(x=>x.setAttribute('aria-pressed',x.dataset.cat===s.cat));draw()};
+  const L=document.getElementById('elist');
+  const byName=Object.fromEntries(D.equipment.map(x=>[x.name,x]));
+  bindRows(L,id=>eqDetail(byName[id]));
+  function bonuses(x){const b=[['Str','str'],['Sta','sta'],['Mag','mag'],['Spd','spd'],['Eva','evade'],['MEva','mevade']].filter(([,k])=>x[k]).map(([l,k])=>`<span class="num">${l} ${x[k]>0?'+':''}${x[k]}</span>`);return b.length?b.join(' <span class="faint">·</span> '):'<span class="faint">—</span>'}
+  function draw(){
+    document.getElementById('esubg').hidden=s.cat!=='Weapon';
+    document.getElementById('ehpow').textContent=s.cat==='Weapon'?'Attack':s.cat==='Relic'?'':'Def / MDef';
+    const t=s.q.trim().toLowerCase();
+    let a=D.equipment.filter(x=>{
+      if(x.cat!==s.cat||x.sub==='Tools')return false;
+      if(s.cat==='Weapon'&&s.sub&&x.sub!==s.sub)return false;
+      if(s.who&&!eqWho(x).includes(s.who))return false;
+      if(t){const hay=[x.name,x.sub,x.who,x.elem,...x.notes,...x.loc.map(l=>l.join(' '))].join(' ').toLowerCase();if(!hay.includes(t))return false}
+      return true});
+    a.sort((p,q)=>s.sort==='name'||s.cat==='Relic'?p.name.localeCompare(q.name):((q.atk??q.def??0)-(p.atk??p.def??0))||p.name.localeCompare(q.name));
+    document.getElementById('ecount').textContent=`${a.length} ${CATS.find(c=>c[0]===s.cat)[1].toLowerCase()}`+(s.who?` ${s.who} can equip`:'');
+    L.innerHTML=a.length?a.map(x=>rowHTML('eq',x.name,`
+      <span class="name"><span class="cursor"></span><span>${esc(x.name)}</span>${x.cat==='Weapon'?`<span class="badge alt">${esc(x.sub)}</span>`:''}</span>
+      <span class="num r mlab" data-k="${x.cat==='Weapon'?'Attack':'Def / MDef'}">${x.cat==='Weapon'?x.atk:x.cat==='Relic'?'':`${x.def} / ${x.mdef}`}</span>
+      <span class="mlab" data-k="Bonuses" style="font-size:13px">${x.cat==='Relic'?esc(x.notes[1]||x.notes[0]||''):bonuses(x)}</span>
+      <span class="mlab dim hide-sm" data-k="Equips" style="font-size:13px">${x.who==='All Characters'?'Everyone':esc(x.who)}</span>`,()=>eqDetail(x),x.name===pendingOpen)).join(''):'<div class="empty">Nothing matches. Try another character or clear the search.</div>';
+    afterDraw(L);
+  }
+  draw();
+}
+function morphSources(item){
+  const out=[];
+  D.monsters.forEach(m=>{
+    if(!m.morph.items.includes(item))return;
+    const hit=parseInt(m.morph.rate)/256;
+    const p=m.morph.pack&&m.morph.pack.find(q=>q[0]===item);
+    out.push({m,hit,share:p?p[1]:null,eff:p?hit*p[1]/4:null});
+  });
+  return out.sort((a,b)=>(b.eff??-1)-(a.eff??-1)||b.hit-a.hit);
+}
+const pct=v=>{const n=v*100;return (n>=1?n.toFixed(1):n.toFixed(2)).replace(/\.0+$/,'')+'%'};
+function eqDetail(x){
+  const stats=x.cat==='Weapon'?[['Attack',x.atk],['Strength',x.str],['Stamina',x.sta],['Magic',x.mag],['Speed',x.spd],['Evade',x.evade],['M. Evade',x.mevade]]:x.cat==='Relic'?[]:[['Defense',x.def],['Mag. Def',x.mdef],['Strength',x.str],['Stamina',x.sta],['Magic',x.mag],['Speed',x.spd],['Evade',x.evade],['M. Evade',x.mevade]];
+  return `${stats.length?`<section><h3>Stats</h3><div class="statgrid">${stats.map(([k,v])=>`<div><span class="k">${k}</span><span class="num">${v>0&&k!=='Attack'&&k!=='Defense'&&k!=='Mag. Def'?'+':''}${fmt(v)}</span></div>`).join('')}</div>
+    ${x.cat==='Weapon'?`<p class="prose dim" style="margin-top:8px">${[x.twohand?'Two-hand: yes':'Two-hand: no',x.runic?'Runic: yes':'Runic: no',x.bushido?'Bushido: yes':'Bushido: no'].join(' · ')}</p>`:''}</section>`:''}
+    <section><h3>Effect</h3>${x.notes.length?x.notes.map((n,i)=>i===0?`<p class="prose game-q" style="margin:0 0 6px" title="In-game description">“${esc(n)}”</p>`:`<p class="prose" style="margin:0 0 6px">${esc(n)}</p>`).join(''):'<p class="prose faint">No special effect</p>'}
+      ${x.elem?`<p class="prose" style="margin-top:6px">Elements: ${esc(x.elem)}</p>`:''}${x.cost?`<p class="prose dim">Price: ${esc(x.cost)}</p>`:''}</section>
+    <section><h3>Equippable by</h3><p class="prose">${x.who==='All Characters'?'Everyone':esc(x.who)}</p></section>
+    <section><h3>How to get it</h3><dl class="kv">${x.loc.filter(([k])=>k!=='Metamorph from').map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v).split(', ').map(n=>monByName[n]?`<button class="linkbtn" data-jump="bestiary" data-target="${esc(n)}">${esc(n)}</button>`:n).join(', ')}</dd>`).join('')||(morphSources(x.name).length?'':'<dt>—</dt><dd class="faint">Unknown</dd>')}</dl>${(()=>{const ms=morphSources(x.name);return ms.length?`<h3>Metamorph odds</h3><p class="prose dim" style="margin:0 0 6px;font-size:13px">Chance per Ragnarok summon to get this item.</p><ul class="who-list">${ms.map(o=>`<li><span><button class="linkbtn" data-jump="bestiary" data-target="${esc(o.m.name)}">${esc(o.m.name)}</button></span><span class="num" style="color:var(--gold)">${o.eff!=null?pct(o.eff):'?'}</span><span class="loc">${pct(o.hit)} hit × ${o.share!=null?o.share+'/4 share':'share unknown'} · Lv ${o.m.level}</span></li>`).join('')}</ul>`:''})()}</section>`;
+}
+
+function afterDraw(L){
+  if(pendingOpen!=null){const r=[...L.children].find(c=>c.dataset&&c.dataset.id===String(pendingOpen));pendingOpen=null;if(r)setTimeout(()=>r.scrollIntoView({block:'center'}),30)}
+}
+
+/* ---------- ESPERS ---------- */
+const GBA_ESPERS=['Cactuar','Diabolos','Gilgamesh','Leviathan'];
+function espers(){
+  const s=state.espers;
+  if(pendingOpen&&D.espers.some(e=>e.name===pendingOpen)){s.q=pendingOpen;s.spell='';s.bonus='';pendingOpen=null}
+  const spellNames=[...new Set(D.espers.flatMap(e=>e.spells.map(x=>x.name)))].sort();
+  const bonusKinds=[...new Set(D.espers.map(e=>e.bonus.replace(/\s*\+.*$/,'')))].sort();
+  view.innerHTML=`
+  <p class="intro">Equip an Esper and every battle you win adds <b>magic points × learn rate</b> to each of its spells; a spell is learned at 100%. So an <b>x10</b> spell takes 10% per point, about 10 points' worth of battles, and an <b>x1</b> spell takes 100. The <b>level bonus</b> applies each time the character gains a level with that Esper equipped.</p>
+  <div class="filters win">
+    <div class="grp grow"><label class="lbl" for="sq">Search</label><input type="search" id="sq" placeholder="Esper, summon, location" value="${esc(s.q)}"></div>
+    <div class="grp"><label class="lbl" for="sspell">Find a spell</label><select id="sspell"><option value="">Any spell</option>${spellNames.map(n=>`<option>${esc(n)}</option>`).join('')}</select></div>
+    <div class="grp"><label class="lbl" for="sbonus">Level bonus</label><select id="sbonus"><option value="">Any bonus</option>${bonusKinds.map(n=>`<option>${esc(n)}</option>`).join('')}</select></div>
+    <div class="grp"><label class="lbl" for="ssort">Sort</label><select id="ssort"><option value="name">Name</option><option value="mp">Summon MP</option><option value="spells">Most spells</option></select></div>
+  </div>
+  ${legend('lg-espers',[
+    ['<span class="bonus">HP +50%</span>','<b>Level bonus.</b> Added each time the character levels up with this Esper equipped.'],
+    ['<span class="bonus none">No bonus</span>','No level-up bonus.'],
+    ['<span class="rate" style="width:110px"><b>x10</b><span class="bar"><i style="width:50%"></i></span></span>','<b>Learn rate.</b> Progress per magic point earned. A full bar is x20, the fastest rate.'],
+    ['<span class="badge">GBA</span>','Esper added in the GBA release.'],
+    [el('Fire'),'Element of the spell or summon.'],
+    ['<b>MP</b>','MP cost to cast the spell once learned, or to summon the Esper.']
+  ])}
+  <div id="sfind"></div>
+  <p class="count" id="scount"></p>
+  <div class="esp-grid" id="slist"></div>`;
+  const q=document.getElementById('sq'),sp=document.getElementById('sspell'),bo=document.getElementById('sbonus'),so=document.getElementById('ssort');
+  sp.value=s.spell;bo.value=s.bonus;so.value=s.sort;
+  q.oninput=()=>{s.q=q.value;draw()};sp.onchange=()=>{s.spell=sp.value;draw()};bo.onchange=()=>{s.bonus=bo.value;draw()};so.onchange=()=>{s.sort=so.value;draw()};
+  const rateNum=r=>parseInt(String(r).replace(/\D/g,''))||0;
+  function draw(){
+    const t=s.q.trim().toLowerCase();
+    let a=D.espers.filter(e=>{
+      if(t&&![e.name,e.summon,e.loc,e.bonus,...e.spells.map(x=>x.name)].join(' ').toLowerCase().includes(t))return false;
+      if(s.spell&&!e.spells.some(x=>x.name===s.spell))return false;
+      if(s.bonus&&e.bonus.replace(/\s*\+.*$/,'')!==s.bonus)return false;
+      return true});
+    if(s.spell)a.sort((x,y)=>rateNum(y.spells.find(z=>z.name===s.spell).rate)-rateNum(x.spells.find(z=>z.name===s.spell).rate)||x.name.localeCompare(y.name));
+    else if(s.sort==='mp')a.sort((x,y)=>(+y.mp)-(+x.mp));
+    else if(s.sort==='spells')a.sort((x,y)=>y.spells.length-x.spells.length||x.name.localeCompare(y.name));
+    else a.sort((x,y)=>x.name.localeCompare(y.name));
+    const F=document.getElementById('sfind');
+    F.innerHTML=s.spell?`<div class="finder win"><h3>Learn ${esc(s.spell)} from</h3><ol>${a.map(e=>`<li>${esc(e.name)}<b>${esc(e.spells.find(z=>z.name===s.spell).rate)}</b></li>`).join('')}</ol></div>`:'';
+    document.getElementById('scount').textContent=`${a.length} of ${D.espers.length} Espers`;
+    const L=document.getElementById('slist');
+    L.innerHTML=a.length?a.map(e=>`<article class="esp">
+      <h2>${esc(e.name)} ${e.bonus==='None'?'<span class="bonus none">No bonus</span>':`<span class="bonus">${esc(e.bonus)}</span>`}${GBA_ESPERS.includes(e.name)?'<span class="badge">GBA</span>':''}</h2>
+      <p class="sum"><b>${esc(e.summon)}</b>${e.summonElem.length?' '+els(e.summonElem):''} <span class="dim">· ${esc(e.mp)} MP</span><br><span class="game-q" title="In-game description">“${esc(e.summonDesc)}”</span></p>
+      <p class="where">${esc(e.loc)}</p>
+      <table class="spells"><thead><tr><th>Spell</th><th style="text-align:right;padding-right:14px">MP</th><th>Learn rate</th></tr></thead><tbody>
+      ${e.spells.map(x=>`<tr class="${x.name===s.spell?'hit':''}" title="${esc(x.desc)}"><td>${esc(x.name)}${x.elem.length?' '+els(x.elem):''}</td><td class="mp">${esc(x.mp)}</td><td class="rt"><span class="rate"><b>${esc(x.rate)}</b><span class="bar"><i style="width:${Math.min(100,rateNum(x.rate)/20*100)}%"></i></span></span></td></tr>`).join('')}
+      </tbody></table></article>`).join(''):'<div class="empty">No Espers match. Clear the search or filters.</div>';
+  }
+  draw();
+}
+
+/* ---------- LORES ---------- */
+const LORE_ALIAS={'Vennobennu':'Venobennu'};
+function loreFrom(l){
+  const fromBest=D.monsters.filter(m=>m.lores.includes(l.name)).map(m=>m.name);
+  const extra=l.from.map(n=>LORE_ALIAS[n]||n).filter(n=>!fromBest.includes(n)&&!fromBest.some(b=>b.startsWith(n+' (')));
+  return [...fromBest,...extra].sort((a,b)=>a.localeCompare(b));
+}
+const loreMP=l=>typeof l.mp==='number'?l.mp:(l.name==='Traveler'?'Varies':'—');
+function lores(){
+  const s=state.lores;
+  view.innerHTML=`
+  <p class="intro">Strago learns a Lore the moment he sees an enemy use it, as long as he's in the battle party and able to act. Each row lists every enemy that uses the Lore, and <b>First available</b> shows whether you can first learn it in the World of Balance or the World of Ruin. Dark Force, in the GBA bonus content, knows almost all of them.</p>
+  <div class="filters win">
+    <div class="grp grow"><label class="lbl" for="lq">Search</label><input type="search" id="lq" placeholder="Lore, enemy, effect" value="${esc(s.q)}"></div>
+    <div class="grp"><label class="lbl" for="lworld">First available</label><select id="lworld"><option value="">Either world</option><option>World of Balance</option><option>World of Ruin</option></select></div>
+    <div class="grp"><label class="lbl" for="lsort">Sort</label><select id="lsort"><option value="first">First available</option><option value="name">Name</option><option value="mp">MP cost</option></select></div>
+  </div>
+  ${legend('lg-lores',[
+    ['<span class="world wob">WoB</span> <span class="world wor">WoR</span>','<b>First available.</b> The earliest World of Balance or World of Ruin point where an enemy uses this Lore.'],
+    ['<span class="num">MP</span>','MP Strago spends to cast it. Traveler\'s cost changes with your play time.'],
+    [el('Wind'),'Element of the attack, if any.'],
+    ['<b>Single / Multi</b>','Hits one target or a whole side.'],
+    ['<span class="badge">GBA</span>','An enemy that only exists in the GBA release.'],
+    ['<b>Reflectable / Runic</b>','In an open row: whether Reflect bounces it and whether Celes\'s Runic can absorb it.']
+  ])}
+  <p class="count" id="lcount"></p>
+  <div class="lore colhead"><span class="r">MP</span><span>Lore</span><span>Element · Target</span><span>Learn from</span><span>First available</span></div>
+  <div class="list" id="llist"></div>`;
+  const q=document.getElementById('lq'),w=document.getElementById('lworld'),so=document.getElementById('lsort');
+  w.value=s.world;so.value=s.sort;
+  q.oninput=()=>{s.q=q.value;draw()};w.onchange=()=>{s.world=w.value;draw()};so.onchange=()=>{s.sort=so.value;draw()};
+  const L=document.getElementById('llist');
+  const byName=Object.fromEntries(D.lores.map(l=>[l.name,l]));
+  bindRows(L,id=>loreDetail(byName[id]));
+  const wtag=l=>l.first?`<span class="world ${l.first.includes('Ruin')?'wor':'wob'}">${l.first.includes('Ruin')?'WoR':'WoB'}</span>`:'<span class="faint">—</span>';
+  function draw(){
+    const t=s.q.trim().toLowerCase();
+    let a=D.lores.filter(l=>{
+      if(s.world&&l.first!==s.world)return false;
+      if(t&&![l.name,l.desc,l.target,...l.elem,...loreFrom(l)].join(' ').toLowerCase().includes(t))return false;
+      return true});
+    const wv=l=>(l.first.includes('Ruin')?1000:0)+(l.chapter||0);
+    a.sort((x,y)=>s.sort==='name'?x.name.localeCompare(y.name):s.sort==='mp'?((typeof x.mp==='number'?x.mp:999)-(typeof y.mp==='number'?y.mp:999)):(wv(x)-wv(y)||x.name.localeCompare(y.name)));
+    document.getElementById('lcount').textContent=`${a.length} of ${D.lores.length} Lores`;
+    L.innerHTML=a.length?a.map(l=>{const f=loreFrom(l);return rowHTML('lore',l.name,`
+      <span class="num r mlab" data-k="MP">${esc(loreMP(l))}</span>
+      <span class="name"><span class="cursor"></span><span>${esc(l.name)}</span></span>
+      <span class="mlab" data-k="Element · Target">${l.elem.length?l.elem.map(x=>el(x)).join(''):''} <span class="dim">${esc(l.target)}</span></span>
+      <span class="mlab" data-k="Learn from" style="font-size:13.5px">${esc(f.join(', '))}</span>
+      <span class="mlab" data-k="First available">${wtag(l)}</span>`,()=>loreDetail(l),l.name===pendingOpen)}).join(''):'<div class="empty">No Lores match. Clear the search or filter.</div>';
+    afterDraw(L);
+  }
+  draw();
+}
+function loreDetail(l){
+  const f=loreFrom(l);
+  return `<section><h3>Effect</h3><p class="prose">${esc(l.desc)}</p>
+      <dl class="kv" style="margin-top:10px"><dt>MP</dt><dd>${esc(loreMP(l))}</dd><dt>Target</dt><dd>${esc(l.target)}</dd><dt>Element</dt><dd>${els(l.elem)}</dd>
+      <dt>Reflectable</dt><dd>${esc(l.reflect)}</dd><dt>Runic</dt><dd>${esc(l.runic)}</dd>
+      <dt>First available</dt><dd>${esc(l.first||'—')}</dd></dl></section>
+    <section style="grid-column:span 2;min-width:0"><h3>Learn from (${f.length})</h3><ul class="who-list">${f.map(n=>{const m=monByName[n];
+      return `<li><span>${m?`<button class="linkbtn" data-jump="bestiary" data-target="${esc(n)}">${esc(n)}</button>`:esc(n)}${m&&m.gba?' <span class="badge">GBA</span>':''}</span><span class="num dim">${m?'Lv '+m.level:''}</span>${m&&m.loc?`<span class="loc">${esc(m.loc)}</span>`:''}</li>`}).join('')}</ul></section>`;
+}
+
+/* ---------- DANCES ---------- */
+const PLACE_FIX={'World of Balance':'Overworld grassland (WoB)','World of Ruin':'Overworld grassland (WoR)','Kefka':'Final battle with Kefka','Leviathan (GBA/2014 version)':'Leviathan boss fight (GBA)'};
+const KINDS=[['all','Hits all enemies'],['one','Hits one enemy'],['heal','Heals party'],['cure','Cures status'],['death','Instant death / HP cut'],['buff','Buffs party']];
+function moveKinds(m){return m.kinds||[]}
+function dances(){
+  const s=state.dances;
+  view.innerHTML=`
+  <p class="intro">Mog learns a Dance by winning a battle on a new kind of terrain. Once he dances, he keeps dancing until the fight ends, picking one of four moves each turn: the first move <b>7 in 16</b> times, then <b>6</b>, <b>2</b> and <b>1</b> in 16. Dancing a terrain that doesn't match the battlefield has a 50% chance to change the terrain to match and a 50% chance that Mog stumbles and loses his turn. Gogo can use any Dance Mog knows.</p>
+  <div class="filters win">
+    <div class="grp grow"><label class="lbl" for="dq">Search</label><input type="search" id="dq" placeholder="Dance, move, place to learn" value="${esc(s.q)}"></div>
+    <div class="grp" style="flex-basis:100%"><label class="lbl">Moves that</label><div class="chips" id="dkind">${KINDS.map(([k,l])=>`<button class="chip" data-k="${k}" aria-pressed="${s.kind===k}">${l}</button>`).join('')}</div></div>
+  </div>
+  ${legend('lg-dances',[
+    ['<span class="odds"><b>7/16</b><span class="pips">'+'<i class="on"></i>'.repeat(7)+'<i></i>'.repeat(9)+'</span></span>','<b>Odds.</b> How often Mog uses the move: 7, 6, 2 or 1 times in 16. Each lit pip is 1 in 16.'],
+    ['<span class="kind">All enemies</span>','Whom the move hits, or what it does for the party.'],
+    ['<span class="kind heal">Heals</span>','Restores HP or cures status ailments on the party.'],
+    ['<span class="kind death">Death</span>','Instant KO or a fraction of HP removed; fails on enemies immune to Death.'],
+    [el('Wind'),'Element of the move.'],
+    ['<b>Spell power</b>','Base strength of the move. All Dance moves count as magic, so they scale with Mog\'s Magic stat.'],
+    ['<b>Learn in</b>','Places whose battle backgrounds teach the Dance. One win on that background is enough.']
+  ])}
+  <p class="count" id="dcount"></p>
+  <div class="dance-grid" id="dlist"></div>`;
+  const q=document.getElementById('dq');
+  q.oninput=()=>{s.q=q.value;draw()};
+  document.getElementById('dkind').onclick=e=>{const c=e.target.closest('.chip');if(!c)return;s.kind=s.kind===c.dataset.k?'':c.dataset.k;document.querySelectorAll('#dkind .chip').forEach(x=>x.setAttribute('aria-pressed',x.dataset.k===s.kind));draw()};
+  const kindTag=k=>({all:'<span class="kind">All enemies</span>',one:'<span class="kind">One enemy</span>',heal:'<span class="kind heal">Heals</span>',cure:'<span class="kind heal">Cures status</span>',death:'<span class="kind death">Death</span>',buff:'<span class="kind heal">Haste</span>'})[k];
+  const pips=n=>'<span class="pips">'+Array.from({length:16},(_,i)=>`<i class="${i<n?'on':''}"></i>`).join('')+'</span>';
+  function draw(){
+    const t=s.q.trim().toLowerCase();
+    const moveHit=m=>(!t||[m.name,m.snes,m.desc,...m.elem].join(' ').toLowerCase().includes(t))&&(!s.kind||moveKinds(m).includes(s.kind));
+    let a=D.dances.filter(d=>{
+      const nameHit=!t||[d.name,d.snes,...d.learn.map(x=>PLACE_FIX[x]||x)].join(' ').toLowerCase().includes(t);
+      const mv=d.moves.some(m=>(nameHit||moveHit(m))&&(!s.kind||moveKinds(m).includes(s.kind)));
+      return mv;});
+    document.getElementById('dcount').textContent=`${a.length} of ${D.dances.length} Dances`;
+    const L=document.getElementById('dlist');
+    L.innerHTML=a.length?a.map(d=>`<article class="esp">
+      <h2>${esc(d.name)}</h2>
+      ${d.snes!==d.name?`<p class="where" style="margin:4px 0 0">SNES name: ${esc(d.snes)}</p>`:''}
+      <span class="k" style="margin-top:10px">Learn in</span>
+      <div class="learn-in">${d.learn.map(x=>`<span>${esc(PLACE_FIX[x]||x)}</span>`).join('')}</div>
+      <ul class="moves">${d.moves.map(m=>{const hit=(t||s.kind)&&moveHit(m);return `<li class="${hit?'hit':''}">
+        <span class="odds"><b>${m.odds}/16</b>${pips(m.odds)}</span>
+        <div><div class="mv-name">${esc(m.name)}${m.elem.map(x=>el(x)).join('')}${moveKinds(m).map(kindTag).join('')}</div>
+        <div class="mv-desc">${esc(m.desc)}</div></div></li>`}).join('')}</ul></article>`).join(''):'<div class="empty">No Dances match. Clear the search or move filter.</div>';
+  }
+  draw();
+}
+
+/* ---------- BLITZES ---------- */
+const KEYS={L:'←',R:'→',U:'↑',D:'↓',UL:'↖',UR:'↗',DL:'↙',DR:'↘',LB:'L',RB:'R'};
+const keyHTML=k=>`<span class="key${k==='LB'||k==='RB'?' sh':''}" title="${k==='LB'?'L shoulder':k==='RB'?'R shoulder':'D-pad'}">${KEYS[k]}</span>`;
+function blitzes(){
+  const noSuplex=D.monsters.filter(m=>/Suplex/.test(m.info)).length;
+  view.innerHTML=`
+  <p class="intro">Choose <b>Blitz</b>, enter the button sequence while the cursor is on Sabin, then press <b>A</b>. A wrong sequence wastes his turn. Sabin learns each Blitz when he reaches its level; Phantom Rush can also be learned early from his master Duncan. Blitz damage uses Sabin's <b>Magic</b> stat rather than his Strength or weapon. Gogo can use any Blitz Sabin knows.</p>
+  ${legend('lg-blitz',[
+    ['<span class="keys">'+keyHTML('L')+keyHTML('DL')+'</span>','<b>D-pad.</b> Arrows are D-pad presses; a diagonal means pressing both directions at once.'],
+    ['<span class="keys">'+keyHTML('LB')+keyHTML('RB')+'</span>','<b>Shoulder buttons.</b> The GBA uses L and R where the SNES used Y and X.'],
+    ['<span class="keys"><span class="key a">A</span></span>','Press A after the sequence to use the Blitz.'],
+    ['<b>Easier input</b>','A diagonal also counts if you press either of its two directions, so the sequence can be entered with plain arrows.'],
+    ['<span class="lvl" style="font-family:var(--mono);font-size:12px;color:var(--gold);border:1px solid var(--gold);border-radius:3px;padding:1px 7px">Lv 23</span>','Sabin\'s level when he learns it.'],
+    ['<span class="kind">Magic</span> <span class="kind">Physical</span>','Magic Blitzes are spell-like attacks; physical ones are hits that pierce Defense.'],
+    [el('Holy'),'Element of the attack.']
+  ])}
+  <div class="dance-grid">${D.blitzes.map(b=>`<article class="esp blitz">
+    <h2>${esc(b.name)} <span class="lvl">Lv ${esc(b.level)}</span></h2>
+    ${b.alt?`<p class="where" style="margin:4px 0 0">${esc(b.alt)}</p>`:''}
+    <div class="blitz-meta"><span class="kind${b.kind==='Healing'?' heal':''}">${esc(b.kind)}</span><span class="kind">${esc(b.target)}</span>${b.elem.map(x=>el(x)).join('')}<span class="dim num" style="font-size:12.5px">${esc(b.power)}</span></div>
+    <span class="k">Input</span>
+    <div class="keys">${b.input.map(keyHTML).join('')}<span class="then">then</span><span class="key a">A</span></div>
+    ${b.easy?`<div class="easy"><span class="k">Easier input</span><div class="keys">${b.easy.map(keyHTML).join('')}<span class="then">then</span><span class="key a">A</span></div></div>`:''}
+    <p class="eff">${esc(b.effect)}</p>
+    ${b.suplex?`<p class="eff dim">${noSuplex} enemies can't be thrown. <button class="linkbtn" id="show-nosuplex">Show them in the Bestiary</button></p>`:''}
+    <p class="flav">“${esc(b.flavor)}” <span class="faint" style="font-style:normal">· SNES name: ${esc(b.snes)}</span></p>
+  </article>`).join('')}</div>`;
+  const ns=document.getElementById('show-nosuplex');
+  if(ns)ns.onclick=()=>{Object.assign(state.bestiary,{q:'',el:'',only:'suplex'});location.hash='bestiary'};
+}
+
+/* ---------- TOOLS ---------- */
+function tools(){
+  const eqByName=Object.fromEntries(D.equipment.map(x=>[x.name,x]));
+  const deathImmune=D.monsters.filter(m=>m.statusImmune.includes('Death')).length;
+  view.innerHTML=`
+  <p class="intro">Edgar uses Tools with his <b>Tools</b> command. A Tool only has to be in your inventory; it doesn't need to be equipped and is never used up. Tools always hit, so they ignore evasion and Image. Damage from Tools doesn't depend on Edgar's weapon. Gogo can use Tools too.</p>
+  ${legend('lg-tools',[
+    ['<span class="kind">Physical</span>','A physical hit. Uses Attack Power and ignores Edgar\'s weapon.'],
+    ['<span class="kind">Magic</span>','A spell-like attack that uses Spell Power.'],
+    ['<span class="kind">Status</span>','Inflicts a status or effect instead of damage.'],
+    ['<span class="kind death">Death</span>','Can kill outright. Fails on enemies immune to Death ('+deathImmune+' in the Bestiary).'],
+    ['<span class="kind">All enemies</span>','Hits every enemy. Multi-target Tools don\'t split their damage.'],
+    [el('Poison'),'Element of the attack.'],
+    ['<b>How to get it</b>','Shops, treasure, and enemies to steal it from or that drop it. Enemy names link to the Bestiary.']
+  ])}
+  <div class="dance-grid">${D.tools.map(t=>{const e=eqByName[t.name];return `<article class="esp blitz">
+    <h2>${esc(t.name)}</h2>
+    ${t.snes!==t.name?`<p class="where" style="margin:4px 0 0">SNES name: ${esc(t.snes)}</p>`:''}
+    <div class="blitz-meta"><span class="kind">${esc(t.kind)}</span><span class="kind">${esc(t.target)}</span>${t.death?'<span class="kind death">Death</span>':''}${t.elem.map(x=>el(x)).join('')}<span class="dim num" style="font-size:12.5px">${esc(t.power)}</span></div>
+    <p class="eff">${esc(t.effect)}</p>
+    ${e&&e.notes[0]?`<p class="flav">“${esc(e.notes[0])}”</p>`:''}
+    <h3 style="font-family:var(--display);font-weight:500;font-size:15px;color:var(--gold);margin:12px 0 6px">How to get it</h3>
+    <dl class="kv">${t.note?`<dt>Start</dt><dd>${esc(t.note)}</dd>`:''}${e?e.loc.filter(([k])=>k!=='Metamorph from').map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v).split(', ').map(n=>monByName[n]?`<button class="linkbtn" data-jump="bestiary" data-target="${esc(n)}">${esc(n)}</button>`:n).join(', ')}</dd>`).join(''):''}</dl>
+  </article>`}).join('')}</div>`;
+  view.querySelector('.dance-grid').addEventListener('click',ev=>{const j=ev.target.closest('[data-jump]');if(j){ev.preventDefault();jump(j.dataset.jump,j.dataset.target)}});
+}
+
+/* ---------- TIPS ---------- */
+function tips(){
+  const T=D.tips;
+  const eqN=new Set(D.equipment.map(x=>x.name));
+  const item=n=>eqN.has(n)?`<button class="linkbtn" style="color:inherit" data-jump="equipment" data-target="${esc(n)}">${esc(n)}</button>`:esc(n);
+  const total=T.changing.reduce((a,g)=>a+g.chests.length,0);
+  view.innerHTML=`
+  <p class="intro">Story-dependent treasure, one-time choices, and <a href="#tips" data-glitch>glitches</a> worth knowing. Each treasure below can be opened only once. Its contents depend on <b>when</b> you open it, so opening it early gives the early item and leaves it empty afterward. Wait if you want the later item.</p>
+  ${legend('lg-tips',[
+    ['<span class="stages"><span class="stage"><span class="when">World of Balance</span><span class="what">Potion</span></span></span>','What the treasure holds if you open it at that point in the story.'],
+    ['<span class="stages"><span class="stage best"><span class="when">World of Ruin</span><span class="what">X-Potion</span></span></span>','The final, best version.'],
+    ['<span class="wait">Worth waiting</span>','The later item is rare or hard to buy, so leave the treasure closed until then.'],
+    ['<b>Locke\'s scenario</b>','The point after the party splits, when Locke escapes South Figaro with Celes.']
+  ])}
+  <h2 class="tips-h">Treasure that changes</h2>
+  <p class="tips-sub">${total} treasures in three places. Everything here is reachable again later, so nothing is missable by waiting.</p>
+  <div class="dance-grid">${T.changing.map(g=>`<article class="esp">
+    <h2>${esc(g.area)}</h2><p class="where" style="margin:4px 0 4px">${esc(g.note)}</p>
+    ${g.chests.map(c=>`<div class="chest"><div class="spot">${esc(c.spot)}${c.wait?'<span class="wait">Worth waiting</span>':''}</div>
+      <div class="stages">${c.stages.map(([w,i],k)=>`${k?'<span class="arrow">→</span>':''}<span class="stage${k===c.stages.length-1?' best':''}"><span class="when">${esc(w)}</span><span class="what">${item(i)}</span></span>`).join('')}</div>
+      ${c.tip?`<div class="tip">${esc(c.tip)}</div>`:''}</div>`).join('')}
+  </article>`).join('')}</div>
+  <h2 class="tips-h">Choose one reward</h2>
+  <p class="tips-sub">You only get one of these per playthrough, so decide before you answer.</p>
+  <div class="dance-grid">${T.choices.map(c=>`<article class="esp">
+    <h2>${esc(c.area)}</h2><p class="where" style="margin:4px 0 8px">${esc(c.when)}</p>
+    <dl class="kv">${c.options.map(([a,b])=>`<dt>${esc(a)}</dt><dd><b>${item(b)}</b></dd>`).join('')}</dl>
+    ${c.tip?`<p class="eff dim" style="font-size:13px">${esc(c.tip)}</p>`:''}
+  </article>`).join('')}</div>
+  <h2 class="tips-h" id="glitches">Glitches</h2>
+  <p class="tips-sub">Bugs in the GBA release you can use on purpose.</p>
+  <div class="glitch-grid"><article class="esp glitch">
+    <h2>Level reset glitch <span class="badge alt">US / EU GBA only</span></h2>
+    <p class="where" style="margin:4px 0 10px">Set a character's level back down without losing any of their stats, so they can level up again with stat-boosting Espers equipped.</p>
+    <h3>Why bother</h3>
+    <p class="eff">Each level-up adds the bonus of the Esper the character has equipped, for example Strength +2 from Bismarck, Gilgamesh or Raiden, Stamina +2 from Golem, Lakshmi or Leviathan, Magic +2 from Zona Seeker or Valigarmanda, Speed +2 from Cactuar, or HP +50% from Bahamut (see the <a href="#espers">Espers</a> tab). A character only gets about 98 level-ups in a playthrough. This glitch drops their level while keeping their stats, HP, MP and spells, so you get those level-ups, and their bonuses, all over again.</p>
+    <h3>How to do it</h3>
+    <ol class="glitch-steps">
+      <li>Copy your save to a spare slot as a backup.</li>
+      <li>Load the save with the characters you want to reset. <b>Save</b> normally, then <b>Quick Save</b> from the menu.</li>
+      <li>Go back to the title screen and choose <b>New Game</b>. This wipes the Quick Save; that's expected.</li>
+      <li>Play the new game <b>without saving at all</b> until the characters you want to reset have joined the party.</li>
+      <li>Lose a battle on purpose to get a Game Over.</li>
+      <li>Instead of the title screen, the game loads your normal save from step 2. Every character who joined during the new game now has the <b>level they had at the Game Over</b>, but keeps all the stats, HP, MP and spells they had in your real save.</li>
+      <li>Equip stat-boosting Espers and level them back up. Repeat as often as you like.</li>
+    </ol>
+    <h3>Things to know</h3>
+    <ul class="glitch-notes">
+      <li>Only characters who joined in the new game are reset. Everyone else is untouched.</li>
+      <li>You can't save in the new game, so the early joiners are the easy ones: Terra, Locke, Edgar, Sabin, Celes, Cyan, Gau and Mog all join in the first part of the story. Strago and Relm join much later, and Gogo and Umaro only in the World of Ruin, so resetting them means playing that far in one sitting (an emulator's save states make that practical).</li>
+      <li>It's the <b>level</b> that comes over from the new game, not stats. Your real save keeps the stats it already had.</li>
+      <li>It doesn't work on the Japanese GBA release, or the 2014 mobile and Steam version, where a Game Over just goes to the title screen.</li>
+    </ul>
+    <p class="faint" style="font-size:12.5px;margin:10px 0 0">Sources: <a href="https://finalfantasy.fandom.com/wiki/Level_reset_glitch" target="_blank" rel="noopener">Final Fantasy Wiki</a>, <a href="https://tcrf.net/Final_Fantasy_VI_Advance" target="_blank" rel="noopener">The Cutting Room Floor</a>, and the <a href="https://l33t5k37ch3r.altervista.org/leveled-out.html" target="_blank" rel="noopener">Leveled Out</a> fix patch notes.</p>
+  </article></div>`;
+  view.querySelectorAll('.dance-grid').forEach(g=>g.addEventListener('click',ev=>{const j=ev.target.closest('[data-jump]');if(j){ev.preventDefault();jump(j.dataset.jump,j.dataset.target)}}));
+  view.querySelector('[data-glitch]').onclick=e=>{e.preventDefault();document.getElementById('glitches').scrollIntoView({behavior:'smooth',block:'start'})};
+}
+
+/* ---------- SLOTS ---------- */
+const REEL={
+  '7':'<span class="reel seven" title="Seven"><b>7</b></span>',
+  'Bar':'<span class="reel bar" title="Bar"><b>BAR</b></span>',
+  'Diamond':'<span class="reel diamond" title="Diamond"><b>◆</b></span>',
+  'Airship':'<span class="reel" title="Airship"><small>AIR<br>SHIP</small></span>',
+  'Dragon':'<span class="reel" title="Dragon"><small>DRA<br>GON</small></span>',
+  'Chocobo':'<span class="reel" title="Chocobo"><small>CHOCO<br>BO</small></span>'
+};
+function slots(){
+  const S=D.slots;
+  view.innerHTML=`
+  <p class="intro">Setzer's <b>Slot</b> command spins three reels, and you stop them one at a time with A. Three matching symbols trigger that symbol's attack; anything else gives Mysidian Rabbit, a small party heal. Slot damage uses Setzer's <b>Magic</b> stat and can't be dodged. Gogo can use Slot too. The game quietly limits which results can come up on a given spin, so a perfect stop doesn't always pay off.</p>
+  ${legend('lg-slots',[
+    ['<span class="reels" style="margin:0">'+REEL['7']+REEL['Bar']+'</span>','Reel symbols as they appear in battle. Three of a kind triggers the result.'],
+    ['<span class="kind">Magic</span>','Damage based on Setzer\'s Magic stat.'],
+    ['<span class="kind death">Instant death</span>','Kills outright, ignoring Death immunity.'],
+    ['<span class="danger-tag">Danger</span>','Hits your own party. 7-7-BAR kills everyone on your side.']
+  ])}
+  <div class="dance-grid">${S.results.map(r=>`<article class="esp${r.danger?' danger':''}">
+    <h2>${esc(r.name)}${r.danger?' <span class="danger-tag">Danger</span>':''}</h2>
+    ${r.snes!==r.name.replace(' (party)','')?`<p class="where" style="margin:4px 0 0">SNES name: ${esc(r.snes)}</p>`:''}
+    <div class="reels">${r.reels[0]==='Any'?'<span class="reel any"><small>ANY<br>MISS</small></span>':r.reels.map(x=>REEL[x]).join('')}</div>
+    <div class="blitz-meta"><span class="kind${r.kind==='Instant death'?' death':r.kind==='Healing'?' heal':''}">${esc(r.kind)}</span><span class="kind">${esc(r.target)}</span>${r.power?`<span class="dim num" style="font-size:12.5px">${esc(r.power)}</span>`:''}</div>
+    <p class="eff">${esc(r.effect)}</p>
+    ${r.note?`<p class="eff dim" style="font-size:13px">${esc(r.note)}</p>`:''}
+  </article>`).join('')}</div>
+  <h2 class="tips-h">Battles where 7-7-7 can't land</h2>
+  <p class="tips-sub">In these fights the reels never stop on 7-7-7, though 7-7-BAR can still happen.</p>
+  <div class="esp"><div class="learn-in" style="margin:0">${S.no777.map(n=>`<span>${esc(n)}</span>`).join('')}</div></div>`;
+}
+
+/* ---------- SKETCH ---------- */
+const skImmune=m=>/Sketch/.test(m.cmdImmune);
+function skHit(lv,t,beret){if(!t)return 1;const eff=beret?t*170/256:t;return Math.min(1,lv/eff)}
+function skMoves(m,brief){
+  if(skImmune(m))return '<span class="faint">Can\'t be sketched</span>';
+  if(!m.sketch)return '<span class="faint">Unknown</span>';
+  return m.sketch.map(([n,p])=>`${esc(n)}${p==null?'':p===100?'<span class="odds">always</span>':`<span class="odds">${p===75?'¾':'¼'}</span>`}`).join(brief?' · ':'<br>');
+}
+function sketch(){
+  const s=state.sketch;
+  const pool=D.monsters.filter(m=>m.sketch||skImmune(m));
+  view.innerHTML=`
+  <p class="intro">Relm's <b>Sketch</b> paints one enemy and uses one of its attacks against your foes. Most enemies have two Sketch attacks: one comes up <b>¾</b> of the time, the other <b>¼</b>. Damage uses the <b>enemy's</b> Attack or Magic, not Relm's, so her own weapon and stats don't matter, though the Gigas Glove and Earrings still boost it. Attacks based on HP, MP or level use Relm's. Healing Sketches heal your party, and Drain or Osmose Sketches go to Relm. Gogo can Sketch too. The Fake Mustache relic turns Sketch into Control.</p>
+  <div class="filters win">
+    <div class="grp grow"><label class="lbl" for="skq">Search</label><input type="search" id="skq" placeholder="Monster or attack" value="${esc(s.q)}"></div>
+    <div class="grp"><label class="lbl" for="sklv">Relm's level</label><input type="number" id="sklv" min="1" max="99" value="${s.lv}" style="width:80px"></div>
+    <div class="grp"><label class="lbl" for="skberet">Headgear</label><select id="skberet"><option value="">No Beret</option><option value="1">Beret equipped</option></select></div>
+    <div class="grp"><label class="lbl" for="sksort">Sort</label><select id="sksort"><option value="name">Name</option><option value="level">Level</option><option value="hit">Hit chance</option></select></div>
+    <div class="grp"><label class="lbl" for="skonly">Show</label><select id="skonly"><option value="">All enemies</option><option value="heal">Heals or helps the party</option><option value="sure">Sure to hit at this level</option><option value="no">Can't be sketched</option></select></div>
+  </div>
+  ${legend('lg-sketch',[
+    ['Attack<span class="odds">¾</span>','The Sketch attack used three times in four.'],
+    ['Incisors<span class="odds">¼</span>','The rarer Sketch attack, one time in four.'],
+    ['<span class="num">100%</span> <span class="num hit-mid">60%</span> <span class="num hit-lo">25%</span>','<b>Hit chance</b> at the level you enter: Relm\'s level ÷ the enemy\'s level, capped at 100%. A miss wastes her turn.'],
+    ['<b>Beret</b>','Treats the enemy as two thirds its level, so Sketch never misses once Relm is two thirds of the enemy\'s level. First found on the Floating Continent; sold in Tzen.'],
+    ['<span class="faint">Can\'t be sketched</span>','Immune to Sketch. Invisible enemies and the statues in the final battle can\'t be sketched either.'],
+    ['<b>Special attack</b>','The enemy\'s own signature move, for a few bosses whose GBA name isn\'t documented.'],
+    ['<span class="faint">Unknown</span>','No source lists this enemy\'s odds or its Sketch attacks.']
+  ])}
+  <p class="count" id="skcount"></p>
+  <div class="sk colhead"><span>Monster</span><span class="r">Lv</span><span>Usually (¾)</span><span>Sometimes (¼)</span><span class="r">Hit</span></div>
+  <div class="list" id="sklist"></div>`;
+  const q=document.getElementById('skq'),lv=document.getElementById('sklv'),be=document.getElementById('skberet'),so=document.getElementById('sksort'),on=document.getElementById('skonly');
+  be.value=s.beret?'1':'';so.value=s.sort;on.value=s.only;
+  q.oninput=()=>{s.q=q.value;draw()};
+  lv.oninput=()=>{const v=parseInt(lv.value,10);if(v>=1&&v<=99){s.lv=v;draw()}};
+  be.onchange=()=>{s.beret=!!be.value;draw()};so.onchange=()=>{s.sort=so.value;draw()};on.onchange=()=>{s.only=on.value;draw()};
+  const L=document.getElementById('sklist');
+  bindRows(L,id=>monDetail(monByName[id]));
+  const HEAL=/cure|heal|regen|haste|protect|shell|safe|reflect|life|raise|esuna|remedy|big guard|mighty guard|vanish|float|bserk|berserk|mega berserk|rippler|sap seed|elixir|potion/i;
+  function draw(){
+    const t=s.q.trim().toLowerCase();
+    let a=pool.filter(m=>{
+      if(t&&![m.name,...(m.sketch||[]).map(x=>x[0])].join(' ').toLowerCase().includes(t))return false;
+      if(s.only==='no'&&!skImmune(m))return false;
+      if(s.only==='sure'&&(skImmune(m)||skHit(s.lv,m.level,s.beret)<1))return false;
+      if(s.only==='heal'&&(skImmune(m)||!(m.sketch||[]).some(x=>HEAL.test(x[0]))))return false;
+      return true});
+    a.sort((x,y)=>s.sort==='level'?(x.level-y.level||x.name.localeCompare(y.name)):s.sort==='hit'?(skHit(s.lv,y.level,s.beret)-skHit(s.lv,x.level,s.beret)||x.level-y.level):x.name.localeCompare(y.name));
+    document.getElementById('skcount').textContent=`${a.length} of ${pool.length} enemies`;
+    L.innerHTML=a.length?a.map(m=>{
+      const im=skImmune(m),sk=m.sketch||[],h=skHit(s.lv,m.level,s.beret),pc=Math.floor(h*100);
+      const cell=i=>{const x=sk[i];if(im)return i?'':'<span class="faint">Can\'t be sketched</span>';if(!x)return i?'':'<span class="faint">—</span>';return esc(x[0])+(x[1]==null?'<span class="odds">odds unknown</span>':x[1]===100?'<span class="odds">always</span>':'')};
+      return rowHTML('sk',m.name,`
+      <span class="name"><span class="cursor"></span><span>${esc(m.name)}</span>${m.gba?'<span class="badge">GBA</span>':''}</span>
+      <span class="num r mlab" data-k="Lv">${m.level}</span>
+      <span class="mlab" data-k="Usually">${cell(0)}</span>
+      <span class="mlab" data-k="Sometimes">${sk.length>1&&!im?cell(1):'<span class="faint">—</span>'}</span>
+      <span class="num r mlab ${im?'faint':pc<50?'hit-lo':pc<100?'hit-mid':''}" data-k="Hit">${im?'—':pc+'%'}</span>`,()=>monDetail(m),m.name===pendingOpen)}).join(''):'<div class="empty">No enemies match. Clear the search or filters.</div>';
+    afterDraw(L);
+  }
+  draw();
+}
+
+/* ---------- CHARACTERS ---------- */
+function characters(){
+  const lvRows=c=>{
+    if(c.spells.length)return ['Magic learned by level',c.spells.map(([l,n])=>[l,n])];
+    if(c.name==='Sabin')return ['Blitzes learned by level',D.blitzes.map(b=>[b.level,b.name])];
+    if(c.name==='Cyan')return ['Bushido learned by level',D.bushido.map(b=>[b.level,b.name])];
+    return null};
+  view.innerHTML=`
+  <p class="intro">The 14 playable characters with their starting stats, special command and where they join. Stats are base values: <b>Strength, Speed, Stamina and Magic</b> only grow through Esper level-up bonuses, while Attack and Defense come mostly from equipment. Click a special command to open its page.</p>
+  <nav class="charnav">${D.characters.map(c=>`<a href="#characters" data-c="${esc(c.name)}">${esc(c.name)}</a>`).join('')}</nav>
+  <div class="dance-grid">${D.characters.map(c=>{const lr=lvRows(c);return `<article class="esp char" id="char-${esc(c.name)}">
+    <h2>${esc(c.name)}<span class="cls">${esc(c.cls)}</span></h2>
+    <div class="cmdrow">${c.view?`<button class="cmd" data-go="${c.view}">${esc(c.cmd)} →</button>`:c.cmd!=='—'?`<span class="cmd">${esc(c.cmd)}</span>`:''}${c.da&&c.da!=='—'?`<span class="kind">Desperation: ${esc(c.da)}</span>`:''}</div>
+    ${c.skill?`<p class="eff">${esc(c.skill)}</p>`:''}
+    <h3>Joins</h3><p class="eff" style="margin:0">${esc(c.join)}</p>
+    <h3>Strengths</h3><p class="eff" style="margin:0">${esc(c.play)}</p>
+    <h3>Base stats</h3><div class="statgrid">${c.stats.map(([k,v])=>`<div><span class="k">${k}</span><span class="num">${v}</span></div>`).join('')}</div>
+    ${lr?`<h3>${lr[0]}</h3><div class="lvtable">${lr[1].map(([l,n])=>`<span class="num">Lv ${l}</span><span>${esc(n)}</span>`).join('')}</div>`:''}
+    ${c.name!=='Umaro'?`<p style="margin:12px 0 0"><button class="linkbtn" data-equip="${esc(c.name)}">What ${esc(c.name)} can equip →</button></p>`:''}
+  </article>`}).join('')}</div>`;
+  view.onclick=e=>{
+    const g=e.target.closest('[data-go]');if(g){location.hash=g.dataset.go;return}
+    const q=e.target.closest('[data-equip]');if(q){Object.assign(state.equipment,{who:q.dataset.equip,cat:'Weapon',sub:'',q:''});store.set('ff6-who',q.dataset.equip);location.hash='equipment';return}
+    const a=e.target.closest('.charnav a');if(a){e.preventDefault();document.getElementById('char-'+a.dataset.c).scrollIntoView({behavior:'smooth',block:'start'})}
+  };
+}
+
+/* ---------- STEAL ---------- */
+function stealRate(lv,t,br){let r=50+lv-t;if(br)r*=2;return Math.max(0,Math.min(100,r))}
+function steal(){
+  const s=state.steal;
+  const pool=D.monsters.filter(m=>m.steal.common||m.steal.rare);
+  const eqN=new Set(D.equipment.map(x=>x.name));
+  view.innerHTML=`
+  <p class="intro">Locke's <b>Steal</b> takes one item from an enemy. Each enemy has a <b>common</b> slot and a <b>rare</b> slot: a successful steal picks the common slot 7 times in 8 and the rare slot 1 time in 8. If the chosen slot is empty, the steal fails, so enemies with only a rare item are hard to rob. You can steal only once from each enemy. The success chance is <b>50% + Locke's level − the enemy's level</b>, doubled by the <b>Thief's Bracer</b>. The <b>Brigand's Glove</b> turns Steal into <b>Mug</b> (attack and steal in one turn), the Thief's Knife sometimes steals when it hits, and Strago's <button class="linkbtn" data-jump="lores" data-target="Dischord">Dischord</button> Lore halves an enemy's level to make stealing easier. Gogo can Steal too.</p>
+  <div class="filters win">
+    <div class="grp grow"><label class="lbl" for="stq">Search</label><input type="search" id="stq" placeholder="Monster or item" value="${esc(s.q)}"></div>
+    <div class="grp"><label class="lbl" for="stlv">Locke's level</label><input type="number" id="stlv" min="1" max="99" value="${s.lv}" style="width:80px"></div>
+    <div class="grp"><label class="lbl" for="stbr">Relic</label><select id="stbr"><option value="">No Thief's Bracer</option><option value="1">Thief's Bracer</option></select></div>
+    <div class="grp"><label class="lbl" for="stsort">Sort</label><select id="stsort"><option value="name">Name</option><option value="level">Level</option><option value="hit">Success chance</option></select></div>
+    <div class="grp"><label class="lbl" for="stonly">Show</label><select id="stonly"><option value="">All enemies with items</option><option value="gear">Equipment or relic to steal</option><option value="rareonly">Rare item only (hard steals)</option></select></div>
+  </div>
+  ${legend('lg-steal',[
+    ['Potion <span class="odds">88%</span>','<b>Common slot.</b> The chance per Steal command of getting this item at the level you entered (success × 7/8).'],
+    ['Elixir <span class="odds">13%</span>','<b>Rare slot.</b> Success × 1/8.'],
+    ['<span class="num">100%</span> <span class="num hit-mid">60%</span> <span class="num hit-lo">25%</span>','<b>Success</b>: the chance the steal works at all, capped at 100%.'],
+    ['<span class="badge alt">Gear</span>','The item is a weapon, armor or relic. Open it from the enemy\'s detail or search it on the Equipment tab.']
+  ])}
+  <p class="count" id="stcount"></p>
+  <div class="stl colhead"><span>Monster</span><span class="r">Lv</span><span>Common (7/8)</span><span>Rare (1/8)</span><span class="r">Success</span></div>
+  <div class="list" id="stlist"></div>`;
+  const q=document.getElementById('stq'),lv=document.getElementById('stlv'),br=document.getElementById('stbr'),so=document.getElementById('stsort'),on=document.getElementById('stonly');
+  br.value=s.bracer?'1':'';so.value=s.sort;on.value=s.only;
+  q.oninput=()=>{s.q=q.value;draw()};
+  lv.oninput=()=>{const v=parseInt(lv.value,10);if(v>=1&&v<=99){s.lv=v;draw()}};
+  br.onchange=()=>{s.bracer=!!br.value;draw()};so.onchange=()=>{s.sort=so.value;draw()};on.onchange=()=>{s.only=on.value;draw()};
+  view.querySelector('.intro').addEventListener('click',e=>{const j=e.target.closest('[data-jump]');if(j){e.preventDefault();jump(j.dataset.jump,j.dataset.target)}});
+  const L=document.getElementById('stlist');
+  bindRows(L,id=>monDetail(monByName[id]));
+  const cell=(n,p)=>n?`${esc(n)}${eqN.has(n)?' <span class="badge alt">Gear</span>':''}<span class="odds">${p<1&&p>0?'<1':Math.round(p)}%</span>`:'<span class="faint">—</span>';
+  function draw(){
+    const t=s.q.trim().toLowerCase();
+    let a=pool.filter(m=>{
+      if(t&&![m.name,m.steal.common,m.steal.rare].join(' ').toLowerCase().includes(t))return false;
+      if(s.only==='gear'&&!(eqN.has(m.steal.common)||eqN.has(m.steal.rare)))return false;
+      if(s.only==='rareonly'&&(m.steal.common||!m.steal.rare))return false;
+      return true});
+    const R=m=>stealRate(s.lv,m.level,s.bracer);
+    a.sort((x,y)=>s.sort==='level'?(x.level-y.level||x.name.localeCompare(y.name)):s.sort==='hit'?(R(y)-R(x)||x.level-y.level):x.name.localeCompare(y.name));
+    document.getElementById('stcount').textContent=`${a.length} of ${pool.length} enemies`;
+    L.innerHTML=a.length?a.map(m=>{const r=R(m);return rowHTML('stl',m.name,`
+      <span class="name"><span class="cursor"></span><span>${esc(m.name)}</span>${m.gba?'<span class="badge">GBA</span>':''}</span>
+      <span class="num r mlab" data-k="Lv">${m.level}</span>
+      <span class="mlab" data-k="Common">${cell(m.steal.common,r*7/8)}</span>
+      <span class="mlab" data-k="Rare">${cell(m.steal.rare,r/8)}</span>
+      <span class="num r mlab ${r<50?'hit-lo':r<100?'hit-mid':''}" data-k="Success">${r}%</span>`,()=>monDetail(m),m.name===pendingOpen)}).join(''):'<div class="empty">No enemies match. Clear the search or filters.</div>';
+    afterDraw(L);
+  }
+  draw();
+}
+
+/* ---------- THROW ---------- */
+const NOTHROW=new Set(['Valiant Knife','Ultima Weapon','Flame Rod','Ice Rod','Thunder Rod','Dice','Fixed Dice']);
+const THROWSPECIAL=new Set(['Boomerang','Rising Sun','Moonring Blade','Hawkeye','Sniper','Wing Edge']);
+const THROWTYPE={Shuriken:'Shuriken',Skean:'Scroll',Dirk:'Dagger',Sword:'Sword',Knife:'Katana',Lance:'Spear',Rod:'Rod',Special:'Throwing weapon',Gambler:'Cards & darts'};
+const SCROLL={'Flame Scroll':['Fire','Magic damage to all enemies, Spell Power 100'],'Water Scroll':['Water','Magic damage to all enemies, Spell Power 100'],'Lightning Scroll':['Lightning','Magic damage to all enemies, Spell Power 100'],'Invisibility Scroll':['','Makes Shadow Vanish (physical attacks miss him)'],'Shadow Scroll':['','Gives Shadow Image (dodges the next physical hits)']};
+function throwables(){return D.equipment.filter(x=>x.cat==='Weapon'&&!NOTHROW.has(x.name)&&(x.sub==='Special'?THROWSPECIAL.has(x.name):x.sub in THROWTYPE))}
+function throwElem(x){if(SCROLL[x.name])return SCROLL[x.name][0]?[SCROLL[x.name][0]]:[];return x.elem?x.elem.split(/,\s*/):[]}
+function throw_(){
+  const s=state.throw, all=throwables();
+  const types=[...new Set(Object.values(THROWTYPE))].filter(t=>all.some(x=>THROWTYPE[x.sub]===t));
+  view.innerHTML=`
+  <p class="intro">Shadow's <b>Throw</b> hurls a weapon or scroll from your inventory at one enemy. The item is <b>used up</b>. A thrown weapon hits much harder than swinging it: it does about double damage, ignores Defense, can't be blocked and does full damage from the back row, so it's great against high-evasion enemies like Cactuars. It's based on Shadow's Strength. Elemental weapons hit with their element. Scrolls work differently: the three attack scrolls hit every enemy using Shadow's Magic. Gogo can use Throw too.</p>
+  <p class="intro" style="margin-top:-6px"><b>Tips:</b> buy a stack of cheap Shuriken for everyday damage and save the Pinwheel for bosses. Throwing unused old weapons is a good way to clear out your inventory, but don't throw one-of-a-kind weapons like Excalibur or Ragnarok. The Healing Rod damages when thrown rather than healing.</p>
+  <div class="filters win">
+    <div class="grp grow"><label class="lbl" for="thq">Search</label><input type="search" id="thq" placeholder="Weapon or element" value="${esc(s.q)}"></div>
+    <div class="grp" style="flex-basis:100%"><label class="lbl">Type</label><div class="chips" id="thtype">${types.map(t=>`<button class="chip" data-t="${esc(t)}" aria-pressed="${s.type===t}">${esc(t)}</button>`).join('')}</div></div>
+  </div>
+  ${legend('lg-throw',[
+    ['<span class="num">Attack</span>','The weapon\'s Attack. Thrown, it does roughly double the damage of a normal hit and ignores Defense.'],
+    [el('Fire'),'Element of the throw.'],
+    ['<b>Scroll</b>','Thrown for a magic effect instead of physical damage.'],
+    ['<b>Not throwable</b>','Claws, brushes, dice, clubs and flails, Edgar\'s Tools, the Flame/Ice/Thunder Rods, the Valiant Knife and the Ultima Weapon.']
+  ])}
+  <p class="count" id="thcount"></p>
+  <div class="thr colhead"><span>Weapon</span><span>Type</span><span class="r">Attack</span><span>Element / effect</span></div>
+  <div class="list" id="thlist"></div>`;
+  const q=document.getElementById('thq');q.oninput=()=>{s.q=q.value;draw()};
+  document.getElementById('thtype').onclick=e=>{const c=e.target.closest('.chip');if(!c)return;s.type=s.type===c.dataset.t?'':c.dataset.t;document.querySelectorAll('#thtype .chip').forEach(x=>x.setAttribute('aria-pressed',x.dataset.t===s.type));draw()};
+  const L=document.getElementById('thlist');
+  const byN=Object.fromEntries(all.map(x=>[x.name,x]));
+  bindRows(L,id=>eqDetail(byN[id]));
+  function draw(){
+    const t=s.q.trim().toLowerCase();
+    const a=all.filter(x=>(!s.type||THROWTYPE[x.sub]===s.type)&&(!t||[x.name,THROWTYPE[x.sub],...throwElem(x)].join(' ').toLowerCase().includes(t)))
+      .sort((x,y)=>(x.sub==='Skean')-(y.sub==='Skean')||y.atk-x.atk||x.name.localeCompare(y.name));
+    document.getElementById('thcount').textContent=`${a.length} of ${all.length} throwable items`;
+    L.innerHTML=a.length?a.map(x=>{const sc=SCROLL[x.name];return rowHTML('thr',x.name,`
+      <span class="name"><span class="cursor"></span><span>${esc(x.name)}</span></span>
+      <span class="mlab" data-k="Type">${esc(THROWTYPE[x.sub])}</span>
+      <span class="num r mlab" data-k="Attack">${sc?'<span class="faint">—</span>':x.atk}</span>
+      <span class="mlab tags" data-k="Element / effect">${throwElem(x).map(e=>el(e)).join('')}${sc?`<span class="dim" style="font-size:13px">${esc(sc[1])}</span>`:throwElem(x).length?'':'<span class="faint">—</span>'}</span>`,()=>eqDetail(x),x.name===pendingOpen)}).join(''):'<div class="empty">Nothing matches. Clear the search or type filter.</div>';
+    afterDraw(L);
+  }
+  draw();
+}
+
+/* ---------- BUSHIDO ---------- */
+function bushido(){
+  const kat=D.equipment.filter(x=>x.cat==='Weapon'&&x.bushido&&/Cyan/.test(x.who)).sort((a,b)=>a.atk-b.atk);
+  const gauge=n=>`<div class="gauge" aria-label="Gauge level ${n} of 8">${[1,2,3,4,5,6,7,8].map(i=>`<i class="${i<=n?'on':''}">${i}</i>`).join('')}</div>`;
+  view.innerHTML=`
+  <p class="intro">Cyan's <b>Bushido</b> (called <b>SwdTech</b> on the SNES). Choose it and a gauge starts counting from 1 to 8; press <b>A</b> when it reaches the technique you want. Higher techniques need a longer wait, and the battle waits too, so the other party members can't act while it charges. Haste and Speed don't make the gauge fill faster. Each technique has fixed power, so Cyan's weapon strength doesn't matter, but he needs a weapon that allows Bushido. Cyan learns techniques by level, and learns any he's missing when you finish his nightmare (the Dreamscape) in the World of Ruin. Gogo can use the ones Cyan knows.</p>
+  ${legend('lg-bushido',[
+    [gauge(3),'<b>Gauge.</b> Release at this number to use the technique.'],
+    ['<span class="lvl" style="font-family:var(--mono);font-size:12px;color:var(--gold);border:1px solid var(--gold);border-radius:3px;padding:1px 7px">Lv 24</span>','Cyan\'s level when he learns it.'],
+    ['<span class="kind">Physical</span> <span class="kind">Magic</span>','Physical techniques use Battle Power, Magic ones use Spell Power. All of them are unblockable.'],
+    ['<span class="kind death">Instant death</span>','Kills outright; fails on enemies immune to Death.']
+  ])}
+  <div class="dance-grid">${D.bushido.map(b=>`<article class="esp blitz">
+    <h2>${esc(b.name)} <span class="lvl">Lv ${b.level}</span></h2>
+    ${gauge(b.n)}
+    <div class="blitz-meta"><span class="kind${b.kind==='Instant death'?' death':''}">${esc(b.kind)}</span><span class="kind">${esc(b.target)}</span>${b.power?`<span class="dim num" style="font-size:12.5px">${esc(b.power)}</span>`:''}</div>
+    <p class="eff">${esc(b.effect)}</p>
+    <p class="flav">“${esc(b.flavor)}” <span class="faint" style="font-style:normal">· SNES name: ${esc(b.snes)}</span></p>
+  </article>`).join('')}</div>
+  <h2 class="tips-h">Weapons that allow Bushido</h2>
+  <p class="tips-sub">Every weapon Cyan can equip allows Bushido except the Impartisan spear.</p>
+  <div class="esp"><div class="learn-in" style="margin:0">${kat.map(x=>`<button class="linkbtn" data-jump="equipment" data-target="${esc(x.name)}">${esc(x.name)}</button>`).join('')}</div></div>`;
+  view.querySelector('.learn-in').addEventListener('click',e=>{const j=e.target.closest('[data-jump]');if(j){e.preventDefault();jump(j.dataset.jump,j.dataset.target)}});
+}
+
+/* ---------- MAGITEK ---------- */
+function magitek(){
+  const T=D.magitek;
+  view.innerHTML=`
+  <p class="intro">When the party rides <b>Magitek Armor</b>, the Fight command becomes <b>Magitek</b> (Gau's Rage too). Magitek costs no MP. Only Magic and Items stay usable besides it; every other command is locked. <b>Terra</b> has all eight abilities; everyone else gets only the three beams and Healing Force. If Gogo is in the party, Mimic can copy any ability Terra uses.</p>
+  ${legend('lg-magitek',[
+    ['<span class="badge alt">Terra only</span>','Only Terra can use it.'],
+    ['<span class="kind">Magic</span>','Spell-like damage with fixed Spell Power; it uses the rider\'s Magic stat.'],
+    [el('Fire'),'Element of the attack.']
+  ])}
+  <h2 class="tips-h">When you can use it</h2>
+  <p class="tips-sub">Magitek Armor only appears in three parts of the story.</p>
+  <div class="dance-grid">${T.when.map(w=>`<article class="esp"><h2>${esc(w.when)}</h2><p class="where" style="margin:4px 0 6px">${esc(w.where)} · ${esc(w.who)}</p><p class="eff">${esc(w.note)}</p></article>`).join('')}</div>
+  <h2 class="tips-h">Abilities</h2>
+  <div class="dance-grid">${T.moves.map(m=>`<article class="esp blitz">
+    <h2>${esc(m.name)}${m.all?'':' <span class="badge alt">Terra only</span>'}</h2>
+    ${m.snes!==m.name?`<p class="where" style="margin:4px 0 0">SNES name: ${esc(m.snes)}</p>`:''}
+    <div class="blitz-meta"><span class="kind${m.kind==='Healing'?' heal':m.kind==='Removal'?' death':''}">${esc(m.kind)}</span><span class="kind">${esc(m.target)}</span>${m.elem.map(x=>el(x)).join('')}${m.power?`<span class="dim num" style="font-size:12.5px">${esc(m.power)}</span>`:''}</div>
+    <p class="eff">${esc(m.effect)}</p>
+  </article>`).join('')}</div>`;
+}
+
+/* ---------- WALKTHROUGH ---------- */
+const WT_PART={'1':'World of Balance','2':'World of Ruin','3':"Dragons' Den (GBA post-game)"};
+const WT_BOX={miss:'Missable',get:'Get it',side:'Side quest',tip:'Tip',route:'Which way'};
+function walkthrough(){
+  const s=state.walk||(state.walk={q:'',part:'',only:'',open:new Set()});
+  let saved={};try{saved=JSON.parse(store.get('ff6-wt')||'{}')||{}}catch(e){}
+  const save=()=>store.set('ff6-wt',JSON.stringify({last:s.last||saved.last||''}));
+  if(!s.open.size&&saved.last){s.open.add(saved.last);pendingOpen=saved.last}
+  else if(s.last)pendingOpen=s.last;
+  const eqN=new Set(D.equipment.map(x=>x.name)), espN=new Set(D.espers.map(e=>e.name));
+  const lk=(v,t,label)=>`<button class="linkbtn" data-jump="${v}" data-target="${esc(t)}">${esc(label??t)}</button>`;
+  const tx=t=>esc(t).replace(/&lt;(\/?)(b|br)&gt;/g,'<$1$2>').replace(/\{c:([^}]+)\}/g,'<button class="linkbtn" data-jump="colosseum">$1</button>').replace(/\{([mest]):([^}]+)\}/g,(_,k,v)=>k==='m'?lk('bestiary',v):k==='e'?lk('equipment',v):k==='s'?lk('espers',v):`<button class="linkbtn" data-jump="tips">${v}</button>`);
+  const item=n=>{const b=n.replace(/ x\d+$/,'');const mb=b.match(/^Monster-in-a-box \((.+)\)$/);
+    if(mb)return 'Monster-in-a-box ('+(monByName[mb[1]]?lk('bestiary',mb[1]):esc(mb[1]))+')';
+    return (eqN.has(b)?lk('equipment',b):esc(b))+esc(n.slice(b.length))};
+  const rageN={};D.rages.forEach(r=>rageN[r.n]=r);
+  const best=n=>(D.rageBest||{})[n];
+  const plain=c=>(c.t+' '+c.s.join(' ')+' '+c.b.map(b=>b[1]).join(' ')+' '+c.en.join(' ')+' '+c.tr+' '+c.chests.map(x=>x.i+' '+x.a).join(' ')+' '+c.boss.map(([i])=>D.monsters[i].name).join(' ')).replace(/\{[mest]:([^}]+)\}/g,'$1').toLowerCase();
+  const hasMiss=c=>c.b.some(b=>b[0]==='miss');
+  view.innerHTML=`
+  <p class="intro">The story chapter by chapter, following the order of Djibriel's walkthrough on Caves of Narshe. Open a chapter for the steps, then the <b>highlighted boxes</b>: missable items, things to buy, steal or find, side quests, and the <b>new Rages</b> Gau can pick up from that chapter's enemies (fight them once, then Leap on the Veldt). Boss cards show HP, weaknesses, steals and drops from the Bestiary, plus a strategy.</p>
+  ${legend('lg-wt',[
+    ['<span class="badge miss">Missable</span>','Gone for good, a one-time choice, or a chest worth leaving closed. Read before acting.'],
+    ['<span class="badge">Get it</span>','Items worth buying, stealing or picking up here.'],
+    ['<span class="badge" style="border-color:#7cf0a2;color:#7cf0a2">Side quest</span>','Optional places, backtracking and recruitments.'],
+    ['<span class="badge" style="border-color:#ff8ad8;color:#ff8ad8">Which way</span>','Route choices: which path leads to which enemies and treasure.'],
+    ['<span class="badge gau">Rages</span>','Enemies first met in this chapter whose Rage Gau can learn. <span class="badge best">Top pick</span> and <span class="badge good">Worth learning</span> match the Rage tab.'],
+    ['<span class="badge" style="border-color:#5ee0c8;color:#5ee0c8">Treasure</span>','Chests and hidden items in the chapter, with where to find them. <i>changes</i> marks a chest whose contents depend on when you open it.'],
+    ['<span class="badge" style="border-color:#c78bff;color:#c78bff">Lore</span>','Lores Strago can learn from enemies first met here.'],
+    ['<span class="badge boss">Boss</span>','Boss fights in this chapter.']
+  ])}
+  <div class="filters win">
+    <div class="grp grow"><label class="lbl" for="wq">Search</label><input type="search" id="wq" placeholder="Place, boss, item, enemy" value="${esc(s.q)}"></div>
+    <div class="grp"><span class="lbl">Part</span><div class="chips" id="wpart">${[['','All'],['1','Balance'],['2','Ruin'],['3',"Dragons' Den"]].map(([v,l])=>`<button class="chip" data-v="${v}" aria-pressed="${s.part===v}">${l}</button>`).join('')}</div></div>
+    <div class="grp"><span class="lbl">Show</span><div class="chips" id="wonly">${[['','Everything'],['boss','Bosses'],['miss','Missables'],['gau','New Rages']].map(([v,l])=>`<button class="chip" data-v="${v}" aria-pressed="${s.only===v}">${l}</button>`).join('')}</div></div>
+  </div>
+  <p class="count" id="wcount"></p>
+  <div class="list win" id="wlist"></div>`;
+  const L=view.querySelector('#wlist'),q=view.querySelector('#wq');
+  const detail=id=>{
+    const c=D.walk.find(x=>x.id===id);if(!c)return '';
+    const rg=c.rages.map(n=>rageN[n]).filter(Boolean).sort((a,b)=>((best(b.n)||{}).tier==='top')-((best(a.n)||{}).tier==='top')||(!!best(b.n))-(!!best(a.n)));
+    return `<div class="wt-body">
+      ${c.s.length?`<ol class="wt-steps">${c.s.map(t=>`<li>${tx(t)}</li>`).join('')}</ol>`:''}
+      ${c.b.map(([k,t])=>`<div class="wt-box ${k}"><span class="k">${WT_BOX[k]||k}</span>${tx(t)}</div>`).join('')}
+      ${c.boss.length?`<div class="wt-bosses">${c.boss.map(([i,st])=>{const m=D.monsters[i];const sl=[m.steal.common,m.steal.rare].filter(Boolean),dr=[m.drop.common,m.drop.rare].filter(Boolean);
+        return `<article class="wt-boss"><h4>${lk('bestiary',m.name)}<small>Lv ${m.level} · ${fmt(m.hp)} HP</small></h4>
+        <dl><dt>Weak</dt><dd>${els(m.elemWeak,'weak')}</dd>${m.elemAbsorb.length?`<dt>Absorbs</dt><dd>${els(m.elemAbsorb,'abs')}</dd>`:''}
+        <dt>Steal</dt><dd>${sl.length?sl.map(item).join(' / ')+(m.steal.rare&&m.steal.common?' <span class="faint">(common / rare)</span>':m.steal.rare?' <span class="faint">(rare)</span>':''):'<span class="faint">—</span>'}</dd>
+        <dt>Drop</dt><dd>${dr.length?dr.map(item).join(' / '):'<span class="faint">—</span>'}</dd></dl>
+        <p>${tx(st)}</p></article>`}).join('')}</div>`:''}
+      ${c.veldt?(()=>{const V=c.veldt,srt=a=>a.map(n=>rageN[n]).filter(Boolean).sort((x,y)=>(best(y.n).tier==='top')-(best(x.n).tier==='top')),li=r=>{const b=best(r.n);return `<li>${lk('bestiary',r.monster||r.name,r.name)} <span class="ab">${esc(r.ability)}</span> <span class="badge ${b.tier==='top'?'best':'good'}">${b.tier==='top'?'Top pick':'Worth learning'}</span></li>`};
+        return `<div class="wt-box gau veldt"><span class="k">Don't leave the Veldt until Gau knows these</span>Use Leap and keep fighting on the Veldt until each of these Rages shows up in Gau's list. Only monsters you've already fought somewhere else appear on the Veldt, so skip any from a scenario you haven't played yet.
+        ${V.new.length?`<ul class="wt-list">${srt(V.new).map(li).join('')}</ul>`:''}
+        ${V.old.length?`<details><summary>Still missing earlier ones? (${V.old.length})</summary><ul class="wt-list">${srt(V.old).map(li).join('')}</ul></details>`:''}
+        ${V.later&&V.later.length?`<details><summary>Later in the game (${V.later.length})</summary><p class="wt-meta" style="margin:4px 0">These enemies appear after this point, mostly in Kefka's Tower. Fight them, then come back to the Veldt.</p><ul class="wt-list">${srt(V.later).map(li).join('')}</ul></details>`:''}</div>`})():''}
+      ${rg.length?`<div class="wt-box gau"><span class="k">New Rages for Gau (${rg.length})</span><ul class="wt-list">${rg.map(r=>{const b=best(r.n);return `<li>${lk('bestiary',r.monster||r.name,r.name)} <span class="ab">${esc(r.ability)}</span>${b?` <span class="badge ${b.tier==='top'?'best':'good'}">${b.tier==='top'?'Top pick':'Worth learning'}</span>`:''}</li>`}).join('')}</ul></div>`:''}
+      ${c.loresOld&&c.loresOld.length?`<div class="wt-box lore"><span class="k">Lores Strago can learn from earlier enemies (${c.loresOld.length})</span>Strago is back in the party. He learns a Lore by seeing an enemy use it, so these come from enemies you met while he was away. Fight them again with him in the party.<ul class="wt-list">${c.loresOld.map(([l,f])=>`<li>${lk('lores',l)}${f.length?` <span class="ab">from ${f.map(n=>monByName[n]?lk('bestiary',n):esc(n)).join(', ')}</span>`:''}</li>`).join('')}</ul></div>`:''}
+      ${c.lores.length?`<div class="wt-box lore"><span class="k">Lores for Strago</span><ul class="wt-list">${c.lores.map(l=>`<li>${lk('lores',l)}</li>`).join('')}</ul></div>`:''}
+      ${c.chests.length?(()=>{const g=[];c.chests.forEach(x=>{let G=g.find(y=>y.a===x.a);if(!G)g.push(G={a:x.a,L:[]});G.L.push(x)});
+        return `<div class="wt-box chest"><span class="k">Treasure (${c.chests.length})</span>${g.map(G=>`${g.length>1?`<div class="chest-area">${esc(G.a)}</div>`:''}<ul class="chest-list">${G.L.map(x=>`<li><span class="it">${item(x.i)}${x.ch?` <button class="linkbtn badge alt" data-jump="tips">changes</button>`:''}</span><span class="ab">${esc(x.w)}${x.n?' · '+esc(x.n):''}${x.mb?' · '+esc(x.mb):''}${x.c?' · <i>'+esc(x.c)+'</i>':''}</span></li>`).join('')}</ul>`).join('')}${c.trx.length?`<div class="wt-meta" style="margin-top:6px"><b>Also here</b>${c.trx.map(item).join(', ')}</div>`:''}</div>`})():c.tr?`<div class="wt-box chest"><span class="k">Treasure</span>${c.tr.split(/,\s*/).map(item).join(', ')}</div>`:''}
+      ${c.en.length?`<div class="wt-meta"><b>Enemies</b>${c.en.map(n=>lk('bestiary',n)).join(', ')}</div>`:''}
+    </div>`};
+  const head=c=>{const nb=c.boss.length,nr=c.rages.length;
+    return `<span class="num">${c.id.replace('-','.')}</span><span class="name">${esc(c.t)}</span>
+    <span class="tags">${hasMiss(c)?'<span class="badge miss">Missable</span>':''}${nb?`<span class="badge boss">${nb>1?nb+' bosses':'Boss'}</span>`:''}${nr?`<span class="badge gau">${nr} Rage${nr>1?'s':''}</span>`:''}</span>`};
+  function draw(){
+    const t=s.q.trim().toLowerCase();
+    const a=D.walk.filter(c=>(!s.part||c.id[0]===s.part)&&(!t||plain(c).includes(t))
+      &&(s.only!=='boss'||c.boss.length)&&(s.only!=='miss'||hasMiss(c))&&(s.only!=='gau'||c.rages.length));
+    let part='';
+    L.innerHTML=a.length?a.map(c=>{const p=c.id[0];const h=p!==part?`<h2 class="tips-h" style="margin:14px 12px 6px">${WT_PART[p]}</h2>`:'';part=p;
+      return h+`<div class="row wt${s.open.has(c.id)?' open':''}" data-id="${c.id}"><button class="head" aria-expanded="${s.open.has(c.id)}">${head(c)}</button>${s.open.has(c.id)?`<div class="detail">${detail(c.id)}</div>`:''}</div>`}).join(''):'<div class="empty">No chapters match. Clear the search or filters.</div>';
+    view.querySelector('#wcount').innerHTML=`${a.length} of ${D.walk.length} chapters`;
+    afterDraw(L);
+  }
+  bindRows(L,detail);
+  L.addEventListener('click',e=>{
+    const b=e.target.closest('button.head');
+    if(b){const r=b.parentElement,id=r.dataset.id;if(r.classList.contains('open')){s.open.add(id);s.last=id}else s.open.delete(id);save()}
+  });
+  q.oninput=()=>{s.q=q.value;draw()};
+  view.querySelector('#wpart').onclick=e=>{const b=e.target.closest('.chip');if(!b)return;s.part=b.dataset.v;view.querySelectorAll('#wpart .chip').forEach(x=>x.setAttribute('aria-pressed',x===b));draw()};
+  view.querySelector('#wonly').onclick=e=>{const b=e.target.closest('.chip');if(!b)return;
+    s.only=b.dataset.v;view.querySelectorAll('#wonly .chip').forEach(x=>x.setAttribute('aria-pressed',x===b));draw()};
+  draw();
+}
+
+/* ---------- COLOSSEUM ---------- */
+function colosseum(){
+  const C=D.colo, s=state.colo||(state.colo={q:'',sort:'w'});
+  const eqN=new Set(D.equipment.map(x=>x.name));
+  const item=n=>eqN.has(n)?`<button class="linkbtn" data-jump="equipment" data-target="${esc(n)}">${esc(n)}</button>`:esc(n);
+  const mon=n=>monByName[n]?`<button class="linkbtn" data-jump="bestiary" data-target="${esc(n)}">${esc(n)}</button>`:n==='Shadow *'?'Shadow (recruits him)':esc(n);
+  const bestKey=new Set(C.best.map(b=>b.w+'|'+b.p));
+  const STAGE=[['Early','First visits','As soon as you can reach the Colosseum in the World of Ruin.'],['Mid','After some airship travel','Once you have the Falcon and have explored a while.'],['Late','Late game','Around the time you head for Kefka’s Tower.'],['Post','After beating Kefka','GBA only: load your clear save.']];
+  const TAG={top:['best','Top pick'],easy:['good','Easy win'],chain:['alt','Chain step']};
+  const card=b=>{const m=monByName[b.o];const t=TAG[b.tag];return `<article class="esp colo-card${b.tag==='top'?' top':''}">
+    <h2 class="colo-trade"><span>${item(b.w)}</span><span class="arrow">→</span><span class="prize">${item(b.p)}</span>${t?` <span class="badge ${t[0]}">${t[1]}</span>`:''}</h2>
+    <p class="where">vs ${mon(b.o)}${m?` <span class="faint">· Lv ${m.level} · ${fmt(m.hp)} HP</span>`:''}</p>
+    ${b.why?`<p class="eff">${esc(b.why)}</p>`:''}
+    ${b.how?`<p class="eff dim"><b>How to win:</b> ${esc(b.how)}</p>`:''}</article>`};
+  view.innerHTML=`
+  <p class="intro">The Colosseum at Dragon's Neck, north of Kohlingen, opens in the World of Ruin. You <b>bet an item</b>, and each item always brings the <b>same opponent</b> and the same prize. You lose the bet whether you win or lose, but if Typhon sneezes you out or you cast Teleport, the fight is a draw and you keep it. Your fighter acts on their own, like they're Confused, and never uses Item, Throw, Slot, Leap or Control, so set them up with equipment that wins by itself. Most ordinary items bring Typhon, who just sneezes you out.</p>
+  <div class="wt-box get" style="max-width:86ch;margin-bottom:14px"><span class="k">Farm Ragnaroks after the credits</span>After beating Kefka, save when the game asks. On that clear save the final battle can be fought again, and every time you can steal another {RAG} from Lady and an {ULT} from Rest, and keep them. Bet each Ragnarok here for a {LB}. Don't bet the Ultima Weapon: it only brings back a Gladius.</div>
+  ${STAGE.map(([k,h,sub])=>{const a=C.best.filter(b=>b.st===k);return a.length?`<h2 class="tips-h">${h}</h2><p class="tips-sub">${sub}</p><div class="dance-grid colo-grid">${a.map(card).join('')}</div>`:''}).join('')}
+  <h2 class="tips-h">Every wager</h2><p class="tips-sub">${C.all.length} bets that bring a real opponent. ★ marks the picks above. Anything not listed brings Typhon.</p>
+  <div class="filters win"><div class="grp grow"><label class="lbl" for="cq">Search</label><input type="search" id="cq" placeholder="Item or opponent" value="${esc(s.q)}"></div>
+  <div class="grp"><label class="lbl" for="cs">Sort by</label><select id="cs">${[['w','Item you bet'],['p','Prize'],['o','Opponent']].map(([v,l])=>`<option value="${v}"${s.sort===v?' selected':''}>${l}</option>`).join('')}</select></div></div>
+  <div class="list win colo-table" id="clist"></div>`;
+  view.querySelector('.wt-box.get').innerHTML=view.querySelector('.wt-box.get').innerHTML.replace('{RAG}',item('Ragnarok')).replace('{ULT}',item('Ultima Weapon')).replace('{LB}',item('Lightbringer'));
+  const L=view.querySelector('#clist'),q=view.querySelector('#cq'),so=view.querySelector('#cs');
+  function draw(){
+    const t=s.q.trim().toLowerCase(), ix={w:0,o:1,p:2}[s.sort];
+    const a=C.all.filter(r=>!t||r.join(' ').toLowerCase().includes(t)).sort((x,y)=>x[ix].localeCompare(y[ix]));
+    L.innerHTML=`<div class="colo-row colo-head"><span>You bet</span><span>Opponent</span><span>Prize</span></div>`+(a.length?a.map(r=>`<div class="colo-row${bestKey.has(r[0]+'|'+r[2])?' pick':''}"><span>${bestKey.has(r[0]+'|'+r[2])?'<span class="star">★</span>':''}${item(r[0])}</span><span class="dim">${mon(r[1])}</span><span><span class="arrow">→</span> ${item(r[2])}</span></div>`).join(''):'<div class="empty">No wagers match.</div>');
+  }
+  q.oninput=()=>{s.q=q.value;draw()};so.onchange=()=>{s.sort=so.value;draw()};
+  view.onclick=e=>{const j=e.target.closest('[data-jump]');if(j){e.preventDefault();jump(j.dataset.jump,j.dataset.target)}};
+  draw();
+}
+
+const VIEWS={characters,steal,rages,bestiary,equipment,espers,throw:throw_,lores,bushido,dances,blitzes,tools,magitek,sketch,slots,tips,walkthrough,colosseum};
+const ABILITY_VIEWS=['magitek','steal','tools','blitzes','bushido','throw','rages','dances','lores','sketch','slots'];
+function render(){
+  const h=(location.hash||'').slice(1);const sv=store.get('ff6-ability');const v=VIEWS[h]?h:(VIEWS[sv]?sv:'rages');
+  const isAb=ABILITY_VIEWS.includes(v);
+  if(isAb){store.set('ff6-ability',v);document.getElementById('tab-abilities').href='#'+v}
+  const top=isAb?'abilities':v;
+  document.querySelectorAll('nav.tabs a').forEach(a=>{if(a.dataset.view===top)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
+  const sn=document.getElementById('subtabs');sn.hidden=!isAb;
+  sn.querySelectorAll('a').forEach(a=>{if(a.dataset.view===v)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
+  view.onclick=null;
+  VIEWS[v]();
+}
+const savedWho=store.get('ff6-who');if(savedWho)state.equipment.who=savedWho;
+document.getElementById('c-throw').textContent=throwables().length;
+document.getElementById('c-chars').textContent=D.characters.length;
+document.getElementById('c-steal').textContent=D.monsters.filter(m=>m.steal.common||m.steal.rare).length;
+window.addEventListener('hashchange',()=>{render();if(pendingOpen==null)window.scrollTo(0,0)});
+render();
+})();
+</script>
