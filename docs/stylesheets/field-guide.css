@@ -545,3 +545,69 @@ html.fg .md-typeset .admonition:is(.danger, .failure, .bug),
 html.fg .md-typeset details:is(.danger, .failure, .bug) { --k: #ff8a8a; }
 html.fg .md-typeset .admonition.quote,
 html.fg .md-typeset details.quote { --k: var(--fg-ink-dim); }
+
+/* ---------- Item pop-ups (Unicorn Overlord, Final Fantasy Resonance) ---------- */
+
+/* Item names you can click: bright text, dotted gold underline. */
+html.fg .md-typeset .uo-itemref,
+html.fg .md-typeset .ffr-itemref {
+  color: var(--fg-ink);
+  border-bottom: 1px dotted var(--fg-gold);
+  text-decoration: none;
+}
+
+html.fg .md-typeset .uo-itemref:hover,
+html.fg .md-typeset .ffr-itemref:hover {
+  color: var(--fg-gold);
+}
+
+/* The pop-up: the field guide's item window. */
+html.fg .uo-itempop,
+html.fg .ffr-itempop {
+  font-family: var(--fg-body);
+  font-size: .7rem;
+  color: var(--fg-ink);
+  background: var(--fg-row);
+  border: 2px solid var(--fg-win-line);
+  border-radius: 8px;
+  box-shadow: 0 0 0 2px var(--fg-win-edge), 0 12px 32px rgba(0, 0, 0, .55);
+  padding: .6rem .7rem .7rem;
+}
+
+html.fg .uo-itempop-name,
+html.fg .ffr-itempop-name {
+  font-family: var(--fg-display);
+  font-weight: 500;
+  font-size: .9rem;
+  color: var(--fg-gold);
+}
+
+html.fg .uo-itempop-type,
+html.fg .uo-itempop-stats,
+html.fg .ffr-itempop-type,
+html.fg .ffr-itempop-stats {
+  color: var(--fg-ink-dim);
+}
+
+html.fg .uo-itempop-stats,
+html.fg .ffr-itempop-stats {
+  font-family: var(--fg-mono);
+}
+
+html.fg .uo-itempop-where,
+html.fg .ffr-itempop-where {
+  padding-top: .4em;
+  border-top: 1px dashed rgba(232, 236, 255, .25);
+}
+
+html.fg .uo-itempop-close,
+html.fg .ffr-itempop-close {
+  color: var(--fg-ink-dim);
+  border-radius: 4px;
+}
+
+html.fg .uo-itempop-close:hover,
+html.fg .ffr-itempop-close:hover {
+  color: var(--fg-ink);
+  background: var(--fg-row-hover);
+}
