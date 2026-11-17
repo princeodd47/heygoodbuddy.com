@@ -1,5 +1,4 @@
 ---
-skin: field-guide
 platform: Switch
 spoilers: none
 status: draft

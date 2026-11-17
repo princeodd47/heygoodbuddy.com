@@ -1,5 +1,4 @@
 ---
-skin: field-guide
 hide:
   - navigation
   - toc

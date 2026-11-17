@@ -1,5 +1,4 @@
 ---
-skin: field-guide
 platform: Genesis
 spoilers: full
 status: draft

@@ -1,5 +1,4 @@
 ---
-skin: field-guide
 hide:
   - toc
 game_version: Demo

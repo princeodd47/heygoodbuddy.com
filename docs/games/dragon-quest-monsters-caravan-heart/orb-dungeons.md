@@ -1,5 +1,4 @@
 ---
-skin: field-guide
 platform: GBC
 spoilers: none
 status: draft

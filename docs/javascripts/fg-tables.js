@@ -1,7 +1,6 @@
 // Field guide look: on phones, a table with 4+ columns that is too wide for
 // the screen (by its text) becomes one card per row. This copies each column header onto
-// its cells as data-label so the CSS can label the fields. Runs only on pages
-// with `skin: field-guide`.
+// its cells as data-label so the CSS can label the fields.
 (function () {
   // Estimate the table's width in characters: each column's longest entry
   // (or its header), plus room for padding. About 50 fit across a phone, so a
