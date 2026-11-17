@@ -1,1 +1,5 @@
+---
+skin: field-guide
+---
+
 # Articles

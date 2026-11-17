@@ -1,4 +1,5 @@
 ---
+skin: field-guide
 date: 2026-10-19
 categories:
   - Site News
