@@ -1,4 +1,5 @@
 ---
+skin: field-guide
 hide:
   - toc
 tags:

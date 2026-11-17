@@ -1,4 +1,5 @@
 ---
+skin: field-guide
 platform: SFC
 spoilers: none
 status: draft

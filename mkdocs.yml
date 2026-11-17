@@ -87,7 +87,7 @@ extra_javascript:
   - javascripts/fab-quiz.js?v=2026-10-28.2
   - javascripts/ffr-items.js?v=2026-10-29
   - javascripts/uo-items.js?v=2026-11-11
-  - javascripts/fg-tables.js?v=2026-11-16.4
+  - javascripts/fg-tables.js?v=2026-11-16.5
 
 markdown_extensions:
   - admonition
