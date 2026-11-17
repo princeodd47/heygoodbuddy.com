@@ -926,3 +926,74 @@ html.fg .md-typeset .uo-equip tr:has(.uo-anchor:target) {
     flex: 1 1 40%;
   }
 }
+
+/* ---------- Wide tables on phones ---------- */
+
+/* fg-tables.js marks tables with 4+ columns with data-fg-stack and copies each
+   header onto its cells as data-label. On phones each row becomes a card:
+   the first cell is the name, the rest are labeled fields. */
+@media screen and (max-width: 44.9375em) {
+  html.fg .md-typeset table[data-fg-stack],
+  html.fg .md-typeset table[data-fg-stack] tbody,
+  html.fg .md-typeset table[data-fg-stack] tr {
+    display: block;
+    width: 100%;
+  }
+
+  html.fg .md-typeset .md-typeset__scrollwrap:has(> .md-typeset__table > table[data-fg-stack]) {
+    width: auto;
+    overflow: visible;
+  }
+
+  html.fg .md-typeset table[data-fg-stack] thead {
+    display: none;
+  }
+
+  html.fg .md-typeset table[data-fg-stack] tbody tr {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+    padding: .55rem .7rem .6rem;
+    border-top: 1px solid rgba(232, 236, 255, .12);
+  }
+
+  html.fg .md-typeset table[data-fg-stack] tbody tr:first-child {
+    border-top: 0;
+  }
+
+  html.fg .md-typeset table[data-fg-stack] td {
+    display: block;
+    flex: 1 1 100%;
+    padding: .1rem 0;
+    border: 0;
+    text-align: left !important; /* beats the inline right-align on numbers */
+  }
+
+  html.fg .md-typeset table[data-fg-stack] td:first-child {
+    font-family: var(--fg-display);
+    font-size: .86rem;
+  }
+
+  html.fg .md-typeset table[data-fg-stack] td:first-child strong {
+    font-weight: 500;
+  }
+
+  html.fg .md-typeset table[data-fg-stack] td.fg-numhead::before {
+    content: attr(data-label) " ";
+  }
+
+  /* Short fields (numbers, single words) sit side by side. */
+  html.fg .md-typeset table[data-fg-stack] td.fg-short {
+    flex: 0 1 auto;
+    min-width: 4.5rem;
+  }
+
+  html.fg .md-typeset table[data-fg-stack] td:not(:first-child)::before {
+    content: attr(data-label);
+    display: block;
+    font-size: .52rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--fg-ink-faint);
+  }
+}
