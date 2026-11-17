@@ -1,8 +1,10 @@
 # Final Fantasy VI Advance Field Guide
 
-The guide is one self-contained page, not Markdown. It's published at
-`docs/games/final-fantasy-vi-advance/field-guide/index.html`, which is built
-from the files here.
+The guide is one self-contained page, not Markdown, and it's the game's only
+page: it's published at `docs/games/final-fantasy-vi-advance/index.html`
+(`/games/final-fantasy-vi-advance/`), built from the files here. The Games
+card and the left nav link straight to it. Its old address, `field-guide/`,
+redirects there.
 
 ## Rebuilding the page
 
@@ -11,7 +13,8 @@ python3 notes/final-fantasy-vi-advance/build.py
 ```
 
 This puts `data.json` into `template.html`, adds the full document skeleton
-and the "← heygoodbuddy.com" link, and writes the page under `docs/`. Run it
+and the "heygoodbuddy.com › Games" trail back to the site, and writes the
+page and the redirect under `docs/`. Run it
 after any change to `template.html` or `data.json`, then commit both the
 source and the built page.
 
