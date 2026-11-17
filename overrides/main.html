@@ -2,15 +2,16 @@
   Field guide look on every page: html.fg scopes the styles in
   docs/stylesheets/field-guide.css, and the fonts load here.
 
-  Game tabs (pilot): on the games listed in tab_games, each page opens with
-  the game's name and a tab window of its pages, like the FF6 Advance field
-  guide, and the left nav is hidden on desktop. The tabs come from the nav in
-  mkdocs.yml, in its order; the game's own index page is "Overview".
+  Game tabs: every page of a game (a section under Games in the nav) opens
+  with the game's name and a tab window of its pages, like the FF6 Advance
+  field guide, and the left nav is hidden on desktop. The tabs come from the
+  nav in mkdocs.yml, in its order; the game's own index page is "Overview".
+  The Games list itself and the rest of the site are unchanged.
 -#}
 {% extends "base.html" %}
-{% set tab_games = ["Lufia II"] %}
-{% set game = page.ancestors | first if page and page.ancestors else none %}
-{% set tabbed = game and game.title in tab_games %}
+{% set ancestors = page.ancestors if page and page.ancestors else [] %}
+{% set game = ancestors | first if ancestors | length > 1 and (ancestors | last).title == "Games" else none %}
+{% set tabbed = game is not none %}
 {% block extrahead %}
   <script>document.documentElement.classList.add("fg"{% if tabbed %}, "fg-tabbed"{% endif %})</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,7 +22,9 @@
     {% set overview = game.children | selectattr("is_index") | first %}
     <div class="fg-game">
       <p class="fg-game-name">{{ overview.title if overview else game.title }}</p>
-      <nav class="fg-tabs" aria-label="{{ game.title }} pages">
+      {#- Ten or more pages: two even rows instead of one crowded one. -#}
+      {% set count = game.children | length %}
+      <nav class="fg-tabs{% if count >= 10 %} fg-tabs--rows{% endif %}" aria-label="{{ game.title }} pages"{% if count >= 10 %} style="--fg-tab-cols: {{ (count + 1) // 2 }}"{% endif %}>
         {% for item in game.children %}
           <a href="{{ item.url | url }}"{% if item.url == page.url %} aria-current="page"{% endif %}>{{ "Overview" if item.is_index else item.title }}</a>
         {% endfor %}
