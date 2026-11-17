@@ -144,9 +144,18 @@ html.fg .md-tabs__link {
   color: var(--fg-ink-dim);
 }
 
-html.fg .md-tabs__item--active .md-tabs__link,
 html.fg .md-tabs__link:hover {
   color: var(--fg-ink);
+}
+
+/* The current tab: gold name and cursor, no underline. */
+html.fg .md-tabs__item--active {
+  border-bottom-color: transparent;
+}
+
+html.fg .md-tabs__item--active .md-tabs__link {
+  align-items: center;
+  color: var(--fg-gold);
 }
 
 /* The menu cursor beside the current tab. */
@@ -157,11 +166,10 @@ html.fg .md-tabs__item--active .md-tabs__link::before {
   height: 0;
   margin-right: .35rem;
   background: none;
-  border-left: 7px solid var(--fg-ink);
+  border-left: 7px solid var(--fg-gold);
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
-  vertical-align: 0;
-  transform: translateY(2px);
+  vertical-align: middle;
 }
 
 /* Search button in the header: a dark chip like the site's search boxes,
@@ -1384,7 +1392,7 @@ html.fg .md-typeset a.md-tag:focus-visible {
   border-color: var(--fg-gold);
 }
 
-/* ---------- Game tabs (pilot: overrides/main.html, tab_games) ---------- */
+/* ---------- Game tabs (overrides/main.html) ---------- */
 
 /* The game's name above its tab window, like the FF6 field guide's header. */
 html.fg .md-typeset .fg-game-name {
@@ -1445,6 +1453,14 @@ html.fg .md-typeset .fg-tabs a[aria-current="page"]::before {
   border-left: 7px solid var(--fg-ink);
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
+}
+
+/* Games with ten or more pages: two even rows (columns set in main.html). */
+@media screen and (min-width: 45em) {
+  html.fg .md-typeset .fg-tabs--rows {
+    display: grid;
+    grid-template-columns: repeat(var(--fg-tab-cols), minmax(0, 1fr));
+  }
 }
 
 /* The tabs replace the left nav window on desktop. Phones keep the drawer
