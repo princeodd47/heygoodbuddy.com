@@ -1,10 +1,32 @@
 {#-
   Field guide look on every page: html.fg scopes the styles in
   docs/stylesheets/field-guide.css, and the fonts load here.
+
+  Game tabs (pilot): on the games listed in tab_games, each page opens with
+  the game's name and a tab window of its pages, like the FF6 Advance field
+  guide, and the left nav is hidden on desktop. The tabs come from the nav in
+  mkdocs.yml, in its order; the game's own index page is "Overview".
 -#}
 {% extends "base.html" %}
+{% set tab_games = ["Lufia II"] %}
+{% set game = page.ancestors | first if page and page.ancestors else none %}
+{% set tabbed = game and game.title in tab_games %}
 {% block extrahead %}
-  <script>document.documentElement.classList.add("fg")</script>
+  <script>document.documentElement.classList.add("fg"{% if tabbed %}, "fg-tabbed"{% endif %})</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+{% endblock %}
+{% block content %}
+  {% if tabbed %}
+    {% set overview = game.children | selectattr("is_index") | first %}
+    <div class="fg-game">
+      <p class="fg-game-name">{{ overview.title if overview else game.title }}</p>
+      <nav class="fg-tabs" aria-label="{{ game.title }} pages">
+        {% for item in game.children %}
+          <a href="{{ item.url | url }}"{% if item.url == page.url %} aria-current="page"{% endif %}>{{ "Overview" if item.is_index else item.title }}</a>
+        {% endfor %}
+      </nav>
+    </div>
+  {% endif %}
+  {% include "partials/content.html" %}
 {% endblock %}

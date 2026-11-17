@@ -1383,3 +1383,93 @@ html.fg .md-typeset a.md-tag:focus-visible {
   background: var(--fg-gold);
   border-color: var(--fg-gold);
 }
+
+/* ---------- Game tabs (pilot: overrides/main.html, tab_games) ---------- */
+
+/* The game's name above its tab window, like the FF6 field guide's header. */
+html.fg .md-typeset .fg-game-name {
+  margin: 0 0 .5rem;
+  font-family: var(--fg-display);
+  font-weight: 500;
+  font-size: .7rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--fg-gold);
+}
+
+/* The tab window: the game's pages as one menu, the current one lit with the
+   menu cursor. It sticks under the header while you scroll. */
+html.fg .md-typeset .fg-tabs {
+  position: sticky;
+  top: 2.6rem;
+  z-index: 3;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 0 0 1.4rem;
+  padding: 6px;
+  background: var(--fg-win-bg);
+  border: 2px solid var(--fg-win-line);
+  border-radius: 7px;
+  box-shadow: var(--fg-win-shadow);
+}
+
+html.fg .md-typeset .fg-tabs a {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: .4rem .3rem;
+  font-family: var(--fg-display);
+  font-weight: 500;
+  font-size: .78rem;
+  color: var(--fg-ink);
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+html.fg .md-typeset .fg-tabs a:hover {
+  background: rgba(255, 255, 255, .07);
+}
+
+html.fg .md-typeset .fg-tabs a[aria-current="page"] {
+  background: rgba(255, 255, 255, .12);
+}
+
+html.fg .md-typeset .fg-tabs a[aria-current="page"]::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 7px solid var(--fg-ink);
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+}
+
+/* The tabs replace the left nav window on desktop. Phones keep the drawer
+   for the rest of the site. */
+@media screen and (min-width: 76.25em) {
+  html.fg-tabbed .md-sidebar--primary {
+    display: none;
+  }
+}
+
+/* Phones: a grid of short tabs, as in the field guide. */
+@media screen and (max-width: 44.9375em) {
+  html.fg .md-typeset .fg-tabs {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2px;
+    top: 2.4rem;
+  }
+
+  html.fg .md-typeset .fg-tabs a {
+    padding: .5rem .1rem;
+    font-size: .6rem;
+  }
+
+  html.fg .md-typeset .fg-tabs a[aria-current="page"]::before {
+    display: none;
+  }
+}
