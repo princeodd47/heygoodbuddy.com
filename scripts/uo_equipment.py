@@ -1,11 +1,12 @@
 """Build the Unicorn Overlord equipment data from the Fandom and Miraheze wikis.
 
-Run from the repo root (standard library only):
+Run from the repo root (standard library plus PyYAML, which the site's
+requirements install):
 
-    python3 scripts/uo_equipment.py
+    python scripts/uo_equipment.py
 
-It reads every item in the Equipment column of
-docs/games/unicorn-overlord/post-game-teams.md and writes
+It reads every item the squads in data/unicorn-overlord/teams.yaml use (the
+Post-Game Teams page is built from that file) and writes
 data/unicorn-overlord/equipment.yaml: stats, effects, the skill it grants,
 every place to get it and the cheapest shop price. The Equipment page and the
 item previews on the Post-Game Teams page read that file.
@@ -34,7 +35,7 @@ import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-TEAMS = ROOT / "docs/games/unicorn-overlord/post-game-teams.md"
+TEAMS = ROOT / "data/unicorn-overlord/teams.yaml"
 OUT = ROOT / "data/unicorn-overlord/equipment.yaml"
 FANDOM = "https://unicornoverlord.fandom.com/api.php"
 MIRAHEZE = "https://unilord.miraheze.org/w/api.php"
@@ -384,11 +385,16 @@ def shop_lines(shops):
 
 
 def team_items():
-    names = set()
-    for line in TEAMS.read_text().splitlines():
-        if line.startswith(("| Front ", "| Back ")):
-            for item in line.split("|")[4].split(","):
-                names.add(item.strip())
+    import yaml
+
+    data = yaml.safe_load(TEAMS.read_text())
+    names = {
+        item
+        for group in ("squads", "others")
+        for squad in data[group]
+        for unit in squad["units"]
+        for item in unit["equipment"]
+    }
     names.discard("Starting weapon")
     return sorted(names)
 

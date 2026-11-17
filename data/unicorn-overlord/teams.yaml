@@ -1,0 +1,1879 @@
+# Squads on the Unicorn Overlord Post-Game Teams page.
+# squads: the ten squads you field together. others: alternative community builds.
+# Each unit lists its row (front or back, at most 3 each), class, 4 items and its
+# Tactics in priority order (skills not listed are off). start says which
+# start-of-battle skill to keep on and which to turn off.
+# Check with: python scripts/uo_teams_check.py
+squads:
+- title: '1. Alain: Trinity Rain'
+  about: A magic nuke that hits the whole enemy side three times before most enemies act. Yahna starts the battle with Quick Cast, Sanatio's White Cat-Ear Hood lets her act again right away so the charge skips a turn, and Scarlett's Familiar's Choker adds +50% magic attack to the cast. The Sniper's Amber Lens gives Yahna Hawk Eye, so the cast is a truestrike and a guaranteed crit and can't be dodged. Alain and Celeste clean up and tank.
+  units:
+  - name: Alain
+    class: High Lord
+    row: front
+    equipment: [Holy Unicorn Blade, Holy Unicorn Shield, Ring of the Unicorn, Lapis Pendant]
+    tactics:
+    - {type: active, skill: Spinning Edge, when: Row with 2 or more enemies}
+    - {type: active, skill: Lean Edge, when: Lowest HP enemy}
+    - {type: passive, skill: Luminous Cover, when: Back row}
+    - {type: passive, skill: Noble Guard, when: None}
+  - name: Celeste
+    class: Gryphon Master
+    row: front
+    equipment: [Boreas' Axe, Heavenwyvern Reins, Elite Beret, Royal Scarf]
+    tactics:
+    - {type: active, skill: High Swing, when: Back row}
+    - {type: active, skill: Aerial Smite, when: Lowest HP enemy}
+    - {type: passive, skill: Gryphon Glide, when: None}
+  - name: Scarlett
+    class: High Priestess
+    row: back
+    equipment: [Kingstaff Albiore, Familiar's Choker, Carnelian Pendant, Lapis Pendant]
+    tactics:
+    - {type: active, skill: Curing Call, when: Anyone below 75% HP}
+    - {type: passive, skill: Sorcerous Connection, when: Target Yahna}
+  - name: Yahna
+    class: Sorceress
+    row: back
+    equipment: [Millennium Scepter, Sniper's Amber Lens, Sapphire Pendant, Carnelian Pendant]
+    tactics:
+    - {type: active, skill: Trinity Rain, when: None}
+    - {type: passive, skill: Quick Cast, when: Start of battle}
+    - {type: passive, skill: Hawk Eye, when: None}
+  - name: Sanatio
+    class: Featherstaff
+    row: back
+    equipment: [Euros' Staff, White Cat-Ear Hood, Lapis Pendant, Holy Unicorn Signet]
+    tactics:
+    - {type: active, skill: Overheal, when: Anyone below 75% HP}
+    - {type: passive, skill: Quick Impetus, when: Target Yahna}
+  start:
+    keep: {unit: Yahna, skill: Quick Cast}
+    'off':
+    - {unit: Alain, skill: Rapid Order}
+    - {unit: Scarlett, skill: Divine Blessing}
+    - {unit: Sanatio, skill: Hastened Heal}
+  notes: Quick Cast (2 PP) and Hawk Eye (2 PP) use all 4 of Yahna's PP. Hawk Eye's guaranteed crit overrides Quick Cast's -50% crit rate. Check in a mock battle that Hawk Eye fires on the cast itself, not when Yahna starts charging. Quick Impetus costs 4 PP, so Sanatio needs the Hood and the Lapis Pendant to reach it. If the enemy has a Thief with Sneaking Edge, check that a barrier doesn't use up her PP first.
+- title: '2. Hilda: Dragoon Dive'
+  about: Hilda's Dragoon Dive with a fast charge. The Celestial Talisman gives her Hastened Charge, so the dive comes out on her first turn. Ochlys's Dancer's Bracelet buffs her attack before each dive, Raenys's Tailwind makes her act sooner, and Lex blocks the archers that would ground the flyers.
+  units:
+  - name: Ochlys
+    class: Feathersword
+    row: front
+    equipment: [Heavenswing Sword, Heavenswing Shield, Dancer's Bracelet, Royal Scarf]
+    tactics:
+    - {type: active, skill: Shield Smite, when: Armored}
+    - {type: active, skill: Spiral Sword, when: None}
+    - {type: passive, skill: Powerful Call, when: Target Hilda}
+  - name: Lex
+    class: Vanguard
+    row: front
+    equipment: [Meteorite Sword, Unyielding Shield, Cloth Gauntlets, Lapis Pendant]
+    tactics:
+    - {type: active, skill: Defender, when: Lowest evasion}
+    - {type: passive, skill: Arrow Cover, when: Flying ally}
+  - name: Hilda
+    class: Wyvern Master
+    row: back
+    equipment: [Dragoon's Warspear, Celestial Talisman, Sapphire Pendant, Carnelian Pendant]
+    tactics:
+    - {type: active, skill: Dragoon Dive, when: None}
+    - {type: active, skill: Diving Thrust, when: Lowest HP enemy}
+    - {type: passive, skill: Hastened Charge, when: Start of battle}
+  - name: Raenys
+    class: Featherbow
+    row: back
+    equipment: [Apeliotes' Bow, Raven Plume, Lapis Pendant, Clearsight Amulet]
+    tactics:
+    - {type: active, skill: Photon Arrow, when: None}
+    - {type: active, skill: attack, when: Flying or cavalry}
+    - {type: passive, skill: Tailwind, when: None}
+  - name: Ramona
+    class: Wereowl
+    row: back
+    equipment: [Papal Crosier, Lapis Pendant, Gold Bangle, Ancient Crown]
+    tactics:
+    - {type: active, skill: Extra Heal, when: Anyone below 75% HP}
+    - {type: active, skill: Aurora Veil, when: None}
+    - {type: passive, skill: Restore, when: Target Ochlys}
+  start:
+    keep: {unit: Hilda, skill: Hastened Charge}
+    'off':
+    - {unit: Lex, skill: Provoke}
+    - {unit: Hilda, skill: Dragon's Roar}
+  notes: |-
+    Restore gives back 1 PP after an ally uses a passive. Aimed at Ochlys, it keeps Powerful Call going for later dives.
+
+    Hastened Charge costs 4 PP and the Talisman lowers Hilda's AP by 1, so the two pendants are there to keep her points up. Photon Arrow goes first so Tailwind triggers before Hilda's turn.
+
+    Hastened Charge uses all 4 of Hilda's PP, so she has none left for Aerial Wing. That's why the Heavenwyvern Reins stay with Celeste. Dragoon Dive isn't a truestrike, so an evasive enemy can still dodge it. Check the forecast against Thieves and Werefoxes.
+- title: '3. Yunifi: Glacial Rain'
+  about: Yunifi's Glacial Rain hits every enemy three times and freezes them. It's a charge skill, so Travis's Black Cat-Ear Hood fires Quick Impetus as she starts charging and she casts it right away. Lhinalagos's Gambler's Coin gives her Inspiration (+30% attack, +50% crit damage), and her own Eagle Eye makes the hit true, so Inspiration's accuracy penalty doesn't matter. Bryce and Morard hold the front. Dispel is the hard counter to this squad, so watch for enemy Wereowls.
+  units:
+  - name: Bryce
+    class: Legionnaire
+    row: front
+    equipment: [Meteorite Lance, Drakestone Iceshield, Knight's Medallion, Detoxifying Amulet]
+    tactics:
+    - {type: active, skill: Row attack, when: Row with 2 or more enemies}
+    - {type: passive, skill: Heavy Cover, when: Lowest HP ally}
+  - name: Morard
+    class: Werelion
+    row: front
+    equipment: [Meteorite Axe, Warrior's Medallion, Leaf Broach, Carnelian Pendant]
+    tactics:
+    - {type: active, skill: Row attack, when: Row with 2 or more enemies}
+    - {type: active, skill: Single-target attack, when: Lowest HP enemy}
+  - name: Yunifi
+    class: Snow Ranger
+    row: back
+    equipment: [Kingsbow Bastorik, Angel Plume, Warrior's Medallion, Watchman's Lantern]
+    tactics:
+    - {type: active, skill: Glacial Rain, when: None}
+    - {type: active, skill: Sonic Shaft, when: Flying}
+    - {type: active, skill: Mystic Arrow, when: Armored}
+    - {type: passive, skill: Eagle Eye, when: None}
+  - name: Travis
+    class: Rogue
+    row: back
+    equipment: [Cutthroat's Boon, Black Cat-Ear Hood, Lapis Pendant, Royal Scarf]
+    tactics:
+    - {type: active, skill: Shadow Bite, when: Row with 2 or more enemies}
+    - {type: passive, skill: Quick Impetus, when: Target Yunifi}
+    - {type: passive, skill: Evade, when: None}
+  - name: Lhinalagos
+    class: Elven Archer
+    row: back
+    equipment: [Sacral Bow, Gambler's Coin, Lapis Pendant, Sage's Hood]
+    tactics:
+    - {type: active, skill: Icicle Arrow, when: Flying}
+    - {type: passive, skill: Pure Field, when: Start of battle}
+    - {type: passive, skill: Inspiration, when: Target Yunifi}
+  start:
+    keep: {unit: Lhinalagos, skill: Pure Field}
+    'off':
+    - {unit: Travis, skill: Sneaking Edge}
+- title: '4. Virginia and Berengaria: Affliction Squad'
+  about: Corvie Indo's squad, kept as built. Everything inflicts or punishes afflictions. Berengaria's Death Spin stuns a row and does 75% more to afflicted enemies, so she snowballs once anything is burned, frozen, stunned or blinded. Virginia tanks and smashes armor, Dinah blinds whole columns and Monica heals.
+  units:
+  - name: Virginia
+    class: Valkyria
+    row: front
+    equipment: [Hallowed Blade, Blue Rose Shield, Azure Crest Shield, Vengeful Caligae]
+    tactics:
+    - {type: active, skill: Vertical Edge, when: Flying}
+    - {type: active, skill: Iron Crusher, when: Armored}
+    - {type: active, skill: Brandish, when: None}
+    - {type: active, skill: Iron Crusher, when: Own AP too low for Brandish}
+    - {type: passive, skill: Vengeful Impetus, when: Own AP 3 or less}
+    - {type: passive, skill: Royal Guard, when: Ally below 50% HP}
+    - {type: passive, skill: Maiden's Hammer, when: Own PP 3 or more}
+    - {type: passive, skill: Undying Will, when: Every second action}
+  - name: Berengaria
+    class: Dark Marquess
+    row: front
+    equipment: [Kingsaxe Drakenash, Mirage Greatshield, Earrings of Pursuit, Ring of the Maiden]
+    tactics:
+    - {type: active, skill: Death Spin, when: Row with 2 or more enemies}
+    - {type: active, skill: Vicious Torment, when: Afflicted}
+    - {type: active, skill: Carnage, when: None}
+    - {type: passive, skill: Painbringer, when: Own PP 2 or more}
+    - {type: passive, skill: Eye of the Warrior Princess, when: Start of battle}
+    - {type: passive, skill: Sanguine Pursuit, when: Afflicted only}
+  - name: Dinah
+    class: Werefox
+    row: front
+    equipment: [Corroded Spear, Lionheart, Carnelian Pendant, Lapis Pendant]
+    tactics:
+    - {type: active, skill: Passive Hold, when: 'Armored, not passive-sealed'}
+    - {type: active, skill: Shadow Thrust, when: 'Full column, not blinded'}
+    - {type: active, skill: Shadow Thrust, when: Not blinded}
+    - {type: active, skill: Piercing Lance, when: None}
+    - {type: passive, skill: Shadow Pursuit, when: Not blinded}
+    - {type: passive, skill: Nocturnal Evade, when: None}
+  - name: Railanor
+    class: Elven Fencer
+    row: back
+    equipment: [Spellsteel Sword, Sorcerer's Medallion, Sage's Hood, Royal Scarf]
+    tactics:
+    - {type: active, skill: Nature's Wrath, when: Cavalry in a full column}
+    - {type: active, skill: Lightning Blade, when: Armored first}
+    - {type: active, skill: Mirage Stab, when: When needed}
+    - {type: passive, skill: Sylphic Barrier, when: Ally with lowest evasion}
+  - name: Monica
+    class: Sainted Knight
+    row: back
+    equipment: [Dragonbone Blade, Dragonbone Shield, Monk's Mitre, First Aid Kit]
+    tactics:
+    - {type: active, skill: Row Heal, when: Anyone below 75% HP}
+    - {type: active, skill: Saint's Blade, when: Lowest HP enemy}
+    - {type: active, skill: Row Heal, when: Anyone not at full HP}
+    - {type: passive, skill: Quick Heal, when: '75% HP or less, own PP 3 or more'}
+    - {type: passive, skill: Row Barrier, when: Magic attacks}
+    - {type: passive, skill: Magic Barrier, when: Magic attacks}
+    - {type: passive, skill: First Aid, when: None}
+  start:
+    keep: {unit: Berengaria, skill: Eye of the Warrior Princess}
+    'off':
+    - {unit: Virginia, skill: Iron Veil}
+- title: '5. Rosalinde: Elemental Roar'
+  about: Rosalinde's Elemental Roar ignores Magic Reflect, so this squad breaks the Radiant Knights and Sainted Knights that shut down other mages. Ithilion's Frostbrand Tome freezes the enemy for bonus damage. Ilenia carries two shields and covers the back row.
+  units:
+  - name: Ilenia
+    class: Valkyria
+    row: front
+    equipment: [Notos' Sword, Nameless Guard's Shield, Holy Knight's Shield, Retaliation Earrings]
+    tactics:
+    - {type: active, skill: Attack, when: Lowest HP enemy}
+    - {type: passive, skill: Radiant Cover, when: Lowest HP ally}
+  - name: Ithilion
+    class: Elven Fencer
+    row: front
+    equipment: [Spellsteel Sword, Frostbrand Tome, Necromancer's Lantern, Lapis Pendant]
+    tactics:
+    - {type: active, skill: Lightning Blade, when: Armored}
+    - {type: passive, skill: Ice Conferral, when: Target Rosalinde}
+    - {type: passive, skill: Vanitas, when: None}
+  - name: Rosalinde
+    class: Elven Augur
+    row: back
+    equipment: [Kingslance Elhal, Ruby Pendant, Sage's Hood, Sorcerer's Medallion]
+    tactics:
+    - {type: active, skill: Elemental Roar, when: None}
+    - {type: active, skill: Primus Edge, when: Lowest HP enemy}
+    - {type: passive, skill: Rage of the Faeries, when: Start of battle}
+    - {type: passive, skill: Elemental Impetus, when: None}
+  - name: Magellan
+    class: Landsknecht
+    row: back
+    equipment: [Dragonbone Blade, Golden Ram Shield, Clearsight Amulet, Blue Spectacles]
+    tactics:
+    - {type: active, skill: Killing Chain, when: Lowest HP enemy}
+    - {type: active, skill: Heavy Slash, when: None}
+    - {type: passive, skill: Following Slash, when: None}
+  - name: Galadmir
+    class: Elven Archer
+    row: back
+    equipment: [Interrogator's Bow, Charm of Warding, Sage's Hood, Awakening Amulet]
+    tactics:
+    - {type: active, skill: Attack, when: Flying}
+    - {type: active, skill: Attack, when: Lowest HP enemy}
+  start:
+    keep: {unit: Rosalinde, skill: Rage of the Faeries}
+    'off':
+    - {unit: Ilenia, skill: Iron Veil}
+- title: '6. Amalia: Leaping Slash'
+  about: Amalia attacks over and over with Leaping Slash from the Dancer's Delight. A critical Leaping Slash gives back the 1 AP it cost, and every Leaping Slash gives her a crit-rate debuff, which sets off the Druid's Robes' Cursed Impetus for +1 AP. Chloe's Keen Call makes each attack a guaranteed crit, and the Wereowl's Restore refills Chloe's PP so she can keep calling. Hodrick covers Amalia and Sharon heals.
+  units:
+  - name: Hodrick
+    class: Legionnaire
+    row: front
+    equipment: [Zenoiran Knight's Spear, Hero's Greatshield, Knight's Medallion, Salamander Ring]
+    tactics:
+    - {type: active, skill: Row attack, when: Row with 2 or more enemies}
+    - {type: passive, skill: Heavy Cover, when: Target Amalia}
+    - {type: passive, skill: Heavy Cover, when: Lowest HP ally}
+  - name: Amalia
+    class: Dreadnought
+    row: front
+    equipment: [Dancer's Delight, Champion's Towershield, Druid's Robes, Sapphire Pendant]
+    tactics:
+    - {type: active, skill: Leaping Slash, when: Lowest HP enemy}
+    - {type: active, skill: Leaping Slash, when: None}
+    - {type: passive, skill: Cursed Impetus, when: None}
+  - name: Chloe
+    class: Sergeant
+    row: back
+    equipment: [Thorn Spear, Lapis Pendant, Royal Scarf, Cloth Gauntlets]
+    tactics:
+    - {type: active, skill: Long Thrust, when: Full column}
+    - {type: passive, skill: Keen Call, when: Target Amalia}
+  - name: Generic Wereowl
+    class: Wereowl
+    row: back
+    equipment: [Wingcrest Staff, Lapis Pendant, Royal Scarf, Gold Bangle]
+    tactics:
+    - {type: active, skill: Night Vision, when: Front row}
+    - {type: active, skill: Aurora Veil, when: None}
+    - {type: passive, skill: Restore, when: Target Chloe}
+  - name: Sharon
+    class: Bishop
+    row: back
+    equipment: [Cleric's Cane, Awakening Amulet, Gold Circlet, Lapis Pendant]
+    tactics:
+    - {type: active, skill: Row heal, when: Anyone below 75% HP}
+    - {type: passive, skill: Dispel, when: Buffed enemy}
+  start:
+    keep: null
+    'off':
+    - {unit: Amalia, skill: Provoking Wall}
+    note: Amalia's Provoking Wall costs 2 PP that she needs for Cursed Impetus.
+  notes: Amalia's Hawk Eye, Heavy Guard and Wild Kick are off so all her PP goes to Cursed Impetus. Each point of her PP is one more Leaping Slash. Each Keen Call makes a Slash free, since the crit refunds its AP. PP caps at 4, so Amalia, Chloe and the Wereowl add up to 12 extra Slashes on top of her own AP. Turn off Chloe's First Aid and Active Gift so her PP goes to Keen Call.
+- title: '7. Nigel and Alcina: Venom Stun'
+  about: Alcina poisons a row with Aqua Venom, and Nigel's Death Spin hits that row with +75 potency against afflicted enemies and stuns it. Every Advance Cover gives Nigel another AP for more spins. Gilbert's Offensive Order raises the squad's attack and his Inspiration makes Aramis's Meteor Slash, a nine-hit crit flurry, crit harder. Sniping Order makes the front row's next attacks truestrikes. Charged Impetus gives Aramis his AP back, and Primm's Active Heal gives him one more. Alcina's Ominous Wall blocks one attack on every ally at the start of battle.
+  units:
+  - name: Nigel
+    class: Dark Marquess
+    row: front
+    equipment: [Sacral Sword, Unyielding Greatshield, Leaf Broach, Lapis Pendant]
+    tactics:
+    - {type: active, skill: Death Spin, when: Afflicted}
+    - {type: active, skill: Inferno, when: Row with 2 or more enemies}
+    - {type: passive, skill: Advance Cover, when: Lowest HP ally}
+    - {type: passive, skill: Phantom Counter, when: None}
+  - name: Aramis
+    class: Swordmaster
+    row: front
+    equipment: [Zenoiran Knight's Sword, Hunter's Claymore, Veteran's Eyepatch, Lapis Pendant]
+    tactics:
+    - {type: active, skill: Meteor Slash, when: None}
+    - {type: active, skill: Keen Edge, when: Lowest HP enemy}
+    - {type: passive, skill: Charged Impetus, when: None}
+    - {type: passive, skill: Parry, when: None}
+  - name: Gilbert
+    class: Prince
+    row: front
+    equipment: [Kingsblade Cornix, Scarlet Crest Shield, Dove Plume, Gambler's Coin]
+    tactics:
+    - {type: active, skill: Offensive Order, when: First action}
+    - {type: active, skill: Banishing Stab, when: Buffed enemy}
+    - {type: passive, skill: Inspiration, when: Target Aramis}
+    - {type: passive, skill: Sniping Order, when: None}
+  - name: Alcina
+    class: Dark Marquess
+    row: back
+    equipment: [Meteorite Rod, Dragonbone Greatshield, Sorcerer's Medallion, Lapis Pendant]
+    tactics:
+    - {type: active, skill: Aqua Venom, when: Row with most enemies}
+    - {type: active, skill: Maelstrom, when: None}
+    - {type: passive, skill: Ominous Wall, when: Start of battle}
+    - {type: passive, skill: Cursed Gaol, when: None}
+  - name: Primm
+    class: Bishop
+    row: back
+    equipment: [Lyrical Wand, Awakening Amulet, Gold Circlet, Lapis Pendant]
+    tactics:
+    - {type: active, skill: Active Heal, when: Target Aramis}
+    - {type: active, skill: Row heal, when: Anyone below 75% HP}
+    - {type: passive, skill: Refresh, when: Afflicted ally}
+  start:
+    keep: {unit: Alcina, skill: Ominous Wall}
+    'off':
+    - {unit: Gilbert, skill: Rapid Order}
+    - {unit: Aramis, skill: Hastened Strike}
+  notes: Alcina acts before Nigel in most fights, so his first Death Spin lands on a row she has already poisoned. Maelstrom hits every enemy and gets +25 potency against poisoned ones. Gilbert's Gambler's Coin fires Inspiration once per battle, so aim it at Meteor Slash.
+- title: '8. Gloucester: Doom Knight Cavalry'
+  about: TitaniumLegman's Ajax squad with Gloucester as the Doom Knight. Clive and Renault use Cavalier Call before Gloucester acts, so his Dark Flame starts at +40% attack, then Knight's Pursuit follows up on everything he hits. Both carry Angel Hunter's Bucklers to block flyers. Eltolinde heals and buffs the squad, and Miriam shields it from magic.
+  units:
+  - name: Clive
+    class: Great Knight
+    row: front
+    equipment: [General's Pike, Angel Hunter's Buckler, Citadel Guard's Sabatons, Carnelian Pendant]
+    tactics:
+    - {type: active, skill: Wild Rush, when: Full column}
+    - {type: active, skill: Assaulting Lance, when: Lowest HP enemy}
+    - {type: active, skill: Pile Thrust, when: None}
+    - {type: passive, skill: Cavalier Call, when: None}
+    - {type: passive, skill: Knight's Pursuit, when: None}
+    - {type: passive, skill: Aerial Guard, when: Flying}
+  - name: Gloucester
+    class: Doom Knight
+    row: front
+    equipment: [Spellsteel Axe, Wingcrest Shield, Amethyst Pendant, Heavensteed Reins]
+    tactics:
+    - {type: active, skill: Dark Flame, when: Row with 2 or more enemies}
+    - {type: active, skill: Dark Flame, when: Armored}
+    - {type: active, skill: Vengeful Axe, when: None}
+    - {type: passive, skill: Demonic Pact, when: None}
+    - {type: passive, skill: Sanguine Arts, when: None}
+    - {type: passive, skill: Vengeance, when: None}
+  - name: Renault
+    class: Great Knight
+    row: front
+    equipment: [Zephyros' Spear, Angel Hunter's Buckler, Citadel Guard's Sabatons, Carnelian Pendant]
+    tactics:
+    - {type: active, skill: Wild Rush, when: Full column}
+    - {type: active, skill: Assaulting Lance, when: Lowest HP enemy}
+    - {type: active, skill: Pile Thrust, when: None}
+    - {type: passive, skill: Cavalier Call, when: None}
+    - {type: passive, skill: Knight's Pursuit, when: None}
+    - {type: passive, skill: Aerial Guard, when: Flying}
+  - name: Eltolinde
+    class: Elven Sibyl
+    row: back
+    equipment: [Twinned Bough, Ruby Pendant, Holy Broach, Sage's Hood]
+    tactics:
+    - {type: active, skill: Elemental Roar, when: None}
+    - {type: active, skill: Thunderous Thrust, when: Lowest HP enemy}
+    - {type: passive, skill: Boon of the Faeries, when: Start of battle}
+    - {type: passive, skill: Curing Heal, when: Anyone below 50% HP}
+  - name: Miriam
+    class: Sainted Knight
+    row: back
+    equipment: [Meteorite Sword, Templar's Shield, Sage's Hood, Rose Broach]
+    tactics:
+    - {type: active, skill: Row Heal, when: Row with lowest HP}
+    - {type: passive, skill: Row Barrier, when: Magic attacks}
+    - {type: passive, skill: Magic Barrier, when: Magic attacks}
+  start:
+    keep: {unit: Eltolinde, skill: Boon of the Faeries}
+- title: '9. Bruno and Elgor: Burn Squad'
+  about: |-
+    Everything here sets enemies on fire. Elgor is fast, so he usually acts first and Flame Thrust burns a front and back enemy in one column. Bruno's Wide Smash hits a row, and Auch's Flamebrand Tome adds Burn to it. Selvie burns a row with Fire Curse, Auch burns with Fireball and Volcano, and Berenice's Searing Rapier burns whatever is left. Berenice also follows up every ally attack with Following Slash. At the end of each battle, the Chlorotic Wand's Fire Burst hits every enemy if its target is burning.
+
+    Elgor tanks by dodging. At the start of battle, Dead Booing pulls every enemy attack onto him and lets him dodge the first 2 hits. Dark Step dodges another hit, and the Royal Scarf pushes his evasion past his already high base. The Gran Baris covers the hits he doesn't dodge with the best defense and guard rate a greatshield gets, and its debuff immunity stops enemies from lowering his evasion. It uses no PP, so all of his goes to Dark Step. The Sacral Axe makes Bruno immune to stun and other afflictions, and heals him on every active skill.
+  units:
+  - name: Bruno
+    class: Berserker
+    row: front
+    equipment: [Sacral Axe, Leaf Broach, Hero's Medallion, Lapis Pendant]
+    tactics:
+    - {type: active, skill: Wide Smash, when: None}
+    - {type: passive, skill: Bulk Up, when: Own HP below 75%}
+  - name: Berenice
+    class: Landsknecht
+    row: front
+    equipment: [Searing Rapier, Blessed Round Shield, Elite Beret, Warrior's Medallion]
+    tactics:
+    - {type: active, skill: Fire Slash, when: Not burning}
+    - {type: active, skill: Bastard's Cross, when: Highest HP enemy}
+    - {type: passive, skill: Following Slash, when: None}
+  - name: Elgor
+    class: Dark Marquess
+    row: front
+    equipment: [Thorn Spear, Gran Baris, Royal Scarf, Lapis Pendant]
+    tactics:
+    - {type: active, skill: Flame Thrust, when: 'Full column, not burning'}
+    - {type: active, skill: Dark Mist, when: Own PP 1 or less}
+    - {type: active, skill: Flame Thrust, when: Not burning}
+    - {type: active, skill: Deadly Rush, when: None}
+    - {type: passive, skill: Dead Booing, when: Start of battle}
+    - {type: passive, skill: Dark Step, when: None}
+    - {type: passive, skill: Evil Cover, when: Ally below 50% HP}
+  - name: Auch
+    class: Warlock
+    row: back
+    equipment: [Chlorotic Wand, Flamebrand Tome, Sorcerer's Medallion, Lapis Pendant]
+    tactics:
+    - {type: active, skill: Volcano, when: Full column}
+    - {type: active, skill: Fireball, when: None}
+    - {type: passive, skill: Flame Conferral, when: Target Bruno}
+    - {type: passive, skill: Fire Burst, when: Burning}
+  - name: Selvie
+    class: Druid
+    row: back
+    equipment: [Flame-Hex Staff, Sage's Hood, Lapis Pendant, Vitality Talisman]
+    tactics:
+    - {type: active, skill: Fire Curse, when: 'Row with most enemies, not burning'}
+    - {type: active, skill: Offensive Curse, when: None}
+    - {type: passive, skill: Quick Curse, when: None}
+  start:
+    keep: {unit: Elgor, skill: Dead Booing}
+    'off':
+    - {unit: Selvie, skill: Cursed Swamp}
+  notes: Dark Mist gives Elgor +50 evasion and +2 PP, so he uses it when his PP runs low to keep Dark Step going. With every attack aimed at Elgor, Berenice rarely gets hit, so she wears an Elite Beret for more damage instead of counter gear. Elgor's own defense and guard are low, so attacks that can't miss (Hawk Eye, Eagle Eye, truestrike skills) and magic hurt him. Check the forecast against archers and mages, and against enemies immune to Burn.
+- title: '10. Four Horsemen: Cavalry Rush'
+  about: A fast cavalry squad that covers ground quickly. Three riders in the front, Fran's Gryphon in the back for flyers, and Tatiana to keep them healed.
+  units:
+  - name: Adel
+    class: Great Knight
+    row: front
+    equipment: [Meteorite Lance, Chivalric Shield, Citadel Guard's Sabatons, Knight's Medallion]
+    tactics:
+    - {type: active, skill: Wild Rush, when: Full column}
+    - {type: active, skill: Assaulting Lance, when: Lowest HP enemy}
+    - {type: passive, skill: Cavalier Call, when: None}
+    - {type: passive, skill: Knight's Pursuit, when: None}
+  - name: Jerome
+    class: Great Knight
+    row: front
+    equipment: [Vorpal Spear, Chivalric Shield, Courser's Reins, Knight's Medallion]
+    tactics:
+    - {type: active, skill: Wild Rush, when: Full column}
+    - {type: active, skill: Assaulting Lance, when: Lowest HP enemy}
+    - {type: passive, skill: Cavalier Call, when: None}
+    - {type: passive, skill: Knight's Pursuit, when: None}
+  - name: Josef
+    class: Paladin
+    row: front
+    equipment: [Meteorite Sword, White Rider's Shield, Leaf Broach, Gold Bangle]
+    tactics:
+    - {type: active, skill: Attack, when: Lowest HP enemy}
+    - {type: passive, skill: Cover, when: Cavalry ally}
+  - name: Fran
+    class: Gryphon Master
+    row: back
+    equipment: [Vorpal Axe, Wyvern Reins, Elite Beret, Royal Scarf]
+    tactics:
+    - {type: active, skill: Aerial Smite, when: Back row}
+    - {type: active, skill: High Swing, when: None}
+  - name: Tatiana
+    class: Bishop
+    row: back
+    equipment: [Phosphorescent Staff, Rose Broach, Gold Circlet, Awakening Amulet]
+    tactics:
+    - {type: active, skill: Row heal, when: Anyone below 75% HP}
+    - {type: passive, skill: Quick Heal, when: Lowest HP ally}
+  start:
+    keep: null
+others:
+- title: Hilda Dragoon Dive (89 Games)
+  about: The original version of squad 2. Raenys goes first with the Raven Plume, her Tailwind after Photon Arrow speeds up the back row (double for flyers), and Hilda dives next with Hastened Charge. Amalia's Dancer's Bracelet adds +30% attack to the dive. Ochlys and Raenys dodge-tank, and Rosalinde cleans up and can still fire Elemental Roar at the end of the battle.
+  units:
+  - name: Ochlys
+    class: Feathersword
+    row: front
+    equipment: [Heavenswing Sword, Heavenswing Shield, Silken Scarf, Royal Scarf]
+    tactics:
+    - {type: active, skill: Shield Smite, when: Armored}
+    - {type: active, skill: Spiral Sword, when: None}
+  - name: Amalia
+    class: Dreadnought
+    row: front
+    equipment: [Hunter's Claymore, Black Iron Greatshield, Dancer's Bracelet, Sapphire Pendant]
+    tactics:
+    - {type: active, skill: Penetrate, when: Full column}
+    - {type: active, skill: Omega Shatter, when: None}
+    - {type: passive, skill: Powerful Call, when: Target Hilda}
+  - name: Hilda
+    class: Wyvern Master
+    row: back
+    equipment: [Dragoon's Warspear, Celestial Talisman, Sapphire Pendant, Carnelian Pendant]
+    tactics:
+    - {type: active, skill: Dragoon Dive, when: None}
+    - {type: active, skill: Diving Thrust, when: Lowest HP enemy}
+    - {type: passive, skill: Hastened Charge, when: Start of battle}
+  - name: Raenys
+    class: Featherbow
+    row: back
+    equipment: [Apeliotes' Bow, Raven Plume, Royal Scarf, Lapis Pendant]
+    tactics:
+    - {type: active, skill: Photon Arrow, when: None}
+    - {type: passive, skill: Tailwind, when: None}
+  - name: Rosalinde
+    class: Elven Augur
+    row: back
+    equipment: [Kingslance Elhal, Ruby Pendant, Sage's Hood, Sorcerer's Medallion]
+    tactics:
+    - {type: active, skill: Sylphic Wind, when: Flying}
+    - {type: active, skill: Elemental Roar, when: None}
+    - {type: passive, skill: Elemental Impetus, when: None}
+  start:
+    keep: {unit: Hilda, skill: Hastened Charge}
+    'off':
+    - {unit: Rosalinde, skill: Rage of the Faeries}
+    - {unit: Hilda, skill: Dragon's Roar}
+- title: Hilda and Primm (Varsona)
+  about: Hilda as a bulky evasive front-liner who attacks three to five times a battle. Primm's Lyrical Wand feeds her AP, Liza's Skiron's Shield gives Hastened Cover (whoever she covers acts right away), and Fodoquia reflects the magic that wyverns are weak to. Auch adds magic damage and conferral.
+  units:
+  - name: Hilda
+    class: Wyvern Master
+    row: front
+    equipment: [Silver Trident, Charm of Land & Sea, Heavenwyvern Reins, Lucky Coin]
+    tactics:
+    - {type: active, skill: Tempest Drive, when: Row with 2 or more enemies}
+    - {type: active, skill: Fire Breath, when: Armored}
+    - {type: active, skill: Diving Thrust, when: Cavalry}
+    - {type: passive, skill: Deflect, when: None}
+  - name: Fodoquia
+    class: Feathershield
+    row: front
+    equipment: [Zenoiran Knight's Sword, Gran Baris, Knight's Medallion, Cloth Gauntlets]
+    tactics:
+    - {type: active, skill: Row Resistance, when: 'First action, casters present'}
+    - {type: passive, skill: Reflect Magic, when: None}
+    - {type: passive, skill: Sacrifice, when: Own HP 50% or more}
+  - name: Liza
+    class: Shieldshooter
+    row: back
+    equipment: [Woodpecker, Skiron's Shield, Barbed Ribbon, Lapis Pendant]
+    tactics:
+    - {type: active, skill: Toxic Bolt, when: Armored}
+    - {type: passive, skill: Hastened Cover, when: Target Hilda}
+    - {type: passive, skill: First Aid, when: None}
+  - name: Primm
+    class: Bishop
+    row: back
+    equipment: [Lyrical Wand, Ruby Pendant, Awakening Amulet]
+    tactics:
+    - {type: active, skill: Lyrical Wand AP skill, when: Target Hilda}
+    - {type: active, skill: Row heal, when: Anyone below 75% HP}
+    - {type: passive, skill: Refresh, when: Afflicted ally}
+  - name: Auch
+    class: Warlock
+    row: back
+    equipment: [Icestorm Staff, Frostbrand Tome, Sorcerer's Medallion, Lapis Pendant]
+    tactics:
+    - {type: active, skill: Blizzard, when: None}
+    - {type: passive, skill: Ice Conferral, when: Target Hilda}
+  start:
+    keep: null
+    'off':
+    - {unit: Hilda, skill: Dragon's Roar}
+- title: Hilda Lightning Shaker (Corvie Indo)
+  about: Hilda gets AP from both Primm and Chloe, and every Lightning Shaker is a true strike thanks to the Heavenwyvern Reins. Chloe's Keen Call makes it a guaranteed crit. Yunifi charges two Blade Dances to reach 100% crit, then Lex's Inspiration adds +50% crit damage to her Glacial Rain.
+  units:
+  - name: Hilda
+    class: Wyvern Master
+    row: front
+    equipment: [Silver Trident, Ruby Pendant, Sapphire Pendant, Heavenwyvern Reins]
+    tactics:
+    - {type: active, skill: Fire Breath, when: 'First action, armored'}
+    - {type: active, skill: Lightning Shaker, when: Front row}
+    - {type: active, skill: Lightning Shaker, when: Back row}
+    - {type: active, skill: Diving Thrust, when: Cavalry}
+    - {type: passive, skill: Ground Counter, when: Cavalry}
+    - {type: passive, skill: Deflect, when: None}
+  - name: Lex
+    class: Vanguard
+    row: front
+    equipment: [Wingcrest Blade, White Rider's Shield, Lapis Pendant, Gambler's Coin]
+    tactics:
+    - {type: active, skill: Defender, when: Lowest evasion}
+    - {type: passive, skill: Inspiration, when: Archer with 2 AP or less}
+    - {type: passive, skill: Provoke, when: Front row}
+    - {type: passive, skill: Provoke, when: Back row}
+    - {type: passive, skill: Arrow Cover, when: Flying ally}
+  - name: Primm
+    class: Bishop
+    row: back
+    equipment: [Lyrical Wand, Charm of Warding, Awakening Amulet]
+    tactics:
+    - {type: active, skill: Active Heal, when: 'First action, target Hilda'}
+    - {type: passive, skill: Quick Heal, when: Armored ally at 75% HP or less}
+  - name: Chloe
+    class: Sergeant
+    row: back
+    equipment: [Thorn Spear, Cloth Gauntlets, Ruby Pendant, Sapphire Pendant]
+    tactics:
+    - {type: active, skill: Javelin, when: Lowest HP flying enemy}
+    - {type: active, skill: Long Thrust, when: Full column}
+    - {type: active, skill: Long Thrust, when: None}
+    - {type: passive, skill: Active Gift, when: 'Target Hilda, once'}
+    - {type: passive, skill: Keen Call, when: Target Hilda}
+    - {type: passive, skill: First Aid, when: None}
+  - name: Yunifi
+    class: Snow Ranger
+    row: back
+    equipment: [Frostbloom Bow, Ruby Pendant, Lucky Coin, Dancer's Anklet]
+    tactics:
+    - {type: active, skill: Sonic Shaft, when: Highest initiative}
+    - {type: active, skill: Sonic Shaft, when: None}
+    - {type: active, skill: Glacial Rain, when: None}
+    - {type: passive, skill: Blade Dance, when: None}
+  start:
+    keep: null
+- title: Trinity Rain (TitaniumLegman)
+  about: The classic Trinity Rain combo, nearly the same as squad 1. Chloe's Keen Call replaces Celeste and guarantees the crit that Quick Cast takes away. Ramona's Limited Heal and Scarlett's healing cover the rare battle where the rain doesn't finish.
+  units:
+  - name: Alain
+    class: High Lord
+    row: front
+    equipment: [Holy Unicorn Blade, Holy Unicorn Shield, Ring of the Unicorn, Lapis Pendant]
+    tactics:
+    - {type: active, skill: Spinning Edge, when: Row with 2 or more enemies}
+    - {type: passive, skill: Luminous Cover, when: Back row}
+  - name: Chloe
+    class: Sergeant
+    row: front
+    equipment: [Thorn Spear, Cloth Gauntlets, Lapis Pendant, Royal Scarf]
+    tactics:
+    - {type: active, skill: Javelin, when: Flying}
+    - {type: passive, skill: Keen Call, when: Target Yahna}
+  - name: Yahna
+    class: Sorceress
+    row: back
+    equipment: [Millennium Scepter, Sorcerer's Medallion, Lapis Pendant, Carnelian Pendant]
+    tactics:
+    - {type: active, skill: Trinity Rain, when: None}
+    - {type: passive, skill: Quick Cast, when: Start of battle}
+  - name: Ramona
+    class: Wereowl
+    row: back
+    equipment: [Euros' Staff, White Cat-Ear Hood, Lapis Pendant, Holy Unicorn Signet]
+    tactics:
+    - {type: active, skill: Limited Heal, when: None}
+    - {type: passive, skill: Quick Impetus, when: Target Yahna}
+  - name: Scarlett
+    class: High Priestess
+    row: back
+    equipment: [Kingstaff Albiore, Familiar's Choker, Ring of the Maiden]
+    tactics:
+    - {type: passive, skill: Sorcerous Connection, when: Target Yahna}
+  start:
+    keep: {unit: Yahna, skill: Quick Cast}
+    'off':
+    - {unit: Alain, skill: Rapid Order}
+    - {unit: Scarlett, skill: Divine Blessing}
+    note: Turn off any barrier on Ramona that could use up the PP she needs for Quick Impetus.
+- title: Trinity Rain (89 Games)
+  about: Mordon holds the White Cat-Ear Hood and Sanatio holds the Familiar's Choker. After the rain, Rolf, Dinah and Mordon clean up anything left, and Sanatio heals.
+  units:
+  - name: Dinah
+    class: Werefox
+    row: front
+    equipment: [Silver Trident, Royal Scarf, Lapis Pendant, Carnelian Pendant]
+    tactics:
+    - {type: active, skill: Lightning Shaker, when: Row with 2 or more enemies}
+    - {type: active, skill: Venom Thrust, when: Full column}
+  - name: Mordon
+    class: Breaker
+    row: front
+    equipment: [Meteorite Axe, White Cat-Ear Hood, Blue Spectacles, Lapis Pendant]
+    tactics:
+    - {type: active, skill: Row Smash, when: Row with 2 or more enemies}
+    - {type: active, skill: Assaulting Blow, when: Lowest HP enemy}
+    - {type: passive, skill: Quick Impetus, when: Target Yahna}
+  - name: Yahna
+    class: Sorceress
+    row: back
+    equipment: [Millennium Scepter, Sorcerer's Medallion, Lapis Pendant, Carnelian Pendant]
+    tactics:
+    - {type: active, skill: Trinity Rain, when: None}
+    - {type: passive, skill: Quick Cast, when: Start of battle}
+  - name: Rolf
+    class: Sniper
+    row: back
+    equipment: [Sacral Bow, Elite Beret, Lapis Pendant]
+    tactics:
+    - {type: active, skill: Dual Shot, when: Lowest HP enemy}
+  - name: Sanatio
+    class: Featherstaff
+    row: back
+    equipment: [Papal Crosier, Familiar's Choker, Lapis Pendant]
+    tactics:
+    - {type: active, skill: Row heal, when: Anyone below 75% HP}
+    - {type: passive, skill: Sorcerous Connection, when: Target Yahna}
+  start:
+    keep: {unit: Yahna, skill: Quick Cast}
+- title: Alain Multi-Nuke (Varsona)
+  about: Yahna casts Trinity Rain twice. Scarlett's Lips's Ring gives Hastened Action so Yahna acts first, Ramona's Quick Impetus skips the charge, and the Magia Soul's Recast fires it again. Celeste hits the back row early as a second nuke. If the enemy has a Feathershield with Reflect Magic, point Hastened Action at Celeste instead so the physical nuke goes first.
+  units:
+  - name: Alain
+    class: High Lord
+    row: front
+    equipment: [Holy Unicorn Blade, Holy Unicorn Shield, Ring of the Unicorn, Lapis Pendant]
+    tactics:
+    - {type: active, skill: Spinning Edge, when: Row with 2 or more enemies}
+    - {type: passive, skill: Luminous Cover, when: Back row}
+    - {type: passive, skill: Noble Guard, when: Own HP below 50%}
+  - name: Celeste
+    class: Gryphon Master
+    row: front
+    equipment: [Boreas' Axe, Sniper's Amber Lens, Carnelian Pendant, Elite Beret]
+    tactics:
+    - {type: active, skill: Aerial Smite, when: Back row}
+    - {type: active, skill: High Swing, when: None}
+    - {type: passive, skill: True strike (Sniper's Amber Lens), when: None}
+  - name: Yahna
+    class: Sorceress
+    row: back
+    equipment: [Millennium Scepter, Magia Soul, Sorcerer's Medallion, Lapis Pendant]
+    tactics:
+    - {type: active, skill: Trinity Rain, when: None}
+    - {type: passive, skill: Recast, when: None}
+  - name: Scarlett
+    class: High Priestess
+    row: back
+    equipment: [Kingstaff Albiore, Lips's Ring, Ring of the Maiden]
+    tactics:
+    - {type: passive, skill: Hastened Action, when: Target Yahna}
+  - name: Ramona
+    class: Wereowl
+    row: back
+    equipment: [Euros' Staff, White Cat-Ear Hood, Lapis Pendant, Holy Unicorn Signet]
+    tactics:
+    - {type: passive, skill: Quick Impetus, when: Target Yahna}
+  start:
+    keep: {unit: Scarlett, skill: Hastened Action}
+    'off':
+    - {unit: Alain, skill: Rapid Order}
+    - {unit: Yahna, skill: Quick Cast}
+- title: Glacial Rain (89 Games)
+  about: Yunifi's plumes push her initiative to about 60, Travis's Black Cat-Ear Hood skips the charge, and Govil's Inspiration adds +30% attack and +50% crit damage. Berengaria, Govil and Gloucester punish the frozen, blinded enemies afterward.
+  units:
+  - name: Berengaria
+    class: Dark Marquess
+    row: front
+    equipment: [Kingsaxe Drakenash, Mirage Greatshield, Hero's Medallion, Lapis Pendant]
+    tactics:
+    - {type: active, skill: Death Spin, when: Row with 2 or more enemies}
+    - {type: active, skill: Vicious Torment, when: Afflicted}
+    - {type: passive, skill: Eye of the Warrior Princess, when: Start of battle}
+    - {type: passive, skill: Sanguine Pursuit, when: Afflicted only}
+  - name: Gloucester
+    class: Doom Knight
+    row: front
+    equipment: [Spellsteel Axe, Wingcrest Shield, Amethyst Pendant, Lapis Pendant]
+    tactics:
+    - {type: active, skill: Dark Flame, when: Row with 2 or more enemies}
+    - {type: active, skill: Vengeful Axe, when: None}
+  - name: Yunifi
+    class: Snow Ranger
+    row: back
+    equipment: [Kingsbow Bastorik, Angel Plume, Raven Plume, Lucky Coin]
+    tactics:
+    - {type: active, skill: Glacial Rain, when: None}
+    - {type: passive, skill: Eagle Eye, when: None}
+  - name: Travis
+    class: Rogue
+    row: back
+    equipment: [Cutthroat's Boon, Black Cat-Ear Hood, Lapis Pendant, Royal Scarf]
+    tactics:
+    - {type: active, skill: Shadow Bite, when: Row with 2 or more enemies}
+    - {type: passive, skill: Quick Impetus, when: Target Yunifi}
+  - name: Govil
+    class: Werewolf
+    row: back
+    equipment: [Starting weapon, Gambler's Coin, Carnelian Pendant, Lapis Pendant]
+    tactics:
+    - {type: active, skill: Wild Fang, when: Row with 2 or more enemies}
+    - {type: passive, skill: Inspiration, when: Target Yunifi}
+  start:
+    keep: {unit: Berengaria, skill: Eye of the Warrior Princess}
+    'off':
+    - {unit: Travis, skill: Sneaking Edge}
+  notes: Give Yunifi blindness immunity (Watchman's Lantern in place of a plume) against Featherbows.
+- title: Glacial Rain with Conferral (Iced Coffee Gaming)
+  about: The same combo with a conferral on top. Yahna's Flamebrand Tome adds magic damage and burn to all three hits, so enemies end up frozen and burning. Virginia tanks instead of an armored unit, since end-game enemies punish armor.
+  units:
+  - name: Virginia
+    class: Valkyria
+    row: front
+    equipment: [Hallowed Blade, Blue Rose Shield, Azure Crest Shield, Vengeful Caligae]
+    tactics:
+    - {type: active, skill: Brandish, when: None}
+    - {type: passive, skill: Royal Guard, when: Ally below 50% HP}
+  - name: Bryce
+    class: Legionnaire
+    row: front
+    equipment: [Meteorite Lance, Drakestone Iceshield, Knight's Medallion, Detoxifying Amulet]
+    tactics:
+    - {type: passive, skill: Heavy Cover, when: Lowest HP ally}
+  - name: Yunifi
+    class: Snow Ranger
+    row: back
+    equipment: [Kingsbow Bastorik, Angel Plume, Ancient Crown, Watchman's Lantern]
+    tactics:
+    - {type: active, skill: Glacial Rain, when: None}
+    - {type: active, skill: Mystic Arrow, when: Armored}
+    - {type: passive, skill: Eagle Eye, when: None}
+  - name: Ramona
+    class: Wereowl
+    row: back
+    equipment: [Euros' Staff, Black Cat-Ear Hood, Lapis Pendant, Holy Unicorn Signet]
+    tactics:
+    - {type: passive, skill: Quick Impetus, when: Target Yunifi}
+  - name: Yahna
+    class: Sorceress
+    row: back
+    equipment: [Meteorite Rod, Flamebrand Tome, Sorcerer's Medallion, Lapis Pendant]
+    tactics:
+    - {type: active, skill: Ice Coffin, when: Lowest HP enemy}
+    - {type: passive, skill: Flame Conferral, when: Target Yunifi}
+  start:
+    keep: null
+    note: Turn off Virginia's Iron Veil if you want Yahna's conferral to be the only thing on the opener.
+  notes: 'Thunderous Conferral (stun) is a good alternative: enemies stay stunned after the ice breaks. Ice Conferral is wasted, since the rain already freezes.'
+- title: Yunifi Triple Counter Dodge (Varsona)
+  about: Yunifi in the front as an evasion tank. Every attack that targets her gets Triple Counter (three enemies hit), and Snow-White Strike follows up allies. Selvie and Raenys keep the enemy blinded so true strikes can't touch her, and Selvie's Lapis Bell gives Yunifi a PP back every time she uses a passive.
+  units:
+  - name: Yunifi
+    class: Snow Ranger
+    row: front
+    equipment: [Sacral Bow, Royal Scarf, Lucky Coin, Sapphire Pendant]
+    tactics:
+    - {type: active, skill: Mystic Arrow, when: Armored}
+    - {type: active, skill: Sonic Shaft, when: None}
+    - {type: passive, skill: Triple Counter, when: None}
+    - {type: passive, skill: Snow-White Strike, when: None}
+  - name: Nigel
+    class: Dark Marquess
+    row: front
+    equipment: [Sacral Sword, Heaven Mirror Greatshield, Lapis Pendant, Carnelian Pendant]
+    tactics:
+    - {type: active, skill: Burning Edge, when: Burning}
+    - {type: passive, skill: Cover, when: Target Yunifi}
+    - {type: passive, skill: Phantom Counter, when: None}
+    - {type: passive, skill: Parting Death, when: Lowest HP enemy}
+  - name: Dinah
+    class: Werefox
+    row: front
+    equipment: [Corroded Spear, Veteran's Eyepatch, Lapis Pendant, Sapphire Pendant]
+    tactics:
+    - {type: active, skill: Shadow Thrust, when: Full column}
+    - {type: passive, skill: Weakness Hunter, when: None}
+    - {type: passive, skill: Shadow Pursuit, when: Not blinded}
+  - name: Raenys
+    class: Featherbow
+    row: back
+    equipment: [Apeliotes' Bow, Soothing Plume, Lapis Pendant, Carnelian Pendant]
+    tactics:
+    - {type: active, skill: Photon Arrow, when: None}
+    - {type: active, skill: Healing Wind, when: Anyone below 75% HP}
+    - {type: passive, skill: Shining Light, when: Not blinded}
+  - name: Selvie
+    class: Druid
+    row: back
+    equipment: [Dustbound Staff, Onyx Pendant, Lapis Bell, Dove Plume]
+    tactics:
+    - {type: active, skill: Sandstorm, when: None}
+    - {type: passive, skill: Cursed Swamp, when: Start of battle}
+    - {type: passive, skill: Passive Gift, when: Target Yunifi}
+  start:
+    keep: {unit: Selvie, skill: Cursed Swamp}
+- title: Yunifi Crit (Varsona)
+  about: Glacial Rain with stacked crit damage. Ramona's Dirty Gambler's Coin gives the row +30% attack and +50% crit damage, Eltolinde's Boon of the Faeries blocks the coin's accuracy penalty, and a Swordmaster with the Dancer's Delight loops Leaping Slash into a nine-hit Meteor Slash.
+  units:
+  - name: Hodrick
+    class: Legionnaire
+    row: front
+    equipment: [Zenoiran Knight's Spear, Hero's Greatshield, Knight's Medallion, Salamander Ring]
+    tactics:
+    - {type: passive, skill: Heavy Cover, when: Lowest HP ally}
+  - name: Melisandre
+    class: Swordmaster
+    row: front
+    equipment: [Dancer's Delight, Warrior's Medallion, Veteran's Eyepatch, Carnelian Pendant]
+    tactics:
+    - {type: active, skill: Keen Edge, when: Scouts present}
+    - {type: active, skill: Meteor Slash, when: Own AP 4 or more}
+    - {type: active, skill: Leaping Slash, when: None}
+    - {type: passive, skill: Charge Impetus, when: None}
+  - name: Yunifi
+    class: Snow Ranger
+    row: back
+    equipment: [Kingsbow Bastorik, Watchman's Lantern, Warrior's Medallion, Angel Plume]
+    tactics:
+    - {type: active, skill: Glacial Rain, when: None}
+    - {type: passive, skill: Eagle Eye, when: None}
+  - name: Eltolinde
+    class: Elven Sibyl
+    row: back
+    equipment: [Twinned Bough, Ruby Pendant, Holy Broach, Sage's Hood]
+    tactics:
+    - {type: active, skill: Elemental Roar, when: Armored present}
+    - {type: passive, skill: Boon of the Faeries, when: Start of battle}
+  - name: Ramona
+    class: Wereowl
+    row: back
+    equipment: [Euros' Staff, Dirty Gambler's Coin, Lapis Pendant, Sapphire Pendant]
+    tactics:
+    - {type: active, skill: Night Vision, when: Own row}
+    - {type: passive, skill: Wide Inspiration, when: Own row}
+    - {type: passive, skill: Quick Dispel, when: Buffed enemy}
+  start:
+    keep: {unit: Eltolinde, skill: Boon of the Faeries}
+    'off':
+    - {unit: Melisandre, skill: Hastened Strike}
+- title: Super Tax Brothers (TitaniumLegman)
+  about: A Legionnaire who soaks every physical attack, and three Landsknechts who counter every hit he takes with Following Slash. Following Slash isn't Limited, so all three fire each time, and they regain PP when they hit. The Golden Eggs and Bandit Longsword stack, so this squad makes a lot of gold. Following Slash can't hit the back row; once the front falls, Killing Chain and Heavy Slash finish the back.
+  units:
+  - name: Hodrick
+    class: Legionnaire
+    row: front
+    equipment: [Black Iron Spear, Dragonbone Greatshield, Salamander Ring, Detoxifying Amulet]
+    tactics:
+    - {type: active, skill: Great Shield, when: None}
+    - {type: passive, skill: Heavy Cover, when: Lowest HP ally}
+    - {type: passive, skill: Guardian, when: None}
+  - name: Magellan
+    class: Landsknecht
+    row: front
+    equipment: [Dragonbone Blade, Manalith Buckler, Blue Spectacles, Golden Egg]
+    tactics:
+    - {type: active, skill: Magic Wall, when: First action}
+    - {type: active, skill: Killing Chain, when: Lowest HP enemy}
+    - {type: active, skill: Heavy Slash, when: None}
+    - {type: passive, skill: Following Slash, when: None}
+  - name: Berenice
+    class: Landsknecht
+    row: back
+    equipment: [Dragonbone Blade, Twin Dragon Shield, Blue Spectacles, Golden Egg]
+    tactics:
+    - {type: active, skill: Killing Chain, when: Lowest HP enemy}
+    - {type: active, skill: Heavy Slash, when: None}
+    - {type: passive, skill: Following Slash, when: None}
+  - name: Jeremy
+    class: Landsknecht
+    row: back
+    equipment: [Bandit Longsword, Golden Ram Shield, Blue Spectacles, Golden Egg]
+    tactics:
+    - {type: active, skill: Killing Chain, when: Lowest HP enemy}
+    - {type: active, skill: Heavy Slash, when: None}
+    - {type: passive, skill: Following Slash, when: None}
+  - name: Sharon
+    class: Bishop
+    row: back
+    equipment: [Cleric's Cane, Awakening Amulet, Gold Circlet]
+    tactics:
+    - {type: active, skill: Row heal, when: Anyone below 75% HP}
+  start:
+    keep: null
+  notes: The source ran four units. Sharon is an optional fifth for healing; the Salamander Ring and Detoxifying Amulet already keep Hodrick safe from burn and poison.
+- title: Bruno Burn Squad (TitaniumLegman)
+  about: Every unit inflicts burn. Selvie burns a row, Yahna's Flamebrand Tome lights Bruno's Wide Smash on fire, Berenice follows up, and Yahna's Fire Burst detonates a burning enemy to hit the whole enemy side.
+  units:
+  - name: Bruno
+    class: Berserker
+    row: front
+    equipment: [Kingsaxe Drakenash, Leaf Broach, Carnelian Pendant, Lapis Pendant]
+    tactics:
+    - {type: active, skill: Wide Smash, when: None}
+    - {type: passive, skill: Bulk Up, when: Own HP below 75%}
+  - name: Berenice
+    class: Landsknecht
+    row: front
+    equipment: [Searing Rapier, Blessed Round Shield, Retaliation Earrings, Warrior's Medallion]
+    tactics:
+    - {type: active, skill: Bastard's Cross, when: Highest HP enemy}
+    - {type: passive, skill: Following Slash, when: None}
+  - name: Yahna
+    class: Sorceress
+    row: back
+    equipment: [Chlorotic Wand, Sorcerer's Medallion, Lapis Pendant, Flamebrand Tome]
+    tactics:
+    - {type: active, skill: Ice Bolt, when: Armored}
+    - {type: active, skill: Focus Sight, when: 'Target Bruno, scouts or flying present'}
+    - {type: active, skill: Magic Missile, when: None}
+    - {type: passive, skill: Flame Conferral, when: Front row}
+    - {type: passive, skill: Fire Burst, when: Burning}
+  - name: Selvie
+    class: Druid
+    row: back
+    equipment: [Flame-Hex Staff, Acrobat's Shoes, Lapis Pendant, Vitality Talisman]
+    tactics:
+    - {type: active, skill: Offensive Curse, when: 'Row with most enemies, own AP 3 or more'}
+    - {type: active, skill: Fire Curse, when: Not burning}
+    - {type: passive, skill: Impetus Stance, when: Start of battle}
+    - {type: passive, skill: Quick Curse, when: None}
+  - name: Tatiana
+    class: Bishop
+    row: back
+    equipment: [Phosphorescent Staff, Barbed Ribbon, Awakening Amulet]
+    tactics:
+    - {type: active, skill: Row heal, when: Anyone below 75% HP}
+    - {type: passive, skill: Refresh, when: Stunned ally}
+  start:
+    keep: {unit: Selvie, skill: Impetus Stance, via: Acrobat's Shoes}
+  notes: The source ran four units and suggested a Cleric to clear stun on Bruno. Tatiana fills that slot.
+- title: Bruno and the Braves (TitaniumLegman)
+  about: 'Bruno with a King''s weapon, both crowns and the Hero''s Medallion, built up over the battle and then unleashing Grand Smash on everyone. Bruno: Grand Smash, further down, is a version of this.'
+  units:
+  - name: Bruno
+    class: Berserker
+    row: front
+    equipment: [Kingsaxe Drakenash, Ancient Crown, Dream Crown, Hero's Medallion]
+    tactics:
+    - {type: active, skill: Mounting Charge, when: First action}
+    - {type: active, skill: Grand Smash, when: None}
+    - {type: active, skill: Wide Smash, when: None}
+    - {type: passive, skill: Berserk, when: Own PP low}
+    - {type: passive, skill: Bulk Up, when: None}
+  - name: Fodoquia
+    class: Feathershield
+    row: front
+    equipment: [Zenoiran Knight's Sword, Gran Baris, Knight's Medallion, Cloth Gauntlets]
+    tactics:
+    - {type: active, skill: Row Resistance, when: 'First action, casters present'}
+    - {type: active, skill: Mystic Shield, when: Own AP 2 or more}
+    - {type: active, skill: Impulse, when: None}
+    - {type: passive, skill: Reflect Magic, when: None}
+    - {type: passive, skill: Sacrifice, when: Own HP 50% or more}
+  - name: Gammel
+    class: Rogue
+    row: back
+    equipment: [Sylph's Bane, Dancer's Bracelet, Large Aid Kit, Sapphire Pendant]
+    tactics:
+    - {type: active, skill: Sonic Blast, when: Flying}
+    - {type: active, skill: Passive Steal, when: None}
+    - {type: passive, skill: Party Aid, when: None}
+    - {type: passive, skill: Powerful Call, when: 'Target Bruno, own PP 3 or more'}
+    - {type: passive, skill: Evade, when: None}
+  - name: Selvie
+    class: Druid
+    row: back
+    equipment: [Flame-Hex Staff, Carnelian Pendant, Sapphire Pendant, Lamplight Ring]
+    tactics:
+    - {type: active, skill: Glowing Light, when: None}
+    - {type: active, skill: Fire Curse, when: None}
+    - {type: active, skill: Offensive Curse, when: None}
+    - {type: passive, skill: Cursed Swamp, when: Start of battle}
+    - {type: passive, skill: Quick Curse, when: None}
+  - name: Railanor
+    class: Elven Fencer
+    row: back
+    equipment: [Spellsteel Sword, Flamebrand Tome, Carnelian Pendant, Lapis Pendant]
+    tactics:
+    - {type: active, skill: Mirage Stab, when: Row with 2 or more enemies}
+    - {type: active, skill: Nature's Wrath, when: Full column}
+    - {type: active, skill: Lightning Blade, when: None}
+    - {type: passive, skill: Flame Conferral, when: Target Bruno}
+    - {type: passive, skill: Evade, when: None}
+  start:
+    keep: {unit: Selvie, skill: Cursed Swamp}
+- title: Doom Knight Cavalry (TitaniumLegman's Ajax Squad)
+  about: The source of squad 8, as originally built. Gloucester's Dark Flame hits a row with both physical and magic damage, so balance his physical and magic attack. Raenys blinds whole rows with Shining Light so the cavalry rarely gets hit.
+  units:
+  - name: Renault
+    class: Great Knight
+    row: front
+    equipment: [Zephyros' Spear, Angel Hunter's Buckler, Citadel Guard's Sabatons, Carnelian Pendant]
+    tactics:
+    - {type: active, skill: Wild Rush, when: Full column}
+    - {type: active, skill: Assaulting Lance, when: Lowest HP enemy}
+    - {type: active, skill: Pile Thrust, when: None}
+    - {type: passive, skill: Cavalier Call, when: None}
+    - {type: passive, skill: Knight's Pursuit, when: None}
+    - {type: passive, skill: Guarding Impetus, when: None}
+  - name: Gloucester
+    class: Doom Knight
+    row: front
+    equipment: [Spellsteel Axe, Wingcrest Shield, Amethyst Pendant, Dream Crown]
+    tactics:
+    - {type: active, skill: Dark Flame, when: Row with 2 or more enemies}
+    - {type: active, skill: Dark Flame, when: Armored}
+    - {type: active, skill: Vengeful Axe, when: None}
+    - {type: passive, skill: Demonic Pact, when: None}
+    - {type: passive, skill: Sanguine Arts, when: None}
+    - {type: passive, skill: Vengeance, when: None}
+  - name: Clive
+    class: Great Knight
+    row: front
+    equipment: [General's Pike, Angel Hunter's Buckler, Citadel Guard's Sabatons, Carnelian Pendant]
+    tactics:
+    - {type: active, skill: Wild Rush, when: Full column}
+    - {type: active, skill: Assaulting Lance, when: Lowest HP enemy}
+    - {type: active, skill: Pile Thrust, when: None}
+    - {type: passive, skill: Cavalier Call, when: None}
+    - {type: passive, skill: Knight's Pursuit, when: None}
+    - {type: passive, skill: Guarding Impetus, when: None}
+  - name: Eltolinde
+    class: Elven Sibyl
+    row: back
+    equipment: [Twinned Bough, Ruby Pendant, Holy Broach, Sage's Hood]
+    tactics:
+    - {type: active, skill: Elemental Roar, when: None}
+    - {type: active, skill: Thunderous Thrust, when: Lowest HP enemy}
+    - {type: passive, skill: Boon of the Faeries, when: Start of battle}
+    - {type: passive, skill: Elemental Impetus, when: None}
+    - {type: passive, skill: Curing Heal, when: Anyone below 50% HP}
+  - name: Raenys
+    class: Featherbow
+    row: back
+    equipment: [Kingsbow Bastorik, Retaliation Earrings, Earrings of Pursuit, Lapis Pendant]
+    tactics:
+    - {type: active, skill: Photon Arrow, when: None}
+    - {type: passive, skill: Shining Light, when: Own row attacked}
+    - {type: passive, skill: Aerial Pursuit, when: None}
+  start:
+    keep: {unit: Eltolinde, skill: Boon of the Faeries}
+- title: Freezer Burn (TitaniumLegman)
+  about: Selvie blinds the whole enemy side with Sandstorm before anyone acts. When Gloucester's Dark Flame swings, Yahna's Frostbrand Tome adds freeze, so the enemy front row is burning and frozen at once. Tatiana's Limited Heal lets Gloucester take hits to fuel Vengeance.
+  units:
+  - name: Gloucester
+    class: Doom Knight
+    row: front
+    equipment: [Golden Ram Axe, Templar's Shield, Lapis Pendant, Carnelian Pendant]
+    tactics:
+    - {type: active, skill: Dark Flame, when: Row with 2 or more enemies}
+    - {type: active, skill: Vengeful Axe, when: None}
+    - {type: passive, skill: Sanguine Arts, when: Own HP below 50%}
+    - {type: passive, skill: Vengeance, when: None}
+  - name: Hodrick
+    class: Legionnaire
+    row: front
+    equipment: [Zenoiran Knight's Spear, Hero's Greatshield, Knight's Medallion, Salamander Ring]
+    tactics:
+    - {type: passive, skill: Heavy Cover, when: Back row}
+  - name: Selvie
+    class: Druid
+    row: back
+    equipment: [Dustbound Staff, Dove Plume, Lapis Pendant, Carnelian Pendant]
+    tactics:
+    - {type: active, skill: Sandstorm, when: None}
+    - {type: passive, skill: Quick Curse, when: Not blinded}
+  - name: Tatiana
+    class: Bishop
+    row: back
+    equipment: [Phosphorescent Staff, Mercenary's Eyepatch, Awakening Amulet]
+    tactics:
+    - {type: active, skill: Limited Heal, when: None}
+    - {type: passive, skill: Lifesaver, when: None}
+    - {type: passive, skill: Refresh, when: Debuffed ally}
+    - {type: passive, skill: Quick Heal, when: None}
+  - name: Yahna
+    class: Sorceress
+    row: back
+    equipment: [Meteorite Rod, Frostbrand Tome, Sorcerer's Medallion, Lapis Pendant]
+    tactics:
+    - {type: active, skill: Magic Missile, when: None}
+    - {type: passive, skill: Ice Conferral, when: Target Gloucester}
+  start:
+    keep: null
+  notes: The source ran four units. Hodrick is an optional fifth, since Doom Knights can't sustain themselves well without a tank.
+- title: Affliction Angels (TitaniumLegman)
+  about: The earlier version of squad 4. Berengaria stuns rows with Death Spin while Travis poisons and Railanor stuns, so her bonus damage against afflicted enemies is always on. Virginia breaks armor and flyers.
+  units:
+  - name: Virginia
+    class: Valkyria
+    row: front
+    equipment: [Hallowed Blade, Blue Rose Shield, Phantom Knight's Shield, Retaliation Earrings]
+    tactics:
+    - {type: active, skill: Vertical Edge, when: Flying}
+    - {type: active, skill: Iron Crusher, when: Armored}
+    - {type: passive, skill: Maiden's Hammer, when: None}
+  - name: Berengaria
+    class: Dark Marquess
+    row: front
+    equipment: [Labrys Axe, Dragonbone Greatshield, Cloth Gauntlets, Clearsight Amulet]
+    tactics:
+    - {type: active, skill: Death Spin, when: Row with 2 or more enemies}
+    - {type: active, skill: Vicious Torment, when: Afflicted}
+    - {type: passive, skill: Eye of the Warrior Princess, when: Start of battle}
+    - {type: passive, skill: Sanguine Pursuit, when: Afflicted only}
+  - name: Travis
+    class: Rogue
+    row: back
+    equipment: [Rose Knight Sword, First Aid Kit, Lapis Pendant, Royal Scarf]
+    tactics:
+    - {type: active, skill: Toxic Throw, when: Not poisoned}
+    - {type: passive, skill: First Aid, when: Lowest HP ally}
+    - {type: passive, skill: Evade, when: None}
+  - name: Railanor
+    class: Elven Fencer
+    row: back
+    equipment: [Spellsteel Sword, Leaf Broach, Silk Hood, Lapis Pendant]
+    tactics:
+    - {type: active, skill: Lightning Blade, when: None}
+    - {type: passive, skill: Remove Weakness, when: Debuffed ally}
+    - {type: passive, skill: Sylphic Barrier, when: None}
+  - name: Monica
+    class: Sainted Knight
+    row: back
+    equipment: [Dragonbone Blade, Dragonbone Shield, Monk's Mitre, Sage's Hood]
+    tactics:
+    - {type: active, skill: Row Heal, when: Anyone below 75% HP}
+    - {type: passive, skill: Row Barrier, when: Magic attacks}
+  start:
+    keep: {unit: Berengaria, skill: Eye of the Warrior Princess}
+    'off':
+    - {unit: Virginia, skill: Iron Veil}
+    - {unit: Travis, skill: Sneaking Edge}
+  notes: The source ran four units with no healer. Monica is an optional fifth.
+- title: Rosalinde Counter Squad (Varsona)
+  about: Rosalinde's Elemental Roar with Ice Conferral, and a counter wall around Virginia. Anyone who hits Virginia gets Following Slash from Berenice and a blinding, poisoning magic counter (Vanitas) from Railanor's Necromancer's Lantern. Squad 5 is a version that leaves Virginia in squad 4.
+  units:
+  - name: Virginia
+    class: Valkyria
+    row: front
+    equipment: [Hallowed Blade, Blue Rose Shield, Nameless Guard's Shield, Retaliation Earrings]
+    tactics:
+    - {type: active, skill: Brandish, when: None}
+    - {type: passive, skill: Radiant Cover, when: Lowest HP ally}
+    - {type: passive, skill: Maiden's Hammer, when: None}
+  - name: Railanor
+    class: Elven Fencer
+    row: front
+    equipment: [Spellsteel Sword, Necromancer's Lantern, Lapis Pendant, Sapphire Pendant]
+    tactics:
+    - {type: passive, skill: Vanitas, when: None}
+    - {type: passive, skill: Remove Weakness, when: Debuffed ally}
+  - name: Rosalinde
+    class: Elven Augur
+    row: back
+    equipment: [Kingslance Elhal, Ruby Pendant, Sage's Hood, Sorcerer's Medallion]
+    tactics:
+    - {type: active, skill: Elemental Roar, when: None}
+    - {type: passive, skill: Rage of the Faeries, when: Start of battle}
+    - {type: passive, skill: Elemental Impetus, when: None}
+  - name: Berenice
+    class: Landsknecht
+    row: back
+    equipment: [Dragonbone Blade, Golden Ram Shield, Clearsight Amulet, Blue Spectacles]
+    tactics:
+    - {type: passive, skill: Following Slash, when: None}
+    - {type: passive, skill: Clearsight (cure blind), when: Blinded ally}
+  - name: Auch
+    class: Warlock
+    row: back
+    equipment: [Meteorite Rod, Frostbrand Tome, Sorcerer's Medallion, Lapis Pendant]
+    tactics:
+    - {type: active, skill: Magic attack, when: Lowest HP enemy}
+    - {type: passive, skill: Ice Conferral, when: Target Rosalinde}
+  start:
+    keep: {unit: Rosalinde, skill: Rage of the Faeries}
+    'off':
+    - {unit: Virginia, skill: Iron Veil}
+- title: 'Amalia and Berenice: Elite Standard (Varsona)'
+  about: A two-unit squad. Berenice's Elite Standard gives United Front at the start of battle, which scales with how many more units the enemy has. Against a five-unit squad (three more), each of them negates up to five hits, so the enemy wastes ten attacks while Berenice's Following Slash and Amalia's hits tear them apart. United Front also blocks afflictions, as long as it fires first. Weak to magic.
+  units:
+  - name: Amalia
+    class: Dreadnought
+    row: front
+    equipment: [Hunter's Claymore, Black Iron Greatshield, Outlaw's Bracelet, Sapphire Pendant]
+    tactics:
+    - {type: active, skill: Omega Shatter, when: Row with 2 or more enemies}
+    - {type: active, skill: Penetrate, when: Full column}
+    - {type: active, skill: Heavy Slash, when: None}
+    - {type: passive, skill: Wide Pursuit, when: Own PP 3 or more}
+    - {type: passive, skill: Hawk Eye, when: None}
+    - {type: passive, skill: Wild Kick, when: None}
+  - name: Berenice
+    class: Landsknecht
+    row: front
+    equipment: [Hailstorm Edge, Golden Ram Shield, Elite Standard, Barbed Ribbon]
+    tactics:
+    - {type: active, skill: Killing Chain, when: Lowest HP enemy}
+    - {type: active, skill: Heavy Slash, when: None}
+    - {type: passive, skill: United Front, when: Start of battle}
+    - {type: passive, skill: Following Slash, when: None}
+  start:
+    keep: {unit: Berenice, skill: United Front, via: Elite Standard}
+    note: Amalia's Provoking Wall is off.
+  notes: Give Berenice stun and freeze immunity (Hailstorm Edge covers freeze; the Barbed Ribbon covers stun). If she's disabled before her turn, United Front never fires.
+- title: Berengaria and the Doom Knight (Varsona)
+  about: Three axes. Berengaria's Eye of the Warrior Princess and Aubin's defense shred both count as debuffs, which add +50 potency to Gloucester's Dark Flame. Gloucester's Nameless Guard's Shield covers Berengaria and gives her a true-strike Death Spin. Primm's Lyrical Wand adds actions, and both Primm and Lhinalagos clear debuffs.
+  units:
+  - name: Berengaria
+    class: Dark Marquess
+    row: front
+    equipment: [Kingsaxe Drakenash, Mirage Greatshield, Hero's Medallion, Lapis Pendant]
+    tactics:
+    - {type: active, skill: Death Spin, when: Row with 2 or more enemies}
+    - {type: active, skill: Vicious Torment, when: Afflicted}
+    - {type: passive, skill: Eye of the Warrior Princess, when: Start of battle}
+    - {type: passive, skill: Painbringer, when: None}
+  - name: Gloucester
+    class: Doom Knight
+    row: front
+    equipment: [Spellsteel Axe, Nameless Guard's Shield, Amethyst Pendant, Carnelian Pendant]
+    tactics:
+    - {type: active, skill: Dark Flame, when: Row with 2 or more enemies}
+    - {type: passive, skill: Radiant Cover, when: Target Berengaria}
+    - {type: passive, skill: Demonic Pact, when: None}
+  - name: Aubin
+    class: Viking
+    row: front
+    equipment: [Meteorite Axe, Salamander Ring, Carnelian Pendant, Lapis Pendant]
+    tactics:
+    - {type: active, skill: Row attack (defense shred), when: Row with 2 or more enemies}
+    - {type: passive, skill: Frenzy Slash, when: None}
+  - name: Lhinalagos
+    class: Elven Archer
+    row: back
+    equipment: [Sacral Bow, Clearsight Amulet, Lapis Pendant, Sage's Hood]
+    tactics:
+    - {type: active, skill: Icicle Arrow, when: Flying}
+    - {type: passive, skill: Quick Cure, when: Debuffed ally}
+  - name: Primm
+    class: Bishop
+    row: back
+    equipment: [Lyrical Wand, Barbed Ribbon, Awakening Amulet]
+    tactics:
+    - {type: active, skill: Lyrical Wand AP skill, when: Target Gloucester}
+    - {type: passive, skill: Refresh, when: Afflicted ally}
+  start:
+    keep: {unit: Berengaria, skill: Eye of the Warrior Princess}
+    note: Against heavy blockers, swap Eye of the Warrior Princess for Aubin's War Horn (makes attacks unguardable).
+- title: Alain and Berengaria All-Rounder (TitaniumLegman)
+  about: Two of the strongest units together with full support. Alain covers the back row while Berengaria stuns rows and drains HP. Monica keeps them healed and blocks magic, and Hilda's Dragoon Dive finishes anything left.
+  units:
+  - name: Alain
+    class: High Lord
+    row: front
+    equipment: [Holy Unicorn Blade, Spellsteel Shield, Ring of the Unicorn, Lapis Pendant]
+    tactics:
+    - {type: active, skill: Spinning Edge, when: Row with 2 or more enemies}
+    - {type: active, skill: Cavalry Slayer, when: Cavalry}
+    - {type: active, skill: Lean Edge, when: 'Lowest HP enemy, own HP below 50%'}
+    - {type: active, skill: Lean Edge, when: None}
+    - {type: passive, skill: Luminous Cover, when: Back row}
+    - {type: passive, skill: Noble Guard, when: None}
+  - name: Berengaria
+    class: Dark Marquess
+    row: front
+    equipment: [Knot of Ruin, Azure Crest Greatshield, Ring of the Maiden, Holy Unicorn Signet]
+    tactics:
+    - {type: active, skill: Death Spin, when: Row with 2 or more enemies}
+    - {type: active, skill: Vicious Torment, when: Afflicted}
+    - {type: active, skill: Carnage, when: None}
+    - {type: passive, skill: Eye of the Warrior Princess, when: Start of battle}
+    - {type: passive, skill: Painbringer, when: None}
+    - {type: passive, skill: Sanguine Pursuit, when: None}
+  - name: Travis
+    class: Rogue
+    row: back
+    equipment: [Sacral Sword, First Aid Kit, Ruby Pendant, Lapis Pendant]
+    tactics:
+    - {type: active, skill: Passive Steal, when: Own AP 4 or more}
+    - {type: active, skill: Toxic Throw, when: Back row}
+    - {type: passive, skill: First Aid, when: Lowest HP ally}
+    - {type: passive, skill: Evade, when: None}
+  - name: Monica
+    class: Sainted Knight
+    row: back
+    equipment: [Dragonbone Blade, Templar's Shield, Lapis Pendant, Sage's Hood]
+    tactics:
+    - {type: active, skill: Saint's Blade, when: Own AP 2 or more}
+    - {type: active, skill: Row Heal, when: Row with lowest HP}
+    - {type: passive, skill: Row Barrier, when: Magic attacks}
+    - {type: passive, skill: Holy Guard, when: None}
+    - {type: passive, skill: Magic Barrier, when: Magic attacks}
+  - name: Hilda
+    class: Wyvern Master
+    row: back
+    equipment: [Dragoon's Warspear, Pursuant's Bracelet, Carnelian Pendant, Elite Beret]
+    tactics:
+    - {type: active, skill: Dragoon Dive, when: None}
+    - {type: active, skill: Diving Thrust, when: Cavalry}
+    - {type: passive, skill: Pursuit, when: None}
+    - {type: passive, skill: Ground Counter, when: None}
+  start:
+    keep: {unit: Berengaria, skill: Eye of the Warrior Princess}
+    'off':
+    - {unit: Alain, skill: Rapid Order}
+    note: The source married Berengaria; give the Ring of the Maiden to whoever you married.
+- title: Josette Werefox Dodge Team (TitaniumLegman)
+  about: An evasion strike team led by a flyer. Dinah blinds full columns, Fran smashes the back row with Aerial Smite, and Lex and Ridiel cover and heal. Almost nothing hits them that isn't a true strike.
+  units:
+  - name: Dinah
+    class: Werefox
+    row: front
+    equipment: [Corroded Spear, Amethyst Pendant, Mistletoe Charm, Royal Scarf]
+    tactics:
+    - {type: active, skill: Shadow Thrust, when: 'Full column, highest initiative'}
+    - {type: active, skill: Shadow Thrust, when: None}
+    - {type: passive, skill: Weakness Hunter, when: None}
+    - {type: passive, skill: Shadow Pursuit, when: None}
+    - {type: passive, skill: Nocturnal Evade, when: None}
+  - name: Fran
+    class: Gryphon Master
+    row: front
+    equipment: [Vorpal Axe, Elite Beret, Sapphire Pendant, Carnelian Pendant]
+    tactics:
+    - {type: active, skill: Aerial Smite, when: Back row}
+    - {type: active, skill: High Swing, when: None}
+    - {type: passive, skill: Gryphon Glide, when: None}
+    - {type: passive, skill: Wing Rest, when: None}
+  - name: Ithilion
+    class: Elven Fencer
+    row: back
+    equipment: [Spellsteel Sword, Raven Plume, Royal Scarf, Lapis Pendant]
+    tactics:
+    - {type: active, skill: Mirage Stab, when: Row with 2 or more enemies}
+    - {type: active, skill: Lightning Blade, when: Highest HP enemy}
+    - {type: passive, skill: Evasive Impetus, when: None}
+    - {type: passive, skill: Remove Weakness, when: Debuffed ally}
+    - {type: passive, skill: Sylphic Barrier, when: None}
+  - name: Lex
+    class: Vanguard
+    row: back
+    equipment: [Sanguine Blade, Blue Rose Shield, First Aid Kit, Cloth Gauntlets]
+    tactics:
+    - {type: active, skill: Sanguine Attack, when: Own HP below 50%}
+    - {type: active, skill: Defender, when: None}
+    - {type: passive, skill: Royal Guard, when: None}
+    - {type: passive, skill: Arrow Cover, when: None}
+    - {type: passive, skill: First Aid, when: Target Ridiel}
+  - name: Ridiel
+    class: Elven Archer
+    row: back
+    equipment: [Interrogator's Bow, Sage's Hood, Scarlett's Ribbon, Sorcerer's Medallion]
+    tactics:
+    - {type: active, skill: Icicle Arrow, when: Flying}
+    - {type: active, skill: Mystic Conferral, when: None}
+    - {type: active, skill: Wind Arrow, when: None}
+    - {type: passive, skill: Pure Field, when: Start of battle}
+    - {type: passive, skill: Healing Hunter, when: None}
+    - {type: passive, skill: Quick Heal, when: Ally below 50% HP}
+    - {type: passive, skill: Selfless Heal, when: None}
+    - {type: passive, skill: Quick Cure, when: Debuffed ally}
+  start:
+    keep: {unit: Ridiel, skill: Pure Field}
+  notes: Lex's First Aid on Ridiel at the end of battle triggers her Selfless Heal, which heals the whole squad.
+- title: Nina and Gilbert (Varsona)
+  about: Nina one-shots a target, refunds her AP with Assaulting Blow, and moves on. Gilbert's Sniping Order makes her row's attacks true strikes, and his Lamplight Ring makes the squad blind-immune, so he needs to act before Nina. Rosalinde's Elemental Roar becomes an unblockable true-strike nuke too.
+  units:
+  - name: Nina
+    class: Breaker
+    row: front
+    equipment: [Juggernaut, Veteran's Eyepatch, Elite Beret, Mirrored Spectacles]
+    tactics:
+    - {type: active, skill: Row Smash, when: Own AP 3 or more}
+    - {type: active, skill: Assaulting Blow, when: Lowest HP enemy}
+  - name: Lex
+    class: Vanguard
+    row: front
+    equipment: [Meteorite Sword, Unyielding Shield, Cloth Gauntlets, Lapis Pendant]
+    tactics:
+    - {type: passive, skill: Arrow Cover, when: None}
+    - {type: passive, skill: Provoke, when: None}
+  - name: Gilbert
+    class: Prince
+    row: back
+    equipment: [Kingsblade Cornix, Scarlet Crest Shield, Lamplight Ring, Dove Plume]
+    tactics:
+    - {type: active, skill: Lamplight Ring skill, when: First action}
+    - {type: active, skill: Offensive Order, when: None}
+    - {type: passive, skill: Sniping Order, when: Target Nina}
+  - name: Rosalinde
+    class: Elven Augur
+    row: back
+    equipment: [Kingslance Elhal, Ruby Pendant, Sage's Hood, Sorcerer's Medallion]
+    tactics:
+    - {type: active, skill: Elemental Roar, when: None}
+    - {type: passive, skill: Rage of the Faeries, when: Start of battle}
+  - name: Miriam
+    class: Sainted Knight
+    row: back
+    equipment: [Meteorite Sword, Templar's Shield, Ruby Pendant, Leaf Broach]
+    tactics:
+    - {type: active, skill: Row Heal, when: Row with lowest HP}
+    - {type: passive, skill: Row Barrier, when: Magic attacks}
+  start:
+    keep: {unit: Rosalinde, skill: Rage of the Faeries}
+    'off':
+    - {unit: Gilbert, skill: Rapid Order}
+- title: Monica's Affliction Squad (89 Games)
+  about: Selvie goes first with the Dove Plume and puts Guard Seal on a row. Guard Seal counts as an affliction, so Berengaria's Death Spin and Gloucester's Dark Flame both get their bonus. Cursed Swamp and Eye of the Warrior Princess slow the enemy enough that the whole squad acts first.
+  units:
+  - name: Gloucester
+    class: Doom Knight
+    row: front
+    equipment: [Spellsteel Axe, Angel Hunter's Buckler, Amethyst Pendant, Lapis Pendant]
+    tactics:
+    - {type: active, skill: Dark Flame, when: Row with 2 or more enemies}
+    - {type: passive, skill: Demonic Pact, when: None}
+    - {type: passive, skill: Sanguine Arts, when: None}
+    - {type: passive, skill: Aerial Guard, when: Flying}
+  - name: Berengaria
+    class: Dark Marquess
+    row: front
+    equipment: [Kingsaxe Drakenash, Mirage Greatshield, Hero's Medallion, Lapis Pendant]
+    tactics:
+    - {type: active, skill: Death Spin, when: Row with 2 or more enemies}
+    - {type: active, skill: Vicious Torment, when: Afflicted}
+    - {type: passive, skill: Sanguine Pursuit, when: Afflicted only}
+  - name: Monica
+    class: Sainted Knight
+    row: back
+    equipment: [Dragonbone Blade, Templar's Shield, Lapis Pendant, Sage's Hood]
+    tactics:
+    - {type: active, skill: Row Heal, when: Anyone below 75% HP}
+    - {type: passive, skill: Row Barrier, when: Magic attacks}
+    - {type: passive, skill: Magic Barrier, when: Magic attacks}
+  - name: Selvie
+    class: Druid
+    row: back
+    equipment: [Speedhex Staff, Dove Plume, Lapis Pendant, Carnelian Pendant]
+    tactics:
+    - {type: active, skill: Defensive Curse, when: Row with 2 or more enemies}
+    - {type: active, skill: Hastened Curse, when: Highest initiative}
+    - {type: active, skill: Offensive Curse, when: None}
+    - {type: passive, skill: Cursed Swamp, when: Start of battle}
+    - {type: passive, skill: Quick Curse, when: None}
+  - name: Ramona
+    class: Wereowl
+    row: back
+    equipment: [Euros' Staff, Lapis Pendant, Sapphire Pendant]
+    tactics:
+    - {type: active, skill: Night Vision, when: Night}
+    - {type: passive, skill: Quick Dispel, when: Buffed enemy}
+    - {type: passive, skill: Circle Barrier, when: None}
+  start:
+    keep: {unit: Selvie, skill: Cursed Swamp}
+    note: Turn off Berengaria's Eye of the Warrior Princess if it competes; Cursed Swamp is the one to keep.
+- title: Alain's Cavalry (89 Games)
+  about: Clive's General's Pike gives cavalry allies +20% attack and +40% crit, so Alain and Clive hit very hard. Mordon smashes the armored units cavalry struggles with, Miriam blocks magic, and Ridiel handles flyers and debuffs.
+  units:
+  - name: Alain
+    class: High Lord
+    row: front
+    equipment: [Holy Unicorn Blade, Holy Unicorn Shield, Ring of the Unicorn, Lapis Pendant]
+    tactics:
+    - {type: active, skill: Spinning Edge, when: Row with 2 or more enemies}
+    - {type: passive, skill: Rapid Order, when: Start of battle}
+    - {type: passive, skill: Luminous Cover, when: Back row}
+    - {type: passive, skill: Noble Guard, when: Own HP below 50%}
+  - name: Clive
+    class: Great Knight
+    row: front
+    equipment: [General's Pike, Angel Hunter's Buckler, Carnelian Pendant, Lapis Pendant]
+    tactics:
+    - {type: active, skill: Wild Rush, when: Full column}
+    - {type: active, skill: Assaulting Lance, when: Lowest HP enemy}
+    - {type: active, skill: Pile Thrust, when: None}
+    - {type: passive, skill: Cavalier Call, when: None}
+    - {type: passive, skill: Knight's Pursuit, when: None}
+    - {type: passive, skill: Aerial Guard, when: Flying}
+  - name: Miriam
+    class: Sainted Knight
+    row: front
+    equipment: [Meteorite Sword, Templar's Shield, Sage's Hood, Rose Broach]
+    tactics:
+    - {type: active, skill: Row Heal, when: Row with lowest HP}
+    - {type: passive, skill: Row Barrier, when: Magic attacks}
+    - {type: passive, skill: Magic Barrier, when: Magic attacks}
+  - name: Mordon
+    class: Breaker
+    row: back
+    equipment: [Meteorite Axe, Blue Spectacles, Elite Beret, Power Belt]
+    tactics:
+    - {type: active, skill: Row Smash, when: Row with 2 or more armored}
+    - {type: active, skill: Assaulting Blow, when: Lowest HP enemy}
+    - {type: passive, skill: Enrage, when: None}
+  - name: Ridiel
+    class: Elven Archer
+    row: back
+    equipment: [Sacral Bow, Lapis Pendant, Sage's Hood, Clearsight Amulet]
+    tactics:
+    - {type: active, skill: Attack, when: Flying}
+    - {type: passive, skill: Mystic Conferral, when: Cavalry ally}
+    - {type: passive, skill: Quick Cure, when: Debuffed ally}
+  start:
+    keep: {unit: Alain, skill: Rapid Order}
+- title: Fran's Flyers (89 Games)
+  about: Built to beat cavalry and flying squads, and it can slip behind enemy lines to take towers. Gammel dodges nearly everything and blinds rows, Fran and Hilda clear rows, and Yunifi covers armored and flying enemies.
+  units:
+  - name: Gammel
+    class: Rogue
+    row: front
+    equipment: [Sylph's Bane, Royal Scarf, Silken Scarf, Lapis Pendant]
+    tactics:
+    - {type: active, skill: Shadow Bite, when: Row with 2 or more enemies}
+    - {type: passive, skill: Evade, when: None}
+  - name: Liza
+    class: Shieldshooter
+    row: front
+    equipment: [Woodpecker, Skiron's Shield, Lapis Pendant, Barbed Ribbon]
+    tactics:
+    - {type: active, skill: Crossbow attack, when: Flying}
+    - {type: passive, skill: Arrow Cover, when: Flying ally}
+  - name: Fran
+    class: Gryphon Master
+    row: back
+    equipment: [Vorpal Axe, Outlaw's Bracelet, Elite Beret, Carnelian Pendant]
+    tactics:
+    - {type: active, skill: Aerial Smite, when: Cavalry}
+    - {type: active, skill: Fatal Dive, when: Full column}
+    - {type: active, skill: High Swing, when: None}
+    - {type: passive, skill: Wide Pursuit, when: None}
+  - name: Hilda
+    class: Wyvern Master
+    row: back
+    equipment: [Dragoon's Warspear, Carnelian Pendant, Warrior's Medallion, Heavenwyvern Reins]
+    tactics:
+    - {type: active, skill: Dragoon Dive, when: None}
+    - {type: active, skill: Fire Breath, when: Armored}
+    - {type: passive, skill: Dragon's Roar, when: Start of battle}
+    - {type: passive, skill: Deflect, when: None}
+  - name: Yunifi
+    class: Snow Ranger
+    row: back
+    equipment: [Kingsbow Bastorik, Angel Plume, Warrior's Medallion, Watchman's Lantern]
+    tactics:
+    - {type: active, skill: Glacial Rain, when: None}
+    - {type: active, skill: Mystic Arrow, when: Armored}
+    - {type: active, skill: Sonic Shaft, when: Flying}
+    - {type: passive, skill: Eagle Eye, when: None}
+    - {type: passive, skill: Triple Counter, when: None}
+  start:
+    keep: {unit: Hilda, skill: Dragon's Roar}
+- title: 'Amalia: Iron Wall'
+  about: Amalia hits whole columns or rows with Omega Shatter and Penetrate, and Hawk Eye makes her own attacks land as crits. She's slow, so Hodrick holds the line while the two Landsknechts counter every hit an ally takes with Following Slash. Berenice and Jeremy come from the bench.
+  units:
+  - name: Hodrick
+    class: Legionnaire
+    row: front
+    equipment: [Zenoiran Knight's Spear, Hero's Greatshield, Knight's Medallion, Salamander Ring]
+    tactics:
+    - {type: active, skill: Row attack, when: Row with 2 or more enemies}
+    - {type: passive, skill: Heavy Cover, when: Lowest HP ally}
+  - name: Amalia
+    class: Dreadnought
+    row: front
+    equipment: [Hunter's Claymore, Champion's Towershield, Outlaw's Bracelet, Sapphire Pendant]
+    tactics:
+    - {type: active, skill: Omega Shatter, when: Row with 2 or more enemies}
+    - {type: active, skill: Penetrate, when: Full column}
+    - {type: active, skill: Heavy Slash, when: None}
+    - {type: passive, skill: Wide Pursuit, when: Own PP 3 or more}
+    - {type: passive, skill: Hawk Eye, when: None}
+    - {type: passive, skill: Heavy Guard, when: None}
+  - name: Berenice
+    class: Landsknecht
+    row: back
+    equipment: [Dragonbone Blade, Golden Ram Shield, Blue Spectacles, Warrior's Medallion]
+    tactics:
+    - {type: active, skill: Killing Chain, when: Lowest HP enemy}
+    - {type: active, skill: Heavy Slash, when: None}
+    - {type: passive, skill: Following Slash, when: None}
+    - {type: passive, skill: Bull Force, when: None}
+  - name: Jeremy
+    class: Landsknecht
+    row: back
+    equipment: [Bandit Longsword, Manalith Buckler, Blue Spectacles, Warrior's Medallion]
+    tactics:
+    - {type: active, skill: Killing Chain, when: Lowest HP enemy}
+    - {type: active, skill: Heavy Slash, when: None}
+    - {type: passive, skill: Following Slash, when: None}
+    - {type: passive, skill: Bull Force, when: None}
+  - name: Sharon
+    class: Bishop
+    row: back
+    equipment: [Cleric's Cane, Awakening Amulet, Gold Circlet]
+    tactics:
+    - {type: active, skill: Row heal, when: Anyone below 75% HP}
+    - {type: passive, skill: Dispel, when: Buffed enemy}
+  start:
+    keep: {unit: Amalia, skill: Provoking Wall, via: Champion's Towershield}
+- title: 'Bruno: Grand Smash'
+  about: Bruno's Grand Smash hits every ground enemy and gets +50 potency at full HP. The two crowns stack AP, PP and stats on him, Gammel's Dancer's Bracelet buffs his attack, and Selvie's Cursed Swamp cuts enemy evasion by 30 so the smash lands. Fodoquia guards him and reflects magic.
+  units:
+  - name: Bruno
+    class: Berserker
+    row: front
+    equipment: [Sacral Axe, Dream Crown, Ancient Crown, Warrior's Medallion]
+    tactics:
+    - {type: active, skill: Mounting Charge, when: First action}
+    - {type: active, skill: Grand Smash, when: None}
+    - {type: active, skill: Wide Smash, when: Row with 2 or more enemies}
+    - {type: passive, skill: Bulk Up, when: Own HP below 75%}
+  - name: Fodoquia
+    class: Feathershield
+    row: front
+    equipment: [Zenoiran Knight's Sword, Gran Baris, Knight's Medallion, Cloth Gauntlets]
+    tactics:
+    - {type: active, skill: Row Resistance, when: 'First action, casters present'}
+    - {type: active, skill: Mystic Shield, when: Own AP 2 or more}
+    - {type: passive, skill: Reflect Magic, when: None}
+    - {type: passive, skill: Sacrifice, when: Own HP 50% or more}
+  - name: Gammel
+    class: Rogue
+    row: back
+    equipment: [Sylph's Bane, Dancer's Bracelet, Large Aid Kit, Lapis Pendant]
+    tactics:
+    - {type: active, skill: Sonic Blast, when: Flying}
+    - {type: active, skill: Passive Steal, when: None}
+    - {type: passive, skill: Powerful Call, when: 'Target Bruno, own PP 3 or more'}
+    - {type: passive, skill: Party Aid, when: None}
+    - {type: passive, skill: Evade, when: None}
+  - name: Selvie
+    class: Druid
+    row: back
+    equipment: [Flame-Hex Staff, Carnelian Pendant, Lamplight Ring, Dove Plume]
+    tactics:
+    - {type: active, skill: Glowing Light, when: Flying enemies present}
+    - {type: active, skill: Offensive Curse, when: None}
+    - {type: passive, skill: Cursed Swamp, when: Start of battle}
+    - {type: passive, skill: Quick Curse, when: None}
+  - name: Mandrin
+    class: Sniper
+    row: back
+    equipment: [Alminster, Veteran's Eyepatch, Mirrored Spectacles, Elite Beret]
+    tactics:
+    - {type: active, skill: Attack, when: Flying}
+    - {type: active, skill: Attack, when: Lowest HP enemy}
+  start:
+    keep: {unit: Selvie, skill: Cursed Swamp}
+- title: 'Gilbert and Nina: Breakers'
+  about: Nina gets extra actions from both Gilbert and Primm and hits like a truck. Gilbert's Rapid Order speeds the squad up, his orders make Nina's hits true strikes with more attack, and his Gambler's Coin passes Inspiration to her. Nigel and Mordon tank and add damage.
+  units:
+  - name: Nigel
+    class: Dark Marquess
+    row: front
+    equipment: [Sacral Sword, Unyielding Greatshield, Leaf Broach, Lapis Pendant]
+    tactics:
+    - {type: active, skill: Row attack, when: Row with 2 or more enemies}
+    - {type: passive, skill: Cover, when: Lowest HP ally}
+  - name: Mordon
+    class: Breaker
+    row: front
+    equipment: [Meteorite Axe, Blue Spectacles, Elite Beret, Power Belt]
+    tactics:
+    - {type: active, skill: Row Smash, when: Row with 2 or more enemies}
+    - {type: active, skill: Heavy Smash, when: Armored}
+  - name: Nina
+    class: Breaker
+    row: back
+    equipment: [Juggernaut, Veteran's Eyepatch, Elite Beret, Mirrored Spectacles]
+    tactics:
+    - {type: active, skill: Row Smash, when: Row with 2 or more enemies}
+    - {type: active, skill: Assaulting Blow, when: Lowest HP enemy}
+    - {type: passive, skill: Enrage, when: None}
+  - name: Gilbert
+    class: Prince
+    row: back
+    equipment: [Kingsblade Cornix, Scarlet Crest Shield, Dove Plume, Gambler's Coin]
+    tactics:
+    - {type: active, skill: Offensive Order, when: First action}
+    - {type: active, skill: Sniping Order, when: None}
+    - {type: passive, skill: Rapid Order, when: Start of battle}
+    - {type: passive, skill: Inspiration, when: Target Nina}
+  - name: Primm
+    class: Bishop
+    row: back
+    equipment: [Lyrical Wand, Awakening Amulet, Gold Circlet, Lapis Pendant]
+    tactics:
+    - {type: active, skill: Lyrical Wand AP skill, when: Target Nina}
+    - {type: active, skill: Row heal, when: Anyone below 75% HP}
+    - {type: passive, skill: Refresh, when: Afflicted ally}
+  start:
+    keep: {unit: Gilbert, skill: Rapid Order}
+
+# Items you only have so many of: the ten squads together can't use more.
+# The Unique Items table lists the ones you have 1 of; pendants and medallions
+# have their own table (see pendants below).
+limited:
+  Holy Unicorn Blade: 1
+  Holy Unicorn Shield: 1
+  Holy Unicorn Signet: 1
+  Ring of the Unicorn: 1
+  Millennium Scepter: 1
+  White Cat-Ear Hood: 1
+  "Familiar's Choker": 1
+  Kingstaff Albiore: 1
+  "Boreas' Axe": 1
+  "Euros' Staff": 1
+  Heavenwyvern Reins: 1
+  Celestial Talisman: 1
+  "Apeliotes' Bow": 1
+  Papal Crosier: 1
+  Ancient Crown: 1
+  Kingsbow Bastorik: 1
+  Angel Plume: 1
+  Black Cat-Ear Hood: 1
+  "Cutthroat's Boon": 1
+  Sacral Bow: 1
+  Kingsaxe Drakenash: 1
+  Ring of the Maiden: 1
+  "Notos' Sword": 1
+  "Holy Knight's Shield": 1
+  Kingslance Elhal: 1
+  Charm of Warding: 1
+  "Hero's Greatshield": 1
+  "Champion's Towershield": 1
+  "Cleric's Cane": 1
+  Sacral Sword: 1
+  Kingsblade Cornix: 1
+  Scarlet Crest Shield: 1
+  Lyrical Wand: 1
+  "Zephyros' Spear": 1
+  Heavensteed Reins: 1
+  Holy Broach: 1
+  Sacral Axe: 1
+  "Hero's Medallion": 1
+  Chlorotic Wand: 1
+  Flame-Hex Staff: 1
+  Gran Baris: 1
+  Ruby Pendant: 3
+  Sapphire Pendant: 3
+  Amethyst Pendant: 1
+  "Warrior's Medallion": 5
+  "Knight's Medallion": 5
+  "Sorcerer's Medallion": 5
+
+# The Pendants and Medallions table, in this order. Ones without a limit above
+# can be bought, so you can hold as many as you like.
+pendants: [Ruby Pendant, Sapphire Pendant, Amethyst Pendant, Carnelian Pendant, Lapis Pendant, "Warrior's Medallion", "Knight's Medallion", "Sorcerer's Medallion"]

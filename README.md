@@ -56,6 +56,12 @@ scripts/                   # helper scripts, e.g. fab_cards.py (Flesh and Blood 
   `include_yaml` in `mkdocs.yml`. The file's top level must be a mapping
   (e.g. `visions:` followed by the list), not a bare list. A wrong path is
   skipped silently, so an empty table usually means a typo in the path.
+- **Unicorn Overlord squads:** the Post-Game Teams page is built from
+  `data/unicorn-overlord/teams.yaml`. After editing it, run
+  `.venv/bin/python scripts/uo_teams_check.py`, which checks the squads
+  against the game's rules (4 items per unit, no item twice on one unit, at
+  most 3 units per row, no unit in two of the ten squads, limited items not
+  over-used). The deploy runs it too and stops on any error.
 
 ## Deploying
 
