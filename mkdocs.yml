@@ -67,7 +67,7 @@ plugins:
 
 extra_css:
   - stylesheets/extra.css
-  - stylesheets/field-guide.css?v=2026-11-16
+  - stylesheets/field-guide.css?v=2026-11-17
   - stylesheets/dqm.css
   - stylesheets/synth-builder.css
   - stylesheets/fab.css?v=2026-10-28.2
