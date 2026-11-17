@@ -571,20 +571,23 @@ html.fg .md-typeset details.quote { --k: var(--fg-ink-dim); }
 
 /* Item names you can click: bright text, dotted gold underline. */
 html.fg .md-typeset .uo-itemref,
-html.fg .md-typeset .ffr-itemref {
+html.fg .md-typeset .ffr-itemref,
+html.fg .md-typeset a.fab-cardref {
   color: var(--fg-ink);
   border-bottom: 1px dotted var(--fg-gold);
   text-decoration: none;
 }
 
 html.fg .md-typeset .uo-itemref:hover,
-html.fg .md-typeset .ffr-itemref:hover {
+html.fg .md-typeset .ffr-itemref:hover,
+html.fg .md-typeset a.fab-cardref:hover {
   color: var(--fg-gold);
 }
 
 /* The pop-up: the field guide's item window. */
 html.fg .uo-itempop,
-html.fg .ffr-itempop {
+html.fg .ffr-itempop,
+html.fg .fab-cardpop {
   font-family: var(--fg-body);
   font-size: .7rem;
   color: var(--fg-ink);
@@ -1178,4 +1181,111 @@ html.fg #dqm-talents .tal-tree tr.tal-match td {
 
 html.fg #dqm-talents .tal-tree tr:last-child td {
   border-bottom: 0;
+}
+
+/* ---------- Flesh and Blood ---------- */
+
+/* Buttons (the quiz's Start, Next, New quiz): the field guide's command
+   buttons. Primary is gold on dark; the rest are outlined. */
+html.fg .md-typeset .md-button {
+  font-family: var(--fg-display);
+  font-weight: 500;
+  color: var(--fg-ink);
+  background: var(--fg-chip);
+  border: 2px solid var(--fg-win-edge);
+  border-radius: 6px;
+}
+
+html.fg .md-typeset .md-button--primary {
+  color: var(--fg-ground);
+  background: var(--fg-gold);
+  border-color: var(--fg-gold);
+}
+
+html.fg .md-typeset .md-button:is(:hover, :focus-visible) {
+  color: var(--fg-ground);
+  background: var(--fg-gold);
+  border-color: var(--fg-gold);
+}
+
+html.fg #fab-quiz {
+  --fq-line: var(--fg-win-edge);
+  --fq-right: #7cf0a2;
+  --fq-wrong: #ff8a8a;
+}
+
+html.fg #fab-quiz select {
+  color: var(--fg-ink);
+  background: var(--fg-chip);
+  border: 1px solid var(--fg-win-edge);
+  border-radius: 5px;
+}
+
+/* The question: a window. */
+html.fg #fab-quiz .fq-card {
+  background: var(--fg-win-bg);
+  border: 2px solid var(--fg-win-line);
+  border-radius: 7px;
+  box-shadow: var(--fg-win-shadow);
+}
+
+html.fg #fab-quiz .fq-head {
+  color: var(--fg-ink-dim);
+}
+
+html.fg #fab-quiz .fq-topic {
+  font-family: var(--fg-display);
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--fg-gold);
+}
+
+/* Answers: menu rows with the gold cursor bar on hover. */
+html.fg #fab-quiz .fq-choice {
+  color: var(--fg-ink);
+  background: var(--fg-row);
+  border: 1px solid rgba(232, 236, 255, .14);
+  border-radius: 5px;
+}
+
+html.fg #fab-quiz .fq-choice:hover:enabled,
+html.fg #fab-quiz .fq-choice:focus-visible {
+  background: var(--fg-row-hover);
+  border-color: var(--fg-gold);
+  box-shadow: inset 4px 0 0 var(--fg-gold);
+}
+
+html.fg #fab-quiz .fq-choice.fq-right {
+  background: rgba(124, 240, 162, .12);
+  border: 2px solid var(--fq-right);
+}
+
+html.fg #fab-quiz .fq-choice.fq-wrong {
+  background: rgba(255, 138, 138, .12);
+  border: 2px solid var(--fq-wrong);
+}
+
+html.fg #fab-quiz .fq-why {
+  background: var(--fg-chip);
+  border-radius: 0 5px 5px 0;
+}
+
+html.fg #fab-quiz .fq-cite,
+html.fg .fab-typebox {
+  color: var(--fg-ink-dim);
+}
+
+html.fg #fab-quiz .fq-score {
+  font-family: var(--fg-display);
+  font-weight: 500;
+  color: var(--fg-gold);
+}
+
+html.fg .fab-cardtext {
+  border-top: 1px dashed rgba(232, 236, 255, .25);
+}
+
+html.fg .fab-cardname {
+  color: var(--fg-gold);
 }

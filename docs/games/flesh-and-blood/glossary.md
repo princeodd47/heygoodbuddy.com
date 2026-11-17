@@ -1,4 +1,5 @@
 ---
+skin: field-guide
 tags:
   - Flesh and Blood
 ---
