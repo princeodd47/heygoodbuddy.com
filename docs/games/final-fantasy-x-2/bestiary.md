@@ -1,5 +1,7 @@
 ---
 skin: field-guide
+hide:
+  - toc
 platform: Switch
 spoilers: none
 status: draft
