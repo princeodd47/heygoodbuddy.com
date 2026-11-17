@@ -1489,3 +1489,724 @@ html.fg .md-typeset .fg-tabs a[aria-current="page"]::before {
     display: none;
   }
 }
+
+/* ---------- Page tools (docs/javascripts/fg-pages.js) ---------- */
+
+/* The sub-tabs, chapters or list replace "On this page". */
+@media screen and (min-width: 60em) {
+  html.fg-tools-page .md-sidebar--secondary {
+    display: none;
+  }
+}
+
+/* Pages with sub-tabs: they sit right under the game's tab window, as in the
+   field guide, and the page title is hidden (still read by screen readers);
+   the lit game tab names the page. */
+html.fg-subtabbed .md-typeset .fg-tabs {
+  margin-bottom: .55rem;
+}
+
+html.fg-subtabbed .fg-tabbed-page > h1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* Sub-tabs: a row of boxed buttons, the current one outlined in gold, as in
+   the field guide's Abilities row. */
+html.fg .md-typeset .fg-subtabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 0 0 1rem;
+}
+
+html.fg .md-typeset .fg-subtabs a {
+  flex: 1 1 0;
+  min-width: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  padding: .3rem .4rem;
+  color: var(--fg-ink);
+  text-decoration: none;
+  background: rgba(255, 255, 255, .04);
+  border: 1px solid rgba(232, 236, 255, .18);
+  border-radius: 4px;
+}
+
+html.fg .md-typeset .fg-subtabs a b {
+  font-family: var(--fg-display);
+  font-weight: 500;
+  font-size: .72rem;
+  white-space: nowrap;
+}
+
+html.fg .md-typeset .fg-subtabs .fg-cnt {
+  font-family: var(--fg-mono);
+  font-size: .52rem;
+  color: var(--fg-ink-faint);
+}
+
+html.fg .md-typeset .fg-subtabs a:hover {
+  background: rgba(255, 255, 255, .09);
+}
+
+html.fg .md-typeset .fg-subtabs a[aria-current="page"] {
+  background: rgba(255, 213, 107, .12);
+  border-color: var(--fg-gold);
+}
+
+html.fg .md-typeset .fg-subtabs a[aria-current="page"] .fg-cnt {
+  color: var(--fg-gold);
+}
+
+/* The section heading repeats the lit sub-tab, so it's hidden. */
+html.fg .md-typeset .fg-tab-sec > h2 {
+  display: none;
+}
+
+html.fg .md-typeset .fg-tab-sec > h2 + * {
+  margin-top: 0;
+}
+
+/* The controls window: search, sort, filters and chips. */
+html.fg .md-typeset .fg-tools {
+  margin: 0 0 .6rem;
+}
+
+html.fg .md-typeset .fg-ctl {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: .5rem .7rem;
+  padding: .6rem;
+  background: var(--fg-win-bg);
+  border: 2px solid var(--fg-win-line);
+  border-radius: 7px;
+  box-shadow: var(--fg-win-shadow);
+}
+
+html.fg .md-typeset .fg-grp {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+html.fg .md-typeset .fg-grow {
+  flex: 1 1 11rem;
+}
+
+html.fg .md-typeset .fg-lbl {
+  display: block;
+  margin-bottom: .2rem;
+  font-family: var(--fg-body);
+  font-size: .5rem;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--fg-ink-dim);
+}
+
+html.fg .md-typeset .fg-ctl input,
+html.fg .md-typeset .fg-ctl select,
+html.fg .md-typeset .fg-btn {
+  min-width: 0;
+  padding: .35rem .5rem;
+  font: inherit;
+  font-size: .7rem;
+  color: var(--fg-ink);
+  background: var(--fg-chip);
+  border: 1px solid var(--fg-win-edge);
+  border-radius: 4px;
+}
+
+html.fg .md-typeset .fg-ctl input {
+  width: 100%;
+}
+
+html.fg .md-typeset .fg-ctl input::placeholder {
+  color: var(--fg-ink-faint);
+}
+
+html.fg .md-typeset .fg-ctl :is(input, select, .fg-btn):focus-visible {
+  outline: 2px solid var(--fg-gold);
+  outline-offset: 1px;
+}
+
+html.fg .md-typeset .fg-btn {
+  cursor: pointer;
+  font-family: var(--fg-display);
+}
+
+html.fg .md-typeset .fg-btn:hover {
+  border-color: var(--fg-gold);
+}
+
+html.fg .md-typeset .fg-chips-row {
+  flex: 1 1 100%;
+}
+
+html.fg .md-typeset .fg-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+html.fg .md-typeset .fg-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: .15rem .5rem;
+  font-size: .62rem;
+  color: var(--fg-ink);
+  cursor: pointer;
+  background: var(--fg-chip);
+  border: 1px solid var(--fg-win-edge);
+  border-radius: 999px;
+}
+
+html.fg .md-typeset .fg-chip i {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+html.fg .md-typeset .fg-chip[aria-pressed="true"] {
+  font-weight: 600;
+  color: var(--fg-win-bot);
+  background: var(--fg-ink);
+  border-color: var(--fg-ink);
+}
+
+html.fg .md-typeset .fg-count {
+  margin: .3rem 0 0;
+  font-family: var(--fg-mono);
+  font-size: .55rem;
+  color: var(--fg-ink-faint);
+}
+
+/* Rows that open. */
+html.fg .md-typeset .fg-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+html.fg .md-typeset .fg-colhead,
+html.fg .md-typeset .fg-row > .fg-head {
+  display: grid;
+  grid-template-columns: var(--fg-cols, minmax(0, 1fr));
+  gap: 4px 12px;
+  align-items: center;
+}
+
+html.fg .md-typeset .fg-colhead {
+  padding: 0 .6rem .25rem;
+  font-size: .5rem;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--fg-ink-dim);
+}
+
+html.fg .md-typeset .fg-row {
+  background: var(--fg-row);
+  border: 1px solid rgba(232, 236, 255, .18);
+  border-radius: 5px;
+}
+
+html.fg .md-typeset .fg-row > .fg-head {
+  all: unset;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: var(--fg-cols, minmax(0, 1fr));
+  gap: 4px 12px;
+  align-items: center;
+  width: 100%;
+  padding: .45rem .6rem;
+  font-size: .7rem;
+  line-height: 1.45;
+  cursor: pointer;
+}
+
+html.fg .md-typeset .fg-row > .fg-head:hover {
+  background: var(--fg-row-hover);
+}
+
+html.fg .md-typeset .fg-row > .fg-head:focus-visible {
+  outline: 2px solid var(--fg-gold);
+  outline-offset: -2px;
+  border-radius: 5px;
+}
+
+html.fg .md-typeset .fg-row.open {
+  background: #22348f;
+  border-color: var(--fg-win-line);
+}
+
+html.fg .md-typeset .fg-head > * {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+html.fg .md-typeset .fg-name {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 3px 8px;
+  font-weight: 600;
+}
+
+html.fg .md-typeset .fg-name strong {
+  font-weight: 600;
+}
+
+html.fg .md-typeset .fg-name em {
+  font-weight: 400;
+  color: var(--fg-ink-dim);
+}
+
+html.fg .md-typeset .fg-cursor {
+  flex: none;
+  width: 0;
+  height: 0;
+  border-left: 8px solid var(--fg-gold);
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  opacity: 0;
+}
+
+html.fg .md-typeset .fg-row.open .fg-cursor,
+html.fg .md-typeset .fg-head:hover .fg-cursor {
+  opacity: 1;
+}
+
+html.fg .md-typeset .fg-num {
+  font-family: var(--fg-mono);
+  text-align: right;
+}
+
+html.fg .md-typeset .fg-colhead .fg-num {
+  font-family: inherit;
+}
+
+html.fg .md-typeset .fg-tag {
+  padding: 0 .3rem;
+  font-family: var(--fg-mono);
+  font-size: .52rem;
+  font-weight: 400;
+  color: var(--fg-ink-dim);
+  border: 1px solid var(--fg-win-edge);
+  border-radius: 3px;
+}
+
+html.fg .md-typeset .fg-el {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin: 1px 3px 1px 0;
+  padding: 0 .35rem 0 .25rem;
+  font-size: .58rem;
+  white-space: nowrap;
+  background: var(--fg-chip);
+  border-radius: 3px;
+}
+
+html.fg .md-typeset .fg-el i {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--c, #999);
+}
+
+html.fg .md-typeset .fg-el.fg-weak {
+  box-shadow: inset 0 0 0 1px var(--c, var(--fg-win-edge));
+}
+
+html.fg .md-typeset .fg-detail {
+  padding: .3rem .7rem .7rem 1.5rem;
+  font-size: .7rem;
+  border-top: 1px dashed rgba(232, 236, 255, .25);
+}
+
+html.fg .md-typeset .fg-detail dl {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  gap: .25rem .8rem;
+  margin: .4rem 0 0;
+}
+
+html.fg .md-typeset .fg-detail dt {
+  padding-top: .1rem;
+  font-size: .52rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--fg-ink-faint);
+}
+
+html.fg .md-typeset .fg-detail dd {
+  margin: 0;
+}
+
+html.fg .md-typeset .fg-empty {
+  color: var(--fg-ink-dim);
+}
+
+/* Chapters: numbered rows that open to the steps. */
+html.fg .md-typeset .fg-ch > .fg-head {
+  grid-template-columns: 2.2rem minmax(0, 1fr) auto;
+}
+
+html.fg .md-typeset .fg-chnum {
+  font-family: var(--fg-mono);
+  font-size: .65rem;
+  color: var(--fg-ink-dim);
+}
+
+html.fg .md-typeset .fg-ch .fg-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 4px;
+}
+
+html.fg .md-typeset .fg-tag.fg-boss {
+  color: #ffb3b3;
+  border-color: rgba(255, 138, 138, .6);
+}
+
+html.fg .md-typeset .fg-chbody {
+  padding-left: 3rem;
+  font-size: inherit;
+}
+
+html.fg .md-typeset .fg-chbody > :first-child {
+  margin-top: .6rem;
+}
+
+@media screen and (max-width: 44.9375em) {
+  html.fg .md-typeset .fg-subtabs {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 3px;
+  }
+
+  html.fg .md-typeset .fg-subtabs a {
+    min-width: 0;
+    padding: .3rem .1rem;
+  }
+
+  html.fg .md-typeset .fg-subtabs a b {
+    font-size: .58rem;
+    white-space: normal;
+    text-align: center;
+  }
+
+  html.fg .md-typeset .fg-colhead {
+    display: none;
+  }
+
+  /* Rows on phones: the name across the top, labeled fields below. */
+  html.fg .md-typeset .fg-row:not(.fg-ch) > .fg-head {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  html.fg .md-typeset .fg-row:not(.fg-ch) .fg-head > .fg-name {
+    grid-column: 1 / -1;
+  }
+
+  html.fg .md-typeset .fg-row:not(.fg-ch) .fg-head > .fg-c::before {
+    content: attr(data-k);
+    display: block;
+    font-family: var(--fg-body);
+    font-size: .48rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--fg-ink-faint);
+  }
+
+  html.fg .md-typeset .fg-row .fg-head > .fg-num {
+    text-align: left;
+  }
+
+  html.fg .md-typeset .fg-ch > .fg-head {
+    grid-template-columns: 1.8rem minmax(0, 1fr);
+  }
+
+  html.fg .md-typeset .fg-ch .fg-tags {
+    grid-column: 2;
+    justify-content: flex-start;
+  }
+
+  html.fg .md-typeset .fg-chbody,
+  html.fg .md-typeset .fg-detail {
+    padding-left: .7rem;
+  }
+}
+
+/* Tables a list has replaced (they stay in the page for site search). */
+html.fg .md-typeset .fg-gone {
+  display: none !important;
+}
+
+/* A text column right after a number column needs a little more room. */
+html.fg .md-typeset .fg-num + :not(.fg-num) {
+  padding-left: .5rem;
+}
+
+/* Walkthrough chapters: a Treasure box and an Enemies line at the end of
+   each one, as in the field guide's walkthrough (Lufia II's come from
+   data/lufia-ii/walkthrough.yaml). */
+html.fg .md-typeset .fg-wt-box {
+  --k: #5ee0c8;
+  margin: 1rem 0 .6rem;
+  padding: .4rem .6rem;
+  border: 1px solid var(--k);
+  border-left-width: 4px;
+  border-radius: 6px;
+  background: color-mix(in srgb, var(--k) 9%, transparent);
+}
+
+html.fg .md-typeset .fg-wt-k {
+  display: block;
+  margin-bottom: .1rem;
+  font-family: var(--fg-display);
+  font-weight: 500;
+  font-size: .65rem;
+  letter-spacing: .6px;
+  text-transform: uppercase;
+  color: var(--k);
+}
+
+html.fg .md-typeset .fg-wt-place {
+  margin: .4rem 0 .1rem;
+  font-family: var(--fg-display);
+  font-weight: 500;
+  font-size: .7rem;
+  color: var(--fg-ink);
+}
+
+html.fg .md-typeset ul.fg-wt-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: .15rem 1rem;
+  margin: .1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+html.fg .md-typeset ul.fg-wt-items li {
+  margin: 0;
+  font-size: .7rem;
+  line-height: 1.45;
+}
+
+html.fg .md-typeset .fg-wt-n {
+  color: var(--fg-ink-dim);
+  font-size: .65rem;
+}
+
+html.fg .md-typeset .fg-wt-n::before {
+  content: " — ";
+  color: var(--fg-ink-faint);
+}
+
+html.fg .md-typeset .fg-wt-also,
+html.fg .md-typeset .fg-wt-enemies p {
+  margin: .4rem 0 0;
+  font-size: .65rem;
+  color: var(--fg-ink-dim);
+}
+
+html.fg .md-typeset .fg-wt-also b,
+html.fg .md-typeset .fg-wt-enemies > b {
+  margin-right: .3rem;
+  font-weight: 500;
+  font-size: .55rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--fg-ink-faint);
+}
+
+html.fg .md-typeset .fg-wt-enemies {
+  margin: .4rem 0 .6rem;
+}
+
+html.fg .md-typeset .fg-wt-enemies p {
+  margin: .15rem 0 0;
+}
+
+html.fg .md-typeset .fg-wt-enemies a {
+  margin-right: .4rem;
+  color: var(--fg-ink);
+  font-weight: 600;
+}
+
+html.fg .md-typeset .fg-wt-enemies a::after {
+  content: ":";
+}
+
+/* ---------- Popup cards (docs/javascripts/fg-cards.js) ---------- */
+
+/* Enemy, boss, equipment and item names you can click. */
+html.fg .md-typeset .fg-cardref {
+  color: inherit;
+  border-bottom: 1px dotted var(--fg-gold);
+  cursor: pointer;
+}
+
+html.fg .md-typeset .fg-cardref:hover,
+html.fg .md-typeset .fg-cardref:focus-visible {
+  color: var(--fg-gold);
+  outline: none;
+}
+
+/* The card: a field guide window. */
+html.fg .fg-cardpop {
+  position: absolute;
+  z-index: 10;
+  width: min(19rem, calc(100vw - 16px));
+  max-height: 70vh;
+  overflow-y: auto;
+  padding: .55rem .7rem .6rem;
+  font-family: var(--fg-body);
+  font-size: .66rem;
+  line-height: 1.45;
+  color: var(--fg-ink);
+  background: var(--fg-win-bg);
+  border: 2px solid var(--fg-win-line);
+  border-radius: 8px;
+  box-shadow: 0 0 0 2px var(--fg-win-edge), 0 12px 32px rgba(0, 0, 0, .55);
+}
+
+html.fg .fg-cardpop[hidden] {
+  display: none;
+}
+
+html.fg .fg-cardpop-close {
+  float: right;
+  padding: 0 .25rem;
+  color: var(--fg-ink-dim);
+  background: none;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+html.fg .fg-cardpop-close:hover {
+  color: var(--fg-ink);
+  background: var(--fg-row-hover);
+}
+
+html.fg .fg-cardpop-name {
+  padding-right: 1.2rem;
+  font-family: var(--fg-display);
+  font-weight: 500;
+  font-size: .85rem;
+  color: var(--fg-gold);
+}
+
+html.fg .fg-cardpop-type {
+  margin: .1rem 0 .3rem;
+  font-family: var(--fg-display);
+  font-size: .55rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--fg-ink-faint);
+}
+
+html.fg .fg-cardpop-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .2rem .8rem;
+  margin-bottom: .3rem;
+  font-family: var(--fg-mono);
+}
+
+html.fg .fg-cardpop-stats b {
+  margin-right: .3rem;
+  font-family: var(--fg-body);
+  font-weight: 500;
+  font-size: .55rem;
+  color: var(--fg-ink-faint);
+}
+
+html.fg .fg-cardpop dl {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: .15rem .6rem;
+  margin: 0;
+}
+
+html.fg .fg-cardpop dt {
+  font-size: .58rem;
+  color: var(--fg-ink-faint);
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  padding-top: .08rem;
+}
+
+html.fg .fg-cardpop dd {
+  margin: 0;
+}
+
+html.fg .fg-cardpop-fight + .fg-cardpop-fight {
+  margin-top: .4rem;
+  padding-top: .35rem;
+  border-top: 1px dashed rgba(232, 236, 255, .2);
+}
+
+html.fg .fg-cardpop-where {
+  margin-bottom: .15rem;
+  font-weight: 600;
+}
+
+html.fg .fg-cardpop a {
+  color: var(--fg-ink);
+}
+
+html.fg .fg-cardpop a:hover {
+  color: var(--fg-gold);
+}
+
+html.fg .fg-cardpop-note {
+  margin: .3rem 0 0;
+  color: var(--fg-ink-dim);
+}
+
+html.fg .fg-cardpop-link {
+  margin: .4rem 0 0;
+  text-align: right;
+}
+
+html.fg .fg-cardpop-sep {
+  margin: .5rem 0 .3rem;
+  border: 0;
+  border-top: 1px solid var(--fg-win-line);
+}
+
+/* A card opened from inside another card: Back returns to the first. */
+html.fg .fg-cardpop-back {
+  display: block;
+  margin: 0 0 .3rem;
+  padding: 0;
+  font-family: var(--fg-body);
+  font-size: .6rem;
+  color: var(--fg-ink-dim);
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+html.fg .fg-cardpop-back:hover {
+  color: var(--fg-gold);
+}
+
+/* A closed row hides its details (the theme's display rules would show them). */
+html.fg .md-typeset .fg-detail[hidden] {
+  display: none;
+}
