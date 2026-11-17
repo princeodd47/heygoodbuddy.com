@@ -1,0 +1,52 @@
+# Lufia II spells: MP, price, who can learn them, where they're sold and what
+# they do. From RPGClassics' Lufia 2 shrine (spell list), with elements from
+# Almar's Guides; effects reworded. In the order the shops first sell them.
+# Guy and Dekar can't learn magic.
+groups:
+  - type: "Attack"
+    spells:
+      - {name: "Spark", element: "Fire", mp: 3, price: "300", who: "Tia, Selan, Lexis, Artea", where: "Elcid, Sundletan", effect: "Small fireballs at one enemy."}
+      - {name: "Droplet", element: "Water", mp: 4, price: "400", who: "Maxim, Tia, Selan, Lexis, Artea", where: "Elcid, Sundletan", effect: "Water at one enemy."}
+      - {name: "Flash", element: "Thunder", mp: 4, price: "500", who: "Maxim, Tia, Selan, Lexis, Artea", where: "Tanbel", effect: "An electric shock to one enemy."}
+      - {name: "Gale", element: "Ice", mp: 4, price: "600", who: "Maxim, Tia, Selan, Lexis, Artea", where: "Tanbel", effect: "A snowstorm."}
+      - {name: "Fireball", element: "Fire", mp: "—", price: "6,000", who: "Tia, Selan, Lexis, Artea", where: "Merix, Karlloon", effect: "Big fireballs. Check in game: MP cost."}
+      - {name: "Vortex", element: "Water", mp: 7, price: "8,000", who: "Maxim, Tia, Selan, Lexis, Artea", where: "Aleyn, Karlloon", effect: "A whirlpool."}
+      - {name: "Blizzard", element: "Ice", mp: 8, price: "9,000", who: "Maxim, Tia, Selan, Lexis, Artea", where: "Aleyn, Karlloon", effect: "A heavy snowstorm."}
+      - {name: "Bolt", element: "Thunder", mp: 10, price: "10,000", who: "Maxim, Tia, Selan, Lexis, Artea", where: "Karlloon", effect: "Lightning."}
+      - {name: "Firebird", element: "Fire", mp: 20, price: "20,000", who: "Tia, Selan, Lexis, Artea", where: "Ferim, Eserikto", effect: "Calls the Firebird."}
+      - {name: "Ice Valk", element: "Ice", mp: 20, price: "25,000", who: "Maxim, Tia, Selan, Lexis, Artea", where: "Ferim, Eserikto", effect: "Calls the Ice Queen."}
+      - {name: "Dragon", element: "Water", mp: 22, price: "25,000", who: "Maxim, Tia, Selan, Lexis, Artea", where: "Portravia, Eserikto", effect: "Calls the Water Dragon."}
+      - {name: "Thunder", element: "Thunder", mp: 24, price: "30,000", who: "Maxim, Tia, Selan, Lexis, Artea", where: "Portravia, Eserikto", effect: "Calls the Thunder beast."}
+      - {name: "Fry", element: "Light", mp: 20, price: "40,000", who: "Artea", where: "Eserikto", effect: "A beam of light."}
+      - {name: "Zap", element: "Light", mp: 30, price: "65,000", who: "Artea", where: "Durale", effect: "A strong beam of light. The best light spell."}
+      - {name: "Perish", mp: 4, price: "15,000", who: "Maxim, Tia, Selan, Lexis, Artea", where: "Karlloon", effect: "Can kill one enemy outright."}
+      - {name: "Destroy", mp: 8, price: "30,000", who: "Maxim, Selan", where: "Durale", effect: "Can kill one enemy outright."}
+      - {name: "Absorb", mp: 1, price: "20,000", who: "Maxim, Tia, Selan, Lexis, Artea", where: "Karlloon", effect: "Drains one enemy's MP."}
+
+  - type: "Healing"
+    spells:
+      - {name: "Strong", mp: 3, price: "200", who: "Maxim, Tia, Selan, Lexis, Artea", where: "Elcid, Sundletan", effect: "Restores some HP."}
+      - {name: "Poison", mp: 2, price: "300", who: "Maxim, Tia, Selan, Lexis, Artea", where: "Elcid, Sundletan", effect: "Can cure poison."}
+      - {name: "Release", mp: 2, price: "800", who: "Maxim, Tia, Selan, Lexis, Artea", where: "Clamento", effect: "Can cure paralysis."}
+      - {name: "Stronger", mp: 8, price: "5,000", who: "Maxim, Tia, Selan, Lexis, Artea", where: "Aleyn, Karlloon", effect: "Restores a fair amount of HP."}
+      - {name: "Waken", mp: 4, price: "5,000", who: "Maxim, Tia, Selan, Lexis, Artea", where: "Karlloon", effect: "Wakes the party."}
+      - {name: "Rally", mp: 10, price: "15,000", who: "Maxim, Tia, Selan, Lexis, Artea", where: "Aleyn", effect: "Revives a fallen ally."}
+      - {name: "Champion", mp: 16, price: "20,000", who: "Maxim, Tia, Selan, Lexis, Artea", where: "Ferim", effect: "Restores a lot of HP."}
+      - {name: "Valor", mp: 30, price: "30,000", who: "Maxim, Tia, Selan, Lexis, Artea", where: "Portravia", effect: "Revives and heals."}
+
+  - type: "Support"
+    spells:
+      - {name: "Drowsy", mp: 3, price: "1,000", who: "Maxim, Tia, Selan, Lexis, Artea", where: "Elcid, Sundletan", effect: "Can put one enemy to sleep."}
+      - {name: "Confuse", mp: 3, price: "1,000", who: "Maxim, Tia, Selan, Lexis, Artea", where: "Tanbel", effect: "Can confuse one enemy."}
+      - {name: "Bravery", mp: 3, price: "1,000", who: "Maxim, Tia, Selan, Lexis, Artea", where: "Clamento", effect: "Raises DFP for the fight."}
+      - {name: "Fake", mp: 4, price: "2,000", who: "Maxim, Tia, Selan, Lexis, Artea", where: "Merix", effect: "Raises AGL for the fight."}
+      - {name: "Trick", mp: 5, price: "2,000", who: "Maxim, Tia, Selan, Lexis, Artea", where: "Merix", effect: "Raises ATP for the fight."}
+      - {name: "Shield", mp: 4, price: "5,000", who: "Maxim, Tia, Selan, Lexis, Artea", where: "Dankirk", effect: "Raises MGR for the fight."}
+      - {name: "Courage", mp: 5, price: "5,000", who: "Maxim, Tia, Selan, Lexis, Artea", where: "Dankirk", effect: "Raises DFP a lot for the fight."}
+      - {name: "Mirror", mp: 3, price: "30,000", who: "Maxim, Tia, Selan, Lexis, Artea", where: "Dankirk", effect: "Can put up a mirror that bounces magic back."}
+      - {name: "Coma", mp: 4, price: "10,000", who: "Maxim, Tia, Selan, Lexis, Artea", where: "Dankirk", effect: "Puts one enemy into a deep sleep."}
+
+  - type: "Field"
+    spells:
+      - {name: "Escape", mp: 8, price: "1,000", who: "Tia, Selan, Artea", where: "Clamento, Merix", effect: "Takes you out of a dungeon."}
+      - {name: "Warp", mp: 8, price: "2,000", who: "Tia, Selan, Artea", where: "Merix, Aleyn (Selan knows it when she joins)", effect: "Takes you to a town you've visited."}

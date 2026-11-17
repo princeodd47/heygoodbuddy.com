@@ -113,7 +113,7 @@ armor:
   - {name: "Baggy", stats: "DFP+26", price: "1,600", who: "Tia, Selan", where: "Clamento"}
   - {name: "Chainmail", stats: "DFP+35", price: "3,000", who: "Maxim, Guy, Dekar, Lexis, Artea", where: "Parcelyte"}
   - {name: "Tight Dress", stats: "DFP+35", ip: "Reawaken", price: "2,800", who: "Tia, Selan", where: "Parcelyte"}
-  - {name: "Ironmail", stats: "DFP+39", ip: "Cure Paralysis", price: "3,000", who: "Maxim, Guy, Dekar", where: "Parcelyte"}
+  - {name: "Ironmail", stats: "DFP+39", ip: "Paralysis Cure", price: "3,000", who: "Maxim, Guy, Dekar", where: "Parcelyte"}
   - {name: "Holy Wings", stats: "ATP+5, DFP+35, STR+5", ip: "Holy Healing", price: "3,200", who: "Tia, Selan", where: "Parcelyte Castle"}
   - {name: "Toga", stats: "DFP+40", price: "3,600", who: "Tia, Selan", where: "Merix"}
   - {name: "Chain Armor", stats: "DFP+47", price: "4,500", who: "Maxim, Guy, Dekar", where: "Bound Kingdom"}
@@ -131,9 +131,9 @@ armor:
   - {name: "Lab-coat", stats: "DFP+7", ip: "Power Healing", price: "180", who: "Lexis", where: "Comes with Lexis"}
   - {name: "Seethru Silk", stats: "DFP+1", ip: "Regeneration", price: "100,000", who: "Selan", where: "Forfeit Casino"}
   - {name: "Bunnysuit", stats: "DFP+20", ip: "Magic Rebirth", price: "600,000", who: "Selan, Artea", where: "Forfeit Casino"}
-  - {name: "Silver Mail", stats: "DFP+76", ip: "Magic cure", price: "8,700", who: "Maxim, Guy, Lexis", where: "Auralio, Dankirk"}
+  - {name: "Silver Mail", stats: "DFP+76", ip: "Magic Cure", price: "8,700", who: "Maxim, Guy, Lexis", where: "Auralio, Dankirk"}
   - {name: "Power Jacket", stats: "DFP+78", price: "9,000", who: "Guy", where: "Auralio, Dankirk"}
-  - {name: "Metal Coat", stats: "DFP+75", ip: "Magic cure", price: "7,750", who: "Selan", where: "Auralio, Dankirk"}
+  - {name: "Metal Coat", stats: "DFP+75", ip: "Magic Cure", price: "7,750", who: "Selan", where: "Auralio, Dankirk"}
   - {name: "Quilted silk", stats: "DFP+82", ip: "Reviver", price: "9,200", who: "Selan", where: "Ferim"}
   - {name: "Metal Armor", stats: "DFP+80", ip: "Paralysis Cure", price: "9,300", who: "Guy, Dekar", where: "Portravia"}
   - {name: "Power Cape", stats: "DFP+82", price: "10,000", who: "Selan", where: "Portravia"}
@@ -180,10 +180,10 @@ shields:
   - {name: "Big Shield", stats: "DFP+37", price: "5,900", who: "Maxim, Guy, Dekar", where: "Northern Lighthouse, Narcysus, Gruberik"}
   - {name: "Tecto Gloves", stats: "DFP+30", ip: "Lightbulb", price: "4,300", who: "Tia, Selan, Artea", where: "Aleyn, Narcysus, Gruberik"}
   - {name: "Silvo Shield", stats: "DFP+42", ip: "Aura Protect", price: "6,900", who: "Maxim", where: "Karlloon"}
-  - {name: "Tall Shield", stats: "DFP+40", ip: "Bezerker", price: "6,000", who: "Dekar", where: "Karlloon"}
+  - {name: "Tall Shield", stats: "DFP+40", ip: "Berserker", price: "6,000", who: "Dekar", where: "Karlloon"}
   - {name: "Slash Shield", stats: "ATP+10, DFP+45", ip: "Battle Lust", price: "7,500", who: "Selan, Lexis, Artea", where: "Treadool"}
   - {name: "Spike Shield", stats: "ATP+15, DFP+44", price: "7,500", who: "Maxim, Guy, Dekar", where: "Treadool"}
-  - {name: "Bunny Lady", stats: "DFP+10", ip: "Beserker", price: "400,000", who: "Selan", where: "Forfeit Casino"}
+  - {name: "Bunny Lady", stats: "DFP+10", ip: "Berserker", price: "400,000", who: "Selan", where: "Forfeit Casino"}
   - {name: "Tuff Buckler", stats: "DFP+48", price: "8,200", who: "Maxim, Guy", where: "Alunze NW Cave (need Hammer), Auralio, Dankirk, Ferim"}
   - {name: "Tect Buckler", stats: "DFP+52", ip: "Quicksilver", price: "8,500", who: "All", where: "Portravia"}
   - {name: "Gold Gloves", stats: "DFP+57", ip: "Fireguard", price: "8,600", who: "Selan, Lexis, Artea", where: "Eserikto"}
@@ -194,7 +194,7 @@ shields:
   - {name: "Rune Glove", stats: "DFP+72, MGR+23", ip: "Shadow Guard", price: "18,800", who: "Artea", where: "Chaed"}
   - {name: "Mega Shield", stats: "DFP+90", ip: "Iron Barrier", price: "38,000", who: "Guy", where: "Dragon Mountain"}
   - {name: "Holy Shield", stats: "DFP+76, MGR+15", ip: "Light Guard", price: "26,300", who: "Maxim, Guy", where: "Preamarl"}
-  - {name: "Zirco Shield", stats: "DFP+84, MGR+8", ip: "Beserker", price: "34,400", who: "Maxim, Guy", where: "Narvick"}
+  - {name: "Zirco Shield", stats: "DFP+84, MGR+8", ip: "Berserker", price: "34,400", who: "Maxim, Guy", where: "Narvick"}
   - {name: "Zirco Gloves", stats: "DFP+80, MGR+14", ip: "Forcefield", price: "32,300", who: "Selan, Artea", where: "Narvick"}
   - {name: "Pearl Shield", stats: "DFP+90", ip: "Miracle Care", price: "20,000", who: "Maxim", where: "Kamirno Tower"}
   - {name: "Old Shield", stats: "DFP+95, AGL+10", ip: "Ancient Power", price: "35,000", who: "Guy, Artea", where: "Dragon Egg Reward"}
@@ -215,7 +215,7 @@ helmets:
   - {name: "Hide Helmet", stats: "DFP+13", price: "800", who: "Maxim, Guy, Dekar, Lexis, Artea", where: "Tanbel"}
   - {name: "Wood Helmet", stats: "DFP+18", price: "1,400", who: "Maxim, Guy, Dekar", where: "Clamento"}
   - {name: "Jute Helm", stats: "DFP+18, MGR+8", ip: "Spellstruck", price: "3,000", who: "Maxim, Guy, Dekar", where: "Tanbel East Tower"}
-  - {name: "Red Beret", stats: "DFP+15", ip: "Spell Struck", price: "1,000", who: "Tia, Selan, Lexis, Artea", where: "Clamento"}
+  - {name: "Red Beret", stats: "DFP+15", ip: "Spellstruck", price: "1,000", who: "Tia, Selan, Lexis, Artea", where: "Clamento"}
   - {name: "Fury Helmet", stats: "DFP+26, ATP+8, GUT+10", ip: "Menace", price: "3,000", who: "Maxim, Guy, Dekar", where: "Ruby Cave"}
   - {name: "Brone Helmet", stats: "DFP+22", ip: "Menace", price: "2,500", who: "Maxim, Guy, Dekar", where: "Parcelyte"}
   - {name: "Stone Helmet", stats: "DFP+23", ip: "Weakpoint", price: "2,900", who: "Maxim, Guy, Dekar", where: "Parcelyte"}

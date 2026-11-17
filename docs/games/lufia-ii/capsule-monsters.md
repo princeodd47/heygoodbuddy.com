@@ -4,6 +4,8 @@ spoilers: none
 status: draft
 tags:
   - Lufia II
+fg:
+  subtabs: true
 ---
 
 # Capsule Monsters
@@ -115,3 +117,5 @@ Food that works well, in the order you can get it:
 - Feeding tiers: c0i9z's
   [Capsule Monsters Item Tier Guide](https://gamefaqs.gamespot.com/snes/588451-lufia-ii-rise-of-the-sinistrals/faqs/81897)
   (GameFAQs).
+
+<script type="application/json" id="fg-cards-data">{{ {"bestiary": lufia2_bestiary, "equipment": lufia2_equipment, "items": lufia2_items, "magic": lufia2_magic, "ip": lufia2_ip, "plain": ["Foomy S", "Foomy M", "Foomy L", "Foomy H", "Gold Fox", "Armor Dog", "Winged Lion", "Wing Lizard", "Blaze Dragon", "Firebird", "Shaggy", "Sprite", "Cupid", "Twinkle", "Unicorn", "Hard Hat", "Blue Bird", "Winged Horse", "Green Titan", "Sky Dragon", "Raddisher", "Red Cap", "Giant", "Stonehead", "Centaur", "Myconido", "Wolfman", "Mini Imp", "Big Imp", "Red Dragon", "Red Fish", "Toadie", "Sea Giant", "Blue Titan", "Fish Head"]} | tojson }}</script>

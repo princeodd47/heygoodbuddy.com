@@ -48,3 +48,5 @@ Notes from the Super Nintendo version.
     Consumables, battle items, stat potions and capsule fruit.
 
 </div>
+
+<script type="application/json" id="fg-cards-data">{{ {"bestiary": lufia2_bestiary, "equipment": lufia2_equipment, "items": lufia2_items, "magic": lufia2_magic, "ip": lufia2_ip} | tojson }}</script>

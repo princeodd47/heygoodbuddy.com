@@ -4,13 +4,25 @@ spoilers: none
 status: draft
 tags:
   - Lufia II
+fg:
+  list:
+    merge: true
+    group: Area
+    show: [Level, HP, EXP, Gold, Weak]
+    sort: [Level, -HP, -EXP, -Gold]
+    chips: Weak
+    chips_label: Weak to
+    chips_style: elements
+    elements: [Strong]
+    placeholder: Name, drop, area
 ---
 
 # Bestiary
 
-Enemies grouped by area, in the order you reach each area. Within an area
-they're sorted by level. **Overworld** means the fields around that town.
-Bosses for each area are listed after its enemies.
+Every enemy and boss, each listed once. Search by name, drop or area, pick an
+area to see only what's there, or sort by level, HP, EXP or gold. Open a row
+for its drop, what it resists and every area it's found in. **Overworld**
+means the fields around that town.
 
 **Drop** is the item and the chance it drops. **Weak** takes extra damage
 from that element or weapon type, and **Strong** takes half. Hard, Flying,
@@ -46,3 +58,5 @@ different numbers for some monsters.*
   (GameFAQs).
 - Which enemies appear where: the monster list on
   [RPGClassics' Lufia 2 shrine](http://www.rpgclassics.com/shrines/snes/lufia2/).
+
+<script type="application/json" id="fg-cards-data">{{ {"bestiary": lufia2_bestiary, "equipment": lufia2_equipment, "items": lufia2_items, "magic": lufia2_magic, "ip": lufia2_ip} | tojson }}</script>

@@ -4,6 +4,12 @@ spoilers: none
 status: draft
 tags:
   - Lufia II
+fg:
+  subtabs: true
+  list:
+    show: [Price, Effect]
+    sort: [Price, -Price]
+    placeholder: Name, effect, shop
 ---
 
 # Items
@@ -35,3 +41,5 @@ use is on [Capsule Monsters](capsule-monsters.md).
 - Cider effects: the same walkthrough and the GameFAQs
   [shop guide](https://gamefaqs.gamespot.com/snes/588451-lufia-ii-rise-of-the-sinistrals/faqs/21868)
   and [FAQ](https://gamefaqs.gamespot.com/snes/588451-lufia-ii-rise-of-the-sinistrals/faqs/5547).
+
+<script type="application/json" id="fg-cards-data">{{ {"bestiary": lufia2_bestiary, "equipment": lufia2_equipment, "items": lufia2_items, "magic": lufia2_magic, "ip": lufia2_ip} | tojson }}</script>

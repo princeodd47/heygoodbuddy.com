@@ -4,6 +4,18 @@ spoilers: none
 status: draft
 tags:
   - Lufia II
+fg:
+  subtabs: true
+  list:
+    show: [Stats, IP, Price]
+    sort: [-Stats, Price]
+    chips: Who
+    chips_label: Who can equip
+    chip_values: [Maxim, Tia, Guy, Selan, Dekar, Lexis, Artea]
+    aliases:
+      All: [Maxim, Tia, Guy, Selan, Dekar, Lexis, Artea]
+      Women: [Tia, Selan]
+    placeholder: Name, stat, IP attack, place
 ---
 
 # Equipment
@@ -33,3 +45,5 @@ Characters are Maxim, Tia, Guy, Selan, Dekar, Lexis and Artea.
   checked against Iron Knuckle's
   [Lufia II walkthrough](https://gamefaqs.gamespot.com/snes/588451-lufia-ii-rise-of-the-sinistrals/faqs/11045)
   (GameFAQs).
+
+<script type="application/json" id="fg-cards-data">{{ {"bestiary": lufia2_bestiary, "equipment": lufia2_equipment, "items": lufia2_items, "magic": lufia2_magic, "ip": lufia2_ip} | tojson }}</script>

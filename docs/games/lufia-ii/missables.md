@@ -4,6 +4,8 @@ spoilers: none
 status: draft
 tags:
   - Lufia II
+fg:
+  subtabs: true
 ---
 
 # Missables
@@ -75,3 +77,5 @@ Eight eggs, for the Egg Dragon (island left of Pico, by submarine):
   (GameFAQs).
 - [RPGClassics' Lufia 2 shrine](http://www.rpgclassics.com/shrines/snes/lufia2/),
   Dragon Egg guide and secrets.
+
+<script type="application/json" id="fg-cards-data">{{ {"bestiary": lufia2_bestiary, "equipment": lufia2_equipment, "items": lufia2_items, "magic": lufia2_magic, "ip": lufia2_ip} | tojson }}</script>

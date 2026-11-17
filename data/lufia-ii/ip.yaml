@@ -1,0 +1,172 @@
+# Lufia II IP attacks: what each does and which gear has it. Effects from
+# RPGClassics' Lufia 2 shrine (IP list) and Almar's Guides, reworded. The gear
+# lists come from data/lufia-ii/equipment.yaml, so names match the Equipment
+# page; "gear" here is only for IPs on gear that file doesn't list.
+# Grouped for the Magic and IP page.
+groups:
+  - type: "Attacks"
+    ips:
+      - {name: "Water Attack", element: "Water", effect: "1.5× damage to one enemy, more against water-weak enemies."}
+      - {name: "Flame Attack", element: "Fire", effect: "1.5× damage to one enemy, more against fire-weak enemies."}
+      - {name: "Ice Attack", element: "Ice", effect: "1.5× damage to one enemy, more against ice-weak enemies."}
+      - {name: "Thunderblast", element: "Thunder", effect: "1.5× damage to one enemy, more against thunder-weak enemies."}
+      - {name: "Light Attack", element: "Light", effect: "1.5× damage to one enemy, more against light-weak enemies."}
+      - {name: "Dive Bomber", element: "Flying", effect: "1.5× damage to one enemy, more against flying enemies."}
+      - {name: "Frenzy", effect: "1.5× damage to one enemy."}
+      - {name: "Bite", effect: "2× damage to one enemy."}
+      - {name: "Dive", element: "Flying", effect: "2× damage to one enemy, more against flying enemies."}
+      - {name: "Head Butt", effect: "2× damage to one enemy, more against tough enemies."}
+      - {name: "Aqua Attack", element: "Water", effect: "3× damage to one enemy, more against water-weak enemies."}
+      - {name: "Blaze Attack", element: "Fire", effect: "3× damage to one enemy, more against fire-weak enemies."}
+      - {name: "Glacial Blast", element: "Ice", effect: "3× damage to one enemy, more against ice-weak enemies."}
+      - {name: "Thunderball", element: "Thunder", effect: "3× damage to one enemy, more against thunder-weak enemies."}
+      - {name: "Holy Energy", element: "Light", effect: "3× damage to one enemy, more against undead."}
+      - {name: "Deadly Smash", element: "Flying", effect: "3× damage to one enemy, more against flying enemies."}
+      - {name: "Dragon Rush", element: "Dragon", effect: "3× damage to one enemy, more against dragons."}
+      - {name: "Samurai", effect: "A strong hit on one enemy that's sometimes a critical."}
+      - {name: "Triple Attack", effect: "Hits one enemy three times."}
+      - {name: "Octo-strike", effect: "Hits one enemy eight times."}
+      - {name: "Scissor Slash", effect: "Hits the enemies twice."}
+      - {name: "Ax Attack", effect: "Takes 1/8 of one enemy's HP."}
+      - {name: "Battle Fury", effect: "Takes 1/4 of one enemy's HP."}
+      - {name: "Fatal Blow", effect: "Takes half of one enemy's HP."}
+      - {name: "Confusion", effect: "Hits one enemy and confuses it."}
+      - {name: "Sleep Stinger", effect: "Hits one enemy and puts it to sleep."}
+      - {name: "Stun Shocker", effect: "Hits one enemy and paralyzes it."}
+      - {name: "Bomb Attack", effect: "Hits all enemies."}
+      - {name: "Tail Attack", effect: "A normal-strength hit on all enemies, more against tough enemies."}
+      - {name: "Twister", effect: "Slashes all enemies."}
+      - {name: "Firestorm", element: "Fire", effect: "Hits all enemies, heavy damage to fire-weak ones."}
+      - {name: "Arctic Freeze", element: "Ice", effect: "Hits all enemies, heavy damage to ice-weak ones."}
+      - {name: "Thundershriek", element: "Thunder", effect: "Hits all enemies, heavy damage to thunder-weak ones."}
+      - {name: "Torrent", element: "Water", effect: "Heavy damage to water-weak enemies."}
+      - {name: "Celestial", element: "Light", effect: "Hits all enemies, heavy damage to light-weak ones."}
+      - {name: "Swoop", element: "Flying", effect: "Hits all enemies, heavy damage to flying ones."}
+      - {name: "Dragonfire", element: "Dragon", effect: "Hits all enemies, heavy damage to dragons."}
+      - {name: "Phoenix Blow", element: "Fire", effect: "Hits all enemies, then casts Firebird."}
+      - {name: "Deep Freeze", element: "Ice", effect: "Hits all enemies, then casts Ice Valk."}
+      - {name: "Skysplitter", element: "Thunder", effect: "Hits all enemies, then casts Thunder."}
+      - {name: "Flood", element: "Water", effect: "Hits all enemies, then casts Dragon."}
+      - {name: "Sizzle", element: "Light", effect: "Hits all enemies, then casts Zap."}
+
+  - type: "Magic"
+    ips:
+      - {name: "Fireball", element: "Fire", effect: "Casts Fireball: big fireballs at one enemy."}
+      - {name: "Blizzard", element: "Ice", effect: "Casts Blizzard: a snowstorm."}
+      - {name: "Bolt", element: "Thunder", effect: "Casts Bolt: lightning at one enemy."}
+      - {name: "Vortex", element: "Water", effect: "Casts Vortex: a whirlpool."}
+      - {name: "Firebird", element: "Fire", effect: "Casts Firebird."}
+      - {name: "Ice Valk", element: "Ice", effect: "Casts Ice Valk."}
+      - {name: "Thunder", element: "Thunder", effect: "Casts Thunder."}
+      - {name: "Dragon", element: "Water", effect: "Casts Dragon."}
+      - {name: "Zap", element: "Light", effect: "Casts Zap: a beam of light."}
+      - {name: "Flash", element: "Light", effect: "A blast of light at all enemies."}
+      - {name: "Frost", element: "Ice", effect: "Frost over the enemies."}
+      - {name: "Incendiary", element: "Fire", effect: "Fire at all enemies."}
+      - {name: "Buster Attack", element: "Fire", effect: "Camu's flame attack on all enemies."}
+      - {name: "Magma Blast", element: "Fire", effect: "Lava over all enemies."}
+      - {name: "Groundshock", element: "Earth", effect: "Shakes the ground under all enemies."}
+      - {name: "Mega Quake", element: "Earth", effect: "A big earthquake on all enemies."}
+      - {name: "Ten-legger", element: "Water", effect: "A water attack on all enemies."}
+      - {name: "Voltage Bolt", element: "Thunder", effect: "Thunder on all enemies."}
+      - {name: "Combo Attack", effect: "Fire, water, thunder and ice on all enemies."}
+      - {name: "Diamond Dust", element: "Water, Ice", effect: "Water and ice on all enemies."}
+      - {name: "Stardust Blow", element: "Thunder, Light", effect: "Thunder and light on all enemies."}
+      - {name: "Gloomsplash", element: "Shadow, Fire", effect: "Darkness and fire on all enemies."}
+      - {name: "Perish", effect: "Casts Perish: can kill one enemy outright."}
+      - {name: "Destroy", effect: "Casts Destroy: can kill one enemy outright."}
+      - {name: "Ninja", effect: "Usually defeats one enemy outright."}
+      - {name: "Dark Force", element: "Shadow", effect: "Usually defeats every enemy outright."}
+      - {name: "Hardboiled", effect: "Changes the enemies' stats, and can defeat them outright."}
+      - {name: "Vampire", effect: "Drains one enemy's MP into the user's."}
+
+  - type: "Healing"
+    ips:
+      - {name: "Healing", effect: "Restores some HP."}
+      - {name: "Power Healing", effect: "Restores HP."}
+      - {name: "Champion", effect: "Casts Champion: restores a lot of HP."}
+      - {name: "Magic Cure", effect: "Restores 25% of the user's max HP."}
+      - {name: "Re-energize", effect: "Restores half of the user's max HP."}
+      - {name: "Magic Healing", effect: "Restores half of the user's max HP."}
+      - {name: "Rebirth", effect: "Fully restores HP."}
+      - {name: "Sacred Song", effect: "Fully restores HP."}
+      - {name: "Recovery", effect: "Fully heals the user."}
+      - {name: "Magic Rebirth", effect: "Fully restores MP."}
+      - {name: "Divine Cure", effect: "Heals the party by 25% of the user's max HP."}
+      - {name: "Holy Healing", effect: "Heals the party by 75% of the user's max HP."}
+      - {name: "Sudden Cure", effect: "Heals the party by the user's max HP."}
+      - {name: "Crisis Cure", effect: "Heals the party by the user's max HP.", gear: ["Holy Robe"]}
+      - {name: "Revival Sleep", effect: "Fully heals the party."}
+      - {name: "Reviver", effect: "Revives fallen allies with half their HP."}
+      - {name: "Rejuvenation", effect: "Revives the party and restores half their HP."}
+      - {name: "Regeneration", effect: "Revives the party and restores a lot of HP."}
+      - {name: "Phoenix", effect: "Revives the party and fully restores HP and MP."}
+      - {name: "Antidote", effect: "Cures the party's poison."}
+      - {name: "Paralysis Cure", effect: "Cures the party's paralysis."}
+      - {name: "Reawaken", effect: "Wakes up the party."}
+      - {name: "Free Magic", effect: "Lets the party cast again after their magic is sealed."}
+
+  - type: "Support"
+    ips:
+      - {name: "Battle Lust", effect: "Raises the user's ATP."}
+      - {name: "Trick", effect: "Casts Trick: raises ATP."}
+      - {name: "Berserker", effect: "Raises the party's ATP."}
+      - {name: "Ironclad", effect: "Raises the user's DFP."}
+      - {name: "Bravery", effect: "Casts Bravery: raises DFP."}
+      - {name: "Courage", effect: "Casts Courage: raises DFP a lot."}
+      - {name: "Forcefield", effect: "Raises the party's DFP."}
+      - {name: "Fleet", effect: "Raises the user's AGL."}
+      - {name: "Fake", effect: "Casts Fake: raises AGL."}
+      - {name: "Quicksilver", effect: "Raises the party's AGL."}
+      - {name: "Lightbulb", effect: "Raises the user's INT."}
+      - {name: "Spell Repel", effect: "Raises the user's MGR."}
+      - {name: "Aura Protect", effect: "Raises the party's MGR."}
+      - {name: "Wave Motion", effect: "Raises every stat and fully restores HP and MP."}
+
+  - type: "Hinder"
+    ips:
+      - {name: "Menace", effect: "Lowers one enemy's attack by 1/8."}
+      - {name: "Meltdown", effect: "Lowers one enemy's attack by 1/6."}
+      - {name: "Weaponweak", effect: "Lowers one enemy's attack by 1/6."}
+      - {name: "Sword Splitter", effect: "Lowers one enemy's attack by 1/4."}
+      - {name: "Weakpoint", effect: "Lowers one enemy's defense by 1/8."}
+      - {name: "Dread", effect: "Lowers one enemy's DFP."}
+      - {name: "Sluggish", effect: "Slows one enemy."}
+      - {name: "Slow", effect: "Slows all enemies."}
+      - {name: "Forgetful", effect: "Lowers one enemy's INT."}
+      - {name: "Dimwit", effect: "Lowers every enemy's INT."}
+      - {name: "Spellstruck", effect: "Lowers one enemy's magic resistance."}
+      - {name: "Vulnerable", effect: "Lowers every enemy's magic resistance."}
+      - {name: "Confuse", effect: "Casts Confuse on one enemy."}
+      - {name: "Do-re-mi", effect: "Confuses all enemies.", gear: ["Song Rock"]}
+      - {name: "Immobilize", effect: "Sometimes paralyzes the enemies."}
+      - {name: "Spiderweb", effect: "Tangles one enemy in webs."}
+      - {name: "Deflect", effect: "Seals one enemy's magic."}
+
+  - type: "Guards"
+    ips:
+      - {name: "Ancient Power", effect: "Halves the damage the user takes from monsters for a few turns."}
+      - {name: "Miracle Care", effect: "The user takes no damage for a few turns."}
+      - {name: "Iron Barrier", effect: "Shields the user from physical attacks for a few turns."}
+      - {name: "Power Guard", effect: "Cuts the physical damage the user takes for a few turns."}
+      - {name: "Flameblock", element: "Fire", effect: "Cuts fire damage for a few turns."}
+      - {name: "Fireguard", element: "Fire", effect: "Cuts the fire damage the user takes for a few turns."}
+      - {name: "Iceguard", element: "Ice", effect: "Cuts the ice damage the user takes for a few turns."}
+      - {name: "Holy Shield", element: "Ice", effect: "Cuts ice damage for a few turns."}
+      - {name: "Thunderblock", element: "Thunder", effect: "Cuts thunder damage for a few turns."}
+      - {name: "Thunderguard", element: "Thunder", effect: "Cuts the thunder damage the user takes for a few turns."}
+      - {name: "Water Screen", element: "Water", effect: "Cuts water damage for a few turns."}
+      - {name: "Holy Wall", element: "Light", effect: "Cuts light damage for a few turns."}
+      - {name: "Light Guard", element: "Light", effect: "Cuts the light damage the user takes for a few turns."}
+      - {name: "Shadow Guard", element: "Shadow", effect: "Cuts the darkness damage the user takes for a few turns."}
+      - {name: "Anger Mirror", effect: "Turns attacks back on the enemy for a few turns."}
+      - {name: "Boomerang", effect: "Turns attacks back on the enemy at half strength for a few turns."}
+      - {name: "Brilliance", effect: "Turns attacks back on the enemy at double strength for a few turns."}
+      - {name: "Flame Return", element: "Fire", effect: "Turns fire attacks back on the enemy for a few turns."}
+      - {name: "Ice Mirror", element: "Ice", effect: "Turns ice attacks back on the enemy for a few turns."}
+      - {name: "Aqua Mirror", element: "Water", effect: "Turns water attacks back on the enemy for a few turns."}
+      - {name: "Thunderturn", element: "Thunder", effect: "Turns thunder attacks back on the enemy for a few turns."}
+      - {name: "Holy Mirror", element: "Light", effect: "Turns light attacks back on the enemy for a few turns."}
+      - {name: "Dark Mirror", element: "Shadow", effect: "Turns darkness attacks back on the enemy for a few turns."}
+      - {name: "Mirror", effect: "Casts Mirror: a mirror that bounces magic back."}
+      - {name: "Mirror Block", effect: "Gets through enemies' magic mirrors."}

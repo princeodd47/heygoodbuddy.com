@@ -40,6 +40,17 @@ move the item to Resolved.
   Mountain (sliding block solution is 18 moves in Telago), Ancient Cave
   floor-by-floor notes, Forfeit casino prize list, spell lists per town.
 
+## Treasure and enemies (2026-11-17)
+
+- Each chapter's Treasure box and Enemies line come from
+  `data/lufia-ii/walkthrough.yaml` (chests by place, with how to reach the
+  tricky ones) and the Bestiary areas it names. Chests merge Iron Knuckle's
+  lists with RPGClassics' treasure list
+  (https://shrines.rpgclassics.com/snes/lufia2/treasure.shtml), which added
+  the Ancient Cave behind-the-door chests (Brill Helm, Dragon Ring, Light
+  Jewel) and the Fortress of Doom's 13 Miracles.
+- Town chests and pots aren't in either list.
+
 ## Already on the page
 
 - Every story area through Doom Island with chests, Buy lines, boss HP and

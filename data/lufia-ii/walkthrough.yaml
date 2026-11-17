@@ -1,0 +1,359 @@
+# Lufia II walkthrough extras: each chapter's treasure and enemies, shown in
+# a box at the end of the chapter on docs/games/lufia-ii/walkthrough.md.
+# Keys are the chapter titles (the page's "##" headings), exactly.
+#
+# areas: Bestiary areas (data/lufia-ii/bestiary.yaml) whose regular enemies
+#   are listed, each linking to the Bestiary filtered to that area.
+# treasure: groups of chests, by place. i is the item, n how to get it.
+# also: other pickups in the chapter that aren't chests.
+#
+# Chests from Iron Knuckle's GameFAQs walkthrough, checked against
+# RPGClassics' treasure list.
+chapters:
+  "Elcid and the Secret Skills Cave":
+    areas: ["Secret Skills Cave", "Overworld: Elcid"]
+    also: ["Restart skill (Secret Skills Cave)"]
+
+  "Cave to Sundletan":
+    areas: ["Cave to Sundletan"]
+    treasure:
+      - place: "Cave to Sundletan"
+        items:
+          - {i: "Antidote"}
+          - {i: "Escape"}
+          - {i: "Hide Armor"}
+          - {i: "Life Potion"}
+          - {i: "Magic Jar"}
+          - {i: "Power Potion"}
+          - {i: "Dragon Egg", n: "Needs the Hook. Come back after the Gordovan West Tower."}
+
+  "Sundletan and the Lake Cave":
+    areas: ["Overworld: Sundletan", "Lake Cave"]
+    treasure:
+      - place: "Lake Cave"
+        items:
+          - {i: "Insect Crush", n: "Kill the three enemies, then shoot them with arrows in the same order."}
+          - {i: "Lake Key"}
+          - {i: "Miracle", n: "In the grassy room, walk through the left wall."}
+          - {i: "Power Potion"}
+          - {i: "Speedy Ring", n: "Beat every monster in the corridor."}
+    also: ["Jelze, capsule monster (Foomy Woods)"]
+
+  "Alunze and the Castle Basement":
+    areas: ["Overworld: Alunze", "Alunze Castle Basement"]
+    treasure:
+      - place: "Castle basement"
+        items:
+          - {i: "Coat"}
+          - {i: "Escape"}
+          - {i: "Headband"}
+          - {i: "Light Knife"}
+          - {i: "Miracle"}
+          - {i: "Secret Fruit", n: "Keep it for Jelze's last form."}
+          - {i: "Bomb skill"}
+          - {i: "Dragon Egg", n: "Bomb by the crate, then run over the spikes."}
+          - {i: "Water Jewel", n: "Needs the Hook. Come back after the Gordovan West Tower."}
+
+  "Northwest Cave":
+    areas: ["Alunze Northwest Cave"]
+    treasure:
+      - place: "Northwest Cave"
+        items:
+          - {i: "Brave"}
+          - {i: "Hi Magic"}
+          - {i: "Hi Potion ×2"}
+          - {i: "Horse Rock"}
+          - {i: "Jet Helm"}
+          - {i: "Light Armor"}
+          - {i: "Miracle ×2"}
+          - {i: "Power Brace"}
+          - {i: "Shrine Key"}
+          - {i: "Witch Ring", n: "Walk through the wall by the right pillar of the bridge."}
+          - {i: "Eron Hat", n: "Needs the Hammer. Come back after Flower Mountain."}
+          - {i: "Tuff Buckler", n: "Needs the Hammer. Come back after Flower Mountain."}
+    also: ["A hidden pot behind the right pillar of the bridge"]
+
+  "Tanbel and the East Tower":
+    areas: ["Overworld: Tanbel", "Tanbel East Tower"]
+    treasure:
+      - place: "East Tower"
+        items:
+          - {i: "Camu Armor"}
+          - {i: "Fire Dagger"}
+          - {i: "Jute Helm", n: "Set the clock to 12:00."}
+          - {i: "Pearl Brace"}
+          - {i: "Sky Key"}
+
+  "Clamento and the Ruby Cave":
+    areas: ["Overworld: Clamento", "Ruby Cave"]
+    treasure:
+      - place: "Ruby Cave"
+        items:
+          - {i: "Aqua Whip"}
+          - {i: "Flame Fruit"}
+          - {i: "Fury Helm"}
+          - {i: "Ruby Key"}
+    also: ["Blaze, capsule monster (Ruby Cave)"]
+
+  "Parcelyte and the Treasure Sword Shrine":
+    areas: ["Overworld: Parcelyte", "Treasure Sword Shrine"]
+    treasure:
+      - place: "Treasure Sword Shrine"
+        items:
+          - {i: "Anger Brace"}
+          - {i: "Bat Rock"}
+          - {i: "Cold Rapier"}
+          - {i: "Mind Ring", n: "Walk right along the top section of the right wall."}
+          - {i: "Round Shield"}
+          - {i: "Sword Key"}
+          - {i: "Treasure Sword"}
+          - {i: "Undead Ring", n: "Blocks instant death."}
+    also: ["Holy Wings (Parcelyte castle basement, after the boss)"]
+
+  "Gordovan West Tower":
+    areas: ["Gordovan West Tower"]
+    treasure:
+      - place: "West Tower"
+        items:
+          - {i: "Block Shield"}
+          - {i: "Eagle Rock"}
+          - {i: "Miracle"}
+          - {i: "Muscle Ring"}
+          - {i: "Scimitar"}
+          - {i: "Speed Potion"}
+          - {i: "Wind Key"}
+          - {i: "Hook skill"}
+
+  "Merix and the Cave to Bound":
+    areas: ["Overworld: Merix", "Cave to Bound Kingdom"]
+    treasure:
+      - place: "Cave to Bound"
+        items:
+          - {i: "Hi Magic"}
+          - {i: "Regain"}
+    also: ["Dragon Egg (the carpenter's daughter in Merix)"]
+
+  "Bound Kingdom and the Northern Labyrinth":
+    areas: ["Overworld: Bound Kingdom", "Northern Labyrinth"]
+    treasure:
+      - place: "Northern Labyrinth"
+        items:
+          - {i: "Deadly Sword", n: "Cursed. Have it uncursed, or sell it."}
+          - {i: "Dragon Egg"}
+          - {i: "Life Potion"}
+          - {i: "Thunder Ax", n: "Bomb the top wall of the room with a lone zombie."}
+          - {i: "Thunder Ring", n: "Walk through the top-left wall."}
+    also: ["Flash, capsule monster (Northern Labyrinth)"]
+
+  "Ancient Tower":
+    areas: ["Ancient Tower"]
+    treasure:
+      - place: "Ancient Tower"
+        items:
+          - {i: "Cloud Key"}
+          - {i: "Fayza Shield"}
+          - {i: "Magic Bikini", n: "After Gades."}
+          - {i: "Miracle"}
+          - {i: "Muscle Ring"}
+          - {i: "Protect Ring"}
+          - {i: "Pumkin Jewel"}
+
+  "Northern Lighthouse":
+    areas: ["Northern Lighthouse"]
+    treasure:
+      - place: "Northern Lighthouse"
+        items:
+          - {i: "Bee Rock", n: "Through the pillar in the floor."}
+          - {i: "Big Shield", n: "The box puzzle."}
+          - {i: "Cancer Rock", n: "A hidden room you reach with the Hook."}
+          - {i: "Dragon Egg", n: "The box puzzle."}
+          - {i: "Fire Ring", n: "Up a ladder."}
+          - {i: "Light Key", n: "Under the dark tiles: the leftmost white one and two to its right."}
+          - {i: "Mystery Ring", n: "The box puzzle."}
+
+  "Aleyn and Phantom Tree Mountain":
+    areas: ["Overworld: Aleyn", "Phantom Tree Mountain", "Ancient Cave (deep floors)"]
+    treasure:
+      - place: "Phantom Tree Mountain"
+        items:
+          - {i: "Tree Key"}
+          - {i: "Water Ring", n: "Down the stairs to the monster room, top-left."}
+          - {i: "Fire Arrow skill", n: "The bush puzzle."}
+      - place: "Ancient Cave, behind the door"
+        items:
+          - {i: "Brill Helm"}
+          - {i: "Dragon Ring"}
+          - {i: "Light Jewel"}
+
+  "Narcysus and the Tower of Sacrifice":
+    areas: ["Tower of Sacrifice"]
+    treasure:
+      - place: "Tower of Sacrifice"
+        items:
+          - {i: "Ice Ring"}
+          - {i: "Narcysus Key"}
+    also: ["Gusto, capsule monster (Tower of Sacrifice)"]
+
+  "Karlloon and the North Shrine":
+    areas: ["Overworld: Karlloon", "Karlloon North Shrine"]
+    treasure:
+      - place: "North Shrine"
+        items:
+          - {i: "Dekar Blade", n: "Red and blue switches, then the Hook."}
+          - {i: "Fury Ring"}
+          - {i: "Lion Fang"}
+
+  "Treadool and Flower Mountain":
+    areas: ["Overworld: Treadool", "Flower Mountain"]
+    treasure:
+      - place: "Flower Mountain"
+        items:
+          - {i: "Burn Sword"}
+          - {i: "Dragon Egg"}
+          - {i: "Flower Key"}
+          - {i: "Flying Ax"}
+          - {i: "Life Potion"}
+          - {i: "Power Ring"}
+          - {i: "Snake Rock"}
+          - {i: "Hammer skill"}
+    also: ["Sully, capsule monster (Flower Mountain)"]
+
+  "Forfeit Island":
+    areas: ["The Sea"]
+
+  "Dankirk and the North Dungeon":
+    areas: ["Overworld: Dankirk", "Dankirk North Dungeon"]
+    treasure:
+      - place: "North Dungeon"
+        items:
+          - {i: "Dankirk Key"}
+          - {i: "Earth Fruit"}
+          - {i: "Fury Ribbon"}
+          - {i: "Hi Magic"}
+          - {i: "Dragon Egg", n: "Hidden group: cut the lone patch of grass, then walk down and left."}
+          - {i: "Figgoru", n: "The same hidden group."}
+          - {i: "Flame Jewel", n: "The same hidden group."}
+    also: ["VIP Card (talk to the Prince of Auralio twice)", "Darbi, capsule monster (tree shrine on the crescent-moon island)"]
+
+  "Ferim and the Northeast Tower":
+    areas: ["Overworld: Ferim", "Ferim Northeast Tower"]
+    treasure:
+      - place: "Northeast Tower"
+        items:
+          - {i: "Mysto Jewel"}
+          - {i: "Samu Jewel"}
+          - {i: "Stun Gun"}
+          - {i: "Trial Key"}
+
+  "Agurio and Treble":
+    areas: []
+
+  "Portravia and the Mountain of No Return":
+    areas: ["Overworld: Portravia", "Mountain of No Return"]
+    treasure:
+      - place: "Mountain of No Return"
+        items:
+          - {i: "Aqua Sword"}
+
+  "Eserikto and the Divine Shrine":
+    areas: ["Overworld: Eserikto", "Divine Shrine", "Dragon Egg Shrine"]
+    treasure:
+      - place: "Divine Shrine"
+        items:
+          - {i: "Dragon Egg", n: "Play the notes 3, 2, 4, 1, 5."}
+          - {i: "Heart Key"}
+          - {i: "Holy Whip", n: "Break the upper wall in the note room."}
+          - {i: "Revive Armor"}
+          - {i: "Rocket Ring", n: "Six vases, top left."}
+      - place: "Underwater cave south of Parcelyte"
+        items:
+          - {i: "Secret Fruit ×2"}
+    also: ["Zeppy, capsule monster (underwater cave south of Parcelyte)", "Egg Sword and Egg Ring (beat the Egg Dragon)"]
+
+  "Barnan and the Shrine of Vengeance":
+    areas: ["Shrine of Vengeance"]
+    treasure:
+      - place: "Shrine of Vengeance"
+        items:
+          - {i: "Boom Sword"}
+          - {i: "Bright Armor"}
+          - {i: "Evil Jewel", n: "Cursed."}
+          - {i: "Freeze Sword"}
+          - {i: "Ghost Key"}
+          - {i: "Heal Armor"}
+          - {i: "Power Robe"}
+          - {i: "Cursed Bow", n: "After the boss. Uncursed, it becomes Arty's Bow."}
+
+  "Durale and the Tower of Truth":
+    areas: ["Overworld: Durale", "Tower of Truth"]
+    treasure:
+      - place: "Tower of Truth"
+        items:
+          - {i: "Ghost Clothes"}
+          - {i: "Ghost Ring"}
+          - {i: "Song Rock"}
+          - {i: "Super Sword"}
+          - {i: "Truth Key"}
+
+  "Chaed and Dragon Mountain":
+    areas: ["Overworld: Chaed", "Dragon Mountain"]
+    treasure:
+      - place: "Dragon Mountain"
+        items:
+          - {i: "Anger Ring", n: "The left stairs from the save point."}
+          - {i: "Gorgon Rock", n: "The upper-left wall after the boss."}
+          - {i: "Hi-Power Ring", n: "The Hook platform."}
+          - {i: "Hidora Rock"}
+          - {i: "Kraken Rock", n: "The left stairs from the save point."}
+          - {i: "Magic Scale", n: "The lava room, with the Hammer and Hook."}
+          - {i: "Magma Key"}
+          - {i: "Miracle", n: "The lava room, with the Hammer and Hook."}
+          - {i: "Miracle ×2"}
+          - {i: "Sonic Ring", n: "The bush and bomb puzzle."}
+          - {i: "S-Mind Ring", n: "The left stairs from the save point."}
+          - {i: "S-Myst Ring"}
+          - {i: "S-Power Ring"}
+          - {i: "S-Pro Ring", n: "The lava room, with the Hammer and Hook."}
+          - {i: "S-Witch Ring", n: "The Hook platform."}
+      - place: "Sliding-block room (optional)"
+        items:
+          - {i: "Holy Robe"}
+          - {i: "Legend Helm"}
+          - {i: "Lizard Blow"}
+          - {i: "Mega Shield"}
+    also: ["A Miracle behind the teleporter on the way out", "Mermaid Key (Chaed's elder)"]
+
+  "Preamarl, the Ghost Ship and the Dual Blade Shrine":
+    areas: []
+
+  "Gratze":
+    areas: ["Gratze"]
+    treasure:
+      - place: "Gratze"
+        items:
+          - {i: "Basement Key"}
+          - {i: "Miracle"}
+
+  "Narvick and the Sealed Towers":
+    areas: ["Overworld: Narvick", "Sealed Towers"]
+    treasure:
+      - place: "Shuman (south)"
+        items:
+          - {i: "S-Ice Ring"}
+          - {i: "S-Thunder Ring"}
+          - {i: "S-Water Ring"}
+          - {i: "Pearl Armor", n: "After Gades."}
+      - place: "Stradha (northeast)"
+        items:
+          - {i: "Pearl Helmet", n: "After Amon."}
+      - place: "Kamirno (northwest)"
+        items:
+          - {i: "S-Fire Ring"}
+          - {i: "Pearl Shield", n: "At the top."}
+
+  "Doom Island":
+    areas: []
+    treasure:
+      - place: "Fortress of Doom"
+        items:
+          - {i: "Miracle ×13"}

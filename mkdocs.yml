@@ -48,6 +48,9 @@ plugins:
         lufia2_bestiary: data/lufia-ii/bestiary.yaml
         lufia2_equipment: data/lufia-ii/equipment.yaml
         lufia2_items: data/lufia-ii/items.yaml
+        lufia2_walk: data/lufia-ii/walkthrough.yaml
+        lufia2_magic: data/lufia-ii/magic.yaml
+        lufia2_ip: data/lufia-ii/ip.yaml
         sf_bestiary: data/shining-force/bestiary.yaml
         sf_equipment: data/shining-force/equipment.yaml
         sf_items: data/shining-force/items.yaml
@@ -67,7 +70,7 @@ plugins:
 
 extra_css:
   - stylesheets/extra.css
-  - stylesheets/field-guide.css?v=2026-11-17.5
+  - stylesheets/field-guide.css?v=2026-11-17.13
   - stylesheets/dqm.css
   - stylesheets/synth-builder.css
   - stylesheets/fab.css?v=2026-10-28.2
@@ -82,6 +85,8 @@ extra_javascript:
   - javascripts/uo-items.js?v=2026-11-11
   - javascripts/fg-tables.js?v=2026-11-16.7
   - javascripts/fg-search.js?v=2026-11-17.9
+  - javascripts/fg-pages.js?v=2026-11-17.9
+  - javascripts/fg-cards.js?v=2026-11-17.5
 
 markdown_extensions:
   - admonition
@@ -172,6 +177,8 @@ nav:
           - Bestiary: games/lufia-ii/bestiary.md
           - Equipment: games/lufia-ii/equipment.md
           - Items: games/lufia-ii/items.md
+          - Magic: games/lufia-ii/magic.md
+          - IP Attacks: games/lufia-ii/ip-attacks.md
       - Shining Force:
           - games/shining-force/index.md
           - Walkthrough: games/shining-force/walkthrough.md
