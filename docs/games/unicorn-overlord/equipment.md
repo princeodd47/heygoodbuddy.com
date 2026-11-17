@@ -1,4 +1,5 @@
 ---
+skin: field-guide
 platform: Switch
 spoilers: none
 status: draft
@@ -26,9 +27,13 @@ get the item:
 {% for g in uo_equipment.groups %}
 ## {{ g.type }}
 
+<div class="uo-equip" markdown>
+
 | Item | Stats | Effects | Price | Where |
 |------|-------|---------|-------|-------|
 {% for e in g.entries -%}
-| <span class="uo-anchor" id="{{ e.id }}"></span>**{{ e.name }}** | {{ e.stats or "—" }} | {% if e.skill %}**{{ e.skill.name }}** ({{ e.skill.details }}): {{ e.skill.text }}{% if e.effects %}<br>{% endif %}{% endif %}{{ e.effects | join("<br>") }}{% if not e.skill and not e.effects %}—{% endif %} | {{ e.price or "—" }} | {{ e.where | join("<br>") if e.where else "—" }} |
+| <span class="uo-anchor" id="{{ e.id }}"></span>**{{ e.name }}** | {{ e.stats or "—" }} | {% if e.skill %}<span class="uo-eq-skill">{{ e.skill.name }}</span> <span class="uo-eq-cost">{{ e.skill.details }}</span>{{ e.skill.text }}{% if e.effects %}<br>{% endif %}{% endif %}{{ e.effects | join("<br>") }}{% if not e.skill and not e.effects %}—{% endif %} | {{ e.price or "—" }} | {{ e.where | join("<br>") if e.where else "—" }} |
 {% endfor %}
+
+</div>
 {% endfor %}
