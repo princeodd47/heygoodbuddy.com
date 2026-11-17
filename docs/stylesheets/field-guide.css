@@ -475,6 +475,19 @@ html.fg .md-typeset table:not([class]) td[style*="right"] {
   font-variant-numeric: tabular-nums;
 }
 
+/* The theme gives every header a 5rem minimum; number columns only need
+   room for their digits, so wide stat tables fit their window. */
+html.fg .md-typeset table:not([class]) th[style*="right"] {
+  min-width: 0;
+  padding-left: .6em;
+  padding-right: .6em;
+}
+
+html.fg .md-typeset table:not([class]) td[style*="right"] {
+  padding-left: .6em;
+  padding-right: .6em;
+}
+
 html.fg .md-typeset table:not([class]) em {
   color: var(--fg-ink-dim);
 }
@@ -984,6 +997,10 @@ html.fg .md-typeset .uo-equip tr:has(.uo-anchor:target) {
 
   html.fg .md-typeset table[data-fg-stack] td:first-child strong {
     font-weight: 500;
+  }
+
+  html.fg .md-typeset table[data-fg-stack] td:empty {
+    display: none;
   }
 
   html.fg .md-typeset table[data-fg-stack] td.fg-numhead::before {
