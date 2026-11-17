@@ -70,6 +70,7 @@ plugins:
         ffx2_dresspheres: data/final-fantasy-x-2/dresspheres.yaml
         ffx2_grids: data/final-fantasy-x-2/garment-grids.yaml
         uo_equipment: data/unicorn-overlord/equipment.yaml
+        uo_teams: data/unicorn-overlord/teams.yaml
 
 extra_css:
   - stylesheets/extra.css

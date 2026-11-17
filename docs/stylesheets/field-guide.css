@@ -611,3 +611,214 @@ html.fg .ffr-itempop-close:hover {
   color: var(--fg-ink);
   background: var(--fg-row-hover);
 }
+
+/* ---------- Unicorn Overlord unit cards (Post-Game Teams) ---------- */
+
+html.fg .md-typeset .uo-squad {
+  margin: .8em 0 1em;
+}
+
+/* "Front row" / "Back row" with a dashed rule running out to the right. */
+html.fg .md-typeset .uo-row-name {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  margin: .7em 0 .4em;
+  font-size: .56rem;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--fg-ink-dim);
+}
+
+html.fg .md-typeset .uo-row-name::after {
+  content: "";
+  flex: 1;
+  border-top: 1px dashed rgba(232, 236, 255, .25);
+}
+
+html.fg .md-typeset .uo-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 11rem), 1fr));
+  gap: .5rem;
+  align-items: start;
+}
+
+html.fg .md-typeset .uo-unit {
+  min-width: 0;
+  padding: .5rem .65rem .4rem;
+  font-size: .68rem;
+  background: var(--fg-row);
+  border: 1px solid rgba(232, 236, 255, .18);
+  border-radius: 6px;
+}
+
+/* The unit whose start-of-battle skill stays on. */
+html.fg .md-typeset .uo-unit.uo-keep {
+  border-color: var(--fg-gold);
+  box-shadow: inset 3px 0 0 var(--fg-gold);
+}
+
+html.fg .md-typeset .uo-unit-head {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: .3rem;
+}
+
+html.fg .md-typeset .uo-unit-name {
+  font-family: var(--fg-display);
+  font-weight: 500;
+  font-size: .86rem;
+  line-height: 1.15;
+  color: var(--fg-ink);
+}
+
+html.fg .md-typeset .uo-unit-class {
+  font-size: .62rem;
+  color: var(--fg-ink-dim);
+}
+
+/* Keep on / Turn off labels. */
+html.fg .md-typeset .uo-start {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .3rem;
+  margin: .2rem 0;
+  font-size: .64rem;
+}
+
+html.fg .md-typeset .uo-flag {
+  font-family: var(--fg-mono);
+  font-size: .52rem;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  padding: 0 .3rem;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+html.fg .md-typeset .uo-start-keep .uo-flag {
+  background: var(--fg-gold);
+  color: #1a1440;
+  font-weight: 500;
+}
+
+html.fg .md-typeset .uo-start-keep {
+  color: var(--fg-gold);
+}
+
+html.fg .md-typeset .uo-start-off .uo-flag {
+  border: 1px solid var(--fg-ink-faint);
+  color: var(--fg-ink-dim);
+}
+
+html.fg .md-typeset .uo-start-off {
+  color: var(--fg-ink-dim);
+}
+
+/* Four items, one per line. */
+html.fg .md-typeset ul.uo-gear {
+  list-style: none;
+  margin: .35rem 0 .2rem;
+  padding: 0;
+}
+
+html.fg .md-typeset ul.uo-gear li {
+  margin: 0;
+  padding: .12rem 0;
+  border-top: 1px dashed rgba(232, 236, 255, .12);
+}
+
+/* Tactics: a plain toggle with the menu cursor, not a callout box. */
+html.fg .md-typeset details.uo-tactics {
+  margin: .25rem 0 0;
+  padding: 0;
+  font-size: inherit;
+  background: none;
+  border: 0;
+  border-radius: 0;
+}
+
+html.fg .md-typeset details.uo-tactics > summary {
+  display: flex;
+  align-items: center;
+  gap: .35rem;
+  margin: 0;
+  padding: .25rem 0;
+  font-size: .66rem;
+  color: var(--fg-gold);
+  cursor: pointer;
+  list-style: none;
+}
+
+html.fg .md-typeset details.uo-tactics > summary::-webkit-details-marker {
+  display: none;
+}
+
+html.fg .md-typeset details.uo-tactics > summary::before {
+  position: static;
+  width: 0;
+  height: 0;
+  background: none;
+  -webkit-mask-image: none;
+  mask-image: none;
+  border-left: 7px solid var(--fg-gold);
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  transition: transform .12s;
+}
+
+html.fg .md-typeset details.uo-tactics[open] > summary::before {
+  transform: rotate(90deg);
+}
+
+html.fg .md-typeset details.uo-tactics > summary::after {
+  display: none;
+}
+
+html.fg .md-typeset .uo-count {
+  font-family: var(--fg-mono);
+  font-size: .56rem;
+  color: var(--fg-ink-faint);
+}
+
+html.fg .md-typeset .uo-tac-kind {
+  margin: .3rem 0 .1rem;
+  font-size: .52rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--fg-ink-faint);
+}
+
+html.fg .md-typeset ol.uo-tac {
+  margin: 0 0 .2rem;
+  padding-left: 1.1rem;
+}
+
+html.fg .md-typeset ol.uo-tac li {
+  margin: 0;
+  padding: .12rem 0;
+}
+
+html.fg .md-typeset ol.uo-tac li::marker {
+  font-family: var(--fg-mono);
+  font-size: .6rem;
+  color: var(--fg-gold);
+}
+
+html.fg .md-typeset .uo-skill {
+  display: block;
+  font-weight: 600;
+  color: var(--fg-ink);
+}
+
+html.fg .md-typeset .uo-when {
+  display: block;
+  font-size: .62rem;
+  color: var(--fg-ink-dim);
+}
+
+html.fg .md-typeset .uo-when.uo-none {
+  color: var(--fg-ink-faint);
+}
