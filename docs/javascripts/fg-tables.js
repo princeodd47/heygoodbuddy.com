@@ -10,6 +10,21 @@
         return th.textContent.trim();
       });
       if (heads.length < 4) return;
+      // A header used twice (MP, Power under "At the end" and again under
+      // "Earlier on"): name the second one after the nearest one-off header
+      // before it, e.g. "MP · Earlier on".
+      var count = {};
+      heads.forEach(function (h) { count[h] = (count[h] || 0) + 1; });
+      var seen = {};
+      heads = heads.map(function (h, i) {
+        var again = seen[h];
+        seen[h] = true;
+        if (!again) return h;
+        for (var j = i - 1; j >= 0; j--) {
+          if (count[heads[j]] === 1) return h + " · " + heads[j];
+        }
+        return h;
+      });
       t.setAttribute("data-fg-stack", "");
       t.querySelectorAll("tbody tr").forEach(function (tr) {
         Array.prototype.forEach.call(tr.children, function (td, i) {

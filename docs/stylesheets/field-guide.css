@@ -982,7 +982,8 @@ html.fg .md-typeset .uo-equip tr:has(.uo-anchor:target) {
     border-top: 0;
   }
 
-  html.fg .md-typeset table[data-fg-stack] td {
+  html.fg .md-typeset table[data-fg-stack] td,
+  html.fg .md-typeset table[data-fg-stack] td[style*="right"] {
     display: block;
     flex: 1 1 100%;
     padding: .1rem 0;
