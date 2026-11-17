@@ -34,6 +34,14 @@ html.fg {
   background: var(--fg-ground);
 }
 
+/* Pixelify Sans joins "fi" into a glyph that reads as "A" ("Lufia"). The
+   theme turns ligatures on with font-feature-settings, so turn them off the
+   same way. */
+html.fg body,
+html.fg input {
+  font-feature-settings: "kern", "liga" 0;
+}
+
 /* Map the theme's variables onto the tokens, whichever scheme the body
    carries (a visitor may have chosen light mode on another page). */
 html.fg [data-md-color-scheme] {
