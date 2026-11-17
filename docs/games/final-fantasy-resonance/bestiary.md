@@ -4,6 +4,18 @@ spoilers: none
 status: draft
 tags:
   - Final Fantasy Resonance
+fg:
+  list:
+    merge: true
+    group: Area
+    show: [Level, Weaknesses, Resists]
+    sort: [Level, -Level]
+    chips: Weaknesses
+    chips_label: Weak to
+    chips_style: elements
+    chip_values: [Fire, Ice, Water, Lightning, Wind, Earth, Light, Dark]
+    elements: [Resists]
+    placeholder: Name, drop, steal, area
 ---
 
 # Bestiary
@@ -24,4 +36,4 @@ marks a rare drop or rare steal.
 {% endfor %}
 {% endfor %}
 
-<script id="ffr-items-data" type="application/json">{{ {"equipment": ffr_equipment, "items": ffr_items} | tojson }}</script>
+<script type="application/json" id="fg-cards-data">{{ {"game": "final-fantasy-resonance", "bestiary": ffr_bestiary, "equipment": ffr_equipment, "items": ffr_items, "key_items": ffr_key_items, "visions": ffr, "stop": ["Cloud", "Shadow"]} | tojson }}</script>

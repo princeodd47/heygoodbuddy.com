@@ -4,6 +4,8 @@ spoilers: none
 status: draft
 tags:
   - Final Fantasy Resonance
+fg:
+  subtabs: true
 ---
 
 # Espers
@@ -42,4 +44,4 @@ Espers are summons. Only **Fina** can call them.
 | **The fight** | Level 20. Weak to Earth, immune to Lightning. |
 | **Rewards** | Magicite Shard · 2,250 EXP · 1,500 Gil |
 
-<script id="ffr-items-data" type="application/json">{{ {"equipment": ffr_equipment, "items": ffr_items} | tojson }}</script>
+<script type="application/json" id="fg-cards-data">{{ {"game": "final-fantasy-resonance", "bestiary": ffr_bestiary, "equipment": ffr_equipment, "items": ffr_items, "key_items": ffr_key_items, "visions": ffr, "stop": ["Cloud", "Shadow"]} | tojson }}</script>

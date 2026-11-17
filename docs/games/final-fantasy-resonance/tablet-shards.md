@@ -6,6 +6,11 @@ verified: 2026-10-19
 status: draft
 tags:
   - Final Fantasy Resonance
+fg:
+  subtabs: true
+  list:
+    show: [Box, Reward, Area, Where]
+    placeholder: Area, place, reward
 ---
 
 # Tablet Shards
@@ -90,4 +95,4 @@ Each :material-camera: opens a screenshot of that spot from
 | 47 | **Slums** | Just east of where you enter, next to some barrels | [:material-camera:](https://www.powerpyx.com/wp-content/uploads/final-fantasy-resonance-tablet-shards-guide-47.jpg){ title="Screenshot" target="_blank" rel="noopener" } |
 | 48 | **Colosseum (Grandshelt)** | Head all the way west on the first path | [:material-camera:](https://www.powerpyx.com/wp-content/uploads/final-fantasy-resonance-tablet-shards-guide-58.jpg){ title="Screenshot" target="_blank" rel="noopener" } |
 
-<script id="ffr-items-data" type="application/json">{{ {"equipment": ffr_equipment, "items": ffr_items} | tojson }}</script>
+<script type="application/json" id="fg-cards-data">{{ {"game": "final-fantasy-resonance", "bestiary": ffr_bestiary, "equipment": ffr_equipment, "items": ffr_items, "key_items": ffr_key_items, "visions": ffr, "stop": ["Cloud", "Shadow"]} | tojson }}</script>

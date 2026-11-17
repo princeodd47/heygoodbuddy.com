@@ -4,6 +4,13 @@ spoilers: none
 status: draft
 tags:
   - Final Fantasy X-2
+fg:
+  subtabs: true
+  list:
+    show: [Catches, Unlocks, Size]
+    show_in:
+      Where to trap them: [Size]
+    placeholder: Name, place
 ---
 
 # Creatures
@@ -129,3 +136,5 @@ and Ultima Weapon (from releases).
   [Jegged's Creature Creator section](https://jegged.com/Games/Final-Fantasy-X-2/Creature-Creator/Overview.html),
   checked against the
   [Gamer Guides creature lists](https://www.gamerguides.com/final-fantasy-x-2/guide/creature-create/the-basics/small-creatures).
+
+<script type="application/json" id="fg-cards-data">{{ {"game": "final-fantasy-x-2", "bestiary": ffx2_bestiary, "creatures": ffx2_creatures, "accessories": ffx2_accessories, "grids": ffx2_grids, "dresspheres": ffx2_dresspheres, "feeding": ffx2_feeding, "stop": ["Rikku", "Paine", "Brother", "Buddy", "Gippal", "Baralai", "Nooj", "Kimahri", "Lulu", "Tidus", "Elma", "Lucil"]} | tojson }}</script>

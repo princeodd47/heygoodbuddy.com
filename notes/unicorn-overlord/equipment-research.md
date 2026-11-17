@@ -3,7 +3,8 @@
 The page and data come from `scripts/uo_equipment.py`. Rerun it after adding
 items to the Post-Game Teams page: it reads that page's Equipment column and
 writes `data/unicorn-overlord/equipment.yaml`. The page and the item previews
-on Post-Game Teams (`docs/javascripts/uo-items.js`) read that file.
+on Post-Game Teams (popup cards, `docs/javascripts/fg-cards.js`, from the
+`fg-cards-data` tag) read that file.
 
 ## Sources (2026-11-11)
 

@@ -4,6 +4,12 @@ spoilers: none
 status: draft
 tags:
   - Treasure of the Rudras
+fg:
+  subtabs: true
+  list:
+    show: [MP, Target, Effect]
+    sort: [MP, -MP]
+    placeholder: Mantra, effect
 ---
 
 # New Playthrough
@@ -59,3 +65,5 @@ Add these once your MP is high enough to use them regularly.
 | NANIKIKUEBIT | 30 | One | Fire damage |
 | NANIKIKUEJIN | 30 | One | Wind damage |
 | NANIKIKUEGOD | 30 | One | Dark damage |
+
+<script type="application/json" id="fg-cards-data">{{ {"game": "treasure-of-the-rudras", "monsters": rudras_monsters, "bosses": rudras_bosses, "equipment": rudras_equipment, "stop": ["Death", "Freedom", "Fortune", "Storm", "Future", "Mirage", "Fury", "Rem", "Nil", "Sol", "Pollution", "Rudra", "Closer", "Bumper", "Guard", "Dune", "Sion", "Surlent", "Riza", "Iris", "Kemp", "Lars", "Dion", "Leon"]} | tojson }}</script>

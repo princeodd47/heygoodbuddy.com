@@ -4,6 +4,11 @@ spoilers: none
 status: draft
 tags:
   - Unicorn Overlord
+fg:
+  subtabs: true
+  list:
+    show: [Stats, Price]
+    placeholder: Name, effect, where
 ---
 
 # Equipment
@@ -36,3 +41,5 @@ get the item:
 
 </div>
 {% endfor %}
+
+<script type="application/json" id="fg-cards-data">{{ {"game": "unicorn-overlord", "equipment": uo_equipment} | tojson }}</script>

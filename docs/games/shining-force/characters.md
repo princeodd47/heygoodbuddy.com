@@ -4,6 +4,13 @@ spoilers: none
 status: draft
 tags:
   - Shining Force
+fg:
+  subtabs: true
+  list:
+    show: [Class, Joins]
+    show_in:
+      Missable items: [Where]
+    placeholder: Name, class, place
 ---
 
 # Characters
@@ -74,3 +81,5 @@ abbreviations.
 - Full class names: GLSicherman's
   [Shining Force FAQ](https://gamefaqs.gamespot.com/genesis/563340-shining-force/faqs/2837)
   (GameFAQs).
+
+<script type="application/json" id="fg-cards-data">{{ {"game": "shining-force", "bestiary": sf_bestiary, "equipment": sf_equipment, "items": sf_items} | tojson }}</script>

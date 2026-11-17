@@ -5,6 +5,12 @@ spoilers: none
 status: draft
 tags:
   - Dragon Quest Monsters The Withered World
+fg:
+  subtabs: true
+  list:
+    sections: [Special recipes]
+    show: [Parent, Parent 2, Status]
+    placeholder: Monster, family
 ---
 
 # Synthesis
@@ -49,3 +55,5 @@ family. ✓ marks a verified recipe. Source: [MeowDB]({{ dqm_synth.sources.meowd
     | **{{ lead }}** |{% for partner in dqm_synth.families %} {% for r in dqm_synth.family_recipes if r.rank == rank and r.lead == lead and r.partner == partner %}{{ mon(r.result) }}{{ " ✓" if r.status == "verified" }}{% else %}—{% endfor %} |{% endfor %}
     {% endfor %}
 {% endfor %}
+
+<script type="application/json" id="fg-cards-data">{{ {"game": "dragon-quest-monsters-the-withered-world", "monsters": dqm, "talents": dqm_talents, "items": dqm_items} | tojson }}</script>

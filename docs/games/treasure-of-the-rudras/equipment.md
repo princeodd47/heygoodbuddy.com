@@ -4,6 +4,15 @@ spoilers: none
 status: draft
 tags:
   - Treasure of the Rudras
+fg:
+  subtabs: true
+  list:
+    group: Type
+    show: [Attack, Def, MDef, Element]
+    sort: [-Attack, -Def, -MDef, -Sells]
+    chips: Element
+    chips_style: elements
+    placeholder: Name, element, where
 ---
 
 # Equipment
@@ -63,3 +72,5 @@ Buy prices are only known for gear with an element.
   (Japanese).
 - Other locations: [Kurt's walkthroughs](http://www.reonis.com/rudra/), based
   on Trunkz0r's guide.
+
+<script type="application/json" id="fg-cards-data">{{ {"game": "treasure-of-the-rudras", "monsters": rudras_monsters, "bosses": rudras_bosses, "equipment": rudras_equipment, "stop": ["Death", "Freedom", "Fortune", "Storm", "Future", "Mirage", "Fury", "Rem", "Nil", "Sol", "Pollution", "Rudra", "Closer", "Bumper", "Guard", "Dune", "Sion", "Surlent", "Riza", "Iris", "Kemp", "Lars", "Dion", "Leon"]} | tojson }}</script>

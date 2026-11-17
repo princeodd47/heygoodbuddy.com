@@ -4,6 +4,19 @@ spoilers: none
 status: draft
 tags:
   - Treasure of the Rudras
+fg:
+  subtabs: true
+  list:
+    group: Area
+    group_in:
+      Bosses: Chapter
+    show: [Day, Level, HP, Weak]
+    sort: [Level, -HP, -EXP, -Ragu]
+    chips: Weak
+    chips_label: Weak to
+    chips_style: elements
+    chip_values: [Fire, Water, Wind, Lightning, Holy, Dark]
+    placeholder: Name, drop, area
 ---
 
 # Bestiary
@@ -48,3 +61,5 @@ element are on [Mantras](mantras.md).
   [God Bird's rare items](https://god-bird.net/data/rudra/item.html)
   (Japanese) and [Bluewing's Dune chapter](https://bluewing.usamimi.info/gamecap/rudora/c_dune.html)
   (Japanese).
+
+<script type="application/json" id="fg-cards-data">{{ {"game": "treasure-of-the-rudras", "monsters": rudras_monsters, "bosses": rudras_bosses, "equipment": rudras_equipment, "stop": ["Death", "Freedom", "Fortune", "Storm", "Future", "Mirage", "Fury", "Rem", "Nil", "Sol", "Pollution", "Rudra", "Closer", "Bumper", "Guard", "Dune", "Sion", "Surlent", "Riza", "Iris", "Kemp", "Lars", "Dion", "Leon"]} | tojson }}</script>

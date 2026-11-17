@@ -4,6 +4,10 @@ spoilers: none
 status: draft
 tags:
   - Dragon Quest Monsters Caravan Heart
+fg:
+  list:
+    show: [Starts as, When]
+    placeholder: Name, place
 ---
 
 # Guard Monsters

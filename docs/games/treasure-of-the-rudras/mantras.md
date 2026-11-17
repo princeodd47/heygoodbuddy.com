@@ -4,6 +4,15 @@ spoilers: none
 status: draft
 tags:
   - Treasure of the Rudras
+fg:
+  subtabs: true
+  list:
+    group: Kind
+    show: [At the end, MP, Power]
+    show_in:
+      Common Combinations: [Made of, MP, Power]
+      Standalone Mantras: [MP, Target, Effect]
+    placeholder: Word, effect
 ---
 
 # Mantras
@@ -134,3 +143,5 @@ These work on their own, as a single word.
 
 - How mantras are built, and each word's MP and power: Rushlight's
   [Mantra Mechanics Guide](https://gamefaqs.gamespot.com/snes/564407-rudra-no-hihou/faqs/81319).
+
+<script type="application/json" id="fg-cards-data">{{ {"game": "treasure-of-the-rudras", "monsters": rudras_monsters, "bosses": rudras_bosses, "equipment": rudras_equipment, "stop": ["Death", "Freedom", "Fortune", "Storm", "Future", "Mirage", "Fury", "Rem", "Nil", "Sol", "Pollution", "Rudra", "Closer", "Bumper", "Guard", "Dune", "Sion", "Surlent", "Riza", "Iris", "Kemp", "Lars", "Dion", "Leon"]} | tojson }}</script>

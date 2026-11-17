@@ -4,6 +4,8 @@ spoilers: none
 status: draft
 tags:
   - Final Fantasy XII The Zodiac Age
+fg:
+  chapters: true
 ---
 
 # Walkthrough
@@ -968,3 +970,5 @@ Use your Elixirs and Megalixirs freely.
 - **HP:** 228,299
 - Buff fully, keep Dispel ready for its buffs, and use Quickenings to
   finish.
+
+<script type="application/json" id="fg-cards-data">{{ {"game": "final-fantasy-xii-the-zodiac-age", "bazaar": ffxii_bazaar, "monographs": ffxii_monographs} | tojson }}</script>

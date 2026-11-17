@@ -23,6 +23,20 @@
 //       chips_label: ..  The chips' label (default: the column's name).
 //       chips_style: elements  Show the column as element tags with dots.
 //       elements: [Strong]  Other columns shown as element tags.
+//       show_in: {Rings: [Use]}  Columns for one section's list instead of
+//                        "show" (a list shows the "show" columns it has).
+//       group_in: {Bosses: Chapter}  A section's own name for its groups.
+//       drop: ["#"]      Columns left out (a per-battle count, so the same
+//                        enemy in several battles merges into one row).
+//       sections: [Items]  Only these "##" sections' tables become lists
+//                        (default: every section with a table).
+//
+// Without merge, a section's tables that share the first one's columns make
+// one list; a "###" heading above a table is its rows' group (a dropdown when
+// "group" is set). A table before the first "##" makes a list of its own.
+//
+// With merge, a section's text (a battle's win condition) shows above the
+// list when its group is picked.
 //       placeholder: ..  The search box's hint.
 //
 // The tables and text stay in the page, so site search still finds them and
@@ -131,18 +145,40 @@
       return { col: s.replace(/^-/, ""), desc: s.charAt(0) === "-" };
     });
     var aliases = cfg.aliases || {};
+    var drop = cfg.drop || [];
     var lists = [];
+    var labels = {};
+    function label(col) { return labels[col] || col; }
 
     function rowsOf(table, group) {
-      var heads = Array.prototype.map.call(table.querySelectorAll("thead th"), text);
+      var heads = [];
+      // Two columns with the same name ("Parent", "Parent") stay apart.
+      Array.prototype.forEach.call(table.querySelectorAll("thead th"), function (th) {
+        var h = text(th) || "—", n = 2, k = h;
+        while (heads.indexOf(k) >= 0) k = h + " " + n++;
+        if (k !== h) {
+          // Named after the column it follows: "MP (earlier on)".
+          var ctx = null;
+          for (var j = heads.length - 1; j > heads.indexOf(h); j--) {
+            if (!labels[heads[j]]) { ctx = heads[j]; break; }
+          }
+          labels[k] = ctx ? h + " (" + ctx.toLowerCase() + ")" : h;
+        }
+        heads.push(k);
+      });
       var kind = heads[0];
       return Array.prototype.map.call(table.querySelectorAll("tbody tr"), function (tr) {
         var cells = {};
         var tds = tr.children;
-        heads.forEach(function (h, i) { if (i && tds[i]) cells[h] = { html: tds[i].innerHTML, text: text(tds[i]) }; });
+        heads.forEach(function (h, i) {
+          if (i && tds[i] && drop.indexOf(h) < 0) cells[h] = { html: tds[i].innerHTML, text: text(tds[i]) };
+        });
         return {
-          kind: kind, heads: heads,
-          name: tds[0] ? tds[0].innerHTML : "", nameText: tds[0] ? text(tds[0]) : "",
+          kind: kind, heads: heads.filter(function (h) { return drop.indexOf(h) < 0; }),
+          // Anchors in the name cell stay in the (hidden) table; the row
+          // remembers them so links to them open it.
+          name: tds[0] ? tds[0].innerHTML.replace(/<(a|span)\b[^>]*\sid="[^"]*"[^>]*><\/\1>/g, "") : "", nameText: tds[0] ? text(tds[0]) : "",
+          anchors: tds[0] ? Array.prototype.map.call(tds[0].querySelectorAll("[id]"), function (a) { return a.id; }) : [],
           // The bold name alone, without a note in the same cell.
           key: tds[0] ? text(tds[0].querySelector("strong") || tds[0]).toLowerCase() : "",
           cells: cells, groups: group ? [group] : []
@@ -157,7 +193,10 @@
         if (s.sources) return;
         var tables = s.box.querySelectorAll("table");
         if (!tables.length) return;
-        groups.push({ id: s.id, title: title(s) });
+        var note = Array.prototype.filter.call(s.box.children, function (n) {
+          return n !== s.h2 && !n.querySelector("table") && n.tagName !== "TABLE";
+        }).map(function (n) { return n.outerHTML; }).join("");
+        groups.push({ id: s.id, title: title(s), note: note });
         Array.prototype.forEach.call(tables, function (t) {
           rowsOf(t, title(s)).forEach(function (r) {
             var key = r.kind + "|" + r.nameText + "|" + r.heads.slice(1).map(function (h) {
@@ -175,29 +214,85 @@
       if (src) article.insertBefore(box, src.box); else article.appendChild(box);
       lists.push({ rows: all, box: box, groups: groups });
     } else {
-      secs.forEach(function (s) {
-        var t = s.box.querySelector("table");
-        if (!t || s.sources) return;
+      var only = cfg.sections ? cfg.sections.map(function (x) { return x.toLowerCase(); }) : null;
+      var headsOf = function (t) {
+        return Array.prototype.map.call(t.querySelectorAll("thead th"), text).join("|");
+      };
+      // The "###" heading a table sits under, if any (and whether only the
+      // table follows it, so the heading can go with the table).
+      // The "###" heading a table sits under, and the text around the table
+      // up to the next heading or table (it moves into the list with it).
+      var isTable = function (n) { return n.tagName === "TABLE" || (n.classList && n.classList.contains("md-typeset__scrollwrap")); };
+      var h3Of = function (wrap) {
+        var n = wrap.previousElementSibling, text = [];
+        while (n && n.tagName !== "H3" && n.tagName !== "H2" && !isTable(n)) { text.unshift(n); n = n.previousElementSibling; }
+        if (!n || n.tagName !== "H3") return null;
+        n2 = wrap.nextElementSibling;
+        while (n2 && !/^H[1-3]$/.test(n2.tagName) && !isTable(n2)) { text.push(n2); n2 = n2.nextElementSibling; }
+        return { h3: n, text: text };
+      };
+      var n2;
+      var addList = function (tables, sec) {
         // The theme wraps tables for scrolling; hide the outermost wrapper.
-        var wrap = t.closest(".md-typeset__scrollwrap") || t;
+        var wraps = tables.map(function (t) { return t.closest(".md-typeset__scrollwrap") || t; });
+        // Each table's heading, found before the list box goes in.
+        var heads = wraps.map(function (w) { return tables.length > 1 ? h3Of(w) : null; });
         var box = el("div", "fg-listbox");
-        wrap.parentNode.insertBefore(box, wrap);
-        wrap.classList.add("fg-gone");
-        lists.push({ rows: rowsOf(t, null), box: box, sec: s });
+        wraps[0].parentNode.insertBefore(box, wraps[0]);
+        var rows = [], groups = [];
+        tables.forEach(function (t, ti) {
+          var wrap = wraps[ti];
+          var h = heads[ti];
+          var g = h ? title({ h2: h.h3 }) : null;
+          if (g && !groups.some(function (x) { return x.title === g; })) {
+            groups.push({ id: h.h3.id, title: g, text: h.text.map(function (n) { return n.outerHTML; }).join("") });
+          }
+          rows = rows.concat(rowsOf(t, g));
+          wrap.classList.add("fg-gone");
+          if (h) {
+            h.h3.classList.add("fg-gone");
+            h.text.forEach(function (n) { n.classList.add("fg-gone"); });
+          }
+        });
+        lists.push({ rows: rows, box: box, sec: sec, groups: groups });
+      };
+      secs.forEach(function (s) {
+        if (s.sources) return;
+        if (only && only.indexOf(title(s).toLowerCase()) < 0) return;
+        var tables = Array.prototype.slice.call(s.box.querySelectorAll("table"));
+        if (!tables.length) return;
+        var k = headsOf(tables[0]);
+        addList(tables.filter(function (t) { return headsOf(t) === k; }), s);
       });
+      // A table before the first section (a page that's one big table).
+      if (!only) {
+        var loose = Array.prototype.filter.call(article.querySelectorAll("table"), function (t) {
+          return !t.closest(".fg-sec") && !t.closest(".fg-gone");
+        });
+        if (loose.length) addList([loose[0]], null);
+      }
     }
     if (!lists.length) return null;
 
     // A column is a number column if every value in it is a number or "—".
     var numCols = {};
-    show.forEach(function (col) {
+    lists.forEach(function (L) {
+      var heads = L.rows.length ? L.rows[0].heads : [];
+      var own = L.sec && cfg.show_in && cfg.show_in[title(L.sec)];
+      L.show = (own || show).filter(function (col) { return heads.indexOf(col) >= 0; });
+      // Nothing to show from the list: its next two columns.
+      if (!L.show.length && !own) L.show = heads.slice(1, 3);
+    });
+    var allShown = [];
+    lists.forEach(function (L) { L.show.forEach(function (c) { if (allShown.indexOf(c) < 0) allShown.push(c); }); });
+    allShown.forEach(function (col) {
       var any = false, all = true;
       lists.forEach(function (L) {
         L.rows.forEach(function (r) {
           var c = r.cells[col];
           if (!c || c.text === "—" || c.text === "") return;
           // A number, optionally with a note: "2,000 (casino)".
-          if (/^[\d,.\s%()+-]+$/.test(c.text) || /^[\d,.]+\s*\([^)]{1,20}\)$/.test(c.text)) any = true; else all = false;
+          if (/^[\d,.\s%()+–-]+$/.test(c.text) || /^[\d,.]+\s*\([^)]{1,20}\)$/.test(c.text)) any = true; else all = false;
         });
       });
       numCols[col] = any && all;
@@ -249,10 +344,9 @@
         kinds.map(function (k) { return '<option value="' + esc(k) + '">' + esc(plural(k)) + "</option>"; }).join("") +
         "</select></div>";
     }
-    if (cfg.merge && cfg.group) {
-      html += '<div class="fg-grp"><label class="fg-lbl">' + esc(cfg.group) + '</label><select data-k="group">' +
-        '<option value="">All</option>' +
-        lists[0].groups.map(function (g) { return '<option value="' + esc(g.title) + '">' + esc(g.title) + "</option>"; }).join("") +
+    if (cfg.group) {
+      // Filled in by draw() with the groups of the list on show.
+      html += '<div class="fg-grp" data-groups><label class="fg-lbl">' + esc(cfg.group) + '</label><select data-k="group">' +
         "</select></div>";
     }
     if (cfg.chips) {
@@ -270,7 +364,9 @@
     var top = el("div", "fg-tools");
     top.appendChild(ctl);
     top.appendChild(count);
-    insertTop(top, secs);
+    // A page that's one big table: the controls go right above its list.
+    if (!lists[0].sec && !cfg.merge) article.insertBefore(top, lists[0].box);
+    else insertTop(top, secs);
 
     ctl.addEventListener("input", function (e) {
       if (e.target.type === "search") { state.q = e.target.value.trim().toLowerCase(); draw(); }
@@ -308,7 +404,7 @@
       head.setAttribute("aria-expanded", "false");
       var h = '<span class="fg-name"><span class="fg-cursor"></span><span>' + r.name + "</span>" +
         (L.kinds.length > 1 && r.kind !== L.kinds[0] ? '<span class="fg-tag">' + esc(r.kind) + "</span>" : "") + "</span>";
-      show.forEach(function (col) {
+      L.show.forEach(function (col) {
         var v = cellHtml(col, r);
         h += '<span class="fg-c' + (numCols[col] ? " fg-num" : "") + '" data-k="' + esc(col) + '">' + (v === "" ? "—" : v) + "</span>";
       });
@@ -319,22 +415,22 @@
         row.classList.toggle("open", open);
         head.setAttribute("aria-expanded", open);
         var d = row.querySelector(".fg-detail");
-        if (open && !d) row.appendChild(detail(r));
+        if (open && !d) row.appendChild(detail(r, L));
         else if (d) d.hidden = !open;
       });
       return row;
     }
 
-    function detail(r) {
+    function detail(r, L) {
       var d = el("div", "fg-detail");
       var h = "<dl>";
       r.heads.slice(1).forEach(function (col) {
-        if (show.indexOf(col) >= 0) return;
+        if (L.show.indexOf(col) >= 0) return;
         var v = cellHtml(col, r);
-        h += "<dt>" + esc(col) + "</dt><dd>" + (v || "—") + "</dd>";
+        h += "<dt>" + esc(label(col)) + "</dt><dd>" + (v || "—") + "</dd>";
       });
       if (r.groups.length) {
-        h += "<dt>" + esc(cfg.group_label || "Found in") + "</dt><dd>" + r.groups.map(esc).join(", ") + "</dd>";
+        h += "<dt>" + esc(cfg.group_label || (cfg.merge ? "Found in" : (L.sec && cfg.group_in && cfg.group_in[title(L.sec)]) || cfg.group || "Found in")) + "</dt><dd>" + r.groups.map(esc).join(", ") + "</dd>";
       }
       d.innerHTML = h + "</dl>";
       // Item and enemy names in it open cards (fg-cards.js), if the page has them.
@@ -345,14 +441,19 @@
     function colhead(L) {
       var c = el("div", "fg-colhead");
       var h = "<span>" + esc(L.kinds.length > 1 ? "Name" : L.kinds[0]) + "</span>";
-      show.forEach(function (col) {
-        h += '<span class="' + (numCols[col] ? "fg-num" : "") + '">' + esc(col) + "</span>";
+      L.show.forEach(function (col) {
+        h += '<span class="' + (numCols[col] ? "fg-num" : "") + '">' + esc(label(col)) + "</span>";
       });
       c.innerHTML = h;
       return c;
     }
 
     lists.forEach(function (L) {
+      if (cfg.merge) {
+        L.note = el("div", "fg-groupnote");
+        L.note.hidden = true;
+        L.box.appendChild(L.note);
+      }
       L.box.appendChild(colhead(L));
       L.list = el("div", "fg-list");
       L.box.appendChild(L.list);
@@ -362,7 +463,7 @@
       L.els = L.rows.map(function (r) { return rowEl(r, L); });
       // Every row, shown or not, so fg-cards.js can link names in them.
       (window.fgPageRows = window.fgPageRows || []).push.apply(window.fgPageRows, L.els);
-      L.box.style.setProperty("--fg-cols", "minmax(0,1.6fr)" + show.map(function (col) {
+      L.box.style.setProperty("--fg-cols", "minmax(0,1.6fr)" + L.show.map(function (col) {
         return numCols[col] ? " minmax(0,.55fr)" : " minmax(0,1.2fr)";
       }).join(""));
     });
@@ -397,24 +498,75 @@
           });
         }
         L.list.textContent = "";
-        idx.forEach(function (i) { L.list.appendChild(L.els[i]); });
+        // In story order, a "###" group's rows start with its heading.
+        var heads = !cfg.merge && !s && L.groups && L.groups.length > 1, last = null;
+        idx.forEach(function (i) {
+          var g = L.rows[i].groups[0];
+          if (heads && g && g !== last) {
+            L.list.appendChild(el("div", "fg-grouphead", esc(g)));
+            var gt = L.groups.filter(function (x) { return x.title === g; })[0];
+            if (gt && gt.text) {
+              if (!gt.el) { gt.el = el("div", "fg-grouptext", gt.text); if (window.fgCards) window.fgCards.link(gt.el); }
+              L.list.appendChild(gt.el);
+            }
+          }
+          last = g;
+          L.list.appendChild(L.els[i]);
+        });
         L.empty.hidden = idx.length > 0;
         L.shown = idx.length;
+        if (L.note) {
+          var g = state.group && (L.groups || []).filter(function (x) { return x.title === state.group; })[0];
+          L.note.innerHTML = g && g.note ? g.note : "";
+          L.note.hidden = !(g && g.note);
+          if (g && g.note && window.fgCards) window.fgCards.link(L.note);
+        }
       });
-      var vis = lists.filter(function (L) { return !L.sec || !L.sec.box.hidden; })[0] || lists[0];
-      count.textContent = vis.shown + " of " + vis.rows.length;
+      // The lists on show (all of them, or the current sub-tab's).
+      var vis = lists.filter(function (L) { return !L.sec || !L.sec.box.hidden; });
+      top.hidden = !vis.length;
+      if (!vis.length) { if (onDraw) onDraw(); return; }
+      var shown = 0, total = 0;
+      vis.forEach(function (L) { shown += L.shown; total += L.rows.length; });
+      count.textContent = shown + " of " + total;
+      fillGroups(vis);
       if (onDraw) onDraw();
+    }
+    // The group dropdown lists the groups of the lists on show.
+    var groupsKey = null;
+    function fillGroups(vis) {
+      var box = ctl.querySelector("[data-groups]");
+      if (!box) return;
+      var gs = [];
+      vis.forEach(function (L) { (L.groups || []).forEach(function (g) { if (gs.indexOf(g.title) < 0) gs.push(g.title); }); });
+      box.hidden = gs.length < 2;
+      // A section can call its groups something else (Bosses: Chapter).
+      var own = cfg.group_in && vis.length === 1 && vis[0].sec && cfg.group_in[title(vis[0].sec)];
+      box.querySelector("label").textContent = own || cfg.group;
+      var key = gs.join("|");
+      if (key === groupsKey) return;
+      groupsKey = key;
+      var sel = box.querySelector("select");
+      sel.innerHTML = '<option value="">All</option>' + gs.map(function (g) {
+        return '<option value="' + esc(g) + '">' + esc(g) + "</option>";
+      }).join("");
+      if (gs.indexOf(state.group) < 0 && state.group) { state.group = ""; draw(); return; }
+      sel.value = state.group;
     }
     var onDraw = null;
 
-    if (cfg.merge && cfg.group) {
-      // A link to an area's old heading filters to that area.
+    if (cfg.group) {
+      // A link to a group's old heading (an area) filters to that group.
       openers.push(function (id, scroll) {
-        var g = lists[0].groups.filter(function (x) { return x.id === id; })[0];
-        if (!g) return false;
-        state.group = g.title;
-        ctl.querySelector('select[data-k="group"]').value = g.title;
+        var hit = null;
+        lists.forEach(function (L) {
+          (L.groups || []).forEach(function (g) { if (!hit && g.id === id) hit = { L: L, g: g }; });
+        });
+        if (!hit) return false;
+        if (hit.L.sec && api.selectSec) api.selectSec(hit.L.sec.id);
+        state.group = hit.g.title;
         draw();
+        ctl.querySelector('select[data-k="group"]').value = hit.g.title;
         if (scroll) top.scrollIntoView({ block: "start" });
         return true;
       });
@@ -434,6 +586,26 @@
       if (!hit) return false;
       state.q = name; state.kind = ""; state.group = ""; state.chips = [];
       ctl.querySelector("input[type=search]").value = id.slice(5);
+      Array.prototype.forEach.call(ctl.querySelectorAll("select"), function (x) { x.value = ""; });
+      Array.prototype.forEach.call(ctl.querySelectorAll(".fg-chip"), function (x) { x.setAttribute("aria-pressed", "false"); });
+      if (hit.L.sec && api.selectSec) api.selectSec(hit.L.sec.id);
+      draw();
+      var row = hit.L.els[hit.i];
+      if (!row.classList.contains("open")) row.querySelector(".fg-head").click();
+      if (scroll) row.scrollIntoView({ block: "center" });
+      return true;
+    });
+
+    // A link to an anchor in a row's name cell (bazaar.md#chronos-tear-pack)
+    // opens that row, with every filter cleared.
+    openers.push(function (id, scroll) {
+      var hit = null;
+      lists.forEach(function (L) {
+        L.rows.forEach(function (r, i) { if (!hit && r.anchors.indexOf(id) >= 0) hit = { L: L, i: i }; });
+      });
+      if (!hit) return false;
+      state.q = ""; state.kind = ""; state.group = ""; state.chips = [];
+      ctl.querySelector("input[type=search]").value = "";
       Array.prototype.forEach.call(ctl.querySelectorAll("select"), function (x) { x.value = ""; });
       Array.prototype.forEach.call(ctl.querySelectorAll(".fg-chip"), function (x) { x.setAttribute("aria-pressed", "false"); });
       if (hit.L.sec && api.selectSec) api.selectSec(hit.L.sec.id);
@@ -524,10 +696,16 @@
 
     chs.forEach(function (s, i) {
       var row = el("div", "fg-row fg-ch");
-      var tags = Array.prototype.map.call(s.box.querySelectorAll("h3"), text)
-        .map(function (t) { return t.replace(/¶$/, "").trim(); })
-        .filter(function (t) { return /^boss/i.test(t); })
-        .map(function (t) { return '<span class="fg-tag fg-boss">' + esc(t.replace(/^boss(es)?:\s*/i, "")) + "</span>"; });
+      // "### Boss: X", "### Final Boss: X", a "Boss: X" callout's title, or
+      // a boss in an Enemies line (class fg-wt-boss).
+      var names = [];
+      Array.prototype.forEach.call(s.box.querySelectorAll("h3, .admonition-title, summary, .fg-wt-boss"), function (n) {
+        var t = text(n).replace(/¶$/, "").trim();
+        if (n.classList.contains("fg-wt-boss")) names.push(t);
+        else if (/^(final )?boss(es)?:/i.test(t)) names.push(t.replace(/^(final )?boss(es)?:\s*/i, ""));
+      });
+      var tags = names.filter(function (t, j) { return names.indexOf(t) === j; })
+        .map(function (t) { return '<span class="fg-tag fg-boss">' + esc(t) + "</span>"; });
       var head = el("button", "fg-head",
         '<span class="fg-chnum">' + (i + 1 < 10 ? "0" : "") + (i + 1) + "</span>" +
         '<span class="fg-name"><span class="fg-cursor"></span><span>' + esc(title(s)) + "</span></span>" +

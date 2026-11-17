@@ -4,6 +4,8 @@ spoilers: none
 status: draft
 tags:
   - Shadowrun
+fg:
+  subtabs: true
 ---
 
 # Tips

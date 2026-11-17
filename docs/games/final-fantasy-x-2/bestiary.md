@@ -6,6 +6,14 @@ spoilers: none
 status: draft
 tags:
   - Final Fantasy X-2
+fg:
+  list:
+    show: [Lv, HP, Weak]
+    sort: [Lv, -Lv, -HP]
+    chips: Weak
+    chips_label: Weak to
+    chips_style: elements
+    placeholder: Name, item, place
 ---
 
 # Bestiary
@@ -34,3 +42,5 @@ drop the rare one, and Master Thief always steals the rare one.
 
 - Stats, elements, steals, drops, bribes and locations:
   [Jegged's FFX-2 bestiary](https://jegged.com/Games/Final-Fantasy-X-2/Bestiary/).
+
+<script type="application/json" id="fg-cards-data">{{ {"game": "final-fantasy-x-2", "bestiary": ffx2_bestiary, "creatures": ffx2_creatures, "accessories": ffx2_accessories, "grids": ffx2_grids, "dresspheres": ffx2_dresspheres, "feeding": ffx2_feeding, "stop": ["Rikku", "Paine", "Brother", "Buddy", "Gippal", "Baralai", "Nooj", "Kimahri", "Lulu", "Tidus", "Elma", "Lucil"]} | tojson }}</script>

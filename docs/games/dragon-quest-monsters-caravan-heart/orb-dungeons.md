@@ -4,6 +4,8 @@ spoilers: none
 status: draft
 tags:
   - Dragon Quest Monsters Caravan Heart
+fg:
+  subtabs: true
 ---
 
 # Orb Dungeons

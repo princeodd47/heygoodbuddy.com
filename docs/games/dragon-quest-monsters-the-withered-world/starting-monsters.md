@@ -19,3 +19,5 @@ Your heroine sets the pool. Fluffy's three yes/no questions pick the monster.
 | No | No | No | [Vegandragora](monsters.md#vegandragora) | [Small Fry](monsters.md#small-fry) |
 
 You can retake the quiz before confirming.
+
+<script type="application/json" id="fg-cards-data">{{ {"game": "dragon-quest-monsters-the-withered-world", "monsters": dqm, "talents": dqm_talents, "items": dqm_items} | tojson }}</script>

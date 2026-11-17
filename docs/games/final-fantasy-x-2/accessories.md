@@ -4,6 +4,12 @@ spoilers: none
 status: draft
 tags:
   - Final Fantasy X-2
+fg:
+  subtabs: true
+  list:
+    show: [Effect, Sell]
+    sort: [-Sell]
+    placeholder: Name, effect, place
 ---
 
 # Accessories
@@ -36,3 +42,5 @@ it, so check the in-game description before relying on one.
   [Jegged's Develop Creature page](https://jegged.com/Games/Final-Fantasy-X-2/Creature-Creator/Develop-Creature.html),
   checked against the
   [Gamer Guides accessory list](https://www.gamerguides.com/final-fantasy-x-2/guide/creature-create/creature-buildup/accessory-based-augmentation).
+
+<script type="application/json" id="fg-cards-data">{{ {"game": "final-fantasy-x-2", "bestiary": ffx2_bestiary, "creatures": ffx2_creatures, "accessories": ffx2_accessories, "grids": ffx2_grids, "dresspheres": ffx2_dresspheres, "feeding": ffx2_feeding, "stop": ["Rikku", "Paine", "Brother", "Buddy", "Gippal", "Baralai", "Nooj", "Kimahri", "Lulu", "Tidus", "Elma", "Lucil"]} | tojson }}</script>

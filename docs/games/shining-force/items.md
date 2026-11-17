@@ -4,6 +4,11 @@ spoilers: none
 status: draft
 tags:
   - Shining Force
+fg:
+  subtabs: true
+  list:
+    show: [Price, Effect]
+    placeholder: Name, effect, where
 ---
 
 # Items
@@ -38,3 +43,5 @@ chests, listed in the order you reach them.
   checked against the US item list in a
   [save state hacking guide](https://gamefaqs.gamespot.com/genesis/563340-shining-force/faqs/7586)
   (GameFAQs).
+
+<script type="application/json" id="fg-cards-data">{{ {"game": "shining-force", "bestiary": sf_bestiary, "equipment": sf_equipment, "items": sf_items} | tojson }}</script>

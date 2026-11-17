@@ -4,6 +4,10 @@ spoilers: none
 status: draft
 tags:
   - Final Fantasy XII The Zodiac Age
+fg:
+  list:
+    show: [Enemies, Price (gil)]
+    placeholder: Name, enemy
 ---
 
 # Monographs
@@ -28,3 +32,5 @@ Not a Monograph, but it works the same way. With the **Canopic Jar** in your
 inventory, any enemy can drop **Arcana**. It's sold in the Bazaar as **Morbid Urn** for 250,000 gil,
 after you sell **Horakhty's Flame**, **Phobos Glaze** and **Deimos Clay**.
 All three are hunt rewards.
+
+<script type="application/json" id="fg-cards-data">{{ {"game": "final-fantasy-xii-the-zodiac-age", "bazaar": ffxii_bazaar, "monographs": ffxii_monographs} | tojson }}</script>

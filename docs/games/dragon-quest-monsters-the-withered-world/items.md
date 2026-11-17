@@ -5,6 +5,10 @@ spoilers: none
 status: draft
 tags:
   - Dragon Quest Monsters The Withered World
+fg:
+  list:
+    show: [Type, Description]
+    placeholder: Name, effect, where
 ---
 
 # Items
@@ -18,3 +22,5 @@ comes with digital purchases.
 {% for i in dqm_items['items'] -%}
 | <a id="{{ i.id }}"></a>**{{ i.name }}** | {{ i.type }} | {{ i.description }} | {{ i.where | default("") }} |
 {% endfor %}
+
+<script type="application/json" id="fg-cards-data">{{ {"game": "dragon-quest-monsters-the-withered-world", "monsters": dqm, "talents": dqm_talents, "items": dqm_items} | tojson }}</script>

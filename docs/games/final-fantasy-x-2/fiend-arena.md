@@ -4,6 +4,12 @@ spoilers: none
 status: draft
 tags:
   - Final Fantasy X-2
+fg:
+  subtabs: true
+  list:
+    group: Cup
+    show: [Creatures]
+    placeholder: Team, creature
 ---
 
 # Fiend Arena
@@ -87,3 +93,5 @@ Almighty Shinra gives the **Last Resort Garment Grid**.
   [Jegged's Fiend Arena page](https://jegged.com/Games/Final-Fantasy-X-2/Creature-Creator/Fiend-Arena.html),
   checked against the
   [Gamer Guides Colosseum section](https://www.gamerguides.com/final-fantasy-x-2/guide/creature-create/the-colosseum/what-is-the-colosseum).
+
+<script type="application/json" id="fg-cards-data">{{ {"game": "final-fantasy-x-2", "bestiary": ffx2_bestiary, "creatures": ffx2_creatures, "accessories": ffx2_accessories, "grids": ffx2_grids, "dresspheres": ffx2_dresspheres, "feeding": ffx2_feeding, "stop": ["Rikku", "Paine", "Brother", "Buddy", "Gippal", "Baralai", "Nooj", "Kimahri", "Lulu", "Tidus", "Elma", "Lucil"]} | tojson }}</script>

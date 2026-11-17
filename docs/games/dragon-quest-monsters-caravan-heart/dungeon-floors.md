@@ -4,6 +4,11 @@ spoilers: none
 status: draft
 tags:
   - Dragon Quest Monsters Caravan Heart
+fg:
+  subtabs: true
+  list:
+    show: [Enemies, Event]
+    placeholder: Enemy, chest, event
 ---
 
 # Dungeon Floors

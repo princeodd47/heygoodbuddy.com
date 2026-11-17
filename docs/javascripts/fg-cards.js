@@ -20,7 +20,7 @@
   var ELEMENTS = {
     fire: "#ff6b4a", ice: "#7fdcff", thunder: "#ffe45c", water: "#4f9dff",
     wind: "#7cf0a2", earth: "#d9a066", light: "#fff3b0", shadow: "#9a7cff",
-    dark: "#9a7cff", heal: "#7cf0a2"
+    dark: "#9a7cff", heal: "#7cf0a2", lightning: "#ffe45c", holy: "#ffffff", poison: "#c78bff"
   };
   // Names that read as ordinary words in the text; never linked.
   var STOP = ["Shadow", "Current", "Pot", "Statue", "Brave", "Master", "Cloth", "Shield"];
@@ -58,8 +58,229 @@
   var cards = {};
   var aliases = {};
   function card(name) {
-    return cards[name] || (cards[name] = { name: name, enemy: null, areas: [], bosses: [], gear: null, item: null, spell: null, ip: null });
+    return cards[name] || (cards[name] = { name: name, enemy: null, areas: [], bosses: [], gear: null, item: null, spell: null, ip: null, extra: [] });
   }
+  // A plural ("Goblins", "Dark Elves") opens the one-name card.
+  function plurals(name) {
+    aliases[plural(name)] = name;
+    if (/f$/.test(name)) aliases[name.slice(0, -1) + "ves"] = name;
+  }
+
+  // Other games' data, turned into generic card sections:
+  //   {type, page, find, stats: [[label, value]], rows: [[label, value]],
+  //    blocks: [{where: [{label, title, count}], stats, rows}], note}
+  // A row value is text, or {el: "Fire, Ice"} for element tags.
+  var ADAPTERS = {};
+  ADAPTERS["shining-force"] = function (d) {
+    (d.bestiary && d.bestiary.battles || []).forEach(function (b) {
+      var title = "Battle " + b.number + ": " + b.name;
+      [["Enemy", b.enemies || []], ["Boss", b.bosses || []]].forEach(function (p) {
+        p[1].forEach(function (e) {
+          // "Colossus x3", "Skeleton (stronger)", "Dark Dragon (3 heads)".
+          var m = e.name.match(/^(.*?)(?: x(\d+))?(?: \((.*)\))?$/);
+          var c = card(m[1]);
+          plurals(m[1]);
+          var sec = c.extra.filter(function (x) { return x.type === p[0]; })[0];
+          if (!sec) c.extra.push(sec = { type: p[0], page: "bestiary", find: e.name, blocks: [] });
+          var stats = [["HP", e.hp], ["ATT", e.atk], ["DEF", e.def], ["AGI", e.agi], ["MOV", e.mov]];
+          var rows = [["Wields", e.weapon], ["Spells", e.spells], ["Note", (m[3] ? m[3] + ". " : "") + (e.note || "")]];
+          var sig = JSON.stringify([stats, rows]);
+          var blk = sec.blocks.filter(function (x) { return x.sig === sig; })[0];
+          if (!blk) sec.blocks.push(blk = { sig: sig, where: [], stats: stats, rows: rows });
+          blk.where.push({ label: "Battle " + b.number, title: title, count: m[2] ? +m[2] : e.count });
+        });
+      });
+    });
+    var eq = d.equipment || {};
+    (eq.weapons || []).forEach(function (g) {
+      g.items.forEach(function (e) {
+        card(e.name).extra.push({ type: "Weapon · " + g.type, page: "equipment",
+          stats: [["ATT", "+" + e.atk]], rows: [["Price", e.price], ["Who", e.who], ["Where", e.where]] });
+      });
+    });
+    (eq.rings || []).forEach(function (e) {
+      card(e.name).extra.push({ type: "Ring", page: "equipment",
+        rows: [["Equipped", e.effect], ["Use", e.use], ["Who", e.who], ["Where", e.where]] });
+    });
+    (d.items && d.items.groups || []).forEach(function (g) {
+      g.items.forEach(function (it) {
+        card(it.name).extra.push({ type: g.type, page: "items", note: g.note,
+          rows: [["Effect", it.effect], ["Price", it.price], ["Where", it.where]] });
+      });
+    });
+  };
+  ADAPTERS["treasure-of-the-rudras"] = function (d) {
+    // A block per set of stats; "where" lists every place with those stats.
+    function add(name, type, title, label, stats, rows) {
+      var m = name.match(/^(.*?)(?: \((.*)\))?$/);
+      var c = card(m[1]);
+      if (/[^s]$/.test(m[1])) plurals(m[1]);
+      var sec = c.extra.filter(function (x) { return x.type === type; })[0];
+      if (!sec) c.extra.push(sec = { type: type, page: "bestiary", find: name, blocks: [] });
+      if (m[2]) rows = [["Form", m[2]]].concat(rows);
+      var sig = JSON.stringify([stats, rows]);
+      var blk = sec.blocks.filter(function (x) { return x.sig === sig; })[0];
+      if (!blk) sec.blocks.push(blk = { sig: sig, where: [], stats: stats, rows: rows });
+      blk.where.push({ label: label, title: title });
+    }
+    (d.monsters && d.monsters.areas || []).forEach(function (a) {
+      a.monsters.forEach(function (m) {
+        add(m.name, "Enemy", a.area, a.area,
+          [["Level", m.level], ["HP", m.hp], ["EXP", m.exp], ["Ragu", m.ragu]],
+          [["Weak", m.weak ? { el: m.weak } : ""], ["Drops", m.drops], ["Note", m.note]]);
+      });
+    });
+    (d.bosses && d.bosses.chapters || []).forEach(function (ch) {
+      ch.bosses.forEach(function (b) {
+        add(b.name, "Boss", ch.name, ch.name + (b.day != null ? " · Day " + b.day : "") + " · " + b.where,
+          [["HP", b.hp]],
+          [["Weak", b.weak ? { el: b.weak } : ""], ["Drops", b.drops], ["Note", b.note]]);
+      });
+    });
+    var eq = d.equipment || {};
+    (eq.weapons || []).forEach(function (g) {
+      g.items.forEach(function (e) {
+        card(e.name).extra.push({ type: "Weapon · " + g.type, page: "equipment",
+          stats: [["Attack", e.atk], ["MDef", e.mdef]],
+          rows: [["Element", e.elem ? { el: e.elem } : ""], ["Notes", e.notes], ["Sells", e.sell], ["Where", e.where]] });
+      });
+    });
+    (eq.armor || []).forEach(function (g) {
+      g.items.forEach(function (e) {
+        card(e.name).extra.push({ type: "Armor · " + g.type, page: "equipment",
+          stats: [["Def", e.def], ["MDef", e.mdef || 0]],
+          rows: [["Element", e.elem ? { el: e.elem } : ""], ["Notes", e.notes], ["Buys", e.buy], ["Sells", e.sell], ["Where", e.where]] });
+      });
+    });
+  };
+  ADAPTERS["final-fantasy-x-2"] = function (d) {
+    function txt(v) { return v ? { md: v } : ""; }
+    (d.bestiary && d.bestiary.enemies || []).forEach(function (e) {
+      card(e.name).extra.push({ type: "Enemy", page: "bestiary",
+        stats: [["Lv", e.level], ["HP", e.hp]],
+        rows: [["Weak", e.weak ? { el: e.weak } : ""], ["Other", e.other], ["Steal", e.steal], ["Drop", e.drop],
+          ["Bribe", e.bribe], ["Where", txt(e.where)]] });
+    });
+    (d.creatures && d.creatures.creatures || []).forEach(function (c) {
+      card(c.name).extra.push({ type: "Creature · Size " + c.size, page: "creatures", rows: [["Trap it", txt(c.where)]] });
+    });
+    (d.accessories && d.accessories.categories || []).forEach(function (g) {
+      g.accessories.forEach(function (a) {
+        card(a.name).extra.push({ type: "Accessory · " + g.name, page: "accessories",
+          rows: [["Effect", a.effect], ["Feed", a.feed], ["Sell", a.sell], ["Where", txt(a.where)]] });
+      });
+    });
+    (d.grids && d.grids.grids || []).forEach(function (g) {
+      card(g.name).extra.push({ type: "Garment Grid", page: "garment grids",
+        rows: [["Equipped", g.equip], ["Gates", txt(g.gates)], ["Creature", g.creature], ["Chapter", g.chapter], ["Where", txt(g.where)]] });
+    });
+    (d.dresspheres && d.dresspheres.dresspheres || []).forEach(function (x) {
+      card(x.name).extra.push({ type: "Dressphere", page: "dresspheres", hash: slug(x.name), rows: [["How", txt(x.how)]] });
+    });
+    (d.feeding && d.feeding.items || []).forEach(function (i) {
+      card(i.name).extra.push({ type: "Item", page: "feeding",
+        rows: [["Feed", i.qty ? i.qty + " to teach " + (i.teaches || "—") : ""], ["Type", i.type], ["Stat gain", i.gain]] });
+    });
+  };
+  ADAPTERS["final-fantasy-xii-the-zodiac-age"] = function (d) {
+    var bz = d.bazaar || {};
+    [["Repeatable bundle", bz.repeatable || []], ["Bazaar bundle", bz.bundles || []]].forEach(function (p) {
+      p[1].forEach(function (b) {
+        card(b.name).extra.push({ type: p[0], page: "bazaar", hash: b.id,
+          rows: [["Loot to sell", b.loot], ["Contains", b.contains], ["Gil", b.price]] });
+      });
+    });
+    (d.monographs && d.monographs.monographs || []).forEach(function (m) {
+      card(m.name).extra.push({ type: "Monograph", page: "monographs", hash: m.id,
+        rows: [["Enemies", m.enemies], ["Price", m.price], ["Unlock", m.unlock]] });
+    });
+  };
+  // "[Visions](visions.md)" links in data text read as their words.
+  function unlink(t) { return t ? String(t).replace(/\[([^\]]+)\]\([^)]+\)/g, "$1") : t; }
+  ADAPTERS["final-fantasy-resonance"] = function (d) {
+    function txt(v) { return v ? { md: unlink(v) } : ""; }
+    function el(v) { return v ? { el: v } : ""; }
+    (d.bestiary && d.bestiary.bestiary || []).forEach(function (a) {
+      a.enemies.forEach(function (e) {
+        var c = card(e.name);
+        var sec = c.extra.filter(function (x) { return x.type === "Enemy"; })[0];
+        if (!sec) c.extra.push(sec = { type: "Enemy", page: "bestiary", blocks: [] });
+        var stats = [["Level", e.level]];
+        var rows = [["Weak", el(e.weak)], ["Resists", el(e.resist)], ["Drops", e.drops], ["Steals", e.steals]];
+        var sig = JSON.stringify([stats, rows]);
+        var blk = sec.blocks.filter(function (x) { return x.sig === sig; })[0];
+        if (!blk) sec.blocks.push(blk = { sig: sig, where: [], stats: stats, rows: rows });
+        blk.where.push({ label: e.where && e.where !== a.area ? a.area + " · " + e.where : a.area, title: a.area });
+      });
+    });
+    var eq = d.equipment || {};
+    (eq.weapons || []).forEach(function (g) {
+      g.entries.forEach(function (e) {
+        card(e.name).extra.push({ type: g.type + (g.who ? " · " + g.who : ""), page: "equipment",
+          stats: [["Atk", e.atk], ["Mag", e.mag]],
+          rows: [["Other", e.other], ["Effect", e.effect], ["Where", txt(e.where)]] });
+      });
+    });
+    (eq.armor || []).forEach(function (g) {
+      g.entries.forEach(function (e) {
+        card(e.name).extra.push({ type: g.type + (g.who ? " · " + g.who : ""), page: "equipment",
+          stats: [["Def", e.def], ["M.Def", e.mdef]],
+          rows: [["Other", e.other], ["Effect", e.effect], ["Where", txt(e.where)]] });
+      });
+    });
+    (eq.accessories || []).forEach(function (e) {
+      card(e.name).extra.push({ type: "Accessory", page: "accessories",
+        rows: [["Stats", e.other], ["Effect", e.effect], ["Where", txt(e.where)]] });
+    });
+    (d.items && d.items.groups || []).forEach(function (g) {
+      g.entries.forEach(function (e) {
+        card(e.name).extra.push({ type: "Item · " + g.group, page: "items",
+          rows: [["Effect", e.effect], ["Buy", txt(e.buy)], ["Found", txt(e.found)]] });
+      });
+    });
+    var ki = d.key_items || {};
+    [["Key item", ki.key_items || []], ["Artifact", ki.artifacts || []]].forEach(function (p) {
+      p[1].forEach(function (e) {
+        card(e.name).extra.push({ type: p[0], page: "key items",
+          rows: [["What", unlink(e.what)], ["Where", txt(e.where)]] });
+      });
+    });
+    (d.visions && d.visions.visions || []).forEach(function (v) {
+      card(v.name).extra.push({ type: "Vision", page: "visions", hash: "where-to-get-visions",
+        rows: [["How to get", txt(v.how_to_get)]] });
+    });
+  };
+  ADAPTERS["unicorn-overlord"] = function (d) {
+    (d.equipment && d.equipment.groups || []).forEach(function (g) {
+      g.entries.forEach(function (e) {
+        var rows = [["Effects", (e.effects || []).join(" · ")]];
+        if (e.skill) rows.push(["Skill", e.skill.name + (e.skill.details ? " (" + e.skill.details + ")" : "") + (e.skill.text ? ": " + e.skill.text : "")]);
+        rows.push(["Price", e.price], ["Where", (e.where || []).join(" · ")]);
+        card(e.name).extra.push({ type: g.type.replace(/ves$/, "ff").replace(/ies$/, "y").replace(/s$/, ""),
+          page: "equipment", stats: (e.stats || "").split(/\s*·\s*/).filter(Boolean).map(function (x) {
+            var m = x.match(/^(.*?)\s+(\S+)$/);
+            return m ? [m[1], m[2]] : [x, ""];
+          }), rows: rows });
+      });
+    });
+  };
+  ADAPTERS["dragon-quest-monsters-the-withered-world"] = function (d) {
+    var talents = {};
+    (d.talents && d.talents.talents || []).forEach(function (t) {
+      talents[t.id] = t.name;
+      card(t.name).extra.push({ type: "Talent", page: "talents", hash: t.id,
+        rows: t.tree.map(function (r) { return [r.points + " pts", r.name]; }) });
+    });
+    (d.monsters && d.monsters.monsters || []).forEach(function (m) {
+      card(m.name).extra.push({ type: "Monster · " + m.family + " · Rank " + m.rank, page: "monsters", hash: m.id,
+        rows: [["Talents", (m.talents || []).map(function (t) { return talents[t] || t; }).join(", ")], ["Where", m.where]] });
+    });
+    (d.items && d.items.items || []).forEach(function (i) {
+      card(i.name).extra.push({ type: "Item · " + i.type, page: "items", hash: i.id,
+        rows: [["Effect", i.description], ["Where", i.where]] });
+    });
+  };
+  if (data.game && ADAPTERS[data.game]) ADAPTERS[data.game](data);
 
   (data.bestiary && data.bestiary.areas || []).forEach(function (a) {
     (a.monsters || []).forEach(function (m) {
@@ -107,7 +328,11 @@
 
   var plain = (data.plain || []).concat(PLAIN);
   var names = Object.keys(cards).concat(Object.keys(aliases), plain)
-    .filter(function (n) { return STOP.indexOf(n) < 0; })
+    .filter(function (n) {
+      // A plural of a stopped name ("Rudras") is stopped too.
+      var stop = STOP.concat(data.stop || []);
+      return stop.indexOf(n) < 0 && stop.indexOf(aliases[n]) < 0;
+    })
     .sort(function (a, b) { return b.length - a.length; });
   var source = "(?<![\\w'’-])(" + names.map(function (n) {
     // A space in a name matches a line break in the text too.
@@ -190,6 +415,42 @@
     return href ? '<p class="fg-cardpop-link"><a href="' + esc(href) + '">Full entry →</a></p>' : "";
   }
 
+  // Data text with <br> line breaks and *italic* labels ("*Chest:* Luca").
+  function md(t) {
+    return esc(t).replace(/&lt;br&gt;/g, "<br>").replace(/\*([^*]+)\*/g, "<em>$1</em>");
+  }
+  function statLine(list) {
+    list = (list || []).filter(function (s) { return s[1] != null && s[1] !== ""; });
+    return list.length ? '<div class="fg-cardpop-stats">' + list.map(function (s) {
+      return "<span><b>" + esc(s[0]) + "</b>" + esc(fmt(s[1])) + "</span>";
+    }).join("") + "</div>" : "";
+  }
+  function rowList(list) {
+    var h = (list || []).map(function (r) {
+      var v = r[1];
+      if (v == null || v === "" || v === "—") return "";
+      return row(r[0], typeof v === "object" ? (v.el ? els(v.el) : md(v.md)) : esc(v));
+    }).join("");
+    return h ? "<dl>" + h + "</dl>" : "";
+  }
+  function section(c, x) {
+    var h = '<div class="fg-cardpop-type">' + esc(x.type) + "</div>" + statLine(x.stats);
+    (x.blocks || []).forEach(function (b) {
+      h += '<div class="fg-cardpop-fight"><div class="fg-cardpop-where">' + b.where.map(function (w) {
+        var href = pageLink(x.page, slug(w.title));
+        var t = esc(w.label) + (w.count > 1 ? " ×" + w.count : "");
+        return href ? '<a href="' + esc(href) + '" title="' + esc(w.title) + '">' + t + "</a>" : t;
+      }).join(", ") + "</div>" + statLine(b.stats) + rowList(b.rows) + "</div>";
+    });
+    h += rowList(x.rows);
+    if (x.note) h += '<p class="fg-cardpop-note">' + esc(x.note) + "</p>";
+    if (x.hash) {
+      var hh = pageLink(x.page, x.hash);
+      return h + (hh ? '<p class="fg-cardpop-link"><a href="' + esc(hh) + '">Full entry →</a></p>' : "");
+    }
+    return h + full(x.page, x.find || c.name);
+  }
+
   function render(c) {
     var h = '<button type="button" class="fg-cardpop-close" aria-label="Close">✕</button>' +
       '<div class="fg-cardpop-name">' + esc(c.name) + "</div>";
@@ -242,6 +503,7 @@
         (c.item.note ? '<p class="fg-cardpop-note">' + esc(c.item.note) + "</p>" : "") +
         full("items", c.name));
     }
+    c.extra.forEach(function (x) { parts.push(section(c, x)); });
     return h + parts.join('<hr class="fg-cardpop-sep">');
   }
 

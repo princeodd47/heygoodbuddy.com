@@ -4,6 +4,15 @@ spoilers: none
 status: draft
 tags:
   - Shining Force
+fg:
+  list:
+    merge: true
+    group: Battle
+    group_label: Battles
+    drop: ["#"]
+    show: [HP, ATT, DEF, AGI, MOV]
+    sort: [-HP, -ATT, -DEF, -AGI, -MOV]
+    placeholder: Name, weapon, spell, battle
 ---
 
 # Bestiary
@@ -37,3 +46,5 @@ shows up in several battles may be stronger in the later ones.*
 - Rosters, win conditions and enemy stats: Dark_Vortex's
   [Shining Force guide](https://gamefaqs.gamespot.com/genesis/563340-shining-force/faqs/51880)
   (GameFAQs).
+
+<script type="application/json" id="fg-cards-data">{{ {"game": "shining-force", "bestiary": sf_bestiary, "equipment": sf_equipment, "items": sf_items} | tojson }}</script>

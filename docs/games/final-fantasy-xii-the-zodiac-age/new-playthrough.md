@@ -4,6 +4,8 @@ spoilers: none
 status: draft
 tags:
   - Final Fantasy XII The Zodiac Age
+fg:
+  subtabs: true
 ---
 
 # New Playthrough
@@ -142,3 +144,5 @@ Buy each one in the Bazaar once it's unlocked. See [Monographs](monographs.md).
 | Warmage's | 20,000 | After the Rogue Tomato hunt: read notice boards 20 times |
 | Dragoon's | 22,000 | After the Rogue Tomato hunt: read notice boards 40 times |
 | Hunter's | 18,000 | After the Thextera hunt: talk to Gatsly in Muthru Bazaar |
+
+<script type="application/json" id="fg-cards-data">{{ {"game": "final-fantasy-xii-the-zodiac-age", "bazaar": ffxii_bazaar, "monographs": ffxii_monographs} | tojson }}</script>

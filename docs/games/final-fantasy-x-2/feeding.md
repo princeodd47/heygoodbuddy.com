@@ -4,6 +4,13 @@ spoilers: none
 status: draft
 tags:
   - Final Fantasy X-2
+fg:
+  subtabs: true
+  list:
+    group: Kind
+    show: [Qty, Teaches, Stat gain, Feeds for]
+    sort: [Qty, -Qty]
+    placeholder: Name, ability, stat
 ---
 
 # Feeding
@@ -85,3 +92,5 @@ stats it adds.
   and its comments, and a
   [GameFAQs thread](https://gamefaqs.gamespot.com/boards/643146-final-fantasy-x-x-2-hd-remaster/69219900)
   on HP feeding.
+
+<script type="application/json" id="fg-cards-data">{{ {"game": "final-fantasy-x-2", "bestiary": ffx2_bestiary, "creatures": ffx2_creatures, "accessories": ffx2_accessories, "grids": ffx2_grids, "dresspheres": ffx2_dresspheres, "feeding": ffx2_feeding, "stop": ["Rikku", "Paine", "Brother", "Buddy", "Gippal", "Baralai", "Nooj", "Kimahri", "Lulu", "Tidus", "Elma", "Lucil"]} | tojson }}</script>

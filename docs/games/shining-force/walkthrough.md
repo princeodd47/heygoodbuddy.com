@@ -4,7 +4,21 @@ spoilers: none
 status: draft
 tags:
   - Shining Force
+fg:
+  chapters: true
 ---
+
+{#- Each battle's enemies, from the bestiary data; bosses become the
+    chapter's tags. -#}
+{%- macro foes(n) -%}
+{%- for b in sf_bestiary.battles if b.number == n -%}
+{%- set href = "bestiary.md#" ~ ("Battle " ~ b.number ~ ": " ~ b.name)|lower|replace(":", "")|replace("'", "")|replace(" ", "-") -%}
+<div class="fg-wt-enemies"><b>Enemies</b><p><a href="{{ href }}">Battle {{ b.number }}</a>
+{%- for e in b.enemies or [] %}{{ e.name }}{% if e.count > 1 %} ×{{ e.count }}{% endif %}{% if not loop.last or b.bosses %}, {% endif %}{% endfor -%}
+{%- for e in b.bosses or [] %}<span class="fg-wt-boss">{{ e.name|replace(" x3", "")|replace(" (3 heads)", "") }}</span>{% if " x3" in e.name %} ×3{% endif %}{% if not loop.last %}, {% endif %}{% endfor -%}
+</p></div>
+{%- endfor -%}
+{%- endmacro %}
 
 # Walkthrough
 
@@ -41,10 +55,14 @@ for enemy stats.
 
 ### Battle 1: Gate of the Ancients
 
+{{ foes(1) }}
+
 - **Win:** kill the Rune Knight.
 - Goblins and Dark Dwarves. Easy.
 
 ### Battle 2: Outside Guardiana
+
+{{ foes(2) }}
 
 - **Win:** defeat all enemies.
 - Use your archer across the bridge.
@@ -59,6 +77,8 @@ for enemy stats.
   gold.
 
 ### Battle 3: To Alterone
+
+{{ foes(3) }}
 
 - **Win:** defeat all enemies, or reach Alterone.
 - Giant Bats can put you to sleep. Get Tao to level 4 for Blaze 2.
@@ -81,6 +101,8 @@ for enemy stats.
 
 ### Battle 4: Alterone
 
+{{ foes(4) }}
+
 - **Win:** defeat all enemies.
 - The Dark Mage has Blaze 2. Don't bunch up near him.
 
@@ -98,6 +120,8 @@ waterfall.
 
 ### Battle 5: Outside Rindo
 
+{{ foes(5) }}
+
 - **Win:** defeat all enemies.
 - Zombies poison and are weak to fire.
 
@@ -112,6 +136,8 @@ waterfall.
 
 ### Battle 6: Cavern of Darkness
 
+{{ foes(6) }}
+
 - **Win:** kill the Skeleton.
 - **Chests after:** Orb of Light, a **Power Ring** (southeast), Medical Herb
   (left of that, past the wall), Wooden Staff (top center), Power Staff
@@ -120,6 +146,8 @@ waterfall.
 
 ### Battle 7: Rindo Circus
 
+{{ foes(7) }}
+
 - **Win:** kill the Marionette.
 - The Marionette has Freeze 3 and regenerates. Get close so it uses its
   weaker physical attack. Evil Puppets drain HP.
@@ -127,6 +155,8 @@ waterfall.
   Potion by the boy.
 
 ### Battle 8: Shade Abbey
+
+{{ foes(8) }}
 
 - **Win:** kill the Ghoul.
 - Talk to Amon about Balbaroy before the fight. **Balbaroy and Amon join**
@@ -141,6 +171,8 @@ waterfall.
   warriors, Steel Arrows.
 
 ### Battle 9: Bustoke Quarry
+
+{{ foes(9) }}
 
 - **Win:** kill the Master Mage.
 - The first battle where you pick your team: 12 units at most.
@@ -158,10 +190,14 @@ waterfall.
 
 ### Battle 10: To Pao Bridge
 
+{{ foes(10) }}
+
 - **Win:** defeat all enemies.
 - Pegasus Knights fly over everything.
 
 ### Battle 11: Pao Bridge
+
+{{ foes(11) }}
 
 - **Win:** defeat all enemies.
 - The Laser Eye fires down the bridge every 10 turns or so, hitting its own
@@ -188,6 +224,8 @@ waterfall.
 
 ### Battle 12: Pao Prairie
 
+{{ foes(12) }}
+
 - **Win:** kill Elliott.
 - One Lizardman carries a **Heat Axe**. Kill it with a unit that has a free
   slot. If you miss it, leave the battle and come back.
@@ -202,6 +240,8 @@ waterfall.
 
 ### Battle 13: Uranbatol Fortress
 
+{{ foes(13) }}
+
 - **Win:** get into Uranbatol.
 - Lots of ledges. Fliers help.
 - **Hidden during the battle:** outside the fortress, between two walls,
@@ -215,6 +255,8 @@ waterfall.
 
 ### Battle 14: Uranbatol Docks
 
+{{ foes(14) }}
+
 - **Win:** kill Balzabak.
 - Take out the Artillery as a group, not one unit at a time.
 - Balzabak never moves. Pick him off with arrows and magic.
@@ -222,6 +264,8 @@ waterfall.
 ## Chapter 5
 
 ### Battle 15: Sea Monsters
+
+{{ foes(15) }}
 
 - **Win:** defeat all enemies.
 - Conches and Shellfish poison. Your headquarters and a priest are below
@@ -239,10 +283,14 @@ waterfall.
 
 ### Battle 16: The Ring Reef
 
+{{ foes(16) }}
+
 - **Win:** kill the Master Mage.
 - The Skeletons here are tougher than the earlier ones.
 
 ### Battle 17: Sea Monsters again
+
+{{ foes(17) }}
 
 - **Win:** defeat all enemies.
 - Kill the Gargoyle first. More monsters keep arriving.
@@ -260,6 +308,8 @@ waterfall.
 
 ### Battle 18: Rudo to Dragonia
 
+{{ foes(18) }}
+
 - **Win:** kill the Durahan.
 - Rough terrain. Golems resist weapons, so use magic on them.
 
@@ -270,6 +320,8 @@ waterfall.
 - **Bleu joins.** He starts weak but grows into one of your strongest units.
 
 ### Battle 19: Dragonia
+
+{{ foes(19) }}
 
 - **Win:** kill Kane.
 - Kane has 70 HP and hits hard. His Sword of Darkness kills a unit outright,
@@ -285,10 +337,14 @@ to Karin and Krin.
 
 ### Battle 20: Mountain Pass
 
+{{ foes(20) }}
+
 - **Win:** defeat all enemies.
 - Belials cast Bolt 1. Spread out. Send fliers after them.
 
 ### Battle 21: Mishaela's Lair
+
+{{ foes(21) }}
 
 - **Win:** kill Mishaela.
 - Her Bolt 2 hits a wide area and she regenerates about 15 HP a turn. Send
@@ -312,6 +368,8 @@ to Karin and Krin.
 
 ### Battle 22: Outside Prompt
 
+{{ foes(22) }}
+
 - **Win:** defeat all enemies.
 - One Durahan carries a **Doom Blade**. Kill it with a unit that has a free
   slot.
@@ -323,6 +381,8 @@ to Karin and Krin.
   Pepper** upstairs. It's the only item that raises movement.
 
 ### Battle 23: Tower of the Ancients
+
+{{ foes(23) }}
 
 - **Win:** kill the Demon Master.
 - **Missable:** the chest at the bottom of the long ladder holds the
@@ -337,6 +397,8 @@ past the throne room and use the Orb of Light on the eye to reach Metapha.
 
 ### Battle 24: Chaos
 
+{{ foes(24) }}
+
 - **Win:** kill Chaos.
 - Kill the nearby Demon Master on the first turn, before it casts Freeze 3.
 - Chaos's laser ignores defense and it regenerates. Use magic and Boost.
@@ -344,6 +406,8 @@ past the throne room and use the Orb of Light on the eye to reach Metapha.
   take the **Chaos Breaker**. **Adam joins.**
 
 ### Battle 25: To the Gate
+
+{{ foes(25) }}
 
 - **Win:** defeat all enemies.
 - Horsemen carry Buster Shots. Armed Skeletons resist weapons, so use magic.
@@ -358,12 +422,16 @@ past the throne room and use the Orb of Light on the eye to reach Metapha.
 
 ### Battle 26: Runefaust Castle
 
+{{ foes(26) }}
+
 - **Win:** defeat all enemies.
 - **Missable:** send two units right at the start to open the two chests on
   the platforms: **Atlas** and **Halberd**.
 - Wait for the Chimaeras to come to you.
 
 ### Battle 27: King Ramladu
+
+{{ foes(27) }}
 
 - **Win:** kill Ramladu.
 - He regenerates 24 HP a turn and casts Aura 3. Block the stairs so the
@@ -374,6 +442,8 @@ use the Chaos Breaker on the peninsula. Promote anyone who's ready, and save.
 
 ### Battle 28: The Colossus
 
+{{ foes(28) }}
+
 - **Win:** kill all three parts of the Colossus.
 - The left part casts Freeze 3, the middle Bolt 3, the right Blaze 3. Lure
   each one onto land before you attack.
@@ -383,12 +453,16 @@ use the Chaos Breaker on the peninsula. Promote anyone who's ready, and save.
 
 ### Battle 29: Raising the Darkness
 
+{{ foes(29) }}
+
 - **Win:** kill Darksol.
 - Darksol has 150 HP. Demon Blaze hits a group hard, so heal every turn.
 - Units who fall here sit out the next battle. If you lose a healer, Egress
   and redo it.
 
 ### Battle 30: Dark Dragon
+
+{{ foes(30) }}
 
 - **Win:** kill the Dark Dragon.
 - Each of the three heads has 250 HP. The center one casts Demon Blaze, so
@@ -404,3 +478,5 @@ use the Chaos Breaker on the peninsula. Promote anyone who's ready, and save.
 - Optional characters:
   [DvDTranslations' secrets guide](https://gamefaqs.gamespot.com/genesis/563340-shining-force/faqs/63031)
   (GameFAQs).
+
+<script type="application/json" id="fg-cards-data">{{ {"game": "shining-force", "bestiary": sf_bestiary, "equipment": sf_equipment, "items": sf_items} | tojson }}</script>

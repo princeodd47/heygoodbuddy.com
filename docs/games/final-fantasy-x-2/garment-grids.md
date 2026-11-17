@@ -4,6 +4,10 @@ spoilers: none
 status: draft
 tags:
   - Final Fantasy X-2
+fg:
+  list:
+    show: [Equipped, Chapter]
+    placeholder: Name, gate, place
 ---
 
 # Garment Grids
@@ -33,3 +37,5 @@ and the rest.
   [Jegged's Garment Grids list](https://jegged.com/Games/Final-Fantasy-X-2/Garment-Grids/),
   checked against the
   [Gamer Guides Garment Grid data](https://www.gamerguides.com/final-fantasy-x-2/guide/extras/garment-grid-data).
+
+<script type="application/json" id="fg-cards-data">{{ {"game": "final-fantasy-x-2", "bestiary": ffx2_bestiary, "creatures": ffx2_creatures, "accessories": ffx2_accessories, "grids": ffx2_grids, "dresspheres": ffx2_dresspheres, "feeding": ffx2_feeding, "stop": ["Rikku", "Paine", "Brother", "Buddy", "Gippal", "Baralai", "Nooj", "Kimahri", "Lulu", "Tidus", "Elma", "Lucil"]} | tojson }}</script>

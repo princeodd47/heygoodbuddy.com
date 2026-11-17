@@ -4,6 +4,12 @@ spoilers: none
 status: draft
 tags:
   - Final Fantasy XII The Zodiac Age
+fg:
+  subtabs: true
+  list:
+    show: [Contains, Gil]
+    sort: [Gil, -Gil]
+    placeholder: Bundle, loot, item
 ---
 
 # Bazaar
@@ -32,3 +38,5 @@ tags:
 {% for b in ffxii_bazaar['bundles'] -%}
 | <a id="{{ b.id }}"></a>**{{ b.name }}** | {{ b.loot }} | {{ b.contains }} | {{ b.price }} |
 {% endfor %}
+
+<script type="application/json" id="fg-cards-data">{{ {"game": "final-fantasy-xii-the-zodiac-age", "bazaar": ffxii_bazaar, "monographs": ffxii_monographs} | tojson }}</script>

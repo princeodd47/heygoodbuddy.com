@@ -1,6 +1,8 @@
 ---
 tags:
   - Flesh and Blood
+fg:
+  subtabs: true
 ---
 
 {% macro sym(k) %}![{{ fab_icons[k] }}](../../assets/images/flesh-and-blood/icon_{{ k }}.png){ .fab-icon title="{{ fab_icons[k] }}" }{% endmacro %}

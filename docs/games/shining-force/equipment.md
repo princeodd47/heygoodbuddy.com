@@ -4,6 +4,16 @@ spoilers: none
 status: draft
 tags:
   - Shining Force
+fg:
+  subtabs: true
+  list:
+    sections: [Weapons, Rings]
+    group: Type
+    show: [ATT, Price, Who]
+    show_in:
+      Rings: [Equipped, Use]
+    sort: [-ATT, Price]
+    placeholder: Name, who, where
 ---
 
 # Equipment
@@ -70,3 +80,5 @@ rings.
 - Musashi's Katana:
   [character guide](https://gamefaqs.gamespot.com/genesis/563340-shining-force/faqs/63598)
   (GameFAQs).
+
+<script type="application/json" id="fg-cards-data">{{ {"game": "shining-force", "bestiary": sf_bestiary, "equipment": sf_equipment, "items": sf_items} | tojson }}</script>

@@ -4,6 +4,8 @@ spoilers: full
 status: draft
 tags:
   - Shadowrun
+fg:
+  chapters: true
 ---
 
 # Walkthrough

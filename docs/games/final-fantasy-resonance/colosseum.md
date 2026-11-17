@@ -4,6 +4,8 @@ spoilers: none
 status: draft
 tags:
   - Final Fantasy Resonance
+fg:
+  subtabs: true
 ---
 
 # Colosseum
@@ -128,4 +130,4 @@ Sources: battle lineups, enemy stats and shop stock from
 from [vorxu](https://vorxu.com/final-fantasy-resonance/colosseum); rules
 from [allthings.how](https://allthings.how/final-fantasy-resonance-colosseum/).
 
-<script id="ffr-items-data" type="application/json">{{ {"equipment": ffr_equipment, "items": ffr_items} | tojson }}</script>
+<script type="application/json" id="fg-cards-data">{{ {"game": "final-fantasy-resonance", "bestiary": ffr_bestiary, "equipment": ffr_equipment, "items": ffr_items, "key_items": ffr_key_items, "visions": ffr, "stop": ["Cloud", "Shadow"]} | tojson }}</script>

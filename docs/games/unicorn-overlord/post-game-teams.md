@@ -4,6 +4,8 @@ spoilers: none
 status: draft
 tags:
   - Unicorn Overlord
+fg:
+  subtabs: true
 ---
 
 {#- One squad: heading, description, unit cards by row, start-of-battle
@@ -154,4 +156,4 @@ Written:
 - [Unicorn Overlord Fandom wiki](https://unicornoverlord.fandom.com/wiki/Characters): classes, Black Cat-Ear Hood
 - [Unicorn Overlord Miraheze wiki](https://unilord.miraheze.org/wiki/Main_Page): item sources and counts
 
-<script id="uo-items-data" type="application/json">{{ uo_equipment | tojson }}</script>
+<script type="application/json" id="fg-cards-data">{{ {"game": "unicorn-overlord", "equipment": uo_equipment} | tojson }}</script>

@@ -4,6 +4,8 @@ spoilers: none
 status: draft
 tags:
   - Final Fantasy X-2
+fg:
+  chapters: true
 ---
 
 # Walkthrough
@@ -565,3 +567,5 @@ Getting every one right gives the **Menace of the Deep Garment Grid**.
   checked against the
   [Gamer Guides walkthrough](https://www.gamerguides.com/final-fantasy-x-2/guide).
 - Creature Creator tutorial pods: checked in game.
+
+<script type="application/json" id="fg-cards-data">{{ {"game": "final-fantasy-x-2", "bestiary": ffx2_bestiary, "creatures": ffx2_creatures, "accessories": ffx2_accessories, "grids": ffx2_grids, "dresspheres": ffx2_dresspheres, "feeding": ffx2_feeding, "stop": ["Rikku", "Paine", "Brother", "Buddy", "Gippal", "Baralai", "Nooj", "Kimahri", "Lulu", "Tidus", "Elma", "Lucil"]} | tojson }}</script>

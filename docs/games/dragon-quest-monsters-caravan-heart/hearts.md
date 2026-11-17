@@ -4,6 +4,12 @@ spoilers: none
 status: draft
 tags:
   - Dragon Quest Monsters Caravan Heart
+fg:
+  subtabs: true
+  list:
+    sections: [Where to Get Hearts]
+    show: [How to get it]
+    placeholder: Heart, monster, place
 ---
 
 # Hearts & Reforming

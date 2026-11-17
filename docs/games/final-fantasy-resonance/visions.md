@@ -6,6 +6,11 @@ verified: 2026-10-19
 status: draft
 tags:
   - Final Fantasy Resonance
+fg:
+  subtabs: true
+  list:
+    show: [Where to get it, Cost]
+    placeholder: Vision, place
 ---
 
 # Visions
@@ -99,4 +104,4 @@ in **Grandport**. It gives a tutorial on using magicite and gives you a
 Tablet Shards are a separate item. See [Tablet Shards](tablet-shards.md)
 for where to find them and what they're traded for.
 
-<script id="ffr-items-data" type="application/json">{{ {"equipment": ffr_equipment, "items": ffr_items} | tojson }}</script>
+<script type="application/json" id="fg-cards-data">{{ {"game": "final-fantasy-resonance", "bestiary": ffr_bestiary, "equipment": ffr_equipment, "items": ffr_items, "key_items": ffr_key_items, "visions": ffr, "stop": ["Cloud", "Shadow"]} | tojson }}</script>

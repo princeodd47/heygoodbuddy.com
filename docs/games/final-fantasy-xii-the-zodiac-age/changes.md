@@ -4,6 +4,8 @@ spoilers: none
 status: draft
 tags:
   - Final Fantasy XII The Zodiac Age
+fg:
+  subtabs: true
 ---
 
 # Changes from the PS2 Version
@@ -91,3 +93,5 @@ below is new to you.
 - Has the job reset, the three Gambit sets and the improved New Game Plus,
   which first came with the Switch and Xbox release and were added to PS4 and
   PC in 2020.
+
+<script type="application/json" id="fg-cards-data">{{ {"game": "final-fantasy-xii-the-zodiac-age", "bazaar": ffxii_bazaar, "monographs": ffxii_monographs} | tojson }}</script>

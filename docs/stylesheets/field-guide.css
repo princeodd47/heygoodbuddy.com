@@ -650,26 +650,20 @@ html.fg .md-typeset details:is(.danger, .failure, .bug) { --k: #ff8a8a; }
 html.fg .md-typeset .admonition.quote,
 html.fg .md-typeset details.quote { --k: var(--fg-ink-dim); }
 
-/* ---------- Item pop-ups (Unicorn Overlord, Final Fantasy Resonance) ---------- */
+/* ---------- Flesh and Blood card pop-ups (fab-cards.js) ---------- */
 
-/* Item names you can click: bright text, dotted gold underline. */
-html.fg .md-typeset .uo-itemref,
-html.fg .md-typeset .ffr-itemref,
+/* Card names you can click: bright text, dotted gold underline. */
 html.fg .md-typeset a.fab-cardref {
   color: var(--fg-ink);
   border-bottom: 1px dotted var(--fg-gold);
   text-decoration: none;
 }
 
-html.fg .md-typeset .uo-itemref:hover,
-html.fg .md-typeset .ffr-itemref:hover,
 html.fg .md-typeset a.fab-cardref:hover {
   color: var(--fg-gold);
 }
 
 /* The pop-up: the field guide's item window. */
-html.fg .uo-itempop,
-html.fg .ffr-itempop,
 html.fg .fab-cardpop {
   font-family: var(--fg-body);
   font-size: .7rem;
@@ -679,44 +673,6 @@ html.fg .fab-cardpop {
   border-radius: 8px;
   box-shadow: 0 0 0 2px var(--fg-win-edge), 0 12px 32px rgba(0, 0, 0, .55);
   padding: .6rem .7rem .7rem;
-}
-
-html.fg .uo-itempop-name,
-html.fg .ffr-itempop-name {
-  font-family: var(--fg-display);
-  font-weight: 500;
-  font-size: .9rem;
-  color: var(--fg-gold);
-}
-
-html.fg .uo-itempop-type,
-html.fg .uo-itempop-stats,
-html.fg .ffr-itempop-type,
-html.fg .ffr-itempop-stats {
-  color: var(--fg-ink-dim);
-}
-
-html.fg .uo-itempop-stats,
-html.fg .ffr-itempop-stats {
-  font-family: var(--fg-mono);
-}
-
-html.fg .uo-itempop-where,
-html.fg .ffr-itempop-where {
-  padding-top: .4em;
-  border-top: 1px dashed rgba(232, 236, 255, .25);
-}
-
-html.fg .uo-itempop-close,
-html.fg .ffr-itempop-close {
-  color: var(--fg-ink-dim);
-  border-radius: 4px;
-}
-
-html.fg .uo-itempop-close:hover,
-html.fg .ffr-itempop-close:hover {
-  color: var(--fg-ink);
-  background: var(--fg-row-hover);
 }
 
 /* ---------- Unicorn Overlord unit cards (Post-Game Teams) ---------- */
@@ -1444,13 +1400,14 @@ html.fg .md-typeset .fg-tabs a:hover {
 
 html.fg .md-typeset .fg-tabs a[aria-current="page"] {
   background: rgba(255, 255, 255, .12);
+  color: var(--fg-gold);
 }
 
 html.fg .md-typeset .fg-tabs a[aria-current="page"]::before {
   content: "";
   width: 0;
   height: 0;
-  border-left: 7px solid var(--fg-ink);
+  border-left: 7px solid var(--fg-gold);
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
 }
@@ -1855,6 +1812,29 @@ html.fg .md-typeset .fg-detail dd {
 html.fg .md-typeset .fg-empty {
   color: var(--fg-ink-dim);
 }
+
+/* A "###" group's heading inside a list (Swords, Axes), in story order. */
+html.fg .md-typeset .fg-grouphead {
+  margin: .9rem 0 .35rem;
+  font-family: var(--fg-display);
+  font-size: .9rem;
+  color: var(--fg-gold);
+}
+html.fg .md-typeset .fg-list > .fg-grouphead:first-child { margin-top: .2rem; }
+html.fg .md-typeset .fg-grouptext { margin: 0 0 .5rem; font-size: .7rem; color: var(--fg-ink-dim); }
+html.fg .md-typeset .fg-grouptext > * { margin: .2rem 0; }
+
+/* A merged list's group text (a battle's win condition), when it's picked. */
+html.fg .md-typeset .fg-groupnote {
+  margin: 0 0 .6rem;
+  padding: .3rem .7rem;
+  border-left: 3px solid var(--fg-gold, #ffd75e);
+  background: color-mix(in srgb, var(--fg-gold, #ffd75e) 7%, transparent);
+  border-radius: 4px;
+}
+html.fg .md-typeset .fg-groupnote > :first-child { margin-top: .2rem; }
+html.fg .md-typeset .fg-groupnote > :last-child { margin-bottom: .2rem; }
+html.fg .md-typeset .fg-groupnote h2 { display: none; }
 
 /* Chapters: numbered rows that open to the steps. */
 html.fg .md-typeset .fg-ch > .fg-head {

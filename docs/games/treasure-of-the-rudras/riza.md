@@ -4,6 +4,8 @@ spoilers: none
 status: draft
 tags:
   - Treasure of the Rudras
+fg:
+  chapters: true
 ---
 
 # Riza
@@ -420,3 +422,5 @@ Party is around level 40.
 - Where gear turns up:
   [God Bird's elemental armor list](https://god-bird.net/data/rudra/armor.html)
   and [rare items](https://god-bird.net/data/rudra/item.html) (Japanese).
+
+<script type="application/json" id="fg-cards-data">{{ {"game": "treasure-of-the-rudras", "monsters": rudras_monsters, "bosses": rudras_bosses, "equipment": rudras_equipment, "stop": ["Death", "Freedom", "Fortune", "Storm", "Future", "Mirage", "Fury", "Rem", "Nil", "Sol", "Pollution", "Rudra", "Closer", "Bumper", "Guard", "Dune", "Sion", "Surlent", "Riza", "Iris", "Kemp", "Lars", "Dion", "Leon"]} | tojson }}</script>

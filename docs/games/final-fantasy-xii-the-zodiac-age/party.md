@@ -4,6 +4,10 @@ spoilers: none
 status: draft
 tags:
   - Final Fantasy XII The Zodiac Age
+fg:
+  list:
+    show: [Joins, Leaves]
+    placeholder: Name, place
 ---
 
 # Party
@@ -37,3 +41,5 @@ comes back before the Draklor Laboratory.
 
 Larsa makes most hunts easier while he's in the party. Do any you skipped
 before you climb to the Mt Bur-Omisace temple.
+
+<script type="application/json" id="fg-cards-data">{{ {"game": "final-fantasy-xii-the-zodiac-age", "bazaar": ffxii_bazaar, "monographs": ffxii_monographs} | tojson }}</script>
