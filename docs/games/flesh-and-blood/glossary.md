@@ -1,6 +1,10 @@
 ---
 tags:
   - Flesh and Blood
+fg:
+  list:
+    show: [Meaning]
+    placeholder: Term, meaning
 ---
 
 {% macro sym(k) %}![{{ fab_icons[k] }}](../../assets/images/flesh-and-blood/icon_{{ k }}.png){ .fab-icon title="{{ fab_icons[k] }}" }{% endmacro %}

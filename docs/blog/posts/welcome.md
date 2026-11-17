@@ -8,8 +8,7 @@ tags:
 
 # Welcome to heygoodbuddy.com
 
-This is the first article on the site. It's an example post: replace it with
-your own writing, or delete it once you have a real one.
+This is the first article on the site.
 
 <!-- more -->
 

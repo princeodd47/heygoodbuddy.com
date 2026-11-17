@@ -1,6 +1,8 @@
 ---
 tags:
   - Flesh and Blood
+fg:
+  subtabs: true
 ---
 
 {% macro card(id, label=None) %}[{{ label or fab_cards.cards[id].front.name }}](../../assets/images/flesh-and-blood/cards/{{ id }}.webp){ .fab-cardref data-card="{{ id }}" }{% endmacro %}

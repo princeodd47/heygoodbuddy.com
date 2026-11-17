@@ -70,7 +70,7 @@ plugins:
 
 extra_css:
   - stylesheets/extra.css
-  - stylesheets/field-guide.css?v=2026-11-17.13
+  - stylesheets/field-guide.css?v=2026-11-17.18
   - stylesheets/dqm.css
   - stylesheets/synth-builder.css
   - stylesheets/fab.css?v=2026-10-28.2
@@ -81,12 +81,10 @@ extra_javascript:
   - javascripts/dqm-talents.js
   - javascripts/fab-cards.js?v=2026-10-28.2
   - javascripts/fab-quiz.js?v=2026-10-28.2
-  - javascripts/ffr-items.js?v=2026-10-29
-  - javascripts/uo-items.js?v=2026-11-11
   - javascripts/fg-tables.js?v=2026-11-16.7
   - javascripts/fg-search.js?v=2026-11-17.9
-  - javascripts/fg-pages.js?v=2026-11-17.9
-  - javascripts/fg-cards.js?v=2026-11-17.5
+  - javascripts/fg-pages.js?v=2026-11-17.15
+  - javascripts/fg-cards.js?v=2026-11-17.10
 
 markdown_extensions:
   - admonition
