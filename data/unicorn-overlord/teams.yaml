@@ -594,9 +594,9 @@ others:
   - name: Primm
     class: Bishop
     row: back
-    equipment: [Lyrical Wand, Ruby Pendant, Awakening Amulet]
+    equipment: [Lyrical Wand, Ruby Pendant, Awakening Amulet, Lapis Pendant]
     tactics:
-    - {type: active, skill: Lyrical Wand AP skill, when: Target Hilda}
+    - {type: active, skill: Active Heal, when: Target Hilda}
     - {type: active, skill: Row heal, when: Anyone below 75% HP}
     - {type: passive, skill: Refresh, when: Afflicted ally}
   - name: Auch
@@ -637,7 +637,7 @@ others:
   - name: Primm
     class: Bishop
     row: back
-    equipment: [Lyrical Wand, Charm of Warding, Awakening Amulet]
+    equipment: [Lyrical Wand, Charm of Warding, Awakening Amulet, Lapis Pendant]
     tactics:
     - {type: active, skill: Active Heal, when: 'First action, target Hilda'}
     - {type: passive, skill: Quick Heal, when: Armored ally at 75% HP or less}
@@ -697,7 +697,7 @@ others:
   - name: Scarlett
     class: High Priestess
     row: back
-    equipment: [Kingstaff Albiore, Familiar's Choker, Ring of the Maiden]
+    equipment: [Kingstaff Albiore, Familiar's Choker, Ring of the Maiden, Lapis Pendant]
     tactics:
     - {type: passive, skill: Sorcerous Connection, when: Target Yahna}
   start:
@@ -734,13 +734,13 @@ others:
   - name: Rolf
     class: Sniper
     row: back
-    equipment: [Sacral Bow, Elite Beret, Lapis Pendant]
+    equipment: [Sacral Bow, Elite Beret, Lapis Pendant, Veteran's Eyepatch]
     tactics:
     - {type: active, skill: Dual Shot, when: Lowest HP enemy}
   - name: Sanatio
     class: Featherstaff
     row: back
-    equipment: [Papal Crosier, Familiar's Choker, Lapis Pendant]
+    equipment: [Papal Crosier, Familiar's Choker, Lapis Pendant, Royal Scarf]
     tactics:
     - {type: active, skill: Row heal, when: Anyone below 75% HP}
     - {type: passive, skill: Sorcerous Connection, when: Target Yahna}
@@ -775,7 +775,7 @@ others:
   - name: Scarlett
     class: High Priestess
     row: back
-    equipment: [Kingstaff Albiore, Lips's Ring, Ring of the Maiden]
+    equipment: [Kingstaff Albiore, Lips's Ring, Ring of the Maiden, Gold Circlet]
     tactics:
     - {type: passive, skill: Hastened Action, when: Target Yahna}
   - name: Ramona
@@ -825,7 +825,7 @@ others:
   - name: Govil
     class: Werewolf
     row: back
-    equipment: [Starting weapon, Gambler's Coin, Carnelian Pendant, Lapis Pendant]
+    equipment: [Meteorite Sword, Gambler's Coin, Carnelian Pendant, Lapis Pendant]
     tactics:
     - {type: active, skill: Wild Fang, when: Row with 2 or more enemies}
     - {type: passive, skill: Inspiration, when: Target Yunifi}
@@ -1005,7 +1005,7 @@ others:
   - name: Sharon
     class: Bishop
     row: back
-    equipment: [Cleric's Cane, Awakening Amulet, Gold Circlet]
+    equipment: [Cleric's Cane, Awakening Amulet, Gold Circlet, Golden Egg]
     tactics:
     - {type: active, skill: Row heal, when: Anyone below 75% HP}
   start:
@@ -1050,7 +1050,7 @@ others:
   - name: Tatiana
     class: Bishop
     row: back
-    equipment: [Phosphorescent Staff, Barbed Ribbon, Awakening Amulet]
+    equipment: [Phosphorescent Staff, Barbed Ribbon, Awakening Amulet, Lapis Pendant]
     tactics:
     - {type: active, skill: Row heal, when: Anyone below 75% HP}
     - {type: passive, skill: Refresh, when: Stunned ally}
@@ -1169,7 +1169,7 @@ others:
   start:
     keep: {unit: Eltolinde, skill: Boon of the Faeries}
 - title: Freezer Burn (TitaniumLegman)
-  about: Selvie blinds the whole enemy side with Sandstorm before anyone acts. When Gloucester's Dark Flame swings, Yahna's Frostbrand Tome adds freeze, so the enemy front row is burning and frozen at once. Tatiana's Limited Heal lets Gloucester take hits to fuel Vengeance.
+  about: Selvie blinds the whole enemy side with Sandstorm before anyone acts. When Gloucester's Dark Flame swings, Yahna's Frostbrand Tome adds freeze, so the enemy front row is burning and frozen at once. Tatiana's Heal lets Gloucester take hits to fuel Vengeance.
   units:
   - name: Gloucester
     class: Doom Knight
@@ -1196,9 +1196,9 @@ others:
   - name: Tatiana
     class: Bishop
     row: back
-    equipment: [Phosphorescent Staff, Mercenary's Eyepatch, Awakening Amulet]
+    equipment: [Phosphorescent Staff, Mercenary's Eyepatch, Awakening Amulet, Lapis Pendant]
     tactics:
-    - {type: active, skill: Limited Heal, when: None}
+    - {type: active, skill: Heal, when: None}
     - {type: passive, skill: Lifesaver, when: None}
     - {type: passive, skill: Refresh, when: Debuffed ally}
     - {type: passive, skill: Quick Heal, when: None}
@@ -1369,9 +1369,9 @@ others:
   - name: Primm
     class: Bishop
     row: back
-    equipment: [Lyrical Wand, Barbed Ribbon, Awakening Amulet]
+    equipment: [Lyrical Wand, Barbed Ribbon, Awakening Amulet, Lapis Pendant]
     tactics:
-    - {type: active, skill: Lyrical Wand AP skill, when: Target Gloucester}
+    - {type: active, skill: Active Heal, when: Target Gloucester}
     - {type: passive, skill: Refresh, when: Afflicted ally}
   start:
     keep: {unit: Berengaria, skill: Eye of the Warrior Princess}
@@ -1576,7 +1576,7 @@ others:
   - name: Ramona
     class: Wereowl
     row: back
-    equipment: [Euros' Staff, Lapis Pendant, Sapphire Pendant]
+    equipment: [Euros' Staff, Lapis Pendant, Sapphire Pendant, Gold Bangle]
     tactics:
     - {type: active, skill: Night Vision, when: Night}
     - {type: passive, skill: Quick Dispel, when: Buffed enemy}
@@ -1722,7 +1722,7 @@ others:
   - name: Sharon
     class: Bishop
     row: back
-    equipment: [Cleric's Cane, Awakening Amulet, Gold Circlet]
+    equipment: [Cleric's Cane, Awakening Amulet, Gold Circlet, Lapis Pendant]
     tactics:
     - {type: active, skill: Row heal, when: Anyone below 75% HP}
     - {type: passive, skill: Dispel, when: Buffed enemy}
@@ -1816,7 +1816,7 @@ others:
     row: back
     equipment: [Lyrical Wand, Awakening Amulet, Gold Circlet, Lapis Pendant]
     tactics:
-    - {type: active, skill: Lyrical Wand AP skill, when: Target Nina}
+    - {type: active, skill: Active Heal, when: Target Nina}
     - {type: active, skill: Row heal, when: Anyone below 75% HP}
     - {type: passive, skill: Refresh, when: Afflicted ally}
   start:

@@ -108,18 +108,22 @@ wasn't needed.
 - Black Cat-Ear Hood's exact skill. The page only says to aim it at Yunifi.
 - Equipment slot rules for Landsknechts (Magellan, Berenice, Jeremy with
   shields) weren't confirmed on the wiki. Check in-game.
-- Werewolf and Werebear weapon types unknown, so Govil and Bertrand are
-  benched.
+- Werebear weapon type unknown, so Bertrand is benched. Werewolf uses a
+  sword (appmedia, 2026-11-16); Govil is still benched in the ten squads.
 - Mordon is a Breaker (the 89 Games squad just gave him the White Hood).
 - Ring of the Maiden assumes Scarlett is Alain's partner.
 
 ## Already on the page
 
-- 10 squads with rows, classes, equipment, start-of-battle skill, tactics.
+- The page is built from data/unicorn-overlord/teams.yaml (since
+  2026-11-16): squads, units, items, tactics, start-of-battle keep/turn-off,
+  item limits. scripts/uo_teams_check.py enforces the game's rules on it.
+- 10 squads as unit cards by row: class, 4 items, Keep on / Turn off labels,
+  Tactics as active and passive lists in priority order.
 - Bench list and three swaps (Chloe, Liza, Aubin).
-- Unique item table, pendant and medallion budget.
-- Tactics as tables, one skill per row, in priority order.
-- "Other Strong Post-Game Teams": 22 full builds (rows, classes, equipment,
+- Unique item table, pendant and medallion budget (both built from the
+  squads).
+- "Other Strong Post-Game Teams": 28 full builds (rows, classes, equipment,
   start skill, tactics) from TitaniumLegman, Varsona, 89 Games, Corvie Indo
   and Iced Coffee Gaming. Where a source used a generic unit, a named
   character of the same class stands in.
@@ -131,8 +135,7 @@ wasn't needed.
   speech (e.g. Knot of Ruin, Labrys Axe, Heaven Mirror Greatshield, Wingcrest
   Blade, Thorn Spear, Twin Dragon Shield). Spelling may differ in-game.
 - Tactics for skills the sources didn't spell out are our own simple rules.
-- Govil's (Werewolf) weapon type is unknown; the page says to keep his
-  starting weapon.
+- Govil (Werewolf) uses a sword; resolved 2026-11-16 (see below).
 - Raenys's Tailwind is assumed to come from the Raven Plume (the Angel Plume
   also gives Tailwind).
 
@@ -222,7 +225,8 @@ User asked whether this beats squad 6 (Iron Wall). Not added to the page.
   Ancient Crown (Sapphire/Amethyst all used; crown freed when Grand Smash
   became an alternative), squad 6 Wereowl Gold Bangle, Sharon and Primm
   Lapis Pendant, Alcina Dragonbone Greatshield (Base PP +1, 8,000 G).
-  Alternative teams keep their sources' three-item builds.
+  Alternative teams kept their sources' three-item builds until
+  2026-11-16 (see "Fourth items for the alternatives").
 - **From the user:** a row holds at most 3 units. Fixed squad 7 and the Bruno
   Burn alternative (Berenice to the front: counters need her to be hit, and
   she has a shield) and Super Tax Brothers (Magellan to the front with the
@@ -303,3 +307,50 @@ User asked whether this beats squad 6 (Iron Wall). Not added to the page.
     - Heaven Mirror Greatshield (Reflect Magick, 2 PP; covers his magic
       weakness, but P.Def 6 and Guard 10%).
     - Skiron's Shield (kept for the Liza bench swap).
+
+## Fourth items for the alternatives (researched 2026-11-16)
+
+**User decision (2026-11-16):** every unit in the alternatives gets 4 items
+too, and scripts/uo_teams_check.py now fails the build on any unit without 4.
+
+Slot types (appmedia.jp class and character pages, タイプ line; Miraheze was
+behind a bot check and Fandom's class pages have no equipment column):
+- Werewolf (ワーウルフ, appmedia 77673775): sword / infantry / beastfolk, so
+  sword + 3 accessories.
+- Featherstaff (Sanatio's class, フェザーロッド on appmedia 77676679):
+  staff / flying, so staff + 3 accessories.
+- Bishop (77673760): staff / infantry / caster. Confirms staff + 3.
+
+Picks (all items already in equipment.yaml; alternatives may share items
+with the ten squads):
+- Primm in Hilda and Primm, Hilda Lightning Shaker, Berengaria and the Doom
+  Knight; Tatiana in Bruno Burn Squad and Freezer Burn; Sharon in Amalia: Iron
+  Wall; Scarlett in Trinity Rain (TitaniumLegman): Lapis Pendant. Each runs
+  PP passives (Refresh, Quick Heal, Magick Barrier, Lifesaver, Dispel,
+  Sorcerous Connection), so +1 PP means one more trigger.
+- Rolf (Sniper) in Trinity Rain (89 Games): Veteran's Eyepatch (crit +30%)
+  for Dual Shot.
+- Sanatio in Trinity Rain (89 Games): Royal Scarf. Evasion is her best
+  growth (S on appmedia) and she flies in the back row.
+- Scarlett in Alain Multi-Nuke: Gold Circlet (M.Def +8). Her only tactic is
+  the start-of-battle Hastened Action, so PP and AP add nothing.
+- Ramona in Monica's Affliction Squad: Gold Bangle (P/M.Def +6). She already
+  has +3 PP (Lapis + Sapphire) and PP caps at 4.
+- Sharon in Super Tax Brothers: Golden Egg, to stack with the three
+  Landsknechts' eggs (the squad's theme is gold).
+- Govil in Glacial Rain (89 Games): Meteorite Sword (P.Atk 24, the highest
+  buyable or tradeable sword) in place of "Starting weapon", for Wild Fang's
+  three hits. It costs 5 Star Iron at the Swordsman Hero's Monument, and the
+  ten squads already use Meteorite gear, so Star Iron may run short; the
+  Zenoiran Knight's Sword (Black Market, 10,000 G) is the fallback.
+
+Noticed:
+- Fixed (user, 2026-11-16): Tatiana (Bishop) had Limited Heal in Freezer
+  Burn's tactics, but Limited Heal is a Wereowl skill. Bishop actives
+  (Fandom): Heal (1 AP, one ally) and Sacred Heal (2 AP, row). The build
+  heals Gloucester so he can keep taking hits, so she now uses Heal.
+- Fixed (user, 2026-11-16): "Lyrical Wand AP skill" in three Primm tactics
+  is the wand's Active Heal (2 AP, heals an ally and grants +1 AP).
+- Not changed: Barbed Ribbon and Awakening Amulet both give stun immunity,
+  and Primm (Berengaria and the Doom Knight) and Tatiana (Bruno Burn Squad)
+  wear both, as the sources did.

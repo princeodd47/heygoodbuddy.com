@@ -395,7 +395,6 @@ def team_items():
         for unit in squad["units"]
         for item in unit["equipment"]
     }
-    names.discard("Starting weapon")
     return sorted(names)
 
 

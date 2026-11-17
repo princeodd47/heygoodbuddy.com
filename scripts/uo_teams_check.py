@@ -16,8 +16,7 @@ and exits with an error, listing every problem, if:
   of a limited item than you have.
 
 The community builds (others) share units and items with the ten squads, so
-only the per-squad rules apply to them. Missing items there are warnings for
-now, not errors.
+only the per-squad rules apply to them.
 """
 
 import sys
@@ -35,9 +34,9 @@ def main():
     data = yaml.safe_load(TEAMS.read_text())
     equipment = yaml.safe_load(EQUIPMENT.read_text())
     known = {e["name"] for g in equipment["groups"] for e in g["entries"]}
-    errors, warnings = [], []
+    errors = []
 
-    def check_squad(q, strict):
+    def check_squad(q):
         where = q["title"]
         names = [u["name"] for u in q["units"]]
         if len(names) > 5:
@@ -54,12 +53,12 @@ def main():
                 errors.append(f"{who}: row is '{u['row']}' (front or back)")
             items = u["equipment"]
             if len(items) != 4:
-                (errors if strict else warnings).append(f"{who}: {len(items)} items (every unit has 4 slots)")
+                errors.append(f"{who}: {len(items)} items (every unit has 4 slots)")
             if len(set(items)) != len(items):
                 errors.append(f"{who}: the same item twice ({', '.join(items)})")
             for item in items:
                 if item not in known:
-                    (errors if strict else warnings).append(f"{who}: '{item}' isn't in equipment.yaml")
+                    errors.append(f"{who}: '{item}' isn't in equipment.yaml")
             for t in u["tactics"]:
                 if t["type"] not in ("active", "passive"):
                     errors.append(f"{who}: tactic type '{t['type']}' (active or passive)")
@@ -72,7 +71,7 @@ def main():
     squad_of = {}
     used = defaultdict(list)
     for q in data["squads"]:
-        check_squad(q, strict=True)
+        check_squad(q)
         for u in q["units"]:
             if u["name"] in squad_of:
                 errors.append(f"{u['name']} is in '{squad_of[u['name']]}' and '{q['title']}'")
@@ -87,14 +86,12 @@ def main():
             errors.append(f"pendants: '{item}' isn't in equipment.yaml")
 
     for q in data["others"]:
-        check_squad(q, strict=False)
+        check_squad(q)
 
-    for w in warnings:
-        print("warning:", w)
     for e in errors:
         print("error:", e)
     squads = len(data["squads"]) + len(data["others"])
-    print(f"{squads} squads checked: {len(errors)} errors, {len(warnings)} warnings")
+    print(f"{squads} squads checked: {len(errors)} errors")
     sys.exit(1 if errors else 0)
 
 
