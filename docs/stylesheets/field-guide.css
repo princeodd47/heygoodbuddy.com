@@ -1022,3 +1022,16 @@ html.fg .md-typeset .uo-equip tr:has(.uo-anchor:target) {
     color: var(--fg-ink-faint);
   }
 }
+
+/* ---------- Highlighted rows ---------- */
+
+/* Rows marked with a .permanent span (FFXII party members who stay): gold
+   edge and a warmer band, like the field guide's selected row. */
+html.fg .md-typeset table:not([class]) tbody tr:has(.permanent) {
+  background: rgba(255, 214, 107, .1);
+  box-shadow: inset 4px 0 0 var(--fg-gold);
+}
+
+html.fg .md-typeset .permanent {
+  color: var(--fg-gold);
+}
