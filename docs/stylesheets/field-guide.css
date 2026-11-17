@@ -1,9 +1,8 @@
 /* Field guide look: the Final Fantasy VI Advance field guide's menu windows,
    night-sky ground, pixel headings and gold accents, applied site-wide.
 
-   Rolled out one page at a time: everything here is scoped to html.fg, which
-   overrides/main.html sets only on pages with `skin: field-guide` in their
-   front matter. Dark only; the light/dark toggle is hidden on these pages. */
+   Everything here is scoped to html.fg, which overrides/main.html sets on
+   every page, so it wins over the theme's own rules. Dark only. */
 
 /* ---------- Tokens ---------- */
 

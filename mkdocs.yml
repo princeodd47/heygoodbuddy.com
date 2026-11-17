@@ -9,19 +9,12 @@ theme:
   name: material
   # Template overrides (page-by-page field guide look; see overrides/main.html).
   custom_dir: overrides
+  # Dark only: the field guide look (docs/stylesheets/field-guide.css) has
+  # no light version.
   palette:
-    - scheme: slate
-      primary: deep purple
-      accent: amber
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
-    - scheme: default
-      primary: deep purple
-      accent: amber
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
+    scheme: slate
+    primary: deep purple
+    accent: amber
   features:
     - navigation.tabs
     - navigation.sections
