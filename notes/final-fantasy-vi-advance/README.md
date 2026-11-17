@@ -1,10 +1,19 @@
 # Final Fantasy VI Advance Field Guide
 
-The guide is one self-contained page, not Markdown, and it's the game's only
-page: it's published at `docs/games/final-fantasy-vi-advance/index.html`
-(`/games/final-fantasy-vi-advance/`), built from the files here. The Games
-card and the left nav link straight to it. Its old address, `field-guide/`,
-redirects there.
+The guide is the game's page, `/games/final-fantasy-vi-advance/`, and the
+site renders it like any other page, so it has the site header, search and
+Tags:
+
+- `docs/games/final-fantasy-vi-advance/index.md` is the page. Its front
+  matter picks the `ff6.html` template and the tag; its text is what search
+  indexes. It isn't shown.
+- `overrides/ff6.html` drops the left nav, the table of contents and the
+  Markdown text, and shows the guide instead.
+- `overrides/partials/ff6-guide.html` is the guide itself, **built from the
+  files here**: its styles, markup and script, with every style rule scoped
+  to `.ff6` so it can't restyle the site's header or footer.
+
+The old address, `field-guide/`, redirects to the page.
 
 ## Rebuilding the page
 
@@ -12,11 +21,10 @@ redirects there.
 python3 notes/final-fantasy-vi-advance/build.py
 ```
 
-This puts `data.json` into `template.html`, adds the full document skeleton
-and the "heygoodbuddy.com › Games" trail back to the site, and writes the
-page and the redirect under `docs/`. Run it
-after any change to `template.html` or `data.json`, then commit both the
-source and the built page.
+This puts `data.json` into `template.html`, scopes the styles and writes
+`overrides/partials/ff6-guide.html` and the redirect. Run it after any change
+to `template.html` or `data.json`, then commit both the source and the built
+partial.
 
 ## Files
 
