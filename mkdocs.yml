@@ -81,6 +81,7 @@ extra_javascript:
   - javascripts/ffr-items.js?v=2026-10-29
   - javascripts/uo-items.js?v=2026-11-11
   - javascripts/fg-tables.js?v=2026-11-16.7
+  - javascripts/fg-search.js?v=2026-11-17.9
 
 markdown_extensions:
   - admonition

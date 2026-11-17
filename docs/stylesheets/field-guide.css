@@ -164,11 +164,41 @@ html.fg .md-tabs__item--active .md-tabs__link::before {
   transform: translateY(2px);
 }
 
-/* Search box. */
-html.fg .md-search__form {
-  background: var(--fg-chip);
+/* Search button in the header: a dark chip like the site's search boxes,
+   gold on hover. */
+html.fg .md-search__button {
+  font-family: var(--fg-display);
+  color: var(--fg-ink-dim);
+  background-color: var(--fg-chip);
   border: 1px solid var(--fg-win-edge);
-  border-radius: 4px;
+  border-radius: 5px;
+}
+
+html.fg .md-search__button:is(:hover, :focus) {
+  color: var(--fg-ink);
+  background-color: var(--fg-chip);
+  border-color: var(--fg-gold);
+}
+
+html.fg .md-search__button::before {
+  background-color: var(--fg-ink-dim);
+}
+
+html.fg .md-search__button::after {
+  font-family: var(--fg-mono);
+  color: var(--fg-ink-dim);
+  background: var(--fg-row);
+}
+
+/* The search dialog is drawn inside a shadow root, which page styles can't
+   reach. It reads these variables (RGB triples) from the page instead:
+   window-blue panel, light ink, night-sky backdrop, gold highlight. */
+html.fg [data-md-color-scheme] {
+  --color-background: 22 34 107;
+  --color-background-subtle: 34 52 143;
+  --color-foreground: 241 243 255;
+  --color-backdrop: 11 16 36;
+  --md-text-font-family: "IBM Plex Sans";
 }
 
 /* ---------- Text ---------- */
