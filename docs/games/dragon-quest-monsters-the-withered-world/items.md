@@ -1,4 +1,5 @@
 ---
+skin: field-guide
 game_version: Demo
 platform: Switch
 spoilers: none

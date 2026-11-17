@@ -950,6 +950,17 @@ html.fg .md-typeset .uo-equip tr:has(.uo-anchor:target) {
 
 /* ---------- Wide tables on phones ---------- */
 
+/* Tables that stay tables on phones: no 5rem column minimum and tighter
+   padding, so a short table (Yes/No answers) fits the screen. */
+@media screen and (max-width: 44.9375em) {
+  html.fg .md-typeset table:not([class]):not([data-fg-stack]) th,
+  html.fg .md-typeset table:not([class]):not([data-fg-stack]) td {
+    min-width: 0;
+    padding-left: .55em;
+    padding-right: .55em;
+  }
+}
+
 /* fg-tables.js marks tables with 4+ columns with data-fg-stack and copies each
    header onto its cells as data-label. On phones each row becomes a card:
    the first cell is the name, the rest are labeled fields. */
@@ -1035,4 +1046,136 @@ html.fg .md-typeset table:not([class]) tbody tr:has(.permanent) {
 
 html.fg .md-typeset .permanent {
   color: var(--fg-gold);
+}
+
+/* ---------- Dragon Quest Monsters: The Withered World ---------- */
+
+/* Monster tiles and Recipe Builder tiles: window-blue boxes with the
+   family's color bar on top (dqm.css sets --dqm-fam). */
+html.fg .md-typeset .dqm-tile,
+html.fg #synth-builder .sb-tile {
+  background: var(--fg-row);
+  border: 1px solid var(--fg-win-edge);
+  border-top: 4px solid var(--dqm-fam);
+  border-radius: 5px;
+}
+
+html.fg .md-typeset .dqm-tile .dqm-where,
+html.fg .md-typeset .dqm-tile .dqm-talent,
+html.fg #synth-builder .sb-meta {
+  color: var(--fg-ink-dim);
+}
+
+html.fg .md-typeset .dqm-tile:target {
+  box-shadow: 0 0 0 2px var(--fg-gold);
+}
+
+html.fg #synth-builder .sb-any {
+  color: var(--fg-ink-dim);
+  background: transparent;
+  border-style: dashed;
+  border-top-style: solid;
+}
+
+html.fg #synth-builder {
+  --sb-line: var(--fg-win-edge);
+}
+
+/* The picked monster's card is a window, its name in the pixel face. */
+html.fg #synth-builder .sb-card {
+  background: var(--fg-win-bg);
+  border: 2px solid var(--fg-win-line);
+  border-left: 6px solid var(--dqm-fam);
+  border-radius: 7px;
+  box-shadow: var(--fg-win-shadow);
+}
+
+html.fg #synth-builder .sb-card-name,
+html.fg #synth-builder .sb-card-name a {
+  font-family: var(--fg-display);
+  font-weight: 500;
+  color: var(--fg-gold);
+  text-decoration: none;
+}
+
+html.fg #synth-builder .sb-chip {
+  background: var(--fg-chip);
+  border-color: var(--fg-win-edge);
+}
+
+html.fg #synth-builder .sb-card-label {
+  color: var(--fg-ink-faint);
+}
+
+/* Search boxes. */
+html.fg #synth-builder input,
+html.fg #dqm-talents input {
+  color: var(--fg-ink);
+  background: var(--fg-chip);
+  border: 1px solid var(--fg-win-edge);
+  border-radius: 5px;
+}
+
+html.fg #synth-builder input:focus,
+html.fg #dqm-talents input:focus {
+  border-color: var(--fg-gold);
+  outline: 0;
+  box-shadow: 0 0 0 1px var(--fg-gold);
+}
+
+/* Talent buttons. */
+html.fg #dqm-talents .tal-pick {
+  background: var(--fg-chip);
+  border-color: var(--fg-win-edge);
+}
+
+html.fg #dqm-talents .tal-pick:hover {
+  border-color: var(--fg-gold);
+}
+
+html.fg #dqm-talents .tal-pick[aria-pressed="true"] {
+  color: var(--fg-ground);
+  background: var(--fg-gold);
+  border-color: var(--fg-gold);
+}
+
+/* The selected Talent's tree: a framed table like the rest of the site. */
+html.fg #dqm-talents .tal-tree {
+  margin: .6em 0 1.2em;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: var(--fg-win-bg);
+  border: 2px solid var(--fg-win-line);
+  border-radius: 7px;
+  box-shadow: var(--fg-win-shadow);
+  overflow: hidden;
+}
+
+html.fg #dqm-talents .tal-tree th {
+  font-size: .56rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--fg-ink-dim);
+  border-bottom: 1px dashed rgba(232, 236, 255, .3);
+}
+
+html.fg #dqm-talents .tal-tree td {
+  border-bottom: 1px solid rgba(232, 236, 255, .08);
+}
+
+html.fg #dqm-talents .tal-tree tbody tr:nth-child(even) td {
+  background: var(--fg-row);
+}
+
+html.fg #dqm-talents .tal-tree td:first-child {
+  font-family: var(--fg-mono);
+}
+
+html.fg #dqm-talents .tal-tree tr.tal-match td {
+  background: rgba(255, 214, 107, .16);
+}
+
+html.fg #dqm-talents .tal-tree tr:last-child td {
+  border-bottom: 0;
 }
