@@ -82,3 +82,11 @@ keeps 1.16–1.17. No Rage or Lore moves between chapters: the only enemy
 Terra's and Sabin's chapters share is Apparition, which has no Rage.
 `tools/walkbuild.py` still uses Caves of Narshe's ids, so a rebuild with it
 would need the same remap.
+- Veldt boxes (`veldt` in data.json, built by walkbuild.py from chapter
+  order): with Sabin first, Darkside and Eukaryote (Terra, 1.15) moved from
+  1.13's list to 1.36's. 1.13 now lists 12 Rages: Guard Leader, Lesser
+  Lopros, Stray Cat, Templar, Bomb (top picks) and Magitek Armor, Mu,
+  Trillium, Gorgias, Cirpius, Doberman, Ghost (worth learning).
+- "Most turn up within 20 to 40 battles": the per-Rage expectations from the
+  analysis above with 15 groups (Templar ~22, Stray Cat ~22, Lesser Lopros
+  ~30); Bomb ~6.
