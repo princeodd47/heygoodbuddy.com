@@ -604,7 +604,7 @@ function rageDetail(r){
 function bestiary(){
   const s=state.bestiary;
   view.innerHTML=`
-  <p class="intro">All ${D.monsters.length} enemies and bosses, by their GBA names, which the Pixel Remaster also uses. Where the SNES or PS1 name is different, it's shown under the name, and search finds any of them. Steal shows the <b>Common</b> and <b>Rare</b> slots; the Thief's Bracer raises the odds on rare steals. The GBA release has no per-monster AP: magic points for Espers are awarded per battle formation, so they aren't listed here.</p>
+  <p class="intro">All ${D.monsters.length} enemies and bosses, by their GBA names, which the Pixel Remaster also uses. Where the SNES or PS1 name is different, it's shown under the name, and search finds any of them. Steal shows the <b>Common</b> and <b>Rare</b> slots; the Thief's Bracer raises the odds on rare steals. Magic AP (what Espers teach spells with) isn't listed: it's awarded per battle, by the group of enemies you beat, not per monster.</p>
   <div class="filters win">
     <div class="grp grow"><label class="lbl" for="bq">Search</label><input type="search" id="bq" placeholder="Name (any version), item, lore, place" value="${esc(s.q)}"></div>
     <div class="grp"><label class="lbl" for="bsort">Sort</label><select id="bsort">
@@ -770,7 +770,7 @@ function espers(){
   const spellNames=[...new Set(D.espers.flatMap(e=>e.spells.map(x=>x.name)))].sort();
   const bonusKinds=[...new Set(D.espers.map(e=>e.bonus.replace(/\s*\+.*$/,'')))].sort();
   view.innerHTML=`
-  <p class="intro">Equip an Esper and every battle you win adds <b>magic points × learn rate</b> to each of its spells; a spell is learned at 100%. So an <b>x10</b> spell takes 10% per point, about 10 points' worth of battles, and an <b>x1</b> spell takes 100. The <b>level bonus</b> applies each time the character gains a level with that Esper equipped.</p>
+  <p class="intro">Equip an Esper and every battle you win adds <b>Magic AP × learn rate</b> to each of its spells; a spell is learned at 100%. So an <b>x10</b> spell gains 10% per Magic AP and is learned after 10, and an <b>x1</b> spell takes 100. (The SNES version called Magic AP "Magic Points".) The <b>level bonus</b> applies each time the character gains a level with that Esper equipped.</p>
   <div class="filters win">
     <div class="grp grow"><label class="lbl" for="sq">Search</label><input type="search" id="sq" placeholder="Esper, summon, location" value="${esc(s.q)}"></div>
     <div class="grp"><label class="lbl" for="sspell">Find a spell</label><select id="sspell"><option value="">Any spell</option>${spellNames.map(n=>`<option>${esc(n)}</option>`).join('')}</select></div>
@@ -780,7 +780,7 @@ function espers(){
   ${legend('lg-espers',[
     ['<span class="bonus">HP +50%</span>','<b>Level bonus.</b> Added each time the character levels up with this Esper equipped.'],
     ['<span class="bonus none">No bonus</span>','No level-up bonus.'],
-    ['<span class="rate" style="width:110px"><b>x10</b><span class="bar"><i style="width:50%"></i></span></span>','<b>Learn rate.</b> Progress per magic point earned. A full bar is x20, the fastest rate.'],
+    ['<span class="rate" style="width:110px"><b>x10</b><span class="bar"><i style="width:50%"></i></span></span>','<b>Learn rate.</b> Progress per Magic AP earned. A full bar is x20, the fastest rate.'],
     ['<span class="badge">GBA</span>','Esper added in the GBA release.'],
     [el('Fire'),'Element of the spell or summon.'],
     ['<b>MP</b>','MP cost to cast the spell once learned, or to summon the Esper.']

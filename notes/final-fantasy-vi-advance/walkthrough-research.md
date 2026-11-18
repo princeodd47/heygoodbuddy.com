@@ -112,3 +112,13 @@ Lightning for the soldiers and armor on the way in.
   Wind, Earth, Water, Poison, Holy). Physical Rages available by 1.31:
   Stray Cat's Cat Scratch (×4, top pick), Gold Bear's Gouge (×2.5),
   Doberman's Bite (×1.5). Shiva had no boss card in 1.31; added.
+
+## Magic AP (2026-11-18)
+
+The points that teach Esper spells are "Magic AP" in the GBA version: the
+user confirmed the battle results say "Earned 5 magic AP." The SNES called
+them Magic Points (FF Wiki, "Ability Points"), which clashes with MP. The
+guide now says Magic AP everywhere (1.36 Intangir tip, the Esper spell tip,
+Terra's Trance note, the Espers and Bestiary intros), and the Espers intro
+mentions the SNES name. Per the wiki, Magic AP is set per enemy formation,
+not per monster.
