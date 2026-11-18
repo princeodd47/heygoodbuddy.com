@@ -90,3 +90,25 @@ would need the same remap.
 - "Most turn up within 20 to 40 battles": the per-Rage expectations from the
   analysis above with 15 groups (Templar ~22, Stray Cat ~22, Lesser Lopros
   ~30); Bomb ~6.
+- 1.20's optional Veldt trip got its own Veldt box (2026-11-18): the top
+  picks and worth-learning Rages first met in 1.14–1.20 (Aspiran, Anguiform,
+  Darkside, Eukaryote, Heavy Armor, Gold Bear, Acrophies), with 1.13's list
+  as "earlier ones". 1.36 now lists those seven among its earlier ones.
+  None of the Battle for Narshe Rages are rated.
+
+## Aspiran's Gigavolt (2026-11-18)
+
+The user thought Gigavolt helps against Ifrit and Shiva (1.31). The guide's
+data says both nullify Lightning (and Poison, Wind, Holy, Earth, Water), so
+it doesn't; Ifrit is weak to Ice and Shiva to Fire. Lightning-weak enemies
+after 1.20, from data.json: Ultros (1.25, 1.43); Sergeant, Proto Armor,
+Mega Armor, Belzecue, Onion Knight, Trapper and Crane (Right) in Vector and
+the Magitek Research Facility (1.28–1.34); Joker, Devourer, Ninja elsewhere.
+The tip in 1.20 says where it pays off, and 1.31's strategy says to save
+Lightning for the soldiers and armor on the way in.
+- Follow-up: the user pointed out Gau's Rages pick their own target, so in
+  the Ifrit + Shiva fight he must avoid Fire and Ice too (each absorbs one).
+  Both nullify every other element (data.json and the wiki agree: Lightning,
+  Wind, Earth, Water, Poison, Holy). Physical Rages available by 1.31:
+  Stray Cat's Cat Scratch (×4, top pick), Gold Bear's Gouge (×2.5),
+  Doberman's Bite (×1.5). Shiva had no boss card in 1.31; added.
