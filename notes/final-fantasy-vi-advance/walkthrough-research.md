@@ -72,3 +72,13 @@ last (more Rages on the first trip)?
   15 × 8 = 120 vs 18 × 8 = 144. Every other Rage slows by the same 20%.
 - The extra Rages from Terra and Locke include no top picks (good: Eukaryote,
   Darkside, Heavy Armor, Acrophies, Gold Bear).
+
+## Sabin's scenario first (2026-11-18)
+
+The user chose to play Sabin's scenario first (see the Veldt analysis
+above). Chapters were renumbered to read in that order: Caves of Narshe's
+1-11..1-15 (Sabin) are 1.10–1.14 here, and its 1-10 (Terra) is 1.15. Locke
+keeps 1.16–1.17. No Rage or Lore moves between chapters: the only enemy
+Terra's and Sabin's chapters share is Apparition, which has no Rage.
+`tools/walkbuild.py` still uses Caves of Narshe's ids, so a rebuild with it
+would need the same remap.

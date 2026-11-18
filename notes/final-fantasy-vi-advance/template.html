@@ -1339,7 +1339,7 @@ function walkthrough(){
   const plain=c=>(c.t+' '+c.s.join(' ')+' '+c.b.map(b=>b[1]).join(' ')+' '+c.en.join(' ')+' '+c.tr+' '+c.chests.map(x=>x.i+' '+x.a).join(' ')+' '+c.boss.map(([i])=>D.monsters[i].name).join(' ')).replace(/\{[mest]:([^}]+)\}/g,'$1').toLowerCase();
   const hasMiss=c=>c.b.some(b=>b[0]==='miss');
   view.innerHTML=`
-  <p class="intro">The story chapter by chapter, following the order of Djibriel's walkthrough on Caves of Narshe. Open a chapter for the steps, then the <b>highlighted boxes</b>: missable items, things to buy, steal or find, side quests, and the <b>new Rages</b> Gau can pick up from that chapter's enemies (fight them once, then Leap on the Veldt). Boss cards show HP, weaknesses, steals and drops from the Bestiary, plus a strategy.</p>
+  <p class="intro">The story chapter by chapter, following the order of Djibriel's walkthrough on Caves of Narshe, except that Sabin's scenario comes before Terra's (see 1.9). Open a chapter for the steps, then the <b>highlighted boxes</b>: missable items, things to buy, steal or find, side quests, and the <b>new Rages</b> Gau can pick up from that chapter's enemies (fight them once, then Leap on the Veldt). Boss cards show HP, weaknesses, steals and drops from the Bestiary, plus a strategy.</p>
   ${legend('lg-wt',[
     ['<span class="badge miss">Missable</span>','Gone for good, a one-time choice, or a chest worth leaving closed. Read before acting.'],
     ['<span class="badge">Get it</span>','Items worth buying, stealing or picking up here.'],
