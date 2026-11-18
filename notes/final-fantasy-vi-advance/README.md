@@ -49,7 +49,8 @@ partial.
 - [Gamer Corner](https://guides.gamercorner.net/ffvi/): treasure locations
   (SNES names, mapped to GBA names in `tools/chestmap.py`).
 - [Final Fantasy Wiki](https://finalfantasy.fandom.com/): Rage and Dance
-  lists, and the level reset glitch.
+  lists, the level reset glitch, and each enemy's SNES and PS1 names
+  (`tools/wiki_names.py`, `bestiary-research.md`).
 - Master ZED's monster guide: locations and special-attack formulas (SNES).
 
 Write in our own words; don't copy text from the sources.

@@ -110,6 +110,7 @@ dl.kv dd{margin:0;min-width:0}
 .row>button.head,.colhead{grid-template-columns:var(--cols)}
 .row>button.head>*{min-width:0;overflow-wrap:anywhere}
 .row .name{flex-wrap:wrap;row-gap:3px}
+.row .name .aka{flex-basis:100%;font-weight:400;font-size:12.5px;color:var(--ink-dim);margin-left:16px}
 .colhead{display:grid;gap:4px 12px;padding:0 13px 4px;font-size:10.5px;text-transform:uppercase;letter-spacing:1px;color:var(--ink-faint)}
 .r{text-align:right}
 nav.subtabs{display:flex;flex-wrap:wrap;gap:4px;margin:-6px 0 16px}
@@ -307,6 +308,7 @@ footer a{color:var(--ink-dim)}
 .eqpop .pop-x:hover{color:var(--ink);background:var(--row-hover)}
 .eqpop .pop-stats{display:flex;flex-wrap:wrap;gap:4px 14px;margin-bottom:6px;font-size:13.5px}
 .eqpop .k{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:1px;color:var(--ink-faint)}
+.eqpop .pop-aka{margin:-4px 0 8px;color:var(--ink-dim);font-size:13px}
 .eqpop .pop-flags{margin:0 0 6px;color:var(--ink-dim);font-size:13px}
 .eqpop .pop-note{margin:0 0 6px;line-height:1.45}
 .eqpop .pop-note.dim{color:var(--ink-dim)}
@@ -392,6 +394,8 @@ document.getElementById('c-bushido').textContent=D.bushido.length;
 document.getElementById('c-sketch').textContent=D.monsters.filter(m=>m.sketch).length;
 
 const monByName=Object.fromEntries(D.monsters.map(m=>[m.name,m]));
+/* Other versions' names (the guide uses the GBA names, which the Pixel Remaster shares). */
+function akaText(m){const a=m.aka;if(!a||!(a.snes||a.ps))return '';return a.snes&&a.ps&&a.snes!==a.ps?`SNES: ${a.snes} · PS1: ${a.ps}`:a.snes&&a.ps?`SNES / PS1: ${a.snes}`:a.snes?`SNES: ${a.snes}`:`PS1: ${a.ps}`}
 const rageByMon={};D.rages.forEach(r=>{if(r.monster)(rageByMon[r.monster]=rageByMon[r.monster]||[]).push(r)});
 
 const state={rages:{q:'',el:'',elMode:'weak',sort:'n',best:''},bestiary:{q:'',el:'',sort:'bestiary',only:''},equipment:{q:'',cat:'Weapon',sub:'',who:'',sort:'power'},espers:{q:'',spell:'',bonus:'',sort:'name'},lores:{q:'',world:'',sort:'first'},dances:{q:'',kind:''},steal:{q:'',lv:20,bracer:false,only:'',sort:'name'},throw:{q:'',type:''},sketch:{q:'',lv:30,beret:false,only:'',sort:'name'}};
@@ -463,7 +467,7 @@ const pop=(()=>{
     if(m.morph&&m.morph.items.length)kv.push(['Metamorph',m.morph.items.map((x,i,a)=>`<span>${lkE(x)}${i<a.length-1?',':''}</span>`).join(' ')]);
     const rg=D.rages.find(r=>(r.monster||r.name)===m.name);
     if(rg)kv.push(['Rage',`<b>${esc(rg.ability)}</b>${rg.effect?` <span class="dim">${esc(rg.effect)}</span>`:''} <span class="faint">· attack: ${esc(rg.attack)}</span>`]);
-    return head(m.name,m.gba?'GBA only':'')+stats([['Lv',m.level],['HP',m.hp],['MP',m.mp],['EXP',m.exp],['Gil',m.gil]])
+    return head(m.name,m.gba?'GBA only':'')+(akaText(m)?`<p class="pop-aka">${esc(akaText(m))}</p>`:'')+stats([['Lv',m.level],['HP',m.hp],['MP',m.mp],['EXP',m.exp],['Gil',m.gil]])
       +(m.loc?`<p class="pop-note dim">${esc(m.loc)}</p>`:'')
       +`<dl class="pop-loc">${kv.map(([k,v])=>`<dt>${k}</dt><dd>${v}</dd>`).join('')}</dl>`
       +(m.statusImmune&&m.statusImmune.length?`<p class="pop-note dim" style="margin-top:8px;font-size:13px"><span class="k">Immune</span> ${esc(m.statusImmune.join(', '))}</p>`:'')
@@ -600,9 +604,9 @@ function rageDetail(r){
 function bestiary(){
   const s=state.bestiary;
   view.innerHTML=`
-  <p class="intro">All ${D.monsters.length} enemies and bosses. Steal shows the <b>Common</b> and <b>Rare</b> slots; the Thief's Bracer raises the odds on rare steals. The GBA release has no per-monster AP: magic points for Espers are awarded per battle formation, so they aren't listed here.</p>
+  <p class="intro">All ${D.monsters.length} enemies and bosses, by their GBA names, which the Pixel Remaster also uses. Where the SNES or PS1 name is different, it's shown under the name, and search finds any of them. Steal shows the <b>Common</b> and <b>Rare</b> slots; the Thief's Bracer raises the odds on rare steals. The GBA release has no per-monster AP: magic points for Espers are awarded per battle formation, so they aren't listed here.</p>
   <div class="filters win">
-    <div class="grp grow"><label class="lbl" for="bq">Search</label><input type="search" id="bq" placeholder="Monster, item, lore, location" value="${esc(s.q)}"></div>
+    <div class="grp grow"><label class="lbl" for="bq">Search</label><input type="search" id="bq" placeholder="Name (any version), item, lore, place" value="${esc(s.q)}"></div>
     <div class="grp"><label class="lbl" for="bsort">Sort</label><select id="bsort">
       <option value="bestiary">Bestiary #</option><option value="name">Name</option><option value="level">Level</option><option value="hp">HP</option><option value="exp">EXP</option><option value="gil">Gil</option></select></div>
     <div class="grp"><label class="lbl" for="bonly">Show</label><select id="bonly"><option value="">All enemies</option><option value="rage">Has a Rage</option><option value="lore">Teaches a Lore</option><option value="gba">GBA additions</option><option value="rare">Has a rare steal</option><option value="suplex">Immune to Meteor Strike</option></select></div>
@@ -631,7 +635,7 @@ function bestiary(){
   function draw(){
     const t=s.q.trim().toLowerCase();
     let a=D.monsters.filter(m=>{
-      if(t){const hay=[m.name,m.loc,m.type,m.steal.common,m.steal.rare,m.drop.common,m.drop.rare,...m.lores,...m.morph.items].join(' ').toLowerCase();if(!hay.includes(t))return false}
+      if(t){const hay=[m.name,...Object.values(m.aka||{}),m.loc,m.type,m.steal.common,m.steal.rare,m.drop.common,m.drop.rare,...m.lores,...m.morph.items].join(' ').toLowerCase();if(!hay.includes(t))return false}
       if(s.el&&!m.elemWeak.includes(s.el))return false;
       if(s.only==='rage'&&!rageByMon[m.name])return false;
       if(s.only==='lore'&&!m.lores.length)return false;
@@ -644,7 +648,7 @@ function bestiary(){
     if(k==='level')a.reverse();
     document.getElementById('bcount').textContent=`${a.length} of ${D.monsters.length} enemies`;
     L.innerHTML=a.length?a.map(m=>rowHTML('mon',m.name,`
-      <span class="name"><span class="cursor"></span><span>${esc(m.name)}</span>${m.gba?'<span class="badge">GBA</span>':''}${rageByMon[m.name]?'<span class="badge alt">Rage</span>':''}</span>
+      <span class="name"><span class="cursor"></span><span>${esc(m.name)}</span>${m.gba?'<span class="badge">GBA</span>':''}${rageByMon[m.name]?'<span class="badge alt">Rage</span>':''}${akaText(m)?`<span class="aka">${esc(akaText(m))}</span>`:''}</span>
       <span class="num r mlab" data-k="Lv">${m.level}</span>
       <span class="num r mlab" data-k="HP">${fmt(m.hp)}</span>
       <span class="num r mlab" data-k="EXP">${fmt(m.exp)}</span>
