@@ -501,7 +501,7 @@ const pop=(()=>{
     const keep=keepAnchor&&anchor;hide();anchor=keep||a;key=k;
     box=document.createElement('div');box.className='eqpop';box.setAttribute('role','dialog');box.setAttribute('aria-labelledby','pop-t');
     box.innerHTML=v==='equipment'?eqBody(x):v==='espers'?espBody(x):monBody(x);box.dataset.v=v;box.dataset.n=n;
-    document.body.appendChild(box);place();
+    (document.querySelector('.ff6')||document.body).appendChild(box);place();
     box.addEventListener('click',e=>{
       if(e.target.closest('.pop-x')){hide(true);return}
       if(e.target.closest('[data-popopen]')){go(box.dataset.v,box.dataset.n);return}

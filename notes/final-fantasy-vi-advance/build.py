@@ -40,10 +40,11 @@ REDIRECT = """<!doctype html>
 # Fits the guide into a site page like the other games': it starts where
 # their content does and takes the page's width (there's no left nav or table
 # of contents here), the game's name matches theirs, and the sticky tab window
-# sits below the site's sticky header.
+# sits below the site's sticky header and under the phone menu, like the other
+# games' tabs.
 SITE_CSS = """
 .ff6{flex:1 1 auto;min-width:0;background:none}
-.ff6 nav.tabs{top:calc(2.4rem + 2px)}
+.ff6 nav.tabs{top:calc(2.4rem + 2px);z-index:3}
 .ff6 .wrap{max-width:none;margin:0 .8rem;padding:1.1rem 0 48px}
 @media screen and (min-width:76.25em){.ff6 .wrap{margin:0 1.2rem}}
 .ff6 header.top{padding:0}

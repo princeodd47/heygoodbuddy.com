@@ -326,7 +326,7 @@
 }
 
 .ff6{flex:1 1 auto;min-width:0;background:none}
-.ff6 nav.tabs{top:calc(2.4rem + 2px)}
+.ff6 nav.tabs{top:calc(2.4rem + 2px);z-index:3}
 .ff6 .wrap{max-width:none;margin:0 .8rem;padding:1.1rem 0 48px}
 @media screen and (min-width:76.25em){.ff6 .wrap{margin:0 1.2rem}}
 .ff6 header.top{padding:0}
@@ -504,7 +504,7 @@ const pop=(()=>{
     const keep=keepAnchor&&anchor;hide();anchor=keep||a;key=k;
     box=document.createElement('div');box.className='eqpop';box.setAttribute('role','dialog');box.setAttribute('aria-labelledby','pop-t');
     box.innerHTML=v==='equipment'?eqBody(x):v==='espers'?espBody(x):monBody(x);box.dataset.v=v;box.dataset.n=n;
-    document.body.appendChild(box);place();
+    (document.querySelector('.ff6')||document.body).appendChild(box);place();
     box.addEventListener('click',e=>{
       if(e.target.closest('.pop-x')){hide(true);return}
       if(e.target.closest('[data-popopen]')){go(box.dataset.v,box.dataset.n);return}
