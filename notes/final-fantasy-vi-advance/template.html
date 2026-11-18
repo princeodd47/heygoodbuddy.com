@@ -997,7 +997,7 @@ function tips(){
   const item=n=>eqN.has(n)?`<button class="linkbtn" style="color:inherit" data-jump="equipment" data-target="${esc(n)}">${esc(n)}</button>`:esc(n);
   const total=T.changing.reduce((a,g)=>a+g.chests.length,0);
   view.innerHTML=`
-  <p class="intro">Story-dependent treasure, one-time choices, and <a href="#tips" data-glitch>glitches</a> worth knowing. Each treasure below can be opened only once. Its contents depend on <b>when</b> you open it, so opening it early gives the early item and leaves it empty afterward. Wait if you want the later item.</p>
+  <p class="intro">Story-dependent treasure, one-time choices, gear combos and <a href="#tips" data-glitch>glitches</a> worth knowing. Each treasure below can be opened only once. Its contents depend on <b>when</b> you open it, so opening it early gives the early item and leaves it empty afterward. Wait if you want the later item.</p>
   ${legend('lg-tips',[
     ['<span class="stages"><span class="stage"><span class="when">World of Balance</span><span class="what">Potion</span></span></span>','What the treasure holds if you open it at that point in the story.'],
     ['<span class="stages"><span class="stage best"><span class="when">World of Ruin</span><span class="what">X-Potion</span></span></span>','The final, best version.'],
@@ -1018,6 +1018,14 @@ function tips(){
     <h2>${esc(c.area)}</h2><p class="where" style="margin:4px 0 8px">${esc(c.when)}</p>
     <dl class="kv">${c.options.map(([a,b])=>`<dt>${esc(a)}</dt><dd><b>${item(b)}</b></dd>`).join('')}</dl>
     ${c.tip?`<p class="eff dim" style="font-size:13px">${esc(c.tip)}</p>`:''}
+  </article>`).join('')}</div>
+  <h2 class="tips-h" id="combos">Combos</h2>
+  <p class="tips-sub">Gear that's much stronger together than apart. Names are the GBA ones.</p>
+  <div class="dance-grid">${(T.combos||[]).map(c=>`<article class="esp">
+    <h2>${esc(c.name)}</h2><p class="where" style="margin:4px 0 8px">${esc(c.who)}</p>
+    <p class="eff"><b>${c.gear.map(item).join(' + ')}</b>${c.snes?` <span class="dim" style="font-size:13px">(${esc(c.snes)})</span>`:''}</p>
+    <p class="eff" style="margin-top:6px">${esc(c.how)}</p>
+    ${c.note?`<p class="eff dim" style="font-size:13px;margin-top:6px">${esc(c.note)}</p>`:''}
   </article>`).join('')}</div>
   <h2 class="tips-h" id="glitches">Glitches</h2>
   <p class="tips-sub">Bugs in the GBA release you can use on purpose.</p>
