@@ -179,3 +179,36 @@ Guardian (2.45): data.json had Lightning and Water as absorbs, copied from
 Caves of Narshe's stat table. Gamer Corner and the Final Fantasy Wiki both
 list them as weaknesses (as does CoN's own strategy text). Fixed in
 data.json; see bestiary-research.md.
+
+## World of Ruin order for stealing (2026-11-19)
+
+The user wants as few missed steals as possible in the World of Ruin, so
+Gogo comes before any boss with a one-time steal. Nobody can Steal until
+Gogo or Locke joins; Dullahan (Genji Glove) comes before the airship, so
+that steal can't be had.
+
+- New order after the airship (2.12): Gau on the Veldt (2.13), Narshe
+  (2.14), the Narshe mines for Mog and Molulu's Charm (2.15), Umaro's Cave
+  (2.16, Yeti is level 33), the Zone Eater for Gogo (2.17), then the rest in
+  the old order. Old → new: 2-24→2-13, 2-16→2-14, 2-19→2-15, 2-18→2-16,
+  2-36→2-17, 2-13..2-15→2-18..2-20, 2-17→2-21, 2-20..2-23→2-22..2-25,
+  2-25..2-35→2-26..2-36. 2.37 onward unchanged.
+- Rages, Lores and the Veldt box were recomputed for the new order with
+  walkbuild.py's rules (lore availability keyed to Strago rejoining, now
+  2.30). Every Rage and Lore is still assigned once; World of Balance
+  chapters are unchanged. Self-Destruct (Zone Eater) now shows under
+  Strago's chapter as an earlier Lore.
+- Zone Eater enemies are level 43-44 (Daryl's Tomb: 29-30); Covert can't
+  be run from (Gamer Corner) and is immune to Death, so Banish fails. Mog
+  wearing Molulu's Charm avoids every random battle there; the dungeon has
+  no boss.
+- Gogo's commands: per the Final Fantasy Wiki, Gogo loses a command only if
+  its owner never joined (Throw if Shadow was left behind, Dance until Mog
+  joins), so Steal is available before Locke rejoins.
+- Lone Wolf is in the World of Balance (user confirmed; the wiki says after
+  the Magitek Research Facility, back in Narshe), so the choice moved from
+  the old 2-19 to 1.37 with a recommendation to save Mog (the Gold Hairpin
+  is also found at Mt. Zozo and the Ancient Castle). In the World of Ruin
+  Mog is in the moogles' lair in the Narshe mines; Molulu's Charm is in the
+  wall behind him, with nothing marking it (user).
+- Added Mog's back-row tip to 1.37 (Dance ignores row).
