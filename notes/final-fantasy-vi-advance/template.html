@@ -135,7 +135,7 @@ nav.subtabs a[aria-current="page"] .who{color:var(--gold)}
 .reel.any{background:var(--chip);color:var(--ink-dim);box-shadow:inset 0 0 0 1px var(--ink-faint)}
 .esp.danger{border-color:#ff8a8a;box-shadow:inset 3px 0 0 #ff8a8a}
 .danger-tag{font-family:var(--mono);font-size:10.5px;padding:1px 6px;border-radius:3px;background:#ff8a8a;color:#2a0b12;white-space:nowrap}
-.tips-h{font-family:var(--display);font-weight:500;font-size:22px;margin:22px 0 4px}
+.tips-h{scroll-margin-top:124px;font-family:var(--display);font-weight:500;font-size:22px;margin:22px 0 4px}
 .tips-sub{color:var(--ink-dim);font-size:14px;margin:0 0 12px;max-width:80ch}
 .chest{display:grid;grid-template-columns:minmax(0,1fr);gap:6px;padding:10px 0;border-top:1px dashed rgba(232,236,255,.16)}
 .chest .spot{font-size:14px;display:flex;flex-wrap:wrap;gap:4px 8px;align-items:center}
@@ -997,7 +997,7 @@ function tips(){
   const item=n=>eqN.has(n)?`<button class="linkbtn" style="color:inherit" data-jump="equipment" data-target="${esc(n)}">${esc(n)}</button>`:esc(n);
   const total=T.changing.reduce((a,g)=>a+g.chests.length,0);
   view.innerHTML=`
-  <p class="intro">Story-dependent treasure, one-time choices, gear combos and <a href="#tips" data-glitch>glitches</a> worth knowing. Each treasure below can be opened only once. Its contents depend on <b>when</b> you open it, so opening it early gives the early item and leaves it empty afterward. Wait if you want the later item.</p>
+  <p class="intro">Story-dependent treasure, one-time choices, rows, gear combos and <a href="#tips" data-glitch>glitches</a> worth knowing. Each treasure below can be opened only once. Its contents depend on <b>when</b> you open it, so opening it early gives the early item and leaves it empty afterward. Wait if you want the later item.</p>
   ${legend('lg-tips',[
     ['<span class="stages"><span class="stage"><span class="when">World of Balance</span><span class="what">Potion</span></span></span>','What the treasure holds if you open it at that point in the story.'],
     ['<span class="stages"><span class="stage best"><span class="when">World of Ruin</span><span class="what">X-Potion</span></span></span>','The final, best version.'],
@@ -1019,6 +1019,22 @@ function tips(){
     <dl class="kv">${c.options.map(([a,b])=>`<dt>${esc(a)}</dt><dd><b>${item(b)}</b></dd>`).join('')}</dl>
     ${c.tip?`<p class="eff dim" style="font-size:13px">${esc(c.tip)}</p>`:''}
   </article>`).join('')}</div>
+  <h2 class="tips-h" id="rows">Front and back row</h2>
+  <p class="tips-sub">Each character stands in the front or back row. Change it with <b>Row</b> in the main menu, or with Row in battle.</p>
+  <div class="dance-grid"><article class="esp">
+    <h2>What the back row does</h2>
+    <dl class="kv" style="margin-top:8px">
+      <dt>Damage taken</dt><dd>Half from physical attacks. Magic does full damage in either row.</dd>
+      <dt>Damage dealt</dt><dd>Half from <b>Fight</b> and commands that attack like it, such as Mug. That includes every extra hit from the Genji Glove or Master's Scroll.</dd>
+    </dl>
+    <h3 style="margin-top:12px">Full damage from either row</h3>
+    <p class="eff">Most special commands ignore the row, so these characters lose nothing in the back: Sabin's <b>Blitz</b>, Cyan's <b>Bushido</b>, Edgar's <b>Tools</b>, Shadow's <b>Throw</b>, <b>Jump</b>, and every spell, Lore, Dance, Slot and summon.</p>
+    <p class="eff dim" style="font-size:13px;margin-top:6px">Rule of thumb: put anyone who doesn't rely on Fight in the back row. Keep Fight users in front unless their weapon is on the list here.</p>
+  </article><article class="esp">
+    <h2>Weapons with no back-row penalty</h2>
+    <p class="where" style="margin:4px 0 8px">These hit for full damage with Fight from the back row. All of Setzer's weapons are on it.</p>
+    <dl class="kv">${D.equipment.filter(e=>e.cat==='Weapon'&&e.sub!=='Shuriken'&&(e.notes||[]).includes('Full damage from the back row.')).sort((a,b)=>a.who.localeCompare(b.who)||a.name.localeCompare(b.name)).map(e=>`<dt>${item(e.name)}</dt><dd>${esc(e.who)}</dd>`).join('')}</dl>
+  </article></div>
   <h2 class="tips-h" id="combos">Combos</h2>
   <p class="tips-sub">Gear that's much stronger together than apart. Names are the GBA ones.</p>
   <div class="dance-grid">${(T.combos||[]).map(c=>`<article class="esp">
@@ -1054,6 +1070,7 @@ function tips(){
     <p class="faint" style="font-size:12.5px;margin:10px 0 0">Sources: <a href="https://finalfantasy.fandom.com/wiki/Level_reset_glitch" target="_blank" rel="noopener">Final Fantasy Wiki</a>, <a href="https://tcrf.net/Final_Fantasy_VI_Advance" target="_blank" rel="noopener">The Cutting Room Floor</a>, and the <a href="https://l33t5k37ch3r.altervista.org/leveled-out.html" target="_blank" rel="noopener">Leveled Out</a> fix patch notes.</p>
   </article></div>`;
   view.querySelectorAll('.dance-grid').forEach(g=>g.addEventListener('click',ev=>{const j=ev.target.closest('[data-jump]');if(j){ev.preventDefault();jump(j.dataset.jump,j.dataset.target)}}));
+  if(pendingOpen!=null){const a=document.getElementById(pendingOpen);pendingOpen=null;if(a)setTimeout(()=>a.scrollIntoView({block:'start'}),30)}
   view.querySelector('[data-glitch]').onclick=e=>{e.preventDefault();document.getElementById('glitches').scrollIntoView({behavior:'smooth',block:'start'})};
 }
 
@@ -1338,7 +1355,7 @@ function walkthrough(){
   else if(s.last)pendingOpen=s.last;
   const eqN=new Set(D.equipment.map(x=>x.name)), espN=new Set(D.espers.map(e=>e.name));
   const lk=(v,t,label)=>`<button class="linkbtn" data-jump="${v}" data-target="${esc(t)}">${esc(label??t)}</button>`;
-  const tx=t=>esc(t).replace(/&lt;(\/?)(b|br)&gt;/g,'<$1$2>').replace(/\{c:([^}]+)\}/g,'<button class="linkbtn" data-jump="colosseum">$1</button>').replace(/\{([mest]):([^}]+)\}/g,(_,k,v)=>k==='m'?lk('bestiary',v):k==='e'?lk('equipment',v):k==='s'?lk('espers',v):`<button class="linkbtn" data-jump="tips">${v}</button>`);
+  const tx=t=>esc(t).replace(/&lt;(\/?)(b|br)&gt;/g,'<$1$2>').replace(/\{c:([^}]+)\}/g,'<button class="linkbtn" data-jump="colosseum">$1</button>').replace(/\{([mest]):([^}]+)\}/g,(_,k,v)=>k==='m'?lk('bestiary',v):k==='e'?lk('equipment',v):k==='s'?lk('espers',v):(([l,a])=>`<button class="linkbtn" data-jump="tips"${a?` data-target="${a}"`:''}>${l}</button>`)(v.split('|')));
   const item=n=>{const b=n.replace(/ x\d+$/,'');const mb=b.match(/^Monster-in-a-box \((.+)\)$/);
     if(mb)return 'Monster-in-a-box ('+(monByName[mb[1]]?lk('bestiary',mb[1]):esc(mb[1]))+')';
     return (eqN.has(b)?lk('equipment',b):esc(b))+esc(n.slice(b.length))};
@@ -1377,7 +1394,7 @@ function walkthrough(){
         <dl><dt>Weak</dt><dd>${els(m.elemWeak,'weak')}</dd>${m.elemAbsorb.length?`<dt>Absorbs</dt><dd>${els(m.elemAbsorb,'abs')}</dd>`:''}
         <dt>Steal</dt><dd>${sl.length?sl.map(item).join(' / ')+(m.steal.rare&&m.steal.common?' <span class="faint">(common / rare)</span>':m.steal.rare?' <span class="faint">(rare)</span>':''):'<span class="faint">—</span>'}</dd>
         <dt>Drop</dt><dd>${dr.length?dr.map(item).join(' / '):'<span class="faint">—</span>'}</dd></dl>
-        <p>${tx(st)}</p></article>`}).join('')}</div>`:''}
+        ${st?`<p>${tx(st)}</p>`:''}</article>`}).join('')}</div>`:''}
       ${c.veldt?(()=>{const V=c.veldt,srt=a=>a.map(n=>rageN[n]).filter(Boolean).sort((x,y)=>(best(y.n).tier==='top')-(best(x.n).tier==='top')),li=r=>{const b=best(r.n);return `<li>${lk('bestiary',r.monster||r.name,r.name)} <span class="ab">${esc(r.ability)}</span> <span class="badge ${b.tier==='top'?'best':'good'}">${b.tier==='top'?'Top pick':'Worth learning'}</span></li>`};
         return `<div class="wt-box gau veldt"><span class="k">Don't leave the Veldt until Gau knows these</span>Use Leap and keep fighting on the Veldt until each of these Rages shows up in Gau's list. Only monsters you've already fought somewhere else appear on the Veldt, so these are the top picks and worth-learning Rages from enemies you've met so far.
         ${V.new.length?`<ul class="wt-list">${srt(V.new).map(li).join('')}</ul>`:''}

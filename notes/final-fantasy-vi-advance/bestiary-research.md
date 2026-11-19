@@ -31,3 +31,30 @@ matches them.
   Hidonite. The guide spells two names differently from the wiki's GBA
   list: Caladruis (wiki: Caladrius) and Tzakmagiel (wiki: Tzakmaqiel); the
   wiki spellings are stored as `spell` so search finds either.
+
+## Elemental audit (2026-11-19)
+
+Re-downloaded Caves of Narshe's enemy list in GBA mode (`ff6mode=gba`, 21
+pages) and re-ran `tools/parse_enemies.py`: all 399 enemies match data.json
+(stats, elements, statuses, steals, drops, Lores). So the data is a faithful
+copy of CoN; the errors below are CoN's own.
+
+Cross-checked elements against Gamer Corner's monster pages (SNES data, 364
+pages from its sitemap): 341 of 350 matched enemies agree. The 40 GBA-only
+enemies (Dragons' Den, Soul Shrine, etc.) have no second source. Where the
+two disagreed, the Final Fantasy Wiki (api.php wikitext) settled it:
+
+- Guardian: weak to Lightning and Water, no absorbs (CoN lists them as
+  absorbs; its own strategy text says weak). Steal: common Force Armor, rare
+  Ribbon (CoN has them reversed; the wiki's slot 1 is common, checked
+  against Dadaluma).
+- Goddess: absorbs Lightning and Holy (CoN: none).
+- Level 20 Magic: absorbs Poison (CoN: weak to Poison).
+- Mousse: immune to Poison, Wind, Holy, Earth and Water (CoN had Fire, not
+  Water).
+- Visage: immune to Earth (CoN: none).
+- Left as CoN has them: Erebus (2)-(4), which CoN lists as separate variants
+  and Gamer Corner as one enemy; Master Tonberry (Gamer Corner: absorbs
+  Water; the wiki says its elements vary).
+- Not checked: Hornet and Naude (no elemental table on their Gamer Corner
+  pages); steals and drops beyond the Guardian.

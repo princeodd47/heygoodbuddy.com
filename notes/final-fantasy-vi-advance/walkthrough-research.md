@@ -122,3 +122,60 @@ guide now says Magic AP everywhere (1.36 Intangir tip, the Esper spell tip,
 Terra's Trance note, the Espers and Bestiary intros), and the Espers intro
 mentions the SNES name. Per the wiki, Magic AP is set per enemy formation,
 not per monster.
+
+## Back-row tips (2026-11-19)
+
+The user asked for a back-row tip where each character joins for good in the
+World of Balance (not the World of Ruin; by then the player knows it), linking
+to the Tips tab's Rows section with `{t:See Tips|rows}` (the `|id` part
+scrolls the Tips tab to that heading).
+
+- Added: Edgar (1.4, Tools), Sabin (1.7, Blitz), Cyan (1.10, Bushido Fang,
+  which ignores defense, per the user), Setzer (1.26, his weapons), Strago
+  (1.42, Lores/magic), Relm (1.43, magic).
+- Skipped: Locke, Celes and Terra rely on Fight. Gau: unconfirmed whether
+  Rage attacks are halved in the back row. Mog: the walkthrough doesn't mark
+  where he joins for good in the World of Balance. Shadow only joins for good
+  in the World of Ruin.
+- walkbuild.py needs the uncommitted raw/ downloads, so the six chapters'
+  boxes were copied from wt_content.py into data.json's walk entries directly.
+
+## Notable steals (2026-11-19)
+
+The user asked for a note on Galypdes' rare Celestriad steal in Phoenix Cave
+(the easiest source), and a steal note in each chapter with notable steals:
+rare or unique relics, and equipment that's an upgrade or rare. Picked from
+data.json (walk `en` lists, monster steal slots, equipment `loc`), first
+chapter each enemy appears:
+
+- Added: Harvester Dragoon Boots (1.23), Don Tiger Mask (1.27), Chimera
+  Hyper Wrist (1.36), Ninja Angel Wings (1.38), Flame Eater Flametongue
+  (1.42 boss), Dragon Genji Glove / Misfit Alarm Earring (1.48), Glasya
+  Labolas Muscle Belt / Devil Fist Brigand's Glove (2.22), Baalzephon
+  Sasuke / Shambling Corpse Soul Sabre (2.36), Galypdes Celestriad (2.37),
+  Magic Master Crystal Orb (2.41 boss), Great Behemoth Tigerfang / Fiend
+  Dragon Guard Bracelet (2.42), Dark Behemoth Behemoth Suit (3.2).
+- Already in the text: Dadaluma Thief's Bracer, Hill Gigas Gigas Glove,
+  Tunnel Armor Air Knife, Number 024, Number 128 Kazekiri, Guardian Ribbon,
+  Hidon, Wrexsoul, Samurai Soul, Holy Dragon, Fiend.
+- Left out: steals sold in shops at that point (Mythril gear, Twist
+  Headband, Amulet, Earring, Diamond gear, Golden Spear), Tonberries'
+  Minerva Bustier (also its drop), Punisher's Bone Club (Umaro can't change
+  weapons), Masamune (Murakumo is stronger and already noted).
+- Rare slot odds (1 in 8 successful steals) are from the Steal tab's text.
+- In the World of Ruin nobody can Steal until Gogo (2.36) or Locke (2.37)
+  joins, so the 2.22 note says to come back.
+
+## Boss card text (2026-11-19)
+
+The boss cards already show Weak, Absorbs, Steal and Drop, so the user asked
+that strategies stop repeating them. Removed those mentions from every boss
+strategy (wt_content.py and data.json); kept what the card doesn't show:
+nullified elements (Ifrit/Shiva), other enemies' weaknesses (Ipooh, the right
+Crane), and the Vargas steal timing. Bosses left with no text (Nelapa, Death
+Warden, Samurai Soul) render no paragraph.
+
+Guardian (2.45): data.json had Lightning and Water as absorbs, copied from
+Caves of Narshe's stat table. Gamer Corner and the Final Fantasy Wiki both
+list them as weaknesses (as does CoN's own strategy text). Fixed in
+data.json; see bestiary-research.md.
