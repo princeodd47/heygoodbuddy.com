@@ -212,3 +212,7 @@ that steal can't be had.
   Mog is in the moogles' lair in the Narshe mines; Molulu's Charm is in the
   wall behind him, with nothing marking it (user).
 - Added Mog's back-row tip to 1.37 (Dance ignores row).
+- Shopping advice needs a reason. Cut as unexplained (user): Smoke Bombs at
+  Nikeah (1.14; L+R already runs), Potions and Tents in Narshe (1.3), and
+  Flame Scrolls in Kohlingen (1.21). The Nikeah Silk Robes stay: they're
+  gear for the Narshe battle (1.18) (user).

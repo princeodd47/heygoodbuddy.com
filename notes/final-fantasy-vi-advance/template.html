@@ -1469,9 +1469,10 @@ function colosseum(){
 const VIEWS={characters,steal,rages,bestiary,equipment,espers,throw:throw_,lores,bushido,dances,blitzes,tools,magitek,sketch,slots,tips,walkthrough,colosseum};
 const ABILITY_VIEWS=['magitek','steal','tools','blitzes','bushido','throw','rages','dances','lores','sketch','slots'];
 function render(){
-  const h=(location.hash||'').slice(1);const sv=store.get('ff6-ability');const v=VIEWS[h]?h:(VIEWS[sv]?sv:'rages');
+  const h=(location.hash||'').slice(1);const sv=store.get('ff6-ability');const v=VIEWS[h]?h:'walkthrough';
   const isAb=ABILITY_VIEWS.includes(v);
-  if(isAb){store.set('ff6-ability',v);document.getElementById('tab-abilities').href='#'+v}
+  if(isAb)store.set('ff6-ability',v);
+  document.getElementById('tab-abilities').href='#'+(isAb?v:(ABILITY_VIEWS.includes(sv)?sv:'rages'));
   const top=isAb?'abilities':v;
   document.querySelectorAll('nav.tabs a').forEach(a=>{if(a.dataset.view===top)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
   const sn=document.getElementById('subtabs');sn.hidden=!isAb;
