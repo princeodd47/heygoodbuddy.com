@@ -1,5 +1,6 @@
 # Practice questions for the Flesh and Blood judge study quiz.
-# topic: rules | interactions (L1A) or policy | tournament (L1B).
+# topic: rules | interactions (L1A), policy | tournament (L1B), or
+# scorekeeping (Scorekeeper – Basic).
 # answer is the index into choices; the quiz shuffles choices when shown.
 # cards (optional) lists card ids from cards.csv to show with the question;
 # run .venv/bin/python scripts/fab_cards.py after changing them.
@@ -10,6 +11,7 @@ topics:
   interactions: Card interactions
   policy: Penalties
   tournament: Tournament rules
+  scorekeeping: Scorekeeping
 
 questions:
   # --- Rules (L1A) ---
@@ -1408,3 +1410,244 @@ questions:
     answer: 0
     why: Turning down a feature match is only free in Swiss at Casual and Competitive REL.
     cite: TRP 3.11
+
+  # --- Scorekeeping (Scorekeeper – Basic) ---
+  - id: s01
+    topic: scorekeeping
+    q: How many match points is a bye worth?
+    choices:
+      - 1, the same as a win
+      - 0, the same as a draw
+      - Half a point
+      - It depends on the round
+    answer: 0
+    why: "Win and bye are 1 point. Draw and loss are 0."
+    cite: TRP A.4
+
+  - id: s02
+    topic: scorekeeping
+    q: Two players have the same match points. Which tiebreaker is checked next?
+    choices:
+      - Cumulative Match Points
+      - Match Loss %
+      - Opponent Match Loss %
+      - A random player
+    answer: 0
+    why: "The order is Match Points, CMP, MLP, Opponent MLP, Opponent CMP, then random."
+    cite: TRP A.4
+
+  - id: s03
+    topic: scorekeeping
+    q: After 3 rounds, three players are each 2-1. Who has the best Cumulative Match Points?
+    choices:
+      - The one who went W W L
+      - The one who went W L W
+      - The one who went L W W
+      - They're all equal
+    answer: 0
+    why: "CMP weights early rounds the most, so the earlier the loss, the worse. W W L is 13/17, W L W is 11/17, L W W is 10/17."
+    cite: TRP A.4
+
+  - id: s04
+    topic: scorekeeping
+    q: How does a bye affect a player's Match Loss %?
+    choices:
+      - The bye round doesn't count as played
+      - It counts as a played round with no loss
+      - It counts as a loss
+      - It counts as half a loss
+    answer: 0
+    why: "MLP is losses over rounds played, and a bye isn't played. For a player with any losses, a bye is worse than a draw."
+    cite: TRP A.4
+
+  - id: s05
+    topic: scorekeeping
+    q: Which of these is NOT a scorekeeper's responsibility?
+    choices:
+      - Reporting the tournament results to LSS
+      - Generating the correct pairings for each round
+      - Entering each round's results into GEM
+      - Fixing wrong tournament information with the Head Judge
+    answer: 0
+    why: "Reporting results to LSS is the Tournament Organizer's job."
+    cite: TRP 2.7, 2.4
+
+  - id: s06
+    topic: scorekeeping
+    q: A player wants to drop from the tournament. Who do they tell?
+    choices:
+      - The Scorekeeper, or they drop in GEM
+      - Any player at their table
+      - Only the Head Judge
+      - Their opponent for the next round
+    answer: 0
+    why: "Players drop by telling the Scorekeeper. At large events they should use GEM."
+    cite: TRP 3.6
+
+  - id: s07
+    topic: scorekeeping
+    q: A dropped player wants back into the tournament. Who decides?
+    choices:
+      - The Head Judge
+      - The Scorekeeper
+      - The Tournament Organizer
+      - Nobody. Drops are final
+    answer: 0
+    why: "Re-entry is at the Head Judge's discretion because it can cause logistical problems that aren't obvious."
+    cite: TRP 3.6
+
+  - id: s08
+    topic: scorekeeping
+    q: A player drops after the round 1 pairings are posted but before playing. What happens to their round 1 match?
+    choices:
+      - They concede it, then they're dropped
+      - It's removed, and their opponent gets a bye
+      - It's recorded as a draw
+      - They're treated as never having played
+    answer: 0
+    why: "Dropping after pairings are up concedes that round's match. Only a drop before the first pairings keeps them out of the standings."
+    cite: TRP 3.6
+
+  - id: s09
+    topic: scorekeeping
+    q: A player hasn't come to their table 10 minutes into the round and hasn't contacted anyone. What should happen?
+    choices:
+      - They lose the match and are dropped before the next pairings unless they check in first
+      - They lose the match but stay paired for the next round
+      - Their opponent waits until the round ends
+      - The match is a draw
+    answer: 0
+    why: "Over 10 minutes late is a Game Loss, which ends a first-to-1 match. They're dropped unless they report to the Scorekeeper before the next round is paired."
+    cite: TRP 3.6, PPG 3.1
+
+  - id: s10
+    topic: scorekeeping
+    q: A judge gives both players a Game Loss at the same time in a first-to-1 match. How is it recorded?
+    choices:
+      - A double match loss
+      - A draw
+      - A win for whoever was ahead on life
+      - The game is replayed
+    answer: 0
+    why: "Simultaneous Game Losses to both players are recorded as a double match loss."
+    cite: PPG 1.4
+
+  - id: s11
+    topic: scorekeeping
+    q: In round 4, a player in 6th place is disqualified. What happens to the standings?
+    choices:
+      - They have no place, and everyone below moves up one
+      - They stay in 6th with their current record
+      - They drop to last place
+      - Nothing changes until the event ends
+    answer: 0
+    why: "A disqualified player has no place in the standings. If the cut has already been made, nobody moves up into it."
+    cite: PPG 1.4
+
+  - id: s12
+    topic: scorekeeping
+    q: A top 8 player drops before their quarterfinal. What happens?
+    choices:
+      - They concede the quarterfinal, keep their top 8 prizes, and 9th place doesn't move up
+      - 9th place takes their spot
+      - Their opponent gets a bye and they lose all prizes
+      - The top 8 is re-paired as a top 7
+    answer: 0
+    why: "A player who drops after the cut concedes their first top-cut match and still gets the prizes for their place. Nobody replaces them."
+    cite: TRP 3.6
+
+  - id: s13
+    topic: scorekeeping
+    q: Both players refuse to play their match. What's the result?
+    choices:
+      - A loss for both players
+      - A draw
+      - A random winner
+      - The match is replayed next round
+    answer: 0
+    why: "Refusing to play is conceding. If both refuse, both get a loss."
+    cite: TRP 3.5
+
+  - id: s14
+    topic: scorekeeping
+    q: With no official structure for the event, how many Swiss rounds should a 40-player single-day tournament run?
+    choices:
+      - 6, then top 8
+      - 5, then top 8
+      - 7, then top 8
+      - 4, then top 4
+    answer: 0
+    why: "33–64 players is 6 Swiss rounds with a top 8."
+    cite: TRP A.2
+
+  - id: s15
+    topic: scorekeeping
+    q: What is the recommended round time for Classic Constructed?
+    choices:
+      - 55 minutes
+      - 50 minutes
+      - 35 minutes
+      - 60 minutes
+    answer: 0
+    why: "CC rounds are 55 minutes, including the start-of-game procedure. Blitz, Sealed and Draft are 35."
+    cite: TRP A.3
+
+  - id: s16
+    topic: scorekeeping
+    q: In a team event, one member of a team has been disqualified. What happens in the team's next match?
+    choices:
+      - That player's game is forfeited, and the other two still play
+      - The whole team forfeits and is dropped
+      - The team picks a substitute
+      - The match is a draw
+    answer: 0
+    why: "One member missing forfeits only their game. Two or more missing forfeits the match and the team should be dropped."
+    cite: TRP 9.2
+
+  - id: s17
+    topic: scorekeeping
+    q: A Professional REL Constructed top 8 is about to start. What happens with decklists?
+    choices:
+      - Each player gets a copy of their opponent's decklist
+      - Decklists stay private to officials
+      - All decklists are posted publicly
+      - Players may ask for any one decklist
+    answer: 0
+    why: "At Pro REL, Constructed play-off players get their opponents' lists. Limited play-offs don't."
+    cite: TRP 3.7
+
+  - id: s18
+    topic: scorekeeping
+    q: At a Tier 2 event, can the Scorekeeper also play in the tournament?
+    choices:
+      - No. At Tier 2 and up, officials may not play
+      - Yes, if the Head Judge approves
+      - Yes. Scorekeepers aren't tournament officials
+      - Only if there are fewer than 16 players
+    answer: 0
+    why: "The Scorekeeper is a tournament official. Officials may play only at Tier 1, except Skirmish."
+    cite: TRP 2.1
+
+  - id: s19
+    topic: scorekeeping
+    q: After an event, a judge who scorekept it wants to post the top 8 decklists online. Is that allowed?
+    choices:
+      - Only if the Tournament Organizer asks them to help publish it
+      - Yes. Officials can share anything they saw
+      - Yes, once the event is over
+      - Never. Decklists can't be published
+    answer: 0
+    why: "LSS, and the TO after the event, may publish tournament information. Other officials shouldn't on their own."
+    cite: TRP 3.11
+
+  - id: s20
+    topic: scorekeeping
+    q: The round starts early because every match finished. When does tardiness count from?
+    choices:
+      - When the previous round was scheduled to end
+      - When the new round's timer started
+      - When pairings were posted
+      - 10 minutes after the timer started
+    answer: 0
+    why: "Players shouldn't be punished for an event running ahead of schedule."
+    cite: PPG 3.1

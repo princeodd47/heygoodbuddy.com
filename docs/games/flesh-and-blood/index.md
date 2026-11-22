@@ -32,6 +32,13 @@ requirement. You pass two online exams, then submit a checklist.
 
     Release notes, Rules Reprises and rules updates, newest first.
 
+-   :material-scoreboard:{ .lg .middle } __[Scorekeeping](scorekeeping.md)__
+
+    ---
+
+    For the Scorekeeper – Basic exam: GEM, pairings, results, tiebreakers,
+    drops and round structure.
+
 -   :material-head-question:{ .lg .middle } __[Practice Quiz](quiz.md)__
 
     ---
@@ -69,6 +76,12 @@ requirement. You pass two online exams, then submit a checklist.
     and penalty. That lines up with the two exams: L1A is the
     [Comprehensive Rules](rules.md), and L1B is the
     [Procedure and Penalty Guide](policy.md) and Tournament Rules and Policy.
+
+??? info "Scorekeeper – Basic"
+    A separate JudgeHub exam that Level 0 judges can take. It checks that you
+    understand GEM and can be both Scorekeeper and Head Judge at an event, or
+    scorekeep side events at a World Tour stop. Study
+    [Scorekeeping](scorekeeping.md).
 
 ??? info "After Level 1"
     Level 2 needs at least 120 days at Level 1, a recommendation review from a
