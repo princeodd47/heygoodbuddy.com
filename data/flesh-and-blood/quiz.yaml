@@ -700,6 +700,117 @@ questions:
     why: A hero ability that changes the start-of-game procedure or the number of zones applies on its own once the game has started. Losing the ability later changes nothing.
     cite: CR 4.1.2a
 
+  # --- Combat (added 2026-11-21) ---
+  - id: r57
+    topic: combat
+    q: In the Defend Step, you declare a card from hand that costs 2 as a defending card. Do you pay its cost?
+    choices:
+      - No. Declaring a defender isn't playing it.
+      - Yes, before it becomes a defending card
+      - Yes, but only its resource cost
+      - Only if it's an action card
+    answer: 0
+    why: Declaring a defending card isn't playing it. There's no cost, it doesn't go on the stack, and its resolution abilities don't happen.
+    cite: CR 7.3.2
+
+  - id: r58
+    topic: combat
+    q: Your hero is attacked. In the Defend Step, can you declare Sink Below, a defense reaction, from your hand as a defending card?
+    choices:
+      - No. Defense reactions have to be played in the Reaction Step.
+      - Yes. Any card with defense can be declared.
+      - Yes, and its effect happens too
+      - Only if the attack has dominate
+    answer: 0
+    cards: [sink-below-1]
+    why: In the Defend Step, a hero's controller declares non-defense-reaction cards from hand and public equipment. Defense reactions are played in the Reaction Step and become defending cards when they resolve.
+    cite: CR 7.3.2a, 7.4.2d
+
+  - id: r59
+    topic: combat
+    q: Which of these can't be declared as a defending card?
+    choices:
+      - A card with no defense value printed on it
+      - A card with 0 defense
+      - An equipment card you control that's face up
+      - An attack action card in your hand
+    answer: 0
+    why: A card needs the defense property to defend. A defense of 0 still counts as having it.
+    cite: CR 7.3.2b
+
+  - id: r60
+    topic: combat
+    q: An attack with dominate is defended by no cards from hand. The defender plays two defense reactions from hand, one after the other. What happens when they resolve?
+    choices:
+      - The first one to resolve defends, and the other fails to resolve
+      - Both defend, because neither was declared in the Defend Step
+      - Neither defends
+      - The defender chooses which one defends, and the other goes back to hand
+    answer: 0
+    why: The second one to be played is on top, so it resolves first and becomes a defending card from hand. Dominate then stops the other from defending, and a defense reaction that can't become a defending card fails to resolve.
+    cite: CR 7.4.2d, 8.3.4a–b
+
+  - id: r61
+    topic: combat
+    q: A player declares two cards in the Defend Step, then plays a defense reaction in the Reaction Step. Which cards "defend together"?
+    choices:
+      - Only the two declared cards. The defense reaction defends alone.
+      - All three cards
+      - None. Only cards played from hand can defend together.
+      - The defense reaction and whichever declared card has more defense
+    answer: 0
+    why: Cards that become defending in the same event defend together. One card added later by itself defends alone, even if other cards are already defending.
+    cite: CR 7.0.5e
+
+  - id: r62
+    topic: combat
+    q: In the Reaction Step, the only attack on the active chain link is destroyed. There are no other attacks in the queue. What happens?
+    choices:
+      - The Close Step begins
+      - The Damage Step happens with 0 power
+      - The Resolution Step begins, and go again still applies
+      - The defender gets priority to play defense reactions
+    answer: 0
+    why: If the active-attack stops existing before damage is calculated and the queue is empty, the Close Step begins as a game state action.
+    cite: CR 7.2.2d, 7.7.2c
+
+  - id: r63
+    topic: combat
+    q: The combat chain closes while an attack reaction is still on the stack. What happens to the attack reaction?
+    choices:
+      - It's cleared without resolving
+      - It resolves first, then the chain closes
+      - It goes back to its owner's hand
+      - It stays on the stack until the End Phase
+    answer: 0
+    why: When the chain closes, chain-close triggers happen, and every attack, attack-layer and reaction on the stack or in the queue is cleared.
+    cite: CR 7.7.3
+
+  - id: r64
+    topic: combat
+    q: In the Resolution Step, the turn-player plays another attack action card. What happens to the combat chain?
+    choices:
+      - It stays open, and the Layer Step begins for the new attack
+      - It closes, and a new combat chain opens
+      - It closes, and the attack resolves outside of combat
+      - Nothing. Attacks can't be played in the Resolution Step.
+    answer: 0
+    why: The turn-player may play attacks in the Resolution Step. If one is added to the stack, the Resolution Step ends and the Layer Step begins on the same chain.
+    cite: CR 7.6.3a
+
+  - id: r65
+    topic: combat
+    q: Flittering Charge says "If you've played an instant card this chain link, this gets go again." When does an instant you play count?
+    choices:
+      - From the Attack Step to the Damage Step, while it's the active chain link
+      - Any time this turn
+      - Only in the Reaction Step
+      - Only while Flittering Charge is on the stack
+    answer: 0
+    cards: [flittering-charge-1]
+    why: As a length of time, a chain link starts when it becomes the active chain link in the Attack Step. It ends when it resolves at the start of the Resolution Step or the chain closes.
+    cite: CR 7.0.3d
+
   # --- Card interactions (L1A) ---
   - id: i01
     topic: interactions

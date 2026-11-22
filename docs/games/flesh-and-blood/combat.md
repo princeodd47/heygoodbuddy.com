@@ -57,7 +57,7 @@ Card examples for the steps:
   declare defenders or play defense reactions if an effect allows it. Those
   are only allowed when a *hero* is the attack-target (CR 7.3.2a, 7.4.2b).
 - **An ally attacking:** its controller is the attacking hero (CR 7.2.3a).
-  This was clarified in the January 30, 2026 rules update. *Example:*
+  *Example:*
   {{ card("cintari-sellsword") }} attacks through its own attack ability, and
   its controller is the attacking hero.
 

@@ -13,10 +13,10 @@ Combat chain and steps table with priority, step examples, instants while the ch
 
 ## Quiz
 
-Topic `combat` in `data/flesh-and-blood/quiz.yaml`. Existing questions: r05, r20, r21, r37–r39.
-Target about 15.
-
-Write about 9: attack queue, defend step (all at once, not playing), reaction step (who plays what), damage step equal power and defense, resolution step go again, close step, proxies, attack-layers.
+Topic `combat` in `data/flesh-and-blood/quiz.yaml`: r05, r20, r21, r37–r39,
+r57–r65 (15 questions). r57–r65 were checked against the CR text on
+2026-11-21. r58 tags Sink Below (red); r65 tags Flittering Charge, the CR's
+own 7.0.3d example.
 
 ## Open questions
 
