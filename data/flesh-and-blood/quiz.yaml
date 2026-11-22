@@ -927,6 +927,94 @@ questions:
     why: The turn-player chooses a player to start. Each player then applies their own replacement effects of that type in clockwise order. The turn-player doesn't order effects they don't control.
     cite: CR 6.5.2, 6.5.2a
 
+  # --- Playing cards (added 2026-11-21) ---
+  - id: r75
+    topic: playing
+    q: When you play a card, which of these happens first?
+    choices:
+      - Declaring its modes and targets
+      - Calculating its asset-costs
+      - Paying its asset-costs, including pitching
+      - Paying its effect-costs
+    answer: 0
+    why: "The steps are: announce, declare costs, declare modes and targets, check legal play, calculate asset-costs, pay them, calculate effect-costs, pay them, play."
+    cite: CR 5.1.1
+
+  - id: r76
+    topic: playing
+    q: Partway through playing a card, a player finds they can't pay its resource cost. What happens?
+    choices:
+      - Everything is reversed to before the card was announced
+      - The card goes to the graveyard without resolving
+      - The card resolves with no effect
+      - They pay what they can and owe the rest
+    answer: 0
+    why: If an asset-cost isn't paid in full, the card is illegal to play and the game state is reversed to before it was announced.
+    cite: CR 5.1.7a
+
+  - id: r77
+    topic: playing
+    q: Come to Fight says "The next attack action card you play this turn gets +3 power." At which step of playing your next attack action card does the +3 apply?
+    choices:
+      - Announce, as the card moves to the stack
+      - After its costs are paid
+      - When it resolves
+      - When it becomes a chain link
+    answer: 0
+    cards: [come-to-fight-1]
+    why: Effects that apply to the next card played are applied when that card is announced, if it matches.
+    cite: CR 5.1.2a
+
+  - id: r78
+    topic: playing
+    q: An effect lets you play a card without paying its cost. The card's cost includes X. What is X?
+    choices:
+      - "0"
+      - Whatever you declare
+      - The card's printed power
+      - The number of cards in your hand
+    answer: 0
+    why: If you use an effect to play a card without paying a cost that includes X, X has to be declared as 0.
+    cite: CR 5.1.3a
+
+  - id: r79
+    topic: playing
+    q: 'Energy Potion reads "Instant — Destroy this: Gain 2 resources." What kind of cost is "destroy this"?'
+    choices:
+      - An effect-cost
+      - An asset-cost
+      - An action point cost
+      - It isn't a cost. It's part of the ability.
+    answer: 0
+    cards: [energy-potion-3]
+    why: Everything between the dash and the colon is the cost. A cost paid by making something happen, like destroying a card, is an effect-cost. Asset-costs are paid in points.
+    cite: CR 1.14.4, 5.2.1c
+
+  - id: r80
+    topic: playing
+    q: A non-attack action card with go again says "Draw a card." In what order does it resolve?
+    choices:
+      - Draw a card, then gain the action point
+      - Gain the action point, then draw a card
+      - Both at the same time
+      - The controller chooses the order
+    answer: 0
+    why: A layer's effects happen in order first. Go again comes after them, then the card leaves the stack.
+    cite: CR 5.3.4, 5.3.5
+
+  - id: r81
+    topic: playing
+    q: Reckless Swing's additional cost is to discard a random card. A replacement effect banishes the discarded card instead. Is the cost paid?
+    choices:
+      - Yes, and Reckless Swing is played
+      - No, so everything is reversed
+      - No, but Reckless Swing is played anyway
+      - Only if the banished card has 6 or more power
+    answer: 0
+    cards: [reckless-swing-3]
+    why: If a replacement effect changes an effect-cost so it doesn't happen as written, the cost still counts as paid and the card can still be played.
+    cite: CR 1.14.4c, 5.1.9a
+
   # --- Card interactions (L1A) ---
   - id: i01
     topic: interactions

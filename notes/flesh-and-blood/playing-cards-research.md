@@ -13,10 +13,10 @@ Assets, payment order, pitching, chi, cost calculation, action-point cost, zero 
 
 ## Quiz
 
-Topic `playing` in `data/flesh-and-blood/quiz.yaml`. Existing questions: r06, r13–r16, r18, r19, r45.
-Target about 15.
-
-Write about 7: the nine steps (when targets and modes are declared, when "next card" effects attach), activated-ability layout, pitching rules, the defense-reaction check on resolution.
+Topic `playing` in `data/flesh-and-blood/quiz.yaml`: r06, r13–r16, r18, r19,
+r45, r75–r81 (15 questions). r75–r81 were checked against the CR text on
+2026-11-21. Cards tagged: Come to Fight, Energy Potion, Reckless Swing (all
+examples on the page).
 
 ## Open questions
 
