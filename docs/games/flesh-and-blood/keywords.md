@@ -38,7 +38,7 @@ to read in full. Click a card name to see the card and its current text.
 | Negate | Clear a layer from the stack. Only layers can be targeted | 8.5.26 | {{ card("rewind-3") }} |
 | Combo | If the named card was the last attack this chain, get the bonus | 8.4.1 | {{ card("qi-unleashed-1") }} |
 | Crush | Triggers when this **deals** 4 or more damage, not just on a hit | 8.4.2 | {{ card("knock-em-off-their-feet-1") }} |
-| Sharpen | +1 power counter, removed at the beginning of the end phase | 8.5.58 | {{ card("sharpening-sparks-1") }} |
+| Sharpen | Put a +1 power counter on it. At the beginning of the end phase, remove all +1 power counters from it | 8.5.58 | {{ card("sharpening-sparks-1") }} |
 | Quickstrike | "If this has go again, …" | 8.4.20 | {{ card("rush-of-power-1") }} |
 | Starfall | "If an instant has been put into your graveyard this turn, …" | 8.4.21 | {{ card("comet-collision-1") }} |
 | Fragment | Whenever a card with 2+ defense defends this, -2 power | 8.3.43 | {{ card("erode-authority-1") }} |

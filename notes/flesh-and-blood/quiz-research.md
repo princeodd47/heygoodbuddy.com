@@ -69,7 +69,12 @@ Nothing.
 
 ## Already on the page
 
-115 questions: rules 45, interactions 11, policy 37, tournament 22.
+184 questions: Rules pages 94 (basics 15, turns 16, playing 15, effects 18,
+combat 15, keywords 15), interactions 11, policy 37, tournament 22,
+scorekeeping 20. Each Rules page links to its own set with
+`quiz/?set=<topic>`; fab-quiz.js picks that set when the page loads.
+New questions go above the "Card interactions (L1A)" comment, under their
+page's heading; ids run r01–r94.
 14 are tagged with cards (r17, r36, r43, r44, i01, i03-i05, i07-i11), plus
 m01. Not tagged on purpose: r03 (overpower the keyword), p24 (Marked Cards
 infraction), p25 (rewind), t19 (Silver Age format). Quote

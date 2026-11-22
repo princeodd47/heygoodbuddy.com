@@ -1105,6 +1105,85 @@ questions:
     why: Opposing counters don't cancel. If a counter is added to an object with the opposite counter, both stay.
     cite: CR 1.15.4
 
+  # --- Keywords (added 2026-11-21) ---
+  - id: r89
+    topic: keywords
+    q: "Knock 'Em Off Their Feet has \"Crush - When this deals 4 or more damage to a hero, tap them.\" It hits for 5, and a prevention effect prevents 2 of that damage. Does crush trigger?"
+    choices:
+      - No. It only dealt 3 damage.
+      - Yes. It hit for 5.
+      - Yes. Its power was 4 or more.
+      - Only if the prevention came from equipment
+    answer: 0
+    cards: [knock-em-off-their-feet-1]
+    why: Crush checks how much damage the card actually deals, not whether it hit or how much power it has.
+    cite: CR 8.4.2, 8.4.2a
+
+  - id: r90
+    topic: keywords
+    q: Qi Unleashed has "Combo - If Crouching Tiger was the last attack this combat chain, this gets +4 power." Crouching Tiger was your last attack, but on an earlier combat chain this turn. Qi Unleashed starts a new chain. Does it get +4?
+    choices:
+      - No. Combo only looks at the current combat chain.
+      - Yes. Crouching Tiger was the last attack this turn.
+      - Yes, if Crouching Tiger hit
+      - Only if no other card was played in between
+    answer: 0
+    cards: [qi-unleashed-1]
+    why: Combo asks whether the named card was the last attack on this combat chain. A new chain has no earlier attacks.
+    cite: CR 8.4.1
+
+  - id: r91
+    topic: keywords
+    q: Rewind says "Negate target non-attack action card." Can it target a non-attack action Item that's already in the arena?
+    choices:
+      - No. Only layers on the stack can be negated.
+      - Yes. It's a non-attack action card.
+      - Yes, but it's destroyed instead of returned to hand
+      - Only during the action phase
+    answer: 0
+    cards: [rewind-3]
+    why: Negating clears a layer from the stack so it doesn't resolve. Only layers can be targeted.
+    cite: CR 8.5.26, 1.8.5d
+
+  - id: r92
+    topic: keywords
+    q: Nullrune Boots have Arcane Barrier 1. You'd be dealt 3 arcane damage, and you have no resource points. What can you do?
+    choices:
+      - Pitch a card to pay 1 resource and prevent 1
+      - Nothing. You need a resource point already floating.
+      - Destroy the boots to prevent 1
+      - Prevent all 3 by paying 1 resource
+    answer: 0
+    cards: [nullrune-boots]
+    why: Arcane Barrier N means you may pay N resources to prevent N arcane damage. You can pitch to pay an asset-cost you owe.
+    cite: CR 8.3.8, 1.14.3b
+
+  - id: r93
+    topic: keywords
+    q: Pillar of Unity (1 defense, Temper) defends together with a card from hand, so its Unity gives it +1 defense until end of turn. What happens when the combat chain closes?
+    choices:
+      - It gets a -1 defense counter and stays, with 1 defense this turn
+      - It gets a -1 defense counter and is destroyed
+      - Nothing. Temper only applies to cards with 1 defense.
+      - It's destroyed without a counter
+    answer: 0
+    cards: [pillar-of-unity]
+    why: Temper puts a -1 defense counter on the card, then destroys it only if its defense is 0. With the +1 still applying, it has 1 defense.
+    cite: CR 8.3.10
+
+  - id: r94
+    topic: keywords
+    q: A sword already has a +1 power counter from another effect. Then it's sharpened. What happens at the beginning of the end phase?
+    choices:
+      - Both +1 power counters are removed
+      - Only the sharpen counter is removed
+      - Neither is removed until the sword attacks again
+      - The sword is destroyed
+    answer: 0
+    cards: [sharpening-sparks-1]
+    why: To sharpen a card, put a +1 power counter on it. At the beginning of the end phase, all +1 power counters are removed from it, wherever they came from.
+    cite: CR 8.5.58
+
   # --- Card interactions (L1A) ---
   - id: i01
     topic: interactions
