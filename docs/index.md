@@ -6,21 +6,15 @@ hide:
 
 # Welcome
 
-Guides, notes and articles on the games I play.
+Rules study for Flesh and Blood, and articles on games.
 
 <div class="grid cards" markdown>
 
--   :material-gamepad-variant:{ .lg .middle } __[Games](games/index.md)__
+-   :material-cards-playing:{ .lg .middle } __[Flesh and Blood](games/flesh-and-blood/index.md)__
 
     ---
 
-    Guides and reference notes, one section per game.
-
--   :material-cards-playing:{ .lg .middle } __[Card Games](card-games/index.md)__
-
-    ---
-
-    Rules study and reference for trading card games.
+    Judge exam study: rules, policy, card interactions and a practice quiz.
 
 -   :material-pencil:{ .lg .middle } __[Articles](blog/index.md)__
 

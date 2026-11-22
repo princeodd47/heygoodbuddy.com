@@ -1,5 +1,20 @@
 # heygoodbuddy.com
 
+## Public repo: Flesh and Blood and Articles only
+
+This repo is **public**. It holds only Flesh and Blood
+(`docs/games/flesh-and-blood/`, `data/`, `notes/`, images, `fab-*` scripts)
+and the articles (`docs/blog/`). Every other game lives in the private repo
+`princeodd47/heygoodbuddy-private` (local checkout `C:\git\heygoodbuddy-private`).
+
+- Never add another game, its notes, data or images here. Work on them in the
+  private repo.
+- `scripts/public_check.py` holds the allowlist; the deploy stops on anything
+  else. Add a path to it only when the user says that content is public.
+- Shared theme files (`overrides/main.html`, `field-guide.css`, `fg-*.js`,
+  `extra.css`) exist in both repos. A theme fix made here may need copying to
+  the private repo too; ask.
+
 ## Parallel sessions
 
 More than one Claude session often works on this repo at once. Keep them
@@ -10,10 +25,9 @@ apart:
   `git worktree add ../heygoodbuddy.com-<topic> -b <topic>` (or start the
   session with `claude --worktree`). The main checkout `C:\git\heygoodbuddy.com`
   stays on `main` for pulling and merging.
-- **Stay in your lane.** Edit only your game's folders: `docs/games/<slug>/`,
-  `data/<slug>/`, `notes/<slug>/`. The shared files (`mkdocs.yml` nav,
-  `docs/games/index.md`, `docs/stylesheets/`, `docs/javascripts/`,
-  `overrides/`) get small, targeted edits only.
+- **Stay in your lane.** Edit only the folders for your task. The shared files
+  (`mkdocs.yml` nav, `docs/stylesheets/`, `docs/javascripts/`, `overrides/`)
+  get small, targeted edits only.
 - **In the main checkout, never** switch branches, stash, reset, clean or
   `git add -A`/`git add .`. Stage files by path.
 - **Finishing:** commit on your branch, `git rebase main`, then from the main

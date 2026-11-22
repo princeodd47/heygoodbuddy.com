@@ -2,15 +2,16 @@
   Field guide look on every page: html.fg scopes the styles in
   docs/stylesheets/field-guide.css, and the fonts load here.
 
-  Game tabs: every page of a game (a section under Games in the nav) opens
-  with the game's name and a tab window of its pages, like the FF6 Advance
-  field guide, and the left nav is hidden on desktop. The tabs come from the
+  Game tabs: every page of a game (a top-level section in the nav) opens
+  with the game's name and a tab window of its pages, and the left nav is
+  hidden on desktop. The tabs come from the
   nav in mkdocs.yml, in its order; the game's own index page is "Overview".
-  The Games list itself and the rest of the site are unchanged.
+  Articles and the rest of the site are unchanged.
 -#}
 {% extends "base.html" %}
 {% set ancestors = page.ancestors if page and page.ancestors else [] %}
-{% set game = ancestors | first if ancestors | length > 1 and (ancestors | last).title == "Games" else none %}
+{#- The game is a top-level nav section (Flesh and Blood); Articles is not a game. -#}
+{% set game = ancestors | last if ancestors | length == 1 and (ancestors | last).title != "Articles" else none %}
 {% set tabbed = game is not none %}
 {#- Page tools (docs/javascripts/fg-pages.js), set in a page's front matter
     under "fg". Their sub-tabs, chapters or list replace "On this page". -#}

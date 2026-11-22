@@ -1,7 +1,7 @@
 # heygoodbuddy.com
 
-Source for [heygoodbuddy.com](https://heygoodbuddy.com/): game guides, notes
-and articles, built with [Zensical](https://zensical.org/). Site settings live in
+Source for [heygoodbuddy.com](https://heygoodbuddy.com/): Flesh and Blood
+rules study and articles, built with [Zensical](https://zensical.org/). Site settings live in
 `mkdocs.yml`, which Zensical reads directly.
 
 ## Local preview
@@ -26,42 +26,41 @@ To check the site builds without serving it, run `.venv/bin/zensical build`.
 It should end with "No issues found".
 
 GitHub Pages lets browsers cache scripts and stylesheets for 10 minutes, so a
-page can load new HTML with an old script. The Flesh and Blood files and
-`ffr-items.js` and `uo-items.js` in `mkdocs.yml` carry a `?v=` tag for that
-reason: change it (e.g. to today's date) whenever `fab-cards.js`,
-`fab-quiz.js`, `fab.css`, `ffr-items.js` or `uo-items.js` changes.
+page can load new HTML with an old script. The scripts and stylesheets in
+`mkdocs.yml` carry a `?v=` tag for that reason: change it (e.g. to today's
+date) whenever the file changes.
 
 ## Layout
 
 ```
 docs/
   index.md                 # home page
-  games/
-    index.md               # games hub, one card per game
-    <game>/                # one folder per game
+  games/flesh-and-blood/   # Flesh and Blood (top-level tab; URLs kept from
+                           # when it sat under Games)
   blog/posts/              # articles (need a date in frontmatter)
   tags.md                  # auto-generated tag index
   CNAME                    # custom domain for GitHub Pages
-data/<game>/               # YAML data used to build tables
-scripts/                   # helper scripts, e.g. fab_cards.py (Flesh and Blood card data)
+data/flesh-and-blood/      # YAML data used to build tables
+scripts/                   # fab_cards.py (card data), public_check.py (allowlist)
 ```
+
+## Public and private
+
+This repo is public and holds only Flesh and Blood and the articles. Every
+other game's guide lives in the private repo `heygoodbuddy-private`.
+
+`scripts/public_check.py` lists every path allowed here. The deploy runs it
+first and stops if anything else is in the repo, so a new game or folder can
+only be published by adding it to that list on purpose.
 
 ## Adding things
 
-- **New game:** add a folder under `docs/games/`, a card on
-  `docs/games/index.md`, and its pages to `nav` in `mkdocs.yml`.
 - **New article:** add a Markdown file to `docs/blog/posts/` with a `date`
   in its frontmatter. It's listed automatically.
-- **New data table:** add a YAML file under `data/` and register it under
-  `include_yaml` in `mkdocs.yml`. The file's top level must be a mapping
-  (e.g. `visions:` followed by the list), not a bare list. A wrong path is
-  skipped silently, so an empty table usually means a typo in the path.
-- **Unicorn Overlord squads:** the Post-Game Teams page is built from
-  `data/unicorn-overlord/teams.yaml`. After editing it, run
-  `.venv/bin/python scripts/uo_teams_check.py`, which checks the squads
-  against the game's rules (4 items per unit, no item twice on one unit, at
-  most 3 units per row, no unit in two of the ten squads, limited items not
-  over-used). The deploy runs it too and stops on any error.
+- **New data table:** add a YAML file under `data/flesh-and-blood/` and
+  register it under `include_yaml` in `mkdocs.yml`. The file's top level must
+  be a mapping (e.g. `quiz:` followed by the list), not a bare list. A wrong
+  path is skipped silently, so an empty table usually means a typo in the path.
 
 ## Deploying
 

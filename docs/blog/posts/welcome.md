@@ -22,6 +22,6 @@ Articles page. Everything below it only shows on the full article.
 
 ## What's on the site
 
-- **[Games](../../games/index.md):** guides and reference notes, one section
-  per game.
+- **[Flesh and Blood](../../games/flesh-and-blood/index.md):** judge exam
+  study notes, card interactions and a practice quiz.
 - **[Tags](../../tags.md):** every page and article, grouped by topic.

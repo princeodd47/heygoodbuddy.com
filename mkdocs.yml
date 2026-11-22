@@ -1,6 +1,6 @@
 site_name: heygoodbuddy.com
 site_url: https://heygoodbuddy.com/
-site_description: Game guides, notes and articles.
+site_description: Flesh and Blood rules study and articles.
 
 # Local preview port. 8080 on levia belongs to levia-web (network-config), so never use it here.
 dev_addr: 127.0.0.1:8000
@@ -29,81 +29,22 @@ plugins:
   - tags
   - macros:
       include_yaml:
-        ffr: data/final-fantasy-resonance/visions.yaml
-        ffr_bestiary: data/final-fantasy-resonance/bestiary.yaml
-        ffr_equipment: data/final-fantasy-resonance/equipment.yaml
-        ffr_items: data/final-fantasy-resonance/items.yaml
-        ffr_key_items: data/final-fantasy-resonance/key-items.yaml
-        dqm: data/dragon-quest-monsters-the-withered-world/monsters.yaml
-        dqm_synth: data/dragon-quest-monsters-the-withered-world/synthesis.yaml
-        dqm_talents: data/dragon-quest-monsters-the-withered-world/talents.yaml
-        dqm_abilities: data/dragon-quest-monsters-the-withered-world/abilities.yaml
-        dqm_items: data/dragon-quest-monsters-the-withered-world/items.yaml
-        ffxii_monographs: data/final-fantasy-xii-the-zodiac-age/monographs.yaml
-        ffxii_bazaar: data/final-fantasy-xii-the-zodiac-age/bazaar.yaml
-        dqmch_dungeons: data/dragon-quest-monsters-caravan-heart/dungeons.yaml
-        rudras_monsters: data/treasure-of-the-rudras/monsters.yaml
-        rudras_bosses: data/treasure-of-the-rudras/bosses.yaml
-        rudras_equipment: data/treasure-of-the-rudras/equipment.yaml
-        lufia2_bestiary: data/lufia-ii/bestiary.yaml
-        lufia2_equipment: data/lufia-ii/equipment.yaml
-        lufia2_items: data/lufia-ii/items.yaml
-        lufia2_walk: data/lufia-ii/walkthrough.yaml
-        lufia2_magic: data/lufia-ii/magic.yaml
-        lufia2_ip: data/lufia-ii/ip.yaml
-        sf_bestiary: data/shining-force/bestiary.yaml
-        sf_equipment: data/shining-force/equipment.yaml
-        sf_items: data/shining-force/items.yaml
         fab_quiz: data/flesh-and-blood/quiz.yaml
         fab_icons: data/flesh-and-blood/icons.yaml
         fab_my_rulings: data/flesh-and-blood/my-rulings.yaml
         fab_cards: data/flesh-and-blood/cards.yaml
-        mnd_sets: data/magi-nation-duel/sets.yaml
-        ffx2_arena: data/final-fantasy-x-2/arena.yaml
-        ffx2_creatures: data/final-fantasy-x-2/creatures.yaml
-        ffx2_feeding: data/final-fantasy-x-2/feeding.yaml
-        ffx2_accessories: data/final-fantasy-x-2/accessories.yaml
-        ffx2_bestiary: data/final-fantasy-x-2/bestiary.yaml
-        ffx2_dresspheres: data/final-fantasy-x-2/dresspheres.yaml
-        ffx2_grids: data/final-fantasy-x-2/garment-grids.yaml
-        uo_equipment: data/unicorn-overlord/equipment.yaml
-        uo_teams: data/unicorn-overlord/teams.yaml
-        fft_battles: data/final-fantasy-tactics/battles.yaml
-        fft_jobs: data/final-fantasy-tactics/jobs.yaml
-        fft_equipment: data/final-fantasy-tactics/equipment.yaml
-        fft_items: data/final-fantasy-tactics/items.yaml
-        fft_poach: data/final-fantasy-tactics/poach.yaml
-        fft_errands: data/final-fantasy-tactics/errands.yaml
-        fft_midlight: data/final-fantasy-tactics/midlights-deep.yaml
-        fft_rendezvous: data/final-fantasy-tactics/rendezvous.yaml
-        tic_battles: data/final-fantasy-tactics-the-ivalice-chronicles/battles.yaml
-        tic_jobs: data/final-fantasy-tactics-the-ivalice-chronicles/jobs.yaml
-        tic_equipment: data/final-fantasy-tactics-the-ivalice-chronicles/equipment.yaml
-        tic_items: data/final-fantasy-tactics-the-ivalice-chronicles/items.yaml
-        tic_poach: data/final-fantasy-tactics-the-ivalice-chronicles/poach.yaml
-        tic_errands: data/final-fantasy-tactics-the-ivalice-chronicles/errands.yaml
-        tic_midlight: data/final-fantasy-tactics-the-ivalice-chronicles/midlights-deep.yaml
 
 extra_css:
   - stylesheets/extra.css
   - stylesheets/field-guide.css?v=2026-11-17.18
-  - stylesheets/dqm.css
-  - stylesheets/synth-builder.css
   - stylesheets/fab.css?v=2026-10-28.2
-  - stylesheets/mnd-cards.css?v=2026-11-22.2
 
 extra_javascript:
-  - javascripts/synth-builder.js
-  - javascripts/dqm-monsters.js
-  - javascripts/dqm-talents.js
   - javascripts/fab-cards.js?v=2026-10-28.2
   - javascripts/fab-quiz.js?v=2026-11-21.1
   - javascripts/fg-tables.js?v=2026-11-16.7
   - javascripts/fg-search.js?v=2026-11-17.9
   - javascripts/fg-pages.js?v=2026-11-17.15
-  - javascripts/fg-cards.js?v=2026-11-21.1
-  - javascripts/mnd-cards.js?v=2026-11-22.2
-  - javascripts/mnd-decks.js?v=2026-11-22.2
 
 markdown_extensions:
   - admonition
@@ -122,144 +63,21 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Games:
-      - games/index.md
-      - Final Fantasy Resonance:
-          - games/final-fantasy-resonance/index.md
-          - Visions: games/final-fantasy-resonance/visions.md
-          - Tablet Shards: games/final-fantasy-resonance/tablet-shards.md
-          - Bestiary: games/final-fantasy-resonance/bestiary.md
-          - Espers: games/final-fantasy-resonance/espers.md
-          - Colosseum: games/final-fantasy-resonance/colosseum.md
-          - Equipment: games/final-fantasy-resonance/equipment.md
-          - Accessories: games/final-fantasy-resonance/accessories.md
-          - Items: games/final-fantasy-resonance/items.md
-          - Key Items: games/final-fantasy-resonance/key-items.md
-          - Tips: games/final-fantasy-resonance/tips.md
-      - Dragon Quest Monsters The Withered World:
-          - games/dragon-quest-monsters-the-withered-world/index.md
-          - Starting Monsters: games/dragon-quest-monsters-the-withered-world/starting-monsters.md
-          - Monsters: games/dragon-quest-monsters-the-withered-world/monsters.md
-          - Synthesis: games/dragon-quest-monsters-the-withered-world/synthesis.md
-          - Recipe Builder: games/dragon-quest-monsters-the-withered-world/recipe-builder.md
-          - Talents: games/dragon-quest-monsters-the-withered-world/talents.md
-          - Items: games/dragon-quest-monsters-the-withered-world/items.md
-      - Unicorn Overlord:
-          - games/unicorn-overlord/index.md
-          - Post-Game Teams: games/unicorn-overlord/post-game-teams.md
-          - Equipment: games/unicorn-overlord/equipment.md
-      - Final Fantasy X-2 HD Remaster:
-          - games/final-fantasy-x-2/index.md
-          - Walkthrough: games/final-fantasy-x-2/walkthrough.md
-          - Fiend Arena: games/final-fantasy-x-2/fiend-arena.md
-          - Building the Team: games/final-fantasy-x-2/creature-team.md
-          - Creatures: games/final-fantasy-x-2/creatures.md
-          - Feeding: games/final-fantasy-x-2/feeding.md
-          - Dresspheres: games/final-fantasy-x-2/dresspheres.md
-          - Garment Grids: games/final-fantasy-x-2/garment-grids.md
-          - Bestiary: games/final-fantasy-x-2/bestiary.md
-          - Accessories: games/final-fantasy-x-2/accessories.md
-      - Final Fantasy XII The Zodiac Age:
-          - games/final-fantasy-xii-the-zodiac-age/index.md
-          - Changes from PS2: games/final-fantasy-xii-the-zodiac-age/changes.md
-          - New Playthrough: games/final-fantasy-xii-the-zodiac-age/new-playthrough.md
-          - Walkthrough: games/final-fantasy-xii-the-zodiac-age/walkthrough.md
-          - Monographs: games/final-fantasy-xii-the-zodiac-age/monographs.md
-          - Bazaar: games/final-fantasy-xii-the-zodiac-age/bazaar.md
-          - Party: games/final-fantasy-xii-the-zodiac-age/party.md
-      - Dragon Quest Monsters Caravan Heart:
-          - games/dragon-quest-monsters-caravan-heart/index.md
-          - Post-Game: games/dragon-quest-monsters-caravan-heart/post-game.md
-          - Orb Dungeons: games/dragon-quest-monsters-caravan-heart/orb-dungeons.md
-          - Dungeon Floors: games/dragon-quest-monsters-caravan-heart/dungeon-floors.md
-          - Caravan: games/dragon-quest-monsters-caravan-heart/caravan.md
-          - Guard Monsters: games/dragon-quest-monsters-caravan-heart/guard-monsters.md
-          - Hearts & Reforming: games/dragon-quest-monsters-caravan-heart/hearts.md
-      - Treasure of the Rudras:
-          - games/treasure-of-the-rudras/index.md
-          - New Playthrough: games/treasure-of-the-rudras/new-playthrough.md
-          - Sion: games/treasure-of-the-rudras/sion.md
-          - Surlent: games/treasure-of-the-rudras/surlent.md
-          - Riza: games/treasure-of-the-rudras/riza.md
-          - Dune: games/treasure-of-the-rudras/dune.md
-          - Mantras: games/treasure-of-the-rudras/mantras.md
-          - Bestiary: games/treasure-of-the-rudras/bestiary.md
-          - Equipment: games/treasure-of-the-rudras/equipment.md
-          - Items: games/treasure-of-the-rudras/items.md
-      - Lufia II:
-          - games/lufia-ii/index.md
-          - Walkthrough: games/lufia-ii/walkthrough.md
-          - Capsule Monsters: games/lufia-ii/capsule-monsters.md
-          - Missables: games/lufia-ii/missables.md
-          - Bestiary: games/lufia-ii/bestiary.md
-          - Equipment: games/lufia-ii/equipment.md
-          - Items: games/lufia-ii/items.md
-          - Magic: games/lufia-ii/magic.md
-          - IP Attacks: games/lufia-ii/ip-attacks.md
-      - Shining Force:
-          - games/shining-force/index.md
-          - Walkthrough: games/shining-force/walkthrough.md
-          - Characters: games/shining-force/characters.md
-          - Bestiary: games/shining-force/bestiary.md
-          - Equipment: games/shining-force/equipment.md
-          - Items: games/shining-force/items.md
-      - Shadowrun:
-          - games/shadowrun/index.md
-          - Tips: games/shadowrun/tips.md
-          - Walkthrough: games/shadowrun/walkthrough.md
-      - "Final Fantasy Tactics: The Ivalice Chronicles":
-          - games/final-fantasy-tactics-the-ivalice-chronicles/index.md
-          - Walkthrough: games/final-fantasy-tactics-the-ivalice-chronicles/walkthrough.md
-          - Characters: games/final-fantasy-tactics-the-ivalice-chronicles/characters.md
-          - Classes: games/final-fantasy-tactics-the-ivalice-chronicles/classes.md
-          - Abilities: games/final-fantasy-tactics-the-ivalice-chronicles/abilities.md
-          - Equipment: games/final-fantasy-tactics-the-ivalice-chronicles/equipment.md
-          - Items: games/final-fantasy-tactics-the-ivalice-chronicles/items.md
-          - Monsters & Poaching: games/final-fantasy-tactics-the-ivalice-chronicles/monsters.md
-          - Side Quests & Missables: games/final-fantasy-tactics-the-ivalice-chronicles/side-quests.md
-          - Errands: games/final-fantasy-tactics-the-ivalice-chronicles/errands.md
-          - Midlight's Deep: games/final-fantasy-tactics-the-ivalice-chronicles/midlights-deep.md
-          - Tips: games/final-fantasy-tactics-the-ivalice-chronicles/tips.md
-      - "Final Fantasy Tactics: The War of the Lions":
-          - games/final-fantasy-tactics/index.md
-          - Walkthrough: games/final-fantasy-tactics/walkthrough.md
-          - Characters: games/final-fantasy-tactics/characters.md
-          - Classes: games/final-fantasy-tactics/classes.md
-          - Abilities: games/final-fantasy-tactics/abilities.md
-          - Equipment: games/final-fantasy-tactics/equipment.md
-          - Items: games/final-fantasy-tactics/items.md
-          - Monsters & Poaching: games/final-fantasy-tactics/monsters.md
-          - Side Quests & Missables: games/final-fantasy-tactics/side-quests.md
-          - Errands: games/final-fantasy-tactics/errands.md
-          - Midlight's Deep: games/final-fantasy-tactics/midlights-deep.md
-          - Rendezvous: games/final-fantasy-tactics/rendezvous.md
-          - Tips: games/final-fantasy-tactics/tips.md
-          - Version Differences: games/final-fantasy-tactics/version-differences.md
-      # The field guide (overrides/ff6.html, notes/final-fantasy-vi-advance/build.py).
-      - Final Fantasy VI Advance: games/final-fantasy-vi-advance/index.md
-  - Card Games:
-      - card-games/index.md
-      - Flesh and Blood:
-          - games/flesh-and-blood/index.md
-          - Rules: games/flesh-and-blood/rules.md
-          - Turns & Priority: games/flesh-and-blood/turns.md
-          - Playing Cards: games/flesh-and-blood/playing-cards.md
-          - Effects: games/flesh-and-blood/effects.md
-          - Combat: games/flesh-and-blood/combat.md
-          - Keywords: games/flesh-and-blood/keywords.md
-          - Policy & Penalties: games/flesh-and-blood/policy.md
-          - Tournament Rules: games/flesh-and-blood/tournament.md
-          - Card Interactions: games/flesh-and-blood/interactions.md
-          - Scorekeeping: games/flesh-and-blood/scorekeeping.md
-          - Practice Quiz: games/flesh-and-blood/quiz.md
-          - Glossary: games/flesh-and-blood/glossary.md
-      - Magi-Nation Duel:
-          - games/magi-nation-duel/index.md
-          - History: games/magi-nation-duel/history.md
-          - Sets: games/magi-nation-duel/sets.md
-          - Lore: games/magi-nation-duel/lore.md
-          - Cards: games/magi-nation-duel/cards.md
-          - Decks: games/magi-nation-duel/decks.md
+  # Files stay under docs/games/flesh-and-blood/ so the old URLs keep working.
+  - Flesh and Blood:
+      - games/flesh-and-blood/index.md
+      - Rules: games/flesh-and-blood/rules.md
+      - Turns & Priority: games/flesh-and-blood/turns.md
+      - Playing Cards: games/flesh-and-blood/playing-cards.md
+      - Effects: games/flesh-and-blood/effects.md
+      - Combat: games/flesh-and-blood/combat.md
+      - Keywords: games/flesh-and-blood/keywords.md
+      - Policy & Penalties: games/flesh-and-blood/policy.md
+      - Tournament Rules: games/flesh-and-blood/tournament.md
+      - Card Interactions: games/flesh-and-blood/interactions.md
+      - Scorekeeping: games/flesh-and-blood/scorekeeping.md
+      - Practice Quiz: games/flesh-and-blood/quiz.md
+      - Glossary: games/flesh-and-blood/glossary.md
   - Articles:
       - blog/index.md
   - Tags: tags.md
