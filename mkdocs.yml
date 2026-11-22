@@ -75,6 +75,13 @@ plugins:
         fft_errands: data/final-fantasy-tactics/errands.yaml
         fft_midlight: data/final-fantasy-tactics/midlights-deep.yaml
         fft_rendezvous: data/final-fantasy-tactics/rendezvous.yaml
+        tic_battles: data/final-fantasy-tactics-the-ivalice-chronicles/battles.yaml
+        tic_jobs: data/final-fantasy-tactics-the-ivalice-chronicles/jobs.yaml
+        tic_equipment: data/final-fantasy-tactics-the-ivalice-chronicles/equipment.yaml
+        tic_items: data/final-fantasy-tactics-the-ivalice-chronicles/items.yaml
+        tic_poach: data/final-fantasy-tactics-the-ivalice-chronicles/poach.yaml
+        tic_errands: data/final-fantasy-tactics-the-ivalice-chronicles/errands.yaml
+        tic_midlight: data/final-fantasy-tactics-the-ivalice-chronicles/midlights-deep.yaml
 
 extra_css:
   - stylesheets/extra.css
@@ -212,8 +219,17 @@ nav:
           - Walkthrough: games/shadowrun/walkthrough.md
       - "Final Fantasy Tactics: The Ivalice Chronicles":
           - games/final-fantasy-tactics-the-ivalice-chronicles/index.md
-          - Tips: games/final-fantasy-tactics-the-ivalice-chronicles/tips.md
+          - Walkthrough: games/final-fantasy-tactics-the-ivalice-chronicles/walkthrough.md
           - Characters: games/final-fantasy-tactics-the-ivalice-chronicles/characters.md
+          - Classes: games/final-fantasy-tactics-the-ivalice-chronicles/classes.md
+          - Abilities: games/final-fantasy-tactics-the-ivalice-chronicles/abilities.md
+          - Equipment: games/final-fantasy-tactics-the-ivalice-chronicles/equipment.md
+          - Items: games/final-fantasy-tactics-the-ivalice-chronicles/items.md
+          - Monsters & Poaching: games/final-fantasy-tactics-the-ivalice-chronicles/monsters.md
+          - Side Quests & Missables: games/final-fantasy-tactics-the-ivalice-chronicles/side-quests.md
+          - Errands: games/final-fantasy-tactics-the-ivalice-chronicles/errands.md
+          - Midlight's Deep: games/final-fantasy-tactics-the-ivalice-chronicles/midlights-deep.md
+          - Tips: games/final-fantasy-tactics-the-ivalice-chronicles/tips.md
       - "Final Fantasy Tactics: The War of the Lions":
           - games/final-fantasy-tactics/index.md
           - Walkthrough: games/final-fantasy-tactics/walkthrough.md
