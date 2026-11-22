@@ -67,6 +67,14 @@ plugins:
         ffx2_grids: data/final-fantasy-x-2/garment-grids.yaml
         uo_equipment: data/unicorn-overlord/equipment.yaml
         uo_teams: data/unicorn-overlord/teams.yaml
+        fft_battles: data/final-fantasy-tactics/battles.yaml
+        fft_jobs: data/final-fantasy-tactics/jobs.yaml
+        fft_equipment: data/final-fantasy-tactics/equipment.yaml
+        fft_items: data/final-fantasy-tactics/items.yaml
+        fft_poach: data/final-fantasy-tactics/poach.yaml
+        fft_errands: data/final-fantasy-tactics/errands.yaml
+        fft_midlight: data/final-fantasy-tactics/midlights-deep.yaml
+        fft_rendezvous: data/final-fantasy-tactics/rendezvous.yaml
 
 extra_css:
   - stylesheets/extra.css
@@ -84,7 +92,7 @@ extra_javascript:
   - javascripts/fg-tables.js?v=2026-11-16.7
   - javascripts/fg-search.js?v=2026-11-17.9
   - javascripts/fg-pages.js?v=2026-11-17.15
-  - javascripts/fg-cards.js?v=2026-11-17.10
+  - javascripts/fg-cards.js?v=2026-11-21.1
 
 markdown_extensions:
   - admonition
@@ -202,6 +210,21 @@ nav:
           - games/shadowrun/index.md
           - Tips: games/shadowrun/tips.md
           - Walkthrough: games/shadowrun/walkthrough.md
+      - "Final Fantasy Tactics: The War of the Lions":
+          - games/final-fantasy-tactics/index.md
+          - Walkthrough: games/final-fantasy-tactics/walkthrough.md
+          - Characters: games/final-fantasy-tactics/characters.md
+          - Classes: games/final-fantasy-tactics/classes.md
+          - Abilities: games/final-fantasy-tactics/abilities.md
+          - Equipment: games/final-fantasy-tactics/equipment.md
+          - Items: games/final-fantasy-tactics/items.md
+          - Monsters & Poaching: games/final-fantasy-tactics/monsters.md
+          - Side Quests & Missables: games/final-fantasy-tactics/side-quests.md
+          - Errands: games/final-fantasy-tactics/errands.md
+          - Midlight's Deep: games/final-fantasy-tactics/midlights-deep.md
+          - Rendezvous: games/final-fantasy-tactics/rendezvous.md
+          - Tips: games/final-fantasy-tactics/tips.md
+          - Version Differences: games/final-fantasy-tactics/version-differences.md
       # The field guide (overrides/ff6.html, notes/final-fantasy-vi-advance/build.py).
       - Final Fantasy VI Advance: games/final-fantasy-vi-advance/index.md
   - Articles:
