@@ -80,7 +80,7 @@ extra_javascript:
   - javascripts/dqm-monsters.js
   - javascripts/dqm-talents.js
   - javascripts/fab-cards.js?v=2026-10-28.2
-  - javascripts/fab-quiz.js?v=2026-10-28.2
+  - javascripts/fab-quiz.js?v=2026-11-21.1
   - javascripts/fg-tables.js?v=2026-11-16.7
   - javascripts/fg-search.js?v=2026-11-17.9
   - javascripts/fg-pages.js?v=2026-11-17.15
