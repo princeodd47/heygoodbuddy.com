@@ -210,6 +210,10 @@ nav:
           - games/shadowrun/index.md
           - Tips: games/shadowrun/tips.md
           - Walkthrough: games/shadowrun/walkthrough.md
+      - "Final Fantasy Tactics: The Ivalice Chronicles":
+          - games/final-fantasy-tactics-the-ivalice-chronicles/index.md
+          - Tips: games/final-fantasy-tactics-the-ivalice-chronicles/tips.md
+          - Characters: games/final-fantasy-tactics-the-ivalice-chronicles/characters.md
       - "Final Fantasy Tactics: The War of the Lions":
           - games/final-fantasy-tactics/index.md
           - Walkthrough: games/final-fantasy-tactics/walkthrough.md
