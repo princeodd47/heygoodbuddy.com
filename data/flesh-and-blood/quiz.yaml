@@ -1015,6 +1015,96 @@ questions:
     why: If a replacement effect changes an effect-cost so it doesn't happen as written, the cost still counts as paid and the card can still be played.
     cite: CR 1.14.4c, 5.1.9a
 
+  # --- Rules basics (added 2026-11-21) ---
+  - id: r82
+    topic: basics
+    q: You played Three of a Kind this turn ("Until end of turn, you may only play cards from arsenal"). Ghostly Visit says "You may play this from your banished zone." Can you play Ghostly Visit from your banished zone?
+    choices:
+      - No. "Only" is a restriction, and it beats an allowance.
+      - Yes. Card text beats the rules.
+      - Yes. The newer effect wins.
+      - Only if your arsenal is empty
+    answer: 0
+    cards: [three-of-a-kind-1, ghostly-visit-1]
+    why: '"You may only play cards from arsenal" means you can''t play cards from anywhere else. A restriction beats an allowance.'
+    cite: CR 1.0.2, 1.0.2a
+
+  - id: r83
+    topic: basics
+    q: Ironsong Determination is a Warrior card. Can it be in the card-pool of a Guardian hero?
+    choices:
+      - No. Its supertypes have to be a subset of the hero's.
+      - Yes, if it's played as an instant
+      - Yes. Any action card can be in any deck.
+      - Only in Limited formats
+    answer: 0
+    cards: [ironsong-determination-2]
+    why: A card can only be in a card-pool if all its supertypes are among the hero's supertypes. Generic cards have none, so they fit any hero.
+    cite: CR 1.1.3
+
+  - id: r84
+    topic: basics
+    q: Who controls a card in your hand?
+    choices:
+      - No one
+      - You do
+      - Its owner, who is you
+      - The turn-player
+    answer: 0
+    why: A card only has a controller while it's in the arena or on the stack.
+    cite: CR 1.3.1b
+
+  - id: r85
+    topic: basics
+    q: Sirens of Safe Harbor says "When this is put into your graveyard from anywhere, gain 1 life." You play your opponent's copy, and when the combat chain closes it goes to their graveyard. Who gains 1 life?
+    choices:
+      - No one
+      - You, because you controlled it
+      - Your opponent, because it went to their graveyard
+      - Both players
+    answer: 0
+    cards: [sirens-of-safe-harbor-1]
+    why: The card is treated as it was when it left the combat chain. You controlled it then, so "your graveyard" means yours. It went to its owner's graveyard, so it doesn't trigger for anyone.
+    cite: CR 3.0.7a
+
+  - id: r86
+    topic: basics
+    q: Which of these deck-cards stays in the arena as a permanent after it resolves?
+    choices:
+      - Energy Potion, an Action – Item
+      - An attack action card with no subtype
+      - An instant with no subtype
+      - A defense reaction after combat
+    answer: 0
+    cards: [energy-potion-3]
+    why: A deck-card only becomes a permanent if it has a permanent subtype, such as Ally, Aura, Item, Landmark or Affliction.
+    cite: CR 1.3.3
+
+  - id: r87
+    topic: basics
+    q: Harmonized Kodachi's attacks get go again "if you have a card in your pitch zone with cost 0." Your only pitched card is Heart of Fyendal, which has no cost. Do its attacks get go again?
+    choices:
+      - No. A card without a cost doesn't have cost 0.
+      - Yes. A missing cost counts as 0.
+      - Yes, because Heart of Fyendal is Legendary
+      - Only if Heart of Fyendal was pitched this turn
+    answer: 0
+    cards: [harmonized-kodachi, heart-of-fyendal-3]
+    why: A condition about a property's value needs the property to exist. Heart of Fyendal has no cost, so it can't have cost 0. A missing number counts as 0 only when an effect needs a value from it.
+    cite: CR 1.8.7, 1.8.7a
+
+  - id: r88
+    topic: basics
+    q: A card has a -1 power counter on it. An effect puts a +1 power counter on it. What happens to the counters?
+    choices:
+      - Both stay on the card
+      - They cancel out and both are removed
+      - The newer one replaces the older one
+      - The +1 counter can't be added
+    answer: 0
+    why: Opposing counters don't cancel. If a counter is added to an object with the opposite counter, both stay.
+    cite: CR 1.15.4
+
   # --- Card interactions (L1A) ---
   - id: i01
     topic: interactions

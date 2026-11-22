@@ -377,6 +377,13 @@ cards:
       typebox: Assassin Equipment - Off-Hand
       text: '**Instant** -- Destroy 2 Silver you control: Equip this. Activate this only while this is in your graveyard.{br}**Spellvoid 1** _(If you would be dealt arcane damage, you may destroy this to prevent 1 of that damage.)_'
       image: graven-gaslight.webp
+  harmonized-kodachi:
+    front:
+      name: Harmonized Kodachi
+      power: '1'
+      typebox: Ninja Weapon - Dagger (1H)
+      text: '**Once per Turn Action** -- {r}: **Attack**{br}If you have a card in your pitch zone with cost 0, this card''s attacks get **go again**.'
+      image: harmonized-kodachi.webp
   head-jab-1:
     front:
       name: Head Jab

@@ -45,9 +45,9 @@ Precedence, players and objects, ownership, LKI, numbers and symbols. The
 rest of the old single page is now on the five other Rules pages; see their
 research notes.
 
-Quiz topic `basics`: r01, r02, r17, r36, r41–r44. Target about 15; write
-about 7 more (permanents, distinct cards, "only" as a restriction, card-pool
-supertypes, missing properties count as 0, opposing counters).
+Quiz topic `basics`: r01, r02, r17, r36, r41–r44, r82–r88 (15 questions).
+r82–r88 were checked against the CR text on 2026-11-21. r87 tags Harmonized
+Kodachi (the CR's own 1.8.7 example) with Heart of Fyendal.
 
 Card examples (added 2026-10-28): most points end with an *Example:* naming a
 card through the `card()` macro, which opens a preview of the card's image and
