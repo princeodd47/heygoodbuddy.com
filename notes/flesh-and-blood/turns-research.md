@@ -13,10 +13,10 @@ Priority (who gets it, when no one has it), start of game (CR 4.1, arena-cards b
 
 ## Quiz
 
-Topic `turns` in `data/flesh-and-blood/quiz.yaml`. Existing questions: r09–r12, r40.
-Target about 15.
-
-Only 5 questions and none on priority itself. Write about 10: priority passing and resolution, no priority in start/end phase and close step, CR 1.11.5 (no priority mid-play), first-turn draw, arena-card choice order.
+Topic `turns` in `data/flesh-and-blood/quiz.yaml`: r09–r12, r40, r46–r56
+(16 questions). r46–r56 were checked against the CR text on 2026-11-21.
+r51 tags Victor Goldmane, High and Mighty (the CR's own 4.1.9b example);
+r56 tags Kayo, Underhanded Cheat.
 
 ## Open questions
 

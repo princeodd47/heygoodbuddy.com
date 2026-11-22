@@ -59,8 +59,8 @@ Click a card name to see the card and its current text.
 9. Everyone draws up to intellect.
 
 !!! note "Arena-cards before the deck"
-    Arena-cards are now chosen *before* the deck. This started as a trial in
-    the September 17, 2026 rules update and is now in the CR and TRP.
+    Everyone chooses and reveals their arena-cards *before* anyone chooses
+    their deck (CR 4.1.4–4.1.6).
 
 ## Start phase and action phase
 

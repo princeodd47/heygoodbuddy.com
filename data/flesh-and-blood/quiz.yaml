@@ -565,6 +565,141 @@ questions:
     why: Modes, and how many can be chosen, are fixed as the card goes on the stack.
     cite: CR 1.7.5a, 1.7.5e
 
+  # --- Turns & priority (added 2026-11-21) ---
+  - id: r46
+    topic: turns
+    q: There are two layers on the stack, and both players pass priority in succession without doing anything. What happens?
+    choices:
+      - The top layer resolves, then the turn-player gets priority
+      - Both layers resolve, then the turn-player gets priority
+      - The top layer resolves, then the player who controlled it gets priority
+      - The step ends and both layers are cleared
+    answer: 0
+    why: When everyone passes in a row with something on the stack, only the top layer resolves. After a layer resolves, the turn-player gets priority.
+    cite: CR 1.11.3, 1.11.4a
+
+  - id: r47
+    topic: turns
+    q: In the action phase, the stack is empty and the combat chain is closed. Both players pass priority in succession. What happens?
+    choices:
+      - The action phase ends and the game goes to the End Phase
+      - The turn-player gets 1 more action point
+      - The turn-player gets priority again
+      - The turn ends without an End Phase
+    answer: 0
+    why: With an empty stack and a closed combat chain, everyone passing ends the action phase. The End Phase comes next.
+    cite: CR 4.3.4
+
+  - id: r48
+    topic: turns
+    q: A "beginning of the end phase" trigger goes on the stack. Can the non-turn-player play an instant in response?
+    choices:
+      - No. No one gets priority in the End Phase.
+      - Yes, but only a defense reaction
+      - Yes. Anyone can respond to a triggered layer.
+      - Only if the trigger targets them
+    answer: 0
+    why: Players don't get priority in the End Phase. Its layers resolve as if everyone passed, until the stack is empty.
+    cite: CR 4.4.1, 4.4.2
+
+  - id: r49
+    topic: turns
+    q: You play an attack action card. Once it's played, who gets priority?
+    choices:
+      - You do
+      - Your opponent does
+      - No one, until the card resolves
+      - Whoever has fewer cards in hand
+    answer: 0
+    why: A player who plays a card or activates an ability gets priority back once it has been played or activated.
+    cite: CR 1.11.5
+
+  - id: r50
+    topic: turns
+    q: During the start-of-game procedure, two "start of the game" triggers are created at once. Who chooses the order they go on the stack?
+    choices:
+      - The first-turn-player
+      - Each player orders their own, starting with the first-turn-player
+      - The player who chose the first-turn-player
+      - The player whose hero has the higher intellect
+    answer: 0
+    why: Triggers created during the start-of-game procedure go on the stack in an order the first-turn-player chooses.
+    cite: CR 4.1.9a
+
+  - id: r51
+    topic: turns
+    q: Victor Goldmane, High and Mighty says "The first time each turn you create a Gold token from an effect you control, draw a card." A start-of-game effect creates a Gold for Victor's player. Do they draw?
+    choices:
+      - No. It isn't anyone's turn yet.
+      - Yes. It's the first Gold that turn.
+      - Yes, but only after the first draw up to intellect
+      - Only if Victor's player goes first
+    answer: 0
+    cards: [victor-goldmane-high-and-mighty]
+    why: An effect that only triggers during a player's turn doesn't trigger during the start-of-game procedure, because no one has a turn yet.
+    cite: CR 4.1.9b
+
+  - id: r52
+    topic: turns
+    q: An effect says "Whenever you gain an action point, gain 1 resource." Does it trigger when the turn-player gets their action point at the start of the action phase?
+    choices:
+      - No
+      - Yes, every turn
+      - Only on the first turn of the game
+      - Only if they have no action points already
+    answer: 0
+    why: The action point the turn-player has at the start of the action phase doesn't count as gaining one. Triggers and replacements for gaining an action point ignore it.
+    cite: CR 4.3.2a–b
+
+  - id: r53
+    topic: turns
+    q: At the end of the turn-player's turn they have 5 cards in hand, and their hero's intellect is 4. What happens at the draw step?
+    choices:
+      - They draw nothing and keep all 5 cards
+      - They discard down to 4
+      - They draw 1 card anyway
+      - They put 1 card on the bottom of their deck
+    answer: 0
+    why: Players draw until their hand equals their intellect. With that many cards or more, they don't draw, and there's no rule to discard.
+    cite: CR 4.4.3f
+
+  - id: r54
+    topic: turns
+    q: In the end-of-turn procedure, which player may put a card from hand face down into an empty arsenal?
+    choices:
+      - Only the turn-player
+      - Every player, starting with the turn-player
+      - Only the non-turn-player
+      - Any player who didn't attack this turn
+    answer: 0
+    why: Only the turn-player may arsenal a card at the end of the turn, and only into an empty arsenal zone they own.
+    cite: CR 4.4.3b
+
+  - id: r55
+    topic: turns
+    q: Both players are on 1 life. Each could win by playing their last card, but whoever plays first will lose, so both refuse to play it. How does the game end?
+    choices:
+      - It's a draw because of a deadlock
+      - It's a draw because of a stalemate
+      - The turn-player loses for slow play
+      - The game goes on until time is called
+    answer: 0
+    why: A deadlock is when every remaining player refuses to advance the game toward its end. A stalemate is when no one is able to. Both are draws.
+    cite: CR 4.5.4d–e
+
+  - id: r56
+    topic: turns
+    q: Kayo, Underhanded Cheat says "You start the game with 1 weapon zone." Partway through the game, Kayo loses all abilities. How many weapon zones does that player have?
+    choices:
+      - Still 1
+      - 2, straight away
+      - 2, starting next turn
+      - None
+    answer: 0
+    cards: [kayo-underhanded-cheat]
+    why: A hero ability that changes the start-of-game procedure or the number of zones applies on its own once the game has started. Losing the ability later changes nothing.
+    cite: CR 4.1.2a
+
   # --- Card interactions (L1A) ---
   - id: i01
     topic: interactions

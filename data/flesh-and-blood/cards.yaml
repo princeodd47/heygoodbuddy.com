@@ -1094,6 +1094,14 @@ cards:
       typebox: Assassin Action - Attack
       text: '**Stealth**{br}When this hits a hero, **steal** an item they control.'
       image: undercover-acquisition-1.webp
+  victor-goldmane-high-and-mighty:
+    front:
+      name: Victor Goldmane, High and Mighty
+      life: '40'
+      intellect: '4'
+      typebox: Guardian Hero
+      text: The first time each turn you create a Gold token from an effect you control, draw a card.{br}The first time each turn you would fail to win a **clash**, instead you may destroy a Gold you control. If you do, put 1 of the revealed cards on the bottom of its owner's deck, then **clash** again.
+      image: victor-goldmane-high-and-mighty.webp
   viserai-between-worlds--viserai-usurper:
     front:
       name: Viserai, Between Worlds
