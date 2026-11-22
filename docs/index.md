@@ -16,6 +16,12 @@ Guides, notes and articles on the games I play.
 
     Guides and reference notes, one section per game.
 
+-   :material-cards-playing:{ .lg .middle } __[Card Games](card-games/index.md)__
+
+    ---
+
+    Rules study and reference for trading card games.
+
 -   :material-pencil:{ .lg .middle } __[Articles](blog/index.md)__
 
     ---
