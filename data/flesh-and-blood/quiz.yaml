@@ -1,5 +1,6 @@
 # Practice questions for the Flesh and Blood judge study quiz.
-# topic: rules | interactions (L1A), policy | tournament (L1B), or
+# topic: basics | turns | playing | effects | combat | keywords (one per Rules
+# page) or interactions (all L1A), policy | tournament (L1B), or
 # scorekeeping (Scorekeeper – Basic).
 # answer is the index into choices; the quiz shuffles choices when shown.
 # cards (optional) lists card ids from cards.csv to show with the question;
@@ -7,7 +8,12 @@
 # Checked against the CR, PPG and TRP on 2026-10-27.
 
 topics:
-  rules: Rules
+  basics: Rules basics
+  turns: Turns & priority
+  playing: Playing cards
+  effects: Effects
+  combat: Combat
+  keywords: Keywords
   interactions: Card interactions
   policy: Penalties
   tournament: Tournament rules
@@ -16,7 +22,7 @@ topics:
 questions:
   # --- Rules (L1A) ---
   - id: r01
-    topic: rules
+    topic: basics
     q: One effect says "You can't play cards from your banished zone." Another says "You may play cards from your banished zone." Can the player play a card from their banished zone?
     choices:
       - No. A restriction beats an allowance.
@@ -28,7 +34,7 @@ questions:
     cite: CR 1.0.2
 
   - id: r02
-    topic: rules
+    topic: basics
     q: A tournament rule, a card effect and the Comprehensive Rules all disagree. Which one wins?
     choices:
       - The tournament rule
@@ -40,7 +46,7 @@ questions:
     cite: CR 1.0.1a–b
 
   - id: r03
-    topic: rules
+    topic: keywords
     q: An attack is already defended by two action cards. It then gains overpower. What happens to the defenders?
     choices:
       - Both stay. Restrictions aren't retroactive.
@@ -52,7 +58,7 @@ questions:
     cite: CR 1.0.2b, 8.3.22b
 
   - id: r04
-    topic: rules
+    topic: keywords
     q: An attack with dominate is defended by one card from hand. Which of these can the defending player still do?
     choices:
       - Play a defense reaction from their arsenal
@@ -64,7 +70,7 @@ questions:
     cite: CR 8.3.4a–b
 
   - id: r05
-    topic: rules
+    topic: combat
     q: In which combat step do players NOT get priority?
     choices:
       - Close Step
@@ -76,7 +82,7 @@ questions:
     cite: CR 7.7.1, 1.11.3
 
   - id: r06
-    topic: rules
+    topic: playing
     q: During your opponent's turn, you play an action card with go again as an instant. What do you gain from go again?
     choices:
       - Nothing. You can only gain action points in your own action phase.
@@ -88,7 +94,7 @@ questions:
     cite: CR 1.13.2b
 
   - id: r07
-    topic: rules
+    topic: keywords
     q: A card that already has go again is given go again by another effect. What happens?
     choices:
       - That part of the effect fails. An object can't have go again twice.
@@ -100,7 +106,7 @@ questions:
     cite: CR 8.3.5c
 
   - id: r08
-    topic: rules
+    topic: keywords
     q: When does an attack with go again give its controller the action point?
     choices:
       - At the start of the Resolution Step
@@ -112,7 +118,7 @@ questions:
     cite: CR 8.3.5b, 7.6.2
 
   - id: r09
-    topic: rules
+    topic: turns
     q: In the end-of-turn procedure, which comes first?
     choices:
       - The turn-player may put a card into their arsenal
@@ -124,7 +130,7 @@ questions:
     cite: CR 4.4.3
 
   - id: r10
-    topic: rules
+    topic: turns
     q: At the end of the first turn of the game, who draws up to their hero's intellect?
     choices:
       - Every player
@@ -136,7 +142,7 @@ questions:
     cite: CR 4.4.3f
 
   - id: r11
-    topic: rules
+    topic: turns
     q: Game 1 of a Swiss match ended in a draw. Who chooses the first player for game 2?
     choices:
       - The same player who chose in game 1
@@ -148,7 +154,7 @@ questions:
     cite: CR 4.1.3, TRP 3.3
 
   - id: r12
-    topic: rules
+    topic: turns
     q: In the start-of-game procedure, when are arena-cards (equipment and weapons) chosen?
     choices:
       - Before the deck is chosen
@@ -160,7 +166,7 @@ questions:
     cite: CR 4.1.4–4.1.6
 
   - id: r13
-    topic: rules
+    topic: playing
     q: You have 1 resource point floating and play a card that costs 3. You pitch a blue card (pitch 3). Can you pitch another card?
     choices:
       - No. The cost is paid and 1 resource is left over.
@@ -172,7 +178,7 @@ questions:
     cite: CR 1.14.2d, 1.14.3b
 
   - id: r14
-    topic: rules
+    topic: playing
     q: A cost includes both chi points and resource points. In what order are they paid?
     choices:
       - Chi, then resources
@@ -184,7 +190,7 @@ questions:
     cite: CR 1.14.2a
 
   - id: r15
-    topic: rules
+    topic: playing
     q: A card costs 1. Effect A (earlier timestamp) reduces its cost by 2. Effect B (later timestamp) increases its cost by 1. What does it cost?
     choices:
       - "0"
@@ -196,7 +202,7 @@ questions:
     cite: CR 5.1.6a
 
   - id: r16
-    topic: rules
+    topic: playing
     q: What is the action point cost of an action card played as an instant?
     choices:
       - "0"
@@ -208,7 +214,7 @@ questions:
     cite: CR 5.1.6b
 
   - id: r17
-    topic: rules
+    topic: basics
     q: "Endless Arrow says \"When this hits, put it into its owner's hand.\" It had go again when it hit. Does the player gain an action point when the chain link resolves?"
     choices:
       - Yes, through last known information
@@ -221,7 +227,7 @@ questions:
     cite: CR 1.2.3a
 
   - id: r18
-    topic: rules
+    topic: playing
     q: A triggered layer is on the stack. The card that created it is destroyed. What happens to the layer?
     choices:
       - It still resolves.
@@ -233,7 +239,7 @@ questions:
     cite: CR 1.7.1a
 
   - id: r19
-    topic: rules
+    topic: playing
     q: "A card reads \"Deal 2 damage to target hero. Draw a card.\" Its only target is gone when it resolves. What happens?"
     choices:
       - The damage fails, but the player still draws.
@@ -245,7 +251,7 @@ questions:
     cite: CR 1.8.9, 5.3.4b
 
   - id: r20
-    topic: rules
+    topic: combat
     q: An attack has 4 {p} and is defended by cards with 4 total {d}. What happens?
     choices:
       - It doesn't hit. Power has to be greater than defense.
@@ -257,7 +263,7 @@ questions:
     cite: CR 7.5.2
 
   - id: r21
-    topic: rules
+    topic: combat
     q: A prevention effect prevents all of an attack's damage. Did the attack hit?
     choices:
       - No. A hit needs damage from the hit-event.
@@ -269,7 +275,7 @@ questions:
     cite: CR 7.5.5b
 
   - id: r22
-    topic: rules
+    topic: effects
     q: Several replacement effects apply to one damage event. Which type applies first?
     choices:
       - Self/identity replacement
@@ -281,7 +287,7 @@ questions:
     cite: CR 6.5
 
   - id: r23
-    topic: rules
+    topic: effects
     q: A "prevent the next 3 damage" effect is created after the damage event has already happened. What does it do to that event?
     choices:
       - Nothing. Replacements must exist before the event.
@@ -293,7 +299,7 @@ questions:
     cite: CR 6.4.3
 
   - id: r24
-    topic: rules
+    topic: effects
     q: "\"Whenever an opponent draws 1 or more cards\" — the opponent draws 3 cards from one effect. How many times does it trigger?"
     choices:
       - Once
@@ -305,7 +311,7 @@ questions:
     cite: CR 1.9.2a
 
   - id: r25
-    topic: rules
+    topic: effects
     q: An effect would deal 0 arcane damage. Can "when you deal arcane damage" effects trigger?
     choices:
       - No. An instruction to do nothing doesn't happen.
@@ -317,7 +323,7 @@ questions:
     cite: CR 1.9.1b
 
   - id: r26
-    topic: rules
+    topic: effects
     q: A player is told to search their deck for a specific card. They have one, but say they don't find it. Is that allowed?
     choices:
       - Yes. The opponent can't verify the deck, so they may fail to find.
@@ -329,7 +335,7 @@ questions:
     cite: CR 1.9.1c
 
   - id: r27
-    topic: rules
+    topic: effects
     q: A resolved layer creates a continuous effect with no stated duration. When does it end?
     choices:
       - At the end of the turn
@@ -341,7 +347,7 @@ questions:
     cite: CR 6.2.2a
 
   - id: r28
-    topic: rules
+    topic: effects
     q: An attack has base 3 {p}. It gets +2 {p} first. Later, an effect sets its power to 1. What is its power?
     choices:
       - "3"
@@ -353,7 +359,7 @@ questions:
     cite: CR 6.3.3
 
   - id: r29
-    topic: rules
+    topic: effects
     q: Several triggered layers are created at the same time for both players. Who decides the order they go on the stack?
     choices:
       - The turn-player picks a player to start. Then each player, clockwise, adds their own in any order.
@@ -365,7 +371,7 @@ questions:
     cite: CR 6.6.6b
 
   - id: r30
-    topic: rules
+    topic: effects
     q: Heave reads "you may pay {r}{r}{r} and put this face-up into your arsenal". Your arsenal is full. Can you choose to heave?
     choices:
       - No. You can't choose an optional effect you can't fully carry out.
@@ -377,7 +383,7 @@ questions:
     cite: CR 1.8.3b
 
   - id: r31
-    topic: rules
+    topic: keywords
     q: You control Spellvoid 2 equipment, but an effect says it can't be destroyed. You'd be dealt arcane damage. Can you use Spellvoid?
     choices:
       - No. If you can't destroy it, you can't use its prevention.
@@ -389,7 +395,7 @@ questions:
     cite: CR 8.3.15a
 
   - id: r32
-    topic: rules
+    topic: keywords
     q: Which keyword destroys a card when the combat chain closes, if it defended?
     choices:
       - Blade Break
@@ -401,7 +407,7 @@ questions:
     cite: CR 8.3.2–8.3.3
 
   - id: r33
-    topic: rules
+    topic: keywords
     q: A player with no cards in hand is intimidated. Are they considered intimidated?
     choices:
       - Yes, even though nothing was banished
@@ -413,7 +419,7 @@ questions:
     cite: CR 8.5.10a
 
   - id: r34
-    topic: rules
+    topic: keywords
     q: A player is told to opt 3, but only 2 cards are left in their deck. What happens?
     choices:
       - They look at both and put them back in any order.
@@ -425,7 +431,7 @@ questions:
     cite: CR 8.5.22a–b
 
   - id: r35
-    topic: rules
+    topic: keywords
     q: You control two permanents with the same name, and one has unique. What happens?
     choices:
       - As a game state action, you clear down to one, or to none with unique.
@@ -437,7 +443,7 @@ questions:
     cite: CR 8.3.48a, 1.10.2b
 
   - id: r36
-    topic: rules
+    topic: basics
     q: How many red Sink Below and yellow Sink Below can a Classic Constructed card-pool have?
     choices:
       - Up to 3 of each. A different pitch makes them different cards.
@@ -450,7 +456,7 @@ questions:
     cite: CR 1.3.4, TRP 7.1
 
   - id: r37
-    topic: rules
+    topic: combat
     q: While the combat chain is open, when can the turn-player play an attack action card normally (not as an instant)?
     choices:
       - In the Resolution Step
@@ -462,7 +468,7 @@ questions:
     cite: CR 7.0.1a, 7.6.3a
 
   - id: r38
-    topic: rules
+    topic: combat
     q: An ally is the target of an attack. Can its controller declare defending cards from their hand?
     choices:
       - Not unless an effect allows it
@@ -474,7 +480,7 @@ questions:
     cite: CR 7.3.2a, 7.4.2b
 
   - id: r39
-    topic: rules
+    topic: combat
     q: Who is the attacking hero when an ally attacks?
     choices:
       - The ally's controller
@@ -486,7 +492,7 @@ questions:
     cite: CR 7.2.3a
 
   - id: r40
-    topic: rules
+    topic: turns
     q: Both heroes are reduced to 0 life at the same time. What is the result?
     choices:
       - The game is a draw
@@ -498,7 +504,7 @@ questions:
     cite: CR 4.5.4a
 
   - id: r41
-    topic: rules
+    topic: basics
     q: An effect calculates -3.5. What number is used?
     choices:
       - "-3"
@@ -510,7 +516,7 @@ questions:
     cite: CR 1.12.1a
 
   - id: r42
-    topic: rules
+    topic: basics
     q: A card's text refers to "you", but the card has no controller (it was revealed in a clash). Who is "you"?
     choices:
       - Its owner
@@ -522,7 +528,7 @@ questions:
     cite: CR 1.1.2b
 
   - id: r43
-    topic: rules
+    topic: basics
     q: Ironsong Determination gives a weapon +1 power. The weapon then attacks. Does the attack-proxy have the +1?
     choices:
       - Yes. The proxy inherits the weapon's modified properties.
@@ -535,7 +541,7 @@ questions:
     cite: CR 1.4.3d
 
   - id: r44
-    topic: rules
+    topic: basics
     q: Mage Master Boots gives And Again… (an "attack with target sword" card) go again. Does the sword attack it creates have go again?
     choices:
       - No. Effects on an attack-layer don't carry over to the attack it creates.
@@ -548,7 +554,7 @@ questions:
     cite: CR 1.4.4b
 
   - id: r45
-    topic: rules
+    topic: playing
     q: A card says "choose 3 if you've played another blue card this turn, otherwise choose 1". When is the number of modes decided?
     choices:
       - When the card is played and modes are declared

@@ -3,6 +3,11 @@
 Working notes behind `docs/games/flesh-and-blood/rules.md`. This folder is outside `docs/`,
 so it never gets published to the site.
 
+The Rules are split over six pages (2026-11-21): `rules.md` (basics) plus
+`turns.md`, `playing-cards.md`, `effects.md`, `combat.md` and `keywords.md`.
+Each has its own `<page>-research.md`. The sources, card-example rules and
+"held back" list below are shared by all six.
+
 Everything below is our own summary. Don't copy from sources.
 
 **How to use:** this is a judge exam study guide, not a playthrough, so nothing
@@ -36,11 +41,13 @@ keyword list in CR 8.
 
 ## Already on the page
 
-Precedence, ownership/LKI, priority, start/turn/end phases, ending a game,
-costs and pitching, playing cards (9 steps), resolving layers, optional /
-conditional / targeted effects, events, continuous-effect staging,
-replacement order, triggers, combat steps, ally attacks, attack-proxies,
-attack-layers, keyword table, number rules.
+Precedence, players and objects, ownership, LKI, numbers and symbols. The
+rest of the old single page is now on the five other Rules pages; see their
+research notes.
+
+Quiz topic `basics`: r01, r02, r17, r36, r41–r44. Target about 15; write
+about 7 more (permanents, distinct cards, "only" as a restriction, card-pool
+supertypes, missing properties count as 0, opposing counters).
 
 Card examples (added 2026-10-28): most points end with an *Example:* naming a
 card through the `card()` macro, which opens a preview of the card's image and

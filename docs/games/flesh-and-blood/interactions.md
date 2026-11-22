@@ -123,7 +123,7 @@ each one, and new cards get much easier to rule.
 Legal **September 25, 2026**.
 
 - **New keywords:** bind, decay, incarnate, Shadow Resist, traverse, unique,
-  usurp. See the [Rules](rules.md#keywords-to-know) keyword table.
+  usurp. See the [Rules](keywords.md) keyword table.
 - **{{ card("soul-of-existence-4") }}** is the first **purple** card, with
   pitch 4.
 - **Unique** is a game state action. If you control two permanents with the

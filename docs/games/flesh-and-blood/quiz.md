@@ -13,8 +13,9 @@ miss are saved in this browser, and **Review missed** brings them back
 until you get them right. The real exams need **85%**. Only fresh practice
 runs are checked against that; reviews and My rulings just show your score.
 
-- **L1A practice** draws from the [Rules](rules.md) and
-  [Card Interactions](interactions.md) pages.
+- **L1A practice** draws from all six [Rules](rules.md) pages and
+  [Card Interactions](interactions.md). Each Rules page also has its own set,
+  like **Combat only**.
 - **L1B practice** draws from [Policy & Penalties](policy.md).
 - **Scorekeeping only** draws from [Scorekeeping](scorekeeping.md).
 - **My rulings** asks every ruling from `data/flesh-and-blood/my-rulings.yaml`,

@@ -16,8 +16,9 @@ requirement. You pass two online exams, then submit a checklist.
 
     ---
 
-    The Comprehensive Rules by concept: priority, costs, layers, combat,
-    effects and keywords.
+    The Comprehensive Rules by concept, over six pages: the basics, turns
+    and priority, playing cards, effects, combat and keywords. Each page has
+    its own quiz.
 
 -   :material-gavel:{ .lg .middle } __[Policy & Penalties](policy.md)__
 
@@ -91,8 +92,8 @@ requirement. You pass two online exams, then submit a checklist.
 
 ## Study plan
 
-1. Read [Rules](rules.md) a section at a time and take the matching quiz
-   topic after each one.
+1. Read the [Rules](rules.md) pages one at a time. At the top of each one,
+   **Quiz this page** runs the questions for just that page.
 2. Read [Policy & Penalties](policy.md) until you can recite the penalty
    ladder and the upgrade rules from memory. The quick table at the top is
    the part to memorize.

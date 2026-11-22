@@ -20,7 +20,10 @@
   const STORE = "fab-quiz-missed";
   const EXAMS = {
     all: { label: "Everything", topics: Object.keys(data.topics) },
-    l1a: { label: "L1A practice (rules)", topics: ["rules", "interactions"] },
+    l1a: {
+      label: "L1A practice (rules)",
+      topics: ["basics", "turns", "playing", "effects", "combat", "keywords", "interactions"],
+    },
     l1b: { label: "L1B practice (policy)", topics: ["policy", "tournament"] },
   };
   for (const [key, label] of Object.entries(data.topics)) {
@@ -154,9 +157,15 @@
     count.value = "20";
     countLabel.append(count);
 
+    // A study page's "Quiz this page" link opens with its set chosen,
+    // as in quiz/?set=combat.
+    const wanted = new URLSearchParams(location.search).get("set");
+    if (wanted && EXAMS[wanted]) exam.value = wanted;
+
     const pool = () => data.questions.filter((q) => EXAMS[exam.value].topics.includes(q.topic));
     const syncCount = () => (count.disabled = !!EXAMS[exam.value].fixed);
     exam.addEventListener("change", syncCount);
+    syncCount();
     const start = button("md-button--primary", "Start", () => {
       if (EXAMS[exam.value].fixed) {
         begin(mine, EXAMS[exam.value].label);

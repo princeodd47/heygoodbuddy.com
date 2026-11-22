@@ -187,6 +187,11 @@ nav:
       - Flesh and Blood:
           - games/flesh-and-blood/index.md
           - Rules: games/flesh-and-blood/rules.md
+          - Turns & Priority: games/flesh-and-blood/turns.md
+          - Playing Cards: games/flesh-and-blood/playing-cards.md
+          - Effects: games/flesh-and-blood/effects.md
+          - Combat: games/flesh-and-blood/combat.md
+          - Keywords: games/flesh-and-blood/keywords.md
           - Policy & Penalties: games/flesh-and-blood/policy.md
           - Card Interactions: games/flesh-and-blood/interactions.md
           - Scorekeeping: games/flesh-and-blood/scorekeeping.md
