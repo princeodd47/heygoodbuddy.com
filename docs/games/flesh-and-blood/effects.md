@@ -28,7 +28,7 @@ trigger. Click a card name to see the card and its current text.
 - **Conditional ("if"):** for a discrete effect, the condition is checked
   once, when it would happen (CR 6.1.3). "While" conditions are checked all
   the time (CR 1.8.4c). *Example:* {{ card("heart-of-fyendal-3") }} checks
-  your life against your opponent's once, when it's pitched.
+  your life against your opponent's once, as its pitch trigger resolves.
   {{ card("parable-of-humility-2") }}'s -1 power applies only while those
   attacks are attacking or defending.
 - **Targeted** effects use the word "target". Only public objects in the

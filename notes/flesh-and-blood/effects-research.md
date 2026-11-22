@@ -13,10 +13,15 @@ Optional / conditional / targeted effects, effect failure, events (0 is no event
 
 ## Quiz
 
-Topic `effects` in `data/flesh-and-blood/quiz.yaml`. Existing questions: r22–r30.
-Target about 18.
+Topic `effects` in `data/flesh-and-blood/quiz.yaml`: r22–r30, r66–r74
+(18 questions). r66–r74 were checked against the CR text on 2026-11-21. Their
+cards are the page's own examples (Mark of the Huntsman, Heart of Fyendal,
+Parable of Humility, Memorial Ground, Remembrance, Steadfast, Merciful
+Retribution).
 
-Write about 9: "may choose to", "while" vs "if", what can be targeted, fixed vs shielding prevention, one replacement per event, inline triggers, triggered-static on its own destruction.
+Heart of Fyendal's condition is checked when its pitch trigger resolves, not
+when it's pitched (CR 6.1.3: a conditional discrete effect is checked when it
+would be generated). The page said "when it's pitched" until 2026-11-21.
 
 ## Open questions
 

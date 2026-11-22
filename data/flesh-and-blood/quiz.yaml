@@ -811,6 +811,122 @@ questions:
     why: As a length of time, a chain link starts when it becomes the active chain link in the Attack Step. It ends when it resolves at the start of the Resolution Step or the chain closes.
     cite: CR 7.0.3d
 
+  # --- Effects (added 2026-11-21) ---
+  - id: r66
+    topic: effects
+    q: Mark of the Huntsman says "When this hits a hero, you may choose to destroy this and mark them." The hero is already marked. Can you choose the effect?
+    choices:
+      - "Yes. \"May choose to\" can be chosen even if part of it can't happen."
+      - No. You can't choose an optional effect that can't fully happen.
+      - Only if Mark of the Huntsman can be destroyed
+      - No. A marked hero can't be marked again, so the trigger is removed.
+    answer: 0
+    cards: [mark-of-the-huntsman]
+    why: An optional effect you can't carry out normally can't be chosen. An effect worded "may choose to" is the exception, and you can choose it anyway.
+    cite: CR 1.8.3b
+
+  - id: r67
+    topic: effects
+    q: Heart of Fyendal says "When this is pitched, if you have less life than an opposing hero, gain 1 life." When is the life comparison checked?
+    choices:
+      - Once, when the gain-life effect would happen as the trigger resolves
+      - The whole time the card is in the pitch zone
+      - Only at the moment it's pitched
+      - At the end of the turn
+    answer: 0
+    cards: [heart-of-fyendal-3]
+    why: The condition of a conditional discrete effect is checked only once, when the effect would be generated.
+    cite: CR 6.1.3
+
+  - id: r68
+    topic: effects
+    q: Parable of Humility says "Attack action cards your opponents control get -1 power while attacking and defending." When does an opposing attack action card get the -1?
+    choices:
+      - Only while that card is attacking or defending
+      - From when Parable comes into play until end of turn
+      - Only when the card is played
+      - Only on the next attack
+    answer: 0
+    cards: [parable-of-humility-2]
+    why: A "while" condition is checked all the time, and separately for each object the effect applies to.
+    cite: CR 1.8.4c
+
+  - id: r69
+    topic: effects
+    q: Memorial Ground targets "attack action card with cost 2 or less from your graveyard". Can it target a face-down card in your graveyard?
+    choices:
+      - No. Only public cards in that zone can be targeted.
+      - Yes. The graveyard is a public zone.
+      - Yes, if you reveal it first
+      - No. Only cards in the arena or on the stack can ever be targeted.
+    answer: 0
+    cards: [memorial-ground-1]
+    why: An effect can target cards in a zone it names, but only cards that are public. A face-down card isn't.
+    cite: CR 1.8.5a
+
+  - id: r70
+    topic: effects
+    q: Remembrance says "Shuffle up to 3 action cards from your graveyard into your deck." When do you choose the cards?
+    choices:
+      - When it resolves
+      - When you play it, as targets
+      - When you pay its cost
+      - The opponent chooses them
+    answer: 0
+    cards: [remembrance-2]
+    why: Remembrance doesn't use the word "target", so it isn't a targeted effect. Its cards are chosen when the effect happens.
+    cite: CR 1.8.5c, 1.8.6
+
+  - id: r71
+    topic: effects
+    q: A resolved instant gives your attack +X power until end of turn, where X is the number of cards in your hand. Then you draw a card. What happens to the bonus?
+    choices:
+      - Nothing. X was fixed when the effect was created.
+      - It goes up by 1
+      - It's recalculated at the Damage Step
+      - It ends, because the game state changed
+    answer: 0
+    why: An effect from a resolved layer locks in X when it's created. An effect from a static ability updates as the game changes.
+    cite: CR 6.2.2b, 6.2.3b
+
+  - id: r72
+    topic: effects
+    q: You play Steadfast, choosing a source. That source deals you 4 damage, then later that turn deals you 4 more. How much damage do you take?
+    choices:
+      - 2 in total. It prevents the first 4, then 2 of the next 4.
+      - 0. It prevents up to 6 from each event.
+      - 4. It prevents only the first event.
+      - 2 from each event
+    answer: 0
+    cards: [steadfast-1]
+    why: '"Prevent the next N" is shielding prevention. Whatever it doesn''t use on one event carries over to the next, until all of it is used.'
+    cite: CR 6.4.10j
+
+  - id: r73
+    topic: effects
+    q: Merciful Retribution says "Whenever an aura or attack action card you control is destroyed, deal 1 arcane damage to target hero." Merciful Retribution itself is destroyed. Does it trigger?
+    choices:
+      - Yes. It was working just before it was destroyed.
+      - No. It's gone, so its ability is gone.
+      - Only if another aura is destroyed at the same time
+      - Only if it's destroyed on your turn
+    answer: 0
+    cards: [merciful-retribution-2]
+    why: A triggered-static ability still triggers when the event that triggers it also destroys its source, as long as it was working just before.
+    cite: CR 5.4.6a
+
+  - id: r74
+    topic: effects
+    q: During your turn, your opponent and you each control a standard-replacement effect for the same event. How is the order decided?
+    choices:
+      - You pick which player starts, and each player applies their own effects in clockwise order from there
+      - You order every effect, including your opponent's
+      - The newest effect applies first
+      - Your opponent's applies first, because they aren't the turn-player
+    answer: 0
+    why: The turn-player chooses a player to start. Each player then applies their own replacement effects of that type in clockwise order. The turn-player doesn't order effects they don't control.
+    cite: CR 6.5.2, 6.5.2a
+
   # --- Card interactions (L1A) ---
   - id: i01
     topic: interactions
