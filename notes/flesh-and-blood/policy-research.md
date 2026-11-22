@@ -34,6 +34,11 @@ Ira L2P deck list, UPF targeting rules, the recommended Swiss round counts.
 ## Already on the page
 
 Quick reference table, penalty ladder, IP mechanics, handling rules,
-procedures, every gameplay/tournament/conduct infraction, tiers and REL,
-formats, match logistics, information types, note-taking, shortcuts, OOP,
-reversing actions, default decisions, random selection.
+procedures, every gameplay/tournament/conduct infraction.
+
+The TRP sections (tiers and REL, formats, match logistics, information types,
+note-taking, shortcuts, OOP, reversing actions, default decisions, random
+selection) moved to `tournament.md` on 2026-11-21; see
+`tournament-research.md`. The sources above cover both pages.
+
+Quiz topic `policy` (p01–p37) is this page's "Quiz this page" set.

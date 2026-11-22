@@ -16,7 +16,8 @@ runs are checked against that; reviews and My rulings just show your score.
 - **L1A practice** draws from all six [Rules](rules.md) pages and
   [Card Interactions](interactions.md). Each Rules page also has its own set,
   like **Combat only**.
-- **L1B practice** draws from [Policy & Penalties](policy.md).
+- **L1B practice** draws from [Policy & Penalties](policy.md) and
+  [Tournament Rules](tournament.md).
 - **Scorekeeping only** draws from [Scorekeeping](scorekeeping.md).
 - **My rulings** asks every ruling from `data/flesh-and-blood/my-rulings.yaml`,
   in the order they're written there.

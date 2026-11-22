@@ -24,8 +24,14 @@ requirement. You pass two online exams, then submit a checklist.
 
     ---
 
-    Every infraction with its penalty, fix and upgrades, plus the tournament
-    rules judges get asked about most.
+    Every infraction with its penalty, fix and upgrades.
+
+-   :material-trophy:{ .lg .middle } __[Tournament Rules](tournament.md)__
+
+    ---
+
+    Event tiers and REL, formats, match logistics, information and
+    note-taking: the tournament rules judges get asked about most.
 
 -   :material-cards:{ .lg .middle } __[Card Interactions](interactions.md)__
 
@@ -76,7 +82,8 @@ requirement. You pass two online exams, then submit a checklist.
     card interactions and handle simple judge calls with the right infraction
     and penalty. That lines up with the two exams: L1A is the
     [Comprehensive Rules](rules.md), and L1B is the
-    [Procedure and Penalty Guide](policy.md) and Tournament Rules and Policy.
+    [Procedure and Penalty Guide](policy.md) and the
+    [Tournament Rules and Policy](tournament.md).
 
 ??? info "Scorekeeper – Basic"
     A separate JudgeHub exam that Level 0 judges can take. It checks that you
@@ -96,7 +103,8 @@ requirement. You pass two online exams, then submit a checklist.
    **Quiz this page** runs the questions for just that page.
 2. Read [Policy & Penalties](policy.md) until you can recite the penalty
    ladder and the upgrade rules from memory. The quick table at the top is
-   the part to memorize.
+   the part to memorize. Then read [Tournament Rules](tournament.md). Each
+   page has its own quiz.
 3. Skim [Card Interactions](interactions.md). The release notes show how the
    rules apply to real cards. Exam questions often look like them.
 4. Run the full quiz. Keep using **Review missed** until it's empty, and
