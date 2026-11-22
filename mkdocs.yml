@@ -59,7 +59,6 @@ plugins:
         fab_my_rulings: data/flesh-and-blood/my-rulings.yaml
         fab_cards: data/flesh-and-blood/cards.yaml
         mnd_sets: data/magi-nation-duel/sets.yaml
-        mnd_cards: data/magi-nation-duel/cards.yaml
         ffx2_arena: data/final-fantasy-x-2/arena.yaml
         ffx2_creatures: data/final-fantasy-x-2/creatures.yaml
         ffx2_feeding: data/final-fantasy-x-2/feeding.yaml
@@ -91,7 +90,7 @@ extra_css:
   - stylesheets/dqm.css
   - stylesheets/synth-builder.css
   - stylesheets/fab.css?v=2026-10-28.2
-  - stylesheets/mnd-cards.css?v=2026-11-22.1
+  - stylesheets/mnd-cards.css?v=2026-11-22.2
 
 extra_javascript:
   - javascripts/synth-builder.js
@@ -103,7 +102,8 @@ extra_javascript:
   - javascripts/fg-search.js?v=2026-11-17.9
   - javascripts/fg-pages.js?v=2026-11-17.15
   - javascripts/fg-cards.js?v=2026-11-21.1
-  - javascripts/mnd-cards.js?v=2026-11-22.1
+  - javascripts/mnd-cards.js?v=2026-11-22.2
+  - javascripts/mnd-decks.js?v=2026-11-22.2
 
 markdown_extensions:
   - admonition
@@ -259,6 +259,7 @@ nav:
           - Sets: games/magi-nation-duel/sets.md
           - Lore: games/magi-nation-duel/lore.md
           - Cards: games/magi-nation-duel/cards.md
+          - Decks: games/magi-nation-duel/decks.md
   - Articles:
       - blog/index.md
   - Tags: tags.md
